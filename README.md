@@ -16,6 +16,29 @@ model answers, trajectories, evaluation outputs, logs, credentials, and Git hist
 are excluded.** Running a command may create local files under `outputs/`; this
 directory is ignored by Git.
 
+## Method and how to use it
+
+1. **Choose a case.** The manifest supplies a scientific question, a 3D flow-field
+   snapshot, and physical context. Its condition determines which analysis choices
+   and finding requirements are prescribed or left to the agent.
+2. **Generate an answer.** Let the agent inspect the supplied data with the Python
+   tool. Ask it to report `## Operationalization` (what analysis it used) and
+   `## Finding` (what the data supports). Keep reference answers hidden.
+3. **Verify against compatible evidence.** The evaluator extracts the declared
+   choices and claims, checks task constraints, and compares findings with frozen
+   reference branches for the same quantity, scope, and statistic. Different valid
+   methods can support different numerical findings.
+4. **Read scores together with coverage.** Inspect analysis validity, unresolved
+   choices, finding recall/precision, and O–F consistency. Unverified findings remain
+   unresolved; they are not automatically treated as correct or incorrect.
+
+For a quick local check, install the dependencies below and run
+`python scripts/verify_release.py --read-data` followed by
+`python scripts/smoke_release.py`. To assess your own model, save its responses as
+JSONL and follow [Evaluate saved answers](#evaluate-saved-answers). The distinction
+between this code version and the manuscript's later assessment is documented under
+[Evaluation and manuscript correspondence](#evaluation-and-manuscript-correspondence).
+
 ## Benchmark at a glance
 
 - **96 cases**, organized as **24 scientific question families × 4 conditions**.
