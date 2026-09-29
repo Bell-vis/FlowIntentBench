@@ -1,0 +1,13 @@
+{
+  "scientific_question": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high shear-rate regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+  "f1_required_properties": [
+    "centroid",
+    "mean"
+  ],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+    "property_measure": "Compute the stated properties of the selected object.",
+    "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume.",
+    "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+  }
+}

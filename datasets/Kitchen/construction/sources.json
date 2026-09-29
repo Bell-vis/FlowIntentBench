@@ -1,0 +1,60 @@
+{
+  "dataset_id": "Kitchen",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "example_source_code",
+      "title": "Kitchen VTK example",
+      "authors": [],
+      "year": null,
+      "venue": "VTK Examples",
+      "doi": null,
+      "report_id": null
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "dataset_documentation",
+      "title": "VTK Book Chapter 6: Kitchen streamline example",
+      "authors": [],
+      "year": null,
+      "venue": "VTK Book",
+      "doi": null,
+      "report_id": null
+    },
+    {
+      "source_id": "src_003",
+      "source_type": "dataset_documentation",
+      "title": "LAB1; Visualisation of a room",
+      "authors": [],
+      "year": null,
+      "venue": "KTH DD2257 course materials",
+      "doi": null,
+      "report_id": null
+    },
+    {
+      "source_id": "src_004",
+      "source_type": "relevant_scientific_reference",
+      "title": "The numerical computation of turbulent flows",
+      "authors": [
+        "B. E. Launder",
+        "D. B. Spalding"
+      ],
+      "year": 1974,
+      "venue": "Computer Methods in Applied Mechanics and Engineering",
+      "doi": "10.1016/0045-7825(74)90029-2",
+      "report_id": null
+    },
+    {
+      "source_id": "src_005",
+      "source_type": "relevant_scientific_reference",
+      "title": "The definition and measurement of some characteristics of mixtures",
+      "authors": [
+        "P. V. Danckwerts"
+      ],
+      "year": 1952,
+      "venue": "Applied Scientific Research",
+      "doi": "10.1007/BF03184936",
+      "report_id": null
+    }
+  ]
+}

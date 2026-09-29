@@ -1,0 +1,61 @@
+{
+  "family_id": "rt_mixing_width",
+  "inputs": [
+    {
+      "path": "Rayleigh_Taylor/snapshot.vtk",
+      "sha256": "ac58ea892162498cd976a577c16baa0a56e62e04e058909ff03ddb6da068aa78"
+    }
+  ],
+  "operations": {
+    "rms": {
+      "clauses": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field.",
+        "property_measure": "Measure width along the z axis as the weighted root-mean-square distance from its weighted center.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "recipe": {
+        "kind": "weighted_width",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "measure": "rms",
+        "axis": 2,
+        "weight_transform": "mixture",
+        "endmembers": "sample_extrema"
+      }
+    },
+    "interdecile": {
+      "clauses": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field.",
+        "property_measure": "Measure width along the z axis as the weighted 90th-minus-10th coordinate percentile range.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "recipe": {
+        "kind": "weighted_width",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "measure": "interdecile",
+        "axis": 2,
+        "weight_transform": "mixture",
+        "endmembers": "sample_extrema"
+      }
+    }
+  },
+  "definition_sha256": "47057ed85d72c2c9deca30eb52812838f1e4493a628a1bf8ea73d952f161b1ce",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "rms": {
+      "width": 0.10502449665563,
+      "center": 0.49084170786281
+    },
+    "interdecile": {
+      "width": 0.26771652698517,
+      "center": 0.49084170786281
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

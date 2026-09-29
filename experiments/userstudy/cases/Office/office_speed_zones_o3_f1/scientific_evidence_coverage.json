@@ -1,0 +1,322 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "office_speed_zones_o3_f1",
+  "claims": [
+    {
+      "claim_id": "o3_fixed_peak_speed:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+    },
+    {
+      "claim_id": "o3_fixed_peak_speed:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+    },
+    {
+      "claim_id": "o3_fixed_peak_speed:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use peak speed as the strength of each retained region."
+    },
+    {
+      "claim_id": "o3_fixed_peak_speed:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+    },
+    {
+      "claim_id": "o3_fixed_mean_speed:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+    },
+    {
+      "claim_id": "o3_fixed_mean_speed:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+    },
+    {
+      "claim_id": "o3_fixed_mean_speed:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use the mean speed across retained locations as the strength of each region."
+    },
+    {
+      "claim_id": "o3_fixed_mean_speed:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+    },
+    {
+      "claim_id": "o3_q90_mean_speed:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+    },
+    {
+      "claim_id": "o3_q90_mean_speed:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations whose speed is at or above the 90th percentile of non-zero speed values as a distribution-informed high-speed criterion."
+    },
+    {
+      "claim_id": "o3_q90_mean_speed:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use the mean speed across retained locations as the strength of each region."
+    },
+    {
+      "claim_id": "o3_q90_mean_speed:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+    },
+    {
+      "claim_id": "o3_peak_point_speed:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+    },
+    {
+      "claim_id": "o3_peak_point_speed:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+    },
+    {
+      "claim_id": "o3_peak_point_speed:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use peak speed as the strength of each retained region."
+    },
+    {
+      "claim_id": "o3_peak_point_speed:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Represent the selected region by the spatial location of its peak-speed location."
+    },
+    {
+      "claim_id": "o3_fixed_peak_speed:F:o3_fixed_peak_speed_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [0.06812500045634806, 2.343749985098839, 2.389375001192093] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "o3_fixed_peak_speed:F:o3_fixed_peak_speed_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has peak speed strength approximately 0.80493502 in the stored velocity scale."
+    },
+    {
+      "claim_id": "o3_fixed_mean_speed:F:o3_fixed_mean_speed_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [4.5, 2.4312500208616257, 2.1737499833106995] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "o3_fixed_mean_speed:F:o3_fixed_mean_speed_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has mean speed strength approximately 0.35773132 in the stored velocity scale."
+    },
+    {
+      "claim_id": "o3_q90_mean_speed:F:o3_q90_mean_speed_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [4.497741883800876, 2.421505397365939, 2.1120429859366467] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "o3_q90_mean_speed:F:o3_q90_mean_speed_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has mean speed strength approximately 0.29193364 in the stored velocity scale."
+    },
+    {
+      "claim_id": "o3_peak_point_speed:F:o3_peak_point_speed_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a peak spatial location approximately [0.009999998845160007, 2.549999952316284, 2.430000066757202] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "o3_peak_point_speed:F:o3_peak_point_speed_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has peak speed strength approximately 0.80493502 in the stored velocity scale."
+    }
+  ],
+  "dataset_id": "Office",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

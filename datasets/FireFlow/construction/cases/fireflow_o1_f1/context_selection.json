@@ -1,0 +1,9 @@
+{
+  "case_id": "fireflow_o1_f1",
+  "dataset_id": "FireFlow",
+  "include_fact_ids": [
+    "fireflow_physical_setting",
+    "fireflow_room",
+    "fireflow_room_geometry"
+  ]
+}

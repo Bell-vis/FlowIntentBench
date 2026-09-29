@@ -1,0 +1,29 @@
+{
+  "dataset_id": "FireFlow",
+  "fact_index": {
+    "fireflow_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "fireflow_room": {
+      "field": "objects",
+      "position": 0
+    },
+    "fireflow_room_geometry": {
+      "field": "geometry_assets",
+      "position": 0
+    }
+  },
+  "fact_provenance": {
+    "fireflow_physical_setting": [
+      "ctx_001"
+    ],
+    "fireflow_room": [
+      "ctx_001"
+    ],
+    "fireflow_room_geometry": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "initial_case"
+}

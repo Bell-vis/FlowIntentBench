@@ -1,0 +1,74 @@
+{
+  "dataset_id": "Rayleigh_Taylor",
+  "case_id": "rt_isodensity_geometry_o1_f2",
+  "case_family_id": "rt_isodensity_geometry",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "rt_isodensity_geometry_o1_f2_rho094",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compute the stated properties of the selected object."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Sum triangle areas and weight the surface centroid by triangle area."
+        },
+        {
+          "dimension": "parameter",
+          "statement": "Extract the density level 0.94 in stored units."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "rt_isodensity_geometry_o1_f2_rho094",
+      "findings": [
+        {
+          "finding_id": "rt_isodensity_geometry_o1_f2_rho094_area",
+          "category": "property",
+          "statement": "report the total surface area",
+          "importance": "core",
+          "value": 2.7089114189148,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_rt_isodensity_geometry"
+          ]
+        },
+        {
+          "finding_id": "rt_isodensity_geometry_o1_f2_rho094_centroid",
+          "category": "location",
+          "statement": "report the area-weighted surface centroid",
+          "importance": "core",
+          "value": [
+            0.5236611366272,
+            0.50224089622498,
+            0.49306988716125
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "evidence_ids": [
+            "finding_rt_isodensity_geometry"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context was supplied for independent validation.",
+    "Coordinate-axis meanings and units are unspecified, limiting physical interpretation of the reported location and speed."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The wording presents a meaningful and actionable question about high-speed regions in the carotid flow field. It faithfully exposes the target, scope, all fixed operationalizations, and the required F1 outputs: the strongest region's location and peak-speed strength. The computational definitions are consistent with the supplied dataset and topology, introduce no additional respondent-controlled operationalization, and are answerable from the single-snapshot field.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68",
+  "review_packet_sha256": "bdba814075a0a5afba922ed607a9f94e51adfaff9e38dcf5df25c7efbf4398c2",
+  "reviewed_model_visible_text_sha256": "f4acbb6e5818b96eb4c5d8f6179b42892898235cb94d95900a8910b4ad89e05d",
+  "reviewed_model_visible_text": "Investigate the high-speed flow regions in the carotid artery flow field. Calculate speed from the Euclidean magnitude of the velocity vectors, define high-speed locations using the linearly interpolated 90th percentile or higher of the non-zero speeds, and group locations connected through immediate grid neighbors along one grid axis into contiguous regions. Identify the region with the greatest peak speed, then report its strength as that peak speed and its location as the mean spatial location of the retained high-speed locations within it.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "carotid_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "bdba814075a0a5afba922ed607a9f94e51adfaff9e38dcf5df25c7efbf4398c2",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:30:12.478814+00:00",
+    "latency_seconds": 25.152319,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context was supplied for independent validation.\",\"Coordinate-axis meanings and units are unspecified, limiting physical interpretation of the reported location and speed.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The wording presents a meaningful and actionable question about high-speed regions in the carotid flow field. It faithfully exposes the target, scope, all fixed operationalizations, and the required F1 outputs: the strongest region's location and peak-speed strength. The computational definitions are consistent with the supplied dataset and topology, introduce no additional respondent-controlled operationalization, and are answerable from the single-snapshot field.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context was supplied for independent validation.",
+        "Coordinate-axis meanings and units are unspecified, limiting physical interpretation of the reported location and speed."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The wording presents a meaningful and actionable question about high-speed regions in the carotid flow field. It faithfully exposes the target, scope, all fixed operationalizations, and the required F1 outputs: the strongest region's location and peak-speed strength. The computational definitions are consistent with the supplied dataset and topology, introduce no additional respondent-controlled operationalization, and are answerable from the single-snapshot field."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_07e13e8821e64136016aa6dd8c3f7487d09843e016216551be": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1494,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1494,
+            "output_tokens": 0
+          },
+          "rs_07e13e8821e64136016aa6dd8cce2087d09f761ad602a8b109": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_07e13e8821e64136016aa6dd9e4f0887d084e3bec26cfa6b51": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 32
+          },
+          "msg_07e13e8821e64136016aa6dd9f756087d0af379be75d7af8b9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 206
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 206
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2110,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 754,
+      "output_tokens_details": {
+        "reasoning_tokens": 548
+      },
+      "total_tokens": 2864
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68",
+    "review_packet_sha256": "bdba814075a0a5afba922ed607a9f94e51adfaff9e38dcf5df25c7efbf4398c2",
+    "reviewed_model_visible_text_sha256": "f4acbb6e5818b96eb4c5d8f6179b42892898235cb94d95900a8910b4ad89e05d",
+    "reviewed_model_visible_text": "Investigate the high-speed flow regions in the carotid artery flow field. Calculate speed from the Euclidean magnitude of the velocity vectors, define high-speed locations using the linearly interpolated 90th percentile or higher of the non-zero speeds, and group locations connected through immediate grid neighbors along one grid axis into contiguous regions. Identify the region with the greatest peak speed, then report its strength as that peak speed and its location as the mean spatial location of the retained high-speed locations within it."
+  }
+}

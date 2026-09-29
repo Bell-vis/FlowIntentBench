@@ -1,0 +1,7 @@
+{
+  "case_id": "tubes_turbulent_energy_heterogeneity_o1_f2",
+  "dataset_id": "OpenFOAM_Tubes",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

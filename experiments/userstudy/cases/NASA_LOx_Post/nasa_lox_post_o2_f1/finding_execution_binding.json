@@ -1,0 +1,194 @@
+{
+  "branches": [
+    {
+      "branch_id": "nasa_lox_post_o2_f1_o2_q90_peak",
+      "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+      "effective_o_sha256": "d1ad85a92bd75f00c41c3d48e638d548b24156e61bc5ef64f4719295c5d86b96",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "execution_value_sha256": "e197bfc21bdfa6278317680577703dc63c4f37fc70ec888aa24e925dc0b78da4",
+          "finding_id": "nasa_lox_post_o2_f1_o2_q90_peak_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "scientific_finding_policy_key": "548d6d0cacdc47984a2da0683741fdd0cc6fc5ad60d6f1d1137ee2a3660738d6",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "b40472e92a07ab8120f779441b6e8bcde7151cd49751b30105e46e5a1ee6c832"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.391444101423406,
+          "execution_value_sha256": "592e95c7eb69ae738fdbb073b4b92117e971ea73aa32fdc097737ff485e33d58",
+          "finding_id": "nasa_lox_post_o2_f1_o2_q90_peak_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 1.391444101423406,
+          "scientific_finding_policy_key": "5c0c07f68f7167733966aeca81eed21e3b0807b5e4e9ea03af33c747bd1b2a20",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "669b9513783552ddd8c0a956578a28f4afceb39c4ab2972a69e89dc83c97bf52"
+        }
+      ],
+      "g_of_o_sha256": "dfc26e402d5adcf3e60d802f88cfd4e393cfbd46b4884720038c80c9984b52bb",
+      "materialization_id": "mat:nasa_lox_post_o2_f1_o2_q90_peak",
+      "operationalization_id": "nasa_lox_post_o2_f1_o2_q90_peak"
+    },
+    {
+      "branch_id": "nasa_lox_post_o2_f1_o2_q90_mean",
+      "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+      "effective_o_sha256": "8006e905cfbea4625650e1be070f607d7f749813605d7d281d03b5ae9ede9783",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "execution_value_sha256": "e197bfc21bdfa6278317680577703dc63c4f37fc70ec888aa24e925dc0b78da4",
+          "finding_id": "nasa_lox_post_o2_f1_o2_q90_mean_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "scientific_finding_policy_key": "23cd57b9db26e4fc3899b4a9938b5e398699d5c0f4c8474e3e67261191872edb",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "302f9e158e25b360c42e8f7e5189679e42eb631a65affba81ec328d74e22a057"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.2483379152602692,
+          "execution_value_sha256": "a71b51d60b6145e8a0c86f6407c16321fdb6ec1a32b843cddab4a017f172aa04",
+          "finding_id": "nasa_lox_post_o2_f1_o2_q90_mean_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 1.2483379152602692,
+          "scientific_finding_policy_key": "8d63d9a901cc21b3f66396b4d127a85c3996d582af79b576d3fd9be72629f91e",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "2d96d6f3b71c4ed2006ff66f563071c88c000051f894e5f5fc6c551dc0fe7ea2"
+        }
+      ],
+      "g_of_o_sha256": "5d7dd940cdbc9160735bb4c377300f9ffda846c77a4e85c319bd4c364ef15625",
+      "materialization_id": "mat:nasa_lox_post_o2_f1_o2_q90_mean",
+      "operationalization_id": "nasa_lox_post_o2_f1_o2_q90_mean"
+    },
+    {
+      "branch_id": "nasa_lox_post_o2_f1_o2_q75_mean",
+      "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+      "effective_o_sha256": "dbd1707ff6342fd14910c01d80a78e384fb93826741b6fddfa2fb2116b44f3b7",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "execution_value_sha256": "dcca0e8291c667e5995f4dab5261847434a40ca7e904e3988ba3033bde279edd",
+          "finding_id": "nasa_lox_post_o2_f1_o2_q75_mean_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "scientific_finding_policy_key": "0bf3cb84a82ec876c02d32f7d1dc3e21ef08d7b2147b15ba79562fae08186d9a",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "3fb7068eb894868a82dc9370d21ff00330170e52bc4b3ddcdac5d526fdade88f"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.1169056975303706,
+          "execution_value_sha256": "0d54ddfe316062de4e3aaa2ca0ac70904fecbcfc7f1817f116ae3bd350747449",
+          "finding_id": "nasa_lox_post_o2_f1_o2_q75_mean_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 1.1169056975303706,
+          "scientific_finding_policy_key": "2ff22d5d80fa9dda2a1054f41b5f01ca4b0a7c3e0d48049cba7b2f56aad2853a",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "205a78da8e95d45f63d16090909aad4b5b73100f904e18462a789abf7c358ac3"
+        }
+      ],
+      "g_of_o_sha256": "1abf7e49cb114cfabc47dd4acbd0a477ae1470b7490de20aca3dbbe764d14b8f",
+      "materialization_id": "mat:nasa_lox_post_o2_f1_o2_q75_mean",
+      "operationalization_id": "nasa_lox_post_o2_f1_o2_q75_mean"
+    }
+  ],
+  "case_id": "nasa_lox_post_o2_f1",
+  "dataset_id": "NASA_LOx_Post",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "fad41bc7b82da59197ff7b3d583e26e119d1d306958c5998a4733d26d899119c"
+}

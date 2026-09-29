@@ -1,0 +1,9 @@
+{
+  "case_id": "electrolyzer_transverse_flow_width_o1_f1",
+  "mapping": {
+    "electrolyzer_transverse_flow_width_o1_f1_rms": {
+      "width": "electrolyzer_transverse_flow_width_o1_f1_rms_width",
+      "center": "electrolyzer_transverse_flow_width_o1_f1_rms_center"
+    }
+  }
+}

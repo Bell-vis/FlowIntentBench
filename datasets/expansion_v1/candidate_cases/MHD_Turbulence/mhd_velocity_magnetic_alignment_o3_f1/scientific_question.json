@@ -1,0 +1,7 @@
+{
+  "scientific_question": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Choose and explain an appropriate analysis procedure. Report the signed alignment coefficient.",
+  "f1_required_properties": [
+    "alignment"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

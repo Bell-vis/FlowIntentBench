@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the blunt-fin flow field, select the strongest high-speed flow region. Choose and state an appropriate criterion for retaining high-speed locations and a property measure for quantifying region strength. Treat locations connected through immediate grid neighbors along one grid axis as one contiguous region, represent the selected region by the mean spatial location of its retained high-speed locations, and report both that location and its strength.",
+  "semantic_contract_sha256": "df9a28fb28b4a4526b0c1c05325df6f4584a06260c0454fafa19473c07a92b90",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

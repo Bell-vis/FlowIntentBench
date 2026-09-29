@@ -1,0 +1,48 @@
+{
+  "dataset_id": "Kitchen",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/Visualization/Kitchen/",
+      "supports": [
+        "variables[name=velocity].physical_quantity"
+      ],
+      "notes": "The example uses the local velocity vector for streamline analysis in the kitchen flow field."
+    },
+    {
+      "url": "https://www.csc.kth.se/utbildning/kth/kurser/DD2257/visual09/LAB1.pdf",
+      "supports": [
+        "variables[name=p1].physical_quantity",
+        "variables[name=u1].physical_quantity",
+        "variables[name=v1].physical_quantity",
+        "variables[name=w1].physical_quantity",
+        "variables[name=ke].physical_quantity",
+        "variables[name=ep].physical_quantity",
+        "variables[name=h1].physical_quantity",
+        "variables[name=c1].physical_quantity",
+        "variables[name=c11].physical_quantity",
+        "variables[name=c12].physical_quantity",
+        "variables[name=c13].physical_quantity",
+        "variables[name=c14].physical_quantity",
+        "variables[name=c15].physical_quantity",
+        "variables[name=c16].physical_quantity",
+        "variables[name=c17].physical_quantity"
+      ],
+      "notes": "The source list maps p1, velocity components, turbulence quantities, enthalpy and concentration arrays; units are not asserted."
+    }
+  ]
+}

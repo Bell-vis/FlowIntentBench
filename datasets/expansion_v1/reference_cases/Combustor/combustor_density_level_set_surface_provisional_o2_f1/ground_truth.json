@@ -1,0 +1,165 @@
+{
+  "dataset_id": "Combustor",
+  "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+  "case_family_id": "combustor_density_level_set_surface_provisional",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat each connected component of a constant-Density isosurface as one candidate surface"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Use the finite stored Density 90th percentile level (0.41466653347) with linear quantile interpolation."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area"
+        }
+      ],
+      "evidence_ids": [
+        "op_002",
+        "op_003"
+      ]
+    },
+    {
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat each connected component of a constant-Density isosurface as one candidate surface"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Use the finite stored Density 90%-of-q90 level (0.373199880123) with linear quantile interpolation."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area"
+        }
+      ],
+      "evidence_ids": [
+        "op_002",
+        "op_003"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "findings": [
+        {
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_location",
+          "category": "location",
+          "statement": "The selected constant-Density isosurface component has area weighted centroid approximately [5.186062674753928, 0.24928450765948698, 30.535099120275166] in the supplied coordinate frame.",
+          "importance": "core",
+          "value": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_density",
+          "category": "quantity",
+          "statement": "The selected isosurface component is defined at Density level approximately 0.41466653347 in the stored scale.",
+          "importance": "core",
+          "value": 0.4146665334701538,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_surface_area",
+          "category": "characterization",
+          "statement": "The selected connected isosurface has area approximately 260.783939011 in the supplied coordinate frame.",
+          "importance": "core",
+          "value": 260.78393901064567,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "findings": [
+        {
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_location",
+          "category": "location",
+          "statement": "The selected constant-Density isosurface component has area weighted centroid approximately [5.858101895045389, 0.3510179990998257, 30.75925343076107] in the supplied coordinate frame.",
+          "importance": "core",
+          "value": [
+            5.858101895045389,
+            0.3510179990998257,
+            30.75925343076107
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_density",
+          "category": "quantity",
+          "statement": "The selected isosurface component is defined at Density level approximately 0.373199880123 in the stored scale.",
+          "importance": "core",
+          "value": 0.3731998801231384,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_surface_area",
+          "category": "characterization",
+          "statement": "The selected connected isosurface has area approximately 322.28122837 in the supplied coordinate frame.",
+          "importance": "core",
+          "value": 322.28122837044214,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Investigate the annular-combustor flow field for a coherent constant-density spatial structure that is scientifically relevant. You should decide how such a structure is defined, how one candidate is selected, and what spatial representation or aggregation is used to characterize it. Report the resulting structure’s representative location, defining density value, and spatial extent.",
+  "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+  "source": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o3_f1.json",
+  "wording_version": "1.2.1"
+}

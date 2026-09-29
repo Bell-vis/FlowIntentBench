@@ -1,0 +1,10 @@
+{
+  "scientific_question": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+  "f1_required_properties": [
+    "coefficient"
+  ],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+    "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+  }
+}

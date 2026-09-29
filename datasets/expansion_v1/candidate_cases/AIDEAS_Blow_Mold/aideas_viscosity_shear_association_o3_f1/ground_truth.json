@@ -1,0 +1,91 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "case_id": "aideas_viscosity_shear_association_o3_f1",
+  "case_family_id": "aideas_viscosity_shear_association",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "aideas_viscosity_shear_association_o3_f1_pearson",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Measure association by the volume-weighted Pearson correlation."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "aideas_viscosity_shear_association_o3_f1_spearman",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "aideas_viscosity_shear_association_o3_f1_pearson",
+      "findings": [
+        {
+          "finding_id": "aideas_viscosity_shear_association_o3_f1_pearson_association",
+          "category": "relation",
+          "statement": "report the numerical association coefficient",
+          "importance": "core",
+          "value": -0.80420676217054,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_aideas_viscosity_shear_association"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "aideas_viscosity_shear_association_o3_f1_spearman",
+      "findings": [
+        {
+          "finding_id": "aideas_viscosity_shear_association_o3_f1_spearman_association",
+          "category": "relation",
+          "statement": "report the numerical association coefficient",
+          "importance": "core",
+          "value": -0.98514646828256,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_aideas_viscosity_shear_association"
+          ]
+        }
+      ]
+    }
+  ]
+}

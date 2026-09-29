@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the annular-combustor flow field, identify one relevant coherent constant-density spatial structure. Choose an appropriate definition of such a structure, a criterion for selecting it, and a spatial representation or aggregation for characterizing it. Report the structure’s representative location, defining density value, and spatial extent.",
+  "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

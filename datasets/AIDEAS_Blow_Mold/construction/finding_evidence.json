@@ -1,0 +1,38 @@
+[
+  {
+    "evidence_id": "finding_aideas_pressure_heterogeneity",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"cv\": {\"value\": 0.45476666321227405}, \"relative_interdecile\": {\"value\": 1.033564625064584}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_aideas_viscosity_shear_association",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"pearson\": {\"value\": -0.804206762170537}, \"spearman\": {\"value\": -0.9851464682825593}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_aideas_high_shear_region",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"q90\": {\"centroid\": [-0.5523480592889605, -1.000671833680033, 17.203428120421968], \"cutoff\": 302.1725769042969, \"fraction\": 0.100006988295248, \"mean\": 438.7848331490648}, \"q95\": {\"centroid\": [-1.272465645519652, -0.9378938774883732, 17.560720361904796], \"cutoff\": 405.0636901855469, \"fraction\": 0.05000362591456695, \"mean\": 530.0606196022381}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "Rayleigh_Taylor",
+    "evidence_type": "operationalization",
+    "statement": "Explicit authored discretizations and quantitative definitions implemented in construction_recipes.py; these numerical anchors require scientific review and are not attributed to the source paper.",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "op_range",
+    "dataset_id": "Rayleigh_Taylor",
+    "evidence_type": "operationalization",
+    "statement": "Pinned input-array inspection records density minimum 0.88234514 and maximum 1.0000029. Levels 0.94 and 0.95 lie inside this range, near its midpoint; middle-density in this descriptive task refers to this stored range and is not an inferred thermodynamic phase boundary.",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "datasets/Rayleigh_Taylor/sources/snapshot_provenance.json"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

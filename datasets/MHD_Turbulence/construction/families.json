@@ -1,0 +1,220 @@
+{
+  "families": [
+    {
+      "family_id": "mhd_density_magnetic_association",
+      "title": "the spatial association between density and magnetic-field magnitude",
+      "scientific_target": "the spatial association between density and magnetic-field magnitude",
+      "finding_goal": "Characterize the spatial association between density and magnetic-field magnitude",
+      "scope": "the supplied compressible magnetohydrodynamic turbulence snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+        "o2_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+        "o3_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+        "o1_f2": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "association",
+          "result_key": "value",
+          "request_phrase": "the numerical association coefficient",
+          "requirement_statement": "report the numerical association coefficient",
+          "category": "relation",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "pearson": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "pearson",
+            "other_field": {
+              "name": "magnetic_field",
+              "association": "point",
+              "reduce": "magnitude"
+            }
+          }
+        },
+        "spearman": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "spearman",
+            "other_field": {
+              "name": "magnetic_field",
+              "association": "point",
+              "reduce": "magnitude"
+            }
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_mhd_density_magnetic_association"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "cross_field_relation",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "cross_field_relation",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "association"
+          ]
+        ],
+        "role_by_category": {
+          "relation": "association"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    },
+    {
+      "family_id": "mhd_velocity_magnetic_alignment",
+      "title": "the directional alignment between velocity and magnetic field",
+      "scientific_target": "the directional alignment between velocity and magnetic field",
+      "finding_goal": "Characterize the directional alignment between velocity and magnetic field",
+      "scope": "the supplied compressible magnetohydrodynamic turbulence snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Average the local cosine of the angle between the cell velocity and magnetic vectors. Weight cell statistics by cell volume and normalize by the included volume. Report the signed alignment coefficient.",
+        "o2_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the signed alignment coefficient.",
+        "o3_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Choose and explain an appropriate analysis procedure. Report the signed alignment coefficient.",
+        "o1_f2": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Average the local cosine of the angle between the cell velocity and magnetic vectors. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "alignment",
+          "result_key": "value",
+          "request_phrase": "the signed alignment coefficient",
+          "requirement_statement": "report the signed alignment coefficient",
+          "category": "relation",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "mean_cosine": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Average the local cosine of the angle between the cell velocity and magnetic vectors.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "vector_alignment",
+            "field": {
+              "name": "velocity",
+              "association": "point",
+              "reduce": "magnitude"
+            },
+            "measure": "mean_cosine",
+            "other_field": {
+              "name": "magnetic_field",
+              "association": "point",
+              "reduce": "magnitude"
+            }
+          }
+        },
+        "normalized_dot": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Divide the volume-mean dot product by the square root of the product of the two volume-mean squared vector magnitudes.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "vector_alignment",
+            "field": {
+              "name": "velocity",
+              "association": "point",
+              "reduce": "magnitude"
+            },
+            "measure": "normalized_dot",
+            "other_field": {
+              "name": "magnetic_field",
+              "association": "point",
+              "reduce": "magnitude"
+            }
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_mhd_velocity_magnetic_alignment"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "vector_relation",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "vector_relation",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "alignment"
+          ]
+        ],
+        "role_by_category": {
+          "relation": "alignment"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    }
+  ]
+}

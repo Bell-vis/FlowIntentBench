@@ -1,0 +1,7 @@
+{
+  "scientific_question": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+  "f1_required_properties": [
+    "coefficient"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

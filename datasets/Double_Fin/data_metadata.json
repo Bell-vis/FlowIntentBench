@@ -1,0 +1,35 @@
+{
+  "format": {
+    "type": "VTK",
+    "details": {}
+  },
+  "grid": {
+    "type": "structured",
+    "dimensions": null,
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "P/Pinf",
+      "physical_quantity": "P/Pinf",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

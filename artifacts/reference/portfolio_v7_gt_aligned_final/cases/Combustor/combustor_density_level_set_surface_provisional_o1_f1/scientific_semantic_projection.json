@@ -1,0 +1,77 @@
+{
+  "concept_id": "combustor_density_level_set_surface_provisional",
+  "dataset_id": "Combustor",
+  "family_id": "combustor_density_level_set_surface_provisional",
+  "finding_responsibility": "F1",
+  "finding_semantics": {
+    "finding_goal": "identify and report the requested density feature",
+    "fixed_finding_requirements": [
+      {
+        "category": "location",
+        "normalized_meaning": "report the selected structure's representative location"
+      },
+      {
+        "category": "quantity",
+        "normalized_meaning": "report its defining Density isovalue"
+      },
+      {
+        "category": "characterization",
+        "normalized_meaning": "report its surface area"
+      }
+    ],
+    "normalized_demand": "identify the requested density feature and report its representative location, defining density level, and spatial extent",
+    "required_finding_roles": [
+      "spatial_location",
+      "defining_density_level",
+      "surface_extent"
+    ]
+  },
+  "observable_scientific_semantics": {
+    "required_capabilities": {
+      "ISOSURFACE_EXTRACTION": true,
+      "SCALAR_FIELD_SEMANTICS:Density": true,
+      "SPATIAL_COORDINATES": true
+    },
+    "scientific_semantic_capabilities": {}
+  },
+  "operationalization_responsibility": "user_specified",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "aggregation_or_representation"
+  ],
+  "provisional_target_status": "PROVISIONAL_TARGET_PENDING_HUMAN_APPROVAL",
+  "resolved_operationalization": [
+    {
+      "canonical_id": "provisional_constant_density_connected_surface",
+      "dimension_id": "feature_definition",
+      "normalized_meaning": "treat each connected component of a constant-Density isosurface as one candidate surface"
+    },
+    {
+      "canonical_id": "provisional_density_q90_largest_surface",
+      "dimension_id": "criterion",
+      "normalized_meaning": "use the 90th percentile of finite stored Density values with linear quantile interpolation as the isovalue"
+    },
+    {
+      "canonical_id": "provisional_surface_centroid_area",
+      "dimension_id": "aggregation_or_representation",
+      "normalized_meaning": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area"
+    }
+  ],
+  "scientific_scope": {
+    "condition_constraints": [],
+    "scope_constraints": [
+      "the annular-combustor flow field"
+    ],
+    "selection_constraints": [
+      "select and characterize one connected density-isosurface component"
+    ]
+  },
+  "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+  "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+  "unresolved_operationalization_dimensions": [],
+  "verification_semantics": {
+    "deterministic_verification_required_claim_types": [],
+    "semantic_adjudication_required": true
+  }
+}

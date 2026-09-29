@@ -1,0 +1,9 @@
+{
+  "scientific_question": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field. Measure width along the z axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Select and explain findings that characterize this scientific target.",
+  "f1_required_properties": [],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field.",
+    "property_measure": "Measure width along the z axis as the weighted root-mean-square distance from its weighted center.",
+    "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+  }
+}

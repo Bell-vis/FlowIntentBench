@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "NASA_LOx_Post",
+    "evidence_type": "finding",
+    "statement": "The LOx post flow example supports characterizing a selected high-speed region by location, velocity magnitude, and coordinate extent; exact benchmark values come from execution.",
+    "source_id": "src_001",
+    "locator": {"section": "Description and Code", "page": null, "figure": "12-16", "code_location": "LOx.cxx: vtkStreamTracer and vtkTubeFilter"},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

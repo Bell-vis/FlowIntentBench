@@ -1,0 +1,32 @@
+{
+  "dataset_id": "Carotid",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 2681486,
+      "checksum": "3f5dac7baa8ed60fa094f67b918d55add4d55f1d498fad587d1850915f60032d",
+      "checksum_algorithm": "sha256",
+      "source_url": null,
+      "path": "Carotid/carotid.vtk",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTK",
+    "canonical_reader": "vtkDataSetReader",
+    "reader_configuration": {
+      "read_all_scalars": true,
+      "read_all_vectors": true
+    },
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "source_urls": [
+      "https://book.vtk.org/en/latest/VTKBook/06Chapter6.html",
+      "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/CarotidFlow/"
+    ]
+  }
+}

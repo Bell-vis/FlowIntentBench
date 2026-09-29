@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context was supplied; the review is limited to the provided dataset metadata and frozen semantic contract."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful and actionable for the LOx-post flow field. It faithfully identifies the strongest high-speed flow region, preserves the stated scope, exposes all fixed operationalizations including the non-zero 90th-percentile threshold, six-neighbor connected-region definition, mean-location representation, and peak-speed strength measure, and correctly requests the F1 location and strength findings. No unsupported physical assertion, unintended operationalization choice, or unnecessary protocol burden is introduced.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "55bc95f73cf6021eccb52eb2d6e3871eb1c8327027a3cb67d263ca62626f3164",
+  "review_packet_sha256": "7ff2fb9c54f0b932a5de4877dabd57abaa79c95671e968d94c3a555a56ecdb32",
+  "reviewed_model_visible_text_sha256": "264876a9a38c2fa18471999d638167a7c2746a2ac10e29c79bbcd5301e7edb08",
+  "reviewed_model_visible_text": "Within the LOx-post flow field, identify the strongest high-speed flow region by defining high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed in the stored velocity scale, with locations connected through immediate grid neighbors along one grid axis forming one contiguous region. Represent that region by the mean spatial location of its retained high-speed locations, use peak speed as its strength measure, and report both its location and strength.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "nasa_lox_post_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "7ff2fb9c54f0b932a5de4877dabd57abaa79c95671e968d94c3a555a56ecdb32",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:31:16.514076+00:00",
+    "latency_seconds": 16.640157,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context was supplied; the review is limited to the provided dataset metadata and frozen semantic contract.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful and actionable for the LOx-post flow field. It faithfully identifies the strongest high-speed flow region, preserves the stated scope, exposes all fixed operationalizations including the non-zero 90th-percentile threshold, six-neighbor connected-region definition, mean-location representation, and peak-speed strength measure, and correctly requests the F1 location and strength findings. No unsupported physical assertion, unintended operationalization choice, or unnecessary protocol burden is introduced.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context was supplied; the review is limited to the provided dataset metadata and frozen semantic contract."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful and actionable for the LOx-post flow field. It faithfully identifies the strongest high-speed flow region, preserves the stated scope, exposes all fixed operationalizations including the non-zero 90th-percentile threshold, six-neighbor connected-region definition, mean-location representation, and peak-speed strength measure, and correctly requests the F1 location and strength findings. No unsupported physical assertion, unintended operationalization choice, or unnecessary protocol burden is introduced."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0090d09bb1698dfa016aa6ddd4b96487d0a8b3dd94efe9b61c": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1667,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1667,
+            "output_tokens": 0
+          },
+          "rs_0090d09bb1698dfa016aa6ddd559e887d095f0897b30c934bf": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 381
+          },
+          "msg_0090d09bb1698dfa016aa6dddf6d6087d0b69c8f4cd699dab5": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 210
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 210
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2283,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 591,
+      "output_tokens_details": {
+        "reasoning_tokens": 381
+      },
+      "total_tokens": 2874
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "55bc95f73cf6021eccb52eb2d6e3871eb1c8327027a3cb67d263ca62626f3164",
+    "review_packet_sha256": "7ff2fb9c54f0b932a5de4877dabd57abaa79c95671e968d94c3a555a56ecdb32",
+    "reviewed_model_visible_text_sha256": "264876a9a38c2fa18471999d638167a7c2746a2ac10e29c79bbcd5301e7edb08",
+    "reviewed_model_visible_text": "Within the LOx-post flow field, identify the strongest high-speed flow region by defining high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed in the stored velocity scale, with locations connected through immediate grid neighbors along one grid axis forming one contiguous region. Represent that region by the mean spatial location of its retained high-speed locations, use peak speed as its strength measure, and report both its location and strength."
+  }
+}

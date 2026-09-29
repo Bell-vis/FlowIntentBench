@@ -1,0 +1,41 @@
+{
+  "physical_setting": "CFD flow in a small office",
+  "objects": [
+    {
+      "name": "bookcases",
+      "description": "Bookcases described in the office scene."
+    },
+    {
+      "name": "desks",
+      "description": "Desks described in the office scene."
+    },
+    {
+      "name": "desk_heat_source",
+      "description": "A small intense heat source on one desk."
+    },
+    {
+      "name": "office",
+      "description": "The small office represented by the structured-grid CFD dataset."
+    },
+    {
+      "name": "window",
+      "description": "A window described in the office scene."
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "ventilation_inlet",
+      "type": "inlet",
+      "description": "The inlet of the ventilation system."
+    },
+    {
+      "name": "ventilation_outlet",
+      "type": "outlet",
+      "description": "The outlet of the ventilation system."
+    }
+  ],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

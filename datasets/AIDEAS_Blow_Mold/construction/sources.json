@@ -1,0 +1,19 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "dataset_documentation",
+      "title": "the single-channel blow-mold flow simulation",
+      "venue": "Official dataset documentation",
+      "report_id": "https://zenodo.org/records/15720265"
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "example_source_code",
+      "title": "FlowIntentBench explicit numerical operationalization recipes",
+      "venue": "FlowIntentBench",
+      "report_id": "flowintentbench/construction_recipes.py"
+    }
+  ]
+}

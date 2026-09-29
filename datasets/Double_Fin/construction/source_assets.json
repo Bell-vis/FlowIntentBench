@@ -1,0 +1,20 @@
+{
+  "record_url": "https://zenodo.org/records/10697026",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "assets": [
+    {
+      "path": "raw/Pressure_Paraview_DF_10deg.vtk",
+      "url": "https://zenodo.org/api/records/10697026/files/Pressure_Paraview_DF_10deg.vtk/content",
+      "checksum": "md5:52f41eeca44297c6db14a8ae150a1830",
+      "size_bytes": 22784918
+    },
+    {
+      "path": "raw/Dual Fin 10deg.stl",
+      "url": "https://zenodo.org/api/records/10697026/files/Dual%20Fin%2010deg.stl/content",
+      "checksum": "md5:7dec3c94c27f386d99e3d40c575496b9",
+      "size_bytes": 2284
+    }
+  ]
+}

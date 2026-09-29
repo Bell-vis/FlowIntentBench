@@ -1,0 +1,68 @@
+{
+  "dataset_id": "Office",
+  "case_id": "office_speed_zones_o1_f1",
+  "case_family_id": "office_speed_zones",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "o1_speed_zones",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "o1_speed_zones",
+      "findings": [
+        {
+          "finding_id": "o1_speed_zones_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [0.06812500045634806, 2.343749985098839, 2.389375001192093] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "o1_speed_zones_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 0.80494 in the stored velocity scale.",
+          "importance": "core",
+          "value": 0.8049350186348156,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

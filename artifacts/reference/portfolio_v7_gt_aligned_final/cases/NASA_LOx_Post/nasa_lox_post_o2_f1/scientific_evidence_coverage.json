@@ -1,0 +1,244 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "nasa_lox_post_o2_f1",
+  "claims": [
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_peak:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_peak:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_peak:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use peak speed as the strength of each retained region."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_peak:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_mean:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_mean:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_mean:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use mean speed across retained locations as the strength of each retained region."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_mean:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q75_mean:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q75_mean:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Retain locations at or above the 75th percentile of non-zero recorded speed values."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q75_mean:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "Use mean speed across retained locations as the strength of each retained region."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q75_mean:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_peak:F:nasa_lox_post_o2_f1_o2_q90_peak_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_peak:F:nasa_lox_post_o2_f1_o2_q90_peak_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has peak speed strength approximately 1.3914441 in the stored velocity scale."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_mean:F:nasa_lox_post_o2_f1_o2_q90_mean_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q90_mean:F:nasa_lox_post_o2_f1_o2_q90_mean_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has mean speed strength approximately 1.2483379 in the stored velocity scale."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q75_mean:F:nasa_lox_post_o2_f1_o2_q75_mean_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [-0.2586535748643758, 0.004317644593928942, 3.18852633498706] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "nasa_lox_post_o2_f1_o2_q75_mean:F:nasa_lox_post_o2_f1_o2_q75_mean_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has mean speed strength approximately 1.1169057 in the stored velocity scale."
+    }
+  ],
+  "dataset_id": "NASA_LOx_Post",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

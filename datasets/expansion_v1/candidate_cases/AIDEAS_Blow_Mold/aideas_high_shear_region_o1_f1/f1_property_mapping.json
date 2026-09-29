@@ -1,0 +1,9 @@
+{
+  "case_id": "aideas_high_shear_region_o1_f1",
+  "mapping": {
+    "aideas_high_shear_region_o1_f1_q90": {
+      "centroid": "aideas_high_shear_region_o1_f1_q90_centroid",
+      "mean": "aideas_high_shear_region_o1_f1_q90_mean"
+    }
+  }
+}

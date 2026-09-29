@@ -1,0 +1,65 @@
+{
+  "family_id": "mhd_velocity_magnetic_alignment",
+  "inputs": [
+    {
+      "path": "MHD_Turbulence/snapshot.vtk",
+      "sha256": "1d66a7f150262e50490286b464a8d0874dd4fe975947e2833f5386181804890c"
+    }
+  ],
+  "operations": {
+    "mean_cosine": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Average the local cosine of the angle between the cell velocity and magnetic vectors.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "vector_alignment",
+        "field": {
+          "name": "velocity",
+          "association": "point",
+          "reduce": "magnitude"
+        },
+        "measure": "mean_cosine",
+        "other_field": {
+          "name": "magnetic_field",
+          "association": "point",
+          "reduce": "magnitude"
+        }
+      }
+    },
+    "normalized_dot": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Divide the volume-mean dot product by the square root of the product of the two volume-mean squared vector magnitudes.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "vector_alignment",
+        "field": {
+          "name": "velocity",
+          "association": "point",
+          "reduce": "magnitude"
+        },
+        "measure": "normalized_dot",
+        "other_field": {
+          "name": "magnetic_field",
+          "association": "point",
+          "reduce": "magnitude"
+        }
+      }
+    }
+  },
+  "definition_sha256": "5a93c704703de6eb50b34ed11d900ad0905b795a91a9a9f22bbb9c7a600c3fd6",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "mean_cosine": {
+      "value": 0.0035234276525179
+    },
+    "normalized_dot": {
+      "value": 0.012986694902147
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

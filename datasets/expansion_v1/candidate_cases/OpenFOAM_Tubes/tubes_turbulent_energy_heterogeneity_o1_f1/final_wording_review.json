@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence payload is supplied to verify the numerical result, although the requested coefficient is computable from the supplied dataset."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question clearly asks for the spatial nonuniformity of turbulent kinetic energy k within the specified complete three-dimensional mesh and stored time. It exposes all fixed operationalization choices, including cell-volume weighting, normalization, field-value handling, and the relative-dispersion measure, while assigning the required numerical coefficient to the respondent. No unresolved operationalization choice is closed or unintended responsibility introduced, and the request is scientifically meaningful and answerable in principle.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "d96d1938ffab8d122076107b7133f2c03be6b0aec91f81daf843bc4f25df62cf",
+  "review_packet_sha256": "f042529f610f3a6d398bc42d46e6fe3dd6c7003d2cfeca037013eae94a237566",
+  "reviewed_model_visible_text_sha256": "533b4489ce423d049524eccc44c179d08998d3b7a710c407a932bd66eeb50913",
+  "reviewed_model_visible_text": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "tubes_turbulent_energy_heterogeneity_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "f042529f610f3a6d398bc42d46e6fe3dd6c7003d2cfeca037013eae94a237566",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:40:43.751171+00:00",
+    "latency_seconds": 12.196741,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence payload is supplied to verify the numerical result, although the requested coefficient is computable from the supplied dataset.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question clearly asks for the spatial nonuniformity of turbulent kinetic energy k within the specified complete three-dimensional mesh and stored time. It exposes all fixed operationalization choices, including cell-volume weighting, normalization, field-value handling, and the relative-dispersion measure, while assigning the required numerical coefficient to the respondent. No unresolved operationalization choice is closed or unintended responsibility introduced, and the request is scientifically meaningful and answerable in principle.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence payload is supplied to verify the numerical result, although the requested coefficient is computable from the supplied dataset."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question clearly asks for the spatial nonuniformity of turbulent kinetic energy k within the specified complete three-dimensional mesh and stored time. It exposes all fixed operationalization choices, including cell-volume weighting, normalization, field-value handling, and the relative-dispersion measure, while assigning the required numerical coefficient to the respondent. No unresolved operationalization choice is closed or unintended responsibility introduced, and the request is scientifically meaningful and answerable in principle."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0322e0b428ed2217016aa6e0107f5887d29cd6efa10ab78a9c": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1837,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1837,
+            "output_tokens": 0
+          },
+          "rs_0322e0b428ed2217016aa6e010f73c87d295b88fe3d6a3c82b": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 281
+          },
+          "msg_0322e0b428ed2217016aa6e0176f8c87d28bad8ded6fa32946": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 209
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 209
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2453,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 490,
+      "output_tokens_details": {
+        "reasoning_tokens": 281
+      },
+      "total_tokens": 2943
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "d96d1938ffab8d122076107b7133f2c03be6b0aec91f81daf843bc4f25df62cf",
+    "review_packet_sha256": "f042529f610f3a6d398bc42d46e6fe3dd6c7003d2cfeca037013eae94a237566",
+    "reviewed_model_visible_text_sha256": "533b4489ce423d049524eccc44c179d08998d3b7a710c407a932bd66eeb50913",
+    "reviewed_model_visible_text": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical coefficient."
+  }
+}

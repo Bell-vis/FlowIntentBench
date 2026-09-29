@@ -1,0 +1,9 @@
+{
+  "case_id": "rt_mixing_width_o1_f1",
+  "mapping": {
+    "rt_mixing_width_o1_f1_rms": {
+      "width": "rt_mixing_width_o1_f1_rms_width",
+      "center": "rt_mixing_width_o1_f1_rms_center"
+    }
+  }
+}

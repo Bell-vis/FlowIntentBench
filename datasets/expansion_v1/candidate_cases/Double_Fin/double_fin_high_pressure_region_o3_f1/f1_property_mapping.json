@@ -1,0 +1,13 @@
+{
+  "case_id": "double_fin_high_pressure_region_o3_f1",
+  "mapping": {
+    "double_fin_high_pressure_region_o3_f1_q90": {
+      "centroid": "double_fin_high_pressure_region_o3_f1_q90_centroid",
+      "mean": "double_fin_high_pressure_region_o3_f1_q90_mean"
+    },
+    "double_fin_high_pressure_region_o3_f1_q95": {
+      "centroid": "double_fin_high_pressure_region_o3_f1_q95_centroid",
+      "mean": "double_fin_high_pressure_region_o3_f1_q95_mean"
+    }
+  }
+}

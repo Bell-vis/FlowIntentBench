@@ -1,0 +1,9 @@
+{
+  "case_id": "tubes_axial_activity_width_o1_f2",
+  "mapping": {
+    "tubes_axial_activity_width_o1_f2_rms": {
+      "width": "tubes_axial_activity_width_o1_f2_rms_width",
+      "center": "tubes_axial_activity_width_o1_f2_rms_center"
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "tubes_turbulent_energy_heterogeneity_o2_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "tubes_turbulent_energy_heterogeneity_o2_f1",
+    "family_id": "tubes_turbulent_energy_heterogeneity",
+    "dataset_id": "OpenFOAM_Tubes",
+    "condition": "O2-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_turbulent_energy_heterogeneity_o2_f1/case_input.json",
+    "case_input_sha256": "c8fbaa7b9565a2af8377f0eeaaa4328493762aa143d2c61eeedf63637fb862f3",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_turbulent_energy_heterogeneity_o2_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "34697c2fa28c02fee40e4772b981edd2e32415f484b07da5a47335f7e121380f",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_turbulent_energy_heterogeneity_o2_f1/case_context.json",
+    "case_context_sha256": "0bf3e1d438710e8543e74ed5c3383101b27a725e81ab1225503ec0756f3c580e",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_turbulent_energy_heterogeneity_o2_f1/ground_truth.json",
+    "ground_truth_sha256": "f7ca71a59ff2def072f9e09b591a64a2f33683bf99dd219a29a61f5866c593ce"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "tubes_turbulent_energy_heterogeneity",
+    "title": "the spatial nonuniformity of turbulent kinetic energy k",
+    "scientific_target": "the spatial nonuniformity of turbulent kinetic energy k",
+    "finding_goal": "Characterize the spatial nonuniformity of turbulent kinetic energy k",
+    "scope": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical coefficient.",
+      "o2_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+      "o3_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+      "o1_f2": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "coefficient",
+        "result_key": "value",
+        "request_phrase": "the numerical coefficient",
+        "requirement_statement": "report the numerical coefficient",
+        "category": "quantity",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "cv": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "k",
+            "association": "cell"
+          },
+          "measure": "cv"
+        }
+      },
+      "relative_interdecile": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "k",
+            "association": "cell"
+          },
+          "measure": "relative_interdecile"
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_tubes_turbulent_energy_heterogeneity"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "spatial_distribution",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "spatial_distribution",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "coefficient"
+        ]
+      ],
+      "role_by_category": {
+        "quantity": "coefficient"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/OpenFOAM_Tubes/construction/families.json",
+    "sha256": "912821a8b63e7b056409e1e8e617c3ff9463eb6ce3d6f9332a59a5d7bf9ae38b"
+  },
+  "branch_execution_evidence": {
+    "tubes_turbulent_energy_heterogeneity_o2_f1_cv": {
+      "case_id": "tubes_turbulent_energy_heterogeneity_o2_f1",
+      "dataset_id": "OpenFOAM_Tubes",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 2.4740340020883
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/tubes_turbulent_energy_heterogeneity.json",
+        "sha256": "440f217a0493672fb7aa709b27e43a9d8c976ba09dea4c1f7173f20bca127110"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "fd0eaff10cffc24f31a150a79a4f3dc561757a748e5879b7b6d6a7452233c893",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "OpenFOAM_Tubes/flow.vtu",
+            "sha256": "9a35f9125ed8a7938a395e59eee8aee749c0e2ca218c68cfcaa0d9cfc9edc83b"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "k",
+            "association": "cell"
+          },
+          "measure": "cv"
+        },
+        "definition_sha256": "6632974b44628a5fdb705547ec0ba5480927eb578a9137fc4674cdf1b1e568e9",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "73a6e72a5104962393004b25821878fd7a74af98dcf700fca5560d8965bc1625"
+    },
+    "tubes_turbulent_energy_heterogeneity_o2_f1_relative_interdecile": {
+      "case_id": "tubes_turbulent_energy_heterogeneity_o2_f1",
+      "dataset_id": "OpenFOAM_Tubes",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 90.691499059154
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/tubes_turbulent_energy_heterogeneity.json",
+        "sha256": "440f217a0493672fb7aa709b27e43a9d8c976ba09dea4c1f7173f20bca127110"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "fd0eaff10cffc24f31a150a79a4f3dc561757a748e5879b7b6d6a7452233c893",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "OpenFOAM_Tubes/flow.vtu",
+            "sha256": "9a35f9125ed8a7938a395e59eee8aee749c0e2ca218c68cfcaa0d9cfc9edc83b"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "k",
+            "association": "cell"
+          },
+          "measure": "relative_interdecile"
+        },
+        "definition_sha256": "6632974b44628a5fdb705547ec0ba5480927eb578a9137fc4674cdf1b1e568e9",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "fb2a067c8d226b22092014c3e06c35049e29f9ce3f20c61daf12cb53d721eab0"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "OpenFOAM_Tubes",
+    "case_id": "tubes_turbulent_energy_heterogeneity_o2_f1",
+    "semantic_contract_sha256": "6a5465b9c3cd86996aabafbd93a5748cdbe5984b112131469916e071ea4ee41f",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "tubes_turbulent_energy_heterogeneity_o2_f1_cv",
+        "finding_id": "tubes_turbulent_energy_heterogeneity_o2_f1_cv_coefficient",
+        "scientific_finding_policy_key": "2a392679cb84a9a4d047e6d9d5147976a1e58bcbb70d3bad86f9252ff87fd46b",
+        "policy_identity": {
+          "dataset_id": "OpenFOAM_Tubes",
+          "case_family_id": "tubes_turbulent_energy_heterogeneity",
+          "scientific_target": "the spatial nonuniformity of turbulent kinetic energy k",
+          "effective_o_semantic_sha256": "9103bd466662e2f14f6eda18574480cd9339a47d5894c3b229d1fad81730e390",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/value",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.4740340020883,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "3d078463dcf65e6ee363f18928eefd56175c6ebab28c406ca75f5a3c9cd70c96"
+      },
+      {
+        "operationalization_id": "tubes_turbulent_energy_heterogeneity_o2_f1_relative_interdecile",
+        "finding_id": "tubes_turbulent_energy_heterogeneity_o2_f1_relative_interdecile_coefficient",
+        "scientific_finding_policy_key": "a94f9c371e817a3d9d0f0412bf782cb7c3bc96521b1431bc62c54dc17787d62d",
+        "policy_identity": {
+          "dataset_id": "OpenFOAM_Tubes",
+          "case_family_id": "tubes_turbulent_energy_heterogeneity",
+          "scientific_target": "the spatial nonuniformity of turbulent kinetic energy k",
+          "effective_o_semantic_sha256": "09a600d865467a973e27578dd1b4501e7ab4b7032443c1eafae889a5130e4f2b",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/value",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 90.691499059154,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "24f4342bb9f0c9f3c2ead125331bec0b4667edf236b1517221cb1863ac3a5d73"
+      }
+    ],
+    "verification_policy_sha256": "7025ddec891b3b1da5e59e20ec6115384135bf1f65f453afc34ac2163ae85458"
+  }
+}

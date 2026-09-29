@@ -1,0 +1,43 @@
+{
+  "dataset_id": "Blunt_Fin",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html",
+      "supports": [
+        "format.details.encoding",
+        "format.details.precision",
+        "format.details.endianness",
+        "format.details.has_byte_count",
+        "variables[name=Density].physical_quantity",
+        "variables[name=Momentum].physical_quantity",
+        "variables[name=StagnationEnergy].physical_quantity",
+        "variables[name=Velocity].physical_quantity",
+        "variables[name=VelocityMagnitude].physical_quantity"
+      ],
+      "notes": "Canonical VTK PLOT3D documentation defines XYZ/Q roles, stored density/momentum/energy and reader functions 153/200."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/BluntStreamlines/",
+      "supports": [
+        "data_files[role=grid]",
+        "data_files[role=solution]"
+      ],
+      "notes": "The example confirms the local XYZ/Q pairing and VTK PLOT3D reader usage."
+    }
+  ]
+}

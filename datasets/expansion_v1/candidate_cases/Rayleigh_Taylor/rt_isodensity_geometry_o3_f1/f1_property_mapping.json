@@ -1,0 +1,13 @@
+{
+  "case_id": "rt_isodensity_geometry_o3_f1",
+  "mapping": {
+    "rt_isodensity_geometry_o3_f1_rho094": {
+      "area": "rt_isodensity_geometry_o3_f1_rho094_area",
+      "centroid": "rt_isodensity_geometry_o3_f1_rho094_centroid"
+    },
+    "rt_isodensity_geometry_o3_f1_rho095": {
+      "area": "rt_isodensity_geometry_o3_f1_rho095_area",
+      "centroid": "rt_isodensity_geometry_o3_f1_rho095_centroid"
+    }
+  }
+}

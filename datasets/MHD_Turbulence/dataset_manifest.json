@@ -1,0 +1,29 @@
+{
+  "dataset_id": "MHD_Turbulence",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 7341849,
+      "checksum": "1d66a7f150262e50490286b464a8d0874dd4fe975947e2833f5386181804890c",
+      "checksum_algorithm": "sha256",
+      "source_url": "https://polymathic-ai.org/the_well/datasets/MHD_64/",
+      "path": "MHD_Turbulence/snapshot.vtk",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTK",
+    "canonical_reader": "vtkDataSetReader",
+    "reader_configuration": {},
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "record_url": "https://polymathic-ai.org/the_well/datasets/MHD_64/",
+    "license": "CC-BY-4.0",
+    "parent_source_group": "MHD_Turbulence",
+    "sample_note": "Analysis domain is exactly the stored mesh. No inferred time history or physical unit conversion."
+  }
+}

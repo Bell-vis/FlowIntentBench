@@ -1,0 +1,38 @@
+[
+  {
+    "evidence_id": "finding_rt_mixing_width",
+    "dataset_id": "Rayleigh_Taylor",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"interdecile\": {\"center\": 0.4908417078628146, \"width\": 0.26771652698516846}, \"rms\": {\"center\": 0.4908417078628146, \"width\": 0.10502449665563413}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_rt_density_vertical_motion",
+    "dataset_id": "Rayleigh_Taylor",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"pearson\": {\"value\": -0.47669702665917796}, \"spearman\": {\"value\": -0.45174451198861054}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_rt_isodensity_geometry",
+    "dataset_id": "Rayleigh_Taylor",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"rho094\": {\"area\": 2.708911418914795, \"centroid\": [0.5236611366271973, 0.5022408962249756, 0.4930698871612549]}, \"rho095\": {\"area\": 2.6944425106048584, \"centroid\": [0.5238097310066223, 0.5023357272148132, 0.4943310022354126]}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

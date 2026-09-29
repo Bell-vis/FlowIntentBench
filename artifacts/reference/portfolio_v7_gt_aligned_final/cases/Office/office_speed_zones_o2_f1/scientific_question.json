@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the office velocity field, which high-speed ventilation region is strongest? Choose an appropriate criterion for retaining high-speed locations and an appropriate measure of region strength. Treat locations connected through shared grid faces as one contiguous region, represent each region by the mean spatial location of its retained high-speed locations, and report the strongest region’s location and strength. Use six-neighbor connectivity along one grid axis.",
+  "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

@@ -1,0 +1,9 @@
+{
+  "physical_setting": "the supplied double-fin reconstructed pressure field Stored coordinates and field scales are used without assigning undeclared SI units. P/Pinf is reconstructed and includes large outliers; no automatic clipping or shock identification is applied.",
+  "objects": [],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

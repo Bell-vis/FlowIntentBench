@@ -1,0 +1,9 @@
+{
+  "case_id": "nasa_lox_post_o2_f1",
+  "dataset_id": "NASA_LOx_Post",
+  "include_fact_ids": [
+    "lox_physical_setting",
+    "lox_flat_plate",
+    "lox_cylindrical_post"
+  ]
+}

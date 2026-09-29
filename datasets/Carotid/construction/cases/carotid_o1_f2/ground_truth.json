@@ -1,0 +1,106 @@
+{
+  "dataset_id": "Carotid",
+  "case_id": "carotid_o1_f2",
+  "case_family_id": "carotid_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero speed values computed as the Euclidean magnitude of the stored point-data vector array named `vectors`."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "findings": [
+        {
+          "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [137.80844557699308, 94.49144521295959, 15.773061521659992] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            137.80844557699308,
+            94.49144521295959,
+            15.773061521659992
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 22.695 in the stored velocity scale.",
+          "importance": "core",
+          "value": 22.694927991153424,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_coordinate_span",
+          "category": "characterization",
+          "statement": "The strongest region has coordinate-space span approximately [75.0, 48.0, 44.0] along the dataset axes; no physical unit is inferred.",
+          "importance": "core",
+          "value": [
+            75.0,
+            48.0,
+            44.0
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_point_count",
+          "category": "quantity",
+          "statement": "The selected region contains 13735 retained locations.",
+          "importance": "supporting",
+          "value": 13735,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 642 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 642,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "case_id": "kitchen_o1_f1",
+  "case_family_id": "kitchen_flow_regions",
+  "dataset_id": "Kitchen",
+  "scientific_target": "high-speed flow regions in the kitchen airflow field",
+  "finding_goal": "characterize the strongest high-speed flow region in the kitchen airflow field",
+  "operationalization_responsibility": "user_specified",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [],
+  "scope_constraints": [
+    {
+      "statement": "in the kitchen airflow field",
+      "question_fragment": "in the kitchen airflow field"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "select the strongest region",
+      "question_fragment": "strongest"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "Face-connected locations form one contiguous high-speed flow region.",
+      "question_fragment": "treat locations connected through shared grid faces as one contiguous region"
+    },
+    {
+      "category": "criterion",
+      "statement": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale",
+      "question_fragment": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale"
+    },
+    {
+      "category": "property_measure",
+      "statement": "use peak speed as the measure of strength",
+      "question_fragment": "use peak speed as the measure of strength"
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations",
+      "question_fragment": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    }
+  ],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the location of the strongest region",
+      "question_fragment": "report its location"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the strength of the strongest region",
+      "question_fragment": "strength"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "dataset_id": "Blunt_Fin",
+  "case_id": "blunt_fin_o1_f2",
+  "case_family_id": "blunt_fin_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "blunt_fin_o1_f2_o1_high_speed_regions_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "blunt_fin_o1_f2_o1_high_speed_regions_open",
+      "findings": [
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [-0.43620374257338634, 3.0521042773374156, 2.5893470661131714] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            -0.43620374257338634,
+            3.0521042773374156,
+            2.5893470661131714
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.1229 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.1229319383189305,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_coordinate_span",
+          "category": "characterization",
+          "statement": "The strongest region has coordinate-space span approximately [22.177950859069824, 8.327558517456055, 5.3932197988033295] along the dataset axes; no physical unit is inferred.",
+          "importance": "core",
+          "value": [
+            22.177950859069824,
+            8.327558517456055,
+            5.3932197988033295
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_point_count",
+          "category": "quantity",
+          "statement": "The selected region contains 3831 retained locations.",
+          "importance": "supporting",
+          "value": 3831,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 6 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 6,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "scientific_question": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select and explain findings that characterize this scientific target.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTU",
+        "details": {}
+      },
+      "grid": {
+        "type": "unstructured",
+        "dimensions": null,
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "Velocity [m/s]",
+          "physical_quantity": "Velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": "m/s",
+          "source": "stored"
+        },
+        {
+          "name": "Viscosity [Pa s]",
+          "physical_quantity": "Viscosity",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": "Pa s",
+          "source": "stored"
+        },
+        {
+          "name": "NormShearRate [1/s]",
+          "physical_quantity": "NormShearRate",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": "1/s",
+          "source": "stored"
+        },
+        {
+          "name": "Pressure [bar]",
+          "physical_quantity": "Pressure",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": "bar",
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "the single-channel blow-mold flow simulation Stored coordinates and field scales are used without assigning undeclared SI units.",
+    "objects": [],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

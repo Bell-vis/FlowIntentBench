@@ -1,0 +1,53 @@
+{
+  "family_id": "tubes_turbulent_energy_heterogeneity",
+  "inputs": [
+    {
+      "path": "OpenFOAM_Tubes/flow.vtu",
+      "sha256": "9a35f9125ed8a7938a395e59eee8aee749c0e2ca218c68cfcaa0d9cfc9edc83b"
+    }
+  ],
+  "operations": {
+    "cv": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "dispersion",
+        "field": {
+          "name": "k",
+          "association": "cell"
+        },
+        "measure": "cv"
+      }
+    },
+    "relative_interdecile": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "dispersion",
+        "field": {
+          "name": "k",
+          "association": "cell"
+        },
+        "measure": "relative_interdecile"
+      }
+    }
+  },
+  "definition_sha256": "6632974b44628a5fdb705547ec0ba5480927eb578a9137fc4674cdf1b1e568e9",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "cv": {
+      "value": 2.4740340020883
+    },
+    "relative_interdecile": {
+      "value": 90.691499059154
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

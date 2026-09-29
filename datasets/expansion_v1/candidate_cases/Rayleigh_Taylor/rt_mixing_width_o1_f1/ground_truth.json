@@ -1,0 +1,66 @@
+{
+  "dataset_id": "Rayleigh_Taylor",
+  "case_id": "rt_mixing_width_o1_f1",
+  "case_family_id": "rt_mixing_width",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "rt_mixing_width_o1_f1_rms",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Measure width along the z axis as the weighted root-mean-square distance from its weighted center."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "rt_mixing_width_o1_f1_rms",
+      "findings": [
+        {
+          "finding_id": "rt_mixing_width_o1_f1_rms_width",
+          "category": "property",
+          "statement": "report the numerical width",
+          "importance": "core",
+          "value": 0.10502449665563,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_rt_mixing_width"
+          ]
+        },
+        {
+          "finding_id": "rt_mixing_width_o1_f1_rms_center",
+          "category": "location",
+          "statement": "report the weighted center coordinate",
+          "importance": "core",
+          "value": 0.49084170786281,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_rt_mixing_width"
+          ]
+        }
+      ]
+    }
+  ]
+}

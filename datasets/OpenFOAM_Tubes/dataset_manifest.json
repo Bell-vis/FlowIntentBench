@@ -1,0 +1,29 @@
+{
+  "dataset_id": "OpenFOAM_Tubes",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 27571999,
+      "checksum": "9a35f9125ed8a7938a395e59eee8aee749c0e2ca218c68cfcaa0d9cfc9edc83b",
+      "checksum_algorithm": "sha256",
+      "source_url": "https://docs.pyvista.org/api/examples/_autosummary/pyvista.examples.downloads.download_openfoam_tubes",
+      "path": "OpenFOAM_Tubes/flow.vtu",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTU",
+    "canonical_reader": "vtkXMLUnstructuredGridReader",
+    "reader_configuration": {},
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "record_url": "https://docs.pyvista.org/api/examples/_autosummary/pyvista.examples.downloads.download_openfoam_tubes",
+    "license": "Apache-2.0 (upstream pyvista/data repository license; original SimScale attribution retained)",
+    "parent_source_group": "OpenFOAM_Tubes",
+    "sample_note": "Analysis domain is exactly the stored mesh. No inferred time history or physical unit conversion."
+  }
+}

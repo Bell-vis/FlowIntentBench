@@ -1,0 +1,142 @@
+{
+  "case_id": "radiative_vertical_advective_flux_o1_f2",
+  "case_family_id": "radiative_vertical_advective_flux",
+  "dataset_id": "Radiative_Mixing_Layer",
+  "scientific_target": "the signed domain-average vertical advective mass-flux density",
+  "finding_goal": "Characterize the signed domain-average vertical advective mass-flux density",
+  "operationalization_responsibility": "user_specified",
+  "finding_openness": "open",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [],
+  "scope_constraints": [
+    {
+      "statement": "the supplied turbulent radiative mixing-layer snapshot",
+      "question_fragment": "the supplied turbulent radiative mixing-layer snapshot"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "the complete supplied three-dimensional mesh",
+      "question_fragment": "the complete supplied three-dimensional mesh"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "Use the complete density and vertical-velocity fields on the supplied mesh.",
+      "question_fragment": "Use the complete density and vertical-velocity fields on the supplied mesh."
+    },
+    {
+      "category": "property_measure",
+      "statement": "First average density and vertical velocity to cells, then multiply their cell values.",
+      "question_fragment": "First average density and vertical velocity to cells, then multiply their cell values."
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "Weight cell statistics by cell volume and normalize by the included volume.",
+      "question_fragment": "Weight cell statistics by cell volume and normalize by the included volume."
+    }
+  ],
+  "explicit_finding_requirements": [],
+  "responsibility_contract": {
+    "scientific_target": {
+      "canonical_id": "radiative_vertical_advective_flux",
+      "normalized_meaning": "the signed domain-average vertical advective mass-flux density",
+      "required_semantic_anchors": [
+        "signed domain-average vertical advective mass-flux density"
+      ]
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "dimension_id": "feature_definition",
+        "canonical_id": "radiative_vertical_advective_flux:feature_definition",
+        "normalized_meaning": "use the complete density and vertical-velocity fields on the supplied mesh.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "complete",
+          "density",
+          "vertical-velocity",
+          "fields"
+        ]
+      },
+      {
+        "dimension_id": "property_measure",
+        "canonical_id": "radiative_vertical_advective_flux:property_measure",
+        "normalized_meaning": "first average density and vertical velocity to cells, then multiply their cell values.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "first",
+          "average",
+          "density",
+          "vertical"
+        ]
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "canonical_id": "radiative_vertical_advective_flux:aggregation_or_representation",
+        "normalized_meaning": "weight cell statistics by cell volume and normalize by the included volume.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "weight",
+          "cell",
+          "statistics",
+          "cell"
+        ]
+      }
+    ],
+    "unresolved_operationalization_dimensions": [],
+    "finding_responsibility": {
+      "finding_mode": "F2",
+      "normalized_demand": "characterize the signed domain-average vertical advective mass-flux density",
+      "required_semantic_anchors": [
+        "characterize",
+        "findings"
+      ],
+      "required_responsibility_mode": "SELECT_PRINCIPAL_FINDINGS",
+      "forbidden_responsibility_modes": [
+        "EXHAUSTIVE_FIXED_FINDING_LIST"
+      ]
+    }
+  },
+  "evaluation_representability_contract": {
+    "o_schema_available": true,
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v1"
+    },
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1"
+    },
+    "deterministic_verification": {
+      "required_claim_types": [
+        "exact",
+        "scalar_numeric",
+        "spatial"
+      ],
+      "registered_handlers": [
+        "exact",
+        "scalar_numeric",
+        "spatial_tolerance"
+      ]
+    },
+    "semantic_adjudication": {
+      "required": true,
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1"
+    },
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    }
+  }
+}

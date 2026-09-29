@@ -1,0 +1,11 @@
+agent_id: qwen3.8-max-xhigh-host-network
+model:
+  provider: qwen
+  model_id: qwen3.8-max
+  model_family: qwen3.8
+  reasoning_effort: xhigh
+interface:
+  wire_api: chat_completions
+runtime_profile: flow-python-host-network-v1
+tools:
+  - python

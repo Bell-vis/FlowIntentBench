@@ -1,0 +1,7 @@
+{
+  "case_id": "fireflow_o3_f1",
+  "source_question_sha256": "c44be96443836380c9d64b9207f3cfb7600492e8d86a0ace9eb3bd6becfa66af",
+  "scientific_question": "In the FireFlow room flow field, analyze connected high-speed regions, taking speed as the Euclidean magnitude of the stored uvw vector at each point. Choose and explain a threshold or percentile rule for finite non-zero speeds, a connectivity rule, a regional strength statistic, and how to represent a region’s location. Report the location and strength of the strongest region.",
+  "reason": "Remove an unintended flow-quantity choice while preserving the frozen speed scope and all four open operationalization dimensions.",
+  "semantic_projection_sha256": "8195c08b73eb71d72a929b4f7d36322d46608a89861ffebe44ee7849b078b7fa"
+}

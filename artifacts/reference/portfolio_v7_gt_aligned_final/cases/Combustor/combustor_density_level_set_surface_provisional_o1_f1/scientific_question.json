@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the annular-combustor flow field, can you identify one relevant coherent constant-density spatial structure by treating each connected component of the constant-Density isosurface at the linearly interpolated 90th percentile of finite stored Density values as a candidate and selecting the component with the largest surface area? Represent the selected surface by its area-weighted centroid and surface area, and report its representative location, defining density value, and spatial extent.",
+  "semantic_contract_sha256": "0f61db3e63965ebd92d914d207ef0986c3befa4f4304461eb4a959b2201aad56",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "In the office ventilation flow, identify the strongest contiguous high-speed region. Define speed as velocity magnitude, retain locations where it is above 0.20 in the stored velocity scale, and regard locations connected through shared grid faces as one region. Use peak speed to compare regions, represent the selected region by the mean spatial location of its retained locations, and report its location and peak strength.",
+  "semantic_contract_sha256": "de4ce7695f5ce44d4573841347fcf7f886ea8d98ebd8bec0a0f8dd99ac5b3110",
+  "source": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o1_f1.json",
+  "wording_version": "1.2.1"
+}

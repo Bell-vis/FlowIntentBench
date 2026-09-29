@@ -1,0 +1,14 @@
+{
+  "boundaries": [],
+  "geometry_assets": [],
+  "objects": [
+    {
+      "description": "The carotid artery represented by the flow dataset.",
+      "name": "carotid_artery"
+    }
+  ],
+  "operating_conditions": [],
+  "physical_setting": "Blood flow in human carotid arteries",
+  "reference_directions": [],
+  "regions": []
+}

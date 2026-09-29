@@ -1,0 +1,148 @@
+{
+  "case_family_id": "combustor_density_level_set_surface_provisional",
+  "case_id": "combustor_density_level_set_surface_provisional_o1_f1",
+  "condition_constraints": [],
+  "dataset_id": "Combustor",
+  "evaluation_representability_contract": {
+    "condition": "O1-F1",
+    "contract_version": "case-evaluation-representability-v3",
+    "deterministic_verification": {
+      "registered_handlers": [
+        "scalar_numeric",
+        "coordinate_point"
+      ],
+      "required_claim_types": [
+        "scalar_numeric",
+        "coordinate_point"
+      ]
+    },
+    "domain": "density_isosurface_component",
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1",
+      "output_locators": [
+        "/level",
+        "/selected/surface_area",
+        "/selected/area_weighted_centroid",
+        "/selected/bounding_box_volume",
+        "/selected/bounding_box_midpoint"
+      ]
+    },
+    "fixed_dimension_semantics": {
+      "aggregation_or_representation": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area",
+      "criterion": "use the 90th percentile of finite stored Density values with linear quantile interpolation as the isovalue",
+      "feature_definition": "treat each connected component of a constant-Density isosurface as one candidate surface"
+    },
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v3",
+      "unsupported_disposition": "MATERIALIZATION_UNSUPPORTED_PENDING_NOT_INVALID"
+    },
+    "semantic_adjudication": {
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1",
+      "required": false
+    },
+    "supported_effective_o_envelope": {},
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    },
+    "unresolved_dimensions": [],
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    }
+  },
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "question_fragment": "the selected",
+      "statement": "report the selected structure's representative location"
+    },
+    {
+      "category": "quantity",
+      "question_fragment": "report its",
+      "statement": "report its defining Density isovalue"
+    },
+    {
+      "category": "characterization",
+      "question_fragment": "report its",
+      "statement": "report its surface area"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "question_fragment": "each connected component of",
+      "statement": "treat each connected component of a constant-Density isosurface as one candidate surface"
+    },
+    {
+      "category": "criterion",
+      "question_fragment": "90th percentile of finite stored density values",
+      "statement": "use the 90th percentile of finite stored Density values with linear quantile interpolation as the isovalue"
+    },
+    {
+      "category": "analysis_procedure",
+      "question_fragment": "by its area-weighted centroid and surface area",
+      "statement": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area"
+    }
+  ],
+  "finding_goal": "identify the requested density feature and report its representative location, defining density level, and spatial extent",
+  "finding_openness": "bounded",
+  "operationalization_responsibility": "user_specified",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "aggregation_or_representation"
+  ],
+  "responsibility_contract": {
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ],
+      "normalized_demand": "",
+      "required_responsibility_mode": null,
+      "required_semantic_anchors": []
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "canonical_id": "combustor_density_level_set_surface_provisional:feature_definition:1",
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "treat each connected component of a constant-Density isosurface as one candidate surface",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      },
+      {
+        "canonical_id": "combustor_density_level_set_surface_provisional:criterion:2",
+        "dimension_id": "criterion",
+        "normalized_meaning": "use the 90th percentile of finite stored Density values with linear quantile interpolation as the isovalue",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      },
+      {
+        "canonical_id": "combustor_density_level_set_surface_provisional:analysis_procedure:3",
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      }
+    ],
+    "scientific_target": {
+      "canonical_id": "combustor_density_level_set_surface_provisional",
+      "normalized_meaning": "connected components of a constant-Density isosurface in the annular-combustor density field",
+      "required_semantic_anchors": []
+    },
+    "unresolved_operationalization_dimensions": []
+  },
+  "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+  "scope_constraints": [
+    {
+      "question_fragment": "the annular-combustor flow field",
+      "statement": "the annular-combustor flow field"
+    }
+  ],
+  "selection_constraints": [],
+  "unresolved_operationalization_dimensions": []
+}

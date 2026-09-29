@@ -1,0 +1,25 @@
+# Generated runs and local credentials are never published.
+output/
+outputs/
+archive/
+.runtime-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.coverage*
+htmlcov/
+.env
+.env.*
+!.env.example
+auth*.json
+!auth.example.json
+config.toml
+settings.json
+.vscode/
+.idea/
+*.log

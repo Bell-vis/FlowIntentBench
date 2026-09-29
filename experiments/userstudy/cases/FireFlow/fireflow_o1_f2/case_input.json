@@ -1,0 +1,111 @@
+{
+  "case_context": {
+    "boundaries": [],
+    "geometry_assets": [
+      {
+        "description": "VRML geometry showing the room context for the flow solution.",
+        "format": "WRL",
+        "path": "FireFlow/room_vis.wrl"
+      }
+    ],
+    "objects": [
+      {
+        "description": "The room represented by the FireFlow scene.",
+        "name": "room"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "A room with a fire in one corner and a simulated fluid-flow snapshot",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "FireFlow/fire_ug.vtu",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {},
+        "type": "VTU"
+      },
+      "grid": {
+        "dimensions": null,
+        "origin": null,
+        "spacing": null,
+        "type": "unstructured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "t",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "uvw",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "u",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "v",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "w",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "mfrac",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "Analyze the FireFlow room to determine the strongest high-speed flow region. Treat velocity magnitude values at or above the 90th percentile of non-zero recorded speed as high-speed, form regions from mesh-connected qualifying locations, use peak speed to compare them, and represent the selected region by the mean position of its retained locations. Select and report the principal scientifically relevant findings supported by the evidence, including the region’s strength and location and at least one further characterization that you consider informative."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "radiative_density_pressure_association_o3_f1",
+  "mapping": {
+    "radiative_density_pressure_association_o3_f1_pearson": {
+      "association": "radiative_density_pressure_association_o3_f1_pearson_association"
+    },
+    "radiative_density_pressure_association_o3_f1_spearman": {
+      "association": "radiative_density_pressure_association_o3_f1_spearman_association"
+    }
+  }
+}

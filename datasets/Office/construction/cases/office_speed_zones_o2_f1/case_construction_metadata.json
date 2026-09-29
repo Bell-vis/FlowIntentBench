@@ -1,0 +1,56 @@
+{
+  "case_id": "office_speed_zones_o2_f1",
+  "case_family_id": "office_speed_zones",
+  "dataset_id": "Office",
+  "scientific_target": "ventilation regions in the Office velocity field",
+  "finding_goal": "characterize the strongest airflow region in the Office velocity field",
+  "operationalization_responsibility": "partially_specified",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [
+    "criterion",
+    "property_measure"
+  ],
+  "scope_constraints": [
+    {
+      "statement": "in the office",
+      "question_fragment": "in the office"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "select the strongest region",
+      "question_fragment": "high-speed airflow region is strongest"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "treat locations connected through shared grid faces as one contiguous high-speed ventilation region",
+      "question_fragment": "Treat locations connected through shared grid faces as belonging to the same region"
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "represent the selected region by the mean spatial location of its high-speed locations",
+      "question_fragment": "represent the selected region by the mean spatial location of its high-speed locations"
+    }
+  ],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the location of the strongest region",
+      "question_fragment": "report its location"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the strength of the strongest region",
+      "question_fragment": "strength"
+    }
+  ]
+}

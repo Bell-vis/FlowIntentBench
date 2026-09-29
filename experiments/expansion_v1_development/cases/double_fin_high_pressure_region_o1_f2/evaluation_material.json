@@ -1,0 +1,312 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "double_fin_high_pressure_region_o1_f2",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "double_fin_high_pressure_region_o1_f2",
+    "family_id": "double_fin_high_pressure_region",
+    "dataset_id": "Double_Fin",
+    "condition": "O1-F2",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/Double_Fin/double_fin_high_pressure_region_o1_f2/case_input.json",
+    "case_input_sha256": "79468885acccccc00dd4f257c4beacec5ae61aaced18d362bb1fa872a8e70eae",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/Double_Fin/double_fin_high_pressure_region_o1_f2/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "85d2889c6219e793c004443bad8e531b5a2a0feef9efa9c0cfd6f007c5ae6452",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/Double_Fin/double_fin_high_pressure_region_o1_f2/case_context.json",
+    "case_context_sha256": "75618f22a24ca8f869b40bc0845b26e1dc8d528d479fb089dcd01c1faab5514e",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/Double_Fin/double_fin_high_pressure_region_o1_f2/ground_truth.json",
+    "ground_truth_sha256": "5373992becab281d0db64928c27700d1a166be4bf059a7799d6db266cb2f2df1"
+  },
+  "finding_recall_mode": "SEMANTIC_ADEQUATE_CORE",
+  "family_definition": {
+    "family_id": "double_fin_high_pressure_region",
+    "title": "the location and intensity of high reconstructed P/Pinf regions",
+    "scientific_target": "the location and intensity of high reconstructed P/Pinf regions",
+    "finding_goal": "Characterize the location and intensity of high reconstructed P/Pinf regions",
+    "scope": "the supplied double-fin reconstructed pressure field",
+    "selection": "all mesh cells whose P/Pinf values are finite at every vertex",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation",
+      "criterion"
+    ],
+    "o2_unresolved_dimensions": [
+      "criterion"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o2_f1": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o3_f1": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o1_f2": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "centroid",
+        "result_key": "centroid",
+        "request_phrase": "the volume-weighted centroid coordinates",
+        "requirement_statement": "report the volume-weighted centroid coordinates",
+        "category": "location",
+        "unit": null,
+        "spatial_tolerance": 1e-05
+      },
+      {
+        "property_id": "mean",
+        "result_key": "mean",
+        "request_phrase": "the volume-weighted mean value in the selected region",
+        "requirement_statement": "report the volume-weighted mean value in the selected region",
+        "category": "quantity",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "q90": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+          "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "P/Pinf",
+            "association": "point"
+          },
+          "quantile": 0.9
+        }
+      },
+      "q95": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+          "criterion": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "P/Pinf",
+            "association": "point"
+          },
+          "quantile": 0.95
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_double_fin_high_pressure_region"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "localized_region",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except criterion. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "localized_region",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "centroid",
+          "mean"
+        ]
+      ],
+      "role_by_category": {
+        "location": "centroid",
+        "quantity": "mean"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    },
+    "finite_cell_fields": [
+      {
+        "association": "point",
+        "name": "P/Pinf"
+      }
+    ]
+  },
+  "family_definition_source": {
+    "path": "datasets/Double_Fin/construction/families.json",
+    "sha256": "fec101815179a2ba0fd7fcc738943ce5de35f6c317378b579e5884f39d104b43"
+  },
+  "branch_execution_evidence": {
+    "double_fin_high_pressure_region_o1_f2_q90": {
+      "case_id": "double_fin_high_pressure_region_o1_f2",
+      "dataset_id": "Double_Fin",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "materialized_G_of_O": {
+        "fraction": 0.10000012272634,
+        "centroid": [
+          0.0019759502776357,
+          -0.010341900477486,
+          0.0559022835448
+        ],
+        "mean": 2.1628780885594,
+        "cutoff": 2.03444480896
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/double_fin_high_pressure_region.json",
+        "sha256": "6abe7dd4c6a6263897c43fc7364dd2f12e0c57065fbacec692f1b4bf9633b00b"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "8e2f9a487b0ae330d9af14a0ec74afe4626b27f6749919c238eaaf42471d86a2",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Double_Fin/raw/Pressure_Paraview_DF_10deg.vtk",
+            "sha256": "528d05123f18278954033bc0e935eb54338416264391dd5bc3f5f82b3a20b4e9"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "P/Pinf",
+            "association": "point"
+          },
+          "quantile": 0.9
+        },
+        "definition_sha256": "005349ccedca1622adf1b57c2e4b726f17b17686c0c2e8feff258bee6d8332c3",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "ce355229b1d7be3bc0fc27d237b349f2bc9ad68abf6c83928fd26bad3c950f84"
+    }
+  },
+  "finding_requirement_contract": {
+    "mandatory_roles": [],
+    "alternative_role_groups": [],
+    "adequate_core_sets": [
+      [
+        "centroid",
+        "mean"
+      ]
+    ],
+    "supporting_roles": [],
+    "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list.",
+    "scientific_entity_type": "localized_region",
+    "contract_source": "CONSTRUCTION_DEFINED",
+    "role_by_category": {
+      "location": "centroid",
+      "quantity": "mean"
+    },
+    "reference_finding_role_map": {
+      "double_fin_high_pressure_region_o1_f2_q90_centroid": "centroid",
+      "double_fin_high_pressure_region_o1_f2_q90_mean": "mean"
+    }
+  },
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "Double_Fin",
+    "case_id": "double_fin_high_pressure_region_o1_f2",
+    "semantic_contract_sha256": "ceef524c3a31763bc641a27f5a4512bf83fcff4cff438d8af6b6a9ad7aa8e39d",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "double_fin_high_pressure_region_o1_f2_q90",
+        "finding_id": "double_fin_high_pressure_region_o1_f2_q90_centroid",
+        "scientific_finding_policy_key": "d70acb9727b33352a32dba4cad6d2da93dd5f09a1a158a25a2e014be6ee13edc",
+        "policy_identity": {
+          "dataset_id": "Double_Fin",
+          "case_family_id": "double_fin_high_pressure_region",
+          "scientific_target": "the location and intensity of high reconstructed p/pinf regions",
+          "effective_o_semantic_sha256": "68b16c5bc1f9bba95898a4a3f6d3efc1fcedefd8a02eefa1511556339dd9c802",
+          "scientific_role": "location",
+          "g_of_o_locator": "/centroid",
+          "representation": "location",
+          "canonical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 1e-05
+        },
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            0.0019759502776357,
+            -0.010341900477486,
+            0.0559022835448
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "significant_figures": null
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA"
+        },
+        "policy_digest": "23dc3afd13f2d926035c9a95379ddadb9f74e35e26e97c8157839d137efcac8c"
+      },
+      {
+        "operationalization_id": "double_fin_high_pressure_region_o1_f2_q90",
+        "finding_id": "double_fin_high_pressure_region_o1_f2_q90_mean",
+        "scientific_finding_policy_key": "82b02cefe01c0cd817a59fe2b1305f68687cc38f2c42ce552fcf3994341183c3",
+        "policy_identity": {
+          "dataset_id": "Double_Fin",
+          "case_family_id": "double_fin_high_pressure_region",
+          "scientific_target": "the location and intensity of high reconstructed p/pinf regions",
+          "effective_o_semantic_sha256": "68b16c5bc1f9bba95898a4a3f6d3efc1fcedefd8a02eefa1511556339dd9c802",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/mean",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.1628780885594,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "2b07dd6e63589059337455aea86b409a67e773a1b2d8630e715fe22d638d6e03"
+      }
+    ],
+    "verification_policy_sha256": "6fe8a807b17425753df205d289e3c0ba0bb6b1e1c8ea3bf715e34b6962133f86"
+  }
+}

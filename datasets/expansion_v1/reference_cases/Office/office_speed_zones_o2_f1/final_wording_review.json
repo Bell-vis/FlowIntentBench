@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence artifacts were supplied, so empirical result verification is not possible from this packet."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful strongest-region selection task in the office velocity field, preserves the stated scope, exposes both fixed operationalizations, and leaves the retention criterion and region-strength measure open. It correctly requests the F1 findings\u2014the strongest region\u2019s location and strength\u2014without adding unintended operational or protocol requirements, and it is answerable in principle from the supplied structured-grid velocity data.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+  "review_packet_sha256": "feb62ba34fba78272eb14675ee73e198839d15866c092ca33bc45b72a712ebe2",
+  "reviewed_model_visible_text_sha256": "9ca382a228143e18bd6d7b04cb53aee7bcf3795a6f7ca1e6777aacca5b3f15ce",
+  "reviewed_model_visible_text": "In the office velocity field, which high-speed ventilation region is strongest? Choose an appropriate criterion for retaining high-speed locations and an appropriate measure of region strength. Treat locations connected through shared grid faces as one contiguous region, represent each region by the mean spatial location of its retained high-speed locations, and report the strongest region\u2019s location and strength. Use six-neighbor connectivity along one grid axis.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "office_speed_zones_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "feb62ba34fba78272eb14675ee73e198839d15866c092ca33bc45b72a712ebe2",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:32:05.391105+00:00",
+    "latency_seconds": 18.581336,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence artifacts were supplied, so empirical result verification is not possible from this packet.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful strongest-region selection task in the office velocity field, preserves the stated scope, exposes both fixed operationalizations, and leaves the retention criterion and region-strength measure open. It correctly requests the F1 findings\u2014the strongest region\u2019s location and strength\u2014without adding unintended operational or protocol requirements, and it is answerable in principle from the supplied structured-grid velocity data.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence artifacts were supplied, so empirical result verification is not possible from this packet."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful strongest-region selection task in the office velocity field, preserves the stated scope, exposes both fixed operationalizations, and leaves the retention criterion and region-strength measure open. It correctly requests the F1 findings\u2014the strongest region\u2019s location and strength\u2014without adding unintended operational or protocol requirements, and it is answerable in principle from the supplied structured-grid velocity data."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0f2d72951ba2881f016aa6de04a66487d283ec69ace30d153b": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1366,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1366,
+            "output_tokens": 0
+          },
+          "rs_0f2d72951ba2881f016aa6de05624087d2b7142a7c70d04f28": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 457
+          },
+          "msg_0f2d72951ba2881f016aa6de1177a487d2b31a529bdede0753": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 191
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 191
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1982,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 648,
+      "output_tokens_details": {
+        "reasoning_tokens": 457
+      },
+      "total_tokens": 2630
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+    "review_packet_sha256": "feb62ba34fba78272eb14675ee73e198839d15866c092ca33bc45b72a712ebe2",
+    "reviewed_model_visible_text_sha256": "9ca382a228143e18bd6d7b04cb53aee7bcf3795a6f7ca1e6777aacca5b3f15ce",
+    "reviewed_model_visible_text": "In the office velocity field, which high-speed ventilation region is strongest? Choose an appropriate criterion for retaining high-speed locations and an appropriate measure of region strength. Treat locations connected through shared grid faces as one contiguous region, represent each region by the mean spatial location of its retained high-speed locations, and report the strongest region\u2019s location and strength. Use six-neighbor connectivity along one grid axis."
+  }
+}

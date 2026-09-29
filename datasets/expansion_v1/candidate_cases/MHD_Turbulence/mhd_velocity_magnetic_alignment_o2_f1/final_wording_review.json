@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context was supplied, so empirical validation of the requested alignment result cannot be assessed beyond the provided dataset metadata and operationalization."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful MHD scientific target, preserves the supplied snapshot and complete-mesh scope, exposes both fixed operationalization requirements, and explicitly leaves the remaining quantitative definition open for the respondent to choose and explain. It correctly requests the signed alignment coefficient for F1 without introducing an additional operationalization responsibility or unsupported physical assertion. The task is clear enough and answerable in principle from the supplied fields.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "e2b8cdcba488c610ffffb05205a9287fafde55a88fd22f8011217f964d43675b",
+  "review_packet_sha256": "1dc7b535c5fd9623abea444498e9da8830565aaf2a925a770363ed500606a421",
+  "reviewed_model_visible_text_sha256": "2de1e654cbaa47f0a1ff20152afb4d889b33f065431c10afd1acafbfa1f15d65",
+  "reviewed_model_visible_text": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the signed alignment coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "mhd_velocity_magnetic_alignment_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "1dc7b535c5fd9623abea444498e9da8830565aaf2a925a770363ed500606a421",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:27:27.947898+00:00",
+    "latency_seconds": 16.745767,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context was supplied, so empirical validation of the requested alignment result cannot be assessed beyond the provided dataset metadata and operationalization.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful MHD scientific target, preserves the supplied snapshot and complete-mesh scope, exposes both fixed operationalization requirements, and explicitly leaves the remaining quantitative definition open for the respondent to choose and explain. It correctly requests the signed alignment coefficient for F1 without introducing an additional operationalization responsibility or unsupported physical assertion. The task is clear enough and answerable in principle from the supplied fields.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context was supplied, so empirical validation of the requested alignment result cannot be assessed beyond the provided dataset metadata and operationalization."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful MHD scientific target, preserves the supplied snapshot and complete-mesh scope, exposes both fixed operationalization requirements, and explicitly leaves the remaining quantitative definition open for the respondent to choose and explain. It correctly requests the signed alignment coefficient for F1 without introducing an additional operationalization responsibility or unsupported physical assertion. The task is clear enough and answerable in principle from the supplied fields."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0b91a524c0392cda016aa6dcf0a1e487d0a75504acf0417546": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1289,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1289,
+            "output_tokens": 0
+          },
+          "rs_0b91a524c0392cda016aa6dcf137a487d09323d7b55a19da2d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 435
+          },
+          "msg_0b91a524c0392cda016aa6dcfbb71087d0af528399ab1f41d7": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 205
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 205
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1905,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 640,
+      "output_tokens_details": {
+        "reasoning_tokens": 435
+      },
+      "total_tokens": 2545
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "e2b8cdcba488c610ffffb05205a9287fafde55a88fd22f8011217f964d43675b",
+    "review_packet_sha256": "1dc7b535c5fd9623abea444498e9da8830565aaf2a925a770363ed500606a421",
+    "reviewed_model_visible_text_sha256": "2de1e654cbaa47f0a1ff20152afb4d889b33f065431c10afd1acafbfa1f15d65",
+    "reviewed_model_visible_text": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the signed alignment coefficient."
+  }
+}

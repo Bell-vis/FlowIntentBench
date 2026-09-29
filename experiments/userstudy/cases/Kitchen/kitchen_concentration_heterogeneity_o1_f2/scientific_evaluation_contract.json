@@ -1,0 +1,2938 @@
+{
+  "G_of_O": [
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "all_field_metrics": [
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.30942496936507363,
+              "field_name": "c1",
+              "mean": 0.08020720009100968,
+              "metric_value": 0.30942496936507363,
+              "q10": 0.05404793641871688,
+              "q50": 0.08112780996837031,
+              "q90": 0.10981731353464905,
+              "relative_interdecile_spread": 0.6953163438276321,
+              "standard_deviation": 0.024818110431019
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.14418017074758235,
+              "field_name": "c11",
+              "mean": 0.9574607393708777,
+              "metric_value": 0.14418017074758235,
+              "q10": 0.8970167939475089,
+              "q50": 1.0,
+              "q90": 1.0,
+              "relative_interdecile_spread": 0.10755867245288686,
+              "standard_deviation": 0.1380468528865996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 57.26614105024864,
+              "field_name": "c12",
+              "mean": 155.4364538108478,
+              "metric_value": 57.26614105024864,
+              "q10": 1.0001250505447388,
+              "q50": 1.0001250505447388,
+              "q90": 1.0002177547217748,
+              "relative_interdecile_spread": 5.964120691328215e-07,
+              "standard_deviation": 8901.245888282469
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.0219053988591327,
+              "field_name": "c13",
+              "mean": 0.1385269564125309,
+              "metric_value": 2.0219053988591327,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 0.5,
+              "relative_interdecile_spread": 3.6094058004927834,
+              "standard_deviation": 0.28008840105801996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 5.034212066983074,
+              "field_name": "c14",
+              "mean": 68.08567190125844,
+              "metric_value": 5.034212066983074,
+              "q10": 7.249532634994129e-13,
+              "q50": 1.865819738975317e-12,
+              "q90": 84.4547059656511,
+              "relative_interdecile_spread": 1.2404181908953062,
+              "standard_deviation": 342.75771107396565
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.759909295064302,
+              "field_name": "c15",
+              "mean": 0.035421556666829654,
+              "metric_value": 0.759909295064302,
+              "q10": 0.01201627154925934,
+              "q50": 0.029269546621656997,
+              "q90": 0.06398482271084513,
+              "relative_interdecile_spread": 1.4671447573689353,
+              "standard_deviation": 0.02691717015677075
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 3.3848216187349522,
+              "field_name": "c16",
+              "mean": 7.175852323373133,
+              "metric_value": 3.3848216187349522,
+              "q10": 0.02514384570531547,
+              "q50": 0.028279999271035194,
+              "q90": 21.410077970762014,
+              "relative_interdecile_spread": 2.9801246125706697,
+              "standard_deviation": 24.288980077002815
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.3046563271253913,
+              "field_name": "c17",
+              "mean": 0.899266242246575,
+              "metric_value": 2.3046563271253913,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 3.0428814953907657,
+              "relative_interdecile_spread": 3.383738154997283,
+              "standard_deviation": 2.072499634963844
+            }
+          ],
+          "cell_count": 9936,
+          "field_name": "c12",
+          "field_selection_policy": {
+            "default_anchor_is_not_required_selection": true,
+            "identity_reference_ids": [
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16",
+              "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17"
+            ],
+            "mode": "explicit_candidate_field_v1",
+            "reference_ids_by_field": {
+              "c1": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c1",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c1",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c1",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c1",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c1"
+              ],
+              "c11": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c11",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c11",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c11",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c11",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c11"
+              ],
+              "c12": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c12",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c12",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c12",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c12",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c12"
+              ],
+              "c13": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c13",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c13",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c13",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c13",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c13"
+              ],
+              "c14": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c14",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c14",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c14",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c14",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c14"
+              ],
+              "c15": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c15",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c15",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c15",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c15",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c15"
+              ],
+              "c16": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c16",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c16",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c16",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c16",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c16"
+              ],
+              "c17": [
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c17",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c17",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c17",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c17",
+                "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c17"
+              ]
+            },
+            "selection_rule": "one explicitly selected candidate; no required extremum"
+          },
+          "mean": 155.4364538108478,
+          "metric_name": "weighted_coefficient_of_variation",
+          "metric_value": 57.26614105024864,
+          "operation_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+          "q10": 1.0001250505447388,
+          "q50": 1.0001250505447388,
+          "q90": 1.0002177547217748,
+          "standard_deviation": 8901.245888282469
+        },
+        "data_provenance": {
+          "aggregation": "cell_volume_weighted",
+          "compiled_plan_sha256": "0b3074fbba343c3bae2e9d161315e22396f3099d9626631f47826ecb03f7366b",
+          "dataset_id": "Kitchen",
+          "dataset_manifest_sha256": "e9fdf8a17da6070901d2046caa8e55fe786a18c605c73bbd520a46890350eb50",
+          "effective_o_sha256": "9f9fc56ccc0a94d59e231c650417ab56cc7ae8cdb3c1a298a206a23f442d2143",
+          "executed_plan_sha256": "0b3074fbba343c3bae2e9d161315e22396f3099d9626631f47826ecb03f7366b",
+          "input_files": [
+            "Kitchen/kitchen.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_coefficient_of_variation",
+            "quantile": null,
+            "quantile_method": "linear",
+            "quantile_population": "positive",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "point_to_cell_rule": "arithmetic mean of each cell's finite vertex values",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "scalar_fields": [
+            "c1",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17"
+          ],
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "weighted_quantile_rule": "linear interpolation over cumulative positive cell-volume weights"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c1.",
+          "unit": null,
+          "value": "c1",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c1",
+          "importance": "core",
+          "statement": "For gas-concentration field c1, the cell-volume-weighted coefficient of variation is approximately 0.3094249694.",
+          "unit": null,
+          "value": 0.30942496936507363,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c1",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c1, the cell-volume-weighted standard deviation is approximately 0.02481811043.",
+          "unit": null,
+          "value": 0.024818110431019,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c1",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c1, the cell-volume-weighted q10 is approximately 0.05404793642.",
+          "unit": null,
+          "value": 0.05404793641871688,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c1",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c1, the cell-volume-weighted q50 is approximately 0.08112780997.",
+          "unit": null,
+          "value": 0.08112780996837031,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c1",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c1, the cell-volume-weighted q90 is approximately 0.1098173135.",
+          "unit": null,
+          "value": 0.10981731353464905,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c11.",
+          "unit": null,
+          "value": "c11",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c11",
+          "importance": "core",
+          "statement": "For gas-concentration field c11, the cell-volume-weighted coefficient of variation is approximately 0.1441801707.",
+          "unit": null,
+          "value": 0.14418017074758235,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c11",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c11, the cell-volume-weighted standard deviation is approximately 0.1380468529.",
+          "unit": null,
+          "value": 0.1380468528865996,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c11",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c11, the cell-volume-weighted q10 is approximately 0.8970167939.",
+          "unit": null,
+          "value": 0.8970167939475089,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c11",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c11, the cell-volume-weighted q50 is approximately 1.",
+          "unit": null,
+          "value": 1.0,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c11",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c11, the cell-volume-weighted q90 is approximately 1.",
+          "unit": null,
+          "value": 1.0,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c12.",
+          "unit": null,
+          "value": "c12",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c12",
+          "importance": "core",
+          "statement": "For gas-concentration field c12, the cell-volume-weighted coefficient of variation is approximately 57.26614105.",
+          "unit": null,
+          "value": 57.26614105024864,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c12",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c12, the cell-volume-weighted standard deviation is approximately 8901.245888.",
+          "unit": null,
+          "value": 8901.245888282469,
+          "verification": {
+            "absolute_tolerance": 5.0,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c12",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c12, the cell-volume-weighted q10 is approximately 1.000125051.",
+          "unit": null,
+          "value": 1.0001250505447388,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c12",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c12, the cell-volume-weighted q50 is approximately 1.000125051.",
+          "unit": null,
+          "value": 1.0001250505447388,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c12",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c12, the cell-volume-weighted q90 is approximately 1.000217755.",
+          "unit": null,
+          "value": 1.0002177547217748,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c13.",
+          "unit": null,
+          "value": "c13",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c13",
+          "importance": "core",
+          "statement": "For gas-concentration field c13, the cell-volume-weighted coefficient of variation is approximately 2.021905399.",
+          "unit": null,
+          "value": 2.0219053988591327,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c13",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c13, the cell-volume-weighted standard deviation is approximately 0.2800884011.",
+          "unit": null,
+          "value": 0.28008840105801996,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c13",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c13, the cell-volume-weighted q10 is approximately 0.",
+          "unit": null,
+          "value": 0.0,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c13",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c13, the cell-volume-weighted q50 is approximately 0.",
+          "unit": null,
+          "value": 0.0,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c13",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c13, the cell-volume-weighted q90 is approximately 0.5.",
+          "unit": null,
+          "value": 0.5,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c14.",
+          "unit": null,
+          "value": "c14",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c14",
+          "importance": "core",
+          "statement": "For gas-concentration field c14, the cell-volume-weighted coefficient of variation is approximately 5.034212067.",
+          "unit": null,
+          "value": 5.034212066983074,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c14",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c14, the cell-volume-weighted standard deviation is approximately 342.7577111.",
+          "unit": null,
+          "value": 342.75771107396565,
+          "verification": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c14",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c14, the cell-volume-weighted q10 is approximately 7.249532635e-13.",
+          "unit": null,
+          "value": 7.249532634994129e-13,
+          "verification": {
+            "absolute_tolerance": 5e-16,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c14",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c14, the cell-volume-weighted q50 is approximately 1.865819739e-12.",
+          "unit": null,
+          "value": 1.865819738975317e-12,
+          "verification": {
+            "absolute_tolerance": 5e-15,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c14",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c14, the cell-volume-weighted q90 is approximately 84.45470597.",
+          "unit": null,
+          "value": 84.4547059656511,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c15.",
+          "unit": null,
+          "value": "c15",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c15",
+          "importance": "core",
+          "statement": "For gas-concentration field c15, the cell-volume-weighted coefficient of variation is approximately 0.7599092951.",
+          "unit": null,
+          "value": 0.759909295064302,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c15",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c15, the cell-volume-weighted standard deviation is approximately 0.02691717016.",
+          "unit": null,
+          "value": 0.02691717015677075,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c15",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c15, the cell-volume-weighted q10 is approximately 0.01201627155.",
+          "unit": null,
+          "value": 0.01201627154925934,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c15",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c15, the cell-volume-weighted q50 is approximately 0.02926954662.",
+          "unit": null,
+          "value": 0.029269546621656997,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c15",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c15, the cell-volume-weighted q90 is approximately 0.06398482271.",
+          "unit": null,
+          "value": 0.06398482271084513,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c16.",
+          "unit": null,
+          "value": "c16",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c16",
+          "importance": "core",
+          "statement": "For gas-concentration field c16, the cell-volume-weighted coefficient of variation is approximately 3.384821619.",
+          "unit": null,
+          "value": 3.3848216187349522,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c16",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c16, the cell-volume-weighted standard deviation is approximately 24.28898008.",
+          "unit": null,
+          "value": 24.288980077002815,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c16",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c16, the cell-volume-weighted q10 is approximately 0.02514384571.",
+          "unit": null,
+          "value": 0.02514384570531547,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c16",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c16, the cell-volume-weighted q50 is approximately 0.02827999927.",
+          "unit": null,
+          "value": 0.028279999271035194,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c16",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c16, the cell-volume-weighted q90 is approximately 21.41007797.",
+          "unit": null,
+          "value": 21.410077970762014,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "existence_or_identity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17",
+          "importance": "core",
+          "statement": "The selected gas-concentration field is c17.",
+          "unit": null,
+          "value": "c17",
+          "verification": null
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c17",
+          "importance": "core",
+          "statement": "For gas-concentration field c17, the cell-volume-weighted coefficient of variation is approximately 2.304656327.",
+          "unit": null,
+          "value": 2.3046563271253913,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c17",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c17, the cell-volume-weighted standard deviation is approximately 2.072499635.",
+          "unit": null,
+          "value": 2.072499634963844,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c17",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c17, the cell-volume-weighted q10 is approximately 0.",
+          "unit": null,
+          "value": 0.0,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c17",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c17, the cell-volume-weighted q50 is approximately 0.",
+          "unit": null,
+          "value": 0.0,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        },
+        {
+          "category": "characterization",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c17",
+          "importance": "supporting",
+          "statement": "For gas-concentration field c17, the cell-volume-weighted q90 is approximately 3.042881495.",
+          "unit": null,
+          "value": 3.0428814953907657,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+      "parameters": {
+        "aggregation_or_representation": "represent the selected result by its stored field identifier",
+        "feature_definition": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field",
+        "property_measure": "compare fields by cell-volume-weighted coefficient of variation, forming each cell concentration as the arithmetic mean of its vertex values and weighting positive-volume cells by cell volume"
+      },
+      "proposal_id": "reference:kitchen_concentration_heterogeneity_o1_f2:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+      "proposal_kind": "OPERATIONALIZATION"
+    }
+  ],
+  "adequate_core_sets": [
+    [
+      "comparison_to_other_fields",
+      "heterogeneity_measure_evidence",
+      "selected_field_identity"
+    ],
+    [
+      "consequential_distributional_characterization",
+      "heterogeneity_measure_evidence",
+      "selected_field_identity"
+    ],
+    [
+      "distribution_shape",
+      "heterogeneity_measure_evidence",
+      "selected_field_identity"
+    ],
+    [
+      "distribution_spread",
+      "heterogeneity_measure_evidence",
+      "selected_field_identity"
+    ],
+    [
+      "extreme_behavior",
+      "heterogeneity_measure_evidence",
+      "selected_field_identity"
+    ]
+  ],
+  "adjudicated_findings": [],
+  "adjudication_provenance": [],
+  "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+  "enumerated_valid_O": [
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "compare fields by cell-volume-weighted coefficient of variation, forming each cell concentration as the arithmetic mean of its vertex values and weighting positive-volume cells by cell volume"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the selected result by its stored field identifier"
+        }
+      ],
+      "evidence_ids": [
+        "op_004"
+      ],
+      "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation"
+    }
+  ],
+  "explicitly_invalid_O": [],
+  "finding_requirement_contract": {
+    "adequate_core_sets": [
+      [
+        "comparison_to_other_fields",
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ],
+      [
+        "consequential_distributional_characterization",
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ],
+      [
+        "distribution_shape",
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ],
+      [
+        "distribution_spread",
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ],
+      [
+        "extreme_behavior",
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ]
+    ],
+    "alternative_role_groups": [
+      {
+        "group_id": "characterization",
+        "min_required": 1,
+        "roles": [
+          "comparison_to_other_fields",
+          "consequential_distributional_characterization",
+          "distribution_shape",
+          "distribution_spread",
+          "extreme_behavior"
+        ]
+      }
+    ],
+    "contract_source": "AGENT_READY_CONSTRUCTION",
+    "mandatory_roles": [
+      "heterogeneity_measure_evidence",
+      "selected_field_identity"
+    ],
+    "novel_role_policy": "valid_unenumerated may satisfy one characterization role only after blinded adjudication",
+    "reference_finding_role_map": {
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17": "selected_field_identity",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c1": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c11": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c12": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c13": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c14": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c15": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c16": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c17": "heterogeneity_measure_evidence",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c1": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c11": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c12": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c13": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c14": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c15": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c16": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c17": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c1": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c11": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c12": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c13": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c14": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c15": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c16": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c17": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c1": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c11": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c12": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c13": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c14": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c15": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c16": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c17": "supporting_statistic",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c1": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c11": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c12": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c13": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c14": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c15": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c16": "distribution_spread",
+      "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c17": "distribution_spread"
+    },
+    "role_by_category": {
+      "existence_or_identity": "selected_field_identity",
+      "property": "heterogeneity_measure_evidence",
+      "quantity": "heterogeneity_measure_evidence"
+    },
+    "scientific_entity_type": "FIELD",
+    "supporting_roles": [
+      "supporting_statistic"
+    ]
+  },
+  "source_semantic_contract_sha256": "a7b288507e17b48548ddc805f4bcffe51a53c72d9e0cfd664f402e0c381fdd51",
+  "status": "DRAFT_REQUIRES_HUMAN_CONFIRMATION",
+  "tolerances": {
+    "finding_verification_policies": [
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c1",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "605589bb172e6c86112ccc6e32eacae0229438068e233735b66d6324039be268",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/0/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "6c18626629174b7038b37329bc704a9ef0a48b26ebc751d31128a608eeed6a9c",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c11",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "62e3c053fa6b6a9c8f4cde7c7aecdf877578ae9eabd399d2a094e9283a3d248f",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/1/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "7b40f1985164b0d0c3fe9a56cc8dbcd762ad5e4ed5c021997b288c87990bcb5f",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c12",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "4544c5c59232d746d8272b36fd16730de0f1f7d0ca7d1858b7568b09e0d4bc82",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/2/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "7794feca700551072f3c6607ae28ee66232a45d9a277dc2b88c627de2f180499",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c13",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "0b22e20adc1d40fb73f59617c4125e60663e017519e02f47d06c4134319cedd3",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/3/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "be51fa1c11969cc1dd8e73d7c9662de98d5184ae2a7ea15b190fa7430ee594fe",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c14",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "0e5b526983ea8d7fb01b476952ce5deb048d4b62afcc139a1607f120aec0b14c",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/4/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "bd8c8ce049883e7e12cdca852521a36f0460e996c1d9421664c2efad51a33238",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c15",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "7f9e8f48261d63ccdbbda89e4bd49a31b68fd0b4e21f60115661a0daa2b5a771",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/5/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "d2b7d9be8b91af9a6a71bd178d973c0096946a2d693498fdbdec7468a2676ad2",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c16",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "153bdba8ea9c3b387cbb5b6d8fe2e616678558895301a46b42de38cb4ffc0d7f",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/6/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "9b3bdbcb10fbaa65e4008c3e48729bcc810f81e3a1b64ee216f5b9033de4107a",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c17",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "ed21fec105902e79367406ed70b19df653e9ffda1d98277260cb552f397a3c88",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/7/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "9d684f2faef993290a0300ebd86defbb3ee3c55bab955385dcceaf24014de2d7",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c1",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.30942496936507363,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "8082d56531c3ecc997f94b41f6fc70141ae8d66130cbac869685ff7efe7465cd",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/0/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "cd246b52f0a97f9cbe9f1fe5f25f5e177c36833aa881e75b57a316360ebe5ddd",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c11",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.14418017074758235,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "af6548d7fb59b2b4ceaa1be5f0e98dc9971289991b89a04003ccf3d1737f4612",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/1/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "dd20e8b01638b09b55bb04fbdc635616664d87b1746b485c8f68a837e7b1eb3e",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c12",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 57.26614105024864,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "136148948d8a70f06a81eedf414bf82ea62d68ec55aa043dfac2ebe809ea2359",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/2/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "1fd72a3820a30867a21a4f3e542af93a3272288ab10ae0cfdafc03d0c2161fb8",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c13",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.0219053988591327,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "d2f21549048a029cc435d0ecf47cb8d74f9bba1628480a644133956a2c0d28d6",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/3/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "5230e5d1d15febbd9a3f5a3fea341486a259ebf37e4bc5e2269b4fd3531dd9c5",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c14",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 5.034212066983074,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "0c0900519163d9f628fb9ee0dc7e7688757c6c903d06923130c0165b6dede2fd",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/4/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "b7c45ea22fd919fb6951eadb2329eb494d083152d774b6fdb8b5287cc2617cec",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c15",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.759909295064302,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "d6927ca3fc68900244a64ff016b0e296d69c034f4704e1b40f2afbf383d44165",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/5/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "6ab25a6ffdec76aa48b369506524325c5e741984aa59b2dddf89a1eeb31438d9",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c16",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 3.3848216187349522,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "9cf3958891d59a20b51fa011761bb1d7632cbb86d1f99c53352203c55f174e33",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/6/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "24d6d9071b373d76da224348a156591865731289dc567cb97f8453347edb936d",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c17",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.3046563271253913,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "5b3a7d2e8909369b96f862a8328fc60483f8735d3668662cf5e77003a9477339",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/7/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "3867c2e312c5ef7217ce3d8545142d4ddcaab60e3a5108e3b34e035797f12fcb",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c1",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.05404793641871688,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "15b3c5ad71af5e48de00e95c89afa97e90f2144c74fb57d236405fd90e4e2c57",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/0/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "1499784f32e79bf6cd7d2607fef1f78ed26404423b70cea8b9ce3880a9b4b095",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c11",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.8970167939475089,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "b6ec68ebac581303ad391be5db6802379e0ff7d4cb5d7e644527f5fa44caafa4",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/1/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "4c8e60acbd1259401523cabd909ff97f72661edcce7ca31683e721f29a022fc2",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c12",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0001250505447388,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "b5c7baa43f191cf80b029613858e4a4745acf0db7ae37b7a848108d50aa80216",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/2/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "fd9047d0aec9bbec90733677f249d38848a68f632f3d7a687ed72342dbe4e3db",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c13",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.0,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "f36a7ed785e8a232f898851e998bac1ae8031d95ab6bfb78f28a318a598ee320",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/3/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "c7dfc611afe8bc71f8a4772073bc163dc28ff35321282ac85f5e245148a9de2b",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c14",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 7.249532634994129e-13,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-16,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "9f048ff393f8ed7160ed62a3c107c6653f0389d13178418066623a010c32ae45",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/4/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "8aea460ee1f52ba2109482588d7f8e10179b78461e22f9fad5d590a18cd4bb25",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-16,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c15",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.01201627154925934,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "3bdd37b01d4003c3572b9e9996d39c063b334db937b10c2d2449991615619992",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/5/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "9f0a39f18ebb1793331ae9f294105f1be4977784fb0cf17cfbd9960c5c2b1941",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c16",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.02514384570531547,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "f75593b1459ec4945a5cda454031bee26bf577ea82ada6b4c34865a2b0308e52",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/6/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "806bf978a9c1beb968be77527b7b6c896154e7df11b47bde932c47292487938c",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c17",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.0,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "1c019882f5312b6d3f515ca480c08cc4313f89bd20bdd9a254a63976b8ddd769",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/7/q10",
+          "representation": "characterization",
+          "scientific_role": "q10",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "258f16fa2b662dd46653e97ac57f12913c486cfba3aa147f50fb9efeade307e4",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c1",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.08112780996837031,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "3b375e7927c6a092b5c5c866ddb4fbddc690c2272fe77cdb7f5237e7d4192aaa",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/0/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "fea9d098cb345ee81099705d0a55b7b149c2e9a8ad36c057c19d0d6210888dcf",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c11",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "6c304b1c667a06e7420ffbcfc1ba3d9aac9b87740c1431b399407869a68b71b9",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/1/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "68fe2bacc4a7e16bb51432168d756e03a7402120da09ba9f28ce9529ecfe9f68",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c12",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0001250505447388,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "414bce6900a11282a6c5b73c6f439f2e499e7062ebc1b87bfc0807e9c3ee42df",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/2/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "ac637d257a6d56f00f410a136afe11ca62e61b5c5b46bbf09c116a274854d639",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c13",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.0,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "d36662f9cd7848cdc62e96d6dd5f44c4de6ea37c51789c6b003e47ccfd256fd5",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/3/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "c3721f060d41389ed81822d84f1d64c9688a0617bab3e34c067442d47703f9e8",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c14",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.865819738975317e-12,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-15,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "15074cf39524c8e79ffd34638abe9968309c4813cf1608d303e8c9b541ae0203",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/4/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "dfd9561808e52a8756032a001faf111d0db88748bf70c4b1b74479babcad101b",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-15,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c15",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.029269546621656997,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "c818b2a639deca3d1e60d21a9081feb6daab89a8310cc73a5ebf0c5196674dab",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/5/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "3fca8d02fe268311d13cc7bf2a544e54198392e1fca110b5b4b16b6103ca7b15",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c16",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.028279999271035194,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "d0ab9d403705b69ef15dba25375cc3dd46976dc2a31433faa8a470074cf60e9e",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/6/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "9c49a8eb817559d093bc7845703070923dae8a095f4858fbc75b998c27e98d96",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c17",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.0,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "8c2f68ff192c4e6ee0d80d449f1f7f168a3059beab804e062d5b1c9a30e1d0b7",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/7/q50",
+          "representation": "characterization",
+          "scientific_role": "q50",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "8421cb43e0edfb0fe0eb448484a62ba28d589218c5b5a8c614dc7e07c55d2dfc",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c1",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.10981731353464905,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "a2ca8194b7a57a57c2ff26ac7154a60d16e287563d468dcb5d094bfab1472bb1",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/0/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "c732431f63c4223931d0132dbe822e683bc52ce5b0334150ef89984ef4b366ab",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c11",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "2cd30ccd31961b49a2f3c0a7682cefe49b0e73ecefe4d39e9e0de6680ca6e63f",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/1/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "1732c59866cc0feacdb70df32c94392fea6c512e02de1fcbd5538f5104174310",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c12",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0002177547217748,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "d20afcfa8ab52811a8fa45b2433736a9c128934ad34b03083c9e973e7c2f8321",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/2/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "85916f18c1dff48210aa369dc2307bb93ab8ca3f3d0298c37532a8764fb34a8e",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c13",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.5,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "30d7b2aadf4b8bb6684f0851af6367aa004e1a24e52872bb763cb154c20c57c4",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/3/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "ec30425ea84c8095286299823d9f4264b780c9fb6edf090c365fe243e6c307c9",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c14",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 84.4547059656511,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "dec197105f6ddd9ac1e09cb457cc6b6721e9da475cc9e51676fbdad984757acf",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/4/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "0b0bc901d9dee5c5e27b4e5228ad5df052eee148609a3e982c2de0160cafdd86",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c15",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.06398482271084513,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "b08c5a21cc41a0645299ab7af34db0a53e2f465009731849988e8963a1005ba0",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/5/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "4f7e1157b7b99c8d1886ef67e7a1a8e6d343d003d25920ebd43140a180c7fec0",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c16",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 21.410077970762014,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "cea1453f5774b62b9c9e043ef65558b949a2ec4342004aecea6f84bafb756469",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/6/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "7846dea783d9bca792cc691d914d1ba5cb09abf39cc719330d28ffa9c7156c31",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c17",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 3.0428814953907657,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "450e63cd32d6f49ca3f45c0de72e3a3e2c8872484b5615ef346a47b04f333a8d",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/7/q90",
+          "representation": "characterization",
+          "scientific_role": "q90",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "e0b688a88bb3c4d6220b00a575a150eb1ca87d2bd50e573b053c0203431a30a6",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c1",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.024818110431019,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "4014b825fddc4ed2e9c460ddcc91b5c28655502d8d6c00066cc6fa0e83317e50",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/0/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "92a23349158555a3d7673fc23f7fa6be712e7ffdd7deec399fdcd519749eb059",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c11",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.1380468528865996,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "c64e574fa2d003e50c96a742a6e5b6a01fda735e7fc169b6a8309e87dd83fba8",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/1/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "7a70af85644dfbd48e05ce55de2730e98a123c88f410dbe17dc17371ff0c85f1",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c12",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 8901.245888282469,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5.0,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "cd27e193ec58db89a5ac281d2687c2fa5e7938a2946cef62cc368654e0309970",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/2/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "04be43d2a8c10beee21b2a5f3f07e12516fb82df0784260929a7ac65f7d3a100",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5.0,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c13",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.28008840105801996,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "430cbec2d4476fd5e1ad2fe63a59c5effdcd628533cb1a9dc8c584c6a9f95a50",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/3/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "5f7d50bf4ab613965860e53582c695d5b9f63cc8b63a4410022bc1acae7de6d8",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c14",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 342.75771107396565,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "052d957bb67bf3e937203cc205f01ed61f8ca5ce2589bf68a5e9187d3baec640",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/4/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "1e0f2cad5545f5d3c04adbc23171c38c9c5767f861578726eaf3353c22c7d385",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.5,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c15",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.02691717015677075,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "5b24fe25cf07823286d932cf33b43aacd3a806bd16ca5fb28bc3788eaac49954",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/5/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "b2cd440725080d8111d29aa2228d605fc17675b4010304cf78749d9711538e2b",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c16",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 24.288980077002815,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "3f4b2639ad7b8ff8be1a895e68b9339527dbac014b9184f4d2d7bb72c3ffe397",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/6/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "27eb831e09582044312d86ff3ab77c28f34b5a3099a2963f5e2135e1043dfc34",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c17",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.072499634963844,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+        "policy_digest": "cf165c79eca81ba40b5b599cebae39b9daa40709664e27d27183ae00f8630c0e",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "41b33bc50380ee070ba22e8b4b49afb628717ed19cb975839f3b3bed782d3ddf",
+          "g_of_o_locator": "/all_field_metrics/7/standard_deviation",
+          "representation": "characterization",
+          "scientific_role": "characterization",
+          "scientific_target": "a scientifically justified selection among the compared stored gas-concentration fields"
+        },
+        "scientific_finding_policy_key": "aab921df8b9eb50601c4c56bbfe037e9a1f701593a27b8e013efd279ea9dcf1b",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "verification_policy_sha256": "d6007d1656372c04d7829b41440ab453c1dc389abaa6c16e941accc146aa3dbf",
+    "verification_policy_version": "finding-verification-policy-v1"
+  },
+  "unenumerated_policy": "VALID_UNENUMERATED requires curator escalation"
+}

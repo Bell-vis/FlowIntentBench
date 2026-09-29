@@ -1,0 +1,111 @@
+{
+  "scientific_question": "Which flow region in the FireFlow room flow field is strongest, and where is it located? Identify and characterize the strongest region using an appropriate scientific analysis, and report its location and strength.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "FireFlow/fire_ug.vtu",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTU",
+        "details": {}
+      },
+      "grid": {
+        "type": "unstructured",
+        "dimensions": null,
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "t",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "uvw",
+          "physical_quantity": null,
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "u",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "v",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "w",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "mfrac",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "A room with a fire in one corner and a simulated fluid-flow snapshot",
+    "objects": [
+      {
+        "name": "room",
+        "description": "The room represented by the FireFlow scene."
+      }
+    ],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": [
+      {
+        "path": "FireFlow/room_vis.wrl",
+        "format": "WRL",
+        "description": "VRML geometry showing the room context for the flow solution."
+      }
+    ]
+  }
+}

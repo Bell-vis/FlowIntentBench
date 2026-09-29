@@ -1,0 +1,32 @@
+[
+  {
+    "context_facts": [],
+    "dataset_id": "Carotid",
+    "eligible_for_context": false,
+    "evidence_id": "op_001",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "CarotidFlow.cxx: vtkStreamTracer, vtkContourFilter",
+      "figure": "6-44",
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_001",
+    "statement": "The CarotidFlow example generates streamtubes from blood velocity and uses an isosurface of speed to provide visual context."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Carotid",
+    "eligible_for_context": false,
+    "evidence_id": "finding_001",
+    "evidence_type": "finding",
+    "locator": {
+      "code_location": "CarotidFlow.cxx: vtkStreamTracer and vtkContourFilter",
+      "figure": "6-44",
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_001",
+    "statement": "The carotid flow example supports reporting the identity and spatial characterization of a selected high-speed region; exact benchmark values come from execution."
+  }
+]

@@ -1,0 +1,223 @@
+{
+  "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+  "construction_run_identity": {
+    "agent_profile_ids": [],
+    "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+    "compiler_identity": "flowintentbench.deterministic_materialization.compile_effective_operationalization",
+    "compiler_sha256": "4c9c2ad327e93e2f28a20b1ded1a092e1863f3e4a0bbea5dc48f845c642948b0",
+    "construction_invocation_id": "construction:137ea2c17321520719daec93",
+    "dataset_manifest_digests": {
+      "Blunt_Fin": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+      "Carotid": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+      "Combustor": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+      "FireFlow": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+      "Kitchen": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+      "NASA_LOx_Post": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+      "Office": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc"
+    },
+    "live_agents_requested": false,
+    "materializer_identity": "flowintentbench.qualified_scientific_cases.reference_materializer",
+    "materializer_sha256": "807a8f8651dcd5ec562cdd99a0c27b894c0737e9170c9f0b206f9f9c186b7d84",
+    "provider_configuration_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "run_identity_sha256": "12c094026b3c03bf90071a06318bbef60775631bdeeeaaf7f89d2ec0832b0dd4",
+    "runtime_profile_digest": "84fcf8214801d714655930fbef828f1c9049f9a6afdff9f76e234aee37a54b69",
+    "timeout_seconds": 90.0
+  },
+  "stage_a_semantic_reuse": {
+    "current_semantic_hash": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+    "decision": "REBUILD_REQUIRED",
+    "equivalence_checks": {
+      "finding_responsibility": true,
+      "operationalization_responsibility": true,
+      "principal_operationalization_dimensions": true,
+      "reference_branches_present": true,
+      "scientific_target": true,
+      "unresolved_operationalization_dimensions": true,
+      "verification_semantics_present": false
+    },
+    "historical_case_id": "office_speed_zones_o1_f2",
+    "historical_semantic_hash": null,
+    "reason": "historical semantics are incomplete or differ from current projection"
+  },
+  "stage_b_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "comparator": "GT",
+          "coordinate_span": [
+            0.24000000115484,
+            0.5999999046325684,
+            0.24000000953674316
+          ],
+          "criterion": "> 0.2",
+          "criterion_kind": "fixed_threshold",
+          "mean_spatial_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "mean_speed": 0.3364087523075579,
+          "measure_kind": "peak",
+          "operation_id": "o1_speed_zones_open",
+          "peak_point": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "peak_speed": 0.8049350186348156,
+          "region_count": 8,
+          "region_sizes": [
+            20,
+            33,
+            64,
+            4,
+            1,
+            32,
+            9,
+            37
+          ],
+          "reported_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "representation": "mean",
+          "retained_points": 200,
+          "selected_region_size": 32,
+          "strength": 0.8049350186348156,
+          "threshold": 0.2
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "dataset_id": "Office",
+          "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+          "effective_o_sha256": "681c67a4c8ad7931c146a5c820f79eedb4fc8e770da064783b7d64f8f24c386f",
+          "executed_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "input_files": [
+            "Office/office.binary.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": 0.2
+          },
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "vectors"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:o1_speed_zones_open",
+      "operation_id": "o1_speed_zones_open",
+      "reuse_reference": "REBUILD_REQUIRED"
+    }
+  ],
+  "stage_c_live_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "comparator": "GT",
+          "coordinate_span": [
+            0.24000000115484,
+            0.5999999046325684,
+            0.24000000953674316
+          ],
+          "criterion": "> 0.2",
+          "criterion_kind": "fixed_threshold",
+          "mean_spatial_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "mean_speed": 0.3364087523075579,
+          "measure_kind": "peak",
+          "operation_id": "o1_speed_zones_open",
+          "peak_point": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "peak_speed": 0.8049350186348156,
+          "region_count": 8,
+          "region_sizes": [
+            20,
+            33,
+            64,
+            4,
+            1,
+            32,
+            9,
+            37
+          ],
+          "reported_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "representation": "mean",
+          "retained_points": 200,
+          "selected_region_size": 32,
+          "strength": 0.8049350186348156,
+          "threshold": 0.2
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "dataset_id": "Office",
+          "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+          "effective_o_sha256": "681c67a4c8ad7931c146a5c820f79eedb4fc8e770da064783b7d64f8f24c386f",
+          "executed_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "input_files": [
+            "Office/office.binary.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": 0.2
+          },
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "vectors"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:o1_speed_zones_open",
+      "operation_id": "o1_speed_zones_open",
+      "reuse_reference": "REBUILD_REQUIRED"
+    }
+  ],
+  "stage_c_o_space": "NOT_RUN",
+  "stage_c_proposal_attempts": [],
+  "stage_d_finding_space": "NOT_CONSTRUCTED",
+  "stage_e_proxy_invocations": [],
+  "status": "COMPLETE"
+}

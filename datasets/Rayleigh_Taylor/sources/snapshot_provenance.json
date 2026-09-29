@@ -1,0 +1,97 @@
+{
+  "source": {
+    "url": "https://huggingface.co/datasets/polymathic-ai/rayleigh_taylor_instability/resolve/75166ae3304f95747519ce35c2e03c0c295a2691/data/test/rayleigh_taylor_instability_At_0625.hdf5?download=true",
+    "type": "file",
+    "oid": "25de410fc3eae054f162f91a38691619798da330",
+    "size": 8002732032,
+    "lfs": {
+      "oid": "069417c63b7255236c8fb1521220c714ac86e5f64761f94240be1f51a90c0273",
+      "size": 8002732032,
+      "pointerSize": 135
+    },
+    "xetHash": "8520356722fcc6a5fea26d54ff8f0d08316e88d886be76c74df944bd55278e73",
+    "path": "data/test/rayleigh_taylor_instability_At_0625.hdf5",
+    "revision": "75166ae3304f95747519ce35c2e03c0c295a2691"
+  },
+  "whole_remote_object_checksum_verified": false,
+  "trajectory": 0,
+  "frame": 60,
+  "time": 60.00299835205078,
+  "field_metadata": {
+    "density": {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "min": 0.8823451399803162,
+      "max": 1.0000028610229492,
+      "finite": true
+    },
+    "velocity": {
+      "shape": [
+        128,
+        128,
+        128,
+        3
+      ],
+      "min": -0.03014286980032921,
+      "max": 0.025128480046987534,
+      "finite": true
+    }
+  },
+  "attrs": {
+    "At": 0.0625,
+    "dataset_name": "rayleigh_taylor_instability",
+    "grid_type": "cartesian",
+    "n_spatial_dims": 3,
+    "n_trajectories": 2,
+    "simulation_parameters": [
+      "At"
+    ]
+  },
+  "sample_geometry": "Stored coordinate samples represented as VTK points; the analysis domain is their rectilinear span. No extrapolation to unstored boundary faces.",
+  "snapshot_sha256": "ac58ea892162498cd976a577c16baa0a56e62e04e058909ff03ddb6da068aa78",
+  "ranges": {
+    "0": {
+      "stop": 4194303,
+      "sha256": "470fdec8d784f715364627249f70d5e173c28e35da59da4f47efe9582d88dbbc"
+    },
+    "8388608": {
+      "stop": 12582911,
+      "sha256": "4ba45689114c6ace325388be22d708f6ca9246082bda897c069827a1d20333df"
+    },
+    "520093696": {
+      "stop": 524287999,
+      "sha256": "aa8187e97496ad2dea7a52f9d88426b9371e7a64763c3c572648a1d9fc74a29a"
+    },
+    "524288000": {
+      "stop": 528482303,
+      "sha256": "3e038f276bc27cec481a940f52da70db8f912d5101ab0a33285ef9ae6e9cbd88"
+    },
+    "3523215360": {
+      "stop": 3527409663,
+      "sha256": "d90f470208f4c569a64065151887dcaf6fb2886d4d6b34a43515083df528ab7c"
+    },
+    "3527409664": {
+      "stop": 3531603967,
+      "sha256": "86d3b34decc92509487079e3e54bfc9682462e99b841f38f206aaeb66dac91e5"
+    },
+    "3531603968": {
+      "stop": 3535798271,
+      "sha256": "5a5a79bb0104bef51ba311874de9a7d996355e62acf3dffe40af8ea34e3c6fac"
+    },
+    "3535798272": {
+      "stop": 3539992575,
+      "sha256": "5b9b438d073b13c3dbd9a4f54507226613092870f70b5f7aaa83297fa50944e7"
+    },
+    "3539992576": {
+      "stop": 3544186879,
+      "sha256": "9b119ac5efdd357a41f83df26ecc8bf4bade5c6ef1e17ab90c578cdb7d4522d6"
+    },
+    "3544186880": {
+      "stop": 3548381183,
+      "sha256": "9ea8574cdbea6a228c8c708858e225307f617237527c46fdf3d501a701c4de49"
+    }
+  }
+}

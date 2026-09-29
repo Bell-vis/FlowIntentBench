@@ -1,0 +1,35 @@
+{
+  "dataset_id": "Carotid",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://book.vtk.org/en/latest/VTKBook/06Chapter6.html",
+      "supports": [
+        "variables[name=vectors].physical_quantity",
+        "variables[name=scalars].physical_quantity"
+      ],
+      "notes": "The vectors represent blood velocity; the scalar is proportional to velocity magnitude and is not labeled as exact speed."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/CarotidFlow/",
+      "supports": [
+        "variables[name=vectors].physical_quantity"
+      ],
+      "notes": "The example uses the vector field to generate blood-flow streamtubes."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "dataset_id": "OpenFOAM_Tubes",
+  "case_id": "tubes_turbulent_energy_heterogeneity_o3_f1",
+  "case_family_id": "tubes_turbulent_energy_heterogeneity",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "tubes_turbulent_energy_heterogeneity_o3_f1_cv",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "tubes_turbulent_energy_heterogeneity_o3_f1_relative_interdecile",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "tubes_turbulent_energy_heterogeneity_o3_f1_cv",
+      "findings": [
+        {
+          "finding_id": "tubes_turbulent_energy_heterogeneity_o3_f1_cv_coefficient",
+          "category": "quantity",
+          "statement": "report the numerical coefficient",
+          "importance": "core",
+          "value": 2.4740340020883,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_tubes_turbulent_energy_heterogeneity"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "tubes_turbulent_energy_heterogeneity_o3_f1_relative_interdecile",
+      "findings": [
+        {
+          "finding_id": "tubes_turbulent_energy_heterogeneity_o3_f1_relative_interdecile_coefficient",
+          "category": "quantity",
+          "statement": "report the numerical coefficient",
+          "importance": "core",
+          "value": 90.691499059154,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_tubes_turbulent_energy_heterogeneity"
+          ]
+        }
+      ]
+    }
+  ]
+}

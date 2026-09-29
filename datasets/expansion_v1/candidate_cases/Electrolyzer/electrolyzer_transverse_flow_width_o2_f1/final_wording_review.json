@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence records are supplied, and the stored y coordinate has no declared physical unit; results should therefore be reported in stored-coordinate units."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful spatial-extent task for the supplied final-timestep electrolyzer flow, preserves the stated scope and target, exposes both fixed operationalization requirements, and leaves only the quantitative property measure for the respondent to define and explain. It correctly requests the fixed F1 findings\u2014the numerical width and weighted center coordinate\u2014without introducing additional operational or protocol obligations. The task is answerable in principle from the supplied mesh and velocity field, subject to the stated coordinate-unit limitation.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "90d1056b7b596f7705717a586ecca936fa84c526aafb066b9d39a356b4b862c1",
+  "review_packet_sha256": "d90d031f3ba22a39a218828c3dacb6d66c257b911547ac54762d119270b6117b",
+  "reviewed_model_visible_text_sha256": "74a50c263ab64c2daad244f1fce52592330c57eab22331c3ee2968b3a49b1831",
+  "reviewed_model_visible_text": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Multiply the stated spatial weight by cell volume and normalize by its sum. Choose and explain the remaining quantitative definition. Report the numerical width, and the weighted center coordinate.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "electrolyzer_transverse_flow_width_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "d90d031f3ba22a39a218828c3dacb6d66c257b911547ac54762d119270b6117b",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:55:39.121090+00:00",
+    "latency_seconds": 17.353808,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence records are supplied, and the stored y coordinate has no declared physical unit; results should therefore be reported in stored-coordinate units.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful spatial-extent task for the supplied final-timestep electrolyzer flow, preserves the stated scope and target, exposes both fixed operationalization requirements, and leaves only the quantitative property measure for the respondent to define and explain. It correctly requests the fixed F1 findings\u2014the numerical width and weighted center coordinate\u2014without introducing additional operational or protocol obligations. The task is answerable in principle from the supplied mesh and velocity field, subject to the stated coordinate-unit limitation.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence records are supplied, and the stored y coordinate has no declared physical unit; results should therefore be reported in stored-coordinate units."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful spatial-extent task for the supplied final-timestep electrolyzer flow, preserves the stated scope and target, exposes both fixed operationalization requirements, and leaves only the quantitative property measure for the respondent to define and explain. It correctly requests the fixed F1 findings\u2014the numerical width and weighted center coordinate\u2014without introducing additional operational or protocol obligations. The task is answerable in principle from the supplied mesh and velocity field, subject to the stated coordinate-unit limitation."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0105ac3a1e50b1a7016aa6e38aa23087d0a37cba7465da6411": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1361,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1361,
+            "output_tokens": 0
+          },
+          "rs_0105ac3a1e50b1a7016aa6e38b44bc87d08eaba91e495780f9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 501
+          },
+          "msg_0105ac3a1e50b1a7016aa6e3971eb887d0b814dea762c810a4": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 221
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 221
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1977,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 722,
+      "output_tokens_details": {
+        "reasoning_tokens": 501
+      },
+      "total_tokens": 2699
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "90d1056b7b596f7705717a586ecca936fa84c526aafb066b9d39a356b4b862c1",
+    "review_packet_sha256": "d90d031f3ba22a39a218828c3dacb6d66c257b911547ac54762d119270b6117b",
+    "reviewed_model_visible_text_sha256": "74a50c263ab64c2daad244f1fce52592330c57eab22331c3ee2968b3a49b1831",
+    "reviewed_model_visible_text": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Multiply the stated spatial weight by cell volume and normalize by its sum. Choose and explain the remaining quantitative definition. Report the numerical width, and the weighted center coordinate."
+  }
+}

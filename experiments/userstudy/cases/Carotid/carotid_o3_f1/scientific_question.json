@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "How would you operationalize the search for the strongest high-speed region in the carotid artery flow field? Decide how to represent or aggregate the flow, how a high-speed region is defined, which selection criterion to apply, and how region strength is measured. Use your choices to identify the strongest region and report where it is and how strong it is.",
+  "semantic_contract_sha256": "1225b5838181fd9490d98a7b82118488a9b793f0a741ca2ac16d7fa3ce53c4d7",
+  "source": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o3_f1.json",
+  "wording_version": "1.2.1"
+}

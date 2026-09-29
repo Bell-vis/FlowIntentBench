@@ -1,0 +1,86 @@
+{
+  "execution": {
+    "G_of_O": {
+      "comparator": "GT",
+      "coordinate_span": [
+        0.24000000115484,
+        0.5999999046325684,
+        0.24000000953674316
+      ],
+      "criterion": "> 0.2",
+      "criterion_kind": "fixed_threshold",
+      "mean_spatial_location": [
+        0.06812500045634806,
+        2.343749985098839,
+        2.389375001192093
+      ],
+      "mean_speed": 0.3364087523075579,
+      "measure_kind": "peak",
+      "operation_id": "o1_speed_zones",
+      "peak_point": [
+        0.009999998845160007,
+        2.549999952316284,
+        2.430000066757202
+      ],
+      "peak_speed": 0.8049350186348156,
+      "region_count": 8,
+      "region_sizes": [
+        20,
+        33,
+        64,
+        4,
+        1,
+        32,
+        9,
+        37
+      ],
+      "reported_location": [
+        0.06812500045634806,
+        2.343749985098839,
+        2.389375001192093
+      ],
+      "representation": "mean",
+      "retained_points": 200,
+      "selected_region_size": 32,
+      "strength": 0.8049350186348156,
+      "threshold": 0.2
+    },
+    "data_provenance": {
+      "compiled_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+      "dataset_id": "Office",
+      "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+      "effective_o_sha256": "681c67a4c8ad7931c146a5c820f79eedb4fc8e770da064783b7d64f8f24c386f",
+      "executed_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+      "input_files": [
+        "Office/office.binary.vtk"
+      ],
+      "materialization_plan": {
+        "aggregation_kind": null,
+        "comparator": "GT",
+        "component_selection_kind": null,
+        "connectivity_kind": "structured_face_6",
+        "criterion_kind": "fixed_threshold",
+        "domain": "high_speed_region",
+        "measure_kind": "peak",
+        "metric_kind": null,
+        "quantile": null,
+        "quantile_method": "linear",
+        "representation_kind": "mean",
+        "threshold": 0.2
+      },
+      "reader_configuration": {
+        "read_all_scalars": true,
+        "read_all_vectors": true
+      },
+      "reader_format": "VTK",
+      "silent_substitutions": [],
+      "unsupported_dimensions": [],
+      "vector_array": "vectors"
+    },
+    "reproducible": true,
+    "status": "MATERIALIZED"
+  },
+  "materialization_id": "mat:o1_speed_zones",
+  "operation_id": "o1_speed_zones",
+  "reuse_reference": "REUSE_ELIGIBLE"
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the blunt-fin flow field, identify the strongest high-speed flow region. Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed in the stored velocity scale, and treat locations connected through immediate grid neighbors along one grid axis as one contiguous flow region. Use peak speed to determine the region’s strength, represent its location by the mean spatial location of its retained high-speed locations, and report both the peak speed and that principal location. Add at least one relevant characterization of your choice: geometric relation, meaningful comparison, morphology, orientation, or spatial extent.",
+  "semantic_contract_sha256": "fb37979c6463f378eb62f20360ed9a32bb451fd0d49ec47272da02113b7a2efd",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

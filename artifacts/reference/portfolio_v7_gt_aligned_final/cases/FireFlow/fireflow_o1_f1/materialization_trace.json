@@ -1,0 +1,215 @@
+{
+  "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+  "construction_run_identity": {
+    "agent_profile_ids": [],
+    "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+    "compiler_identity": "flowintentbench.deterministic_materialization.compile_effective_operationalization",
+    "compiler_sha256": "4c9c2ad327e93e2f28a20b1ded1a092e1863f3e4a0bbea5dc48f845c642948b0",
+    "construction_invocation_id": "construction:137ea2c17321520719daec93",
+    "dataset_manifest_digests": {
+      "Blunt_Fin": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+      "Carotid": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+      "Combustor": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+      "FireFlow": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+      "Kitchen": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+      "NASA_LOx_Post": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+      "Office": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc"
+    },
+    "live_agents_requested": false,
+    "materializer_identity": "flowintentbench.qualified_scientific_cases.reference_materializer",
+    "materializer_sha256": "807a8f8651dcd5ec562cdd99a0c27b894c0737e9170c9f0b206f9f9c186b7d84",
+    "provider_configuration_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "run_identity_sha256": "12c094026b3c03bf90071a06318bbef60775631bdeeeaaf7f89d2ec0832b0dd4",
+    "runtime_profile_digest": "84fcf8214801d714655930fbef828f1c9049f9a6afdff9f76e234aee37a54b69",
+    "timeout_seconds": 90.0
+  },
+  "stage_a_semantic_reuse": {
+    "current_semantic_hash": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+    "decision": "REUSE_ELIGIBLE",
+    "equivalence_checks": {
+      "finding_responsibility": true,
+      "operationalization_responsibility": true,
+      "principal_operationalization_dimensions": true,
+      "reference_branches_present": true,
+      "scientific_target": true,
+      "unresolved_operationalization_dimensions": true,
+      "verification_semantics_present": true
+    },
+    "historical_case_id": "fireflow_o1_f1",
+    "historical_semantic_hash": null,
+    "reason": "all available semantic responsibilities are equivalent"
+  },
+  "stage_b_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            2.6875,
+            2.225000023841858,
+            2.0799999237060547
+          ],
+          "criterion": ">= non-zero 90th percentile (0.973593823082)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "mean_speed": 1.6380479260626384,
+          "measure_kind": "peak",
+          "operation_id": "fireflow_o1_f1_o1_high_speed_regions",
+          "peak_point": [
+            0.19999998807907104,
+            1.428571343421936,
+            0.19999998807907104
+          ],
+          "peak_speed": 3.822313175748469,
+          "region_count": 4,
+          "region_sizes": [
+            517,
+            710,
+            3,
+            3
+          ],
+          "reported_location": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "representation": "mean",
+          "retained_points": 1233,
+          "selected_region_size": 517,
+          "strength": 3.822313175748469,
+          "threshold": 0.9735938230823256
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "097710a379f4d98e26ed5ea5b0321a5c053f9de6054c3f378f43c6388557e5e8",
+          "dataset_id": "FireFlow",
+          "dataset_manifest_sha256": "f7d3d95bca6bd3402ee197455b82561606c70e79e99b078e311c92f5f47786d5",
+          "effective_o_sha256": "fda892b36be19296ef5e7efe1ee7709ca6dd49556c338f74617554799861d5a1",
+          "executed_plan_sha256": "097710a379f4d98e26ed5ea5b0321a5c053f9de6054c3f378f43c6388557e5e8",
+          "input_files": [
+            "FireFlow/fire_ug.vtu"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "mesh_cell_point",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "read_all_scalars": false,
+            "read_all_vectors": false
+          },
+          "reader_format": "VTU",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "uvw"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:fireflow_o1_f1_o1_high_speed_regions",
+      "operation_id": "fireflow_o1_f1_o1_high_speed_regions",
+      "reuse_reference": "REUSE_ELIGIBLE"
+    }
+  ],
+  "stage_c_live_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            2.6875,
+            2.225000023841858,
+            2.0799999237060547
+          ],
+          "criterion": ">= non-zero 90th percentile (0.973593823082)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "mean_speed": 1.6380479260626384,
+          "measure_kind": "peak",
+          "operation_id": "fireflow_o1_f1_o1_high_speed_regions",
+          "peak_point": [
+            0.19999998807907104,
+            1.428571343421936,
+            0.19999998807907104
+          ],
+          "peak_speed": 3.822313175748469,
+          "region_count": 4,
+          "region_sizes": [
+            517,
+            710,
+            3,
+            3
+          ],
+          "reported_location": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "representation": "mean",
+          "retained_points": 1233,
+          "selected_region_size": 517,
+          "strength": 3.822313175748469,
+          "threshold": 0.9735938230823256
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "097710a379f4d98e26ed5ea5b0321a5c053f9de6054c3f378f43c6388557e5e8",
+          "dataset_id": "FireFlow",
+          "dataset_manifest_sha256": "f7d3d95bca6bd3402ee197455b82561606c70e79e99b078e311c92f5f47786d5",
+          "effective_o_sha256": "fda892b36be19296ef5e7efe1ee7709ca6dd49556c338f74617554799861d5a1",
+          "executed_plan_sha256": "097710a379f4d98e26ed5ea5b0321a5c053f9de6054c3f378f43c6388557e5e8",
+          "input_files": [
+            "FireFlow/fire_ug.vtu"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "mesh_cell_point",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "read_all_scalars": false,
+            "read_all_vectors": false
+          },
+          "reader_format": "VTU",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "uvw"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:fireflow_o1_f1_o1_high_speed_regions",
+      "operation_id": "fireflow_o1_f1_o1_high_speed_regions",
+      "reuse_reference": "REUSE_ELIGIBLE"
+    }
+  ],
+  "stage_c_o_space": "NOT_APPLICABLE",
+  "stage_c_proposal_attempts": [],
+  "stage_d_finding_space": "NOT_APPLICABLE",
+  "stage_e_proxy_invocations": [],
+  "status": "COMPLETE"
+}

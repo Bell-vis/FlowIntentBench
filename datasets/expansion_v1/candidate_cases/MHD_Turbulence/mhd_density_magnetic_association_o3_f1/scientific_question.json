@@ -1,0 +1,7 @@
+{
+  "scientific_question": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+  "f1_required_properties": [
+    "association"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

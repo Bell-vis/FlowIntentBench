@@ -1,0 +1,11 @@
+# FlowIntentBench v1 evaluated-runtime source of truth.
+# Python: 3.12.x (the exact interpreter is recorded in every runtime fingerprint)
+# These direct pins are consumed by ensure_frozen_environment(); their installed
+# dependency closure is copied into the dedicated environment and fingerprinted.
+# The primary Linux condition also requires bubblewrap (bwrap) from the host.
+numpy==1.26.4
+pydantic==2.5.3
+PyYAML==6.0.1
+scipy==1.13.1
+matplotlib==3.8.4
+vtk==9.6.2

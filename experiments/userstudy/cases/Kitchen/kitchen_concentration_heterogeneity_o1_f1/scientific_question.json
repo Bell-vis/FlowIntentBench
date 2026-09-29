@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Among the gas-concentration fields in the kitchen airflow, which field is most spatially heterogeneous? Treat the point-associated fields c1 and c11–c17 as separate candidates. For each candidate, first compute the arithmetic mean of its finite vertex values in each cell, ignore cells with non-positive volume, and then calculate the coefficient of variation using cell volume as the weight. Select the field with the largest value and report its identifier and coefficient of variation.",
+  "semantic_contract_sha256": "714820511cb732db9dc759ff16fb3176005e6b233cda712a6df355350971fdd6",
+  "source": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o1_f1.json",
+  "wording_version": "1.2.1"
+}

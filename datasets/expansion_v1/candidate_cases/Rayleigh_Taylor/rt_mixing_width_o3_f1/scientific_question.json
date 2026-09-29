@@ -1,0 +1,8 @@
+{
+  "scientific_question": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+  "f1_required_properties": [
+    "width",
+    "center"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

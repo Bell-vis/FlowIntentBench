@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Examine the NASA LOx-post flow field and construct an analysis that identifies its strongest high-speed region. Choose how the field is represented or aggregated, define what qualifies as a high-speed region, set an appropriate selection criterion, and decide how regional strength is measured. Use the resulting operationalization to report the strongest region’s location and strength.",
+  "semantic_contract_sha256": "acd2e36c7fc79cb9a3a500e99e2a4734bfc111bbf79ef080d73f521ca34ab604",
+  "source": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o3_f1.json",
+  "wording_version": "1.2.1"
+}

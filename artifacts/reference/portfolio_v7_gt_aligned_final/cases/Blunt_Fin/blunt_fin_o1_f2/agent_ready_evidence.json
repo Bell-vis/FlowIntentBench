@@ -1,0 +1,32 @@
+[
+  {
+    "context_facts": [],
+    "dataset_id": "Blunt_Fin",
+    "eligible_for_context": false,
+    "evidence_id": "op_001",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "BluntStreamlines.cxx: command-line usage, vtkMultiBlockPLOT3DReader, vtkStreamTracer",
+      "figure": null,
+      "page": null,
+      "section": "Code"
+    },
+    "source_id": "src_001",
+    "statement": "The example reads bluntfinxyz.bin and bluntfinq.bin with vtkMultiBlockPLOT3DReader and releases streamlines upstream of the fin."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Blunt_Fin",
+    "eligible_for_context": false,
+    "evidence_id": "finding_001",
+    "evidence_type": "finding",
+    "locator": {
+      "code_location": "BluntStreamlines.cxx: vtkMultiBlockPLOT3DReader and vtkStreamTracer",
+      "figure": null,
+      "page": null,
+      "section": "Code"
+    },
+    "source_id": "src_001",
+    "statement": "The blunt-fin flow example supports characterizing a selected high-speed region by its location, velocity magnitude, and coordinate extent; exact benchmark values come from execution."
+  }
+]

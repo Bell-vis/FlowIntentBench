@@ -1,0 +1,32 @@
+[
+  {
+    "context_facts": [],
+    "dataset_id": "FireFlow",
+    "eligible_for_context": false,
+    "evidence_id": "op_001",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "FireFlow.cxx: vtkVRMLImporter, vtkXMLUnstructuredGridReader, vtkStreamTracer, vtkContourFilter",
+      "figure": null,
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_001",
+    "statement": "The FireFlow VTK example combines a VRML geometry import with an XML unstructured-grid reader, then uses stream tracing and a velocity isosurface for visualization."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "FireFlow",
+    "eligible_for_context": false,
+    "evidence_id": "finding_001",
+    "evidence_type": "finding",
+    "locator": {
+      "code_location": "FireFlow.cxx: vtkStreamTracer and vtkContourFilter",
+      "figure": null,
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_001",
+    "statement": "The FireFlow vector-field example supports identifying a selected high-speed region and reporting its location, speed characterization, and extent; exact benchmark values come from execution."
+  }
+]

@@ -1,0 +1,161 @@
+{
+  "case_family_id": "office__high_speed_region",
+  "case_id": "office_speed_zones_o2_f1",
+  "condition_constraints": [],
+  "dataset_id": "Office",
+  "evaluation_representability_contract": {
+    "condition": "O2-F1",
+    "contract_version": "case-evaluation-representability-v3",
+    "deterministic_verification": {
+      "registered_handlers": [
+        "exact_discrete",
+        "scalar_numeric",
+        "coordinate_point",
+        "componentwise_vector"
+      ],
+      "required_claim_types": [
+        "exact_discrete",
+        "scalar_numeric",
+        "coordinate_point",
+        "componentwise_vector"
+      ]
+    },
+    "domain": "thresholded_connected_speed_region",
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1",
+      "output_locators": [
+        "/reported_location",
+        "/strength",
+        "/coordinate_span",
+        "/selected_region_size",
+        "/region_count"
+      ]
+    },
+    "fixed_dimension_semantics": {
+      "aggregation_or_representation": "represent the strongest region by the mean spatial location of its retained high-speed locations",
+      "feature_definition": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v3",
+      "unsupported_disposition": "MATERIALIZATION_UNSUPPORTED_PENDING_NOT_INVALID"
+    },
+    "semantic_adjudication": {
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1",
+      "required": true
+    },
+    "supported_effective_o_envelope": {
+      "criterion": [
+        "explicit numeric speed threshold",
+        "finite non-zero speed percentile with linear or nearest-rank interpolation"
+      ],
+      "property_measure": [
+        "regional peak speed",
+        "regional mean speed"
+      ]
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    },
+    "unresolved_dimensions": [
+      "criterion",
+      "property_measure"
+    ],
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    }
+  },
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "question_fragment": "Use velocity magnitude, treat face-connected retained locations as one region, and represent each region by the mean spatial location of those locations.",
+      "statement": "report the location of the strongest region"
+    },
+    {
+      "category": "quantity",
+      "question_fragment": "Choose and state the high-speed criterion and the property measure used to compare region strength, then report the location and strength of the selected region.",
+      "statement": "report the strength of the strongest region"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "analysis_procedure",
+      "question_fragment": "Use velocity magnitude, treat face-connected retained locations as one region, and represent each region by the mean spatial location of those locations.",
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "category": "feature_definition",
+      "question_fragment": "Use velocity magnitude, treat face-connected retained locations as one region, and represent each region by the mean spatial location of those locations.",
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    }
+  ],
+  "finding_goal": "characterize the strongest airflow region in the office velocity field",
+  "finding_openness": "bounded",
+  "operationalization_responsibility": "partially_specified",
+  "principal_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "criterion",
+    "feature_definition",
+    "property_measure"
+  ],
+  "responsibility_contract": {
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ],
+      "normalized_demand": "",
+      "required_responsibility_mode": null,
+      "required_semantic_anchors": []
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "canonical_id": "office__high_speed_region:analysis_procedure:1",
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "represent the strongest region by the mean spatial location of its retained high-speed locations",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      },
+      {
+        "canonical_id": "office__high_speed_region:feature_definition:2",
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      }
+    ],
+    "scientific_target": {
+      "canonical_id": "office__high_speed_region",
+      "normalized_meaning": "ventilation regions in the office velocity field",
+      "required_semantic_anchors": []
+    },
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "criterion",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state criterion"
+      },
+      {
+        "dimension_id": "property_measure",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state property measure"
+      }
+    ]
+  },
+  "scientific_target": "ventilation regions in the office velocity field",
+  "scope_constraints": [
+    {
+      "question_fragment": "Which high-speed ventilation region is strongest in the office velocity field under a scientifically defensible analysis?",
+      "statement": "in the office"
+    }
+  ],
+  "selection_constraints": [],
+  "unresolved_operationalization_dimensions": [
+    "criterion",
+    "property_measure"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "physical_setting": "the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. The supplied vf field is called volume fraction by its README; no phase identity is assumed. RAW byte order is explicitly interpreted as little endian.",
+  "objects": [],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

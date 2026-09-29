@@ -1,0 +1,7 @@
+{
+  "case_id": "nasa_lox_post_o3_f1",
+  "source_question_sha256": "5339c957065970505118a6dd1d68a8af2577dfb03ff7c284aea3c7e22981898e",
+  "scientific_question": "Which high-speed region is strongest in the LOx-post flow field? Take speed as the magnitude of the canonical reader-derived Velocity array. Define connected high-speed regions by choosing a threshold or percentile rule over finite non-zero speeds and an appropriate connectivity rule. Choose and explain a regional strength statistic and a representation of region location, then report the location and strength of the strongest region.",
+  "reason": "Remove an unintended flow-quantity choice while preserving the frozen speed scope and all four open operationalization dimensions.",
+  "semantic_projection_sha256": "091da81b5d3d016cc03e4a066cb78a2c75c1bc74930cca302a6795b9d6776d5c"
+}

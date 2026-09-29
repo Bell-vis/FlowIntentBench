@@ -1,0 +1,115 @@
+{
+  "scientific_question": "Which flow region in the blunt-fin flow field is strongest, and where is it located? Identify and characterize the strongest region using an appropriate scientific analysis, and report its location and strength.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Blunt_Fin/bluntfinxyz.bin",
+        "role": "grid"
+      },
+      {
+        "path": "Blunt_Fin/bluntfinq.bin",
+        "role": "solution"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "PLOT3D",
+        "details": {
+          "encoding": "binary",
+          "precision": "float32",
+          "endianness": "big",
+          "has_byte_count": false
+        }
+      },
+      "grid": {
+        "type": "structured",
+        "dimensions": [
+          40,
+          32,
+          32
+        ],
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "Density",
+          "physical_quantity": "density",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "reader_derived"
+        },
+        {
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "reader_derived"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "Airflow around a blunt fin over a wall",
+    "objects": [
+      {
+        "name": "blunt_fin",
+        "description": "A half-rounded fin projecting into the fluid flow."
+      }
+    ],
+    "boundaries": [
+      {
+        "name": "wall",
+        "type": "wall",
+        "description": "The wall from which the fin projects."
+      }
+    ],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

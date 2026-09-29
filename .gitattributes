@@ -1,0 +1,2 @@
+# Preserve exact bytes: case/data manifests contain file SHA-256 bindings.
+* -text

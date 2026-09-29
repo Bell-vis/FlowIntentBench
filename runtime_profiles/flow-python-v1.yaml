@@ -1,0 +1,30 @@
+runtime_profile_id: flow-python-v1
+
+filesystem:
+  case_root: /case
+  workspace_root: /workspace
+  case_root_read_only: true
+
+network:
+  available: false
+
+tools:
+  python:
+    enabled: true
+    persistent_within_case: true
+    read_root: /case
+    write_root: /workspace
+    normal_errors_returned: true
+    root_recursive_search_blocked: true
+
+libraries:
+  NumPy: available
+  SciPy: available
+  Matplotlib: available
+  VTK: available
+
+filesystem_policy:
+  root_recursive_search: blocked
+
+output_policy:
+  max_returned_text_chars_per_call: 16000

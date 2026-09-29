@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "The visible payload provides no field values or cell geometry/volumes, so the selected field and numerical heterogeneity measure cannot be independently verified here."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question meaningfully asks for the gas-concentration field with greatest heterogeneity within the kitchen airflow field. It exposes the candidate field class, cell-volume-weighted coefficient of variation, cellwise vertex averaging, and selected-field reporting in clear scientific language. The request for one additional characterization correctly leaves the characterization choice to the respondent under F2 while retaining the mandatory heterogeneity evidence and selected-field identity. No unresolved operationalization choice is improperly delegated.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "d96105516b965fc708687cac58ec1df3b1821381b789ba3c5fb4813ddc00ad1d",
+  "review_packet_sha256": "81946e5ec9f43accbdcf495ca1e2add68f068ee22b3e33356f156c0ace46925d",
+  "reviewed_model_visible_text_sha256": "a65a02b34394b55c7196287a021545d1269cffcb1158cef01ddd458939bcbd19",
+  "reviewed_model_visible_text": "Within the kitchen airflow field, determine which stored gas-concentration field has the greatest spatial heterogeneity. Treat every available stored gas-concentration field as a candidate, compare them using the cell-volume-weighted coefficient of variation, and report which field was selected. Provide evidence from that heterogeneity measure and add one relevant characterization of the result, chosen by you. First take the arithmetic mean of the finite vertex values within each cell before applying the stated measure.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+    "condition": "O1-F2",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "81946e5ec9f43accbdcf495ca1e2add68f068ee22b3e33356f156c0ace46925d",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:31:51.694966+00:00",
+    "latency_seconds": 71.272827,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"The visible payload provides no field values or cell geometry/volumes, so the selected field and numerical heterogeneity measure cannot be independently verified here.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question meaningfully asks for the gas-concentration field with greatest heterogeneity within the kitchen airflow field. It exposes the candidate field class, cell-volume-weighted coefficient of variation, cellwise vertex averaging, and selected-field reporting in clear scientific language. The request for one additional characterization correctly leaves the characterization choice to the respondent under F2 while retaining the mandatory heterogeneity evidence and selected-field identity. No unresolved operationalization choice is improperly delegated.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "The visible payload provides no field values or cell geometry/volumes, so the selected field and numerical heterogeneity measure cannot be independently verified here."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question meaningfully asks for the gas-concentration field with greatest heterogeneity within the kitchen airflow field. It exposes the candidate field class, cell-volume-weighted coefficient of variation, cellwise vertex averaging, and selected-field reporting in clear scientific language. The request for one additional characterization correctly leaves the characterization choice to the respondent under F2 while retaining the mandatory heterogeneity evidence and selected-field identity. No unresolved operationalization choice is improperly delegated."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_08aa6038c10ddb8b016aa6ddc1694c87d1af28f0b1ef864a9a": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2533,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 2533,
+            "output_tokens": 0
+          },
+          "rs_08aa6038c10ddb8b016aa6ddc1e92887d19eead1d4ff0fa9d4": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_08aa6038c10ddb8b016aa6ddcd947c87d183856608fc1efffd": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_08aa6038c10ddb8b016aa6dddb7e3887d1bfff11fb02308ebe": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_08aa6038c10ddb8b016aa6dde8d5ac87d1af4b8e075d8e3f21": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_08aa6038c10ddb8b016aa6ddf54b4c87d18b3147f712903509": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "msg_08aa6038c10ddb8b016aa6de02931087d1817d33233a5e3221": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 216
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 216
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 3149,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2804,
+      "output_tokens_details": {
+        "reasoning_tokens": 2588
+      },
+      "total_tokens": 5953
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "d96105516b965fc708687cac58ec1df3b1821381b789ba3c5fb4813ddc00ad1d",
+    "review_packet_sha256": "81946e5ec9f43accbdcf495ca1e2add68f068ee22b3e33356f156c0ace46925d",
+    "reviewed_model_visible_text_sha256": "a65a02b34394b55c7196287a021545d1269cffcb1158cef01ddd458939bcbd19",
+    "reviewed_model_visible_text": "Within the kitchen airflow field, determine which stored gas-concentration field has the greatest spatial heterogeneity. Treat every available stored gas-concentration field as a candidate, compare them using the cell-volume-weighted coefficient of variation, and report which field was selected. Provide evidence from that heterogeneity measure and add one relevant characterization of the result, chosen by you. First take the arithmetic mean of the finite vertex values within each cell before applying the stated measure."
+  }
+}

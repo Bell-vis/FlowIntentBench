@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence items were supplied; the review is limited to the frozen dataset metadata, semantic contract, and visible wording."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful and answerable comparison of the supplied gas-concentration fields in the kitchen airflow field. It preserves the target and scope, exposes the fixed candidate-field and selected-field representation choices in faithful scientific language, leaves the heterogeneity measure open to the respondent, and correctly assigns field selection and heterogeneity reporting to the finding responsibility. It adds no unsupported physical assertion or unnecessary protocol burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+  "review_packet_sha256": "7684620b6a9aad4dbe64ec7ab87c06d1043c463776b6cb09da1990de19d3cd05",
+  "reviewed_model_visible_text_sha256": "5580092b73ec4f3913e139bd510be8a1bdda4f1fba9106ffac0c817d6620178c",
+  "reviewed_model_visible_text": "For the kitchen airflow field, treat every available gas-concentration field as a candidate. Choose an appropriate measure of spatial heterogeneity, determine which field has the greatest value under that measure, and report which field was selected together with its heterogeneity value.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "7684620b6a9aad4dbe64ec7ab87c06d1043c463776b6cb09da1990de19d3cd05",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:30:59.838442+00:00",
+    "latency_seconds": 12.455795,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence items were supplied; the review is limited to the frozen dataset metadata, semantic contract, and visible wording.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful and answerable comparison of the supplied gas-concentration fields in the kitchen airflow field. It preserves the target and scope, exposes the fixed candidate-field and selected-field representation choices in faithful scientific language, leaves the heterogeneity measure open to the respondent, and correctly assigns field selection and heterogeneity reporting to the finding responsibility. It adds no unsupported physical assertion or unnecessary protocol burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence items were supplied; the review is limited to the frozen dataset metadata, semantic contract, and visible wording."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful and answerable comparison of the supplied gas-concentration fields in the kitchen airflow field. It preserves the target and scope, exposes the fixed candidate-field and selected-field representation choices in faithful scientific language, leaves the heterogeneity measure open to the respondent, and correctly assigns field selection and heterogeneity reporting to the finding responsibility. It adds no unsupported physical assertion or unnecessary protocol burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_089c9892f6bf7ea0016aa6ddc86d9887d09785cbc56f3cb4dd": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2240,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 2240,
+            "output_tokens": 0
+          },
+          "rs_089c9892f6bf7ea0016aa6ddc91f4c87d09a4eecf062dad09d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 342
+          },
+          "msg_089c9892f6bf7ea0016aa6ddd007c887d082f1750ab7ea1a7a": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 201
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 201
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2856,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 543,
+      "output_tokens_details": {
+        "reasoning_tokens": 342
+      },
+      "total_tokens": 3399
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+    "review_packet_sha256": "7684620b6a9aad4dbe64ec7ab87c06d1043c463776b6cb09da1990de19d3cd05",
+    "reviewed_model_visible_text_sha256": "5580092b73ec4f3913e139bd510be8a1bdda4f1fba9106ffac0c817d6620178c",
+    "reviewed_model_visible_text": "For the kitchen airflow field, treat every available gas-concentration field as a candidate. Choose an appropriate measure of spatial heterogeneity, determine which field has the greatest value under that measure, and report which field was selected together with its heterogeneity value."
+  }
+}

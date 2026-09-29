@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Investigate the ventilation regions in the office velocity field by retaining locations with velocity magnitude above 0.20 in the stored velocity scale and treating locations connected through immediate grid neighbors along one grid axis as a single contiguous high-speed region. Select the strongest region using peak speed, give the peak-speed evidence supporting your selection, and locate the principal feature using the mean spatial location of the retained high-speed locations. Also characterize the selected region in one informative way of your choice—through its geometry, a meaningful comparison, morphology, orientation, or spatial extent.",
+  "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

@@ -1,0 +1,245 @@
+{
+  "artifact_type": "FindingVerificationPolicy",
+  "case_id": "blunt_fin_o2_f1",
+  "dataset_id": "Blunt_Fin",
+  "policies": [
+    {
+      "finding_id": "blunt_fin_o2_f1_o2_q75_mean_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          1.2812338045775953,
+          2.2513677567553696,
+          1.922935472026421
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "blunt_fin_o2_f1_o2_q75_mean",
+      "policy_digest": "bebf92065b7fca4455e2194bf9a51e0d93ad347c02e5bfcdfbd2104d37357804",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "blunt_fin__high_speed_region",
+        "dataset_id": "Blunt_Fin",
+        "effective_o_semantic_sha256": "923995feb4622815a503a4735a7f583bc1365f1c2c547c694dc481897c4cfea2",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+      },
+      "scientific_finding_policy_key": "87e0bf91631597b8feaa3accc032364779a2416f0e465793a4ef59e99536f250",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "blunt_fin_o2_f1_o2_q75_mean_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 2.6986647780551447,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "blunt_fin_o2_f1_o2_q75_mean",
+      "policy_digest": "e10270568e04b847ab3cef6da8308b95843a0417ed56afdbb1233d37abbf4cb8",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "blunt_fin__high_speed_region",
+        "dataset_id": "Blunt_Fin",
+        "effective_o_semantic_sha256": "923995feb4622815a503a4735a7f583bc1365f1c2c547c694dc481897c4cfea2",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+      },
+      "scientific_finding_policy_key": "e9b1ce58afe656e381d1fbc22540bd376c82e8f378e2c26f806fb1d570fb5aca",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "blunt_fin_o2_f1_o2_q90_mean_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "blunt_fin_o2_f1_o2_q90_mean",
+      "policy_digest": "c54dfe62b0b8ca1a65d16f4899a8fdbdb119abf8bd3f1749f9745bb2b5a2907d",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "blunt_fin__high_speed_region",
+        "dataset_id": "Blunt_Fin",
+        "effective_o_semantic_sha256": "4078745d33e23b4b8e2e56d2396deeaecb8d5c495afc483924ded3880eefafce",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+      },
+      "scientific_finding_policy_key": "b69d2b856c1ffe95747ff96fe03eac639742ea001bb60195fd5f7a081057c991",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "blunt_fin_o2_f1_o2_q90_mean_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 2.922646208400968,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "blunt_fin_o2_f1_o2_q90_mean",
+      "policy_digest": "84024387a10af48e063521e369a45659c4048f5887cef23545f701c215bf60ea",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "blunt_fin__high_speed_region",
+        "dataset_id": "Blunt_Fin",
+        "effective_o_semantic_sha256": "4078745d33e23b4b8e2e56d2396deeaecb8d5c495afc483924ded3880eefafce",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+      },
+      "scientific_finding_policy_key": "c84b1b3398fda78cd8edf169c452b7c0b5a4c602f14d5cc4a504f9e7b77a293e",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "blunt_fin_o2_f1_o2_q90_peak_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "blunt_fin_o2_f1_o2_q90_peak",
+      "policy_digest": "0d98aaf11f5688a24184beadded4f43622eda2787b87aacf0faa764b78cf8021",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "blunt_fin__high_speed_region",
+        "dataset_id": "Blunt_Fin",
+        "effective_o_semantic_sha256": "e45bae30f92136b09ba4f7e3bb8f220c7ab2ba7e75f242db78c66e87769d7e8f",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+      },
+      "scientific_finding_policy_key": "f671d1c470d5ef4f0153333b6fb071b6809fb7006b293be46e3939ae89ecd2c9",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "blunt_fin_o2_f1_o2_q90_peak_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 3.1229319383189305,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "blunt_fin_o2_f1_o2_q90_peak",
+      "policy_digest": "8d8393e582b70dfc95644b052e0fc3934bbbe06a1cd8fb3e3496b1e285a61f94",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "blunt_fin__high_speed_region",
+        "dataset_id": "Blunt_Fin",
+        "effective_o_semantic_sha256": "e45bae30f92136b09ba4f7e3bb8f220c7ab2ba7e75f242db78c66e87769d7e8f",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+      },
+      "scientific_finding_policy_key": "6eab98dd97b4ece5ce41bd05efe563f26ee12ecdef4b9b63e70e9e5c0012b06f",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    }
+  ],
+  "runtime_inference_from_python_type_forbidden": true,
+  "schema_version": "finding-verification-policy-v1",
+  "semantic_contract_sha256": "df9a28fb28b4a4526b0c1c05325df6f4584a06260c0454fafa19473c07a92b90",
+  "verification_policy_sha256": "b55b6b367f6f69f00ae9308a5f726fa6b16dd9076ccdcafc99783462a2e51068"
+}

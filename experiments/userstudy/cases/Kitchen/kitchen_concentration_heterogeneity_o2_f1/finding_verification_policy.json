@@ -1,0 +1,159 @@
+{
+  "artifact_type": "FindingVerificationPolicy",
+  "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+  "dataset_id": "Kitchen",
+  "policies": [
+    {
+      "finding_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation_field",
+      "formula_id": "exact_identity_v1",
+      "formula_inputs": {
+        "reference_value": "c12",
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+      "policy_digest": "103b2a2dc75e2e60038b54c1fc7d116599425cb02f821142ea6cc92f1215e52f",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "kitchen_concentration_heterogeneity",
+        "dataset_id": "Kitchen",
+        "effective_o_semantic_sha256": "1c224fef505ec65fb7ac47d888c0b795cbda29d37293a7c92fe96eacf266edc7",
+        "g_of_o_locator": "/field_name",
+        "representation": "existence_or_identity",
+        "scientific_role": "field",
+        "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+      },
+      "scientific_finding_policy_key": "48d21cd8c57077fca14759c658eebfca18530fd9f976d6afe95f4c8846763f0a",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "exact_identity",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation_heterogeneity",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 57.26614105024864,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+      "policy_digest": "236d073c09b414d86b81fe55010e4c7c80953fd3167373cb53e68c3ee60ff0fb",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "kitchen_concentration_heterogeneity",
+        "dataset_id": "Kitchen",
+        "effective_o_semantic_sha256": "1c224fef505ec65fb7ac47d888c0b795cbda29d37293a7c92fe96eacf266edc7",
+        "g_of_o_locator": "/metric_value",
+        "representation": "quantity",
+        "scientific_role": "heterogeneity",
+        "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+      },
+      "scientific_finding_policy_key": "398b25cfa4bc2e9f3ec2d0e579dac7e555591189003afd78832bfc865f3448f6",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.05,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread_field",
+      "formula_id": "exact_identity_v1",
+      "formula_inputs": {
+        "reference_value": "c13",
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+      "policy_digest": "d92879d4caf484298a217524476d757461a0c2b61b56bea23f103d543bc6e2fa",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "kitchen_concentration_heterogeneity",
+        "dataset_id": "Kitchen",
+        "effective_o_semantic_sha256": "4da902149277630edbdb7048bc4b0b306a0d0cb9da53626139da4f88b1c94223",
+        "g_of_o_locator": "/field_name",
+        "representation": "existence_or_identity",
+        "scientific_role": "field",
+        "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+      },
+      "scientific_finding_policy_key": "c90acc752e5f96b8c81893f742481509cd94bd89c0bf16e1b9823bfe7ccfa31f",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "exact_identity",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread_heterogeneity",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 3.6094058004927834,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+      "policy_digest": "4e8a4b5b6f3e718ee425238b9dced596e92c4ab0729ef0fb61c5b437fa4cdd54",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "kitchen_concentration_heterogeneity",
+        "dataset_id": "Kitchen",
+        "effective_o_semantic_sha256": "4da902149277630edbdb7048bc4b0b306a0d0cb9da53626139da4f88b1c94223",
+        "g_of_o_locator": "/metric_value",
+        "representation": "quantity",
+        "scientific_role": "heterogeneity",
+        "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+      },
+      "scientific_finding_policy_key": "80d58fb8ac87ce29f08c001da1103d07c29aa81f9746143a0d528a559477bbf5",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    }
+  ],
+  "runtime_inference_from_python_type_forbidden": true,
+  "schema_version": "finding-verification-policy-v1",
+  "semantic_contract_sha256": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+  "verification_policy_sha256": "33fd57b3a592ef64d629e3b6948a94d60fc1b60c96a11120bf0fddd519259360"
+}

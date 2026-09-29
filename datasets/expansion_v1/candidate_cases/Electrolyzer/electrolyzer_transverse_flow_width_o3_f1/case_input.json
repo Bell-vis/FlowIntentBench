@@ -1,0 +1,73 @@
+{
+  "scientific_question": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Electrolyzer/flow.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTK",
+        "details": {}
+      },
+      "grid": {
+        "type": "structured",
+        "dimensions": null,
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "p",
+          "physical_quantity": "p",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "vf",
+          "physical_quantity": "vf",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "cell",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. The supplied vf field is called volume fraction by its README; no phase identity is assumed. RAW byte order is explicitly interpreted as little endian.",
+    "objects": [],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

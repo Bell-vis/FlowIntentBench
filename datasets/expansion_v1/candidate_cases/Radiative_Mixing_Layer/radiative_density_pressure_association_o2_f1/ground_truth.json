@@ -1,0 +1,91 @@
+{
+  "dataset_id": "Radiative_Mixing_Layer",
+  "case_id": "radiative_density_pressure_association_o2_f1",
+  "case_family_id": "radiative_density_pressure_association",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "radiative_density_pressure_association_o2_f1_pearson",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Measure association by the volume-weighted Pearson correlation."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "radiative_density_pressure_association_o2_f1_spearman",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "radiative_density_pressure_association_o2_f1_pearson",
+      "findings": [
+        {
+          "finding_id": "radiative_density_pressure_association_o2_f1_pearson_association",
+          "category": "relation",
+          "statement": "report the numerical association coefficient",
+          "importance": "core",
+          "value": -0.034161956325872,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-07,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_radiative_density_pressure_association"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "radiative_density_pressure_association_o2_f1_spearman",
+      "findings": [
+        {
+          "finding_id": "radiative_density_pressure_association_o2_f1_spearman_association",
+          "category": "relation",
+          "statement": "report the numerical association coefficient",
+          "importance": "core",
+          "value": 0.483588580747,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_radiative_density_pressure_association"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "mhd_velocity_magnetic_alignment_o1_f2",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "mhd_velocity_magnetic_alignment_o1_f2",
+    "family_id": "mhd_velocity_magnetic_alignment",
+    "dataset_id": "MHD_Turbulence",
+    "condition": "O1-F2",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_velocity_magnetic_alignment_o1_f2/case_input.json",
+    "case_input_sha256": "75f937cde37c12146dcc48819ce4fada51b0a065c2c0979540eb6bcca1ab566b",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_velocity_magnetic_alignment_o1_f2/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "150ba7b05aa3d3bcd34ea88105306496dbe6b62d46c9e73c1ea59cc59b5b7170",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_velocity_magnetic_alignment_o1_f2/case_context.json",
+    "case_context_sha256": "da91a06f1ba080d4a647270d0970c3415a40c8fe0c9754289b03499b8cb08c56",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_velocity_magnetic_alignment_o1_f2/ground_truth.json",
+    "ground_truth_sha256": "02172453082f1a496726a9f026dafc195c8b868fd84c2b71c87db33d2c343f88"
+  },
+  "finding_recall_mode": "SEMANTIC_ADEQUATE_CORE",
+  "family_definition": {
+    "family_id": "mhd_velocity_magnetic_alignment",
+    "title": "the directional alignment between velocity and magnetic field",
+    "scientific_target": "the directional alignment between velocity and magnetic field",
+    "finding_goal": "Characterize the directional alignment between velocity and magnetic field",
+    "scope": "the supplied compressible magnetohydrodynamic turbulence snapshot",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Average the local cosine of the angle between the cell velocity and magnetic vectors. Weight cell statistics by cell volume and normalize by the included volume. Report the signed alignment coefficient.",
+      "o2_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the signed alignment coefficient.",
+      "o3_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Choose and explain an appropriate analysis procedure. Report the signed alignment coefficient.",
+      "o1_f2": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Average the local cosine of the angle between the cell velocity and magnetic vectors. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "alignment",
+        "result_key": "value",
+        "request_phrase": "the signed alignment coefficient",
+        "requirement_statement": "report the signed alignment coefficient",
+        "category": "relation",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "mean_cosine": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Average the local cosine of the angle between the cell velocity and magnetic vectors.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "vector_alignment",
+          "field": {
+            "name": "velocity",
+            "association": "point",
+            "reduce": "magnitude"
+          },
+          "measure": "mean_cosine",
+          "other_field": {
+            "name": "magnetic_field",
+            "association": "point",
+            "reduce": "magnitude"
+          }
+        }
+      },
+      "normalized_dot": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Divide the volume-mean dot product by the square root of the product of the two volume-mean squared vector magnitudes.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "vector_alignment",
+          "field": {
+            "name": "velocity",
+            "association": "point",
+            "reduce": "magnitude"
+          },
+          "measure": "normalized_dot",
+          "other_field": {
+            "name": "magnetic_field",
+            "association": "point",
+            "reduce": "magnitude"
+          }
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_mhd_velocity_magnetic_alignment"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "vector_relation",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "vector_relation",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "alignment"
+        ]
+      ],
+      "role_by_category": {
+        "relation": "alignment"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/MHD_Turbulence/construction/families.json",
+    "sha256": "194b841ad2c15ea8088ce00021e38e41c3ab8f4db33786210543f3b491bf27d3"
+  },
+  "branch_execution_evidence": {
+    "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine": {
+      "case_id": "mhd_velocity_magnetic_alignment_o1_f2",
+      "dataset_id": "MHD_Turbulence",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Average the local cosine of the angle between the cell velocity and magnetic vectors.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 0.0035234276525179
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/mhd_velocity_magnetic_alignment.json",
+        "sha256": "72507c1418d19183f8118105bbbf856b747a5a64411d0454a78fe4727746fc87"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "5b2dc4d12dea7d09c8c72ca093a017dd11f5ee8b95c87d705b9863d2d44c377b",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "MHD_Turbulence/snapshot.vtk",
+            "sha256": "1d66a7f150262e50490286b464a8d0874dd4fe975947e2833f5386181804890c"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "vector_alignment",
+          "field": {
+            "name": "velocity",
+            "association": "point",
+            "reduce": "magnitude"
+          },
+          "measure": "mean_cosine",
+          "other_field": {
+            "name": "magnetic_field",
+            "association": "point",
+            "reduce": "magnitude"
+          }
+        },
+        "definition_sha256": "5a93c704703de6eb50b34ed11d900ad0905b795a91a9a9f22bbb9c7a600c3fd6",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "49a0ca3189be4ca17bb9fd55f8c1c390179fa2b30a9aecca7cb1e10886dec7b0"
+    }
+  },
+  "finding_requirement_contract": {
+    "mandatory_roles": [],
+    "alternative_role_groups": [],
+    "adequate_core_sets": [
+      [
+        "alignment"
+      ]
+    ],
+    "supporting_roles": [],
+    "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list.",
+    "scientific_entity_type": "vector_relation",
+    "contract_source": "CONSTRUCTION_DEFINED",
+    "role_by_category": {
+      "relation": "alignment"
+    },
+    "reference_finding_role_map": {
+      "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine_alignment": "alignment"
+    }
+  },
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "MHD_Turbulence",
+    "case_id": "mhd_velocity_magnetic_alignment_o1_f2",
+    "semantic_contract_sha256": "69a82c5f24b4d3e1c6ac948c1c2e9665eaf842cbd7fa30bac804679593717668",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine",
+        "finding_id": "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine_alignment",
+        "scientific_finding_policy_key": "8d10690ba0e5118393830308f653816b2ab812d44797dac889d785507120bfb4",
+        "policy_identity": {
+          "dataset_id": "MHD_Turbulence",
+          "case_family_id": "mhd_velocity_magnetic_alignment",
+          "scientific_target": "the directional alignment between velocity and magnetic field",
+          "effective_o_semantic_sha256": "c49ca97e425e3daac0bee28911d8c8bb6fc8e4d978c5ddf1ec43d84b8ada4cea",
+          "scientific_role": "relation",
+          "g_of_o_locator": "/value",
+          "representation": "relation",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-08,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.0035234276525179,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-08,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "1535a45bb1599306133d16d6d1ac0a477730866eadb1ce652d0e60a36aae49bd"
+      }
+    ],
+    "verification_policy_sha256": "11826a588ac6e5229ecfa68a1cb8b0dbc84da98ecda5701925330b28220eeb41"
+  }
+}

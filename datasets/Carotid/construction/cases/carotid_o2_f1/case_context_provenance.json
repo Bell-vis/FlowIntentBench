@@ -1,0 +1,22 @@
+{
+  "dataset_id": "Carotid",
+  "fact_index": {
+    "carotid_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "carotid_artery": {
+      "field": "objects",
+      "position": 0
+    }
+  },
+  "fact_provenance": {
+    "carotid_physical_setting": [
+      "ctx_001"
+    ],
+    "carotid_artery": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "carotid_o2_f1"
+}

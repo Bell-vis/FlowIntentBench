@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Which high-speed flow region is strongest in the carotid artery dataset? Compute speed as the Euclidean magnitude of the velocity vector, classify non-zero speeds at or above their 90th percentile as high-speed, and form regions from face-connected qualifying locations. Select the region with the greatest peak speed, and give both that peak value and the mean spatial location of the retained locations within the region.",
+  "semantic_contract_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68",
+  "source": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o1_f1.json",
+  "wording_version": "1.2.1"
+}

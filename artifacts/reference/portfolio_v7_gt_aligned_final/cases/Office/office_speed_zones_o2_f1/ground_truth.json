@@ -1,0 +1,204 @@
+{
+  "dataset_id": "Office",
+  "case_id": "office_speed_zones_o2_f1",
+  "case_family_id": "office__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "o2_peak_speed",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "o2_mean_speed",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the mean speed across retained locations as the strength of each region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "o2_q90_mean_speed",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed is at or above the 90th percentile of non-zero speed values as a distribution-informed high-speed criterion."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the mean speed across retained locations as the strength of each region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "o2_peak_speed",
+      "findings": [
+        {
+          "finding_id": "o2_peak_speed_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [0.06812500045634806, 2.343749985098839, 2.389375001192093] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o2_peak_speed_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 0.80493502 in the stored velocity scale.",
+          "importance": "core",
+          "value": 0.8049350186348156,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "o2_mean_speed",
+      "findings": [
+        {
+          "finding_id": "o2_mean_speed_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [4.5, 2.4312500208616257, 2.1737499833106995] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o2_mean_speed_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 0.35773132 in the stored velocity scale.",
+          "importance": "core",
+          "value": 0.3577313150236388,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "o2_q90_mean_speed",
+      "findings": [
+        {
+          "finding_id": "o2_q90_mean_speed_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [4.497741883800876, 2.421505397365939, 2.1120429859366467] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o2_q90_mean_speed_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 0.29193364 in the stored velocity scale.",
+          "importance": "core",
+          "value": 0.2919336353878951,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "In the annular-combustor flow field, identify one scientifically relevant coherent constant-density structure. Choose and state a rule for setting the Density isovalue from the finite stored Density values. At that level, treat each connected isosurface component as a candidate, select the component with the largest surface area, and represent it by its area-weighted centroid and surface area. Report the selected structure’s centroid, Density isovalue, and surface area.",
+  "semantic_contract_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6",
+  "source": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o2_f1.json",
+  "wording_version": "1.2.1"
+}

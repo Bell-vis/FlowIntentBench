@@ -1,0 +1,70 @@
+{
+  "branches": [
+    {
+      "branch_id": "carotid_o1_f1_o1_high_speed_regions",
+      "dataset_manifest_sha256": "9d3aa34d6f1f9b59728a1bb0207a27b510d324b699160d439d22f3e8625c4c98",
+      "effective_o_sha256": "9bbf233383347dc4684473d54c47ba851b4f8d048dd498dd99448c567aebd96a",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            137.80844557699308,
+            94.49144521295959,
+            15.773061521659992
+          ],
+          "execution_value_sha256": "199c8e83c5094754981df1290484d7045ea208b860065c66e4b204a45698c850",
+          "finding_id": "carotid_o1_f1_o1_high_speed_regions_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            137.80844557699308,
+            94.49144521295959,
+            15.773061521659992
+          ],
+          "scientific_finding_policy_key": "785276e85fe94409db508a3454d064e58386783890fabb58ee6c4e39aa450b1a",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "0b0b727de836657267fe2364bca017b23e62fbeca0db8e036ca67c004297006e"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 22.694927991153424,
+          "execution_value_sha256": "02fa2016cb1d1c5dc1bc301d74c63ff4a008bbd2e4f185c92122a0767cbc422a",
+          "finding_id": "carotid_o1_f1_o1_high_speed_regions_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 22.694927991153424,
+          "scientific_finding_policy_key": "b12a5e85275e1a265dff3f7f08974655af8c8b0eeb8120b4a553af39eeb2a5f1",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "ef83fe0abc570d24b1fb7ce781f3581f98d5c02e1ae10953f6ba46305085b68c"
+        }
+      ],
+      "g_of_o_sha256": "4d2aa54ee3f877f9fca08fe793fadaabf0ab976a1532823baf25498a0f85d2b1",
+      "materialization_id": "mat:carotid_o1_f1_o1_high_speed_regions",
+      "operationalization_id": "carotid_o1_f1_o1_high_speed_regions"
+    }
+  ],
+  "case_id": "carotid_o1_f1",
+  "dataset_id": "Carotid",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68"
+}

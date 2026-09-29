@@ -1,0 +1,11 @@
+agent_id: deepseek-v4.1-flash-max
+model:
+  provider: deepseek
+  model_id: deepseek-flash
+  model_family: DeepSeek-V4.1-Flash
+  reasoning_effort: max
+interface:
+  wire_api: chat_completions
+runtime_profile: flow-python-v1
+tools:
+  - python

@@ -1,0 +1,8 @@
+{
+  "scientific_question": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+  "f1_required_properties": [
+    "centroid",
+    "mean"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

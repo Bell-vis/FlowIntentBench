@@ -1,0 +1,13 @@
+{
+  "scientific_question": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Report the total surface area, and the area-weighted surface centroid.",
+  "f1_required_properties": [
+    "area",
+    "centroid"
+  ],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+    "property_measure": "Compute the stated properties of the selected object.",
+    "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+    "parameter": "Extract the density level 0.94 in stored units."
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "OpenFOAM_Tubes",
+    "evidence_type": "context",
+    "statement": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000 Stored coordinates and field scales are used without assigning undeclared SI units. The source OpenFOAM headers identify p as pressure with dimensions [1 -1 -2 0 0 0 0] (Pa), U in m/s, k in m^2/s^2, nut in m^2/s and omega in 1/s.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Dataset description and inspected field arrays"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "physical_setting",
+        "field": "physical_setting",
+        "value": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000 Stored coordinates and field scales are used without assigning undeclared SI units. The source OpenFOAM headers identify p as pressure with dimensions [1 -1 -2 0 0 0 0] (Pa), U in m/s, k in m^2/s^2, nut in m^2/s and omega in 1/s.",
+        "review_status": "approved"
+      }
+    ]
+  }
+]

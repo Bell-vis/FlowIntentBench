@@ -1,0 +1,11 @@
+agent_id: flow-case-auditor-gpt-5.6-sol
+model:
+  provider: codex-hosted
+  model_id: gpt-5.6-sol
+  model_family: gpt-5.6
+  reasoning_effort: high
+interface:
+  wire_api: responses
+runtime_profile: flow-python-v1
+tools:
+  - python

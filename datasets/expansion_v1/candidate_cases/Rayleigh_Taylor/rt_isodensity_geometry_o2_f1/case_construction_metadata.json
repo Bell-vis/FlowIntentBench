@@ -1,0 +1,161 @@
+{
+  "case_id": "rt_isodensity_geometry_o2_f1",
+  "case_family_id": "rt_isodensity_geometry",
+  "dataset_id": "Rayleigh_Taylor",
+  "scientific_target": "the geometry of a middle-density level surface",
+  "finding_goal": "Characterize the geometry of a middle-density level surface",
+  "operationalization_responsibility": "partially_specified",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "property_measure",
+    "aggregation_or_representation",
+    "parameter"
+  ],
+  "unresolved_operationalization_dimensions": [
+    "parameter"
+  ],
+  "scope_constraints": [
+    {
+      "statement": "the supplied Rayleigh–Taylor instability snapshot",
+      "question_fragment": "the supplied Rayleigh–Taylor instability snapshot"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "the complete supplied three-dimensional mesh",
+      "question_fragment": "the complete supplied three-dimensional mesh"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+      "question_fragment": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons."
+    },
+    {
+      "category": "property_measure",
+      "statement": "Compute the stated properties of the selected object.",
+      "question_fragment": "Compute the stated properties of the selected object."
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "Sum triangle areas and weight the surface centroid by triangle area.",
+      "question_fragment": "Sum triangle areas and weight the surface centroid by triangle area."
+    }
+  ],
+  "explicit_finding_requirements": [
+    {
+      "category": "property",
+      "statement": "report the total surface area",
+      "question_fragment": "the total surface area"
+    },
+    {
+      "category": "location",
+      "statement": "report the area-weighted surface centroid",
+      "question_fragment": "the area-weighted surface centroid"
+    }
+  ],
+  "responsibility_contract": {
+    "scientific_target": {
+      "canonical_id": "rt_isodensity_geometry",
+      "normalized_meaning": "the geometry of a middle-density level surface",
+      "required_semantic_anchors": [
+        "geometry of a middle-density level surface"
+      ]
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "dimension_id": "feature_definition",
+        "canonical_id": "rt_isodensity_geometry:feature_definition",
+        "normalized_meaning": "use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "stored",
+          "point",
+          "density",
+          "extract"
+        ]
+      },
+      {
+        "dimension_id": "property_measure",
+        "canonical_id": "rt_isodensity_geometry:property_measure",
+        "normalized_meaning": "compute the stated properties of the selected object.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "compute",
+          "stated",
+          "properties",
+          "selected"
+        ]
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "canonical_id": "rt_isodensity_geometry:aggregation_or_representation",
+        "normalized_meaning": "sum triangle areas and weight the surface centroid by triangle area.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "triangle",
+          "areas",
+          "weight",
+          "surface"
+        ]
+      }
+    ],
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "parameter",
+        "normalized_meaning": "model-selected parameter",
+        "must_remain_open": true
+      }
+    ],
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "normalized_demand": "characterize the geometry of a middle-density level surface",
+      "required_semantic_anchors": [
+        "report"
+      ],
+      "required_responsibility_mode": null,
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ]
+    }
+  },
+  "evaluation_representability_contract": {
+    "o_schema_available": true,
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v1"
+    },
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1"
+    },
+    "deterministic_verification": {
+      "required_claim_types": [
+        "exact",
+        "scalar_numeric",
+        "spatial"
+      ],
+      "registered_handlers": [
+        "exact",
+        "scalar_numeric",
+        "spatial_tolerance"
+      ]
+    },
+    "semantic_adjudication": {
+      "required": true,
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1"
+    },
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    }
+  }
+}

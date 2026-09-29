@@ -1,0 +1,118 @@
+{
+  "dataset_id": "Office",
+  "case_id": "office_speed_zones_o1_f2",
+  "case_family_id": "office__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "o1_speed_zones_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "use peak speed as the measure of strength"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "o1_speed_zones_open",
+      "findings": [
+        {
+          "finding_id": "o1_speed_zones_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [0.06812500045634806, 2.343749985098839, 2.389375001192093] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o1_speed_zones_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 0.80493502 in the stored velocity scale.",
+          "importance": "core",
+          "value": 0.8049350186348156,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o1_speed_zones_open_extent",
+          "category": "characterization",
+          "statement": "The selected region has coordinate-space extent approximately [0.24000000115484, 0.5999999046325684, 0.24000000953674316] along the dataset axes.",
+          "importance": "core",
+          "value": [
+            0.24000000115484,
+            0.5999999046325684,
+            0.24000000953674316
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o1_speed_zones_open_retained_points",
+          "category": "quantity",
+          "statement": "The selected region contains 32 retained locations.",
+          "importance": "supporting",
+          "value": 32,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "o1_speed_zones_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 8 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 8,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

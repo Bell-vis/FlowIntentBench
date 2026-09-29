@@ -1,0 +1,680 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "office_speed_zones_o2_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "office_speed_zones_o2_f1",
+    "dataset_id": "Office",
+    "condition": "O2-F1",
+    "family_id": "office__high_speed_region",
+    "origin": "FROZEN_REFERENCE_COPY",
+    "reference_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe",
+    "case_input_path": "datasets/expansion_v1/reference_cases/Office/office_speed_zones_o2_f1/case_input.json",
+    "case_input_sha256": "b33ff007c8971a0f2c34864b77dc7a2cfea96057f66d3e8310744155a4dec6a7",
+    "case_construction_metadata_path": "datasets/expansion_v1/reference_cases/Office/office_speed_zones_o2_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "3ea33117fba8d0cf67c7d7cb7dab8a00051ebf2fa8b1269fd281ba35cca39181",
+    "case_context_path": "datasets/expansion_v1/reference_cases/Office/office_speed_zones_o2_f1/case_context.json",
+    "case_context_sha256": "01eb52519842da1699a9dcb81bf9118f5561681d518042d83254e28ed55ecf77",
+    "ground_truth_path": "datasets/expansion_v1/reference_cases/Office/office_speed_zones_o2_f1/ground_truth.json",
+    "ground_truth_sha256": "10408999b151321afa36422632bd4c621c86b122127e9395dd14af3dc6b8a9c9",
+    "scientific_semantic_projection_path": "datasets/expansion_v1/reference_cases/Office/office_speed_zones_o2_f1/scientific_semantic_projection.json",
+    "scientific_semantic_projection_sha256": "9f9e28db029104250564ef5b69399086de629eea17157a78fc124fab2bd8dd6d"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "scientific_semantic_projection": {
+    "concept_id": "high_speed_region",
+    "dataset_id": "Office",
+    "family_id": "office__high_speed_region",
+    "finding_responsibility": "F1",
+    "finding_semantics": {
+      "finding_goal": "characterize the strongest airflow region in the office velocity field",
+      "fixed_finding_requirements": [
+        {
+          "category": "location",
+          "normalized_meaning": "report the location of the strongest region"
+        },
+        {
+          "category": "quantity",
+          "normalized_meaning": "report the strength of the strongest region"
+        }
+      ],
+      "normalized_demand": "characterize the strongest airflow region in the office velocity field",
+      "required_finding_roles": [
+        "defining_strength_evidence",
+        "principal_feature_location"
+      ]
+    },
+    "observable_scientific_semantics": {
+      "required_capabilities": {},
+      "scientific_semantic_capabilities": {}
+    },
+    "operationalization_responsibility": "partially_specified",
+    "principal_operationalization_dimensions": [
+      "aggregation_or_representation",
+      "criterion",
+      "feature_definition",
+      "property_measure"
+    ],
+    "resolved_operationalization": [
+      {
+        "canonical_id": "mean_region_coordinate",
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+      },
+      {
+        "canonical_id": "face_connected_region",
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+      }
+    ],
+    "scientific_scope": {
+      "condition_constraints": [
+        "speed is the Euclidean magnitude of the stored vectors array",
+        "operationalizations remain within thresholded connected velocity-magnitude region analysis on the supplied topology"
+      ],
+      "scope_constraints": [
+        "in the office"
+      ],
+      "selection_constraints": [
+        "select the strongest region"
+      ]
+    },
+    "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+    "scientific_target": "ventilation regions in the office velocity field",
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "criterion",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state an explicit numeric threshold or percentile rule over finite non-zero speed values"
+      },
+      {
+        "dimension_id": "property_measure",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state the regional strength statistic"
+      }
+    ],
+    "verification_semantics": {
+      "deterministic_verification_required_claim_types": [],
+      "semantic_adjudication_required": false
+    }
+  },
+  "verification_policy_source": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Office/office_speed_zones_o2_f1/finding_verification_policy.json",
+    "sha256": "6b4c5be24b2fabad871c2dba857d4a32453cc177766a967fd9dcdefb7bce2e3a"
+  },
+  "branch_execution_evidence": {
+    "o2_peak_speed": {
+      "case_id": "office_speed_zones_o2_f1",
+      "dataset_id": "Office",
+      "operationalization": {
+        "feature_definition": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region",
+        "criterion": "Retain locations whose speed magnitude is strictly greater than 0.20.",
+        "property_measure": "Use peak speed as the strength of each retained region.",
+        "aggregation_or_representation": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+      },
+      "materialized_G_of_O": {
+        "comparator": "GT",
+        "coordinate_span": [
+          0.24000000115484,
+          0.5999999046325684,
+          0.24000000953674316
+        ],
+        "criterion": "> 0.2",
+        "criterion_kind": "fixed_threshold",
+        "mean_spatial_location": [
+          0.06812500045634806,
+          2.343749985098839,
+          2.389375001192093
+        ],
+        "mean_speed": 0.3364087523075579,
+        "measure_kind": "peak",
+        "operation_id": "o2_peak_speed",
+        "peak_point": [
+          0.009999998845160007,
+          2.549999952316284,
+          2.430000066757202
+        ],
+        "peak_speed": 0.8049350186348156,
+        "region_count": 8,
+        "region_sizes": [
+          20,
+          33,
+          64,
+          4,
+          1,
+          32,
+          9,
+          37
+        ],
+        "reported_location": [
+          0.06812500045634806,
+          2.343749985098839,
+          2.389375001192093
+        ],
+        "representation": "mean",
+        "retained_points": 200,
+        "selected_region_size": 32,
+        "strength": 0.8049350186348156,
+        "threshold": 0.2
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Office/office_speed_zones_o2_f1/materialization_o2_peak_speed.json",
+        "sha256": "d555438eb8b6f1cb93768e8049a05a47f9a4817e3dbe76a1621fce9c74b71bcb"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Office/office.binary.vtk",
+            "sha256": "b71ac0334e92829a431fe7aaff54cec1add42f4d50e42a56fa4917560c9c8de5"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": 0.2
+          },
+          "compiled_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "executed_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "effective_o_sha256": "97da326e23e1ac192c0d95e1bff1f2b0d38e79adb488a3f92ea8baa64dc0cf2a",
+          "reader_format": "VTK",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          }
+        }
+      },
+      "evidence_binding_sha256": "8448265850191c88a9db423b979c43848e96ffca93e882b4d19730e4ed1dc0d1"
+    },
+    "o2_mean_speed": {
+      "case_id": "office_speed_zones_o2_f1",
+      "dataset_id": "Office",
+      "operationalization": {
+        "feature_definition": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region",
+        "criterion": "Retain locations whose speed magnitude is strictly greater than 0.20.",
+        "property_measure": "Use the mean speed across retained locations as the strength of each region.",
+        "aggregation_or_representation": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+      },
+      "materialized_G_of_O": {
+        "comparator": "GT",
+        "coordinate_span": [
+          0.0,
+          2.5,
+          0.9900000095367432
+        ],
+        "criterion": "> 0.2",
+        "criterion_kind": "fixed_threshold",
+        "mean_spatial_location": [
+          4.5,
+          2.4312500208616257,
+          2.1737499833106995
+        ],
+        "mean_speed": 0.3577313150236388,
+        "measure_kind": "mean",
+        "operation_id": "o2_mean_speed",
+        "peak_point": [
+          4.5,
+          1.600000023841858,
+          2.3499999046325684
+        ],
+        "peak_speed": 0.4289544897909436,
+        "region_count": 8,
+        "region_sizes": [
+          20,
+          33,
+          64,
+          4,
+          1,
+          32,
+          9,
+          37
+        ],
+        "reported_location": [
+          4.5,
+          2.4312500208616257,
+          2.1737499833106995
+        ],
+        "representation": "mean",
+        "retained_points": 200,
+        "selected_region_size": 64,
+        "strength": 0.3577313150236388,
+        "threshold": 0.2
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Office/office_speed_zones_o2_f1/materialization_o2_mean_speed.json",
+        "sha256": "2664d29330e1ef249d5eacc99643388345cb6c4d40579d121933e51603ada84f"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Office/office.binary.vtk",
+            "sha256": "b71ac0334e92829a431fe7aaff54cec1add42f4d50e42a56fa4917560c9c8de5"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": 0.2
+          },
+          "compiled_plan_sha256": "677aa499547c944b564b8062fecc027da8df5541fe8459f14b7748db724a6907",
+          "executed_plan_sha256": "677aa499547c944b564b8062fecc027da8df5541fe8459f14b7748db724a6907",
+          "effective_o_sha256": "c7ad562a8b20fbbfbbaf7ebf270ea220c5544899e94f91b588012ab7bca49d8b",
+          "reader_format": "VTK",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          }
+        }
+      },
+      "evidence_binding_sha256": "3b4b5397c43f6f328a4e6656b0f7acf9afedea70e2f7b2362f064be7b0976e55"
+    },
+    "o2_q90_mean_speed": {
+      "case_id": "office_speed_zones_o2_f1",
+      "dataset_id": "Office",
+      "operationalization": {
+        "feature_definition": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region",
+        "criterion": "Retain locations whose speed is at or above the 90th percentile of non-zero speed values as a distribution-informed high-speed criterion.",
+        "property_measure": "Use the mean speed across retained locations as the strength of each region.",
+        "aggregation_or_representation": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+      },
+      "materialized_G_of_O": {
+        "comparator": "GE",
+        "coordinate_span": [
+          0.010000228881835938,
+          2.5,
+          1.2400000095367432
+        ],
+        "criterion": ">= non-zero 90th percentile (0.120388175490)",
+        "criterion_kind": "quantile",
+        "mean_spatial_location": [
+          4.497741883800876,
+          2.421505397365939,
+          2.1120429859366467
+        ],
+        "mean_speed": 0.2919336353878951,
+        "measure_kind": "mean",
+        "operation_id": "o2_q90_mean_speed",
+        "peak_point": [
+          4.5,
+          1.600000023841858,
+          2.3499999046325684
+        ],
+        "peak_speed": 0.4289544897909436,
+        "region_count": 7,
+        "region_sizes": [
+          247,
+          154,
+          296,
+          93,
+          11,
+          12,
+          4
+        ],
+        "reported_location": [
+          4.497741883800876,
+          2.421505397365939,
+          2.1120429859366467
+        ],
+        "representation": "mean",
+        "retained_points": 817,
+        "selected_region_size": 93,
+        "strength": 0.2919336353878951,
+        "threshold": 0.12038817548967597
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Office/office_speed_zones_o2_f1/materialization_o2_q90_mean_speed.json",
+        "sha256": "7ada2dd50a700d63097297edcbd1646c1af719e486f35cb95a1fbf64a68e6705"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Office/office.binary.vtk",
+            "sha256": "b71ac0334e92829a431fe7aaff54cec1add42f4d50e42a56fa4917560c9c8de5"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "executed_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "effective_o_sha256": "d7e62e705024302955133c30a8efe26a111c36c60ac14f2a09514f71d3e1f56e",
+          "reader_format": "VTK",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          }
+        }
+      },
+      "evidence_binding_sha256": "96d3f3c59ea53d8f851d81bdedf974ebf629e033c45a20589a8339a3915f3aa9"
+    }
+  },
+  "reference_materialization_evidence": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Office/office_speed_zones_o2_f1/agent_ready_evidence.json",
+    "sha256": "622dc1e2b39d7309e0045c6903c1bbf9c667719adad58ff111f1f9fe8baaec7c"
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "case_id": "office_speed_zones_o2_f1",
+    "dataset_id": "Office",
+    "policies": [
+      {
+        "finding_id": "o2_mean_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o2_mean_speed",
+        "policy_digest": "89da4e029f22a408217c5a8e825cf49bdfcfc29f0205e0cfc1775fea50c5c3c2",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "d1812395c6c070150ef8cd5d708c2f4a04afe447b0d4a0bfe93bf2ff6a09262f",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "6192342e939c38779f423abbc56caacdd767b2ee8c4fc73d14e73807b6b03e56",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o2_mean_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.3577313150236388,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o2_mean_speed",
+        "policy_digest": "433a3a95db98b39201315d8112b8393f52e07709f544a46f22102c69b54e8e66",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "d1812395c6c070150ef8cd5d708c2f4a04afe447b0d4a0bfe93bf2ff6a09262f",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "a43aa4830d7a1f67a2d3703ef0a040d93c12e9d0f4944598bea8033784fd420b",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "o2_peak_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o2_peak_speed",
+        "policy_digest": "9f116bc2356db2a550447b2c69761b3c61a0f2af02c9c488f39182803ce63623",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "94acfaf1c072e0e5bb68a60f62a1e45fba309bb81bfd5de9427b736a175c808d",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "93f59e5faf2bfff33d958737519bc35856d90e8d715b2da83037a05635e1ade7",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o2_peak_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.8049350186348156,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o2_peak_speed",
+        "policy_digest": "73fb56d4b0630f57c6538e54ce9edaa7fe5905224f3ec35778350b96648302df",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "94acfaf1c072e0e5bb68a60f62a1e45fba309bb81bfd5de9427b736a175c808d",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "5501d8159b98b8fee455e4ba286ff35b7f6299c3c126a11afb3fcd072f692e26",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "o2_q90_mean_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o2_q90_mean_speed",
+        "policy_digest": "a2857352b0924257e92355b49c6e10ce9df026ebd8999817cf55ba13614cf754",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "e507952a72c5a8bd44419ad155f7f7e3c33ca25d4428654c6396e206bf8c1450",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "f192d55c528d8399c05a4f905a06e27208836f859e41ed463c11fe88f336d80e",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o2_q90_mean_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.2919336353878951,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o2_q90_mean_speed",
+        "policy_digest": "85258d4e418e853e66d9ffbeb81ad6d79a1e9c6bdb19293428c4111708e09851",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "e507952a72c5a8bd44419ad155f7f7e3c33ca25d4428654c6396e206bf8c1450",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "b780956a94a84187eeb85beba5b453c300522082b4233327fe37a66bb6bc99d3",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "runtime_inference_from_python_type_forbidden": true,
+    "schema_version": "finding-verification-policy-v1",
+    "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+    "verification_policy_sha256": "c74f7421250d2a02b278a00271a5b8283ad7fa4f251025206e66e53396957573"
+  }
+}

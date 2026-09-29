@@ -1,0 +1,71 @@
+{
+  "family_id": "electrolyzer_current_hotspot",
+  "inputs": [
+    {
+      "path": "Electrolyzer_Electric/electric.vtk",
+      "sha256": "afac339824c2ca6c96c7404df43c9a7ac89907e563f84d315332b49ba1ae0afe"
+    }
+  ],
+  "operations": {
+    "q90": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "recipe": {
+        "kind": "upper_tail",
+        "field": {
+          "name": "current_density",
+          "association": "point",
+          "reduce": "magnitude"
+        },
+        "quantile": 0.9
+      }
+    },
+    "q95": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "recipe": {
+        "kind": "upper_tail",
+        "field": {
+          "name": "current_density",
+          "association": "point",
+          "reduce": "magnitude"
+        },
+        "quantile": 0.95
+      }
+    }
+  },
+  "definition_sha256": "d8cbac9e7680b1c2162169c79c20191ac7ba96dae9a726a41cc564588424e86f",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "q90": {
+      "fraction": 0.10000182192247,
+      "centroid": [
+        11.304063025628,
+        0.33018346255372,
+        0.46966994986484
+      ],
+      "mean": 0.005398905692704,
+      "cutoff": 0.0049886790868275
+    },
+    "q95": {
+      "fraction": 0.050000907184395,
+      "centroid": [
+        11.379691001219,
+        0.27546168789961,
+        0.4556705485297
+      ],
+      "mean": 0.0056686884343492,
+      "cutoff": 0.0052984897568739
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

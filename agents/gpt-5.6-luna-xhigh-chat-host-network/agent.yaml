@@ -1,0 +1,15 @@
+agent_id: gpt-5.6-luna-xhigh-chat-host-network
+
+model:
+  provider: yiapi
+  model_id: gpt-5.6-luna
+  model_family: gpt-5.6
+  reasoning_effort: xhigh
+
+interface:
+  wire_api: chat_completions
+
+runtime_profile: flow-python-host-network-v1
+
+tools:
+  - python

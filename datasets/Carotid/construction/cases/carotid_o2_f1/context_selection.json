@@ -1,0 +1,8 @@
+{
+  "case_id": "carotid_o2_f1",
+  "dataset_id": "Carotid",
+  "include_fact_ids": [
+    "carotid_physical_setting",
+    "carotid_artery"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "format": {
+    "type": "VTK",
+    "details": {}
+  },
+  "grid": {
+    "type": "structured",
+    "dimensions": null,
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "density",
+      "physical_quantity": "density",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "magnetic_field",
+      "physical_quantity": "magnetic_field",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "velocity",
+      "physical_quantity": "velocity",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

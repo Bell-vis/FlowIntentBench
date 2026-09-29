@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the FireFlow room flow field, choose a criterion for identifying high-speed locations and a measure of regional strength. Treat mesh-connected retained locations as one contiguous high-speed flow region, select the strongest region, and report its strength and its location as the mean spatial location of its retained high-speed locations. Treat locations that share an unstructured-mesh cell as connected. Define speed as the Euclidean magnitude of the stored uvw vector at each point.",
+  "semantic_contract_sha256": "216bb49d1688d151948c4f39c6dbfab8d557758bb0fb9f6c0b1dca03ea0180a0",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

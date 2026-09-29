@@ -1,0 +1,106 @@
+{
+  "dataset_id": "FireFlow",
+  "case_id": "fireflow_o1_f2",
+  "case_family_id": "fireflow_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Mesh-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+      "findings": [
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [0.5113998996219967, 1.975870378012814, 0.48199224898616855] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.8223 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.822313175748469,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_coordinate_span",
+          "category": "characterization",
+          "statement": "The strongest region has coordinate-space span approximately [2.6875, 2.225000023841858, 2.0799999237060547] along the dataset axes; no physical unit is inferred.",
+          "importance": "core",
+          "value": [
+            2.6875,
+            2.225000023841858,
+            2.0799999237060547
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_point_count",
+          "category": "quantity",
+          "statement": "The selected region contains 517 retained locations.",
+          "importance": "supporting",
+          "value": 517,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 4 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 4,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

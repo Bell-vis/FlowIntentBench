@@ -1,0 +1,19 @@
+{
+  "dataset_id": "Rayleigh_Taylor",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "dataset_documentation",
+      "title": "the supplied Rayleigh\u2013Taylor instability snapshot",
+      "venue": "Official dataset documentation",
+      "report_id": "https://polymathic-ai.org/the_well/datasets/rayleigh_taylor_instability/"
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "example_source_code",
+      "title": "FlowIntentBench explicit numerical operationalization recipes",
+      "venue": "FlowIntentBench",
+      "report_id": "flowintentbench/construction_recipes.py"
+    }
+  ]
+}

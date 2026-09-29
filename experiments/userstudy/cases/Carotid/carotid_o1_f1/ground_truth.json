@@ -1,0 +1,74 @@
+{
+  "dataset_id": "Carotid",
+  "case_id": "carotid_o1_f1",
+  "case_family_id": "carotid__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "carotid_o1_f1_o1_high_speed_regions",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "compute speed as the euclidean magnitude of the stored point-data vector array named `vectors`, then define high-speed locations as those at or above the 90th percentile of its non-zero values using linear quantile interpolation"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "use peak speed as the measure of strength"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "carotid_o1_f1_o1_high_speed_regions",
+      "findings": [
+        {
+          "finding_id": "carotid_o1_f1_o1_high_speed_regions_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [137.80844557699308, 94.49144521295959, 15.773061521659992] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            137.80844557699308,
+            94.49144521295959,
+            15.773061521659992
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "carotid_o1_f1_o1_high_speed_regions_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 22.694928 in the stored velocity scale.",
+          "importance": "core",
+          "value": 22.694927991153424,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

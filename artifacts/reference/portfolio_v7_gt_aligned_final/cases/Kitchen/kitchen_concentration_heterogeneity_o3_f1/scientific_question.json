@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "For the kitchen airflow field, which available gas-concentration field has the greatest spatial heterogeneity? Choose how to represent the field, define the spatial feature used to characterize heterogeneity, and select an appropriate measure of that property; then report which field you selected and the resulting heterogeneity value.",
+  "semantic_contract_sha256": "02a15c1bd85f3a6b5f886ca3ee0d4a0e5a082a2c4a35c01f12848abe3fe0928d",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

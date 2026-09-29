@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "In the NASA LOx-post flow field, use velocity magnitude to define speed and retain locations at or above the 90th percentile of non-zero recorded values. Build regions from face-connected retained locations, select the strongest one by peak speed, and use the mean spatial position of its retained locations as its representative location. From this fixed analysis, report the principal findings you consider scientifically significant, supported by evidence; include strength and location evidence and at least one further characterization of your choice.",
+  "semantic_contract_sha256": "7c7cf8fdfe6a3d2145d836962bce370dd49090d0b942ce512dc4f788371271b1",
+  "source": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o1_f2.json",
+  "wording_version": "1.2.1"
+}

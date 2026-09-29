@@ -1,0 +1,14 @@
+[
+  {
+    "evidence_id": "finding_double_fin_high_pressure_region",
+    "dataset_id": "Double_Fin",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"q90\": {\"centroid\": [0.001975950277635726, -0.010341900477486116, 0.05590228354479967], \"cutoff\": 2.034444808959961, \"fraction\": 0.10000012272633799, \"mean\": 2.162878088559369}, \"q95\": {\"centroid\": [0.0028920645068997567, -0.008433007907426925, 0.05321014443483068], \"cutoff\": 2.110553741455078, \"fraction\": 0.05000022013954023, \"mean\": 2.257376195474314}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

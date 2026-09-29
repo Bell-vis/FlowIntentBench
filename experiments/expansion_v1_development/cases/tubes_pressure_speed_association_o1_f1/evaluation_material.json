@@ -1,0 +1,237 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "tubes_pressure_speed_association_o1_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "tubes_pressure_speed_association_o1_f1",
+    "family_id": "tubes_pressure_speed_association",
+    "dataset_id": "OpenFOAM_Tubes",
+    "condition": "O1-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_pressure_speed_association_o1_f1/case_input.json",
+    "case_input_sha256": "84e2b47cc7d2ea555602eceeabf9b0780ec1e481e3f1d350785ad3a2437ff9bc",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_pressure_speed_association_o1_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "26ec90f9a30fa5dda1001250c435c2d1aa2c9d6399718cbed903290cc8dbb95f",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_pressure_speed_association_o1_f1/case_context.json",
+    "case_context_sha256": "0bf3e1d438710e8543e74ed5c3383101b27a725e81ab1225503ec0756f3c580e",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/OpenFOAM_Tubes/tubes_pressure_speed_association_o1_f1/ground_truth.json",
+    "ground_truth_sha256": "ff35e9f50491713b2c56fbc005689f6efc6608342d3dfb5ac36cb861605c4479"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "tubes_pressure_speed_association",
+    "title": "the spatial association between stored pressure p and speed",
+    "scientific_target": "the spatial association between stored pressure p and speed",
+    "finding_goal": "Characterize the spatial association between stored pressure p and speed",
+    "scope": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+      "o2_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+      "o3_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+      "o1_f2": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "association",
+        "result_key": "value",
+        "request_phrase": "the numerical association coefficient",
+        "requirement_statement": "report the numerical association coefficient",
+        "category": "relation",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "pearson": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "p",
+            "association": "cell"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "U",
+            "association": "cell",
+            "reduce": "magnitude"
+          }
+        }
+      },
+      "spearman": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "p",
+            "association": "cell"
+          },
+          "measure": "spearman",
+          "other_field": {
+            "name": "U",
+            "association": "cell",
+            "reduce": "magnitude"
+          }
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_tubes_pressure_speed_association"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "cross_field_relation",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "cross_field_relation",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "association"
+        ]
+      ],
+      "role_by_category": {
+        "relation": "association"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/OpenFOAM_Tubes/construction/families.json",
+    "sha256": "912821a8b63e7b056409e1e8e617c3ff9463eb6ce3d6f9332a59a5d7bf9ae38b"
+  },
+  "branch_execution_evidence": {
+    "tubes_pressure_speed_association_o1_f1_pearson": {
+      "case_id": "tubes_pressure_speed_association_o1_f1",
+      "dataset_id": "OpenFOAM_Tubes",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": -0.95679323192561
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/tubes_pressure_speed_association.json",
+        "sha256": "0c1ab7a80b86383356946c45ac536e337f1460df1758153db0acde2bfcba8c59"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "fd0eaff10cffc24f31a150a79a4f3dc561757a748e5879b7b6d6a7452233c893",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "OpenFOAM_Tubes/flow.vtu",
+            "sha256": "9a35f9125ed8a7938a395e59eee8aee749c0e2ca218c68cfcaa0d9cfc9edc83b"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "p",
+            "association": "cell"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "U",
+            "association": "cell",
+            "reduce": "magnitude"
+          }
+        },
+        "definition_sha256": "168e4d9b0235dbc3bba7b2ea0cd4160922e3d876cc1055faca41eb6fcf6a4da4",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "a0cf23972c5db77ca5cc9394731bcb9e97923e9cbae5ec30695756dfd5fa3476"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "OpenFOAM_Tubes",
+    "case_id": "tubes_pressure_speed_association_o1_f1",
+    "semantic_contract_sha256": "60b34e4dfcb47c8e2b6b8411a4df0cdc9ebfe6fdb1a24f19d6308d34ae246dde",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "tubes_pressure_speed_association_o1_f1_pearson",
+        "finding_id": "tubes_pressure_speed_association_o1_f1_pearson_association",
+        "scientific_finding_policy_key": "c40f6e9c2df7483a9bfd12141983a56abbbdc4ed581348a461207d0eb0367657",
+        "policy_identity": {
+          "dataset_id": "OpenFOAM_Tubes",
+          "case_family_id": "tubes_pressure_speed_association",
+          "scientific_target": "the spatial association between stored pressure p and speed",
+          "effective_o_semantic_sha256": "e3a6fd2deb7146b1374a3d34bf4ca951a3306f231345628846259272273b639c",
+          "scientific_role": "relation",
+          "g_of_o_locator": "/value",
+          "representation": "relation",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": -0.95679323192561,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "30154f80b676820425102cf7b1131fc588b5a62dfb4c99f77d8c31b23258e2ef"
+      }
+    ],
+    "verification_policy_sha256": "1524b37bc0f3368bfe7e935a0abac09444d24c3fa2bc05ec266ec3baef3a31fc"
+  }
+}

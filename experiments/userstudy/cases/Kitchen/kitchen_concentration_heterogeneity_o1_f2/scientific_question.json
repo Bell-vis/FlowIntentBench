@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Compare the point-associated gas-concentration fields c1 and c11–c17 in the kitchen airflow. For each field, first compute the arithmetic mean of its finite vertex values in each cell, ignore cells with non-positive volume, and then calculate the coefficient of variation using cell volume as the weight. Report evidence for the selected field and its heterogeneity measure, together with at least one additional scientifically relevant characterization of the result.",
+  "semantic_contract_sha256": "a7b288507e17b48548ddc805f4bcffe51a53c72d9e0cfd664f402e0c381fdd51",
+  "source": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o1_f2.json",
+  "wording_version": "1.2.1"
+}

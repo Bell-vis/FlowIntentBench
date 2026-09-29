@@ -1,0 +1,43 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Blunt_Fin",
+    "evidence_type": "context",
+    "statement": "The BluntStreamlines example describes airflow around a blunt fin: a wall with half a rounded fin projecting into the fluid flow.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": null,
+      "code_location": null
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "blunt_physical_setting",
+        "field": "physical_setting",
+        "value": "Airflow around a blunt fin over a wall",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "blunt_fin",
+        "field": "objects",
+        "value": {
+          "name": "blunt_fin",
+          "description": "A half-rounded fin projecting into the fluid flow."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "blunt_wall",
+        "field": "boundaries",
+        "value": {
+          "name": "wall",
+          "type": "wall",
+          "description": "The wall from which the fin projects."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

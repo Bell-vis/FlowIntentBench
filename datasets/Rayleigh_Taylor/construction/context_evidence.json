@@ -1,0 +1,21 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Rayleigh_Taylor",
+    "evidence_type": "context",
+    "statement": "the supplied Rayleigh\u2013Taylor instability snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces. In this supplied coordinate system, z is the vertical layer-normal direction and vertical velocity denotes the z component of velocity.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Dataset description and inspected field arrays"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "physical_setting",
+        "field": "physical_setting",
+        "value": "the supplied Rayleigh\u2013Taylor instability snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces. In this supplied coordinate system, z is the vertical layer-normal direction and vertical velocity denotes the z component of velocity.",
+        "review_status": "approved"
+      }
+    ]
+  }
+]

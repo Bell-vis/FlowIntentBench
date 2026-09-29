@@ -1,0 +1,421 @@
+{
+  "archive": "FlowIntentBench_userstudy.zip",
+  "archive_sha256": "2c7a6bbc8cb816419813291392adb04fe36e34dfc064eedb42ea5f8da7433507",
+  "baseline_manifest": "experiments/full_dataset_n1/case_manifest.json",
+  "baseline_manifest_sha256": "c931c86f1eb943c5a6c27f9c0c1cd1a021e44626bf845a1894766b5007f1f55b",
+  "case_count": 28,
+  "cases": [
+    {
+      "archive_semantic_sha256": "973d1bce06a8741343c74c6a1505e9f21b6c281f1abd16cbf85d0674e460e70c",
+      "case_id": "blunt_fin_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Blunt_Fin",
+      "evaluation_semantic_sha256": "2b50252b26f31866fce55236f64e5f7827868860ff0e0eb4bb56726dbdf9c350",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "eab10728a1ec59ad5cd2742175e89000b5967bd2d1b01b9b5600a65e029c395c",
+      "question_sha256": "f1d092cdfcf6af59816b6092944bc146d5c4deba149b8faae3dfe376a33adcd9",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o1_f1.json",
+      "zip_member_sha256": "13ce097d8d14aff76270633deba53fd0b90795ceff40aa7df66b2055535b9476"
+    },
+    {
+      "archive_semantic_sha256": "d4f1aeb349e8e87a2f6384e735e48f7cb363692624dce13da04b577a6e4e3e4f",
+      "case_id": "blunt_fin_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Blunt_Fin",
+      "evaluation_semantic_sha256": "df9a28fb28b4a4526b0c1c05325df6f4584a06260c0454fafa19473c07a92b90",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "6e073e3f5d1c59aaf82aff75cd99f7c0ad221e1407ac0829274f97abf154bf11",
+      "question_sha256": "51e5ae01891092a023dfed4f7d269a6cbb6726bbbb97d6c166bace7878a4fb71",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o2_f1.json",
+      "zip_member_sha256": "6d3e089fa21e171f604669fed5f329501b262d4ed2f4c270ba25c7ba5153d3fa"
+    },
+    {
+      "archive_semantic_sha256": "aa666f9b3aacc249fe7218f91da36dfb8f93fa72cb5f8cdd76dfb078d9e0c7f1",
+      "case_id": "blunt_fin_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Blunt_Fin",
+      "evaluation_semantic_sha256": "45bfd8a3df4b60087ebead139d3cedd98452e2d7334a9b4ce49e54f493e19a6c",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "6c0cd70913c1a01b24413c87565fc23bb6d051da5c3d4564d19038aa387caa8c",
+      "question_sha256": "39c2a8ab7a935652341273dbaaa45ff297c7597c8416e1b678441ff49f143a7d",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o3_f1.json",
+      "zip_member_sha256": "4ef6259ecad6231bab5741e0bcd395ef6ea0a059019dea1315c575d8ab252b70"
+    },
+    {
+      "archive_semantic_sha256": "1168b44d20efcef51366809bc1d99035b4e3cbf195b2c1dd2f8b48317634f687",
+      "case_id": "blunt_fin_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Blunt_Fin",
+      "evaluation_semantic_sha256": "fb37979c6463f378eb62f20360ed9a32bb451fd0d49ec47272da02113b7a2efd",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "8885bd8b5b73e58c64fbf038063f79856c7d9f17a1ec054c96b00e248595bc21",
+      "question_sha256": "f509e4208d0067e54fcb18c7516e899d79e2c74f6caafbc361a3c04495ea9cef",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o1_f2.json",
+      "zip_member_sha256": "d48a57bcdcd0783c54524dd03e9ec7b8396e550cc3a01bcf1dfa6432e68b6c6d"
+    },
+    {
+      "archive_semantic_sha256": "e5016f45b1badb58c1bea686ced0dde3d06a84de6b5c9015cd3d22acd8fbb11e",
+      "case_id": "carotid_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Carotid",
+      "evaluation_semantic_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "e4160be35348ff8a68bdb8a86fdbb796435622e2bc029ef88c3b7100e2552125",
+      "question_sha256": "4e3d80755f4c073a0dfe7b6c10be65d77d61b03083cd09f6c71635bae2308812",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o1_f1.json",
+      "zip_member_sha256": "ae9f8ab12a37df76b4b3363f76c559075a8487a435a8ed0a123293e434ba59f4"
+    },
+    {
+      "archive_semantic_sha256": "cfc3ad2b5f74ff56ef1f283345c7e1539f5564cd54e521fb6f40567c36291fad",
+      "case_id": "carotid_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Carotid",
+      "evaluation_semantic_sha256": "e69c50e3e63b5ef434b1625290c2bc9c52e9f783be5302c7a7091166ad1fb75b",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "bf8de68d42bbdde218824b4ec08171e4ae60af227d76c6016c6d197910baa186",
+      "question_sha256": "d12d1ff38315c2ad266da2b4ceb56769509da145e1c16ec538eaedeb86700e18",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o2_f1.json",
+      "zip_member_sha256": "d4f28620bfc6f1e070594dfcb510f90960a7a0688dd6eeee0ad0c0c12b0a19ec"
+    },
+    {
+      "archive_semantic_sha256": "a5126d74451d91cea60b82629e5b9a76d78798e257f97438433058bbacc38aa7",
+      "case_id": "carotid_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Carotid",
+      "evaluation_semantic_sha256": "1225b5838181fd9490d98a7b82118488a9b793f0a741ca2ac16d7fa3ce53c4d7",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "31126558db5f1326602fb6a927e27f202f97fb4845f0f665f02b39e4c90d3ef7",
+      "question_sha256": "4d199da83044d2e3ea52a837da1b1fb3cd36dc83c6eb6f99de786f30f332e130",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o3_f1.json",
+      "zip_member_sha256": "33c8c4aa99dab8575c1c209077be5630bb2016cd016dc478c953ce34707b1a51"
+    },
+    {
+      "archive_semantic_sha256": "6d71e5745f5835a8866bcc090703c4540b544a952a73b484aaf729d788f81d33",
+      "case_id": "carotid_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Carotid",
+      "evaluation_semantic_sha256": "a0303f2636a650168b7bc2b77a83517d5c959c50a47dc52e13c7d4129d70c29e",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "b4e6b81ec15f2283a05cc8d8fcb3f8b93529f30269c23b58e248b27b94d17506",
+      "question_sha256": "8b674552ae60815ef2c9d2263ad87ac7bd079763c97ef0518ebd4f373dd91279",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o1_f2.json",
+      "zip_member_sha256": "477af01a17b2c36861ea1de0dae5faa6279885fbcb0708896a12e852eaef2510"
+    },
+    {
+      "archive_semantic_sha256": "0a605273222f5348ec8fa00727cb419a16f8b84342eca35ba5cd4144fb694f4e",
+      "case_id": "combustor_density_level_set_surface_provisional_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Combustor",
+      "evaluation_semantic_sha256": "0f61db3e63965ebd92d914d207ef0986c3befa4f4304461eb4a959b2201aad56",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "665b9c66ab7692e7ce8278b3a1989926be63a8a1cc9ba3a97fcdbf3e064ebf54",
+      "question_sha256": "d9f32f37dcc03980d71c8cca6fd57af80968a762196fc409abbeed6a49bf7267",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o1_f1.json",
+      "zip_member_sha256": "bfffd93d54c8ed2c0981461d5c74427aa27baff05a62f51bf353ebf6cc83a7ae"
+    },
+    {
+      "archive_semantic_sha256": "fd7e3c2c6e5d13b72609241319b73b7e25a94ff94aa33ec6f843b6eb721cb902",
+      "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Combustor",
+      "evaluation_semantic_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "b2453d210a1ac56cb7c993f5ceb934b596369808f3dafae81ad4ad6abb5f2803",
+      "question_sha256": "a9ac978cff3a00ea0c4801d1ee222f72a4d147d2ae5cc6763b5c7ebeca46c13a",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o2_f1.json",
+      "zip_member_sha256": "045fcb0e61943b2464b390e81ee4c468f0a3939687e1601097b35327c6573556"
+    },
+    {
+      "archive_semantic_sha256": "cef49d5532b88009af53b70359ab86ab1c13e1ad56b06e944dd52554f95dfa99",
+      "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Combustor",
+      "evaluation_semantic_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "0526327d461459076b8de4373bcfa0e7714a593eac6b65a16da427ec302bb0c0",
+      "question_sha256": "b620c7eebb1ec8af46a76fc78ee784a8f2a25cde7ecbf0f19a998bd2019c60a1",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o3_f1.json",
+      "zip_member_sha256": "c8e884d04d49723b4a68ff8f9eb6a869fe0024b72a294c77a41a027ed300472f"
+    },
+    {
+      "archive_semantic_sha256": "b3b112cab9e4c610b9d4cea4e09869bc8afa835e3a1f59e6e27853b185e8a61e",
+      "case_id": "combustor_density_level_set_surface_provisional_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Combustor",
+      "evaluation_semantic_sha256": "5e3eb461618c4c60c21297f0758ebb9fd41cbfe3ba2e306030bbf0a25b4f3431",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "96d367482906858b4c67a75e5d8a4b2f6f626462735179b4e8419a39e0447c63",
+      "question_sha256": "eb23ea897c6becca6f7cd90754e11179e3cc8767b78d7c11ff649f7cb781d1d5",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o1_f2.json",
+      "zip_member_sha256": "2b038eabd67921673a34d5f79c97085d0f734553fa88bd19ec2e25b737e4e35a"
+    },
+    {
+      "archive_semantic_sha256": "289ad5cc12796efda4bad45f03bf4e7a33af3255769920bb4bf6a6a7a45a639a",
+      "case_id": "fireflow_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "FireFlow",
+      "evaluation_semantic_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "7bef47a8426cb3fe70b3d94012590ccdbe5ca909989cf09a2425c52eab8237d4",
+      "question_sha256": "9903b3fd9e6a3122b29caf7cc0a84190f5582f1b5310243b23276e52fa5a5d21",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o1_f1.json",
+      "zip_member_sha256": "9fac659ad5e6e23c2d2e15b9cedb3cbfec0ae89060cfc784b2139bccb37d76d1"
+    },
+    {
+      "archive_semantic_sha256": "3f592112905205f304f993d295be65ea1844acc0319fea31022dfd5f394fa33f",
+      "case_id": "fireflow_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "FireFlow",
+      "evaluation_semantic_sha256": "216bb49d1688d151948c4f39c6dbfab8d557758bb0fb9f6c0b1dca03ea0180a0",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "583cc1216a96b08ea5507a0497313bc469fca1fbc114b3fee2a22e83e7cd8409",
+      "question_sha256": "649bfbab738781d6b3794e3754ca645eb50c1d07a2ee1d7afa372727def5bbc9",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o2_f1.json",
+      "zip_member_sha256": "c07d3e0ed0c58bbe44707fd3a4fc0668527f9f66ad1691fc6b293b8b76bcafaa"
+    },
+    {
+      "archive_semantic_sha256": "0b02364d30be2bbf50ba7a0b898fcd00efc401520a268b54c7b9bdbe59191407",
+      "case_id": "fireflow_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "FireFlow",
+      "evaluation_semantic_sha256": "4f4006255e2571929122c34993ffb083ff2aa01c68c8f7b5196844a7abf75659",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "c44be96443836380c9d64b9207f3cfb7600492e8d86a0ace9eb3bd6becfa66af",
+      "question_sha256": "402d13b727a407d7f74e86ec9cf6b030b51b86221bcdfce4ee4b11e5f74f5de8",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o3_f1.json",
+      "zip_member_sha256": "2603b0ce7cd210b6ca3d5995a4af798355c2d7a263907bf898c4469abb00d6e5"
+    },
+    {
+      "archive_semantic_sha256": "585868f6c472d87a27cfd9d8097c2162fa88be6023a4458d32cbced81d34bc7b",
+      "case_id": "fireflow_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "FireFlow",
+      "evaluation_semantic_sha256": "b947c70b4d8646c07e8b1f43d90bd1c41efa61ab82f6c1438b9b0ec9348e2b96",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "31de4ff7e95ad04f22adfca94e4dded92bb13cc1d29e1a2cf06fd210f718d980",
+      "question_sha256": "ed16f130c1c30adba40e4077a5679f05319952683a8bbcd3518e09dbdd192888",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o1_f2.json",
+      "zip_member_sha256": "e8f76b985ad934e4e4d6f6a71797c2cc2149dacd5e397d1fdd5e44b2f21367f6"
+    },
+    {
+      "archive_semantic_sha256": "5a03bb1cb92d7c1421c8af5a046be6fb3d9af217b672c6b39ccee956e30b485e",
+      "case_id": "kitchen_concentration_heterogeneity_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Kitchen",
+      "evaluation_semantic_sha256": "714820511cb732db9dc759ff16fb3176005e6b233cda712a6df355350971fdd6",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "47cd69f867133a6baf81c544e2faa97c826cc5e2adc1ee3da2cda9549ee26768",
+      "question_sha256": "a0a3cd85354a1246769c51090968c5d9142b0eb58565d12efb66d401fb978b68",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o1_f1.json",
+      "zip_member_sha256": "cb3cc17c184816dfd89ad4b89ce83473869dede599660ffab04f7ab91b61763c"
+    },
+    {
+      "archive_semantic_sha256": "2899cc089d0a143bd5e5fcef3d37d47959dcf0d2a1ad443eade7157c27c7fd3d",
+      "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Kitchen",
+      "evaluation_semantic_sha256": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "bf04b9c34d29920204f2c926999840e0d160405e3c7d0d549ffdaba01b83f95c",
+      "question_sha256": "a19aeb539cb4b0a0be6e203fc3b68e7bcaf4d6922a4dd0c0bfd99297889c4ca8",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o2_f1.json",
+      "zip_member_sha256": "44624f919b4da073aaba1ef2eae0df755c2d0d23fc71fd6dbce7de17255d242a"
+    },
+    {
+      "archive_semantic_sha256": "079d279c27e6f1ddab18e746e005d6335735f39abbe2b69d74d123f5c6bcb141",
+      "case_id": "kitchen_concentration_heterogeneity_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Kitchen",
+      "evaluation_semantic_sha256": "02a15c1bd85f3a6b5f886ca3ee0d4a0e5a082a2c4a35c01f12848abe3fe0928d",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "d89380ed4b1846d4b0e30abf241aa86977d11edc038eb3b7f1341c38790ea54b",
+      "question_sha256": "600af115e2b403dd2cb238d97c2a4b98623dff32d05aa2d8a177a64f2afc1bff",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o3_f1.json",
+      "zip_member_sha256": "2a314b883107c779480459af68fe499b8c166efec1615cfcbb7818d0a8203ca4"
+    },
+    {
+      "archive_semantic_sha256": "9ac01b12ca0f2b7d89951d81e941c567f7d69d8b9ddcc8a6d3362b7c855f44b5",
+      "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Kitchen",
+      "evaluation_semantic_sha256": "d96105516b965fc708687cac58ec1df3b1821381b789ba3c5fb4813ddc00ad1d",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "08f2729c7fb3bcef8d845a71c21bb7eef74b01646b5dbc0dcc4a3508f82a165f",
+      "question_sha256": "bf0d66d2e3bd60fa5393dee31626d6687e3ef0b60e3335148305dc42e565b0b1",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o1_f2.json",
+      "zip_member_sha256": "3cf97911417d6cc78cc980b034c6eee79117c192b98baa4581b627031fda8115"
+    },
+    {
+      "archive_semantic_sha256": "a0d865ef41737bda029e37ba8cf5c3da4bd0bb37124f560d92d7055109145de6",
+      "case_id": "nasa_lox_post_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "NASA_LOx_Post",
+      "evaluation_semantic_sha256": "55bc95f73cf6021eccb52eb2d6e3871eb1c8327027a3cb67d263ca62626f3164",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "8a883377e3dc3c2af6e6f565cc71dcd3d29d18f98f28698db92a47926ca8365c",
+      "question_sha256": "e223eca07c71aace5e65af556bee47689750060adc6206d5c237aa8f35c204f1",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o1_f1.json",
+      "zip_member_sha256": "932cd38f9832cb5f60aa738d2f4770ef181fb93910cb4036dd54f831c00f7c88"
+    },
+    {
+      "archive_semantic_sha256": "a0c9759b87b21e28c6c7cbf96a335816cb418122eb97f1f58d9720787da31432",
+      "case_id": "nasa_lox_post_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "NASA_LOx_Post",
+      "evaluation_semantic_sha256": "fad41bc7b82da59197ff7b3d583e26e119d1d306958c5998a4733d26d899119c",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "fe3d165488a4e405443a8de1fa00e558a8e261e37dc39b57070ff3d2d12dfdd2",
+      "question_sha256": "422b3bfd1a78a331f100ba7847f356bdbf1094945ae1163ab4f60e0869ee93eb",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o2_f1.json",
+      "zip_member_sha256": "3b1accbe741b83d174b1ac6b2446790d253005892b50bdcf160c02e012bcd3d3"
+    },
+    {
+      "archive_semantic_sha256": "69dac79127b961c18215f6df097f2305450d12e257a2dd4b900a34b55cf9edd8",
+      "case_id": "nasa_lox_post_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "NASA_LOx_Post",
+      "evaluation_semantic_sha256": "acd2e36c7fc79cb9a3a500e99e2a4734bfc111bbf79ef080d73f521ca34ab604",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "5339c957065970505118a6dd1d68a8af2577dfb03ff7c284aea3c7e22981898e",
+      "question_sha256": "3a32f2be0259f8eca49faa8baad440d0db1db40a6f64a03680d3c5d3bef1cc17",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o3_f1.json",
+      "zip_member_sha256": "7af7c127bad957184bbf391676a1067d40ff78e3eee22e5578bc8c1daba28d2b"
+    },
+    {
+      "archive_semantic_sha256": "e6af254f12691a72ac2744c95bdda8a0cae793a3d77ae142183aae560cae13a0",
+      "case_id": "nasa_lox_post_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "NASA_LOx_Post",
+      "evaluation_semantic_sha256": "7c7cf8fdfe6a3d2145d836962bce370dd49090d0b942ce512dc4f788371271b1",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "d4c8fd9195a0007fbdc3099ba488c17830692b12ed56b6963f0b069e28c67074",
+      "question_sha256": "44a80cd96e5547ef2f1dec3f8cd7e2444cba574f79371392d130f0acdbba04af",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o1_f2.json",
+      "zip_member_sha256": "2d87d0875c4b345ecee6f7375af1a3b5004cfc9cf1144ff2165507e5be81d6d6"
+    },
+    {
+      "archive_semantic_sha256": "45b1793017cbc5b36c9f3ded52f85c1bc02d97736558a43408edaf711a98ca0d",
+      "case_id": "office_speed_zones_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Office",
+      "evaluation_semantic_sha256": "de4ce7695f5ce44d4573841347fcf7f886ea8d98ebd8bec0a0f8dd99ac5b3110",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "584f86157750e9e99ce5e48368851d17b9ef091f0dcb58a24c7e6c69e81c32a5",
+      "question_sha256": "2a3ebd88da32ed766c891f4c90b459c0add37fe9348e353dfd180e830da76e5a",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o1_f1.json",
+      "zip_member_sha256": "91fa613c8fb2d89879bd342da030e5e945caf5a08382710f6ff8a6b710b20042"
+    },
+    {
+      "archive_semantic_sha256": "358342f7821c05189e0ff6d8862abe1f9a9ce503b128c168b0596e2625d1da0c",
+      "case_id": "office_speed_zones_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Office",
+      "evaluation_semantic_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "1ea1e6e075c5c53f6d118dc795f4c8d6aa3fcff0641a191ec0a5ce79cdaf1558",
+      "question_sha256": "04e1ee0a8b7513903d8cab959351a20e697a343cd856fe0ebadbe314603a666b",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o2_f1.json",
+      "zip_member_sha256": "9d9e62e8601bb687d0297be20d12ae3c4be1122247b631932b4d0635963f28b7"
+    },
+    {
+      "archive_semantic_sha256": "7aa8bd63b594fdead6a67bccbcf893a8f9fc3dcf66fff12b5e006269b10096b0",
+      "case_id": "office_speed_zones_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Office",
+      "evaluation_semantic_sha256": "4ef16026078d9659dfa5d890a704295ba023d8ca031180b47220f8b0c2fb7b78",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "5ed2fdffb795bb912cf69bee5bd0a24b2d297c1c3f318dd078ff190bdf2dbd37",
+      "question_sha256": "0120eb2a8dcb6533d009d4e79adef56113eded37e704ee4e99b447202c80b96f",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o3_f1.json",
+      "zip_member_sha256": "8b37fe0a5925029e43b58a6471f2da2cfd54a0e1e49f00d8d368c24826146c9e"
+    },
+    {
+      "archive_semantic_sha256": "85230dcbdc75610c1bf72023c844608ab853e5f96f5c853bbb10ad8bb66c2563",
+      "case_id": "office_speed_zones_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Office",
+      "evaluation_semantic_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+      "ground_truth_unchanged": true,
+      "previous_question_sha256": "3f099f98eccd6dae5c52c874f2e58d3001e3518b1b5ff94b2b333c28fcb0b48c",
+      "question_sha256": "c6c24cf121cf8f75bf1b7e24c7e606a95c251e5cca6b6debcb054ee9116b2cb3",
+      "scoring_contract_unchanged": true,
+      "zip_member": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o1_f2.json",
+      "zip_member_sha256": "a667433e6a208ae0f2e379e1a9cd006cd7034657d00b1e718c0f5bdb578ee9b3"
+    }
+  ],
+  "dataset_assets": [
+    {
+      "path": "Blunt_Fin/bluntfinxyz.bin",
+      "sha256": "b0748b066152c7001d2979245e729da32b44eb6f171b0c49cf6ed0eb84fe0e6a"
+    },
+    {
+      "path": "Blunt_Fin/bluntfinq.bin",
+      "sha256": "1fa8642d08f6bbbda6a7bc95571a06ec26afa8abac556a7330bfc74b60899397"
+    },
+    {
+      "path": "Carotid/carotid.vtk",
+      "sha256": "3f5dac7baa8ed60fa094f67b918d55add4d55f1d498fad587d1850915f60032d"
+    },
+    {
+      "path": "Combustor/combxyz.bin",
+      "sha256": "75e20a039c7bfc02d724ef18a411ef27cbf8977926d0f4b0208ca28817e1288f"
+    },
+    {
+      "path": "Combustor/combq.bin",
+      "sha256": "a59dfe6faa76d4bc1b82a718636742e1a7220d06da17bb1ee5ab815432f9baea"
+    },
+    {
+      "path": "FireFlow/fire_ug.vtu",
+      "sha256": "9e1dd44335897be3126dfb909cf57389b67155c16bfa8755edc241d90e6df0f3"
+    },
+    {
+      "path": "FireFlow/room_vis.wrl",
+      "sha256": "bd2e36fc0774e83d2178af79d2b9bc6b6102417d5a2e8738cd4bfa43de4238ef"
+    },
+    {
+      "path": "Kitchen/kitchen.vtk",
+      "sha256": "cf50c31bd065aedbfca8074522a3aa278ab1007273e95a8cc4e5d279834b9a25"
+    },
+    {
+      "path": "NASA_LOx_Post/postxyz.bin",
+      "sha256": "578733b095c9a4776ad35c11c0e0f95a563bd7e9da0922045620c09991992da6"
+    },
+    {
+      "path": "NASA_LOx_Post/postq.bin",
+      "sha256": "25ac2ed16d9df263541f3daa1ddda097210f31ca73b192cbac9d5182c042adfb"
+    },
+    {
+      "path": "Office/office.binary.vtk",
+      "sha256": "b71ac0334e92829a431fe7aaff54cec1add42f4d50e42a56fa4917560c9c8de5"
+    }
+  ],
+  "formal": false,
+  "schema_version": "userstudy-import-v1"
+}

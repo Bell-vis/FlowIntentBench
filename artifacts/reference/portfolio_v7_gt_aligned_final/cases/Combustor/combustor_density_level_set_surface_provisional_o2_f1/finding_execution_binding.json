@@ -1,0 +1,176 @@
+{
+  "branches": [
+    {
+      "branch_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "dataset_manifest_sha256": "c01e313f9ea9c3731ff0e9eadaef0492a0d6ba034743c81d0e4722ec1291f994",
+      "effective_o_sha256": "2745006aff07037ff2709b2494364df31e87d0a1aeb61fa3ee00d3245958965b",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "execution_value_sha256": "3f1b860346e76156942541bc56fce607921255df83eb2fef87a2d71726737d0e",
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_location",
+          "g_of_o_locator": "/selected/area_weighted_centroid",
+          "gt_value": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "scientific_finding_policy_key": "5cf78318f0166b017a73e3a23921506f3b6930765d68052565e5b7dcba831bd8",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "814ef38105c2a6442631561573fa06eb750c6abafc8e30939a0e1089e72dc543"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.4146665334701538,
+          "execution_value_sha256": "0c9de39bab54509666ae912dac2af71697e142a87e4dd6c89ec30f6f1a9db850",
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_density",
+          "g_of_o_locator": "/level",
+          "gt_value": 0.4146665334701538,
+          "scientific_finding_policy_key": "15eeedc4630a5329163f54db417c932be5be4e4adc4b843daacada60adc8c66a",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "fbd8253cfbc543695b53e085e1ac2e7f7d952cc66ef5c4429f293fc0047ccc5e"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 260.78393901064567,
+          "execution_value_sha256": "f0f2e0ca45f1072a0f782b23d60e86b858d1e52c6daef290f59e82a122dfa1cd",
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_surface_area",
+          "g_of_o_locator": "/selected/surface_area",
+          "gt_value": 260.78393901064567,
+          "scientific_finding_policy_key": "5bd2959623a9b9b9c2e162d52a2fb89fb9cfba6965139a7554aca2c4f6ea1aa9",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "b5f251890c9d0324866babefa53603a1c77b6a03398b7c93bd0de9857fc1611f"
+        }
+      ],
+      "g_of_o_sha256": "42768257479efc0e3c464662409211dfe04c48ae29063bb2289d87a2e47e34fa",
+      "materialization_id": "mat:combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface"
+    },
+    {
+      "branch_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "dataset_manifest_sha256": "c01e313f9ea9c3731ff0e9eadaef0492a0d6ba034743c81d0e4722ec1291f994",
+      "effective_o_sha256": "77ef59ba31f07a26eb33015b61dd46dc2ccd72cf38dca01e62d2e38f81b5e4fe",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            5.858101895045389,
+            0.3510179990998257,
+            30.75925343076107
+          ],
+          "execution_value_sha256": "01f77d666e0879ef2097d455708e716a768614540441495be7ab72f3a513fd54",
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_location",
+          "g_of_o_locator": "/selected/area_weighted_centroid",
+          "gt_value": [
+            5.858101895045389,
+            0.3510179990998257,
+            30.75925343076107
+          ],
+          "scientific_finding_policy_key": "69b9ad5ebce8ed5c21500f96b8a88906fe9fd0ee315836cde2867afa1458cced",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "a515b74a6ba33ad17e57f9f36a1c9e04fb5512e5141bf4bc06c9ef754844f3f5"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.3731998801231384,
+          "execution_value_sha256": "03e77256928d78b9f1fd8e2985f7a069d16bc346c3bc4e06488e66b175da94b3",
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_density",
+          "g_of_o_locator": "/level",
+          "gt_value": 0.3731998801231384,
+          "scientific_finding_policy_key": "2f67aaccaf482de0d2aad4a08c160582f02c2e200d1e7a8ad29734fa4c7b0f59",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "8859018519cb093027982a0a685cb6954a258f2272b28236c9550a6e3461d1bf"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 322.28122837044214,
+          "execution_value_sha256": "2decfe750492c051f82aff792e4c2ca3867c8ea28aa658581e58dfe3e30faa58",
+          "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_surface_area",
+          "g_of_o_locator": "/selected/surface_area",
+          "gt_value": 322.28122837044214,
+          "scientific_finding_policy_key": "e4e204962d8911a8ea56f06624019c282637d88562a383c32bd1c2567c183afc",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "29f490e1543bee5e2c9444e78d910350853bbeca2c917d7c31d3d55997f97257"
+        }
+      ],
+      "g_of_o_sha256": "24cc415c88ced225fd952e2a683788e4646f1cdc8b03eff39389f22d7e735eda",
+      "materialization_id": "mat:combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface"
+    }
+  ],
+  "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+  "dataset_id": "Combustor",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6"
+}

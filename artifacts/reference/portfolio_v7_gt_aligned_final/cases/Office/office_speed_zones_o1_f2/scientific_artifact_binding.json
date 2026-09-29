@@ -1,0 +1,7 @@
+{
+  "case_id": "office_speed_zones_o1_f2",
+  "ground_truth_sha256": "2cbbf229d511db89bc0663e67d63c0aea9105428c48e637ef219f5e85644f715",
+  "presentation_sha256": "3f099f98eccd6dae5c52c874f2e58d3001e3518b1b5ff94b2b333c28fcb0b48c",
+  "scientific_evaluation_contract_sha256": "001d8c85f5abbc3c08059e76b9a14363396bb32cb54daec94d769f460c5bc649",
+  "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe"
+}

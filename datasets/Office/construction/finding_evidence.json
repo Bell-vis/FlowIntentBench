@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "Office",
+    "evidence_type": "finding",
+    "statement": "The Office vector-field example supports identifying retained high-speed regions and characterizing a selected region by its spatial location, extent, and velocity magnitude; exact benchmark values come from execution.",
+    "source_id": "src_001",
+    "locator": {"section": "Description and Code", "page": null, "figure": "9-47", "code_location": "Office.cxx: vtkPointSource and vtkStreamTracer"},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

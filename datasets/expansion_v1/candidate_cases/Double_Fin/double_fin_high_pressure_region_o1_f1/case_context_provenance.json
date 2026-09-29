@@ -1,0 +1,15 @@
+{
+  "dataset_id": "Double_Fin",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "double_fin_high_pressure_region_o1_f1"
+}

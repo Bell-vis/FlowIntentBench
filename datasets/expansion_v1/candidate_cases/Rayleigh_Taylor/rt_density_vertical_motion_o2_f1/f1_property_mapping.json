@@ -1,0 +1,11 @@
+{
+  "case_id": "rt_density_vertical_motion_o2_f1",
+  "mapping": {
+    "rt_density_vertical_motion_o2_f1_pearson": {
+      "association": "rt_density_vertical_motion_o2_f1_pearson_association"
+    },
+    "rt_density_vertical_motion_o2_f1_spearman": {
+      "association": "rt_density_vertical_motion_o2_f1_spearman_association"
+    }
+  }
+}

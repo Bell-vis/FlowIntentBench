@@ -1,0 +1,15 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "aideas_pressure_heterogeneity_o1_f1"
+}

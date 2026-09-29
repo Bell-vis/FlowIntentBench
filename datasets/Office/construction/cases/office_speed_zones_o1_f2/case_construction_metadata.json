@@ -1,0 +1,52 @@
+{
+  "case_id": "office_speed_zones_o1_f2",
+  "case_family_id": "office_speed_zones",
+  "dataset_id": "Office",
+  "scientific_target": "ventilation regions in the Office velocity field",
+  "finding_goal": "characterize the strongest airflow region in the Office velocity field",
+  "operationalization_responsibility": "user_specified",
+  "finding_openness": "open",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [],
+  "scope_constraints": [
+    {
+      "statement": "in the office",
+      "question_fragment": "in the office"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "select the strongest region",
+      "question_fragment": "strongest region"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "treat locations connected through shared grid faces as one contiguous high-speed ventilation region",
+      "question_fragment": "treat locations connected through shared grid faces as one contiguous region"
+    },
+    {
+      "category": "criterion",
+      "statement": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale",
+      "question_fragment": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale"
+    },
+    {
+      "category": "property_measure",
+      "statement": "use peak speed as the measure of strength",
+      "question_fragment": "use peak speed as the measure of strength"
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations",
+      "question_fragment": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    }
+  ],
+  "explicit_finding_requirements": []
+}

@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence_context was supplied, so numerical findings cannot be independently verified in this review."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question clearly asks for the spatial association between viscosity and shear-rate magnitude within the complete supplied three-dimensional mesh of the single-channel blow-mold simulation. All fixed operationalization choices are exposed faithfully, including cell coverage, point-to-cell representation, volume weighting, normalization, and Pearson correlation. No unresolved operationalization choice is closed, and the F2 wording appropriately leaves finding selection and explanation to the respondent. The target is scientifically meaningful and answerable in principle without introducing an unsupported physical assertion or an unintended methodological responsibility.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "b9ffdbe6484728516c1bbf3e66bbd1b06ec5337a4c2fab6899ef4b10cf40310d",
+  "review_packet_sha256": "05d4765cdeaef7688ebc48198305fe55d150517ad964294622a2f29930896d8a",
+  "reviewed_model_visible_text_sha256": "375cfba2fdd4e72501b0d1b17333d739907f7fdce83e3d6e7babd656ead39726",
+  "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select and explain findings that characterize this scientific target.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "aideas_viscosity_shear_association_o1_f2",
+    "condition": "O1-F2",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "05d4765cdeaef7688ebc48198305fe55d150517ad964294622a2f29930896d8a",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:38:22.071924+00:00",
+    "latency_seconds": 15.740594,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence_context was supplied, so numerical findings cannot be independently verified in this review.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question clearly asks for the spatial association between viscosity and shear-rate magnitude within the complete supplied three-dimensional mesh of the single-channel blow-mold simulation. All fixed operationalization choices are exposed faithfully, including cell coverage, point-to-cell representation, volume weighting, normalization, and Pearson correlation. No unresolved operationalization choice is closed, and the F2 wording appropriately leaves finding selection and explanation to the respondent. The target is scientifically meaningful and answerable in principle without introducing an unsupported physical assertion or an unintended methodological responsibility.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence_context was supplied, so numerical findings cannot be independently verified in this review."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question clearly asks for the spatial association between viscosity and shear-rate magnitude within the complete supplied three-dimensional mesh of the single-channel blow-mold simulation. All fixed operationalization choices are exposed faithfully, including cell coverage, point-to-cell representation, volume weighting, normalization, and Pearson correlation. No unresolved operationalization choice is closed, and the F2 wording appropriately leaves finding selection and explanation to the respondent. The target is scientifically meaningful and answerable in principle without introducing an unsupported physical assertion or an unintended methodological responsibility."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_004d5ba33ac0f2b6016aa6df7f388c87d0b1db3fd3b5e2d130": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1409,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1409,
+            "output_tokens": 0
+          },
+          "rs_004d5ba33ac0f2b6016aa6df7fe4a087d0a0bdf3b0a5ae4197": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 327
+          },
+          "msg_004d5ba33ac0f2b6016aa6df8919b887d0a444ae01710fc5b5": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 218
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 218
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2025,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 545,
+      "output_tokens_details": {
+        "reasoning_tokens": 327
+      },
+      "total_tokens": 2570
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "b9ffdbe6484728516c1bbf3e66bbd1b06ec5337a4c2fab6899ef4b10cf40310d",
+    "review_packet_sha256": "05d4765cdeaef7688ebc48198305fe55d150517ad964294622a2f29930896d8a",
+    "reviewed_model_visible_text_sha256": "375cfba2fdd4e72501b0d1b17333d739907f7fdce83e3d6e7babd656ead39726",
+    "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select and explain findings that characterize this scientific target."
+  }
+}

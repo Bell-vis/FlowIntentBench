@@ -1,0 +1,88 @@
+{
+  "dataset_id": "Combustor",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 564312,
+      "checksum": "75e20a039c7bfc02d724ef18a411ef27cbf8977926d0f4b0208ca28817e1288f",
+      "checksum_algorithm": "sha256",
+      "source_url": null,
+      "path": "Combustor/combxyz.bin",
+      "role": "grid"
+    },
+    {
+      "size_bytes": 940528,
+      "checksum": "a59dfe6faa76d4bc1b82a718636742e1a7220d06da17bb1ee5ab815432f9baea",
+      "checksum_algorithm": "sha256",
+      "source_url": null,
+      "path": "Combustor/combq.bin",
+      "role": "solution"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "PLOT3D",
+    "canonical_reader": "vtkMultiBlockPLOT3DReader",
+    "reader_configuration": {
+      "auto_detect_format": true,
+      "scalar_function_number": 153,
+      "vector_function_number": 200,
+      "preserve_intermediate_functions": true,
+      "require_single_block": true
+    },
+    "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+    "variable_mappings": [
+      {
+        "output_name": "Density",
+        "source_file_role": "solution",
+        "convention": "PLOT3D Q stored density",
+        "raw_components": {
+          "density": "Q[0]"
+        },
+        "calculation": null
+      },
+      {
+        "output_name": "Momentum",
+        "source_file_role": "solution",
+        "convention": "PLOT3D Q stored momentum",
+        "raw_components": {
+          "x": "Q[1]",
+          "y": "Q[2]",
+          "z": "Q[3]"
+        },
+        "calculation": null
+      },
+      {
+        "output_name": "StagnationEnergy",
+        "source_file_role": "solution",
+        "convention": "PLOT3D Q stored energy",
+        "raw_components": {
+          "energy": "Q[4]"
+        },
+        "calculation": null
+      },
+      {
+        "output_name": "VelocityMagnitude",
+        "source_file_role": "solution",
+        "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+        "raw_components": {},
+        "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+      },
+      {
+        "output_name": "Velocity",
+        "source_file_role": "solution",
+        "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+        "raw_components": {},
+        "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+      }
+    ],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "source_urls": [
+      "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/WarpCombustor/",
+      "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/CombustorIsosurface/",
+      "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html"
+    ]
+  }
+}

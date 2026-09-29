@@ -1,0 +1,29 @@
+{
+  "dataset_id": "Electrolyzer_Electric",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 77167657,
+      "checksum": "afac339824c2ca6c96c7404df43c9a7ac89907e563f84d315332b49ba1ae0afe",
+      "checksum_algorithm": "sha256",
+      "source_url": "https://zenodo.org/records/14935434",
+      "path": "Electrolyzer_Electric/electric.vtk",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTK",
+    "canonical_reader": "vtkDataSetReader",
+    "reader_configuration": {},
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "record_url": "https://zenodo.org/records/14935434",
+    "license": "CC-BY-4.0",
+    "parent_source_group": "Electrolyzer",
+    "sample_note": "Analysis domain is exactly the stored mesh. No inferred time history or physical unit conversion."
+  }
+}

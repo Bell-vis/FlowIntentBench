@@ -1,0 +1,313 @@
+{
+  "families": [
+    {
+      "family_id": "radiative_density_heterogeneity",
+      "title": "the spatial nonuniformity of density",
+      "scientific_target": "the spatial nonuniformity of density",
+      "finding_goal": "Characterize the spatial nonuniformity of density",
+      "scope": "the supplied turbulent radiative mixing-layer snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical coefficient.",
+        "o2_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+        "o3_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+        "o1_f2": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "coefficient",
+          "result_key": "value",
+          "request_phrase": "the numerical coefficient",
+          "requirement_statement": "report the numerical coefficient",
+          "category": "quantity",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "cv": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "dispersion",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "cv"
+          }
+        },
+        "relative_interdecile": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "dispersion",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "relative_interdecile"
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_radiative_density_heterogeneity"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "spatial_distribution",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "spatial_distribution",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "coefficient"
+          ]
+        ],
+        "role_by_category": {
+          "quantity": "coefficient"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    },
+    {
+      "family_id": "radiative_density_pressure_association",
+      "title": "the spatial association between density and pressure",
+      "scientific_target": "the spatial association between density and pressure",
+      "finding_goal": "Characterize the spatial association between density and pressure",
+      "scope": "the supplied turbulent radiative mixing-layer snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+        "o2_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+        "o3_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+        "o1_f2": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "association",
+          "result_key": "value",
+          "request_phrase": "the numerical association coefficient",
+          "requirement_statement": "report the numerical association coefficient",
+          "category": "relation",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "pearson": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "pearson",
+            "other_field": {
+              "name": "pressure",
+              "association": "point"
+            }
+          }
+        },
+        "spearman": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "spearman",
+            "other_field": {
+              "name": "pressure",
+              "association": "point"
+            }
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_radiative_density_pressure_association"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "cross_field_relation",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "cross_field_relation",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "association"
+          ]
+        ],
+        "role_by_category": {
+          "relation": "association"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    },
+    {
+      "family_id": "radiative_vertical_advective_flux",
+      "title": "the signed domain-average vertical advective mass-flux density",
+      "scientific_target": "the signed domain-average vertical advective mass-flux density",
+      "finding_goal": "Characterize the signed domain-average vertical advective mass-flux density",
+      "scope": "the supplied turbulent radiative mixing-layer snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the signed domain-average vertical advective mass-flux density. Use the complete density and vertical-velocity fields on the supplied mesh. First average density and vertical velocity to cells, then multiply their cell values. Weight cell statistics by cell volume and normalize by the included volume. Report the signed domain-average vertical mass-flux density.",
+        "o2_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the signed domain-average vertical advective mass-flux density. Use the complete density and vertical-velocity fields on the supplied mesh. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the signed domain-average vertical mass-flux density.",
+        "o3_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the signed domain-average vertical advective mass-flux density. Choose and explain an appropriate analysis procedure. Report the signed domain-average vertical mass-flux density.",
+        "o1_f2": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the signed domain-average vertical advective mass-flux density. Use the complete density and vertical-velocity fields on the supplied mesh. First average density and vertical velocity to cells, then multiply their cell values. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "flux",
+          "result_key": "value",
+          "request_phrase": "the signed domain-average vertical mass-flux density",
+          "requirement_statement": "report the signed domain-average vertical mass-flux density",
+          "category": "quantity",
+          "unit": null
+        }
+      ],
+      "operations": {
+        "cell_product": {
+          "clauses": {
+            "feature_definition": "Use the complete density and vertical-velocity fields on the supplied mesh.",
+            "property_measure": "First average density and vertical velocity to cells, then multiply their cell values.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "advective_flux",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "product_rule": "cell_then_product",
+            "other_field": {
+              "name": "velocity",
+              "association": "point",
+              "component": 2
+            }
+          }
+        },
+        "point_product": {
+          "clauses": {
+            "feature_definition": "Use the complete density and vertical-velocity fields on the supplied mesh.",
+            "property_measure": "Multiply density by vertical velocity at each stored point, then average that product to cells.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "advective_flux",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "product_rule": "point_then_cell",
+            "other_field": {
+              "name": "velocity",
+              "association": "point",
+              "component": 2
+            }
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_radiative_vertical_advective_flux"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "transport_integral",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "transport_integral",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "flux"
+          ]
+        ],
+        "role_by_category": {
+          "quantity": "flux"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    }
+  ]
+}

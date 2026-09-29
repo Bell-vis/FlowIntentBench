@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the carotid artery flow field, identify the strongest high-speed flow region. Calculate speed as the Euclidean magnitude of the available velocity vector at each point, define high-speed locations as those at or above the linearly interpolated 90th percentile of the non-zero speed values, and treat locations connected through immediate grid neighbors along one grid axis as one contiguous region. Use peak speed as the measure of strength, represent the selected region by the mean spatial location of its retained high-speed locations, and report the evidence supporting its strength and that principal location. Add one relevant characterization, such as geometry, comparison, morphology, orientation, or spatial extent.",
+  "semantic_contract_sha256": "a0303f2636a650168b7bc2b77a83517d5c959c50a47dc52e13c7d4129d70c29e",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

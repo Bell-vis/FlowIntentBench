@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "Carotid",
+    "evidence_type": "finding",
+    "statement": "The carotid flow example supports reporting the identity and spatial characterization of a selected high-speed region; exact benchmark values come from execution.",
+    "source_id": "src_001",
+    "locator": {"section": "Description", "page": null, "figure": "6-44", "code_location": "CarotidFlow.cxx: vtkStreamTracer and vtkContourFilter"},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

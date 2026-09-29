@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "The payload provides variable metadata but no mesh values or computational result, so the numerical coefficient cannot be independently verified from the supplied evidence."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful pressure-heterogeneity request for the stated simulation and complete mesh, faithfully exposes the target and scope, and states all fixed operationalization choices. No unresolved operationalization choice is closed or assigned unintentionally. F1 correctly makes reporting the numerical coefficient the requested finding. The wording is scientifically actionable and answerable in principle without introducing an unsupported physical assertion or unnecessary burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "2ef8c72a2c85358e1d6dcdf18cc092fd7eeef1123e03f3473b1e84d00e4b904f",
+  "review_packet_sha256": "c5e038966bb8f56f8c7ef469e40d5a3ec1f6b1b3a22f89b14162a855addfe8f0",
+  "reviewed_model_visible_text_sha256": "56be9fcbb97c109f98ad46b069020cdb31c2a918a7b552bb6ccf7d2beace79fb",
+  "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Report the numerical coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "aideas_pressure_heterogeneity_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "c5e038966bb8f56f8c7ef469e40d5a3ec1f6b1b3a22f89b14162a855addfe8f0",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:38:06.297194+00:00",
+    "latency_seconds": 19.833633,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"The payload provides variable metadata but no mesh values or computational result, so the numerical coefficient cannot be independently verified from the supplied evidence.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful pressure-heterogeneity request for the stated simulation and complete mesh, faithfully exposes the target and scope, and states all fixed operationalization choices. No unresolved operationalization choice is closed or assigned unintentionally. F1 correctly makes reporting the numerical coefficient the requested finding. The wording is scientifically actionable and answerable in principle without introducing an unsupported physical assertion or unnecessary burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "The payload provides variable metadata but no mesh values or computational result, so the numerical coefficient cannot be independently verified from the supplied evidence."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful pressure-heterogeneity request for the stated simulation and complete mesh, faithfully exposes the target and scope, and states all fixed operationalization choices. No unresolved operationalization choice is closed or assigned unintentionally. F1 correctly makes reporting the numerical coefficient the requested finding. The wording is scientifically actionable and answerable in principle without introducing an unsupported physical assertion or unnecessary burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0701df60529007f9016aa6df6b736887d082f8dbaeb359a1d3": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1403,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1403,
+            "output_tokens": 0
+          },
+          "rs_0701df60529007f9016aa6df6c0c8c87d099fdcef231feeaba": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 396
+          },
+          "msg_0701df60529007f9016aa6df78e83c87d08b2c72996c91b5b9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 202
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 202
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2019,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 598,
+      "output_tokens_details": {
+        "reasoning_tokens": 396
+      },
+      "total_tokens": 2617
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "2ef8c72a2c85358e1d6dcdf18cc092fd7eeef1123e03f3473b1e84d00e4b904f",
+    "review_packet_sha256": "c5e038966bb8f56f8c7ef469e40d5a3ec1f6b1b3a22f89b14162a855addfe8f0",
+    "reviewed_model_visible_text_sha256": "56be9fcbb97c109f98ad46b069020cdb31c2a918a7b552bb6ccf7d2beace79fb",
+    "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Report the numerical coefficient."
+  }
+}

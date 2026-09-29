@@ -1,0 +1,48 @@
+{
+  "dataset_id": "Combustor",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html",
+      "supports": [
+        "format.details.encoding",
+        "format.details.precision",
+        "format.details.endianness",
+        "format.details.has_byte_count",
+        "variables[name=Density].physical_quantity",
+        "variables[name=Momentum].physical_quantity",
+        "variables[name=StagnationEnergy].physical_quantity",
+        "variables[name=Velocity].physical_quantity",
+        "variables[name=VelocityMagnitude].physical_quantity"
+      ],
+      "notes": "Canonical VTK PLOT3D documentation defines stored solution quantities and reader-derived velocity functions."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/WarpCombustor/",
+      "supports": [
+        "data_files[role=grid]",
+        "data_files[role=solution]"
+      ],
+      "notes": "The example confirms the local combustor XYZ/Q pairing and reader class."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/CombustorIsosurface/",
+      "supports": [],
+      "notes": "The example was used as an independent reader/data pairing cross-check; its threshold is not copied into metadata."
+    }
+  ]
+}

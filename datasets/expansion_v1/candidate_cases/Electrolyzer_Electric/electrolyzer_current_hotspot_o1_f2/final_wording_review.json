@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence records are supplied, so numerical implementation and result claims cannot be independently verified.",
+    "Coordinate units and axis meanings are unspecified, limiting physical interpretation of reported locations."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful and answerable investigation of the location and intensity of high current-density-magnitude regions within the supplied final-timestep electrolyzer electrical mesh. It preserves the stated scope, exposes all fixed operationalization requirements, leaves no unresolved operationalization choice to be assessed, introduces no unintended respondent-level operationalization responsibility, and correctly assigns finding selection and explanation to the respondent under F2. The wording is scientifically actionable without imposing unnecessary schema or protocol burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "c7c0ebf0a655928825823ddc9dfc10c6eb9d588f62458f3eb66817c02f1f8632",
+  "review_packet_sha256": "96807b225f0e6a59376a0b1d235caaa9a49f8cd259bf23367d8459ff2fb6b02f",
+  "reviewed_model_visible_text_sha256": "af8a0b2863f015e45a1c40337bd450e1f453f878de165acda81f94c604dfaaea",
+  "reviewed_model_visible_text": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Select and explain findings that characterize this scientific target.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "electrolyzer_current_hotspot_o1_f2",
+    "condition": "O1-F2",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "96807b225f0e6a59376a0b1d235caaa9a49f8cd259bf23367d8459ff2fb6b02f",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:28:49.950215+00:00",
+    "latency_seconds": 28.042152,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence records are supplied, so numerical implementation and result claims cannot be independently verified.\",\"Coordinate units and axis meanings are unspecified, limiting physical interpretation of reported locations.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful and answerable investigation of the location and intensity of high current-density-magnitude regions within the supplied final-timestep electrolyzer electrical mesh. It preserves the stated scope, exposes all fixed operationalization requirements, leaves no unresolved operationalization choice to be assessed, introduces no unintended respondent-level operationalization responsibility, and correctly assigns finding selection and explanation to the respondent under F2. The wording is scientifically actionable without imposing unnecessary schema or protocol burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence records are supplied, so numerical implementation and result claims cannot be independently verified.",
+        "Coordinate units and axis meanings are unspecified, limiting physical interpretation of reported locations."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful and answerable investigation of the location and intensity of high current-density-magnitude regions within the supplied final-timestep electrolyzer electrical mesh. It preserves the stated scope, exposes all fixed operationalization requirements, leaves no unresolved operationalization choice to be assessed, introduces no unintended respondent-level operationalization responsibility, and correctly assigns finding selection and explanation to the respondent under F2. The wording is scientifically actionable without imposing unnecessary schema or protocol burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0035ae62d2bad668016aa6dd36c05c87d095830b3436edaf0f": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1700,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1700,
+            "output_tokens": 0
+          },
+          "rs_0035ae62d2bad668016aa6dd37429087d09afce461cf8cf1d7": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0035ae62d2bad668016aa6dd452f5887d080ed326ec4468fea": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 264
+          },
+          "msg_0035ae62d2bad668016aa6dd4ce9bc87d08f4cbdd99005e1ac": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 222
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 222
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2316,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1002,
+      "output_tokens_details": {
+        "reasoning_tokens": 780
+      },
+      "total_tokens": 3318
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "c7c0ebf0a655928825823ddc9dfc10c6eb9d588f62458f3eb66817c02f1f8632",
+    "review_packet_sha256": "96807b225f0e6a59376a0b1d235caaa9a49f8cd259bf23367d8459ff2fb6b02f",
+    "reviewed_model_visible_text_sha256": "af8a0b2863f015e45a1c40337bd450e1f453f878de165acda81f94c604dfaaea",
+    "reviewed_model_visible_text": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Select and explain findings that characterize this scientific target."
+  }
+}

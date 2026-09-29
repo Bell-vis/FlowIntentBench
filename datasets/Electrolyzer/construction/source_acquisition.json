@@ -1,0 +1,16 @@
+{
+  "dataset_id": "Electrolyzer",
+  "status": "VERIFIED",
+  "assets": [
+    {
+      "path": "raw/Readme.txt",
+      "source_url": "https://zenodo.org/api/records/14935434/files/Readme.txt/content",
+      "published_checksum": "md5:2e890f056f342e89dac921c564519aa5",
+      "status": "VERIFIED",
+      "sha256": "99514aaf010080ab74cc2b4308b031560c8f2a4c49f2b73b970eb02584cf3400",
+      "size_bytes": 1320,
+      "cached": true
+    }
+  ],
+  "checked_at_utc": "2026-09-13T17:54:08.346336+00:00"
+}

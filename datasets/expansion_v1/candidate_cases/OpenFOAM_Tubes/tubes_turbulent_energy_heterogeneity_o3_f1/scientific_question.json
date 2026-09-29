@@ -1,0 +1,7 @@
+{
+  "scientific_question": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+  "f1_required_properties": [
+    "coefficient"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

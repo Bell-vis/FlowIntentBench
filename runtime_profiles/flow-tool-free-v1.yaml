@@ -1,0 +1,18 @@
+runtime_profile_id: flow-tool-free-v1
+
+filesystem:
+  case_root: /unavailable
+  workspace_root: /unavailable
+  case_root_read_only: true
+
+network:
+  available: false
+
+tools: {}
+libraries: {}
+
+filesystem_policy:
+  root_recursive_search: unavailable
+
+output_policy:
+  max_returned_text_chars_per_call: 16000

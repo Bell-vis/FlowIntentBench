@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Investigate the high-speed flow regions in the carotid artery flow field. Calculate speed from the Euclidean magnitude of the velocity vectors, define high-speed locations using the linearly interpolated 90th percentile or higher of the non-zero speeds, and group locations connected through immediate grid neighbors along one grid axis into contiguous regions. Identify the region with the greatest peak speed, then report its strength as that peak speed and its location as the mean spatial location of the retained high-speed locations within it.",
+  "semantic_contract_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

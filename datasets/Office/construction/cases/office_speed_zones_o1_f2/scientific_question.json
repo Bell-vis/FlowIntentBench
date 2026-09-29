@@ -1,0 +1,3 @@
+{
+  "scientific_question": "Which high-speed airflow region is strongest in the office? For this analysis, define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale, treat locations connected through shared grid faces as one contiguous region, use peak speed as the measure of strength, and represent the strongest region by the mean spatial location of its retained high-speed locations. Characterize the strongest high-speed airflow region in the office."
+}

@@ -1,0 +1,74 @@
+{
+  "dataset_id": "Blunt_Fin",
+  "case_id": "blunt_fin_o1_f1",
+  "case_family_id": "blunt_fin__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "blunt_fin_o1_f1_o1_high_speed_regions",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "use peak speed as the measure of strength"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "blunt_fin_o1_f1_o1_high_speed_regions",
+      "findings": [
+        {
+          "finding_id": "blunt_fin_o1_f1_o1_high_speed_regions_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [-0.43620374257338634, 3.0521042773374156, 2.5893470661131714] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            -0.43620374257338634,
+            3.0521042773374156,
+            2.5893470661131714
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "blunt_fin_o1_f1_o1_high_speed_regions_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.1229319 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.1229319383189305,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Office",
+    "evidence_type": "context",
+    "statement": "The Office example describes a structured-grid CFD simulation of flow in a small office with flow velocity and scalar pressure; it names bookcases, desks, a window, and ventilation inlet and outlet, with a small heat source on one desk.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": "9-47",
+      "code_location": null
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "office_physical_setting",
+        "field": "physical_setting",
+        "value": "CFD flow in a small office",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_room",
+        "field": "objects",
+        "value": {
+          "name": "office",
+          "description": "The small office represented by the structured-grid CFD dataset."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_bookcases",
+        "field": "objects",
+        "value": {
+          "name": "bookcases",
+          "description": "Bookcases described in the office scene."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_desks",
+        "field": "objects",
+        "value": {
+          "name": "desks",
+          "description": "Desks described in the office scene."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_window",
+        "field": "objects",
+        "value": {
+          "name": "window",
+          "description": "A window described in the office scene."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_heat_source",
+        "field": "objects",
+        "value": {
+          "name": "desk_heat_source",
+          "description": "A small intense heat source on one desk."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_inlet",
+        "field": "boundaries",
+        "value": {
+          "name": "ventilation_inlet",
+          "type": "inlet",
+          "description": "The inlet of the ventilation system."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "office_outlet",
+        "field": "boundaries",
+        "value": {
+          "name": "ventilation_outlet",
+          "type": "outlet",
+          "description": "The outlet of the ventilation system."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

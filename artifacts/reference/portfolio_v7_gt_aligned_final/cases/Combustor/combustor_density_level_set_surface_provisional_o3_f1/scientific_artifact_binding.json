@@ -1,0 +1,7 @@
+{
+  "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+  "ground_truth_sha256": "ff5baf432c77f3f4f8596e7bb420cb137fcd8cb5ae6a2ecd154c900f34840c60",
+  "presentation_sha256": "0526327d461459076b8de4373bcfa0e7714a593eac6b65a16da427ec302bb0c0",
+  "scientific_evaluation_contract_sha256": "0a69021d6f2d901b38040586b8223ef30ee4b2c49e4a17e4f241af9983b3f323",
+  "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624"
+}

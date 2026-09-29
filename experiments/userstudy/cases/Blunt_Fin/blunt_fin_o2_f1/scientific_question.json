@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Identify the strongest high-speed region in the flow around the blunt fin. Use velocity magnitude as the flow quantity, group face-connected retained locations into one region, and represent each region by the mean spatial location of those locations. You should choose and state a scientifically appropriate rule for deciding which locations are high-speed and a measure for comparing region strength, then report the selected region’s location and strength.",
+  "semantic_contract_sha256": "df9a28fb28b4a4526b0c1c05325df6f4584a06260c0454fafa19473c07a92b90",
+  "source": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o2_f1.json",
+  "wording_version": "1.2.1"
+}

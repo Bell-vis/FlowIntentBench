@@ -1,0 +1,9 @@
+{
+  "scientific_question": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the signed domain-average vertical advective mass-flux density. Use the complete density and vertical-velocity fields on the supplied mesh. First average density and vertical velocity to cells, then multiply their cell values. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target.",
+  "f1_required_properties": [],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use the complete density and vertical-velocity fields on the supplied mesh.",
+    "property_measure": "First average density and vertical velocity to cells, then multiply their cell values.",
+    "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+  }
+}

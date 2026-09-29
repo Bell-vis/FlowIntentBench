@@ -1,0 +1,116 @@
+{
+  "format": {
+    "type": "VTU",
+    "details": {}
+  },
+  "grid": {
+    "type": "unstructured",
+    "dimensions": null,
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "U",
+      "physical_quantity": "velocity",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": "m/s",
+      "source": "stored"
+    },
+    {
+      "name": "k",
+      "physical_quantity": "turbulent kinetic energy",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": "m^2/s^2",
+      "source": "stored"
+    },
+    {
+      "name": "nut",
+      "physical_quantity": "turbulent kinematic viscosity",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": "m^2/s",
+      "source": "stored"
+    },
+    {
+      "name": "omega",
+      "physical_quantity": "specific dissipation rate",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": "1/s",
+      "source": "stored"
+    },
+    {
+      "name": "p",
+      "physical_quantity": "pressure",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": "Pa",
+      "source": "stored"
+    },
+    {
+      "name": "U",
+      "physical_quantity": "velocity",
+      "type": "vector",
+      "components": 3,
+      "association": "cell",
+      "unit": "m/s",
+      "source": "stored"
+    },
+    {
+      "name": "k",
+      "physical_quantity": "turbulent kinetic energy",
+      "type": "scalar",
+      "components": 1,
+      "association": "cell",
+      "unit": "m^2/s^2",
+      "source": "stored"
+    },
+    {
+      "name": "nut",
+      "physical_quantity": "turbulent kinematic viscosity",
+      "type": "scalar",
+      "components": 1,
+      "association": "cell",
+      "unit": "m^2/s",
+      "source": "stored"
+    },
+    {
+      "name": "omega",
+      "physical_quantity": "specific dissipation rate",
+      "type": "scalar",
+      "components": 1,
+      "association": "cell",
+      "unit": "1/s",
+      "source": "stored"
+    },
+    {
+      "name": "p",
+      "physical_quantity": "pressure",
+      "type": "scalar",
+      "components": 1,
+      "association": "cell",
+      "unit": "Pa",
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

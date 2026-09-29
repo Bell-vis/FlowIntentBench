@@ -1,0 +1,118 @@
+{
+  "dataset_id": "Blunt_Fin",
+  "case_id": "blunt_fin_o1_f2",
+  "case_family_id": "blunt_fin__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "blunt_fin_o1_f2_o1_high_speed_regions_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "use peak speed as the measure of strength"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "blunt_fin_o1_f2_o1_high_speed_regions_open",
+      "findings": [
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [-0.43620374257338634, 3.0521042773374156, 2.5893470661131714] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            -0.43620374257338634,
+            3.0521042773374156,
+            2.5893470661131714
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.1229319 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.1229319383189305,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_extent",
+          "category": "characterization",
+          "statement": "The selected region has coordinate-space extent approximately [22.177950859069824, 8.327558517456055, 5.3932197988033295] along the dataset axes.",
+          "importance": "core",
+          "value": [
+            22.177950859069824,
+            8.327558517456055,
+            5.3932197988033295
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_retained_points",
+          "category": "quantity",
+          "statement": "The selected region contains 3831 retained locations.",
+          "importance": "supporting",
+          "value": 3831,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "blunt_fin_o1_f2_o1_high_speed_regions_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 6 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 6,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

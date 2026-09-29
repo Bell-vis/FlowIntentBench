@@ -1,0 +1,29 @@
+{
+  "dataset_id": "Blunt_Fin",
+  "fact_index": {
+    "blunt_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "blunt_fin": {
+      "field": "objects",
+      "position": 0
+    },
+    "blunt_wall": {
+      "field": "boundaries",
+      "position": 0
+    }
+  },
+  "fact_provenance": {
+    "blunt_physical_setting": [
+      "ctx_001"
+    ],
+    "blunt_fin": [
+      "ctx_001"
+    ],
+    "blunt_wall": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "initial_case"
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "MHD_Turbulence",
+    "evidence_type": "context",
+    "statement": "the supplied compressible magnetohydrodynamic turbulence snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Dataset description and inspected field arrays"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "physical_setting",
+        "field": "physical_setting",
+        "value": "the supplied compressible magnetohydrodynamic turbulence snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces.",
+        "review_status": "approved"
+      }
+    ]
+  }
+]

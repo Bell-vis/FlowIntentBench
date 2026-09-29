@@ -1,0 +1,8 @@
+{
+  "scientific_question": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+  "f1_required_properties": [
+    "width",
+    "center"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

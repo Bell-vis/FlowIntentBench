@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "checks": {
+    "target_preserved": true,
+    "scope_preserved": true,
+    "fixed_o_preserved": true,
+    "unresolved_o_remains_open": true,
+    "finding_responsibility_preserved": true,
+    "no_additional_scientific_obligation": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "fixed_o_checks": {},
+  "unresolved_o_checks": {
+    "aggregation_or_representation": true,
+    "criterion": true,
+    "feature_definition": true,
+    "property_measure": true
+  },
+  "finding_responsibility_check": {
+    "finding_mode": "F1",
+    "responsibility_preserved": true,
+    "f1_remains_fixed": true,
+    "f2_remains_open": true
+  },
+  "additional_scientific_obligations": [],
+  "rationale": "The text preserves the LOx-post high-speed-region target and the specified reader-derived velocity-magnitude scope. Threshold or percentile selection, connectivity, regional strength statistic, and location representation remain open. It retains the F1 requirement to report the strongest region's location and strength without adding a scientific obligation.",
+  "excluded_from_semantic_fidelity_decision": false,
+  "post_rewrite_semantic_fidelity_version": "post-rewrite-semantic-fidelity-v1",
+  "semantic_contract_sha256": "acd2e36c7fc79cb9a3a500e99e2a4734bfc111bbf79ef080d73f521ca34ab604",
+  "semantic_visibility": {
+    "classification_version": "semantic-visibility-classification-v1",
+    "items": [
+      {
+        "information_id": "scientific_target",
+        "semantic_role": "SCIENTIFIC_TARGET",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "scientific_scope",
+        "semantic_role": "SCIENTIFIC_SCOPE",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:aggregation_or_representation",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:criterion",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:feature_definition",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:property_measure",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "finding_responsibility",
+        "semantic_role": "FINDING_RESPONSIBILITY",
+        "visibility": "QUESTION_VISIBLE"
+      }
+    ],
+    "semantic_contract_affected": false
+  },
+  "model_visible_text_sha256": "a95c03c1c6bafe6da62687060214e9c3bd63af2d644c5f5b3c82b1ebc816601b",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "nasa_lox_post_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "POST_REWRITE_SEMANTIC_FIDELITY_ONLY",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "52710f0320afa2fdfd0a28b8d90c2246bf6b5aaa7cc98e6949ff9b3c565ca98f",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "c39b52e32d86813c7588c147dcde497d08ce85141388f3a46f0b3244a7083ee5",
+    "timestamp": "2026-09-13T17:47:20.938005+00:00",
+    "latency_seconds": 31.346468,
+    "raw_structured_output": "{\"scientific_target_preserved\":true,\"scientific_scope_preserved\":true,\"fixed_o_checks\":[],\"unresolved_o_checks\":[{\"dimension_id\":\"aggregation_or_representation\",\"remains_open\":true},{\"dimension_id\":\"criterion\",\"remains_open\":true},{\"dimension_id\":\"feature_definition\",\"remains_open\":true},{\"dimension_id\":\"property_measure\",\"remains_open\":true}],\"finding_responsibility_check\":{\"finding_mode\":\"F1\",\"responsibility_preserved\":true,\"f1_remains_fixed\":true,\"f2_remains_open\":true},\"no_additional_scientific_obligation\":true,\"additional_scientific_obligations\":[],\"rationale\":\"The text preserves the LOx-post high-speed-region target and the specified reader-derived velocity-magnitude scope. Threshold or percentile selection, connectivity, regional strength statistic, and location representation remain open. It retains the F1 requirement to report the strongest region's location and strength without adding a scientific obligation.\"}",
+    "parsed_result": {
+      "scientific_target_preserved": true,
+      "scientific_scope_preserved": true,
+      "fixed_o_checks": [],
+      "unresolved_o_checks": [
+        {
+          "dimension_id": "aggregation_or_representation",
+          "remains_open": true
+        },
+        {
+          "dimension_id": "criterion",
+          "remains_open": true
+        },
+        {
+          "dimension_id": "feature_definition",
+          "remains_open": true
+        },
+        {
+          "dimension_id": "property_measure",
+          "remains_open": true
+        }
+      ],
+      "finding_responsibility_check": {
+        "finding_mode": "F1",
+        "responsibility_preserved": true,
+        "f1_remains_fixed": true,
+        "f2_remains_open": true
+      },
+      "no_additional_scientific_obligation": true,
+      "additional_scientific_obligations": [],
+      "rationale": "The text preserves the LOx-post high-speed-region target and the specified reader-derived velocity-magnitude scope. Threshold or percentile selection, connectivity, regional strength statistic, and location representation remain open. It retains the F1 requirement to report the strongest region's location and strength without adding a scientific obligation."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_07f022fb17657ff3016aa6e18a76cc87d0ae01e9a9b35015bd": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1270,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1270,
+            "output_tokens": 0
+          },
+          "rs_07f022fb17657ff3016aa6e18afa6487d09f85da92ac404377": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_07f022fb17657ff3016aa6e1962fec87d0b898ae2804ec3a01": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_07f022fb17657ff3016aa6e1a1889087d08b397d7b8d4bc8e3": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 197
+          },
+          "msg_07f022fb17657ff3016aa6e1a50e9c87d0917582fe71f4880c": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 202
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 202
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 425,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1697,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1433,
+      "output_tokens_details": {
+        "reasoning_tokens": 1231
+      },
+      "total_tokens": 3130
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "construction_time_semantic_realization_check": true,
+  "official_scq_executed": false,
+  "qualification_gate_created": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false
+}

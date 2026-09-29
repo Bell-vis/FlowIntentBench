@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the FireFlow room flow field, which is the strongest contiguous high-speed flow region? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero speed values, where speed is the Euclidean magnitude of the stored uvw vector at each point, group locations that share an unstructured-mesh cell into contiguous regions, and use peak speed as region strength. Report the strongest region’s mean spatial location across its retained high-speed locations and its peak speed.",
+  "semantic_contract_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

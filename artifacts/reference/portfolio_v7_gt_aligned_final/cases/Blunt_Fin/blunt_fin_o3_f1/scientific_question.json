@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Investigate the high-speed flow regions in the blunt-fin flow field. State the representation or aggregation used, define the feature that makes a region high-speed, and choose the criterion and property measure used to identify the strongest region; then report its location and strength.",
+  "semantic_contract_sha256": "45bfd8a3df4b60087ebead139d3cedd98452e2d7334a9b4ce49e54f493e19a6c",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

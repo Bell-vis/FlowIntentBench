@@ -1,0 +1,25 @@
+{
+  "boundaries": [
+    {
+      "description": "The inlet of the ventilation system.",
+      "name": "ventilation_inlet",
+      "type": "inlet"
+    },
+    {
+      "description": "The outlet of the ventilation system.",
+      "name": "ventilation_outlet",
+      "type": "outlet"
+    }
+  ],
+  "geometry_assets": [],
+  "objects": [
+    {
+      "description": "The small office represented by the structured-grid CFD dataset.",
+      "name": "office"
+    }
+  ],
+  "operating_conditions": [],
+  "physical_setting": "CFD flow in a small office",
+  "reference_directions": [],
+  "regions": []
+}

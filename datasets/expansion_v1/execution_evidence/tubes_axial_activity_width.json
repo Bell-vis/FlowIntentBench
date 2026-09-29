@@ -1,0 +1,59 @@
+{
+  "family_id": "tubes_axial_activity_width",
+  "inputs": [
+    {
+      "path": "OpenFOAM_Tubes/flow.vtu",
+      "sha256": "9a35f9125ed8a7938a395e59eee8aee749c0e2ca218c68cfcaa0d9cfc9edc83b"
+    }
+  ],
+  "operations": {
+    "rms": {
+      "clauses": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+        "property_measure": "Measure width along the x axis as the weighted root-mean-square distance from its weighted center.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "recipe": {
+        "kind": "weighted_width",
+        "field": {
+          "name": "U",
+          "association": "cell",
+          "reduce": "magnitude"
+        },
+        "measure": "rms",
+        "axis": 0
+      }
+    },
+    "interdecile": {
+      "clauses": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+        "property_measure": "Measure width along the x axis as the weighted 90th-minus-10th coordinate percentile range.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "recipe": {
+        "kind": "weighted_width",
+        "field": {
+          "name": "U",
+          "association": "cell",
+          "reduce": "magnitude"
+        },
+        "measure": "interdecile",
+        "axis": 0
+      }
+    }
+  },
+  "definition_sha256": "9798f3882c43c69654426f9ad13f5fe6d9ac83fefe79c9e20ce8be1631ecb9e4",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "rms": {
+      "width": 0.066590927684836,
+      "center": -9.5292765065777e-05
+    },
+    "interdecile": {
+      "width": 0.19037480280277,
+      "center": -9.5292765065777e-05
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

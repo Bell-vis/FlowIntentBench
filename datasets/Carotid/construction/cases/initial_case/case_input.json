@@ -1,0 +1,81 @@
+{
+  "scientific_question": "How can the stored blood-velocity field be used to examine flow through the carotid artery with streamtubes?",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Carotid/carotid.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTK",
+        "details": {}
+      },
+      "grid": {
+        "type": "structured",
+        "dimensions": [
+          76,
+          49,
+          45
+        ],
+        "origin": [
+          100.0,
+          80.0,
+          1.0
+        ],
+        "spacing": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "variables": [
+        {
+          "name": "scalars",
+          "physical_quantity": "speed-proportional scalar",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "vectors",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "Blood flow in human carotid arteries",
+    "objects": [
+      {
+        "name": "carotid_artery",
+        "description": "The carotid artery represented by the flow dataset."
+      }
+    ],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

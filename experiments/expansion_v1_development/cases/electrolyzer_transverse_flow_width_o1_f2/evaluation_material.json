@@ -1,0 +1,302 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "electrolyzer_transverse_flow_width_o1_f2",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "electrolyzer_transverse_flow_width_o1_f2",
+    "family_id": "electrolyzer_transverse_flow_width",
+    "dataset_id": "Electrolyzer",
+    "condition": "O1-F2",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/Electrolyzer/electrolyzer_transverse_flow_width_o1_f2/case_input.json",
+    "case_input_sha256": "c1eee79b54822d65cfc7d1ec1d78cbc5af7664cd3b4e95ec8274775e7878e61b",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/Electrolyzer/electrolyzer_transverse_flow_width_o1_f2/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "ed91d7ad398644a80ac97b6c41ea6f33375a43cc91a210005410d6d0264acad1",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/Electrolyzer/electrolyzer_transverse_flow_width_o1_f2/case_context.json",
+    "case_context_sha256": "e973a1861afa5efed8d9921bc92ceb5b343e27f2540c5318f2f4764f59b9225f",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/Electrolyzer/electrolyzer_transverse_flow_width_o1_f2/ground_truth.json",
+    "ground_truth_sha256": "5044d218706ab3bba95475b17c5281526b0875c9d97baaa81c8aff78f49fd432"
+  },
+  "finding_recall_mode": "SEMANTIC_ADEQUATE_CORE",
+  "family_definition": {
+    "family_id": "electrolyzer_transverse_flow_width",
+    "title": "the spatial extent of velocity magnitude along the stored y coordinate",
+    "scientific_target": "the spatial extent of velocity magnitude along the stored y coordinate",
+    "finding_goal": "Characterize the spatial extent of velocity magnitude along the stored y coordinate",
+    "scope": "the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Measure width along the y axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Report the numerical width, and the weighted center coordinate.",
+      "o2_f1": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Multiply the stated spatial weight by cell volume and normalize by its sum. Choose and explain the remaining quantitative definition. Report the numerical width, and the weighted center coordinate.",
+      "o3_f1": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+      "o1_f2": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Measure width along the y axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "width",
+        "result_key": "width",
+        "request_phrase": "the numerical width",
+        "requirement_statement": "report the numerical width",
+        "category": "property",
+        "unit": null
+      },
+      {
+        "property_id": "center",
+        "result_key": "center",
+        "request_phrase": "the weighted center coordinate",
+        "requirement_statement": "report the weighted center coordinate",
+        "category": "location",
+        "unit": null
+      }
+    ],
+    "operations": {
+      "rms": {
+        "clauses": {
+          "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+          "property_measure": "Measure width along the y axis as the weighted root-mean-square distance from its weighted center.",
+          "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+        },
+        "recipe": {
+          "kind": "weighted_width",
+          "field": {
+            "name": "velocity",
+            "association": "cell",
+            "reduce": "magnitude"
+          },
+          "measure": "rms",
+          "axis": 1
+        }
+      },
+      "interdecile": {
+        "clauses": {
+          "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+          "property_measure": "Measure width along the y axis as the weighted 90th-minus-10th coordinate percentile range.",
+          "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+        },
+        "recipe": {
+          "kind": "weighted_width",
+          "field": {
+            "name": "velocity",
+            "association": "cell",
+            "reduce": "magnitude"
+          },
+          "measure": "interdecile",
+          "axis": 1
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_electrolyzer_transverse_flow_width"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "profile_width",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "profile_width",
+      "mandatory_roles": [],
+      "supporting_roles": [
+        "center"
+      ],
+      "adequate_core_sets": [
+        [
+          "width"
+        ]
+      ],
+      "role_by_category": {
+        "location": "center",
+        "property": "width"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    },
+    "f2_core_properties": [
+      "width"
+    ]
+  },
+  "family_definition_source": {
+    "path": "datasets/Electrolyzer/construction/families.json",
+    "sha256": "19cb77e4a87176a8ac57f16359e94763d91dc1f18cfcd9e878e366c1e8d759fb"
+  },
+  "branch_execution_evidence": {
+    "electrolyzer_transverse_flow_width_o1_f2_rms": {
+      "case_id": "electrolyzer_transverse_flow_width_o1_f2",
+      "dataset_id": "Electrolyzer",
+      "operationalization": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+        "property_measure": "Measure width along the y axis as the weighted root-mean-square distance from its weighted center.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "materialized_G_of_O": {
+        "width": 0.23943050240171,
+        "center": 0.49995823496324
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/electrolyzer_transverse_flow_width.json",
+        "sha256": "d80e35a27124fc392eb193d3831f2bb9e4ffb3f1028139b2e19197e1d4039131"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "a5c91c7499eb74fbaf7dbf4c52eddbb3778a5f505b3938fff6d6c5f5b6992b36",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Electrolyzer/flow.vtk",
+            "sha256": "04863624be02130ee9200ca40c8102cc37cd8594f8f805fffb001e35b8e94490"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "weighted_width",
+          "field": {
+            "name": "velocity",
+            "association": "cell",
+            "reduce": "magnitude"
+          },
+          "measure": "rms",
+          "axis": 1
+        },
+        "definition_sha256": "c52447c323662438be8b0d615e59f7778a97e8e3b153c8e7194584fada39a412",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "05aabe6c82aa67a2760e2562e14ebd00b992f59cd236b027614f633c53e6889d"
+    }
+  },
+  "finding_requirement_contract": {
+    "mandatory_roles": [],
+    "alternative_role_groups": [],
+    "adequate_core_sets": [
+      [
+        "width"
+      ]
+    ],
+    "supporting_roles": [
+      "center"
+    ],
+    "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list.",
+    "scientific_entity_type": "profile_width",
+    "contract_source": "CONSTRUCTION_DEFINED",
+    "role_by_category": {
+      "location": "center",
+      "property": "width"
+    },
+    "reference_finding_role_map": {
+      "electrolyzer_transverse_flow_width_o1_f2_rms_width": "width",
+      "electrolyzer_transverse_flow_width_o1_f2_rms_center": "center"
+    }
+  },
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "Electrolyzer",
+    "case_id": "electrolyzer_transverse_flow_width_o1_f2",
+    "semantic_contract_sha256": "2b1e07b1e4acee0c9fe615465056ecc4efc3f41d696f43b1f6c7f030373e7d7f",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "electrolyzer_transverse_flow_width_o1_f2_rms",
+        "finding_id": "electrolyzer_transverse_flow_width_o1_f2_rms_center",
+        "scientific_finding_policy_key": "b8be327cdcffc6e4584836c32b50ed279942383ae120c349ce1afafea229bc34",
+        "policy_identity": {
+          "dataset_id": "Electrolyzer",
+          "case_family_id": "electrolyzer_transverse_flow_width",
+          "scientific_target": "the spatial extent of velocity magnitude along the stored y coordinate",
+          "effective_o_semantic_sha256": "0b7f0c3e5fd5ef21a404767ebcd582dba6b979a014d0f138b17704cb2245af02",
+          "scientific_role": "location",
+          "g_of_o_locator": "/center",
+          "representation": "location",
+          "canonical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.49995823496324,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA"
+        },
+        "policy_digest": "a6dbf366dc31d1740c627c80de40b84a7a6c16dd2a06c70652e8e7155b710936"
+      },
+      {
+        "operationalization_id": "electrolyzer_transverse_flow_width_o1_f2_rms",
+        "finding_id": "electrolyzer_transverse_flow_width_o1_f2_rms_width",
+        "scientific_finding_policy_key": "bbe9bf1544418adda0dc03d3cdd4b7ad132f88d19405a904d14fdf4adeac614c",
+        "policy_identity": {
+          "dataset_id": "Electrolyzer",
+          "case_family_id": "electrolyzer_transverse_flow_width",
+          "scientific_target": "the spatial extent of velocity magnitude along the stored y coordinate",
+          "effective_o_semantic_sha256": "0b7f0c3e5fd5ef21a404767ebcd582dba6b979a014d0f138b17704cb2245af02",
+          "scientific_role": "property",
+          "g_of_o_locator": "/width",
+          "representation": "property",
+          "canonical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.23943050240171,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE"
+        },
+        "policy_digest": "62fb9c967cbe39b6d6840be293618447334183797a9e4d7a609a081e9cc85c56"
+      }
+    ],
+    "verification_policy_sha256": "dbd90852173bd061cd35a7640517267bc1f389c3f3484d9d23c2a938ce4ebc7b"
+  }
+}

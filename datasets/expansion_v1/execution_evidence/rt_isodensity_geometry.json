@@ -1,0 +1,65 @@
+{
+  "family_id": "rt_isodensity_geometry",
+  "inputs": [
+    {
+      "path": "Rayleigh_Taylor/snapshot.vtk",
+      "sha256": "ac58ea892162498cd976a577c16baa0a56e62e04e058909ff03ddb6da068aa78"
+    }
+  ],
+  "operations": {
+    "rho094": {
+      "clauses": {
+        "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+        "parameter": "Extract the density level 0.94 in stored units."
+      },
+      "recipe": {
+        "kind": "surface",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "level": 0.94
+      }
+    },
+    "rho095": {
+      "clauses": {
+        "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+        "parameter": "Extract the density level 0.95 in stored units."
+      },
+      "recipe": {
+        "kind": "surface",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "level": 0.95
+      }
+    }
+  },
+  "definition_sha256": "5c551ecaef9632bd230eae7e903f088787a11eae61e28395ee81263572366218",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "rho094": {
+      "area": 2.7089114189148,
+      "centroid": [
+        0.5236611366272,
+        0.50224089622498,
+        0.49306988716125
+      ]
+    },
+    "rho095": {
+      "area": 2.6944425106049,
+      "centroid": [
+        0.52380973100662,
+        0.50233572721481,
+        0.49433100223541
+      ]
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

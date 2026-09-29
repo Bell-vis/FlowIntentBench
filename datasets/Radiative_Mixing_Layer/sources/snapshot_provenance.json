@@ -1,0 +1,175 @@
+{
+  "source": {
+    "url": "https://huggingface.co/datasets/polymathic-ai/turbulent_radiative_layer_3D/resolve/26fe3aa1ce19d374f1f83f1346650d0efba5046d/data/valid/turbulent_radiative_layer_tcool_0.03.hdf5?download=true",
+    "type": "file",
+    "oid": "0d9a02b9ab8ccb5ba7e93c8a5e3eb5b11c811bde",
+    "size": 8472530400,
+    "lfs": {
+      "oid": "c8032703f687613efe3efc69831d8b1b50ac4a02cce0d2f1e27cc817cd20cbd7",
+      "size": 8472530400,
+      "pointerSize": 135
+    },
+    "xetHash": "67ad71c17ff507dd904139b9cfbe9af07e11d5509520bbf9d8de8a3dc3d2865e",
+    "path": "data/valid/turbulent_radiative_layer_tcool_0.03.hdf5",
+    "revision": "26fe3aa1ce19d374f1f83f1346650d0efba5046d"
+  },
+  "whole_remote_object_checksum_verified": false,
+  "trajectory": 0,
+  "frame": 60,
+  "time": 159.70330810546875,
+  "field_metadata": {
+    "density": {
+      "shape": [
+        128,
+        128,
+        256
+      ],
+      "min": 0.9681687951087952,
+      "max": 126.71339416503906,
+      "finite": true
+    },
+    "pressure": {
+      "shape": [
+        128,
+        128,
+        256
+      ],
+      "min": 0.7310197949409485,
+      "max": 1.3263609409332275,
+      "finite": true
+    },
+    "velocity": {
+      "shape": [
+        128,
+        128,
+        256,
+        3
+      ],
+      "min": -0.27410995960235596,
+      "max": 0.2501620054244995,
+      "finite": true
+    }
+  },
+  "attrs": {
+    "dataset_name": "turbulent_radiative_layer_3D",
+    "grid_type": "cartesian",
+    "n_spatial_dims": 3,
+    "n_trajectories": 1,
+    "simulation_parameters": [
+      "tcool"
+    ],
+    "tcool": 0.03
+  },
+  "sample_geometry": "Stored coordinate samples represented as VTK points; the analysis domain is their rectilinear span. No extrapolation to unstored boundary faces.",
+  "snapshot_sha256": "bc79c68afb14eeb642a568697cc032b40df1f09c5a8e7a5bc92409ab7fee1d55",
+  "ranges": {
+    "0": {
+      "stop": 4194303,
+      "sha256": "fc8ee2122ae547d9bde43cff213c93281088bd1d3b73fad9f2880c39bc3f9efb"
+    },
+    "8472494080": {
+      "stop": 8472530399,
+      "sha256": "d08aae2b3b0def2fb4d5ee2395b0bb6108d815773284a01bf84d64ae8df2da45"
+    },
+    "3388997632": {
+      "stop": 3393191935,
+      "sha256": "01e94b53a86fa92bc903696fc8b71230cc8fefc67eb19ad7493310a57d430b04"
+    },
+    "1694498816": {
+      "stop": 1698693119,
+      "sha256": "6acc0f4c5b8adeeb363776f0d52eeebc2632fa08adba4098b75675fc1e72c3f3"
+    },
+    "1006632960": {
+      "stop": 1010827263,
+      "sha256": "80111825eab0d4f801d039c982428f819c635617279b3950c36449e7516132d1"
+    },
+    "1010827264": {
+      "stop": 1015021567,
+      "sha256": "c16e56b6e2ea0bb34befd25202a0a2bda94a2e6a9562bff817512d9f020a4a7d"
+    },
+    "1015021568": {
+      "stop": 1019215871,
+      "sha256": "679f4005131a6b5e047657006a38ee523a8aa247b7a74d3152fe8cea982163e2"
+    },
+    "1019215872": {
+      "stop": 1023410175,
+      "sha256": "2cc95424c2aff3bb2e908963b2da890bfff1b4253e1995d4ef26523b940fbc09"
+    },
+    "1023410176": {
+      "stop": 1027604479,
+      "sha256": "f422e5c89aa5787c5b8bc457a160fecab1ab269e045e1fb20e37d9afa878638c"
+    },
+    "2701131776": {
+      "stop": 2705326079,
+      "sha256": "6a5f5d9ec8b43628986c8a5c3c2bc13fa6227902cb9c1c2c4c2cb9cee482f33a"
+    },
+    "2705326080": {
+      "stop": 2709520383,
+      "sha256": "06986ec6e68e290f39eb50c1fbcdb5f1b1d8b018c5c3a5c5f7310627ee75b835"
+    },
+    "2709520384": {
+      "stop": 2713714687,
+      "sha256": "2954c9404aff472598696c7274b1945582aa2033a6677166cb67d255b3465a9b"
+    },
+    "2713714688": {
+      "stop": 2717908991,
+      "sha256": "29fc870f3c7854555568b6c1d9cc5ff17bf244ec2705e8d1814efc68a70d6c83"
+    },
+    "2717908992": {
+      "stop": 2722103295,
+      "sha256": "55debc0b92186655f347867ffaba1273e0f7cdcfdfc948b29b0dd85c929f2f51"
+    },
+    "6408896512": {
+      "stop": 6413090815,
+      "sha256": "f36fd3ff24884b6ee86240a4513a15087075de851ef273ef6b9488cc19321923"
+    },
+    "6413090816": {
+      "stop": 6417285119,
+      "sha256": "43c355293682f47f29fa3a39d0d97acab0c38a734c8333fb2f31fa5313cf2b38"
+    },
+    "6417285120": {
+      "stop": 6421479423,
+      "sha256": "0b0d5eadfb805c481133d49ebf69710fa8dc362adbde855af0f0085df4e001be"
+    },
+    "6421479424": {
+      "stop": 6425673727,
+      "sha256": "5761c78257e9fdad21030513fce9f9b41bb4d6eac8ddefa9d0d8a3c62656320c"
+    },
+    "6425673728": {
+      "stop": 6429868031,
+      "sha256": "5b848c2de9984ffc2cbeedd79986000ac87629f5584ff70532edc9cb5738eaef"
+    },
+    "6429868032": {
+      "stop": 6434062335,
+      "sha256": "b0b2095cf86e13b2ef393cc27f3a55b6647ec68803d3eb633ad3471a1f96dda3"
+    },
+    "6434062336": {
+      "stop": 6438256639,
+      "sha256": "6402d2314ad26db5e2286c7a9ee3d0e07d6a183611cdc115a245beb1ad253389"
+    },
+    "6438256640": {
+      "stop": 6442450943,
+      "sha256": "158cd83c4f25864d4727cd3852bfa640b84bf6a0ff1dc330002d4854673a224a"
+    },
+    "6442450944": {
+      "stop": 6446645247,
+      "sha256": "cc639e2fcb3da8f2fb3b5f328132be4d58e4e8b9442a3737455c7ff46d6a9231"
+    },
+    "6446645248": {
+      "stop": 6450839551,
+      "sha256": "60d04d4910d059efeee6a2c1438b50d671e3fe050d69475dbcb14246f1d58ff3"
+    },
+    "6450839552": {
+      "stop": 6455033855,
+      "sha256": "613ecbbe972d3ed8e07711e1072c64efe68ce74a717e7a196f96909dbddbcf3b"
+    },
+    "6455033856": {
+      "stop": 6459228159,
+      "sha256": "ad45a37821a6067f8f7f24dac5c14ae9291513998dd521e9e626fe71c53cf1e8"
+    },
+    "6459228160": {
+      "stop": 6463422463,
+      "sha256": "c32b18a66161f2f82c2e80daca4fb6146429f0790757f5076c0289a6facf5304"
+    }
+  }
+}

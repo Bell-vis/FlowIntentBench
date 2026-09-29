@@ -1,0 +1,204 @@
+{
+  "artifact_type": "FindingVerificationPolicy",
+  "case_id": "carotid_o1_f2",
+  "dataset_id": "Carotid",
+  "policies": [
+    {
+      "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_extent",
+      "formula_id": "componentwise_abs_tolerance_v1",
+      "formula_inputs": {
+        "reference_value": [
+          75.0,
+          48.0,
+          44.0
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "policy_digest": "ae229d73345a04ff572e869e305cb223ded229b5c161bf98c819d5b35c61c0ae",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "carotid__high_speed_region",
+        "dataset_id": "Carotid",
+        "effective_o_semantic_sha256": "30e13058520b0150b5710fe0cbe605a1fc3a58386934ea3679bfea00ab460749",
+        "g_of_o_locator": "/coordinate_span",
+        "representation": "characterization",
+        "scientific_role": "extent",
+        "scientific_target": "high-speed flow regions in the carotid artery flow field"
+      },
+      "scientific_finding_policy_key": "d1d1260778399f55b064509a6827e13a6cbaa7086108417022e203bed7a725f3",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "componentwise_vector",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          137.80844557699308,
+          94.49144521295959,
+          15.773061521659992
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "policy_digest": "0b0b727de836657267fe2364bca017b23e62fbeca0db8e036ca67c004297006e",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "carotid__high_speed_region",
+        "dataset_id": "Carotid",
+        "effective_o_semantic_sha256": "30e13058520b0150b5710fe0cbe605a1fc3a58386934ea3679bfea00ab460749",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the carotid artery flow field"
+      },
+      "scientific_finding_policy_key": "785276e85fe94409db508a3454d064e58386783890fabb58ee6c4e39aa450b1a",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_region_count",
+      "formula_id": "exact_discrete_equality_v1",
+      "formula_inputs": {
+        "reference_value": 642,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "policy_digest": "4d16c626bf44ba5fc054fd8b25de08f92df5406576eaca1fea5287ec47514726",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "carotid__high_speed_region",
+        "dataset_id": "Carotid",
+        "effective_o_semantic_sha256": "30e13058520b0150b5710fe0cbe605a1fc3a58386934ea3679bfea00ab460749",
+        "g_of_o_locator": "/region_count",
+        "representation": "quantity",
+        "scientific_role": "region_count",
+        "scientific_target": "high-speed flow regions in the carotid artery flow field"
+      },
+      "scientific_finding_policy_key": "5115b034148dea1bcd4205cc3938fc9353735159c0db28aeca2f9f20d0e104d1",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "exact_discrete_numeric",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_retained_points",
+      "formula_id": "exact_discrete_equality_v1",
+      "formula_inputs": {
+        "reference_value": 13735,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "policy_digest": "192e1a3803613e5e23c9206556c65cd99206bc3c4497d81f22fa06405f2a74e5",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "carotid__high_speed_region",
+        "dataset_id": "Carotid",
+        "effective_o_semantic_sha256": "30e13058520b0150b5710fe0cbe605a1fc3a58386934ea3679bfea00ab460749",
+        "g_of_o_locator": "/selected_region_size",
+        "representation": "quantity",
+        "scientific_role": "retained_points",
+        "scientific_target": "high-speed flow regions in the carotid artery flow field"
+      },
+      "scientific_finding_policy_key": "2121204305108804cb96684ee4a96609a4fbe195785c065bc5156e6c15fded08",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "exact_discrete_numeric",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "carotid_o1_f2_o1_high_speed_regions_open_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 22.694927991153424,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "carotid_o1_f2_o1_high_speed_regions_open",
+      "policy_digest": "ef83fe0abc570d24b1fb7ce781f3581f98d5c02e1ae10953f6ba46305085b68c",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "carotid__high_speed_region",
+        "dataset_id": "Carotid",
+        "effective_o_semantic_sha256": "30e13058520b0150b5710fe0cbe605a1fc3a58386934ea3679bfea00ab460749",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the carotid artery flow field"
+      },
+      "scientific_finding_policy_key": "b12a5e85275e1a265dff3f7f08974655af8c8b0eeb8120b4a553af39eeb2a5f1",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.05,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    }
+  ],
+  "runtime_inference_from_python_type_forbidden": true,
+  "schema_version": "finding-verification-policy-v1",
+  "semantic_contract_sha256": "a0303f2636a650168b7bc2b77a83517d5c959c50a47dc52e13c7d4129d70c29e",
+  "verification_policy_sha256": "037a515d54a9b41d0387a90d3375e01128cd50be0ee5af31001f823302dc45e1"
+}

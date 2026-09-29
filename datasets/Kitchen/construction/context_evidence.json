@@ -1,0 +1,60 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Kitchen",
+    "evidence_type": "context",
+    "statement": "The Kitchen example describes a small kitchen with two windows, a door with air leakage, and a cooking area with a hot stove; air leakage and temperature variation are part of the described convection setup.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": "6-18",
+      "code_location": null
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "kitchen_physical_setting",
+        "field": "physical_setting",
+        "value": "Airflow in a small kitchen",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "kitchen_room",
+        "field": "objects",
+        "value": {
+          "name": "kitchen",
+          "description": "The small kitchen represented by the structured flow dataset."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "kitchen_windows",
+        "field": "objects",
+        "value": {
+          "name": "windows",
+          "description": "Two windows described in the kitchen scene."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "kitchen_door",
+        "field": "objects",
+        "value": {
+          "name": "door",
+          "description": "A door with air leakage in the described scene."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "kitchen_hot_stove",
+        "field": "objects",
+        "value": {
+          "name": "hot_stove",
+          "description": "The hot stove in the cooking area."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "scientific_question": "In the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored y coordinate. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Measure width along the y axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Select and explain findings that characterize this scientific target.",
+  "f1_required_properties": [],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+    "property_measure": "Measure width along the y axis as the weighted root-mean-square distance from its weighted center.",
+    "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+  }
+}

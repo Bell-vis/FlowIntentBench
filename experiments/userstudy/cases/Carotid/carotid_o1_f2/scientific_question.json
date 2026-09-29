@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Study the carotid artery flow field to identify its strongest high-speed region. At each location, use the Euclidean magnitude of the available velocity vector as speed; retain values at or above the 90th percentile of non-zero speed; and treat face-connected retained locations as one region. Rank the resulting regions by peak speed and locate the selected region using the mean position of its retained locations. Present the principal evidence-supported findings you judge important, including the selected region’s strength and location and at least one additional scientifically relevant characterization of your choice.",
+  "semantic_contract_sha256": "a0303f2636a650168b7bc2b77a83517d5c959c50a47dc52e13c7d4129d70c29e",
+  "source": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o1_f2.json",
+  "wording_version": "1.2.1"
+}

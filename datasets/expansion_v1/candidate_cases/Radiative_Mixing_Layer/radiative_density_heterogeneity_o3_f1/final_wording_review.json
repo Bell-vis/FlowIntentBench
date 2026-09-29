@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence_context entries are supplied for external validation or provenance-specific support.",
+    "The numerical coefficient is not uniquely determined because aggregation or representation, feature definition, and property measure remain respondent-selected."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The wording presents a meaningful and actionable request about density spatial nonuniformity over the supplied complete three-dimensional mesh. It faithfully preserves the target and scope, exposes the unresolved operationalization choices through selection and explanation of an analysis procedure, and correctly assigns responsibility for reporting the numerical coefficient under F1. It introduces no unsupported physical assertion or unnecessary protocol burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "6afae23b4794030c3e6448262747c97674de33e77648bf01f05bc862eda6d2ff",
+  "review_packet_sha256": "6bc1964ccc7c49ea03e47ff24a2574dcc4199cc1dade710f0be70428cc5e6528",
+  "reviewed_model_visible_text_sha256": "41dd45e7f96ea3c026fef883d5c2b326705ca9d09350b16679229d15fa9c3d43",
+  "reviewed_model_visible_text": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "radiative_density_heterogeneity_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "6bc1964ccc7c49ea03e47ff24a2574dcc4199cc1dade710f0be70428cc5e6528",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:40:06.355695+00:00",
+    "latency_seconds": 19.563224,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence_context entries are supplied for external validation or provenance-specific support.\",\"The numerical coefficient is not uniquely determined because aggregation or representation, feature definition, and property measure remain respondent-selected.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The wording presents a meaningful and actionable request about density spatial nonuniformity over the supplied complete three-dimensional mesh. It faithfully preserves the target and scope, exposes the unresolved operationalization choices through selection and explanation of an analysis procedure, and correctly assigns responsibility for reporting the numerical coefficient under F1. It introduces no unsupported physical assertion or unnecessary protocol burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence_context entries are supplied for external validation or provenance-specific support.",
+        "The numerical coefficient is not uniquely determined because aggregation or representation, feature definition, and property measure remain respondent-selected."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The wording presents a meaningful and actionable request about density spatial nonuniformity over the supplied complete three-dimensional mesh. It faithfully preserves the target and scope, exposes the unresolved operationalization choices through selection and explanation of an analysis procedure, and correctly assigns responsibility for reporting the numerical coefficient under F1. It introduces no unsupported physical assertion or unnecessary protocol burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0b69f10a58a8a471016aa6dfe4613c87d089c170fe51d5ad5f": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1158,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1158,
+            "output_tokens": 0
+          },
+          "rs_0b69f10a58a8a471016aa6dfe54cbc87d0ac85a1e462346967": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_0b69f10a58a8a471016aa6dff1bc6c87d0b51275045713d379": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 204
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 204
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1774,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 720,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2494
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "6afae23b4794030c3e6448262747c97674de33e77648bf01f05bc862eda6d2ff",
+    "review_packet_sha256": "6bc1964ccc7c49ea03e47ff24a2574dcc4199cc1dade710f0be70428cc5e6528",
+    "reviewed_model_visible_text_sha256": "41dd45e7f96ea3c026fef883d5c2b326705ca9d09350b16679229d15fa9c3d43",
+    "reviewed_model_visible_text": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Choose and explain an appropriate analysis procedure. Report the numerical coefficient."
+  }
+}

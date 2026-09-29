@@ -1,0 +1,33 @@
+{
+  "dataset_id": "Office",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/Office/",
+      "supports": [
+        "variables[name=vectors].physical_quantity",
+        "variables[name=scalars].physical_quantity"
+      ],
+      "notes": "The example identifies the vector field as flow velocity and the scalar field as pressure."
+    },
+    {
+      "url": "https://www.csc.kth.se/utbildning/kth/kurser/DD2257/visual09/LAB1.pdf",
+      "supports": [],
+      "notes": "The source list was retained for semantic cross-checking; no additional local array names were asserted."
+    }
+  ]
+}

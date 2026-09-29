@@ -1,0 +1,62 @@
+{
+  "format": {
+    "type": "VTU",
+    "details": {}
+  },
+  "grid": {
+    "type": "unstructured",
+    "dimensions": null,
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "Velocity [m/s]",
+      "physical_quantity": "Velocity",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": "m/s",
+      "source": "stored"
+    },
+    {
+      "name": "Viscosity [Pa s]",
+      "physical_quantity": "Viscosity",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": "Pa s",
+      "source": "stored"
+    },
+    {
+      "name": "NormShearRate [1/s]",
+      "physical_quantity": "NormShearRate",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": "1/s",
+      "source": "stored"
+    },
+    {
+      "name": "Pressure [bar]",
+      "physical_quantity": "Pressure",
+      "type": "scalar",
+      "components": 1,
+      "association": "cell",
+      "unit": "bar",
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

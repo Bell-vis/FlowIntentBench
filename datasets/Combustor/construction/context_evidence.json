@@ -1,0 +1,33 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Combustor",
+    "evidence_type": "context",
+    "statement": "The WarpCombustor example reads combxyz.bin and combq.bin as data from an annular combustor; it describes a combustor burning fuel and air in a gas turbine.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Code",
+      "page": null,
+      "figure": null,
+      "code_location": "WarpCombustor.cxx: dataset description and PLOT3D reader"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "combustor_physical_setting",
+        "field": "physical_setting",
+        "value": "Flow in an annular combustor in a gas turbine",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "annular_combustor",
+        "field": "objects",
+        "value": {
+          "name": "annular_combustor",
+          "description": "The annular combustor represented by the structured PLOT3D dataset."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

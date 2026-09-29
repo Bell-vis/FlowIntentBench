@@ -1,0 +1,204 @@
+{
+  "artifact_type": "FindingVerificationPolicy",
+  "case_id": "office_speed_zones_o1_f2",
+  "dataset_id": "Office",
+  "policies": [
+    {
+      "finding_id": "o1_speed_zones_open_extent",
+      "formula_id": "componentwise_abs_tolerance_v1",
+      "formula_inputs": {
+        "reference_value": [
+          0.24000000115484,
+          0.5999999046325684,
+          0.24000000953674316
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "o1_speed_zones_open",
+      "policy_digest": "cf7c645843960b526cbfe49cd2932ea0e1714dafa58c258e98e946c7ef3126ce",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "office__high_speed_region",
+        "dataset_id": "Office",
+        "effective_o_semantic_sha256": "abf5fe86514fee7949e1150802300f2ece0d9f4ff44cc883e577dbe889b030d3",
+        "g_of_o_locator": "/coordinate_span",
+        "representation": "characterization",
+        "scientific_role": "extent",
+        "scientific_target": "ventilation regions in the office velocity field"
+      },
+      "scientific_finding_policy_key": "a76414aed55de73b3473920c7b6a0a9377bfe9077b29aac1c9f4a67ef7db2b2b",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "componentwise_vector",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "o1_speed_zones_open_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          0.06812500045634806,
+          2.343749985098839,
+          2.389375001192093
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "o1_speed_zones_open",
+      "policy_digest": "d6f032eda0c0554021114ca7518429b25fbb43e81eab8b61a7f5269c83a7feaa",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "office__high_speed_region",
+        "dataset_id": "Office",
+        "effective_o_semantic_sha256": "abf5fe86514fee7949e1150802300f2ece0d9f4ff44cc883e577dbe889b030d3",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "ventilation regions in the office velocity field"
+      },
+      "scientific_finding_policy_key": "5a61a5b05c599bc4ec3b87617d0fb76c203d5efeefe0191aa32aeaa1e5a7bb01",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "o1_speed_zones_open_region_count",
+      "formula_id": "exact_discrete_equality_v1",
+      "formula_inputs": {
+        "reference_value": 8,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "o1_speed_zones_open",
+      "policy_digest": "b21cd2e45f6f25a231ee7155005886e3d74708d924204dce0bfb40c029771439",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "office__high_speed_region",
+        "dataset_id": "Office",
+        "effective_o_semantic_sha256": "abf5fe86514fee7949e1150802300f2ece0d9f4ff44cc883e577dbe889b030d3",
+        "g_of_o_locator": "/region_count",
+        "representation": "quantity",
+        "scientific_role": "region_count",
+        "scientific_target": "ventilation regions in the office velocity field"
+      },
+      "scientific_finding_policy_key": "0578c8121709d3e271e9277f9707261a357d50d58c9aa3f3defb00316265f72a",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "exact_discrete_numeric",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "o1_speed_zones_open_retained_points",
+      "formula_id": "exact_discrete_equality_v1",
+      "formula_inputs": {
+        "reference_value": 32,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "o1_speed_zones_open",
+      "policy_digest": "0ebc4e21816786eb6f043e5a277a6e7b621683582302b309c1631a0aeddbbfe3",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "office__high_speed_region",
+        "dataset_id": "Office",
+        "effective_o_semantic_sha256": "abf5fe86514fee7949e1150802300f2ece0d9f4ff44cc883e577dbe889b030d3",
+        "g_of_o_locator": "/selected_region_size",
+        "representation": "quantity",
+        "scientific_role": "retained_points",
+        "scientific_target": "ventilation regions in the office velocity field"
+      },
+      "scientific_finding_policy_key": "65b6ec17cc98ad700ad7f436de91280e7f91e0f7bfd71c487f7f805968931480",
+      "tolerance_authority": "NOT_APPLICABLE",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "exact_discrete_numeric",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "o1_speed_zones_open_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 0.8049350186348156,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "o1_speed_zones_open",
+      "policy_digest": "697172e972b211d50825d6e906770dd8622012632b955cd404fe2fe23008e10a",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "office__high_speed_region",
+        "dataset_id": "Office",
+        "effective_o_semantic_sha256": "abf5fe86514fee7949e1150802300f2ece0d9f4ff44cc883e577dbe889b030d3",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "ventilation regions in the office velocity field"
+      },
+      "scientific_finding_policy_key": "01afcfebea54cc22db9a45f37e7ffe00f0be64a8ccffbc765ff8169d4c8654b5",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.0005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    }
+  ],
+  "runtime_inference_from_python_type_forbidden": true,
+  "schema_version": "finding-verification-policy-v1",
+  "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+  "verification_policy_sha256": "7947adffe6bf6495ae1654879cfc7ae6ce3fbe9b108f224a5a1e3ac45dd4c0a5"
+}

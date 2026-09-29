@@ -1,0 +1,139 @@
+{
+  "dataset_id": "Electrolyzer_Electric",
+  "case_id": "electrolyzer_current_hotspot_o2_f1",
+  "case_family_id": "electrolyzer_current_hotspot",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "electrolyzer_current_hotspot_o2_f1_q90",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compute the stated properties of the selected object."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "electrolyzer_current_hotspot_o2_f1_q95",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compute the stated properties of the selected object."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "electrolyzer_current_hotspot_o2_f1_q90",
+      "findings": [
+        {
+          "finding_id": "electrolyzer_current_hotspot_o2_f1_q90_centroid",
+          "category": "location",
+          "statement": "report the volume-weighted centroid coordinates",
+          "importance": "core",
+          "value": [
+            11.304063025628,
+            0.33018346255372,
+            0.46966994986484
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "evidence_ids": [
+            "finding_electrolyzer_current_hotspot"
+          ]
+        },
+        {
+          "finding_id": "electrolyzer_current_hotspot_o2_f1_q90_mean",
+          "category": "quantity",
+          "statement": "report the volume-weighted mean value in the selected region",
+          "importance": "core",
+          "value": 0.005398905692704,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-08,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_electrolyzer_current_hotspot"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "electrolyzer_current_hotspot_o2_f1_q95",
+      "findings": [
+        {
+          "finding_id": "electrolyzer_current_hotspot_o2_f1_q95_centroid",
+          "category": "location",
+          "statement": "report the volume-weighted centroid coordinates",
+          "importance": "core",
+          "value": [
+            11.379691001219,
+            0.27546168789961,
+            0.4556705485297
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "evidence_ids": [
+            "finding_electrolyzer_current_hotspot"
+          ]
+        },
+        {
+          "finding_id": "electrolyzer_current_hotspot_o2_f1_q95_mean",
+          "category": "quantity",
+          "statement": "report the volume-weighted mean value in the selected region",
+          "importance": "core",
+          "value": 0.0056686884343492,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-08,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_electrolyzer_current_hotspot"
+          ]
+        }
+      ]
+    }
+  ]
+}

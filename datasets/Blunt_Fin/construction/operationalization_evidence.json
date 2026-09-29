@@ -1,0 +1,17 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "Blunt_Fin",
+    "evidence_type": "operationalization",
+    "statement": "The example reads bluntfinxyz.bin and bluntfinq.bin with vtkMultiBlockPLOT3DReader and releases streamlines upstream of the fin.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Code",
+      "page": null,
+      "figure": null,
+      "code_location": "BluntStreamlines.cxx: command-line usage, vtkMultiBlockPLOT3DReader, vtkStreamTracer"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

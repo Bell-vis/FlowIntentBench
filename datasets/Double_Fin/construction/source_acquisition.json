@@ -1,0 +1,25 @@
+{
+  "dataset_id": "Double_Fin",
+  "status": "VERIFIED",
+  "assets": [
+    {
+      "path": "raw/Pressure_Paraview_DF_10deg.vtk",
+      "source_url": "https://zenodo.org/api/records/10697026/files/Pressure_Paraview_DF_10deg.vtk/content",
+      "published_checksum": "md5:52f41eeca44297c6db14a8ae150a1830",
+      "status": "VERIFIED",
+      "sha256": "528d05123f18278954033bc0e935eb54338416264391dd5bc3f5f82b3a20b4e9",
+      "size_bytes": 22784918,
+      "cached": false
+    },
+    {
+      "path": "raw/Dual Fin 10deg.stl",
+      "source_url": "https://zenodo.org/api/records/10697026/files/Dual%20Fin%2010deg.stl/content",
+      "published_checksum": "md5:7dec3c94c27f386d99e3d40c575496b9",
+      "status": "VERIFIED",
+      "sha256": "36231524f8297d49607f9299d144bedc2b9e51c6860abd31ec12dcdb49162b29",
+      "size_bytes": 2284,
+      "cached": false
+    }
+  ],
+  "checked_at_utc": "2026-09-13T16:44:33.943299+00:00"
+}

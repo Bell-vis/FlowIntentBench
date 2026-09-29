@@ -1,0 +1,121 @@
+{
+  "concept_id": "kitchen_concentration_heterogeneity",
+  "dataset_id": "Kitchen",
+  "family_id": "kitchen_concentration_heterogeneity",
+  "finding_responsibility": "F2",
+  "finding_semantics": {
+    "adequate_core_semantics": {
+      "adequate_core_sets": [
+        [
+          "comparison_to_other_fields",
+          "heterogeneity_measure_evidence",
+          "selected_field_identity"
+        ],
+        [
+          "consequential_distributional_characterization",
+          "heterogeneity_measure_evidence",
+          "selected_field_identity"
+        ],
+        [
+          "distribution_shape",
+          "heterogeneity_measure_evidence",
+          "selected_field_identity"
+        ],
+        [
+          "distribution_spread",
+          "heterogeneity_measure_evidence",
+          "selected_field_identity"
+        ],
+        [
+          "extreme_behavior",
+          "heterogeneity_measure_evidence",
+          "selected_field_identity"
+        ]
+      ],
+      "alternative_role_groups": [
+        {
+          "group_id": "characterization",
+          "min_required": 1,
+          "roles": [
+            "comparison_to_other_fields",
+            "consequential_distributional_characterization",
+            "distribution_shape",
+            "distribution_spread",
+            "extreme_behavior"
+          ]
+        }
+      ],
+      "mandatory_roles": [
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ],
+      "novel_role_policy": "valid_unenumerated may satisfy one characterization role only after blinded adjudication",
+      "role_by_category": {
+        "existence_or_identity": "selected_field_identity",
+        "property": "heterogeneity_measure_evidence",
+        "quantity": "heterogeneity_measure_evidence"
+      },
+      "scientific_entity_type": "FIELD",
+      "supporting_roles": [
+        "supporting_statistic"
+      ]
+    },
+    "finding_goal": "identify the requested concentration field and report its stored identifier and heterogeneity statistic",
+    "normalized_demand": "identify the requested concentration field and report its stored identifier and heterogeneity statistic"
+  },
+  "observable_scientific_semantics": {
+    "required_capabilities": {
+      "FIELD_COMPARABILITY": true,
+      "OBSERVABLE_INTERPRETATION": true,
+      "SCALAR_FIELD_SEMANTICS": true,
+      "SPATIAL_COORDINATES": true,
+      "VOLUME_WEIGHTING_JUSTIFICATION": true
+    },
+    "scientific_semantic_capabilities": {}
+  },
+  "operationalization_responsibility": "user_specified",
+  "principal_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "feature_definition",
+    "property_measure"
+  ],
+  "resolved_operationalization": [
+    {
+      "canonical_id": "kitchen_concentration_heterogeneity:aggregation_or_representation",
+      "dimension_id": "aggregation_or_representation",
+      "normalized_meaning": "represent the selected result by its stored field identifier"
+    },
+    {
+      "canonical_id": "kitchen_concentration_heterogeneity:feature_definition",
+      "dimension_id": "feature_definition",
+      "normalized_meaning": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field"
+    },
+    {
+      "canonical_id": "kitchen_concentration_heterogeneity:property_measure",
+      "dimension_id": "property_measure",
+      "normalized_meaning": "compare fields by cell-volume-weighted coefficient of variation, forming each cell concentration as the arithmetic mean of its vertex values and weighting positive-volume cells by cell volume"
+    }
+  ],
+  "scientific_scope": {
+    "condition_constraints": [
+      "the supplied c1 and c11-c17 concentration arrays are point-associated"
+    ],
+    "scope_constraints": [
+      "the kitchen airflow field"
+    ],
+    "selection_constraints": [
+      "identify the requested target"
+    ]
+  },
+  "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+  "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity",
+  "unresolved_operationalization_dimensions": [],
+  "verification_semantics": {
+    "deterministic_verification_required_claim_types": [
+      "exact",
+      "scalar_numeric",
+      "spatial"
+    ],
+    "semantic_adjudication_required": true
+  }
+}

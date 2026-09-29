@@ -1,0 +1,115 @@
+{
+  "dataset_id": "Kitchen",
+  "case_id": "kitchen_concentration_heterogeneity_o3_f1",
+  "case_family_id": "kitchen_concentration_heterogeneity",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "kitchen_concentration_heterogeneity_o3_f1_coefficient_of_variation",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Treat each stored c-prefixed scalar array as a gas-concentration field."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compare fields by the cell-volume-weighted coefficient of variation of their point-to-cell mean concentrations."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected result by its stored field identifier after cell-volume-weighted aggregation."
+        }
+      ],
+      "evidence_ids": [
+        "op_004"
+      ]
+    },
+    {
+      "operationalization_id": "kitchen_concentration_heterogeneity_o3_f1_relative_interdecile_spread",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Treat each stored c-prefixed scalar array as a gas-concentration field."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compare fields by the cell-volume-weighted relative interdecile concentration spread, normalized by the cell-volume-weighted mean."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected result by its stored field identifier after cell-volume-weighted aggregation."
+        }
+      ],
+      "evidence_ids": [
+        "op_004"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "kitchen_concentration_heterogeneity_o3_f1_coefficient_of_variation",
+      "findings": [
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o3_f1_coefficient_of_variation_field",
+          "category": "existence_or_identity",
+          "statement": "The selected gas-concentration field is c12.",
+          "importance": "core",
+          "value": "c12",
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o3_f1_coefficient_of_variation_heterogeneity",
+          "category": "quantity",
+          "statement": "The selected field has cell-volume-weighted coefficient of variation approximately 57.266141.",
+          "importance": "core",
+          "value": 57.26614105024864,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "kitchen_concentration_heterogeneity_o3_f1_relative_interdecile_spread",
+      "findings": [
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o3_f1_relative_interdecile_spread_field",
+          "category": "existence_or_identity",
+          "statement": "The selected gas-concentration field is c13.",
+          "importance": "core",
+          "value": "c13",
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o3_f1_relative_interdecile_spread_heterogeneity",
+          "category": "quantity",
+          "statement": "The selected field has cell-volume-weighted relative interdecile concentration spread approximately 3.6094058.",
+          "importance": "core",
+          "value": 3.6094058004927834,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

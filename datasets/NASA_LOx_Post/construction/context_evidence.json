@@ -1,0 +1,42 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "NASA_LOx_Post",
+    "evidence_type": "context",
+    "statement": "The VTK Book identifies the NASA LOx Post dataset as a simulation of liquid oxygen flowing across a flat plate with a cylindrical post perpendicular to the flow, in a rocket-engine model.",
+    "source_id": "src_002",
+    "locator": {
+      "section": "LOx Post case study",
+      "page": null,
+      "figure": "12-14",
+      "code_location": "postxyz.bin and postq.bin PLOT3D reader setup"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "lox_physical_setting",
+        "field": "physical_setting",
+        "value": "Liquid-oxygen flow across a flat plate with a cylindrical post",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "lox_flat_plate",
+        "field": "objects",
+        "value": {
+          "name": "flat_plate",
+          "description": "The flat plate across which the liquid oxygen flow is simulated."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "lox_cylindrical_post",
+        "field": "objects",
+        "value": {
+          "name": "cylindrical_post",
+          "description": "The cylindrical post perpendicular to the flow."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

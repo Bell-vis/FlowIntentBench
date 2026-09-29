@@ -1,0 +1,117 @@
+{
+  "families": [
+    {
+      "family_id": "electrolyzer_current_hotspot",
+      "title": "the location and intensity of high current-density-magnitude regions",
+      "scientific_target": "the location and intensity of high current-density-magnitude regions",
+      "finding_goal": "Characterize the location and intensity of high current-density-magnitude regions",
+      "scope": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation",
+        "criterion"
+      ],
+      "o2_unresolved_dimensions": [
+        "criterion"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+        "o2_f1": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+        "o3_f1": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+        "o1_f2": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "centroid",
+          "result_key": "centroid",
+          "request_phrase": "the volume-weighted centroid coordinates",
+          "requirement_statement": "report the volume-weighted centroid coordinates",
+          "category": "location",
+          "unit": null,
+          "spatial_tolerance": 1e-05
+        },
+        {
+          "property_id": "mean",
+          "result_key": "mean",
+          "request_phrase": "the volume-weighted mean value in the selected region",
+          "requirement_statement": "report the volume-weighted mean value in the selected region",
+          "category": "quantity",
+          "unit": null
+        }
+      ],
+      "operations": {
+        "q90": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Compute the stated properties of the selected object.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+            "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+          },
+          "recipe": {
+            "kind": "upper_tail",
+            "field": {
+              "name": "current_density",
+              "association": "point",
+              "reduce": "magnitude"
+            },
+            "quantile": 0.9
+          }
+        },
+        "q95": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Compute the stated properties of the selected object.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+            "criterion": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+          },
+          "recipe": {
+            "kind": "upper_tail",
+            "field": {
+              "name": "current_density",
+              "association": "point",
+              "reduce": "magnitude"
+            },
+            "quantile": 0.95
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_electrolyzer_current_hotspot"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "localized_region",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except criterion. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "localized_region",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "centroid",
+            "mean"
+          ]
+        ],
+        "role_by_category": {
+          "location": "centroid",
+          "quantity": "mean"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    }
+  ]
+}

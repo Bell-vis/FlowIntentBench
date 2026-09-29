@@ -1,0 +1,286 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "aideas_high_shear_region_o1_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "aideas_high_shear_region_o1_f1",
+    "family_id": "aideas_high_shear_region",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "condition": "O1-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_high_shear_region_o1_f1/case_input.json",
+    "case_input_sha256": "ad771cf7a7503f5060aef7d0d3304968f20760a03b2cb8bb1d0631dda5f8df4e",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_high_shear_region_o1_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "f90fbf98e239e2e8e3e4eb581a8a1d4ff5abb1701fb0e6c7eef08e2a533eb074",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_high_shear_region_o1_f1/case_context.json",
+    "case_context_sha256": "2c6d49606a7afa4ff8eb1d1d26ba3ac41c6719c754144041a1ec99290b6f5e35",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_high_shear_region_o1_f1/ground_truth.json",
+    "ground_truth_sha256": "8a8a3cce1155ba09353bbb59b15553a5f6e354598ac57749db70c51b97740335"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "aideas_high_shear_region",
+    "title": "the location and intensity of high shear-rate regions",
+    "scientific_target": "the location and intensity of high shear-rate regions",
+    "finding_goal": "Characterize the location and intensity of high shear-rate regions",
+    "scope": "the single-channel blow-mold flow simulation",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation",
+      "criterion"
+    ],
+    "o2_unresolved_dimensions": [
+      "criterion"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high shear-rate regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o2_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high shear-rate regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o3_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high shear-rate regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o1_f2": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high shear-rate regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "centroid",
+        "result_key": "centroid",
+        "request_phrase": "the volume-weighted centroid coordinates",
+        "requirement_statement": "report the volume-weighted centroid coordinates",
+        "category": "location",
+        "unit": null,
+        "spatial_tolerance": 1e-05
+      },
+      {
+        "property_id": "mean",
+        "result_key": "mean",
+        "request_phrase": "the volume-weighted mean value in the selected region",
+        "requirement_statement": "report the volume-weighted mean value in the selected region",
+        "category": "quantity",
+        "unit": "1/s"
+      }
+    ],
+    "operations": {
+      "q90": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume.",
+          "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          },
+          "quantile": 0.9
+        }
+      },
+      "q95": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume.",
+          "criterion": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          },
+          "quantile": 0.95
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_aideas_high_shear_region"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "localized_region",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except criterion. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "localized_region",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "centroid",
+          "mean"
+        ]
+      ],
+      "role_by_category": {
+        "location": "centroid",
+        "quantity": "mean"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    },
+    "cell_volume_convention": "absolute_signed_volume"
+  },
+  "family_definition_source": {
+    "path": "datasets/AIDEAS_Blow_Mold/construction/families.json",
+    "sha256": "75d8a87313239fe6c8f63665ef8e50ebd0d831ccf938a8077147a37ba1d8a9d7"
+  },
+  "branch_execution_evidence": {
+    "aideas_high_shear_region_o1_f1_q90": {
+      "case_id": "aideas_high_shear_region_o1_f1",
+      "dataset_id": "AIDEAS_Blow_Mold",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "materialized_G_of_O": {
+        "fraction": 0.10000698829525,
+        "centroid": [
+          -0.55234805928896,
+          -1.00067183368,
+          17.203428120422
+        ],
+        "mean": 438.78483314906,
+        "cutoff": 302.1725769043
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/aideas_high_shear_region.json",
+        "sha256": "616d6b8f7a39d8f828dfda491caa9e806b59433b6d3b71a5d3df0236ff151fbc"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "e9c97a0bfe57aaf2ba114c16ab10f421983aa7e00693ff689fdb07ea73664948",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+            "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          },
+          "quantile": 0.9
+        },
+        "definition_sha256": "ab25104b0673c3f5b8dcba4d6c4eb2d272aa93367e96480e6bdd13dbfc7f4f3b",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "b024004fea79619cb451956146b108c2793498f6119d8099497abe1a5c3c543b"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "case_id": "aideas_high_shear_region_o1_f1",
+    "semantic_contract_sha256": "39e0dcdc5f0758574823895b794e681e426e804c35719a8e7dcb55d7a4e37915",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "aideas_high_shear_region_o1_f1_q90",
+        "finding_id": "aideas_high_shear_region_o1_f1_q90_centroid",
+        "scientific_finding_policy_key": "e787ce2066345ccd3a035bdd207784c08bdfdf55c789760212825334b61ce776",
+        "policy_identity": {
+          "dataset_id": "AIDEAS_Blow_Mold",
+          "case_family_id": "aideas_high_shear_region",
+          "scientific_target": "the location and intensity of high shear-rate regions",
+          "effective_o_semantic_sha256": "413f652d2ca9f4fe29b90ee1f853ec0cc9e1da3ee4414544d8a8d25f1749504a",
+          "scientific_role": "location",
+          "g_of_o_locator": "/centroid",
+          "representation": "location",
+          "canonical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 1e-05
+        },
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            -0.55234805928896,
+            -1.00067183368,
+            17.203428120422
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "significant_figures": null
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA"
+        },
+        "policy_digest": "5c67dc97cfcf46a5c4f90c15451580a2fcb8a7f8a0e06696bb67090119dc8d43"
+      },
+      {
+        "operationalization_id": "aideas_high_shear_region_o1_f1_q90",
+        "finding_id": "aideas_high_shear_region_o1_f1_q90_mean",
+        "scientific_finding_policy_key": "5ad46b7ad5bfd2b444452acb9ddec1553cb8a7151734df15152334d7c8218474",
+        "policy_identity": {
+          "dataset_id": "AIDEAS_Blow_Mold",
+          "case_family_id": "aideas_high_shear_region",
+          "scientific_target": "the location and intensity of high shear-rate regions",
+          "effective_o_semantic_sha256": "413f652d2ca9f4fe29b90ee1f853ec0cc9e1da3ee4414544d8a8d25f1749504a",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/mean",
+          "representation": "quantity",
+          "canonical_unit": "1/s"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 438.78483314906,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1/s",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "0bf332191f4eafb034ae4f879f022d785580edf523c269499bed1d7c194f2a5a"
+      }
+    ],
+    "verification_policy_sha256": "ee4211939bf8f6e4dfbfbb5cf52a37c48b0b07658c99e77784bea8336d7d0ab8"
+  }
+}

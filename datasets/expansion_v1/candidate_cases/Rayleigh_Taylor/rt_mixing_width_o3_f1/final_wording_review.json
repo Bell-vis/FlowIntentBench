@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context is supplied to independently validate the reported width or weighted center.",
+    "Coordinates and density values have no declared SI units, so results remain in stored scales."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful for the supplied Rayleigh\u2013Taylor snapshot and faithfully preserves the target and complete three-dimensional mesh scope. It exposes the required numerical width and weighted center coordinate, leaves aggregation, feature definition, and property measure open through the requested procedure choice, and correctly assigns reporting responsibility under F1. The request is clear, actionable, and answerable in principle without imposing unnecessary protocol or schema requirements.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "b7d34e1da648440cc7694b96eac8f55d4006c9deb0ba46c52506f2530c9a3142",
+  "review_packet_sha256": "1a9f5589f0fd9cf25bdec01c5c495637922ad726a22b821e4a54d4dd902a174f",
+  "reviewed_model_visible_text_sha256": "1ff52f43ab30f43c349aa903c195f4221ccf0ed1dd58d9b0e789548b7f54ba51",
+  "reviewed_model_visible_text": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "rt_mixing_width_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "1a9f5589f0fd9cf25bdec01c5c495637922ad726a22b821e4a54d4dd902a174f",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:39:04.478311+00:00",
+    "latency_seconds": 19.47607,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context is supplied to independently validate the reported width or weighted center.\",\"Coordinates and density values have no declared SI units, so results remain in stored scales.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful for the supplied Rayleigh\u2013Taylor snapshot and faithfully preserves the target and complete three-dimensional mesh scope. It exposes the required numerical width and weighted center coordinate, leaves aggregation, feature definition, and property measure open through the requested procedure choice, and correctly assigns reporting responsibility under F1. The request is clear, actionable, and answerable in principle without imposing unnecessary protocol or schema requirements.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context is supplied to independently validate the reported width or weighted center.",
+        "Coordinates and density values have no declared SI units, so results remain in stored scales."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful for the supplied Rayleigh\u2013Taylor snapshot and faithfully preserves the target and complete three-dimensional mesh scope. It exposes the required numerical width and weighted center coordinate, leaves aggregation, feature definition, and property measure open through the requested procedure choice, and correctly assigns reporting responsibility under F1. The request is clear, actionable, and answerable in principle without imposing unnecessary protocol or schema requirements."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_08ed312b79fa0532016aa6dfa5d28087d0ac15d0670a3db86e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1125,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1125,
+            "output_tokens": 0
+          },
+          "rs_08ed312b79fa0532016aa6dfa66ef487d09dde641a85850cb4": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_08ed312b79fa0532016aa6dfb40b1887d0be25ef70d4b50059": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 212
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 212
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1741,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 728,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2469
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "b7d34e1da648440cc7694b96eac8f55d4006c9deb0ba46c52506f2530c9a3142",
+    "review_packet_sha256": "1a9f5589f0fd9cf25bdec01c5c495637922ad726a22b821e4a54d4dd902a174f",
+    "reviewed_model_visible_text_sha256": "1ff52f43ab30f43c349aa903c195f4221ccf0ed1dd58d9b0e789548b7f54ba51",
+    "reviewed_model_visible_text": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate."
+  }
+}

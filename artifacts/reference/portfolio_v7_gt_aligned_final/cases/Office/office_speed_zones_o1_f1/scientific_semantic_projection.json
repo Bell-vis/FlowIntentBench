@@ -1,0 +1,76 @@
+{
+  "concept_id": "high_speed_region",
+  "dataset_id": "Office",
+  "family_id": "office__high_speed_region",
+  "finding_responsibility": "F1",
+  "finding_semantics": {
+    "finding_goal": "characterize the strongest airflow region in the office velocity field",
+    "fixed_finding_requirements": [
+      {
+        "category": "location",
+        "normalized_meaning": "report the location of the strongest region"
+      },
+      {
+        "category": "quantity",
+        "normalized_meaning": "report the strength of the strongest region"
+      }
+    ],
+    "normalized_demand": "characterize the strongest airflow region in the office velocity field",
+    "required_finding_roles": [
+      "defining_strength_evidence",
+      "principal_feature_location"
+    ]
+  },
+  "observable_scientific_semantics": {
+    "required_capabilities": {},
+    "scientific_semantic_capabilities": {}
+  },
+  "operationalization_responsibility": "user_specified",
+  "principal_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "criterion",
+    "feature_definition",
+    "property_measure"
+  ],
+  "resolved_operationalization": [
+    {
+      "canonical_id": "mean_region_coordinate",
+      "dimension_id": "aggregation_or_representation",
+      "normalized_meaning": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "canonical_id": "speed_gt_0_20",
+      "dimension_id": "criterion",
+      "normalized_meaning": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale"
+    },
+    {
+      "canonical_id": "face_connected_region",
+      "dimension_id": "feature_definition",
+      "normalized_meaning": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "canonical_id": "peak_speed",
+      "dimension_id": "property_measure",
+      "normalized_meaning": "use peak speed as the measure of strength"
+    }
+  ],
+  "scientific_scope": {
+    "condition_constraints": [
+      "speed is the Euclidean magnitude of the stored vectors array",
+      "operationalizations remain within thresholded connected velocity-magnitude region analysis on the supplied topology"
+    ],
+    "scope_constraints": [
+      "in the office"
+    ],
+    "selection_constraints": [
+      "select the strongest region"
+    ]
+  },
+  "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+  "scientific_target": "ventilation regions in the office velocity field",
+  "unresolved_operationalization_dimensions": [],
+  "verification_semantics": {
+    "deterministic_verification_required_claim_types": [],
+    "semantic_adjudication_required": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "dataset_id": "Office",
+  "fact_index": {
+    "office_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "office_room": {
+      "field": "objects",
+      "position": 0
+    },
+    "office_inlet": {
+      "field": "boundaries",
+      "position": 0
+    },
+    "office_outlet": {
+      "field": "boundaries",
+      "position": 1
+    }
+  },
+  "fact_provenance": {
+    "office_physical_setting": [
+      "ctx_001"
+    ],
+    "office_room": [
+      "ctx_001"
+    ],
+    "office_inlet": [
+      "ctx_001"
+    ],
+    "office_outlet": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "office_speed_zones_o3_f1"
+}

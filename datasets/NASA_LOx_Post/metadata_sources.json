@@ -1,0 +1,51 @@
+{
+  "dataset_id": "NASA_LOx_Post",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html",
+      "supports": [
+        "format.details.encoding",
+        "format.details.precision",
+        "format.details.endianness",
+        "format.details.has_byte_count",
+        "variables[name=Density].physical_quantity",
+        "variables[name=Momentum].physical_quantity",
+        "variables[name=StagnationEnergy].physical_quantity",
+        "variables[name=Velocity].physical_quantity",
+        "variables[name=VelocityMagnitude].physical_quantity"
+      ],
+      "notes": "Canonical VTK PLOT3D documentation defines stored quantities and reader functions 153/200."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/LOx/",
+      "supports": [
+        "data_files[role=grid]",
+        "data_files[role=solution]"
+      ],
+      "notes": "The example confirms AutoDetectFormatOn and the local postxyz/postq pairing."
+    },
+    {
+      "url": "https://book.vtk.org/en/latest/VTKBook/12Chapter12.html",
+      "supports": [
+        "data_files[role=grid]",
+        "data_files[role=solution]"
+      ],
+      "notes": "The textbook confirms the postxyz/postq dataset usage."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "context_facts": [],
+    "dataset_id": "NASA_LOx_Post",
+    "eligible_for_context": false,
+    "evidence_id": "op_001",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "LOx.cxx: vtkMultiBlockPLOT3DReader, vtkStructuredGridGeometryFilter, vtkStreamTracer, vtkTubeFilter",
+      "figure": "12-16",
+      "page": null,
+      "section": "Description and Code"
+    },
+    "source_id": "src_001",
+    "statement": "The LOx VTK example reads postxyz.bin and postq.bin with vtkMultiBlockPLOT3DReader and creates streamtubes using a computational grid in front of the post as the seed source."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "NASA_LOx_Post",
+    "eligible_for_context": false,
+    "evidence_id": "finding_001",
+    "evidence_type": "finding",
+    "locator": {
+      "code_location": "LOx.cxx: vtkStreamTracer and vtkTubeFilter",
+      "figure": "12-16",
+      "page": null,
+      "section": "Description and Code"
+    },
+    "source_id": "src_001",
+    "statement": "The LOx post flow example supports characterizing a selected high-speed region by location, velocity magnitude, and coordinate extent; exact benchmark values come from execution."
+  }
+]

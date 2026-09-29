@@ -1,0 +1,80 @@
+{
+  "format": {
+    "type": "VTU",
+    "details": {}
+  },
+  "grid": {
+    "type": "unstructured",
+    "dimensions": null,
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "t",
+      "physical_quantity": null,
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "uvw",
+      "physical_quantity": null,
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "u",
+      "physical_quantity": null,
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "v",
+      "physical_quantity": null,
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "w",
+      "physical_quantity": null,
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "mfrac",
+      "physical_quantity": null,
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

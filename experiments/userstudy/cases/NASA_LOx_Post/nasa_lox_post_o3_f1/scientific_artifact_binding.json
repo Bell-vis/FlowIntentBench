@@ -1,0 +1,7 @@
+{
+  "case_id": "nasa_lox_post_o3_f1",
+  "ground_truth_sha256": "d179dd48cd3d5f3678dee9c586f559075e5579e243816c6e7348e04e7f3f1ef4",
+  "presentation_sha256": "3a32f2be0259f8eca49faa8baad440d0db1db40a6f64a03680d3c5d3bef1cc17",
+  "scientific_evaluation_contract_sha256": "54320de60f66eed7fd954151950b65002ec65990260e902639ab7cfbc6094e15",
+  "semantic_contract_sha256": "acd2e36c7fc79cb9a3a500e99e2a4734bfc111bbf79ef080d73f521ca34ab604"
+}

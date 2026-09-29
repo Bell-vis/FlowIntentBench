@@ -1,0 +1,14 @@
+[
+  {
+    "evidence_id": "finding_electrolyzer_current_hotspot",
+    "dataset_id": "Electrolyzer_Electric",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"q90\": {\"centroid\": [11.304063025628162, 0.33018346255371506, 0.4696699498648371], \"cutoff\": 0.004988679086827464, \"fraction\": 0.1000018219224692, \"mean\": 0.005398905692704048}, \"q95\": {\"centroid\": [11.379691001218522, 0.2754616878996129, 0.4556705485296955], \"cutoff\": 0.0052984897568739, \"fraction\": 0.05000090718439473, \"mean\": 0.005668688434349175}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

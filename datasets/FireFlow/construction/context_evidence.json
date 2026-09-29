@@ -1,0 +1,43 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "FireFlow",
+    "evidence_type": "context",
+    "statement": "The Mayavi documentation describes fire_ug.vtu as an unstructured VTK XML grid representing a room with a fire in one corner and a fluid-flow simulation at a particular instant; room_vis.wrl shows the room context.",
+    "source_id": "src_002",
+    "locator": {
+      "section": "Visualizing rich datasets: the fire_ug.vtu example",
+      "page": null,
+      "figure": null,
+      "code_location": null
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "fireflow_physical_setting",
+        "field": "physical_setting",
+        "value": "A room with a fire in one corner and a simulated fluid-flow snapshot",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "fireflow_room",
+        "field": "objects",
+        "value": {
+          "name": "room",
+          "description": "The room represented by the FireFlow scene."
+        },
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "fireflow_room_geometry",
+        "field": "geometry_assets",
+        "value": {
+          "path": "FireFlow/room_vis.wrl",
+          "format": "WRL",
+          "description": "VRML geometry showing the room context for the flow solution."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

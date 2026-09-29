@@ -1,0 +1,20 @@
+{
+  "physical_setting": "A room with a fire in one corner and a simulated fluid-flow snapshot",
+  "objects": [
+    {
+      "name": "room",
+      "description": "The room represented by the FireFlow scene."
+    }
+  ],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": [
+    {
+      "path": "FireFlow/room_vis.wrl",
+      "format": "WRL",
+      "description": "VRML geometry showing the room context for the flow solution."
+    }
+  ]
+}

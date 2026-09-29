@@ -1,0 +1,703 @@
+{
+  "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+  "construction_run_identity": {
+    "agent_profile_ids": [],
+    "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+    "compiler_identity": "flowintentbench.deterministic_materialization.compile_effective_operationalization",
+    "compiler_sha256": "4c9c2ad327e93e2f28a20b1ded1a092e1863f3e4a0bbea5dc48f845c642948b0",
+    "construction_invocation_id": "construction:137ea2c17321520719daec93",
+    "dataset_manifest_digests": {
+      "Blunt_Fin": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+      "Carotid": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+      "Combustor": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+      "FireFlow": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+      "Kitchen": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+      "NASA_LOx_Post": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+      "Office": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc"
+    },
+    "live_agents_requested": false,
+    "materializer_identity": "flowintentbench.qualified_scientific_cases.reference_materializer",
+    "materializer_sha256": "807a8f8651dcd5ec562cdd99a0c27b894c0737e9170c9f0b206f9f9c186b7d84",
+    "provider_configuration_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "run_identity_sha256": "12c094026b3c03bf90071a06318bbef60775631bdeeeaaf7f89d2ec0832b0dd4",
+    "runtime_profile_digest": "84fcf8214801d714655930fbef828f1c9049f9a6afdff9f76e234aee37a54b69",
+    "timeout_seconds": 90.0
+  },
+  "stage_a_semantic_reuse": {
+    "current_semantic_hash": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+    "decision": "REBUILD_REQUIRED",
+    "equivalence_checks": {
+      "finding_responsibility": true,
+      "operationalization_responsibility": true,
+      "principal_operationalization_dimensions": true,
+      "reference_branches_present": true,
+      "scientific_target": false,
+      "unresolved_operationalization_dimensions": true,
+      "verification_semantics_present": false
+    },
+    "historical_case_id": "kitchen_concentration_heterogeneity_o2_f1",
+    "historical_semantic_hash": null,
+    "reason": "historical semantics are incomplete or differ from current projection"
+  },
+  "stage_b_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "all_field_metrics": [
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.30942496936507363,
+              "field_name": "c1",
+              "mean": 0.08020720009100968,
+              "metric_value": 0.30942496936507363,
+              "q10": 0.05404793641871688,
+              "q50": 0.08112780996837031,
+              "q90": 0.10981731353464905,
+              "relative_interdecile_spread": 0.6953163438276321,
+              "standard_deviation": 0.024818110431019
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.14418017074758235,
+              "field_name": "c11",
+              "mean": 0.9574607393708777,
+              "metric_value": 0.14418017074758235,
+              "q10": 0.8970167939475089,
+              "q50": 1.0,
+              "q90": 1.0,
+              "relative_interdecile_spread": 0.10755867245288686,
+              "standard_deviation": 0.1380468528865996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 57.26614105024864,
+              "field_name": "c12",
+              "mean": 155.4364538108478,
+              "metric_value": 57.26614105024864,
+              "q10": 1.0001250505447388,
+              "q50": 1.0001250505447388,
+              "q90": 1.0002177547217748,
+              "relative_interdecile_spread": 5.964120691328215e-07,
+              "standard_deviation": 8901.245888282469
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.0219053988591327,
+              "field_name": "c13",
+              "mean": 0.1385269564125309,
+              "metric_value": 2.0219053988591327,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 0.5,
+              "relative_interdecile_spread": 3.6094058004927834,
+              "standard_deviation": 0.28008840105801996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 5.034212066983074,
+              "field_name": "c14",
+              "mean": 68.08567190125844,
+              "metric_value": 5.034212066983074,
+              "q10": 7.249532634994129e-13,
+              "q50": 1.865819738975317e-12,
+              "q90": 84.4547059656511,
+              "relative_interdecile_spread": 1.2404181908953062,
+              "standard_deviation": 342.75771107396565
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.759909295064302,
+              "field_name": "c15",
+              "mean": 0.035421556666829654,
+              "metric_value": 0.759909295064302,
+              "q10": 0.01201627154925934,
+              "q50": 0.029269546621656997,
+              "q90": 0.06398482271084513,
+              "relative_interdecile_spread": 1.4671447573689353,
+              "standard_deviation": 0.02691717015677075
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 3.3848216187349522,
+              "field_name": "c16",
+              "mean": 7.175852323373133,
+              "metric_value": 3.3848216187349522,
+              "q10": 0.02514384570531547,
+              "q50": 0.028279999271035194,
+              "q90": 21.410077970762014,
+              "relative_interdecile_spread": 2.9801246125706697,
+              "standard_deviation": 24.288980077002815
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.3046563271253913,
+              "field_name": "c17",
+              "mean": 0.899266242246575,
+              "metric_value": 2.3046563271253913,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 3.0428814953907657,
+              "relative_interdecile_spread": 3.383738154997283,
+              "standard_deviation": 2.072499634963844
+            }
+          ],
+          "cell_count": 9936,
+          "field_name": "c12",
+          "mean": 155.4364538108478,
+          "metric_name": "weighted_coefficient_of_variation",
+          "metric_value": 57.26614105024864,
+          "operation_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+          "q10": 1.0001250505447388,
+          "q50": 1.0001250505447388,
+          "q90": 1.0002177547217748,
+          "standard_deviation": 8901.245888282469
+        },
+        "data_provenance": {
+          "aggregation": "cell_volume_weighted",
+          "compiled_plan_sha256": "7aa5d0634a9b2a3c17fc3cd6ae3b9f09cffe07dd2bf854048bc5be0f98262dd9",
+          "dataset_id": "Kitchen",
+          "dataset_manifest_sha256": "e9fdf8a17da6070901d2046caa8e55fe786a18c605c73bbd520a46890350eb50",
+          "effective_o_sha256": "5fa2dfce85167742cc20762fc961c134e868e4f06c17fc6f256f4a5c4ad76312",
+          "executed_plan_sha256": "7aa5d0634a9b2a3c17fc3cd6ae3b9f09cffe07dd2bf854048bc5be0f98262dd9",
+          "input_files": [
+            "Kitchen/kitchen.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_coefficient_of_variation",
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "point_to_cell_rule": "arithmetic mean of each cell's finite vertex values",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "scalar_fields": [
+            "c1",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17"
+          ],
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "weighted_quantile_rule": "linear interpolation over cumulative positive cell-volume weights"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+      "operation_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+      "reuse_reference": "REBUILD_REQUIRED"
+    },
+    {
+      "execution": {
+        "G_of_O": {
+          "all_field_metrics": [
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.30942496936507363,
+              "field_name": "c1",
+              "mean": 0.08020720009100968,
+              "metric_value": 0.6953163438276321,
+              "q10": 0.05404793641871688,
+              "q50": 0.08112780996837031,
+              "q90": 0.10981731353464905,
+              "relative_interdecile_spread": 0.6953163438276321,
+              "standard_deviation": 0.024818110431019
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.14418017074758235,
+              "field_name": "c11",
+              "mean": 0.9574607393708777,
+              "metric_value": 0.10755867245288686,
+              "q10": 0.8970167939475089,
+              "q50": 1.0,
+              "q90": 1.0,
+              "relative_interdecile_spread": 0.10755867245288686,
+              "standard_deviation": 0.1380468528865996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 57.26614105024864,
+              "field_name": "c12",
+              "mean": 155.4364538108478,
+              "metric_value": 5.964120691328215e-07,
+              "q10": 1.0001250505447388,
+              "q50": 1.0001250505447388,
+              "q90": 1.0002177547217748,
+              "relative_interdecile_spread": 5.964120691328215e-07,
+              "standard_deviation": 8901.245888282469
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.0219053988591327,
+              "field_name": "c13",
+              "mean": 0.1385269564125309,
+              "metric_value": 3.6094058004927834,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 0.5,
+              "relative_interdecile_spread": 3.6094058004927834,
+              "standard_deviation": 0.28008840105801996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 5.034212066983074,
+              "field_name": "c14",
+              "mean": 68.08567190125844,
+              "metric_value": 1.2404181908953062,
+              "q10": 7.249532634994129e-13,
+              "q50": 1.865819738975317e-12,
+              "q90": 84.4547059656511,
+              "relative_interdecile_spread": 1.2404181908953062,
+              "standard_deviation": 342.75771107396565
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.759909295064302,
+              "field_name": "c15",
+              "mean": 0.035421556666829654,
+              "metric_value": 1.4671447573689353,
+              "q10": 0.01201627154925934,
+              "q50": 0.029269546621656997,
+              "q90": 0.06398482271084513,
+              "relative_interdecile_spread": 1.4671447573689353,
+              "standard_deviation": 0.02691717015677075
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 3.3848216187349522,
+              "field_name": "c16",
+              "mean": 7.175852323373133,
+              "metric_value": 2.9801246125706697,
+              "q10": 0.02514384570531547,
+              "q50": 0.028279999271035194,
+              "q90": 21.410077970762014,
+              "relative_interdecile_spread": 2.9801246125706697,
+              "standard_deviation": 24.288980077002815
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.3046563271253913,
+              "field_name": "c17",
+              "mean": 0.899266242246575,
+              "metric_value": 3.383738154997283,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 3.0428814953907657,
+              "relative_interdecile_spread": 3.383738154997283,
+              "standard_deviation": 2.072499634963844
+            }
+          ],
+          "cell_count": 9936,
+          "field_name": "c13",
+          "mean": 0.1385269564125309,
+          "metric_name": "weighted_relative_interdecile_spread",
+          "metric_value": 3.6094058004927834,
+          "operation_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+          "q10": 0.0,
+          "q50": 0.0,
+          "q90": 0.5,
+          "standard_deviation": 0.28008840105801996
+        },
+        "data_provenance": {
+          "aggregation": "cell_volume_weighted",
+          "compiled_plan_sha256": "48613358c7fb6b6702e3da7bbc9c9e1b09a5f2ce07574a1f794de59dd4591827",
+          "dataset_id": "Kitchen",
+          "dataset_manifest_sha256": "e9fdf8a17da6070901d2046caa8e55fe786a18c605c73bbd520a46890350eb50",
+          "effective_o_sha256": "0aac022d05af17089f7aacc17423ff734d9a1ce8332e3c91d0c84f4a6b4ddd4d",
+          "executed_plan_sha256": "48613358c7fb6b6702e3da7bbc9c9e1b09a5f2ce07574a1f794de59dd4591827",
+          "input_files": [
+            "Kitchen/kitchen.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_relative_interdecile_spread",
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "point_to_cell_rule": "arithmetic mean of each cell's finite vertex values",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "scalar_fields": [
+            "c1",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17"
+          ],
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "weighted_quantile_rule": "linear interpolation over cumulative positive cell-volume weights"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+      "operation_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+      "reuse_reference": "REBUILD_REQUIRED"
+    }
+  ],
+  "stage_c_live_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "all_field_metrics": [
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.30942496936507363,
+              "field_name": "c1",
+              "mean": 0.08020720009100968,
+              "metric_value": 0.30942496936507363,
+              "q10": 0.05404793641871688,
+              "q50": 0.08112780996837031,
+              "q90": 0.10981731353464905,
+              "relative_interdecile_spread": 0.6953163438276321,
+              "standard_deviation": 0.024818110431019
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.14418017074758235,
+              "field_name": "c11",
+              "mean": 0.9574607393708777,
+              "metric_value": 0.14418017074758235,
+              "q10": 0.8970167939475089,
+              "q50": 1.0,
+              "q90": 1.0,
+              "relative_interdecile_spread": 0.10755867245288686,
+              "standard_deviation": 0.1380468528865996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 57.26614105024864,
+              "field_name": "c12",
+              "mean": 155.4364538108478,
+              "metric_value": 57.26614105024864,
+              "q10": 1.0001250505447388,
+              "q50": 1.0001250505447388,
+              "q90": 1.0002177547217748,
+              "relative_interdecile_spread": 5.964120691328215e-07,
+              "standard_deviation": 8901.245888282469
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.0219053988591327,
+              "field_name": "c13",
+              "mean": 0.1385269564125309,
+              "metric_value": 2.0219053988591327,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 0.5,
+              "relative_interdecile_spread": 3.6094058004927834,
+              "standard_deviation": 0.28008840105801996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 5.034212066983074,
+              "field_name": "c14",
+              "mean": 68.08567190125844,
+              "metric_value": 5.034212066983074,
+              "q10": 7.249532634994129e-13,
+              "q50": 1.865819738975317e-12,
+              "q90": 84.4547059656511,
+              "relative_interdecile_spread": 1.2404181908953062,
+              "standard_deviation": 342.75771107396565
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.759909295064302,
+              "field_name": "c15",
+              "mean": 0.035421556666829654,
+              "metric_value": 0.759909295064302,
+              "q10": 0.01201627154925934,
+              "q50": 0.029269546621656997,
+              "q90": 0.06398482271084513,
+              "relative_interdecile_spread": 1.4671447573689353,
+              "standard_deviation": 0.02691717015677075
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 3.3848216187349522,
+              "field_name": "c16",
+              "mean": 7.175852323373133,
+              "metric_value": 3.3848216187349522,
+              "q10": 0.02514384570531547,
+              "q50": 0.028279999271035194,
+              "q90": 21.410077970762014,
+              "relative_interdecile_spread": 2.9801246125706697,
+              "standard_deviation": 24.288980077002815
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.3046563271253913,
+              "field_name": "c17",
+              "mean": 0.899266242246575,
+              "metric_value": 2.3046563271253913,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 3.0428814953907657,
+              "relative_interdecile_spread": 3.383738154997283,
+              "standard_deviation": 2.072499634963844
+            }
+          ],
+          "cell_count": 9936,
+          "field_name": "c12",
+          "mean": 155.4364538108478,
+          "metric_name": "weighted_coefficient_of_variation",
+          "metric_value": 57.26614105024864,
+          "operation_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+          "q10": 1.0001250505447388,
+          "q50": 1.0001250505447388,
+          "q90": 1.0002177547217748,
+          "standard_deviation": 8901.245888282469
+        },
+        "data_provenance": {
+          "aggregation": "cell_volume_weighted",
+          "compiled_plan_sha256": "7aa5d0634a9b2a3c17fc3cd6ae3b9f09cffe07dd2bf854048bc5be0f98262dd9",
+          "dataset_id": "Kitchen",
+          "dataset_manifest_sha256": "e9fdf8a17da6070901d2046caa8e55fe786a18c605c73bbd520a46890350eb50",
+          "effective_o_sha256": "5fa2dfce85167742cc20762fc961c134e868e4f06c17fc6f256f4a5c4ad76312",
+          "executed_plan_sha256": "7aa5d0634a9b2a3c17fc3cd6ae3b9f09cffe07dd2bf854048bc5be0f98262dd9",
+          "input_files": [
+            "Kitchen/kitchen.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_coefficient_of_variation",
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "point_to_cell_rule": "arithmetic mean of each cell's finite vertex values",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "scalar_fields": [
+            "c1",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17"
+          ],
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "weighted_quantile_rule": "linear interpolation over cumulative positive cell-volume weights"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+      "operation_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+      "reuse_reference": "REBUILD_REQUIRED"
+    },
+    {
+      "execution": {
+        "G_of_O": {
+          "all_field_metrics": [
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.30942496936507363,
+              "field_name": "c1",
+              "mean": 0.08020720009100968,
+              "metric_value": 0.6953163438276321,
+              "q10": 0.05404793641871688,
+              "q50": 0.08112780996837031,
+              "q90": 0.10981731353464905,
+              "relative_interdecile_spread": 0.6953163438276321,
+              "standard_deviation": 0.024818110431019
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.14418017074758235,
+              "field_name": "c11",
+              "mean": 0.9574607393708777,
+              "metric_value": 0.10755867245288686,
+              "q10": 0.8970167939475089,
+              "q50": 1.0,
+              "q90": 1.0,
+              "relative_interdecile_spread": 0.10755867245288686,
+              "standard_deviation": 0.1380468528865996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 57.26614105024864,
+              "field_name": "c12",
+              "mean": 155.4364538108478,
+              "metric_value": 5.964120691328215e-07,
+              "q10": 1.0001250505447388,
+              "q50": 1.0001250505447388,
+              "q90": 1.0002177547217748,
+              "relative_interdecile_spread": 5.964120691328215e-07,
+              "standard_deviation": 8901.245888282469
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.0219053988591327,
+              "field_name": "c13",
+              "mean": 0.1385269564125309,
+              "metric_value": 3.6094058004927834,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 0.5,
+              "relative_interdecile_spread": 3.6094058004927834,
+              "standard_deviation": 0.28008840105801996
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 5.034212066983074,
+              "field_name": "c14",
+              "mean": 68.08567190125844,
+              "metric_value": 1.2404181908953062,
+              "q10": 7.249532634994129e-13,
+              "q50": 1.865819738975317e-12,
+              "q90": 84.4547059656511,
+              "relative_interdecile_spread": 1.2404181908953062,
+              "standard_deviation": 342.75771107396565
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 0.759909295064302,
+              "field_name": "c15",
+              "mean": 0.035421556666829654,
+              "metric_value": 1.4671447573689353,
+              "q10": 0.01201627154925934,
+              "q50": 0.029269546621656997,
+              "q90": 0.06398482271084513,
+              "relative_interdecile_spread": 1.4671447573689353,
+              "standard_deviation": 0.02691717015677075
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 3.3848216187349522,
+              "field_name": "c16",
+              "mean": 7.175852323373133,
+              "metric_value": 2.9801246125706697,
+              "q10": 0.02514384570531547,
+              "q50": 0.028279999271035194,
+              "q90": 21.410077970762014,
+              "relative_interdecile_spread": 2.9801246125706697,
+              "standard_deviation": 24.288980077002815
+            },
+            {
+              "cell_count": 9936,
+              "coefficient_of_variation": 2.3046563271253913,
+              "field_name": "c17",
+              "mean": 0.899266242246575,
+              "metric_value": 3.383738154997283,
+              "q10": 0.0,
+              "q50": 0.0,
+              "q90": 3.0428814953907657,
+              "relative_interdecile_spread": 3.383738154997283,
+              "standard_deviation": 2.072499634963844
+            }
+          ],
+          "cell_count": 9936,
+          "field_name": "c13",
+          "mean": 0.1385269564125309,
+          "metric_name": "weighted_relative_interdecile_spread",
+          "metric_value": 3.6094058004927834,
+          "operation_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+          "q10": 0.0,
+          "q50": 0.0,
+          "q90": 0.5,
+          "standard_deviation": 0.28008840105801996
+        },
+        "data_provenance": {
+          "aggregation": "cell_volume_weighted",
+          "compiled_plan_sha256": "48613358c7fb6b6702e3da7bbc9c9e1b09a5f2ce07574a1f794de59dd4591827",
+          "dataset_id": "Kitchen",
+          "dataset_manifest_sha256": "e9fdf8a17da6070901d2046caa8e55fe786a18c605c73bbd520a46890350eb50",
+          "effective_o_sha256": "0aac022d05af17089f7aacc17423ff734d9a1ce8332e3c91d0c84f4a6b4ddd4d",
+          "executed_plan_sha256": "48613358c7fb6b6702e3da7bbc9c9e1b09a5f2ce07574a1f794de59dd4591827",
+          "input_files": [
+            "Kitchen/kitchen.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_relative_interdecile_spread",
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "point_to_cell_rule": "arithmetic mean of each cell's finite vertex values",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "scalar_fields": [
+            "c1",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17"
+          ],
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "weighted_quantile_rule": "linear interpolation over cumulative positive cell-volume weights"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+      "operation_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+      "reuse_reference": "REBUILD_REQUIRED"
+    }
+  ],
+  "stage_c_o_space": "NOT_RUN",
+  "stage_c_proposal_attempts": [],
+  "stage_d_finding_space": "NOT_APPLICABLE",
+  "stage_e_proxy_invocations": [],
+  "status": "COMPLETE"
+}

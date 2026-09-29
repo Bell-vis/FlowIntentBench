@@ -1,0 +1,1320 @@
+{
+  "artifact_type": "ReferencePortfolioFreezeManifest",
+  "authoritative_input": "semantic_correctness_case_snapshot",
+  "canonical_identity_frozen_count": 24,
+  "cases": [
+    {
+      "case_id": "blunt_fin_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Blunt_Fin",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "22a7e8893e683e373eac793821138b3cf76ed1a580677ec2df0a5280b2585b22",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "finding_execution_binding_sha256": "76ed5ad27516cfa1d9b1c70c0738ad115267fd0541f621763c6d3bd47fe1803c",
+        "finding_verification_policy_sha256": "c387e65d56479a2e5b0a96e6bebe36e799ddac9f592a90a821a6985b1d77a4c2",
+        "ground_truth_sha256": "9f8c5b64e8858fc3ac7023fe57683cb42ec791265de1d615b852ddf4eb4ae709",
+        "model_visible_case_sha256": "077293a08a23e65e7008ebdeb14494700f28dd01013fde7b62129a2f5a130454",
+        "reference_analysis_sha256": "9a79df512c6e31f1b77a7a3df9e17abff6448c71916952bd6b18ed1bf3b00d42",
+        "reference_evidence_sha256": "ab677bb74a8152e04d5f546dfe12aa260e7ca0af57b6e210db31d76d78b05e1d",
+        "reference_materialization_sha256": "0e8f76c1ebe85ca6d7e8b96e7c13a3eeaf7cbeeba919f4cad4dc3dc28e3380f4",
+        "scientific_evaluation_contract_sha256": "717c006abc01b079d507f1d181b20452015db111a1aa17386c7f9c67c883c8dd",
+        "semantic_contract_sha256": "2b50252b26f31866fce55236f64e5f7827868860ff0e0eb4bb56726dbdf9c350",
+        "source_collection_sha256": "bfc6ca98c2b30cdf92b6495c3ece12c0e4fb6ec33eff01445ff836beed25e8b0"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 2,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the blunt-fin flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "blunt_fin_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Blunt_Fin",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "de2d4360199297e553d21eab3c8109f81ac63c87cfca4b177e388e21344b55a9",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "finding_execution_binding_sha256": "3f26b2deb108fdc49690562890b620da0c3d69fa568e0284f390b9dd163f7262",
+        "finding_verification_policy_sha256": "aa17849544423d61a82e71f07087dbd1df81b0a553e8d287d1c248f0a57b782f",
+        "ground_truth_sha256": "6c44273c4059a433ef8a1de2b3afb55be7db764fd1a9b3b737003cb1c80c63a1",
+        "model_visible_case_sha256": "7c3cdcaf070890a60c37884831768f0f20d1cc9136d02de2fb58fdb7c8b7f852",
+        "reference_analysis_sha256": "9dab7d6b837cc672cbcb0993b6498cb487694222fd5f2d47dc094a9a60d11f4d",
+        "reference_evidence_sha256": "ab677bb74a8152e04d5f546dfe12aa260e7ca0af57b6e210db31d76d78b05e1d",
+        "reference_materialization_sha256": "0c7e06465263d4e650413775becef68563e584b3976ee74f8466d0dfbacf8611",
+        "scientific_evaluation_contract_sha256": "2edaf4525105eb3e9bbe3823b95b9c1a825765ef8430d5df28693e414a7ea50b",
+        "semantic_contract_sha256": "fb37979c6463f378eb62f20360ed9a32bb451fd0d49ec47272da02113b7a2efd",
+        "source_collection_sha256": "bfc6ca98c2b30cdf92b6495c3ece12c0e4fb6ec33eff01445ff836beed25e8b0"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 5,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the blunt-fin flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "blunt_fin_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Blunt_Fin",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "20aca7d56ea0e1839100e2e5264e3013c7d0ea89a3846b2259674a51ae114fc0",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "finding_execution_binding_sha256": "cc6f95756969605ddd1a5b0a6d2f61f72bcaabf546e02ed82542166592bb1d11",
+        "finding_verification_policy_sha256": "3605829471000bd2af372fca97bc7886440fd6acae53e79e58dcf5c61ec65851",
+        "ground_truth_sha256": "ae89699635b4b7c2231d0182b5456c038a24aa53a19086385ce59c2b869f2e12",
+        "model_visible_case_sha256": "646154bba0ae80729adbfbdb6b859e3bb2417c66169dcd4bff992c48f8663c16",
+        "reference_analysis_sha256": "8ebc5d1ed418f02e86257407d54d81a428fa2ff0921902d3987eabe7c69ba417",
+        "reference_evidence_sha256": "ab677bb74a8152e04d5f546dfe12aa260e7ca0af57b6e210db31d76d78b05e1d",
+        "reference_materialization_sha256": "530152c68cb1369aed0c32be3970f03b89ae5bcf81a55b1308177480c0f28e3c",
+        "scientific_evaluation_contract_sha256": "5160c55fd2fbe61ebda43a77415a487677125ae9c3e735cc9928a911ee7c9360",
+        "semantic_contract_sha256": "df9a28fb28b4a4526b0c1c05325df6f4584a06260c0454fafa19473c07a92b90",
+        "source_collection_sha256": "bfc6ca98c2b30cdf92b6495c3ece12c0e4fb6ec33eff01445ff836beed25e8b0"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 3,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the blunt-fin flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "blunt_fin_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Blunt_Fin",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "f99d4ad3179b268c9087b5aad4d9f0e6d875f2f22e78dc17d0012c64ad0a91b8",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "finding_execution_binding_sha256": "25b588791a6cbadada81907f500d8d924c1a493fc40b646a89b42da594207c43",
+        "finding_verification_policy_sha256": "14938b3b93e9c739fdd351ebc5d08f760efd7a958df63bcd25028d4e0cace3cf",
+        "ground_truth_sha256": "f429fe355299237d007c17df0998a0ce38d12b99ded55802874220841aaa74f7",
+        "model_visible_case_sha256": "7f5d34e5b0066e946e7d82da363be11d3d48e59ff2a215c519db4b8e5d41f571",
+        "reference_analysis_sha256": "55d79d47b05dbf242ee3228ecdc8676df28e4ea2c9926884c340c8221ae730c4",
+        "reference_evidence_sha256": "ab677bb74a8152e04d5f546dfe12aa260e7ca0af57b6e210db31d76d78b05e1d",
+        "reference_materialization_sha256": "86d1c38b0769edd9fe34d22161119bad644f6b2abb5659460ff408e3a3c305bd",
+        "scientific_evaluation_contract_sha256": "3484c0de6205c2910e23d7479c81db3a3f22b869ae43c8ef371cabf434ed79ff",
+        "semantic_contract_sha256": "45bfd8a3df4b60087ebead139d3cedd98452e2d7334a9b4ce49e54f493e19a6c",
+        "source_collection_sha256": "bfc6ca98c2b30cdf92b6495c3ece12c0e4fb6ec33eff01445ff836beed25e8b0"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 8,
+      "reference_operationalization_count": 4,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the blunt-fin flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "carotid_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Carotid",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "8dbc9b0e77b273e6c27fdf8637ff94a406391bda313167840161ff5a01092311",
+        "dataset_manifest_sha256": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+        "finding_execution_binding_sha256": "fb1dcfcc94d090b1bdc1351365c7f40f593c22823a15af0e1ffa5ae1fee78cc2",
+        "finding_verification_policy_sha256": "238d369fb223146e5553515ccda8cc3408d97f4ccb127dbfc80a36159ae75a57",
+        "ground_truth_sha256": "3209ab1d0194982fc5cd221c997c7c0895a03295ba2c14d68f6f1cec75914dd8",
+        "model_visible_case_sha256": "3c77ee6a33a2a0ac4555f8b381bbb1630e794202c8876afc1693f629d4e067bd",
+        "reference_analysis_sha256": "05c62f073ed4494c1e378d29f4a98f2e60f022e0e2426f0a8d3c1333f71c6cba",
+        "reference_evidence_sha256": "0293a25f504026d6573dad03fb8dca368d79b32d5fd7ff29d3b6d18cfe17ddc6",
+        "reference_materialization_sha256": "76167ce3c8c0a937c1cf01aa8dca8173f27ad37410e5810572d6c355949283b8",
+        "scientific_evaluation_contract_sha256": "09dd992a793f03de6fb699ada3d0f691d9bfb614260d0c2915ef0dbd87e3d85b",
+        "semantic_contract_sha256": "15793948a2b821f1c7ce7e3645d203b26738c0a93751163c39e8b427ced98a68",
+        "source_collection_sha256": "6702e858a77be8ccb9c22bb688eca87c44a2c97112e8cf9816d42b7da8d89f7e"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 2,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the carotid artery flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "carotid_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Carotid",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "a3ad8f7b38fc337ff40100c2c87a2940c37aeef81606e8ed9e89b3b70f75597f",
+        "dataset_manifest_sha256": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+        "finding_execution_binding_sha256": "fa414a7c7ecec43fd05d605aa8b8dd65a12cb279eee0f2bc0fe5b3fe5d9e7009",
+        "finding_verification_policy_sha256": "36da5f763561b794d9ef3c3f2cbab4e8c34ad77f1de280cf21aebb7c4b1a87d4",
+        "ground_truth_sha256": "49930835684a6e14f27dbd6ae8691968a80d64d9321ad7a3332903da96f8a952",
+        "model_visible_case_sha256": "14fa48f149c031567f989e7a4399cda2c35f8d38089427e30609527a4a4d6539",
+        "reference_analysis_sha256": "91ed8830f08ea489ef6f1938084fa4b55801b750a674ed37a2c88683f3ce8d17",
+        "reference_evidence_sha256": "0293a25f504026d6573dad03fb8dca368d79b32d5fd7ff29d3b6d18cfe17ddc6",
+        "reference_materialization_sha256": "6b6058796dd4419730090821d3d69883edb1a2f15a4d438d86e311278a2ba284",
+        "scientific_evaluation_contract_sha256": "6946fe2d39fdcf4a4e4ee359c6b6da6bb95ba53004e81cf0362d90ab088e9bd3",
+        "semantic_contract_sha256": "a0303f2636a650168b7bc2b77a83517d5c959c50a47dc52e13c7d4129d70c29e",
+        "source_collection_sha256": "6702e858a77be8ccb9c22bb688eca87c44a2c97112e8cf9816d42b7da8d89f7e"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 5,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the carotid artery flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "carotid_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Carotid",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "fcd7947079bf8c5c17d0b8aa4b0d577101c880c080a8ae12ce271522e178033f",
+        "dataset_manifest_sha256": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+        "finding_execution_binding_sha256": "33a072d778b55dc5e134ed1bd3d56e165372120e49889e56e7521207392a13ae",
+        "finding_verification_policy_sha256": "dac0b04a8dbcf06a7df93d7336fd7b162d85137896096f80b763ca1eb85ef5de",
+        "ground_truth_sha256": "3252006e3ff64aaeacf57060377a7578f7e78ec19507e5c7a4f672e6e2e24ad9",
+        "model_visible_case_sha256": "f30e759aa0fc268f0cec9c02f59c9c6f0336a4761fb404d92f118458d2734ddc",
+        "reference_analysis_sha256": "b7251f7f793715b497067dd1f10140bb65361481924aad0dab5b5b2956f993cb",
+        "reference_evidence_sha256": "0293a25f504026d6573dad03fb8dca368d79b32d5fd7ff29d3b6d18cfe17ddc6",
+        "reference_materialization_sha256": "4d28808cbb25524e66b6fbd9caa49d6ac838dc835e193375a5578a01582e87c1",
+        "scientific_evaluation_contract_sha256": "eef7b062a9a234bd8f96e129dbfaacba76d9fba1398b61f26e339733263210ef",
+        "semantic_contract_sha256": "e69c50e3e63b5ef434b1625290c2bc9c52e9f783be5302c7a7091166ad1fb75b",
+        "source_collection_sha256": "6702e858a77be8ccb9c22bb688eca87c44a2c97112e8cf9816d42b7da8d89f7e"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 3,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the carotid artery flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "carotid_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Carotid",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "76fd8888bb71e32250aad9b055c8eda1747645a0143bfc8e91b278a09502e15c",
+        "dataset_manifest_sha256": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+        "finding_execution_binding_sha256": "6b5379c835838e693123d29c15fd829c9cc4a3871743f9544eda876be7638b8a",
+        "finding_verification_policy_sha256": "c41d7df49b5f258b78ec9916cd648a77a26f25997704dcf408d73ca5c70ea211",
+        "ground_truth_sha256": "637ca55950459d70ec5ecf3e94c6731823139ab016d3cb701a394e3893774d05",
+        "model_visible_case_sha256": "407d327f57b41191b43f051f36c5aff5e330a32c6245724d09bb83eef725a5e2",
+        "reference_analysis_sha256": "166c2ec1a1f67a7ad0058d7aa62710af4ebfd6da99047506cd7131c7bc0f28ab",
+        "reference_evidence_sha256": "0293a25f504026d6573dad03fb8dca368d79b32d5fd7ff29d3b6d18cfe17ddc6",
+        "reference_materialization_sha256": "87e8ff583e75eefe678b67e899de91d412c32352b6e499c908f75d7d8127235a",
+        "scientific_evaluation_contract_sha256": "a6205276729844bb666e660674d0353864c8bb401d8eccc71e1aeecd20584cd4",
+        "semantic_contract_sha256": "1225b5838181fd9490d98a7b82118488a9b793f0a741ca2ac16d7fa3ce53c4d7",
+        "source_collection_sha256": "6702e858a77be8ccb9c22bb688eca87c44a2c97112e8cf9816d42b7da8d89f7e"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 8,
+      "reference_operationalization_count": 4,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the carotid artery flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "combustor_density_level_set_surface_provisional_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Combustor",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "9c3e5c052e29e1342994e445bdccd08cd0c2e24a20d09fd338fbee764b918379",
+        "dataset_manifest_sha256": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+        "finding_execution_binding_sha256": "cac2cb96c4f87f4fa83834c894ed1b4933d7af7957dfb61574a0a8cbe7d250c1",
+        "finding_verification_policy_sha256": "ecab9dcd45b1d4e3477bc42fc7c0ad0f2057b8ed26d68c68a3f6287f48cb36dc",
+        "ground_truth_sha256": "8342c9cd7404b4f45a96934e982c66ec26025eaefed8b1fcd26584a6b6ac0526",
+        "model_visible_case_sha256": "b5ab6419c38087556c18ea2e997071619937192e85a378d251607219055c9cd0",
+        "reference_analysis_sha256": "7c35134153f968c76b98896f1031c7f73c4fc13afae3a21a7b20d9fe88a94398",
+        "reference_evidence_sha256": "4da9ae075c8fe52cd5d11ba2742170403cd46dd2dec321f9c39f7a7e178f4664",
+        "reference_materialization_sha256": "c3eb6a80ef9ed2a739ca67de64520ea1d03b624baf6ce8f18c8304907975973b",
+        "scientific_evaluation_contract_sha256": "af8a6fad963a75353b1dc2436d1b711a0bd6c2c5421b8fa9dc6e485fd800b63e",
+        "semantic_contract_sha256": "0f61db3e63965ebd92d914d207ef0986c3befa4f4304461eb4a959b2201aad56",
+        "source_collection_sha256": "cd80d3c26c9fca813e521438491baab09f4cdfa044af3e5dcd53b1e1d8e7e48b"
+      },
+      "identity_status": "PROVISIONAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 3,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+      "source_evidence_count": 4,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "combustor_density_level_set_surface_provisional_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Combustor",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "e50ad2e7de4a720bf6a829d7a69d030621fa3dacb313ec7ca95674aa90458af0",
+        "dataset_manifest_sha256": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+        "finding_execution_binding_sha256": "80af0c1d807822268c08499ded1e644825c2f9bd41026fd36d310e67b65511bf",
+        "finding_verification_policy_sha256": "3350ff60708d1cca984b27d3888a64b1981090bf0ecbc14ea542080875b6d942",
+        "ground_truth_sha256": "19583e16b1e8158bbc0ff92822b4a690c204278b489d6cb5d5089e00e55681c4",
+        "model_visible_case_sha256": "8811c319a26899e272f63976ec24b0db5b5099cfc538d89b27c20a26a2ce923d",
+        "reference_analysis_sha256": "36ec687342bd306617b0f37b4d95cc962b3508b214781872f0e3bcd4c768ccf3",
+        "reference_evidence_sha256": "4da9ae075c8fe52cd5d11ba2742170403cd46dd2dec321f9c39f7a7e178f4664",
+        "reference_materialization_sha256": "5c187d499e8d4308f890b0c34db6a789e929594699ebad0f135855c5862b86e1",
+        "scientific_evaluation_contract_sha256": "b78ef9b55a7734a03c99782ee9d792b8072fc60d569ffa2d9173fc7de053308a",
+        "semantic_contract_sha256": "5e3eb461618c4c60c21297f0758ebb9fd41cbfe3ba2e306030bbf0a25b4f3431",
+        "source_collection_sha256": "cd80d3c26c9fca813e521438491baab09f4cdfa044af3e5dcd53b1e1d8e7e48b"
+      },
+      "identity_status": "PROVISIONAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 3,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+      "source_evidence_count": 4,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Combustor",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "082a2db8a51477820eb1f7aea3b00e19e5a9c870bef1bc2b9470c349ef8649e1",
+        "dataset_manifest_sha256": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+        "finding_execution_binding_sha256": "4a8bb5c2b82fd6ff1f31609004a9c64ec0aa36ff76fc5ca0439e430869688d98",
+        "finding_verification_policy_sha256": "95508c21251a7fc3198aa1c0c8fb7d70a731a61a35e7c2720e159cce2cd523bb",
+        "ground_truth_sha256": "a58a6caeee34a3e8c36a1ecd5e83915702ca13c15ee040fbd694b7299e98f54a",
+        "model_visible_case_sha256": "1b232642ecee1f32dfb9c6a1d2c8c15a48af5c4506e97bd8d9bd83da9a12e842",
+        "reference_analysis_sha256": "4c826b3d52a136199b64ddbebe6176a4e0c60f3cb4ea96aaa50803e7a09ac287",
+        "reference_evidence_sha256": "4da9ae075c8fe52cd5d11ba2742170403cd46dd2dec321f9c39f7a7e178f4664",
+        "reference_materialization_sha256": "356c16e263a285cd3982fa1947ab23067462445aaad88b3308965565c92f7bc3",
+        "scientific_evaluation_contract_sha256": "71498b1e73e24834af238d6aa0643fe474485305799d4d518e44c94f0dd7dc28",
+        "semantic_contract_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6",
+        "source_collection_sha256": "cd80d3c26c9fca813e521438491baab09f4cdfa044af3e5dcd53b1e1d8e7e48b"
+      },
+      "identity_status": "PROVISIONAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 2,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+      "source_evidence_count": 4,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Combustor",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "35fc1d0a5094f4582996bc5cd959df8acc71027e3fd12da8991df2cf936d73bc",
+        "dataset_manifest_sha256": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+        "finding_execution_binding_sha256": "bd8affb2139d23189cec601b281d916991540f2f2e0b45e09c185f53f543d58f",
+        "finding_verification_policy_sha256": "32ce5e30a9980207478d645eabd5828ad527341c0007f4c18f524807396ed169",
+        "ground_truth_sha256": "ff5baf432c77f3f4f8596e7bb420cb137fcd8cb5ae6a2ecd154c900f34840c60",
+        "model_visible_case_sha256": "6e927d2c88165d6fb11c09b91925759aae8e2eb42708f4f3a9e76d2f7b334a92",
+        "reference_analysis_sha256": "02e6813212d8996f3a41ad6229e48f5621cec18cd115fdd826ad128dde2b369a",
+        "reference_evidence_sha256": "4da9ae075c8fe52cd5d11ba2742170403cd46dd2dec321f9c39f7a7e178f4664",
+        "reference_materialization_sha256": "ca53b58c62f6ae0adea421f7396e36baf1516110cc2ab8303ac86be0e35039a6",
+        "scientific_evaluation_contract_sha256": "1a52570e5a89352dd3d5716eebfee8a059664f4647f50a9429b4cc3135e54e5b",
+        "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+        "source_collection_sha256": "cd80d3c26c9fca813e521438491baab09f4cdfa044af3e5dcd53b1e1d8e7e48b"
+      },
+      "identity_status": "PROVISIONAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 2,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+      "source_evidence_count": 4,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "fireflow_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "FireFlow",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "2ed71bebe22ba246cd1f5819a70d362cb93ec0858c7dda9110fd1dc29570231e",
+        "dataset_manifest_sha256": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+        "finding_execution_binding_sha256": "c750c55fdcb386cb505b7a51ee83cad64882ce9621245240ebcb3ddeeb201bfc",
+        "finding_verification_policy_sha256": "9762dab56da882c6f7ae19316357843db5b6c1ed703f6ef74103c83b62b910d2",
+        "ground_truth_sha256": "be975c657aaaec2707b171e6aadead010e448e0ad747a560884941d317db537b",
+        "model_visible_case_sha256": "4fde90eb3b635e6667cf90ccd213ad6909792627f34d514d63833c8cef8f5d7f",
+        "reference_analysis_sha256": "03f5dc7ba7fea83b37351141bd9d6068b483e55ad0ef907dde13b6527b5782f2",
+        "reference_evidence_sha256": "3b8fc168e1f831965abb5f03e0fbb3f3bf85b3c103bbad69dec89ef4d150f0a8",
+        "reference_materialization_sha256": "ebd414921276ef85f72267f0eac7b406d563d732d63901be595c852c2bb676bd",
+        "scientific_evaluation_contract_sha256": "3dfb8b2b0fc46c6fa2293e6659aacf35c9b39ab87abfc8805820b9eb9a2e6cc2",
+        "semantic_contract_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+        "source_collection_sha256": "533e2a063148fac2c268b06d58757129b9dbddb8122d7a2619cd4200574cf202"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 2,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the fireflow room flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "fireflow_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "FireFlow",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "1e2be9616550b8b2a51ba3b6b8a15a17af8530ca072d80682320b502b2868f99",
+        "dataset_manifest_sha256": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+        "finding_execution_binding_sha256": "0fde092b9f071b37b3ac0f9f62606d9b550eb1ba43eeb4a160451745bba2bb2b",
+        "finding_verification_policy_sha256": "581534c6430cbc74dfac4c1b679e04f959e9c7bd5a7af3d1e5ef4d279c0159ca",
+        "ground_truth_sha256": "e3bf9196a29b3eac241fb9b72e7572a68036fb6d5a4ab0190e2550fa1da6da09",
+        "model_visible_case_sha256": "c1e186801f4cd57fabc069de377bb418a63bf78502064f7701e27853cb281b11",
+        "reference_analysis_sha256": "1c85876c9f7fb056b636ba97bed54fa1d1322b33cc524e492e33719ea3467f2c",
+        "reference_evidence_sha256": "3b8fc168e1f831965abb5f03e0fbb3f3bf85b3c103bbad69dec89ef4d150f0a8",
+        "reference_materialization_sha256": "4b4b67a3fb007d8e4b47f4b00fd69244559644f3613ef3fa4a10a039318638f3",
+        "scientific_evaluation_contract_sha256": "6297c58671f21369b404675e0704ad9918735f5cdd15ac623192e0bc4b85c616",
+        "semantic_contract_sha256": "b947c70b4d8646c07e8b1f43d90bd1c41efa61ab82f6c1438b9b0ec9348e2b96",
+        "source_collection_sha256": "533e2a063148fac2c268b06d58757129b9dbddb8122d7a2619cd4200574cf202"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 5,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the fireflow room flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "fireflow_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "FireFlow",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "910e3a038b2ebe581e1db0c33bc48295d2c9186de1852653ab37278d0a232157",
+        "dataset_manifest_sha256": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+        "finding_execution_binding_sha256": "a062dea2d63391be71b9d2cc89b626aeb5d7dcb5f446a340f93bec3a1885597a",
+        "finding_verification_policy_sha256": "27b4a61c3270fee2afb7cd19f4cbef2db8f48bac9380e144807269f6eefd75d4",
+        "ground_truth_sha256": "0f3a1850266d5d81ada334a6eab1aee3ed18858a1d867d3eeda74a50ba832746",
+        "model_visible_case_sha256": "e61206401b544a83de1cd023e149cbf484434d9e909f6ca739af35cf35c25d30",
+        "reference_analysis_sha256": "acb8254227759b1b0351a25b0b1d47a3f6d40d3ab1c383043873f2987643ef8a",
+        "reference_evidence_sha256": "3b8fc168e1f831965abb5f03e0fbb3f3bf85b3c103bbad69dec89ef4d150f0a8",
+        "reference_materialization_sha256": "6bb670bb7d27eb43f7bfbe7a28ed7db40fb06d7442cf24187f457e42a4232399",
+        "scientific_evaluation_contract_sha256": "882c977ccf7bb01a70484970ca9c98047f52717c7a780bdf37089daaa22cee60",
+        "semantic_contract_sha256": "216bb49d1688d151948c4f39c6dbfab8d557758bb0fb9f6c0b1dca03ea0180a0",
+        "source_collection_sha256": "533e2a063148fac2c268b06d58757129b9dbddb8122d7a2619cd4200574cf202"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 3,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the fireflow room flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "fireflow_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "FireFlow",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "d28b99fd74ae4929f944d640a6f48c8eb159fc0ed86abca08cdc4e512df44d1e",
+        "dataset_manifest_sha256": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+        "finding_execution_binding_sha256": "5b8b8023c8a86ffc93b1721654e6ba9d74c0e351338df121b4058942aef21c48",
+        "finding_verification_policy_sha256": "61e270388b6c472734f70441d3a2e8d198ae399ddf323f65d60b17185882cbeb",
+        "ground_truth_sha256": "fffb02911335b172883cbfe0b8cb7bbab306455ad77c6f5e212a3b6a0ba986a2",
+        "model_visible_case_sha256": "799d3a53829ad795dd2a8e54ae4b5b01dc300b40cc52b43a9c3f0655897bd729",
+        "reference_analysis_sha256": "8ca228044ebff3c6ce76a98ebeda2e6e338e991cdb8652f614e1533a5349eeb1",
+        "reference_evidence_sha256": "3b8fc168e1f831965abb5f03e0fbb3f3bf85b3c103bbad69dec89ef4d150f0a8",
+        "reference_materialization_sha256": "b035182df424391f3a20690781ba674bc43c3e588ab66c4b2b2e50140ba259ce",
+        "scientific_evaluation_contract_sha256": "594b93b38bd9e7e192f17bcacbfe28589859ed1e3a3e39eeeafeae38b8889da8",
+        "semantic_contract_sha256": "4f4006255e2571929122c34993ffb083ff2aa01c68c8f7b5196844a7abf75659",
+        "source_collection_sha256": "533e2a063148fac2c268b06d58757129b9dbddb8122d7a2619cd4200574cf202"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 8,
+      "reference_operationalization_count": 4,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the fireflow room flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "kitchen_concentration_heterogeneity_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Kitchen",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "0c414bf197ecf3041078b67f02f0b522f39a30f6abf37995ffb3d3633f9eaca9",
+        "dataset_manifest_sha256": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+        "finding_execution_binding_sha256": "9f513555c6a27c8d00fade5fb8a9a98f7262eada4d4088eb3abc000ed4b9d21c",
+        "finding_verification_policy_sha256": "4b0bbf88a7ef10cff8189e0a26a3a9f276b6da0408118f677180dabfd1c509cc",
+        "ground_truth_sha256": "92dc3bd5048b01f02c62214ad759b44e2212f03e824eaa7de1ca077771daca8b",
+        "model_visible_case_sha256": "38a933b23c3c61c5ea2fb95a19dfb052f0a1c71339cfd5e7f91012bfe8b01e94",
+        "reference_analysis_sha256": "4225c7664e418903bbc944201bca371fef2c83e3b2ba259199455afa833b9657",
+        "reference_evidence_sha256": "6db07efb339b001fd8fc7a57f01d126333fc23a5348080c8de8182c8fc3669d7",
+        "reference_materialization_sha256": "0bd27c90005eedd68d8e50d5212ad0c2bb653c5e4918aa2f501ac0f0f9a999fa",
+        "scientific_evaluation_contract_sha256": "abe9752ef65b71198bbb554e9d1fb13141122a4ace93660b0b2061574454d19d",
+        "semantic_contract_sha256": "714820511cb732db9dc759ff16fb3176005e6b233cda712a6df355350971fdd6",
+        "source_collection_sha256": "e14ae03631a011a027a18b4f4635f7dc82784dd26ee281adc767f7bab62508cb"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 2,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity",
+      "source_evidence_count": 5,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Kitchen",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "c15bddd7d8f6a0003f44dfb5d620984a4325b4510a96d247e5bc7d00f892f3f3",
+        "dataset_manifest_sha256": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+        "finding_execution_binding_sha256": "e6fdaeda92d87cca1837a8ab2cc710c4d82113463a331bb3afffc1ab8f8950f7",
+        "finding_verification_policy_sha256": "96caf443cd23366f89abc07bda355040679c598988b9563fee05fd569d26d5c2",
+        "ground_truth_sha256": "7a2af1a43b10bc2a68c1ca449361b3b00ba619d01594fa35f27e5036cfc23058",
+        "model_visible_case_sha256": "0b0ec10854e749ed484fbfe28032aee0e70ec7d3f7e63b75ecf6184111277ac3",
+        "reference_analysis_sha256": "91d87b43d62d434850dcafd09c6ca144a3a09ef565b11ac0c9174d5ee130903e",
+        "reference_evidence_sha256": "6db07efb339b001fd8fc7a57f01d126333fc23a5348080c8de8182c8fc3669d7",
+        "reference_materialization_sha256": "e7ca59f72f78fb2bc7929a21e831aad9ff67bf00dc103a7d7b5fbbcfce1b97ee",
+        "scientific_evaluation_contract_sha256": "1741a14e44aa438cf7e9771de01f8293a1ccc6316940c01c9b504a84e7c35423",
+        "semantic_contract_sha256": "d96105516b965fc708687cac58ec1df3b1821381b789ba3c5fb4813ddc00ad1d",
+        "source_collection_sha256": "e14ae03631a011a027a18b4f4635f7dc82784dd26ee281adc767f7bab62508cb"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity",
+      "source_evidence_count": 5,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Kitchen",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "c42271a775a9eb611d5064962b1c147405e2cb52a77e0d177da9e73132145bfa",
+        "dataset_manifest_sha256": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+        "finding_execution_binding_sha256": "2c2c41708cffd325fbc92567dbf23886c6bb9718098766cb64abca6aa1948fad",
+        "finding_verification_policy_sha256": "b54476c1940781445b91ff85d15e8e626540ea11525acf9f5d41efddc70abe86",
+        "ground_truth_sha256": "2ddefb8f2e44a2592f095a499bc29bf41173662057c40d50f98be3145ae1f727",
+        "model_visible_case_sha256": "e68ca340d11b882b2f9885f2f8d4d379dbb8e6c4d8cd0d019c5deb1078b15295",
+        "reference_analysis_sha256": "3501db501e763171c9114f71c10bc392feba18c8a1e578de822f04dbd1e31784",
+        "reference_evidence_sha256": "6db07efb339b001fd8fc7a57f01d126333fc23a5348080c8de8182c8fc3669d7",
+        "reference_materialization_sha256": "a7c8e3e6485a93483228029d96e6ec36b5260d7b77fe1038ce8bbff801d4876d",
+        "scientific_evaluation_contract_sha256": "9a34b404ba84a95eff663821e67058912638ac268d74f9075e2dfb7bd8d3631f",
+        "semantic_contract_sha256": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+        "source_collection_sha256": "e14ae03631a011a027a18b4f4635f7dc82784dd26ee281adc767f7bab62508cb"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 4,
+      "reference_operationalization_count": 2,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity",
+      "source_evidence_count": 5,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "kitchen_concentration_heterogeneity_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Kitchen",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "cdd0b12f730eec66260ffe6e814f88fbd063517b48d2b27a8bb7318747a66f38",
+        "dataset_manifest_sha256": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+        "finding_execution_binding_sha256": "a0ba216aad31991fc7c3918201de36257503c947a50aaa3e05cecb9fb4a47042",
+        "finding_verification_policy_sha256": "ff01e0acee769b9dbce649ba903a1dda68324ee8c66b5ca51b2c3a70cc64ece4",
+        "ground_truth_sha256": "0ace2b0dca3a788246430d9b1e61820b668249a5478728a23b72da221aecca21",
+        "model_visible_case_sha256": "c7f97d6c7c36d572bbbe5900f29f6a0633ac53a6df5dad1ca9480fee6f6b31bc",
+        "reference_analysis_sha256": "0456c1b372246e4c88790b0de6964f81a4a5f001f35a2427b86c568dbde72e63",
+        "reference_evidence_sha256": "6db07efb339b001fd8fc7a57f01d126333fc23a5348080c8de8182c8fc3669d7",
+        "reference_materialization_sha256": "9afe596544b9b9d7c22a1a5b085ae08f05ad0ac4ce1ecea506f880b0257dfb6b",
+        "scientific_evaluation_contract_sha256": "ed3787c80d2d4ba52d2a37fc91648920a0467516e63fc6867914d13b404b773d",
+        "semantic_contract_sha256": "02a15c1bd85f3a6b5f886ca3ee0d4a0e5a082a2c4a35c01f12848abe3fe0928d",
+        "source_collection_sha256": "e14ae03631a011a027a18b4f4635f7dc82784dd26ee281adc767f7bab62508cb"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 4,
+      "reference_operationalization_count": 2,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity",
+      "source_evidence_count": 5,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "nasa_lox_post_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "NASA_LOx_Post",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "181a72041e5155540e0541e5311abbbee9ab5fc613fc41f9fca2a657b9f40f70",
+        "dataset_manifest_sha256": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+        "finding_execution_binding_sha256": "6dc6f688796903102e4803828f2d22904d71960c4b56fa7354a86322694a920b",
+        "finding_verification_policy_sha256": "e6cd3a7edb8e424d9da01d08aff8a578e963b4250e97ba48b89ee2a4b5aa55b2",
+        "ground_truth_sha256": "9954d9f68b6dcd7886f55033c9a8fc6204f693a28b886c0e9bf16970f9533cf7",
+        "model_visible_case_sha256": "5c4fed9c0d8e1c6c22de42546bc1a7373b700a9c845b473f37c1ba791c905be8",
+        "reference_analysis_sha256": "644cb17ae8c4e8e18a290891ec176288e2f026b4fa0c78356451c69e0e4b51a5",
+        "reference_evidence_sha256": "a9685bbab190cf64cc7f315eb5ad9e77cb5087e45e6741691a34deaee6450a73",
+        "reference_materialization_sha256": "7f8eea1298c5150cacedd4b1ff85dde32878acdbd1c08b8dc3251a1206e067e7",
+        "scientific_evaluation_contract_sha256": "19b27b96874364fce0d3b0d7602a2de59526817a8de9e8b497da094c4ab169e7",
+        "semantic_contract_sha256": "55bc95f73cf6021eccb52eb2d6e3871eb1c8327027a3cb67d263ca62626f3164",
+        "source_collection_sha256": "c8f0da1e430226b3972cbcbeedd1d0ad4c89c3c95da3844c08914b9e1ad204db"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 2,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the lox-post flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "nasa_lox_post_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "NASA_LOx_Post",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "44807becd784adb5b29faafde8a28b325a9471b70800308926722c8edc9aff46",
+        "dataset_manifest_sha256": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+        "finding_execution_binding_sha256": "8b3860ad6b58d5de1a3f540103cbc60e1dcbba006665d1d5dd6436980fe0cfae",
+        "finding_verification_policy_sha256": "34c5473504450a2255ab83be4110bb2942f464d15a2c43cc634bc8449d40d4d5",
+        "ground_truth_sha256": "2743cd08981aae33a07d04eb1bb8b441e8edea09ebe2e0cdbbce898a745ea3d7",
+        "model_visible_case_sha256": "79eb4e92b54b7c0fe8c09ccac540bcd6a9efeec704c2cbed95cc7c9d61437ef3",
+        "reference_analysis_sha256": "951019509f842d85b27d76c21eca1d7651e38bc8730735931fe07dbe2f1fbbca",
+        "reference_evidence_sha256": "a9685bbab190cf64cc7f315eb5ad9e77cb5087e45e6741691a34deaee6450a73",
+        "reference_materialization_sha256": "86028b70ba7c340ef19ff87f0e4efaba596a1994e177a3705527d58e793e0781",
+        "scientific_evaluation_contract_sha256": "dff5bd07b9ca00a1bd0e04f4a11bdb4c363680556b13fd01bb78a1c0de98a4f1",
+        "semantic_contract_sha256": "7c7cf8fdfe6a3d2145d836962bce370dd49090d0b942ce512dc4f788371271b1",
+        "source_collection_sha256": "c8f0da1e430226b3972cbcbeedd1d0ad4c89c3c95da3844c08914b9e1ad204db"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 5,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the lox-post flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "nasa_lox_post_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "NASA_LOx_Post",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "1f9b716dfcf2af238246cc8eb3784e3e7a578aac8f530beae3dbc7c14b43cfb6",
+        "dataset_manifest_sha256": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+        "finding_execution_binding_sha256": "34ce771002e37c3b70524fb381074efe427a828662a4372b3d3267ad2ca8801f",
+        "finding_verification_policy_sha256": "1694d601d9d3fa610d67ef0f7eb374aa5f0c33c63f97842997c0e744851f848f",
+        "ground_truth_sha256": "840daac73260ecfe35b2f54d0b3e70e226fe299553586fe41d522be6ab692e8c",
+        "model_visible_case_sha256": "43759ecd7e3c82dbfd23bb528e73807ec74ae05cad45d346143611698318a530",
+        "reference_analysis_sha256": "0ca2280a733d6d41f91b4aa310c378aa3c024f60b2c380afd4680c0d41b5e203",
+        "reference_evidence_sha256": "a9685bbab190cf64cc7f315eb5ad9e77cb5087e45e6741691a34deaee6450a73",
+        "reference_materialization_sha256": "45d259932f4506ba5d563e5cb8fb1d95d25490f6f4204175ee1d7f129d8f346f",
+        "scientific_evaluation_contract_sha256": "473ba75c955c5727bbfe9ba14c491b96cfee848596719ef97b8efb6209e65858",
+        "semantic_contract_sha256": "fad41bc7b82da59197ff7b3d583e26e119d1d306958c5998a4733d26d899119c",
+        "source_collection_sha256": "c8f0da1e430226b3972cbcbeedd1d0ad4c89c3c95da3844c08914b9e1ad204db"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 3,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the lox-post flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "nasa_lox_post_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "NASA_LOx_Post",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "c4cab041993a25f2a38eec18391d55d5c7da7a78be48bdf54498c7ee1491079c",
+        "dataset_manifest_sha256": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+        "finding_execution_binding_sha256": "5807b5b918baf61cbf90951429f7ddc3126ba6501931389f242d6c2a50778a58",
+        "finding_verification_policy_sha256": "873329febdf8736b48c0133c17e4f610720b24b2943e5a32468025fa57e8f9cf",
+        "ground_truth_sha256": "d179dd48cd3d5f3678dee9c586f559075e5579e243816c6e7348e04e7f3f1ef4",
+        "model_visible_case_sha256": "b6c0deee1bf8cead4e30b72b118e3aa36359856213f469d25be40ef7f7683be3",
+        "reference_analysis_sha256": "4f1cea5af4081ee71d7fb8d52a9a900c4a57e829e95bbd03884920ac8f78857b",
+        "reference_evidence_sha256": "a9685bbab190cf64cc7f315eb5ad9e77cb5087e45e6741691a34deaee6450a73",
+        "reference_materialization_sha256": "0ea9b1637646f5f7226ebbea4aa54ddb9c5fb5575eb4c4418a09414f94b67586",
+        "scientific_evaluation_contract_sha256": "8948a0b5d6a7b8b832be220c74249ff2df0a46fb9c20f3554294dffc89c25166",
+        "semantic_contract_sha256": "acd2e36c7fc79cb9a3a500e99e2a4734bfc111bbf79ef080d73f521ca34ab604",
+        "source_collection_sha256": "c8f0da1e430226b3972cbcbeedd1d0ad4c89c3c95da3844c08914b9e1ad204db"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 8,
+      "reference_operationalization_count": 4,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "high-speed flow regions in the lox-post flow field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "office_speed_zones_o1_f1",
+      "condition": "O1-F1",
+      "dataset_id": "Office",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "2cf7a3c42b66919be07d340111245cf4b26d72c77607aa5358c77118c916860d",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "finding_execution_binding_sha256": "c6f31836ed85a61878be7c9e7b16861302a10ba6e59a790befea6ed12d7fca39",
+        "finding_verification_policy_sha256": "beed504d7940b03e7b40dc5f019d0de7a951cbd957b6559c9a909260618ecc53",
+        "ground_truth_sha256": "8b8d884b6d1686fa6df31bb31be90b8e1e76d4aeb8d6e7d990ef4f0da66f4a68",
+        "model_visible_case_sha256": "811d1d0102e7fa2d5e432acfc1d4efdda19b990c903fa13d1825fc1fdb42a057",
+        "reference_analysis_sha256": "ab9ae6380371ec9aa9641b10e14defdc0c1204a25060c2d6064df4ac59b6d9c0",
+        "reference_evidence_sha256": "622dc1e2b39d7309e0045c6903c1bbf9c667719adad58ff111f1f9fe8baaec7c",
+        "reference_materialization_sha256": "fbcc89e979c91b7c8614a178fd2b3d9cb91fee935d38e21fa942d36e1e558791",
+        "scientific_evaluation_contract_sha256": "b80ff7c8876f3a7a16e253fb39195b067edbcb182a770101bcea6c1666986ed0",
+        "semantic_contract_sha256": "de4ce7695f5ce44d4573841347fcf7f886ea8d98ebd8bec0a0f8dd99ac5b3110",
+        "source_collection_sha256": "0a9dc01f41a3e02c40de6e9f4016e47ef5afdbde4f4336ee88ea0871074efc9f"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 2,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "ventilation regions in the office velocity field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "office_speed_zones_o1_f2",
+      "condition": "O1-F2",
+      "dataset_id": "Office",
+      "errors": [],
+      "finding_responsibility": "F2",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "a9bdaefb32c8af5d26fad30b7754333437ee6ddb3e9c49c064b1c049c3e546c3",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "finding_execution_binding_sha256": "b18d314f5ea4236da9f19883cab656d01292e6c0474d3527721cbb4900724a5a",
+        "finding_verification_policy_sha256": "6948b0a2402897e799311e3fb54cf7929d02ec9bf59c58aaf2488fe328ff5a6d",
+        "ground_truth_sha256": "2cbbf229d511db89bc0663e67d63c0aea9105428c48e637ef219f5e85644f715",
+        "model_visible_case_sha256": "7618ffc188f544b08c8312b8dd0dea360b7dec6e8ef4d36f28140fe55c5d5cf7",
+        "reference_analysis_sha256": "1d266ad31c7fe78c9f183f91b169f57ef5ded1e49a8817196d8b642b2078642b",
+        "reference_evidence_sha256": "622dc1e2b39d7309e0045c6903c1bbf9c667719adad58ff111f1f9fe8baaec7c",
+        "reference_materialization_sha256": "f3a6987bd3d2df5ac9718b9c62579eb3db71e590f40800cde0eb5388e43d5d70",
+        "scientific_evaluation_contract_sha256": "a7d2efd964cacb9ac446e887a0e3e6860bfdbfa1ec2728a8e21e01e5723dd743",
+        "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+        "source_collection_sha256": "0a9dc01f41a3e02c40de6e9f4016e47ef5afdbde4f4336ee88ea0871074efc9f"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 5,
+      "reference_operationalization_count": 1,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "ventilation regions in the office velocity field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "office_speed_zones_o2_f1",
+      "condition": "O2-F1",
+      "dataset_id": "Office",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "3ea33117fba8d0cf67c7d7cb7dab8a00051ebf2fa8b1269fd281ba35cca39181",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "finding_execution_binding_sha256": "474d76f273226eb32dd6cb19b98671445e0bc204db86ca3624752887e94a5555",
+        "finding_verification_policy_sha256": "6e108ef404703f5a3f5438cea0adee05b46415a86600800ab502aeacd2e84532",
+        "ground_truth_sha256": "ef96feccd8863a57590e91237a2c783729fef501af3f1d98efa445f5a30fde5c",
+        "model_visible_case_sha256": "c5a62997a5302687dd1ea2196c92df4d7ed822d52b86eb0fa18f0a76e5667fdc",
+        "reference_analysis_sha256": "9ef035588487be13bd302ea63cc8e392625128311974edc7ed54add439ce0b14",
+        "reference_evidence_sha256": "622dc1e2b39d7309e0045c6903c1bbf9c667719adad58ff111f1f9fe8baaec7c",
+        "reference_materialization_sha256": "f5d60e86878706b8d8c84f180b0c1561d4bcfe99686f3e1a8456f4d751c51c2b",
+        "scientific_evaluation_contract_sha256": "7b89858521aaa3fc71f7fed70b4f3e4e9999e3c234bd93b58dbc6fea84a0c52b",
+        "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+        "source_collection_sha256": "0a9dc01f41a3e02c40de6e9f4016e47ef5afdbde4f4336ee88ea0871074efc9f"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 6,
+      "reference_operationalization_count": 3,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "ventilation regions in the office velocity field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    },
+    {
+      "case_id": "office_speed_zones_o3_f1",
+      "condition": "O3-F1",
+      "dataset_id": "Office",
+      "errors": [],
+      "finding_responsibility": "F1",
+      "frozen_artifacts": {
+        "case_metadata_sha256": "518318cd35e82f3957c772a54341dc569bdb1bf44d40bdced3c423ecdd3f11f9",
+        "dataset_manifest_sha256": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc",
+        "finding_execution_binding_sha256": "129e1629bd23b7d6c9f53531782e04cda6f875654344fe860e487dca265d0c67",
+        "finding_verification_policy_sha256": "7bee9a43cc302334795db0acec2d4d7a74c6500e5473a777cf8e3f17283ba4fe",
+        "ground_truth_sha256": "6ad8341488d8dc16d03fd6b3ae0288bb0a343e4241937940182a4ac38ec1952d",
+        "model_visible_case_sha256": "3f6237691112282249ccfc3789841a8c86b6c36341e3114214424272b61d02ee",
+        "reference_analysis_sha256": "83d8cf9352584501d584c619e1310f9aecd7cd4fd6d469bab87938376ab4c5a3",
+        "reference_evidence_sha256": "622dc1e2b39d7309e0045c6903c1bbf9c667719adad58ff111f1f9fe8baaec7c",
+        "reference_materialization_sha256": "9d056a6dcbfa2fdf7ba58fa794f739a02c076b805855272c1967b70ca7576421",
+        "scientific_evaluation_contract_sha256": "1116ba52f4a1fc147d69ae25a36a08a94de92c3ae31b6cfe5a31b218536c73f3",
+        "semantic_contract_sha256": "4ef16026078d9659dfa5d890a704295ba023d8ca031180b47220f8b0c2fb7b78",
+        "source_collection_sha256": "0a9dc01f41a3e02c40de6e9f4016e47ef5afdbde4f4336ee88ea0871074efc9f"
+      },
+      "identity_status": "CANONICAL",
+      "missing_files": [],
+      "model_visible_semantic_alignment": {
+        "checks": [
+          "question_contains_authored_fixed_semantics",
+          "projection_hash_bound_to_sec_and_binding",
+          "materialization_plan_matches_projection",
+          "quantile_interpolation_is_explicit",
+          "fireflow_vector_and_topology_semantics_are_visible"
+        ],
+        "status": "PASS"
+      },
+      "reference_case_gt_frozen": true,
+      "reference_finding_count": 8,
+      "reference_operationalization_count": 4,
+      "route_evidence_excluded": [
+        "materialization_trace.json",
+        "agent_ready.json",
+        "agent_readiness.json"
+      ],
+      "scientific_target": "ventilation regions in the office velocity field",
+      "source_evidence_count": 2,
+      "verification_policy_status": "PASS",
+      "warnings": []
+    }
+  ],
+  "construction_integrity_checks": [
+    "OPEN_O_RESPONSIBILITY_DIMENSION_MATCH",
+    "F2_REFERENCE_FINDING_ROLE_MAP_COMPLETE"
+  ],
+  "evaluator_consumes_frozen_manifest": true,
+  "excluded_route_artifacts": [
+    "materialization_trace.json",
+    "agent_ready.json",
+    "agent_readiness.json"
+  ],
+  "immutable": true,
+  "mutable_construction_workspace_is_not_authority": true,
+  "official_release_ready_count": 0,
+  "provisional_identity_count": 4,
+  "reference_case_gt_frozen_count": 28,
+  "reference_truth_boundary": {
+    "case_identity": true,
+    "case_input": true,
+    "case_metadata": true,
+    "evidence": true,
+    "execution_binding": true,
+    "ground_truth": true,
+    "materialized_g_of_o": true,
+    "scientific_evaluation_contract": true,
+    "semantic_projection": true,
+    "verification_policy": true
+  },
+  "route_evidence_excluded_fields": [
+    "materialization_trace.json",
+    "agent_ready.json",
+    "agent_readiness.json"
+  ],
+  "route_evidence_is_not_freeze_input": true,
+  "schema_version": "reference-science-baseline-v7",
+  "scientific_grounding_confirmed_count": 0,
+  "sec_srac_response_space_is_not_baseline_input": true,
+  "semantic_alignment": {
+    "fireflow_vector_and_topology_explicit": true,
+    "quantile_interpolation_explicit": true,
+    "question_projection_execution_bound": true,
+    "scientific_defaults": "NONE",
+    "verification_semantics_inferred": false
+  },
+  "semantic_closure": {
+    "comparator_ir": true,
+    "explicit_tie_break_required": true,
+    "quantile_comparator": "GE",
+    "reader_fallback": "canonical_reader_array_discovery",
+    "scientific_defaults": "NONE",
+    "scientific_judgments_inferred": false,
+    "unique_maximum_required": true
+  },
+  "total_case_count": 28
+}

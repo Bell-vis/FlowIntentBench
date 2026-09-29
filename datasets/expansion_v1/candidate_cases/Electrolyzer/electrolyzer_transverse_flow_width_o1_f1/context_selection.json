@@ -1,0 +1,7 @@
+{
+  "case_id": "electrolyzer_transverse_flow_width_o1_f1",
+  "dataset_id": "Electrolyzer",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

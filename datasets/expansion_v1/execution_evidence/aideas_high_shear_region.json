@@ -1,0 +1,69 @@
+{
+  "family_id": "aideas_high_shear_region",
+  "inputs": [
+    {
+      "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+      "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+    }
+  ],
+  "operations": {
+    "q90": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "recipe": {
+        "kind": "upper_tail",
+        "field": {
+          "name": "NormShearRate [1/s]",
+          "association": "point"
+        },
+        "quantile": 0.9
+      }
+    },
+    "q95": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "recipe": {
+        "kind": "upper_tail",
+        "field": {
+          "name": "NormShearRate [1/s]",
+          "association": "point"
+        },
+        "quantile": 0.95
+      }
+    }
+  },
+  "definition_sha256": "ab25104b0673c3f5b8dcba4d6c4eb2d272aa93367e96480e6bdd13dbfc7f4f3b",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "q90": {
+      "fraction": 0.10000698829525,
+      "centroid": [
+        -0.55234805928896,
+        -1.00067183368,
+        17.203428120422
+      ],
+      "mean": 438.78483314906,
+      "cutoff": 302.1725769043
+    },
+    "q95": {
+      "fraction": 0.050003625914567,
+      "centroid": [
+        -1.2724656455197,
+        -0.93789387748837,
+        17.560720361905
+      ],
+      "mean": 530.06061960224,
+      "cutoff": 405.06369018555
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

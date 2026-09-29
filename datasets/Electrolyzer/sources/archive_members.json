@@ -1,0 +1,1838 @@
+[
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/omz_0094.raw",
+    "size": 4194304,
+    "compressed_size": 3912665,
+    "crc32": 3162083995
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/omz_0094.xmf",
+    "size": 1074,
+    "compressed_size": 423,
+    "crc32": 1804668960
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/p_0094.raw",
+    "size": 4194304,
+    "compressed_size": 3916636,
+    "crc32": 2003248531
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/p_0094.xmf",
+    "size": 1070,
+    "compressed_size": 420,
+    "crc32": 738751306
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/potsolver_0094.vtk",
+    "size": 46906114,
+    "compressed_size": 22547699,
+    "crc32": 3051330967
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/s_0094.vtk",
+    "size": 1025859,
+    "compressed_size": 421283,
+    "crc32": 2725180156
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/sm_0094.vtk",
+    "size": 1327759,
+    "compressed_size": 415357,
+    "crc32": 2599639114
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vf_0094.raw",
+    "size": 4194304,
+    "compressed_size": 134978,
+    "crc32": 2565538326
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vf_0094.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 3485801923
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vx_0094.raw",
+    "size": 4194304,
+    "compressed_size": 3792819,
+    "crc32": 458983933
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vx_0094.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 3470167411
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vy_0094.raw",
+    "size": 4194304,
+    "compressed_size": 4005390,
+    "crc32": 2212857795
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vy_0094.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 1552835799
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vz_0094.raw",
+    "size": 4194304,
+    "compressed_size": 3997880,
+    "crc32": 4225848046
+  },
+  {
+    "name": "Simulation Data/01-02-Q300I45R202NoSurfactant/vz_0094.xmf",
+    "size": 1072,
+    "compressed_size": 423,
+    "crc32": 823548026
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/omz_0307.raw",
+    "size": 4194304,
+    "compressed_size": 3936046,
+    "crc32": 2217670839
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/omz_0307.xmf",
+    "size": 1074,
+    "compressed_size": 421,
+    "crc32": 2296413392
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/p_0307.raw",
+    "size": 4194304,
+    "compressed_size": 3950952,
+    "crc32": 1125704300
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/p_0307.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 3480821690
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/potsolver_0307.vtk",
+    "size": 46906114,
+    "compressed_size": 22734215,
+    "crc32": 4152931353
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/s_0307.vtk",
+    "size": 1098731,
+    "compressed_size": 453201,
+    "crc32": 2559536954
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/sm_0307.vtk",
+    "size": 1684283,
+    "compressed_size": 483161,
+    "crc32": 3408408593
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vf_0307.raw",
+    "size": 4194304,
+    "compressed_size": 143533,
+    "crc32": 2188835336
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vf_0307.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 750022963
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vx_0307.raw",
+    "size": 4194304,
+    "compressed_size": 3827139,
+    "crc32": 4200413475
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vx_0307.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 765976963
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vy_0307.raw",
+    "size": 4194304,
+    "compressed_size": 4001785,
+    "crc32": 1822426441
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vy_0307.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3221162023
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vz_0307.raw",
+    "size": 4194304,
+    "compressed_size": 3993234,
+    "crc32": 710781880
+  },
+  {
+    "name": "Simulation Data/01-03-Q3300I45R151NoSurfactant/vz_0307.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3529979018
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/omz_2508.raw",
+    "size": 4194304,
+    "compressed_size": 3945565,
+    "crc32": 2786457637
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/omz_2508.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 3479011986
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/p_2508.raw",
+    "size": 4194304,
+    "compressed_size": 3976174,
+    "crc32": 3832473766
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/p_2508.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 2294604280
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/potsolver_2508.vtk",
+    "size": 46906114,
+    "compressed_size": 22751353,
+    "crc32": 4238342983
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/s_2508.vtk",
+    "size": 1263507,
+    "compressed_size": 524642,
+    "crc32": 77921630
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/sm_2508.vtk",
+    "size": 1839591,
+    "compressed_size": 536597,
+    "crc32": 722034259
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vf_2508.raw",
+    "size": 4194304,
+    "compressed_size": 163122,
+    "crc32": 3337085933
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vf_2508.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 1795788657
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vx_2508.raw",
+    "size": 4194304,
+    "compressed_size": 3838324,
+    "crc32": 2194536393
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vx_2508.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1780096961
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vy_2508.raw",
+    "size": 4194304,
+    "compressed_size": 4003224,
+    "crc32": 1033199420
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vy_2508.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 4165138021
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vz_2508.raw",
+    "size": 4194304,
+    "compressed_size": 3997253,
+    "crc32": 920901472
+  },
+  {
+    "name": "Simulation Data/01-Q300I45R101NoSurfactant/vz_2508.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2514143944
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/omz_0008.raw",
+    "size": 4194304,
+    "compressed_size": 3947821,
+    "crc32": 761900117
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/omz_0008.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 2710106697
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/p_0008.raw",
+    "size": 4194304,
+    "compressed_size": 3929962,
+    "crc32": 2285137361
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/p_0008.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 3859910947
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/potsolver_0008.vtk",
+    "size": 46906114,
+    "compressed_size": 22435738,
+    "crc32": 2411885837
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/s_0008.vtk",
+    "size": 331621,
+    "compressed_size": 135003,
+    "crc32": 1173974006
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/sm_0008.vtk",
+    "size": 378446,
+    "compressed_size": 128618,
+    "crc32": 3177387957
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vf_0008.raw",
+    "size": 4194304,
+    "compressed_size": 47741,
+    "crc32": 300505495
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vf_0008.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 98369450
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vx_0008.raw",
+    "size": 4194304,
+    "compressed_size": 3832668,
+    "crc32": 3272678943
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vx_0008.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 80703258
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vy_0008.raw",
+    "size": 4194304,
+    "compressed_size": 3999136,
+    "crc32": 115195535
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vy_0008.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2526512830
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vz_0008.raw",
+    "size": 4194304,
+    "compressed_size": 3989471,
+    "crc32": 494082996
+  },
+  {
+    "name": "Simulation Data/02-02-Q1200I45R202NoSurfactant/vz_0008.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 4212111891
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/omz_0083.raw",
+    "size": 4194304,
+    "compressed_size": 3956744,
+    "crc32": 1567493026
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/omz_0083.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 3114719536
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/p_0083.raw",
+    "size": 4194304,
+    "compressed_size": 3939589,
+    "crc32": 1248357618
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/p_0083.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 4265589338
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/potsolver_0083.vtk",
+    "size": 46906114,
+    "compressed_size": 22578402,
+    "crc32": 2107898095
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/s_0083.vtk",
+    "size": 381289,
+    "compressed_size": 155680,
+    "crc32": 3867498520
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/sm_0083.vtk",
+    "size": 441872,
+    "compressed_size": 144973,
+    "crc32": 1268611615
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vf_0083.raw",
+    "size": 4194304,
+    "compressed_size": 54795,
+    "crc32": 2675767209
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vf_0083.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 502453459
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vx_0083.raw",
+    "size": 4194304,
+    "compressed_size": 3832714,
+    "crc32": 237261764
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vx_0083.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 484525155
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vy_0083.raw",
+    "size": 4194304,
+    "compressed_size": 4000097,
+    "crc32": 824312141
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vy_0083.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2394533319
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vz_0083.raw",
+    "size": 4194304,
+    "compressed_size": 3990611,
+    "crc32": 4227918995
+  },
+  {
+    "name": "Simulation Data/02-03-Q1200I45R151NoSurfactant/vz_0083.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3810627946
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/omz_1097.raw",
+    "size": 4194304,
+    "compressed_size": 3962184,
+    "crc32": 3981049419
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/omz_1097.xmf",
+    "size": 1074,
+    "compressed_size": 423,
+    "crc32": 430436970
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/p_1097.raw",
+    "size": 4194304,
+    "compressed_size": 3951010,
+    "crc32": 813140485
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/p_1097.xmf",
+    "size": 1070,
+    "compressed_size": 420,
+    "crc32": 1581158656
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/potsolver_1097.vtk",
+    "size": 46906114,
+    "compressed_size": 22613802,
+    "crc32": 2116608808
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/s_1097.vtk",
+    "size": 529373,
+    "compressed_size": 218193,
+    "crc32": 2931330898
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/sm_1097.vtk",
+    "size": 729284,
+    "compressed_size": 212127,
+    "crc32": 954329219
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vf_1097.raw",
+    "size": 4194304,
+    "compressed_size": 73373,
+    "crc32": 3469218785
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vf_1097.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3186884489
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vx_1097.raw",
+    "size": 4194304,
+    "compressed_size": 3840055,
+    "crc32": 978552904
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vx_1097.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3168825145
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vy_1097.raw",
+    "size": 4194304,
+    "compressed_size": 3999043,
+    "crc32": 1122574621
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vy_1097.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 783845021
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vz_1097.raw",
+    "size": 4194304,
+    "compressed_size": 3984896,
+    "crc32": 1356727825
+  },
+  {
+    "name": "Simulation Data/02-Q1200I45R101NoSurfactant/vz_1097.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 1126218288
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/bc.vtk",
+    "size": 3601866,
+    "compressed_size": 629497,
+    "crc32": 4060234608
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/omz_0129.raw",
+    "size": 4194304,
+    "compressed_size": 3920588,
+    "crc32": 1794666234
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/omz_0129.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 823725710
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/p_0129.raw",
+    "size": 4194304,
+    "compressed_size": 3923456,
+    "crc32": 3462653926
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/p_0129.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 1988128228
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/potsolver_0129.vtk",
+    "size": 46906114,
+    "compressed_size": 22651311,
+    "crc32": 256911216
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/s_0129.vtk",
+    "size": 1393871,
+    "compressed_size": 579403,
+    "crc32": 233066424
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/sm_0129.vtk",
+    "size": 1617831,
+    "compressed_size": 535426,
+    "crc32": 3894701652
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vf_0129.raw",
+    "size": 4194304,
+    "compressed_size": 176692,
+    "crc32": 754224706
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vf_0129.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2504852333
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vx_0129.raw",
+    "size": 4194304,
+    "compressed_size": 3799153,
+    "crc32": 632297746
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vx_0129.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2489226205
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vy_0129.raw",
+    "size": 4194304,
+    "compressed_size": 4007268,
+    "crc32": 1637952649
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vy_0129.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 101087865
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vz_0129.raw",
+    "size": 4194304,
+    "compressed_size": 3997405,
+    "crc32": 2116635172
+  },
+  {
+    "name": "Simulation Data/03-02-Q300I45R202WithSurfactant/vz_0129.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 1805534932
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/bc.vtk",
+    "size": 3601866,
+    "compressed_size": 629497,
+    "crc32": 4060234608
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/omz_0098.raw",
+    "size": 4194304,
+    "compressed_size": 3949071,
+    "crc32": 2209990572
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/omz_0098.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 3456830654
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/p_0098.raw",
+    "size": 4194304,
+    "compressed_size": 3947031,
+    "crc32": 2900489852
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/p_0098.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 2308075476
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/potsolver_0098.vtk",
+    "size": 46906114,
+    "compressed_size": 22906946,
+    "crc32": 2200223575
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/s_0098.vtk",
+    "size": 2539157,
+    "compressed_size": 1075529,
+    "crc32": 2459180870
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/sm_0098.vtk",
+    "size": 2961367,
+    "compressed_size": 956973,
+    "crc32": 759730729
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vf_0098.raw",
+    "size": 4194304,
+    "compressed_size": 303583,
+    "crc32": 2579197904
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vf_0098.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1784611165
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vx_0098.raw",
+    "size": 4194304,
+    "compressed_size": 3828846,
+    "crc32": 1875256370
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vx_0098.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1800180205
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vy_0098.raw",
+    "size": 4194304,
+    "compressed_size": 4003793,
+    "crc32": 4237655219
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vy_0098.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 4178868297
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vz_0098.raw",
+    "size": 4194304,
+    "compressed_size": 3996466,
+    "crc32": 3300594879
+  },
+  {
+    "name": "Simulation Data/03-03-Q300I45R151WithSurfactant/vz_0098.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 2492220644
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/bc.vtk",
+    "size": 3601866,
+    "compressed_size": 629497,
+    "crc32": 4060234608
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/omz_1754.raw",
+    "size": 4194304,
+    "compressed_size": 3973730,
+    "crc32": 3446651493
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/omz_1754.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 3573124621
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/p_1754.raw",
+    "size": 4194304,
+    "compressed_size": 3985483,
+    "crc32": 50378482
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/p_1754.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 2472602983
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/potsolver_1754.vtk",
+    "size": 46906114,
+    "compressed_size": 23193371,
+    "crc32": 1079476503
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/s_1754.vtk",
+    "size": 5667925,
+    "compressed_size": 2417659,
+    "crc32": 3347887469
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/sm_1754.vtk",
+    "size": 6484321,
+    "compressed_size": 2189320,
+    "crc32": 956875948
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vf_1754.raw",
+    "size": 4194304,
+    "compressed_size": 562035,
+    "crc32": 4031802174
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vf_1754.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1890419694
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vx_1754.raw",
+    "size": 4194304,
+    "compressed_size": 3865145,
+    "crc32": 3650183729
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vx_1754.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1908282206
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vy_1754.raw",
+    "size": 4194304,
+    "compressed_size": 4002710,
+    "crc32": 2207359488
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vy_1754.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3823565562
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vz_1754.raw",
+    "size": 4194304,
+    "compressed_size": 3997715,
+    "crc32": 2544709941
+  },
+  {
+    "name": "Simulation Data/03-Q300I45R101WithSurfactant/vz_1754.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2390672983
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/omz_0030.raw",
+    "size": 4194304,
+    "compressed_size": 3958275,
+    "crc32": 4232164869
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/omz_0030.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 4190416634
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/p_0030.raw",
+    "size": 4194304,
+    "compressed_size": 3932228,
+    "crc32": 2709218305
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/p_0030.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 3193818512
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/potsolver_0030.vtk",
+    "size": 46906114,
+    "compressed_size": 22360823,
+    "crc32": 3249179601
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/s_0030.vtk",
+    "size": 406369,
+    "compressed_size": 166602,
+    "crc32": 692680327
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/sm_0030.vtk",
+    "size": 470220,
+    "compressed_size": 157644,
+    "crc32": 1652997925
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vf_0030.raw",
+    "size": 4194304,
+    "compressed_size": 57380,
+    "crc32": 2245361687
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vf_0030.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 1569760025
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vx_0030.raw",
+    "size": 4194304,
+    "compressed_size": 3840794,
+    "crc32": 3795837262
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vx_0030.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 1552102313
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vy_0030.raw",
+    "size": 4194304,
+    "compressed_size": 3998918,
+    "crc32": 3541784597
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vy_0030.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 3470514701
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vz_0030.raw",
+    "size": 4194304,
+    "compressed_size": 3989697,
+    "crc32": 1256657192
+  },
+  {
+    "name": "Simulation Data/04-02-Q1200I45R202WithSurfactant/vz_0030.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2739136160
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/omz_0080.raw",
+    "size": 4194304,
+    "compressed_size": 3956695,
+    "crc32": 381790007
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/omz_0080.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 2105072951
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/p_0080.raw",
+    "size": 4194304,
+    "compressed_size": 3948179,
+    "crc32": 3897423964
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/p_0080.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 987872861
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/potsolver_0080.vtk",
+    "size": 46906114,
+    "compressed_size": 22597795,
+    "crc32": 1214857011
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/s_0080.vtk",
+    "size": 433333,
+    "compressed_size": 178786,
+    "crc32": 2146488146
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/sm_0080.vtk",
+    "size": 501696,
+    "compressed_size": 163399,
+    "crc32": 1562810380
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vf_0080.raw",
+    "size": 4194304,
+    "compressed_size": 60143,
+    "crc32": 3265542730
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vf_0080.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 3643592916
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vx_0080.raw",
+    "size": 4194304,
+    "compressed_size": 3833855,
+    "crc32": 3795918617
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vx_0080.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 3628023908
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vy_0080.raw",
+    "size": 4194304,
+    "compressed_size": 4000295,
+    "crc32": 1787600370
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vy_0080.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1248307648
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vz_0080.raw",
+    "size": 4194304,
+    "compressed_size": 3990449,
+    "crc32": 1735470698
+  },
+  {
+    "name": "Simulation Data/04-03-Q1200I45R151WithSurfactant/vz_0080.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 671061357
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/omz_1021.raw",
+    "size": 4194304,
+    "compressed_size": 3978092,
+    "crc32": 2360744357
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/omz_1021.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 3486945256
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/p_1021.raw",
+    "size": 4194304,
+    "compressed_size": 3955809,
+    "crc32": 3195076950
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/p_1021.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 2286939266
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/potsolver_1021.vtk",
+    "size": 46906114,
+    "compressed_size": 22709820,
+    "crc32": 2989548988
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/s_1021.vtk",
+    "size": 1255635,
+    "compressed_size": 526953,
+    "crc32": 1999554141
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/sm_1021.vtk",
+    "size": 1497019,
+    "compressed_size": 473398,
+    "crc32": 440939881
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vf_1021.raw",
+    "size": 4194304,
+    "compressed_size": 147629,
+    "crc32": 3561810812
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vf_1021.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1803715083
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vx_1021.raw",
+    "size": 4194304,
+    "compressed_size": 3855611,
+    "crc32": 1765411629
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vx_1021.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1787892411
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vy_1021.raw",
+    "size": 4194304,
+    "compressed_size": 3999091,
+    "crc32": 1595671284
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vy_1021.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 4173986591
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vz_1021.raw",
+    "size": 4194304,
+    "compressed_size": 3986648,
+    "crc32": 1672801736
+  },
+  {
+    "name": "Simulation Data/04-Q1200I45R101WithSurfactant/vz_1021.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 2505164722
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/omz_0541.raw",
+    "size": 4194304,
+    "compressed_size": 3951583,
+    "crc32": 4135405509
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/omz_0541.xmf",
+    "size": 1074,
+    "compressed_size": 423,
+    "crc32": 1199194794
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/p_0541.raw",
+    "size": 4194304,
+    "compressed_size": 3963930,
+    "crc32": 1064344091
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/p_0541.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 14885312
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/potsolver_0541.vtk",
+    "size": 46906114,
+    "compressed_size": 22669927,
+    "crc32": 1348127498
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/s_0541.vtk",
+    "size": 869231,
+    "compressed_size": 360291,
+    "crc32": 3390186999
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/sm_0541.vtk",
+    "size": 1218335,
+    "compressed_size": 356938,
+    "crc32": 4207748539
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vf_0541.raw",
+    "size": 4194304,
+    "compressed_size": 115630,
+    "crc32": 968135720
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vf_0541.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3811462985
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vx_0541.raw",
+    "size": 4194304,
+    "compressed_size": 3837488,
+    "crc32": 3680101399
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vx_0541.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3795705849
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vy_0541.raw",
+    "size": 4194304,
+    "compressed_size": 4000878,
+    "crc32": 616254236
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vy_0541.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1885681245
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vz_0541.raw",
+    "size": 4194304,
+    "compressed_size": 3991798,
+    "crc32": 680347818
+  },
+  {
+    "name": "Simulation Data/05-Q600I45R101NoSurfactant/vz_0541.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 503122672
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/omz_0369.raw",
+    "size": 4194304,
+    "compressed_size": 3960963,
+    "crc32": 1012491376
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/omz_0369.xmf",
+    "size": 1074,
+    "compressed_size": 423,
+    "crc32": 4210095236
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/p_0369.raw",
+    "size": 4194304,
+    "compressed_size": 3952615,
+    "crc32": 792794434
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/p_0369.xmf",
+    "size": 1070,
+    "compressed_size": 420,
+    "crc32": 3177813998
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/potsolver_0369.vtk",
+    "size": 46906114,
+    "compressed_size": 22682402,
+    "crc32": 1409866675
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/s_0369.vtk",
+    "size": 779011,
+    "compressed_size": 322688,
+    "crc32": 3940071904
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/sm_0369.vtk",
+    "size": 1195675,
+    "compressed_size": 335655,
+    "crc32": 2464244019
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vf_0369.raw",
+    "size": 4194304,
+    "compressed_size": 103851,
+    "crc32": 295160932
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vf_0369.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 1587870055
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vx_0369.raw",
+    "size": 4194304,
+    "compressed_size": 3839962,
+    "crc32": 2302523524
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vx_0369.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 1605855703
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vy_0369.raw",
+    "size": 4194304,
+    "compressed_size": 3999665,
+    "crc32": 1164226755
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vy_0369.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 3455025267
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vz_0369.raw",
+    "size": 4194304,
+    "compressed_size": 3989430,
+    "crc32": 637498892
+  },
+  {
+    "name": "Simulation Data/06-Q900I45R101NoSurfactant/vz_0369.xmf",
+    "size": 1072,
+    "compressed_size": 423,
+    "crc32": 2692201694
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/omz_1044.raw",
+    "size": 4194304,
+    "compressed_size": 3944156,
+    "crc32": 2352869708
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/omz_1044.xmf",
+    "size": 1074,
+    "compressed_size": 423,
+    "crc32": 3220444335
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/p_1044.raw",
+    "size": 4194304,
+    "compressed_size": 3977563,
+    "crc32": 2664560672
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/p_1044.xmf",
+    "size": 1070,
+    "compressed_size": 420,
+    "crc32": 4167923653
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/potsolver_1044.vtk",
+    "size": 46906114,
+    "compressed_size": 22776791,
+    "crc32": 184877008
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/s_1044.vtk",
+    "size": 1402763,
+    "compressed_size": 585033,
+    "crc32": 3734348826
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/sm_1044.vtk",
+    "size": 2213415,
+    "compressed_size": 620117,
+    "crc32": 3682382579
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vf_1044.raw",
+    "size": 4194304,
+    "compressed_size": 179497,
+    "crc32": 1889022584
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vf_1044.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 463477068
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vx_1044.raw",
+    "size": 4194304,
+    "compressed_size": 3836782,
+    "crc32": 2806971045
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vx_1044.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 447973884
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vy_1044.raw",
+    "size": 4194304,
+    "compressed_size": 4004077,
+    "crc32": 138639691
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vy_1044.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 2297127000
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vz_1044.raw",
+    "size": 4194304,
+    "compressed_size": 3997332,
+    "crc32": 103118636
+  },
+  {
+    "name": "Simulation Data/07-Q300I60R101NoSurfactant/vz_1044.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 3849542901
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/omz_0620.raw",
+    "size": 4194304,
+    "compressed_size": 3939568,
+    "crc32": 991724403
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/omz_0620.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 469910631
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/p_0620.raw",
+    "size": 4194304,
+    "compressed_size": 3974675,
+    "crc32": 2038444122
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/p_0620.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 1536894733
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/potsolver_0620.vtk",
+    "size": 46906114,
+    "compressed_size": 22747241,
+    "crc32": 1119521201
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/s_0620.vtk",
+    "size": 1073703,
+    "compressed_size": 444701,
+    "crc32": 2753217792
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/sm_0620.vtk",
+    "size": 1464195,
+    "compressed_size": 437718,
+    "crc32": 3738428963
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vf_0620.raw",
+    "size": 4194304,
+    "compressed_size": 140939,
+    "crc32": 3175467293
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vf_0620.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3092662660
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vx_0620.raw",
+    "size": 4194304,
+    "compressed_size": 3833052,
+    "crc32": 4117880706
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vx_0620.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 3108362548
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vy_0620.raw",
+    "size": 4194304,
+    "compressed_size": 4002845,
+    "crc32": 1648488943
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vy_0620.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 723333264
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vz_0620.raw",
+    "size": 4194304,
+    "compressed_size": 3996568,
+    "crc32": 4229916486
+  },
+  {
+    "name": "Simulation Data/08-Q300I30R101NoSurfactant/vz_0620.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 1183124541
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/omz_0360.raw",
+    "size": 4194304,
+    "compressed_size": 3968375,
+    "crc32": 1838082922
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/omz_0360.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 3380208210
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/p_0360.raw",
+    "size": 4194304,
+    "compressed_size": 3948082,
+    "crc32": 4131708482
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/p_0360.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 2397077816
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/potsolver_0360.vtk",
+    "size": 46906114,
+    "compressed_size": 22697721,
+    "crc32": 4023201329
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/s_0360.vtk",
+    "size": 782539,
+    "compressed_size": 323284,
+    "crc32": 4056728254
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/sm_0360.vtk",
+    "size": 1182071,
+    "compressed_size": 332224,
+    "crc32": 1749201356
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vf_0360.raw",
+    "size": 4194304,
+    "compressed_size": 104806,
+    "crc32": 3710231219
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vf_0360.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1831727025
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vx_0360.raw",
+    "size": 4194304,
+    "compressed_size": 3845601,
+    "crc32": 1447553274
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vx_0360.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1816035073
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vy_0360.raw",
+    "size": 4194304,
+    "compressed_size": 3998658,
+    "crc32": 2154560642
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vy_0360.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 4268136101
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vz_0360.raw",
+    "size": 4194304,
+    "compressed_size": 3985619,
+    "crc32": 876537073
+  },
+  {
+    "name": "Simulation Data/09-Q1200I60R101NoSurfactant/vz_0360.xmf",
+    "size": 1072,
+    "compressed_size": 422,
+    "crc32": 2482940424
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/bc.vtk",
+    "size": 3659486,
+    "compressed_size": 643250,
+    "crc32": 995841844
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/omz_0185.raw",
+    "size": 4194304,
+    "compressed_size": 3958011,
+    "crc32": 1510325274
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/omz_0185.xmf",
+    "size": 1074,
+    "compressed_size": 422,
+    "crc32": 1705027392
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/p_0185.raw",
+    "size": 4194304,
+    "compressed_size": 3945686,
+    "crc32": 2120533555
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/p_0185.xmf",
+    "size": 1070,
+    "compressed_size": 419,
+    "crc32": 574211114
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/potsolver_0185.vtk",
+    "size": 46906114,
+    "compressed_size": 22615063,
+    "crc32": 4153117779
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/s_0185.vtk",
+    "size": 413685,
+    "compressed_size": 170920,
+    "crc32": 2438423964
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/sm_0185.vtk",
+    "size": 507224,
+    "compressed_size": 154859,
+    "crc32": 1305551016
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vf_0185.raw",
+    "size": 4194304,
+    "compressed_size": 58875,
+    "crc32": 4198067409
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vf_0185.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 3254037155
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vx_0185.raw",
+    "size": 4194304,
+    "compressed_size": 3830611,
+    "crc32": 2729239382
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vx_0185.xmf",
+    "size": 1072,
+    "compressed_size": 420,
+    "crc32": 3236379155
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vy_0185.raw",
+    "size": 4194304,
+    "compressed_size": 3999413,
+    "crc32": 642180144
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vy_0185.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1388303287
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vz_0185.raw",
+    "size": 4194304,
+    "compressed_size": 3988582,
+    "crc32": 4178845700
+  },
+  {
+    "name": "Simulation Data/10-Q1200I30R101NoSurfactant/vz_0185.xmf",
+    "size": 1072,
+    "compressed_size": 421,
+    "crc32": 1059581722
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Develop a suitable analysis for identifying the strongest high-speed flow region in the FireFlow room. Select the flow representation or aggregation, define what constitutes a high-speed region, decide on a selection criterion, and choose how its strength will be measured. Then apply your method and report the location and strength of the region you identify as strongest.",
+  "semantic_contract_sha256": "4f4006255e2571929122c34993ffb083ff2aa01c68c8f7b5196844a7abf75659",
+  "source": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o3_f1.json",
+  "wording_version": "1.2.1"
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Investigate high-speed flow regions in the blunt-fin dataset and decide which one is strongest. Choose and explain how the field will be represented or aggregated, what will count as a high-speed region, the criterion used to select locations, and the property used to compare region strength. Apply that operationalization and report the location and strength of the strongest region.",
+  "semantic_contract_sha256": "45bfd8a3df4b60087ebead139d3cedd98452e2d7334a9b4ce49e54f493e19a6c",
+  "source": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o3_f1.json",
+  "wording_version": "1.2.1"
+}

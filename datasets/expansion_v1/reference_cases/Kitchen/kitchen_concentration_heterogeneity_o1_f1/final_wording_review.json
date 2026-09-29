@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "The payload provides no concentration values or cell geometry, so the selected field and heterogeneity value cannot be independently verified here."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful and actionable for the kitchen airflow dataset. It faithfully identifies the stored gas-concentration field with greatest heterogeneity, preserves scope, exposes the field definition and cell-volume-weighted coefficient-of-variation procedure, and requests both fixed F1 outputs. No unresolved operationalization choice is present, no unintended respondent responsibility is introduced, and the task is answerable in principle despite the absent numerical evidence in this payload.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "714820511cb732db9dc759ff16fb3176005e6b233cda712a6df355350971fdd6",
+  "review_packet_sha256": "f5b4376a80bbbf7e07c018834a5615f1d1601a4870b2218c825c48cc4d6d1a2e",
+  "reviewed_model_visible_text_sha256": "367f18ecf16a9d5d816b51fe99725785035b4a4ee69356d382f9d12a97ee179f",
+  "reviewed_model_visible_text": "Which gas-concentration field in the kitchen airflow has the greatest spatial heterogeneity? Treat every stored gas-concentration scalar as its own gas-concentration field, first take the arithmetic mean of the finite vertex values within each cell, then compare the fields using the cell-volume-weighted coefficient of variation, and report which field was selected together with its heterogeneity value.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "kitchen_concentration_heterogeneity_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "f5b4376a80bbbf7e07c018834a5615f1d1601a4870b2218c825c48cc4d6d1a2e",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:30:54.176114+00:00",
+    "latency_seconds": 20.355234,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"The payload provides no concentration values or cell geometry, so the selected field and heterogeneity value cannot be independently verified here.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful and actionable for the kitchen airflow dataset. It faithfully identifies the stored gas-concentration field with greatest heterogeneity, preserves scope, exposes the field definition and cell-volume-weighted coefficient-of-variation procedure, and requests both fixed F1 outputs. No unresolved operationalization choice is present, no unintended respondent responsibility is introduced, and the task is answerable in principle despite the absent numerical evidence in this payload.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "The payload provides no concentration values or cell geometry, so the selected field and heterogeneity value cannot be independently verified here."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful and actionable for the kitchen airflow dataset. It faithfully identifies the stored gas-concentration field with greatest heterogeneity, preserves scope, exposes the field definition and cell-volume-weighted coefficient-of-variation procedure, and requests both fixed F1 outputs. No unresolved operationalization choice is present, no unintended respondent responsibility is introduced, and the task is answerable in principle despite the absent numerical evidence in this payload."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0945084286a5163e016aa6ddbacad887d2ab9624259406c8f7": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2326,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 2326,
+            "output_tokens": 0
+          },
+          "rs_0945084286a5163e016aa6ddbb54f087d2af36dd5be1fef435": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0945084286a5163e016aa6ddc681c487d2b5f8baad5c0b4381": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 197
+          },
+          "msg_0945084286a5163e016aa6ddca77f087d2a105e068eaca2ec9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 208
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 208
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2942,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 921,
+      "output_tokens_details": {
+        "reasoning_tokens": 713
+      },
+      "total_tokens": 3863
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "714820511cb732db9dc759ff16fb3176005e6b233cda712a6df355350971fdd6",
+    "review_packet_sha256": "f5b4376a80bbbf7e07c018834a5615f1d1601a4870b2218c825c48cc4d6d1a2e",
+    "reviewed_model_visible_text_sha256": "367f18ecf16a9d5d816b51fe99725785035b4a4ee69356d382f9d12a97ee179f",
+    "reviewed_model_visible_text": "Which gas-concentration field in the kitchen airflow has the greatest spatial heterogeneity? Treat every stored gas-concentration scalar as its own gas-concentration field, first take the arithmetic mean of the finite vertex values within each cell, then compare the fields using the cell-volume-weighted coefficient of variation, and report which field was selected together with its heterogeneity value."
+  }
+}

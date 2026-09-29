@@ -1,0 +1,47 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "Combustor",
+    "evidence_type": "operationalization",
+    "statement": "WarpCombustor extracts computational planes from the structured dataset and warps them using scalar values along local normals as a velocity-profile visualization.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": "9-4b",
+      "code_location": "WarpCombustor.cxx: vtkStructuredGridGeometryFilter and vtkWarpScalar"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "op_002",
+    "dataset_id": "Combustor",
+    "evidence_type": "operationalization",
+    "statement": "CombustorIsosurface generates an isosurface of constant flow density from combxyz.bin and combq.bin.",
+    "source_id": "src_002",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": "6-11c",
+      "code_location": "CombustorIsosurface.cxx: vtkContourFilter"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "op_003",
+    "dataset_id": "Combustor",
+    "evidence_type": "operationalization",
+    "statement": "The VTK Book’s combustion-chamber example uses this dataset to visualize constant flow-density surfaces, supporting stored density as a dataset-specific observable for density-feature construction.",
+    "source_id": "src_003",
+    "locator": {
+      "section": "6.2.2 Contouring",
+      "page": null,
+      "figure": "6-11c",
+      "code_location": null
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

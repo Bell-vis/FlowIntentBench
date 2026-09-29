@@ -1,0 +1,22 @@
+{
+  "p": {
+    "openfoam_dimensions": "dimensions      [1 -1 -2 0 0 0 0];",
+    "unit": "Pa"
+  },
+  "U": {
+    "openfoam_dimensions": "dimensions      [0 1 -1 0 0 0 0];",
+    "unit": "m/s"
+  },
+  "k": {
+    "openfoam_dimensions": "dimensions      [0 2 -2 0 0 0 0];",
+    "unit": "m^2/s^2"
+  },
+  "nut": {
+    "openfoam_dimensions": "dimensions      [0 2 -1 0 0 0 0];",
+    "unit": "m^2/s"
+  },
+  "omega": {
+    "openfoam_dimensions": "dimensions      [0 0 -1 0 0 0 0];",
+    "unit": "1/s"
+  }
+}

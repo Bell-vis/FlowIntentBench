@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Which available gas-concentration field in the kitchen airflow is most spatially heterogeneous under a scientifically appropriate analysis of your choice? Decide how the fields should be represented, what spatial feature will define heterogeneity, and which property measure will be used for comparison. Apply those choices and report the field you select and its resulting heterogeneity value.",
+  "semantic_contract_sha256": "02a15c1bd85f3a6b5f886ca3ee0d4a0e5a082a2c4a35c01f12848abe3fe0928d",
+  "source": "FlowIntentBench_userstudy/datasets/Kitchen/questions/kitchen_concentration_heterogeneity_o3_f1.json",
+  "wording_version": "1.2.1"
+}

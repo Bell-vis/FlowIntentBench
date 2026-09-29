@@ -1,0 +1,84 @@
+{
+  "scientific_question": "Which high-speed airflow region is strongest in the office? For this analysis, define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale, treat locations connected through shared grid faces as one contiguous region, use peak speed as the measure of strength, and represent the strongest region by the mean spatial location of its retained high-speed locations. Characterize the strongest high-speed airflow region in the office.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Office/office.binary.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTK",
+        "details": {}
+      },
+      "grid": {
+        "type": "structured",
+        "dimensions": [
+          21,
+          20,
+          20
+        ],
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "scalars",
+          "physical_quantity": "pressure",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "vectors",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "CFD flow in a small office",
+    "objects": [
+      {
+        "name": "office",
+        "description": "The small office represented by the structured-grid CFD dataset."
+      }
+    ],
+    "boundaries": [
+      {
+        "name": "ventilation_inlet",
+        "type": "inlet",
+        "description": "The inlet of the ventilation system."
+      },
+      {
+        "name": "ventilation_outlet",
+        "type": "outlet",
+        "description": "The outlet of the ventilation system."
+      }
+    ],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

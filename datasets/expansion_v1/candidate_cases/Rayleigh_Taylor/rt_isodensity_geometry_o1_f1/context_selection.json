@@ -1,0 +1,7 @@
+{
+  "case_id": "rt_isodensity_geometry_o1_f1",
+  "dataset_id": "Rayleigh_Taylor",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

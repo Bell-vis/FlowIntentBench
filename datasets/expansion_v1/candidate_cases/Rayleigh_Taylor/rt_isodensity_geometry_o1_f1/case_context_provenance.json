@@ -1,0 +1,15 @@
+{
+  "dataset_id": "Rayleigh_Taylor",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "rt_isodensity_geometry_o1_f1"
+}

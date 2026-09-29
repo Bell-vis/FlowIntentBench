@@ -1,0 +1,7 @@
+{
+  "case_id": "kitchen_concentration_heterogeneity_o1_f1",
+  "ground_truth_sha256": "92dc3bd5048b01f02c62214ad759b44e2212f03e824eaa7de1ca077771daca8b",
+  "presentation_sha256": "47cd69f867133a6baf81c544e2faa97c826cc5e2adc1ee3da2cda9549ee26768",
+  "scientific_evaluation_contract_sha256": "e35e546744cd8fbd1a8b701b7b931d60b4f31ade32f9e85f709c47efcaf007b9",
+  "semantic_contract_sha256": "714820511cb732db9dc759ff16fb3176005e6b233cda712a6df355350971fdd6"
+}

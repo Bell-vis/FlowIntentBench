@@ -1,0 +1,530 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "fireflow_o1_f2",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "fireflow_o1_f2",
+    "dataset_id": "FireFlow",
+    "condition": "O1-F2",
+    "family_id": "fireflow__high_speed_region",
+    "origin": "FROZEN_REFERENCE_COPY",
+    "reference_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe",
+    "case_input_path": "datasets/expansion_v1/reference_cases/FireFlow/fireflow_o1_f2/case_input.json",
+    "case_input_sha256": "a405f78e4ba607eddbd02f0d2fbbe3cec7387843c46c26fa0a23821ab6e5ecc1",
+    "case_construction_metadata_path": "datasets/expansion_v1/reference_cases/FireFlow/fireflow_o1_f2/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "1e2be9616550b8b2a51ba3b6b8a15a17af8530ca072d80682320b502b2868f99",
+    "case_context_path": "datasets/expansion_v1/reference_cases/FireFlow/fireflow_o1_f2/case_context.json",
+    "case_context_sha256": "7da695a79cc72e440a6a6b7dfbd510acb55bd8bfea7809d87bc50cbd6bcdadf0",
+    "ground_truth_path": "datasets/expansion_v1/reference_cases/FireFlow/fireflow_o1_f2/ground_truth.json",
+    "ground_truth_sha256": "6d04473408aefd374df76b238158952f4e32616f5b1cc0f82b21ea23e4ccc3db",
+    "scientific_semantic_projection_path": "datasets/expansion_v1/reference_cases/FireFlow/fireflow_o1_f2/scientific_semantic_projection.json",
+    "scientific_semantic_projection_sha256": "720b30736151bc6446a0b434b6070920a7be7d39e49a8dfba728d529ee46ede3"
+  },
+  "finding_recall_mode": "SEMANTIC_ADEQUATE_CORE",
+  "scientific_semantic_projection": {
+    "concept_id": "high_speed_region",
+    "dataset_id": "FireFlow",
+    "family_id": "fireflow__high_speed_region",
+    "finding_responsibility": "F2",
+    "finding_semantics": {
+      "adequate_core_semantics": {
+        "adequate_core_sets": [
+          [
+            "defining_strength_evidence",
+            "principal_feature_location",
+            "spatial_extent"
+          ],
+          [
+            "defining_strength_evidence",
+            "principal_feature_location",
+            "geometric_relation"
+          ],
+          [
+            "defining_strength_evidence",
+            "principal_feature_location",
+            "meaningful_comparison"
+          ],
+          [
+            "defining_strength_evidence",
+            "principal_feature_location",
+            "morphology"
+          ],
+          [
+            "defining_strength_evidence",
+            "principal_feature_location",
+            "orientation"
+          ]
+        ],
+        "alternative_role_groups": [
+          {
+            "group_id": "characterization",
+            "min_required": 1,
+            "roles": [
+              "spatial_extent",
+              "geometric_relation",
+              "meaningful_comparison",
+              "morphology",
+              "orientation"
+            ]
+          }
+        ],
+        "mandatory_roles": [
+          "defining_strength_evidence",
+          "principal_feature_location"
+        ],
+        "novel_role_policy": "valid_unenumerated may satisfy one characterization role only after blinded adjudication",
+        "role_by_category": {
+          "location": "principal_feature_location",
+          "property": "defining_strength_evidence",
+          "quantity": "defining_strength_evidence"
+        },
+        "scientific_entity_type": "SPATIAL_REGION",
+        "supporting_roles": [
+          "supporting_statistic"
+        ]
+      },
+      "finding_goal": "characterize the strongest high-speed flow region in the fireflow room flow field",
+      "normalized_demand": "characterize the strongest high-speed flow region in the fireflow room flow field"
+    },
+    "observable_scientific_semantics": {
+      "required_capabilities": {},
+      "scientific_semantic_capabilities": {}
+    },
+    "operationalization_responsibility": "user_specified",
+    "principal_operationalization_dimensions": [
+      "aggregation_or_representation",
+      "criterion",
+      "feature_definition",
+      "property_measure"
+    ],
+    "resolved_operationalization": [
+      {
+        "canonical_id": "mean_region_coordinate",
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+      },
+      {
+        "canonical_id": "speed_q90_nonzero",
+        "dimension_id": "criterion",
+        "normalized_meaning": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation"
+      },
+      {
+        "canonical_id": "legacy_feature_definition",
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "treat retained points that share an unstructured-mesh cell as one connected speed region"
+      },
+      {
+        "canonical_id": "peak_speed",
+        "dimension_id": "property_measure",
+        "normalized_meaning": "use peak speed as the measure of strength"
+      }
+    ],
+    "scientific_scope": {
+      "condition_constraints": [
+        "speed is the Euclidean magnitude of the stored uvw array",
+        "operationalizations remain within thresholded connected velocity-magnitude region analysis on the supplied topology"
+      ],
+      "scope_constraints": [
+        "in the fireflow room flow field"
+      ],
+      "selection_constraints": [
+        "select the strongest region"
+      ]
+    },
+    "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+    "scientific_target": "high-speed flow regions in the fireflow room flow field",
+    "unresolved_operationalization_dimensions": [],
+    "verification_semantics": {
+      "deterministic_verification_required_claim_types": [],
+      "semantic_adjudication_required": false
+    }
+  },
+  "role_map_source": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/FireFlow/fireflow_o1_f2/scientific_evaluation_contract.json",
+    "sha256": "6297c58671f21369b404675e0704ad9918735f5cdd15ac623192e0bc4b85c616"
+  },
+  "verification_policy_source": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/FireFlow/fireflow_o1_f2/finding_verification_policy.json",
+    "sha256": "79b530bf15b431a73becbe88678262753fcdf4f67fe861e87e0e6f62b44bcaf9"
+  },
+  "branch_execution_evidence": {
+    "fireflow_o1_f2_o1_high_speed_regions_open": {
+      "case_id": "fireflow_o1_f2",
+      "dataset_id": "FireFlow",
+      "operationalization": {
+        "feature_definition": "treat retained points that share an unstructured-mesh cell as one connected speed region",
+        "criterion": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation",
+        "property_measure": "use peak speed as the measure of strength",
+        "aggregation_or_representation": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+      },
+      "materialized_G_of_O": {
+        "comparator": "GE",
+        "coordinate_span": [
+          2.6875,
+          2.225000023841858,
+          2.0799999237060547
+        ],
+        "criterion": ">= non-zero 90th percentile (0.973593823082)",
+        "criterion_kind": "quantile",
+        "mean_spatial_location": [
+          0.5113998996219967,
+          1.975870378012814,
+          0.48199224898616855
+        ],
+        "mean_speed": 1.6380479260626384,
+        "measure_kind": "peak",
+        "operation_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+        "peak_point": [
+          0.19999998807907104,
+          1.428571343421936,
+          0.19999998807907104
+        ],
+        "peak_speed": 3.822313175748469,
+        "region_count": 4,
+        "region_sizes": [
+          517,
+          710,
+          3,
+          3
+        ],
+        "reported_location": [
+          0.5113998996219967,
+          1.975870378012814,
+          0.48199224898616855
+        ],
+        "representation": "mean",
+        "retained_points": 1233,
+        "selected_region_size": 517,
+        "strength": 3.822313175748469,
+        "threshold": 0.9735938230823256
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/FireFlow/fireflow_o1_f2/materialization_fireflow_o1_f2_o1_high_speed_regions_open.json",
+        "sha256": "401b3e91fd2a066f25c6482e603a983c5e8bc4f6bb0ac581b785614015fa0eb2"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "FireFlow/fire_ug.vtu",
+            "sha256": "9e1dd44335897be3126dfb909cf57389b67155c16bfa8755edc241d90e6df0f3"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {
+            "read_all_scalars": false,
+            "read_all_vectors": false
+          },
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "mesh_cell_point",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "097710a379f4d98e26ed5ea5b0321a5c053f9de6054c3f378f43c6388557e5e8",
+          "executed_plan_sha256": "097710a379f4d98e26ed5ea5b0321a5c053f9de6054c3f378f43c6388557e5e8",
+          "effective_o_sha256": "fda892b36be19296ef5e7efe1ee7709ca6dd49556c338f74617554799861d5a1",
+          "reader_format": "VTU",
+          "reader_configuration": {
+            "read_all_scalars": false,
+            "read_all_vectors": false
+          }
+        }
+      },
+      "evidence_binding_sha256": "5448afc9d8a050aaf659ea45c87b7f99a89994533e9f5b6fdd99ec4990ee4b67"
+    }
+  },
+  "reference_materialization_evidence": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/FireFlow/fireflow_o1_f2/agent_ready_evidence.json",
+    "sha256": "3b8fc168e1f831965abb5f03e0fbb3f3bf85b3c103bbad69dec89ef4d150f0a8"
+  },
+  "finding_requirement_contract": {
+    "mandatory_roles": [
+      "defining_strength_evidence",
+      "principal_feature_location"
+    ],
+    "alternative_role_groups": [
+      {
+        "group_id": "characterization",
+        "min_required": 1,
+        "roles": [
+          "spatial_extent",
+          "geometric_relation",
+          "meaningful_comparison",
+          "morphology",
+          "orientation"
+        ]
+      }
+    ],
+    "adequate_core_sets": [
+      [
+        "defining_strength_evidence",
+        "principal_feature_location",
+        "spatial_extent"
+      ],
+      [
+        "defining_strength_evidence",
+        "principal_feature_location",
+        "geometric_relation"
+      ],
+      [
+        "defining_strength_evidence",
+        "principal_feature_location",
+        "meaningful_comparison"
+      ],
+      [
+        "defining_strength_evidence",
+        "principal_feature_location",
+        "morphology"
+      ],
+      [
+        "defining_strength_evidence",
+        "principal_feature_location",
+        "orientation"
+      ]
+    ],
+    "supporting_roles": [
+      "supporting_statistic"
+    ],
+    "novel_role_policy": "valid_unenumerated may satisfy one characterization role only after blinded adjudication",
+    "scientific_entity_type": "SPATIAL_REGION",
+    "contract_source": "CONSTRUCTION_DEFINED",
+    "role_by_category": {
+      "location": "principal_feature_location",
+      "property": "defining_strength_evidence",
+      "quantity": "defining_strength_evidence"
+    },
+    "reference_finding_role_map": {
+      "fireflow_o1_f2_o1_high_speed_regions_open_extent": "spatial_extent",
+      "fireflow_o1_f2_o1_high_speed_regions_open_location": "principal_feature_location",
+      "fireflow_o1_f2_o1_high_speed_regions_open_region_count": "supporting_statistic",
+      "fireflow_o1_f2_o1_high_speed_regions_open_retained_points": "supporting_statistic",
+      "fireflow_o1_f2_o1_high_speed_regions_open_strength": "defining_strength_evidence"
+    }
+  },
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "case_id": "fireflow_o1_f2",
+    "dataset_id": "FireFlow",
+    "policies": [
+      {
+        "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_extent",
+        "formula_id": "componentwise_abs_tolerance_v1",
+        "formula_inputs": {
+          "reference_value": [
+            2.6875,
+            2.225000023841858,
+            2.0799999237060547
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+        "policy_digest": "ae85b19237eada8d7c0926c8daf504c3bf4d7859513e05095fb0da3df206825a",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "fireflow__high_speed_region",
+          "dataset_id": "FireFlow",
+          "effective_o_semantic_sha256": "e621787192e26c987f4e217926ebbd8e6b45bcf963a2811055aca4323c4adaee",
+          "g_of_o_locator": "/coordinate_span",
+          "representation": "characterization",
+          "scientific_role": "extent",
+          "scientific_target": "high-speed flow regions in the fireflow room flow field"
+        },
+        "scientific_finding_policy_key": "31fc7f5d40dac6ef1fe5024825f088c7598d38ed028e01c4c520ccf97c013e19",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "componentwise_vector",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+        "policy_digest": "2832942a69acd707ca80748a7822c8814a3870d6f782c011e724e57af4354c38",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "fireflow__high_speed_region",
+          "dataset_id": "FireFlow",
+          "effective_o_semantic_sha256": "e621787192e26c987f4e217926ebbd8e6b45bcf963a2811055aca4323c4adaee",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the fireflow room flow field"
+        },
+        "scientific_finding_policy_key": "b98b20b5ced4c38a6b8d38d621b9b3dba5b8d43aeb209d0c1dfab9460c41060c",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_region_count",
+        "formula_id": "exact_discrete_equality_v1",
+        "formula_inputs": {
+          "reference_value": 4,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+        "policy_digest": "e206f985c634370c4e47adbf4760b0ae52bf0666274fcd55deb6ce4eb31dc95e",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "fireflow__high_speed_region",
+          "dataset_id": "FireFlow",
+          "effective_o_semantic_sha256": "e621787192e26c987f4e217926ebbd8e6b45bcf963a2811055aca4323c4adaee",
+          "g_of_o_locator": "/region_count",
+          "representation": "quantity",
+          "scientific_role": "region_count",
+          "scientific_target": "high-speed flow regions in the fireflow room flow field"
+        },
+        "scientific_finding_policy_key": "5c25aaaa1bfcb5083d8052a1d6ba3d4ae78971381b3238ac744df1da5bed2ea1",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_discrete_numeric",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_retained_points",
+        "formula_id": "exact_discrete_equality_v1",
+        "formula_inputs": {
+          "reference_value": 517,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+        "policy_digest": "fc7983950a6f7db708786f4a326dbb0fb206f5877f8c336eb1c0f58de6521aea",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "fireflow__high_speed_region",
+          "dataset_id": "FireFlow",
+          "effective_o_semantic_sha256": "e621787192e26c987f4e217926ebbd8e6b45bcf963a2811055aca4323c4adaee",
+          "g_of_o_locator": "/selected_region_size",
+          "representation": "quantity",
+          "scientific_role": "retained_points",
+          "scientific_target": "high-speed flow regions in the fireflow room flow field"
+        },
+        "scientific_finding_policy_key": "661f54acc7499cc6023648127f4a355bdf244b0e7c19fddaa094327e15544c2e",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_discrete_numeric",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 3.822313175748469,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+        "policy_digest": "7df0dcb1e51837177139a8a13aac446f5703110dee01db9bcce0469079ce2b4b",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "fireflow__high_speed_region",
+          "dataset_id": "FireFlow",
+          "effective_o_semantic_sha256": "e621787192e26c987f4e217926ebbd8e6b45bcf963a2811055aca4323c4adaee",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the fireflow room flow field"
+        },
+        "scientific_finding_policy_key": "51bab27a88c07cc728cecca07676ad0cee0de724b164ba24e66972e01a7e42a6",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "runtime_inference_from_python_type_forbidden": true,
+    "schema_version": "finding-verification-policy-v1",
+    "semantic_contract_sha256": "b947c70b4d8646c07e8b1f43d90bd1c41efa61ab82f6c1438b9b0ec9348e2b96",
+    "verification_policy_sha256": "986a3ba4a6e4e2276d10b40b902cc4e8e6fa24c2514e10c8caa186b406ef2dd6"
+  }
+}

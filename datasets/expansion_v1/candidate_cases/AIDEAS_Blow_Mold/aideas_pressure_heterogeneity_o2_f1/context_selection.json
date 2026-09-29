@@ -1,0 +1,7 @@
+{
+  "case_id": "aideas_pressure_heterogeneity_o2_f1",
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

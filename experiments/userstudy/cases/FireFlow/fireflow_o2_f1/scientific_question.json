@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Within the FireFlow room flow field, find the strongest high-speed region. Use velocity magnitude, treat mesh-connected retained locations as a single region, and summarize its position by the mean spatial location of those retained locations. Choose a scientifically appropriate high-speed criterion and a measure of regional strength, state both choices, and report the selected region’s location and strength.",
+  "semantic_contract_sha256": "216bb49d1688d151948c4f39c6dbfab8d557758bb0fb9f6c0b1dca03ea0180a0",
+  "source": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o2_f1.json",
+  "wording_version": "1.2.1"
+}

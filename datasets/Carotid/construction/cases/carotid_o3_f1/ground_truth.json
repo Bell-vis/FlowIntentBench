@@ -1,0 +1,245 @@
+{
+  "dataset_id": "Carotid",
+  "case_id": "carotid_o3_f1",
+  "case_family_id": "carotid_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q90_peak",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q90_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q75_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 75th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q90_peak_point",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the spatial location of its peak-speed location."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q90_peak",
+      "findings": [
+        {
+          "finding_id": "carotid_o3_f1_o3_q90_peak_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [137.80844557699308, 94.49144521295959, 15.773061521659992] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            137.80844557699308,
+            94.49144521295959,
+            15.773061521659992
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o3_f1_o3_q90_peak_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 22.695 in the stored velocity scale.",
+          "importance": "core",
+          "value": 22.694927991153424,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q90_mean",
+      "findings": [
+        {
+          "finding_id": "carotid_o3_f1_o3_q90_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [144.66666666666666, 115.33333333333333, 23.0] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            144.66666666666666,
+            115.33333333333333,
+            23.0
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o3_f1_o3_q90_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 4.273 in the stored velocity scale.",
+          "importance": "core",
+          "value": 4.273159224483293,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q75_mean",
+      "findings": [
+        {
+          "finding_id": "carotid_o3_f1_o3_q75_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [138.10699079116745, 97.91917516585801, 14.491929894048916] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            138.10699079116745,
+            97.91917516585801,
+            14.491929894048916
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o3_f1_o3_q75_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 0.6787 in the stored velocity scale.",
+          "importance": "core",
+          "value": 0.6786588359876302,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "carotid_o3_f1_o3_q90_peak_point",
+      "findings": [
+        {
+          "finding_id": "carotid_o3_f1_o3_q90_peak_point_location",
+          "category": "location",
+          "statement": "The selected strongest region has peak-speed location approximately [143.0, 102.0, 28.0] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            143.0,
+            102.0,
+            28.0
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "carotid_o3_f1_o3_q90_peak_point_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 22.695 in the stored velocity scale.",
+          "importance": "core",
+          "value": 22.694927991153424,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

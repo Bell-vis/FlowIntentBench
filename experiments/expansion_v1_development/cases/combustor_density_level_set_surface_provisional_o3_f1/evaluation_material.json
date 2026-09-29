@@ -1,0 +1,966 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+    "dataset_id": "Combustor",
+    "condition": "O3-F1",
+    "family_id": "combustor_density_level_set_surface_provisional",
+    "origin": "FROZEN_REFERENCE_PRESENTATION_REVISION",
+    "reference_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe",
+    "case_input_path": "datasets/expansion_v1/reference_cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/case_input.json",
+    "case_input_sha256": "878c5b2ecfe9dbb668c99f65c7e0b7a6480719f4113427b19306255c602a7e7e",
+    "case_construction_metadata_path": "datasets/expansion_v1/reference_cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "35fc1d0a5094f4582996bc5cd959df8acc71027e3fd12da8991df2cf936d73bc",
+    "case_context_path": "datasets/expansion_v1/reference_cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/case_context.json",
+    "case_context_sha256": "fb6d39c20b8c13449717d5db1569f735faed366999400bdb6823407361b02c3a",
+    "ground_truth_path": "datasets/expansion_v1/reference_cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/ground_truth.json",
+    "ground_truth_sha256": "e21c8227a66b416db750203a400126cfba3cf4e602355c5b9321765f109d18df",
+    "scientific_semantic_projection_path": "datasets/expansion_v1/reference_cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/scientific_semantic_projection.json",
+    "scientific_semantic_projection_sha256": "2fdefd16b62982ab9fb08544fffd24e452c14bc994686f674f13a1cca83d551c",
+    "presentation_revision_path": "datasets/expansion_v1/reference_cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/presentation_revision_fidelity.json"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "scientific_semantic_projection": {
+    "concept_id": "combustor_density_level_set_surface_provisional",
+    "dataset_id": "Combustor",
+    "family_id": "combustor_density_level_set_surface_provisional",
+    "finding_responsibility": "F1",
+    "finding_semantics": {
+      "finding_goal": "identify and report the requested density feature",
+      "fixed_finding_requirements": [
+        {
+          "category": "location",
+          "normalized_meaning": "report the selected structure's representative location"
+        },
+        {
+          "category": "quantity",
+          "normalized_meaning": "report its defining Density isovalue"
+        },
+        {
+          "category": "characterization",
+          "normalized_meaning": "report its surface area"
+        }
+      ],
+      "normalized_demand": "identify the requested density feature and report its representative location, defining density level, and spatial extent",
+      "required_finding_roles": [
+        "spatial_location",
+        "defining_density_level",
+        "surface_extent"
+      ]
+    },
+    "observable_scientific_semantics": {
+      "required_capabilities": {
+        "ISOSURFACE_EXTRACTION": true,
+        "SCALAR_FIELD_SEMANTICS:Density": true,
+        "SPATIAL_COORDINATES": true
+      },
+      "scientific_semantic_capabilities": {}
+    },
+    "operationalization_responsibility": "partially_specified",
+    "principal_operationalization_dimensions": [
+      "feature_definition",
+      "criterion",
+      "aggregation_or_representation"
+    ],
+    "provisional_target_status": "PROVISIONAL_TARGET_PENDING_HUMAN_APPROVAL",
+    "resolved_operationalization": [],
+    "scientific_scope": {
+      "condition_constraints": [],
+      "scope_constraints": [
+        "the annular-combustor flow field"
+      ],
+      "selection_constraints": [
+        "select and characterize one connected density-isosurface component"
+      ]
+    },
+    "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+    "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "feature_definition",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state how constant-Density isosurface components are formed from the supplied grid"
+      },
+      {
+        "dimension_id": "criterion",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state a finite stored-Density isovalue rule"
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state a component-ranking rule and representative location derived from the component geometry"
+      }
+    ],
+    "verification_semantics": {
+      "deterministic_verification_required_claim_types": [],
+      "semantic_adjudication_required": true
+    }
+  },
+  "verification_policy_source": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/finding_verification_policy.json",
+    "sha256": "8480d878d8ab86de9733e2d29119524cc1f4fe67af732b436b708c9b4f669a40"
+  },
+  "branch_execution_evidence": {
+    "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface": {
+      "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+      "dataset_id": "Combustor",
+      "operationalization": {
+        "feature_definition": "Treat each connected constant-Density isosurface component as one candidate surface.",
+        "criterion": "Use the finite stored Density 90th percentile level (0.41466653347) with linear quantile interpolation.",
+        "aggregation_or_representation": "Select the component with the largest surface area and represent it by its area-weighted centroid and surface area."
+      },
+      "materialized_G_of_O": {
+        "component_selection": "largest_surface_area",
+        "level": 0.4146665334701538,
+        "location_representation": "area_weighted_centroid",
+        "q90": 0.4146665334701538,
+        "quantile_method": "linear",
+        "regions": [
+          {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          },
+          {
+            "area_weighted_centroid": [
+              10.146108346678226,
+              0.13820445422603053,
+              28.9667663068535
+            ],
+            "bounding_box_midpoint": [
+              10.29560661315918,
+              0.0,
+              29.161704063415527
+            ],
+            "bounding_box_volume": 50.36776361273549,
+            "bounds": [
+              [
+                9.529313087463379,
+                11.06190013885498
+              ],
+              [
+                -4.341665744781494,
+                4.341665744781494
+              ],
+              [
+                27.269311904907227,
+                31.054096221923828
+              ]
+            ],
+            "region_id": 2,
+            "surface_area": 27.51910885274215
+          },
+          {
+            "area_weighted_centroid": [
+              14.026057446482994,
+              -0.30161922884101716,
+              31.21718076288293
+            ],
+            "bounding_box_midpoint": [
+              14.295844078063965,
+              0.0,
+              30.99330711364746
+            ],
+            "bounding_box_volume": 107.9595499572007,
+            "bounds": [
+              [
+                12.081687927246094,
+                16.510000228881836
+              ],
+              [
+                -4.951100826263428,
+                4.951100826263428
+              ],
+              [
+                29.762298583984375,
+                32.22431564331055
+              ]
+            ],
+            "region_id": 3,
+            "surface_area": 26.4229488786185
+          },
+          {
+            "area_weighted_centroid": [
+              8.226447369666223,
+              0.2579951624703227,
+              25.975566394282257
+            ],
+            "bounding_box_midpoint": [
+              8.501530885696411,
+              0.0,
+              26.10058879852295
+            ],
+            "bounding_box_volume": 7.806348087718064,
+            "bounds": [
+              [
+                7.996142864227295,
+                9.006918907165527
+              ],
+              [
+                -4.083071231842041,
+                4.083071231842041
+              ],
+              [
+                25.627714157104492,
+                26.573463439941406
+              ]
+            ],
+            "region_id": 1,
+            "surface_area": 4.815816747255227
+          }
+        ],
+        "selected": {
+          "area_weighted_centroid": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "bounding_box_midpoint": [
+            8.296288665384054,
+            0.0,
+            29.823715209960938
+          ],
+          "bounding_box_volume": 2370.4843934947567,
+          "bounds": [
+            [
+              0.08257710188627243,
+              16.510000228881836
+            ],
+            [
+              -5.662140846252441,
+              5.662140846252441
+            ],
+            [
+              23.452430725097656,
+              36.19499969482422
+            ]
+          ],
+          "region_id": 0,
+          "surface_area": 260.78393901064567
+        },
+        "selected_by_bounding_box_volume": {
+          "area_weighted_centroid": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "bounding_box_midpoint": [
+            8.296288665384054,
+            0.0,
+            29.823715209960938
+          ],
+          "bounding_box_volume": 2370.4843934947567,
+          "bounds": [
+            [
+              0.08257710188627243,
+              16.510000228881836
+            ],
+            [
+              -5.662140846252441,
+              5.662140846252441
+            ],
+            [
+              23.452430725097656,
+              36.19499969482422
+            ]
+          ],
+          "region_id": 0,
+          "surface_area": 260.78393901064567
+        },
+        "selected_by_surface_area": {
+          "area_weighted_centroid": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "bounding_box_midpoint": [
+            8.296288665384054,
+            0.0,
+            29.823715209960938
+          ],
+          "bounding_box_volume": 2370.4843934947567,
+          "bounds": [
+            [
+              0.08257710188627243,
+              16.510000228881836
+            ],
+            [
+              -5.662140846252441,
+              5.662140846252441
+            ],
+            [
+              23.452430725097656,
+              36.19499969482422
+            ]
+          ],
+          "region_id": 0,
+          "surface_area": 260.78393901064567
+        }
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/materialization_combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface.json",
+        "sha256": "7d54cd8664dbcf7acd29b745a61739913b42719b25a62d14c20fb2de8e462441"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Combustor/combxyz.bin",
+            "sha256": "75e20a039c7bfc02d724ef18a411ef27cbf8977926d0f4b0208ca28817e1288f"
+          },
+          {
+            "path": "Combustor/combq.bin",
+            "sha256": "a59dfe6faa76d4bc1b82a718636742e1a7220d06da17bb1ee5ab815432f9baea"
+          }
+        ],
+        "reader": {
+          "format": "PLOT3D",
+          "canonical_reader": "vtkMultiBlockPLOT3DReader",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true
+          },
+          "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+          "variable_mappings": [
+            {
+              "output_name": "Density",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored density",
+              "raw_components": {
+                "density": "Q[0]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "Momentum",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored momentum",
+              "raw_components": {
+                "x": "Q[1]",
+                "y": "Q[2]",
+                "z": "Q[3]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "StagnationEnergy",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored energy",
+              "raw_components": {
+                "energy": "Q[4]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "VelocityMagnitude",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+            },
+            {
+              "output_name": "Velocity",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+            }
+          ],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": "largest_surface_area",
+            "comparator": null,
+            "component_selection_kind": "largest_surface_area",
+            "connectivity_kind": "polydata_connected",
+            "criterion_kind": "density_quantile",
+            "domain": "density_isosurface",
+            "measure_kind": "surface_area",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "area_weighted_centroid",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "42a44ba51a6b5f4627299634ad45830229fd267e95a662463dcf7f358d9767e9",
+          "executed_plan_sha256": "42a44ba51a6b5f4627299634ad45830229fd267e95a662463dcf7f358d9767e9",
+          "effective_o_sha256": "d0a5672556ad15b9d0123d7f663ffc6a9acc377f1322835e7dd6b7e891dfcde9"
+        }
+      },
+      "evidence_binding_sha256": "ee33cb52148e873d0ebc04ee574dee73570f9e2a62d3e2df5e745432bb8dc677"
+    },
+    "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box": {
+      "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+      "dataset_id": "Combustor",
+      "operationalization": {
+        "feature_definition": "Treat each connected constant-Density isosurface component as one candidate surface.",
+        "criterion": "Use the finite stored Density 90%-of-q90 level (0.373199880123) with linear quantile interpolation.",
+        "aggregation_or_representation": "Select the component with the largest axis-aligned bounding-box volume and represent it by the bounding-box midpoint and surface area."
+      },
+      "materialized_G_of_O": {
+        "component_selection": "largest_bounding_box_volume",
+        "level": 0.3731998801231384,
+        "location_representation": "bounding_box_midpoint",
+        "q90": 0.4146665334701538,
+        "quantile_method": "linear",
+        "regions": [
+          {
+            "area_weighted_centroid": [
+              5.858101895045389,
+              0.3510179990998257,
+              30.75925343076107
+            ],
+            "bounding_box_midpoint": [
+              8.319477893412113,
+              0.0,
+              29.834877014160156
+            ],
+            "bounding_box_volume": 2359.650852930874,
+            "bounds": [
+              [
+                0.12895555794239044,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.474754333496094,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 322.28122837044214
+          },
+          {
+            "area_weighted_centroid": [
+              9.782488491276741,
+              0.160738172664397,
+              28.54555446917769
+            ],
+            "bounding_box_midpoint": [
+              9.566202163696289,
+              0.0,
+              28.570652961730957
+            ],
+            "bounding_box_volume": 173.08795398316707,
+            "bounds": [
+              [
+                7.921128273010254,
+                11.211276054382324
+              ],
+              [
+                -4.347279071807861,
+                4.347279071807861
+              ],
+              [
+                25.54531478881836,
+                31.595991134643555
+              ]
+            ],
+            "region_id": 1,
+            "surface_area": 45.532127043699965
+          },
+          {
+            "area_weighted_centroid": [
+              14.038074748392285,
+              -0.23768577521296547,
+              31.27948730326193
+            ],
+            "bounding_box_midpoint": [
+              14.26109790802002,
+              0.0,
+              31.051517486572266
+            ],
+            "bounding_box_volume": 114.35373586862455,
+            "bounds": [
+              [
+                12.012195587158203,
+                16.510000228881836
+              ],
+              [
+                -4.972692012786865,
+                4.972692012786865
+              ],
+              [
+                29.773319244384766,
+                32.329715728759766
+              ]
+            ],
+            "region_id": 2,
+            "surface_area": 36.43779720880804
+          }
+        ],
+        "selected": {
+          "area_weighted_centroid": [
+            5.858101895045389,
+            0.3510179990998257,
+            30.75925343076107
+          ],
+          "bounding_box_midpoint": [
+            8.319477893412113,
+            0.0,
+            29.834877014160156
+          ],
+          "bounding_box_volume": 2359.650852930874,
+          "bounds": [
+            [
+              0.12895555794239044,
+              16.510000228881836
+            ],
+            [
+              -5.662140846252441,
+              5.662140846252441
+            ],
+            [
+              23.474754333496094,
+              36.19499969482422
+            ]
+          ],
+          "region_id": 0,
+          "surface_area": 322.28122837044214
+        },
+        "selected_by_bounding_box_volume": {
+          "area_weighted_centroid": [
+            5.858101895045389,
+            0.3510179990998257,
+            30.75925343076107
+          ],
+          "bounding_box_midpoint": [
+            8.319477893412113,
+            0.0,
+            29.834877014160156
+          ],
+          "bounding_box_volume": 2359.650852930874,
+          "bounds": [
+            [
+              0.12895555794239044,
+              16.510000228881836
+            ],
+            [
+              -5.662140846252441,
+              5.662140846252441
+            ],
+            [
+              23.474754333496094,
+              36.19499969482422
+            ]
+          ],
+          "region_id": 0,
+          "surface_area": 322.28122837044214
+        },
+        "selected_by_surface_area": {
+          "area_weighted_centroid": [
+            5.858101895045389,
+            0.3510179990998257,
+            30.75925343076107
+          ],
+          "bounding_box_midpoint": [
+            8.319477893412113,
+            0.0,
+            29.834877014160156
+          ],
+          "bounding_box_volume": 2359.650852930874,
+          "bounds": [
+            [
+              0.12895555794239044,
+              16.510000228881836
+            ],
+            [
+              -5.662140846252441,
+              5.662140846252441
+            ],
+            [
+              23.474754333496094,
+              36.19499969482422
+            ]
+          ],
+          "region_id": 0,
+          "surface_area": 322.28122837044214
+        }
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/materialization_combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box.json",
+        "sha256": "1ab3b28587948efbd4c7f0a4bd228b597df49a682ca44d1f868fdfaeb9ed9f2d"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Combustor/combxyz.bin",
+            "sha256": "75e20a039c7bfc02d724ef18a411ef27cbf8977926d0f4b0208ca28817e1288f"
+          },
+          {
+            "path": "Combustor/combq.bin",
+            "sha256": "a59dfe6faa76d4bc1b82a718636742e1a7220d06da17bb1ee5ab815432f9baea"
+          }
+        ],
+        "reader": {
+          "format": "PLOT3D",
+          "canonical_reader": "vtkMultiBlockPLOT3DReader",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true
+          },
+          "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+          "variable_mappings": [
+            {
+              "output_name": "Density",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored density",
+              "raw_components": {
+                "density": "Q[0]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "Momentum",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored momentum",
+              "raw_components": {
+                "x": "Q[1]",
+                "y": "Q[2]",
+                "z": "Q[3]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "StagnationEnergy",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored energy",
+              "raw_components": {
+                "energy": "Q[4]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "VelocityMagnitude",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+            },
+            {
+              "output_name": "Velocity",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+            }
+          ],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": "largest_bounding_box_volume",
+            "comparator": null,
+            "component_selection_kind": "largest_bounding_box_volume",
+            "connectivity_kind": "polydata_connected",
+            "criterion_kind": "density_q90_fraction",
+            "domain": "density_isosurface",
+            "measure_kind": "bounding_box_volume",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "bounding_box_midpoint",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "aa31f49bb64cdd8a96b7c2cca295e659bdbffaebd5406e421cbcf2fa4d82a981",
+          "executed_plan_sha256": "aa31f49bb64cdd8a96b7c2cca295e659bdbffaebd5406e421cbcf2fa4d82a981",
+          "effective_o_sha256": "3e37c03bd2b8fa274664768bd6d233fccc0d9c1b0f9ceb280453b0a1457708b7"
+        }
+      },
+      "evidence_binding_sha256": "8c326985ccd7eab1ac0b0bbc2311ebafa363a99f49b3eb7a228a111a2d856761"
+    }
+  },
+  "reference_materialization_evidence": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Combustor/combustor_density_level_set_surface_provisional_o3_f1/agent_ready_evidence.json",
+    "sha256": "4da9ae075c8fe52cd5d11ba2742170403cd46dd2dec321f9c39f7a7e178f4664"
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+    "dataset_id": "Combustor",
+    "policies": [
+      {
+        "finding_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box_density",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.3731998801231384,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box",
+        "policy_digest": "cdab9da9588af0d3643d2fcc437bbd05fb82b8d733d101a73cb3b07d31251603",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "combustor_density_level_set_surface_provisional",
+          "dataset_id": "Combustor",
+          "effective_o_semantic_sha256": "8168307053e390417627158193396df47aa1d98c8a7825836b4d1a9fd5149e1a",
+          "g_of_o_locator": "/level",
+          "representation": "quantity",
+          "scientific_role": "density",
+          "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+        },
+        "scientific_finding_policy_key": "0e37a8dc020f06184abb8e70e10d82b8617474fb1f6d18c036148480f14af453",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            8.319477893412113,
+            0.0,
+            29.834877014160156
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box",
+        "policy_digest": "952e919734c5ce4bc4355565051018bb99356615f626f5a37ec5edd864cf1f1f",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "combustor_density_level_set_surface_provisional",
+          "dataset_id": "Combustor",
+          "effective_o_semantic_sha256": "8168307053e390417627158193396df47aa1d98c8a7825836b4d1a9fd5149e1a",
+          "g_of_o_locator": "/selected/bounding_box_midpoint",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+        },
+        "scientific_finding_policy_key": "eb8da2c288afe88a733884f64980ca88e7323f5f449026efc6239f68cdee9cb7",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box_surface_area",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 322.28122837044214,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q81_bounding_box",
+        "policy_digest": "ab67e8fce1597d7fcbbb0b4c77b09277d22d15b1a206519976638bee62dbbce6",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "combustor_density_level_set_surface_provisional",
+          "dataset_id": "Combustor",
+          "effective_o_semantic_sha256": "8168307053e390417627158193396df47aa1d98c8a7825836b4d1a9fd5149e1a",
+          "g_of_o_locator": "/selected/surface_area",
+          "representation": "characterization",
+          "scientific_role": "surface_area",
+          "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+        },
+        "scientific_finding_policy_key": "39fe0b45a3db035e4146cd47028cba18ad100ed18c90cf597ce15434edd657b9",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.5,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface_density",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.4146665334701538,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface",
+        "policy_digest": "5a263dcd8d9486a20bc829f59795895453ebb3ca556164d7e0b6b35685825b23",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "combustor_density_level_set_surface_provisional",
+          "dataset_id": "Combustor",
+          "effective_o_semantic_sha256": "782435546958074d815fe24db9d1ee7e8ee9825c104f4859be31a3033ca1b1e3",
+          "g_of_o_locator": "/level",
+          "representation": "quantity",
+          "scientific_role": "density",
+          "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+        },
+        "scientific_finding_policy_key": "ff12774bb47add623739655b71c3be737d83f0a5d9244e0f18df1e1537c05077",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            5.186062674753928,
+            0.24928450765948698,
+            30.535099120275166
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface",
+        "policy_digest": "6df311c1efa7d51ed19fcd16be074d0158bd402d0121fb8a26a47e9f4022d954",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "combustor_density_level_set_surface_provisional",
+          "dataset_id": "Combustor",
+          "effective_o_semantic_sha256": "782435546958074d815fe24db9d1ee7e8ee9825c104f4859be31a3033ca1b1e3",
+          "g_of_o_locator": "/selected/area_weighted_centroid",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+        },
+        "scientific_finding_policy_key": "7b40bbb5787eecc6b0ea7966158ca387e928d8f8dd1d74d354be478469d7552f",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface_surface_area",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 260.78393901064567,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "combustor_density_level_set_surface_provisional_o3_f1_o3_q90_surface",
+        "policy_digest": "10aa2e2c72bb2d7f6069b759d7875ab34237aa254ffbfbb3ca0b1a8cb7656bcf",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "combustor_density_level_set_surface_provisional",
+          "dataset_id": "Combustor",
+          "effective_o_semantic_sha256": "782435546958074d815fe24db9d1ee7e8ee9825c104f4859be31a3033ca1b1e3",
+          "g_of_o_locator": "/selected/surface_area",
+          "representation": "characterization",
+          "scientific_role": "surface_area",
+          "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+        },
+        "scientific_finding_policy_key": "49a7606f219469bae59adf896d1055004788d4b67e49ba1fdbb8aeb843315af8",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.5,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "runtime_inference_from_python_type_forbidden": true,
+    "schema_version": "finding-verification-policy-v1",
+    "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+    "verification_policy_sha256": "ef4f06bc54c8c07d8c413ee09f86f38b4144c3dee5957e939a2dad565bdbb0b4"
+  }
+}

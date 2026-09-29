@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence items are supplied, so the numerical association coefficient cannot be independently verified from this review packet.",
+    "Units and coordinate-axis meanings are unspecified, although the question appropriately operates on the stored snapshot and scales."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful and answerable spatial-association task in the supplied compressible magnetohydrodynamic snapshot, faithfully names the target and complete-mesh scope, leaves aggregation or representation, feature definition, and property measure open through the requested procedure choice, and correctly requires the F1 numerical association coefficient. It adds no unsupported physical assertion or unnecessary protocol burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "aa5ffd9c6d57ed1273a743e6352d7cbdfa4643029bd89b425b1d3fa811d26b71",
+  "review_packet_sha256": "0e98d1ec0acde36de0aa0ee36e216b623a685d1154b6ac113b6da0035eee2837",
+  "reviewed_model_visible_text_sha256": "b8c4a36e81baaf95f57d983e6563852fff27df3b0dceb9f1c8980c688e949af6",
+  "reviewed_model_visible_text": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "mhd_density_magnetic_association_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "0e98d1ec0acde36de0aa0ee36e216b623a685d1154b6ac113b6da0035eee2837",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:27:11.168271+00:00",
+    "latency_seconds": 20.291976,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence items are supplied, so the numerical association coefficient cannot be independently verified from this review packet.\",\"Units and coordinate-axis meanings are unspecified, although the question appropriately operates on the stored snapshot and scales.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful and answerable spatial-association task in the supplied compressible magnetohydrodynamic snapshot, faithfully names the target and complete-mesh scope, leaves aggregation or representation, feature definition, and property measure open through the requested procedure choice, and correctly requires the F1 numerical association coefficient. It adds no unsupported physical assertion or unnecessary protocol burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence items are supplied, so the numerical association coefficient cannot be independently verified from this review packet.",
+        "Units and coordinate-axis meanings are unspecified, although the question appropriately operates on the stored snapshot and scales."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful and answerable spatial-association task in the supplied compressible magnetohydrodynamic snapshot, faithfully names the target and complete-mesh scope, leaves aggregation or representation, feature definition, and property measure open through the requested procedure choice, and correctly requires the F1 numerical association coefficient. It adds no unsupported physical assertion or unnecessary protocol burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0a43c88352b3cb51016aa6dcdbbea087d0a22f9a00ea988034": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1142,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1142,
+            "output_tokens": 0
+          },
+          "rs_0a43c88352b3cb51016aa6dcdc4a9c87d0aab98d4dcf3b94ff": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 466
+          },
+          "msg_0a43c88352b3cb51016aa6dce9923887d0b217abab288b464d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 212
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 212
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1758,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 678,
+      "output_tokens_details": {
+        "reasoning_tokens": 466
+      },
+      "total_tokens": 2436
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "aa5ffd9c6d57ed1273a743e6352d7cbdfa4643029bd89b425b1d3fa811d26b71",
+    "review_packet_sha256": "0e98d1ec0acde36de0aa0ee36e216b623a685d1154b6ac113b6da0035eee2837",
+    "reviewed_model_visible_text_sha256": "b8c4a36e81baaf95f57d983e6563852fff27df3b0dceb9f1c8980c688e949af6",
+    "reviewed_model_visible_text": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient."
+  }
+}

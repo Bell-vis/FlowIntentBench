@@ -1,0 +1,7 @@
+{
+  "case_id": "carotid_o3_f1",
+  "ground_truth_sha256": "637ca55950459d70ec5ecf3e94c6731823139ab016d3cb701a394e3893774d05",
+  "presentation_sha256": "4d199da83044d2e3ea52a837da1b1fb3cd36dc83c6eb6f99de786f30f332e130",
+  "scientific_evaluation_contract_sha256": "e8cb684607d9468fe768f543fa9e801aaf3e3479148aa9e9c3519d8a24e6de38",
+  "semantic_contract_sha256": "1225b5838181fd9490d98a7b82118488a9b793f0a741ca2ac16d7fa3ce53c4d7"
+}

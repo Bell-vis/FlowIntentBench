@@ -1,0 +1,53 @@
+{
+  "family_id": "aideas_pressure_heterogeneity",
+  "inputs": [
+    {
+      "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+      "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+    }
+  ],
+  "operations": {
+    "cv": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "dispersion",
+        "field": {
+          "name": "Pressure [bar]",
+          "association": "cell"
+        },
+        "measure": "cv"
+      }
+    },
+    "relative_interdecile": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "dispersion",
+        "field": {
+          "name": "Pressure [bar]",
+          "association": "cell"
+        },
+        "measure": "relative_interdecile"
+      }
+    }
+  },
+  "definition_sha256": "eed008b98b8399c538c606fbdafa365c0270c963b895fe3335bec5485b1c3b28",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "cv": {
+      "value": 0.45476666321227
+    },
+    "relative_interdecile": {
+      "value": 1.0335646250646
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "The evidence context is empty, so no empirical association strength or numerical coefficient can be independently assessed from the supplied payload."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question faithfully states the single-channel blow-mold simulation, the complete supplied three-dimensional mesh, and the target association between stored viscosity and shear-rate-magnitude fields. It appropriately leaves aggregation or representation, feature definition, and property measure open while asking the respondent to choose and explain an analysis procedure. The required F1 numerical association coefficient is explicitly requested, with no unsupported physical assertion or unnecessary protocol burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "a8381334a069cbaa01d747231e51a670bf9da7adbfff7abceaca154698879ca0",
+  "review_packet_sha256": "59fd9791294a0e3214dfec973df589adf0975b91c7e55f7b92b90087ee62ad4e",
+  "reviewed_model_visible_text_sha256": "fd7604f526127e666db365f8d5fd729b2075e35304b5562b6ae66b5eb3f1eb94",
+  "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "aideas_viscosity_shear_association_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "59fd9791294a0e3214dfec973df589adf0975b91c7e55f7b92b90087ee62ad4e",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:38:22.203669+00:00",
+    "latency_seconds": 19.260617,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"The evidence context is empty, so no empirical association strength or numerical coefficient can be independently assessed from the supplied payload.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question faithfully states the single-channel blow-mold simulation, the complete supplied three-dimensional mesh, and the target association between stored viscosity and shear-rate-magnitude fields. It appropriately leaves aggregation or representation, feature definition, and property measure open while asking the respondent to choose and explain an analysis procedure. The required F1 numerical association coefficient is explicitly requested, with no unsupported physical assertion or unnecessary protocol burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "The evidence context is empty, so no empirical association strength or numerical coefficient can be independently assessed from the supplied payload."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question faithfully states the single-channel blow-mold simulation, the complete supplied three-dimensional mesh, and the target association between stored viscosity and shear-rate-magnitude fields. It appropriately leaves aggregation or representation, feature definition, and property measure open while asking the respondent to choose and explain an analysis procedure. The required F1 numerical association coefficient is explicitly requested, with no unsupported physical assertion or unnecessary protocol burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0234fc6163a99405016aa6df7becac87d190a8efd1198d0d6b": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1174,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1174,
+            "output_tokens": 0
+          },
+          "rs_0234fc6163a99405016aa6df7c95ec87d19a1ad433c8bc23b1": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_0234fc6163a99405016aa6df8a377487d1942758fa0bc0b149": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 202
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 202
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1790,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 718,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2508
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "a8381334a069cbaa01d747231e51a670bf9da7adbfff7abceaca154698879ca0",
+    "review_packet_sha256": "59fd9791294a0e3214dfec973df589adf0975b91c7e55f7b92b90087ee62ad4e",
+    "reviewed_model_visible_text_sha256": "fd7604f526127e666db365f8d5fd729b2075e35304b5562b6ae66b5eb3f1eb94",
+    "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient."
+  }
+}

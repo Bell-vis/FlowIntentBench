@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the office’s ventilation flow, choose an appropriate representation or aggregation of ventilation regions, define the region feature being evaluated, select the criterion for identifying the strongest region and the measure of its strength, then report the strongest region’s location and strength in the velocity field.",
+  "semantic_contract_sha256": "4ef16026078d9659dfa5d890a704295ba023d8ca031180b47220f8b0c2fb7b78",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

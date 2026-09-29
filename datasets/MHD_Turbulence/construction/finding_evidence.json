@@ -1,0 +1,26 @@
+[
+  {
+    "evidence_id": "finding_mhd_density_magnetic_association",
+    "dataset_id": "MHD_Turbulence",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"pearson\": {\"value\": -0.698321315046618}, \"spearman\": {\"value\": -0.7030252688024401}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_mhd_velocity_magnetic_alignment",
+    "dataset_id": "MHD_Turbulence",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"mean_cosine\": {\"value\": 0.0035234276525179364}, \"normalized_dot\": {\"value\": 0.012986694902146581}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

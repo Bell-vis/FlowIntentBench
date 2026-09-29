@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Determine which high-speed region is strongest in the carotid artery flow. Calculate speed from the Euclidean magnitude of velocity and combine face-connected qualifying locations into contiguous regions whose locations are summarized by the mean position of their retained points. Select and state a scientifically defensible high-speed criterion and a regional strength measure, then report the strongest region’s location and strength under those choices.",
+  "semantic_contract_sha256": "e69c50e3e63b5ef434b1625290c2bc9c52e9f783be5302c7a7091166ad1fb75b",
+  "source": "FlowIntentBench_userstudy/datasets/Carotid/questions/carotid_o2_f1.json",
+  "wording_version": "1.2.1"
+}

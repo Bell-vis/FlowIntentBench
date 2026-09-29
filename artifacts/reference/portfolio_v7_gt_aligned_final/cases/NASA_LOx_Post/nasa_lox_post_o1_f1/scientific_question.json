@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the LOx-post flow field, identify the strongest high-speed flow region by defining high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed in the stored velocity scale, with locations connected through immediate grid neighbors along one grid axis forming one contiguous region. Represent that region by the mean spatial location of its retained high-speed locations, use peak speed as its strength measure, and report both its location and strength.",
+  "semantic_contract_sha256": "55bc95f73cf6021eccb52eb2d6e3871eb1c8327027a3cb67d263ca62626f3164",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

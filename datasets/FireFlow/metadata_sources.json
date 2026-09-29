@@ -1,0 +1,36 @@
+{
+  "dataset_id": "FireFlow",
+  "sources": [
+    {
+      "url": "local://canonical-reader",
+      "supports": [
+        "format.type",
+        "grid.type",
+        "grid.dimensions",
+        "grid.origin",
+        "grid.spacing",
+        "variables[].name",
+        "variables[].type",
+        "variables[].components",
+        "variables[].association"
+      ],
+      "notes": "Extracted from the local file using the canonical VTK reader; null means not explicitly provided."
+    },
+    {
+      "url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/FireFlow/",
+      "supports": [
+        "format.type",
+        "grid.type"
+      ],
+      "notes": "The example identifies fire_ug.vtu as the XML unstructured-grid solution read by VTK."
+    },
+    {
+      "url": "https://docs.enthought.com/mayavi/mayavi/example_fire.html",
+      "supports": [
+        "format.type",
+        "grid.type"
+      ],
+      "notes": "The source identifies fire_ug.vtu as an unstructured-grid VTK XML file; array physical semantics remain null when not explicit."
+    }
+  ]
+}

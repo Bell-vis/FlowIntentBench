@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context or geometry and coordinate metadata are supplied, so numerical results and coordinate interpretation cannot be independently verified; the task remains answerable from the stored field."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The wording faithfully states the reconstructed-pressure target and finite-vertex cell scope. It exposes all fixed operationalization requirements, including cell and vertex value handling, volume weighting and normalization, and the requested centroid and mean. The remaining quantitative definition is explicitly left for the respondent to choose and explain, without introducing an additional operationalization responsibility. The F1 finding requirements are directly requested, and the task is scientifically meaningful and answerable in principle without unsupported physical assertions or unnecessary protocol burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "4cfedbcede55bad4b271105306b33f80b11b8bcff617a816669d27eb1aad00f1",
+  "review_packet_sha256": "17f95c4ac49c686366b01bbd922fbf5fc93a67a53dca020dd90e2b49fc35b48f",
+  "reviewed_model_visible_text_sha256": "09c40418990e22cac79e39efbb09582f8f9fe75e8938f7e2eecaede698167cca",
+  "reviewed_model_visible_text": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "double_fin_high_pressure_region_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "17f95c4ac49c686366b01bbd922fbf5fc93a67a53dca020dd90e2b49fc35b48f",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:28:12.034809+00:00",
+    "latency_seconds": 37.257727,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context or geometry and coordinate metadata are supplied, so numerical results and coordinate interpretation cannot be independently verified; the task remains answerable from the stored field.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The wording faithfully states the reconstructed-pressure target and finite-vertex cell scope. It exposes all fixed operationalization requirements, including cell and vertex value handling, volume weighting and normalization, and the requested centroid and mean. The remaining quantitative definition is explicitly left for the respondent to choose and explain, without introducing an additional operationalization responsibility. The F1 finding requirements are directly requested, and the task is scientifically meaningful and answerable in principle without unsupported physical assertions or unnecessary protocol burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context or geometry and coordinate metadata are supplied, so numerical results and coordinate interpretation cannot be independently verified; the task remains answerable from the stored field."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The wording faithfully states the reconstructed-pressure target and finite-vertex cell scope. It exposes all fixed operationalization requirements, including cell and vertex value handling, volume weighting and normalization, and the requested centroid and mean. The remaining quantitative definition is explicitly left for the respondent to choose and explain, without introducing an additional operationalization responsibility. The F1 finding requirements are directly requested, and the task is scientifically meaningful and answerable in principle without unsupported physical assertions or unnecessary protocol burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0d5d09bb7559e167016aa6dd07d29087d0a442f41674511f3e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1308,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1308,
+            "output_tokens": 0
+          },
+          "rs_0d5d09bb7559e167016aa6dd08b71087d088a972c78bbe7887": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0d5d09bb7559e167016aa6dd1aa95c87d0a72e67f1fb33545c": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 373
+          },
+          "msg_0d5d09bb7559e167016aa6dd261f4087d08bda16969c6dae0c": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 225
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 225
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1924,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1114,
+      "output_tokens_details": {
+        "reasoning_tokens": 889
+      },
+      "total_tokens": 3038
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "4cfedbcede55bad4b271105306b33f80b11b8bcff617a816669d27eb1aad00f1",
+    "review_packet_sha256": "17f95c4ac49c686366b01bbd922fbf5fc93a67a53dca020dd90e2b49fc35b48f",
+    "reviewed_model_visible_text_sha256": "09c40418990e22cac79e39efbb09582f8f9fe75e8938f7e2eecaede698167cca",
+    "reviewed_model_visible_text": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region."
+  }
+}

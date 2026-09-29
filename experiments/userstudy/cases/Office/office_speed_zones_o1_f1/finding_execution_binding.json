@@ -1,0 +1,70 @@
+{
+  "branches": [
+    {
+      "branch_id": "o1_speed_zones",
+      "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+      "effective_o_sha256": "681c67a4c8ad7931c146a5c820f79eedb4fc8e770da064783b7d64f8f24c386f",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "execution_value_sha256": "7d448f23aec49cbdafb6fb34d0458730b35ab45b41424fb63a634f4af2f2827e",
+          "finding_id": "o1_speed_zones_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "scientific_finding_policy_key": "5a61a5b05c599bc4ec3b87617d0fb76c203d5efeefe0191aa32aeaa1e5a7bb01",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "d6f032eda0c0554021114ca7518429b25fbb43e81eab8b61a7f5269c83a7feaa"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.8049350186348156,
+          "execution_value_sha256": "78a2bcca77a6d04b059893307a061cbd902a04de7fcf1f2b13292a999ca93f89",
+          "finding_id": "o1_speed_zones_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 0.8049350186348156,
+          "scientific_finding_policy_key": "01afcfebea54cc22db9a45f37e7ffe00f0be64a8ccffbc765ff8169d4c8654b5",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "697172e972b211d50825d6e906770dd8622012632b955cd404fe2fe23008e10a"
+        }
+      ],
+      "g_of_o_sha256": "587cff8bfd7eae30ac8c3144e4fafdaf0ebb121025a2586259ee2501402d406d",
+      "materialization_id": "mat:o1_speed_zones",
+      "operationalization_id": "o1_speed_zones"
+    }
+  ],
+  "case_id": "office_speed_zones_o1_f1",
+  "dataset_id": "Office",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "de4ce7695f5ce44d4573841347fcf7f886ea8d98ebd8bec0a0f8dd99ac5b3110"
+}

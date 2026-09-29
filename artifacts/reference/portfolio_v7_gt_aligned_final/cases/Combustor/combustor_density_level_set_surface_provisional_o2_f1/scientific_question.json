@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the annular-combustor flow field, identify one relevant coherent constant-density spatial structure. Treat each connected constant-Density isosurface component as a candidate, choose and state a relevant criterion for selecting one candidate, and represent the selected surface by its area-weighted centroid and surface area. Report the centroid location, defining density value, and surface area.",
+  "semantic_contract_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

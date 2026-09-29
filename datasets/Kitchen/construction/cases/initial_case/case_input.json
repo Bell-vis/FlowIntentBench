@@ -1,0 +1,247 @@
+{
+  "scientific_question": "How can streamlines be used to inspect the airflow field in the kitchen dataset?",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Kitchen/kitchen.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTK",
+        "details": {}
+      },
+      "grid": {
+        "type": "structured",
+        "dimensions": [
+          28,
+          24,
+          17
+        ],
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "p1",
+          "physical_quantity": "pressure",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "u1",
+          "physical_quantity": "velocity component",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "v1",
+          "physical_quantity": "velocity component",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "w1",
+          "physical_quantity": "velocity component",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "ke",
+          "physical_quantity": "turbulent kinetic energy",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "ep",
+          "physical_quantity": "turbulent dissipation rate",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "h1",
+          "physical_quantity": "enthalpy",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c1",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c11",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c12",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c13",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c14",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c15",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c16",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "c17",
+          "physical_quantity": "gas concentration",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "hpor",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "npor",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "epor",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "vpor",
+          "physical_quantity": null,
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "Airflow in a small kitchen",
+    "objects": [
+      {
+        "name": "door",
+        "description": "A door with air leakage in the described scene."
+      },
+      {
+        "name": "hot_stove",
+        "description": "The hot stove in the cooking area."
+      },
+      {
+        "name": "kitchen",
+        "description": "The small kitchen represented by the structured flow dataset."
+      },
+      {
+        "name": "windows",
+        "description": "Two windows described in the kitchen scene."
+      }
+    ],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

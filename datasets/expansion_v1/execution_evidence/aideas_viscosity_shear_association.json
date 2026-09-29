@@ -1,0 +1,61 @@
+{
+  "family_id": "aideas_viscosity_shear_association",
+  "inputs": [
+    {
+      "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+      "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+    }
+  ],
+  "operations": {
+    "pearson": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "association",
+        "field": {
+          "name": "Viscosity [Pa s]",
+          "association": "point"
+        },
+        "measure": "pearson",
+        "other_field": {
+          "name": "NormShearRate [1/s]",
+          "association": "point"
+        }
+      }
+    },
+    "spearman": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "association",
+        "field": {
+          "name": "Viscosity [Pa s]",
+          "association": "point"
+        },
+        "measure": "spearman",
+        "other_field": {
+          "name": "NormShearRate [1/s]",
+          "association": "point"
+        }
+      }
+    }
+  },
+  "definition_sha256": "2e7cb5a303a4b2c0c4a13b679613b5450ccd048ac67e27a9afd368bcdf259543",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "pearson": {
+      "value": -0.80420676217054
+    },
+    "spearman": {
+      "value": -0.98514646828256
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

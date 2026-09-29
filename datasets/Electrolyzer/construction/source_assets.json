@@ -1,0 +1,14 @@
+{
+  "record_url": "https://zenodo.org/records/14935434",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "assets": [
+    {
+      "path": "raw/Readme.txt",
+      "url": "https://zenodo.org/api/records/14935434/files/Readme.txt/content",
+      "checksum": "md5:2e890f056f342e89dac921c564519aa5",
+      "size_bytes": 1320
+    }
+  ]
+}

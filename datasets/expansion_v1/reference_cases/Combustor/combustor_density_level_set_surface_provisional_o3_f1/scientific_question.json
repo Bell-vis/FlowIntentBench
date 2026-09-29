@@ -1,0 +1,7 @@
+{
+  "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+  "source_question_sha256": "0526327d461459076b8de4373bcfa0e7714a593eac6b65a16da427ec302bb0c0",
+  "scientific_question": "Within the annular-combustor flow field, identify and characterize one connected constant-Density isosurface component. Choose and explain how the components are formed, a finite stored-Density isovalue rule, a rule for selecting one component, and how to represent its location. Report the selected component’s representative location, defining density value, and surface area.",
+  "semantic_projection_sha256": "2fdefd16b62982ab9fb08544fffd24e452c14bc994686f674f13a1cca83d551c",
+  "reason": "Expose the frozen isovalue-selection responsibility and explicitly retain surface area as the bounded finding."
+}

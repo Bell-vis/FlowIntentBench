@@ -1,0 +1,306 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "radiative_density_heterogeneity_o3_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "radiative_density_heterogeneity_o3_f1",
+    "family_id": "radiative_density_heterogeneity",
+    "dataset_id": "Radiative_Mixing_Layer",
+    "condition": "O3-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/Radiative_Mixing_Layer/radiative_density_heterogeneity_o3_f1/case_input.json",
+    "case_input_sha256": "8c97547c0d285cb80b3a0cfd45f369b1c9fc1d649ae8fca6bd36f4bb0c0bf02b",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/Radiative_Mixing_Layer/radiative_density_heterogeneity_o3_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "35072d1cc7ef50a3e851b185928640b50da0d1e6be0a679d714365b9870e65a2",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/Radiative_Mixing_Layer/radiative_density_heterogeneity_o3_f1/case_context.json",
+    "case_context_sha256": "ac2027f03a747d1f3cacfad678da4e8dd36af312f36b93360334104f3d943953",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/Radiative_Mixing_Layer/radiative_density_heterogeneity_o3_f1/ground_truth.json",
+    "ground_truth_sha256": "4b470a9015699705b225eaeced6a645be35ba8850052544b0a6f16454b3ae467"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "radiative_density_heterogeneity",
+    "title": "the spatial nonuniformity of density",
+    "scientific_target": "the spatial nonuniformity of density",
+    "finding_goal": "Characterize the spatial nonuniformity of density",
+    "scope": "the supplied turbulent radiative mixing-layer snapshot",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical coefficient.",
+      "o2_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+      "o3_f1": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+      "o1_f2": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "coefficient",
+        "result_key": "value",
+        "request_phrase": "the numerical coefficient",
+        "requirement_statement": "report the numerical coefficient",
+        "category": "quantity",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "cv": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "cv"
+        }
+      },
+      "relative_interdecile": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "relative_interdecile"
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_radiative_density_heterogeneity"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "spatial_distribution",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "spatial_distribution",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "coefficient"
+        ]
+      ],
+      "role_by_category": {
+        "quantity": "coefficient"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/Radiative_Mixing_Layer/construction/families.json",
+    "sha256": "9a6234853d8afa094f0f0c5471d96835be3820892bd27299836493258c767982"
+  },
+  "branch_execution_evidence": {
+    "radiative_density_heterogeneity_o3_f1_cv": {
+      "case_id": "radiative_density_heterogeneity_o3_f1",
+      "dataset_id": "Radiative_Mixing_Layer",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 0.93588681596686
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/radiative_density_heterogeneity.json",
+        "sha256": "4d14107d6e2d5842e08887f365989b8c4eb9b7daec991412f8c8e00f58f04c85"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "bf5d74f5ef2b62100763502fc77450a69646bb6d4d01d6c49ec15e570f781913",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Radiative_Mixing_Layer/snapshot.vtk",
+            "sha256": "bc79c68afb14eeb642a568697cc032b40df1f09c5a8e7a5bc92409ab7fee1d55"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "cv"
+        },
+        "definition_sha256": "ce78fee17ab85f7a684f73e0f07376489b852fdb2c87840cc1e3c329976b1add",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "dcc9c41d21bc89eb4a4f84664667dbdb6c0868cf8b4536469246f361ca94d817"
+    },
+    "radiative_density_heterogeneity_o3_f1_relative_interdecile": {
+      "case_id": "radiative_density_heterogeneity_o3_f1",
+      "dataset_id": "Radiative_Mixing_Layer",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 1.0219807614004
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/radiative_density_heterogeneity.json",
+        "sha256": "4d14107d6e2d5842e08887f365989b8c4eb9b7daec991412f8c8e00f58f04c85"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "bf5d74f5ef2b62100763502fc77450a69646bb6d4d01d6c49ec15e570f781913",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Radiative_Mixing_Layer/snapshot.vtk",
+            "sha256": "bc79c68afb14eeb642a568697cc032b40df1f09c5a8e7a5bc92409ab7fee1d55"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "relative_interdecile"
+        },
+        "definition_sha256": "ce78fee17ab85f7a684f73e0f07376489b852fdb2c87840cc1e3c329976b1add",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "a655657b69ab4ef94119234023cdf8d06cd03ef501f90cebdccb4416ef56e8e4"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "Radiative_Mixing_Layer",
+    "case_id": "radiative_density_heterogeneity_o3_f1",
+    "semantic_contract_sha256": "0f9806becc3b38794bcbdd7da5fe41113964145112144653787c43172d2ae81e",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "radiative_density_heterogeneity_o3_f1_cv",
+        "finding_id": "radiative_density_heterogeneity_o3_f1_cv_coefficient",
+        "scientific_finding_policy_key": "a0f8ac646a87d398c62839390a046e63a8c705c83091f4082e8bdfe25bcc1217",
+        "policy_identity": {
+          "dataset_id": "Radiative_Mixing_Layer",
+          "case_family_id": "radiative_density_heterogeneity",
+          "scientific_target": "the spatial nonuniformity of density",
+          "effective_o_semantic_sha256": "9103bd466662e2f14f6eda18574480cd9339a47d5894c3b229d1fad81730e390",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/value",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.93588681596686,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "4531662286edf9362455aceb08ac1e88f04c3de0b311f31ddf9b82a1587285d5"
+      },
+      {
+        "operationalization_id": "radiative_density_heterogeneity_o3_f1_relative_interdecile",
+        "finding_id": "radiative_density_heterogeneity_o3_f1_relative_interdecile_coefficient",
+        "scientific_finding_policy_key": "e1b30bbdb8a27b45e7134f0ea7f5d9adf5b547d5880d0a90a1cd8b29862afb48",
+        "policy_identity": {
+          "dataset_id": "Radiative_Mixing_Layer",
+          "case_family_id": "radiative_density_heterogeneity",
+          "scientific_target": "the spatial nonuniformity of density",
+          "effective_o_semantic_sha256": "09a600d865467a973e27578dd1b4501e7ab4b7032443c1eafae889a5130e4f2b",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/value",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0219807614004,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "48302635b2af70134bc6ae88ceb2f7fe80c56626b68cc90fc619fb865782c6a8"
+      }
+    ],
+    "verification_policy_sha256": "4f8f86a9829ba1069b3535621ca5844ac2af088a6bb88b369c6a65d58921f785"
+  }
+}

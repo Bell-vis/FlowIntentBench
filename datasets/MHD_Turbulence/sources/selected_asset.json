@@ -1,0 +1,14 @@
+{
+  "url": "https://huggingface.co/datasets/polymathic-ai/MHD_64/resolve/ede5ad0479ede939d5b0cc616e45fd9d3cbcb245/data/test/MHD_Ma_0.7_Ms_0.5.hdf5?download=true",
+  "type": "file",
+  "oid": "b33cbfc91aa1d3f4a3502c5814ffbb8e51ccfd1b",
+  "size": 734041296,
+  "lfs": {
+    "oid": "4a67d6a00cd0450304575c3ff1b5dc89413d9600f79d37e1ed930bee1f621a72",
+    "size": 734041296,
+    "pointerSize": 134
+  },
+  "xetHash": "baa1e1ea9b5f4318b8e0296eda526df995e14cc3056451bb942a9980bebbec18",
+  "path": "data/test/MHD_Ma_0.7_Ms_0.5.hdf5",
+  "revision": "ede5ad0479ede939d5b0cc616e45fd9d3cbcb245"
+}

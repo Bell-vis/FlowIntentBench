@@ -1,0 +1,7 @@
+{
+  "case_id": "mhd_velocity_magnetic_alignment_o1_f1",
+  "dataset_id": "MHD_Turbulence",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

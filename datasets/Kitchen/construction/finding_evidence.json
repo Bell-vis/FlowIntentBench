@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "Kitchen",
+    "evidence_type": "finding",
+    "statement": "The Kitchen evidence supports reporting the selected concentration-field identity and a scientifically meaningful heterogeneity or distributional characterization; exact benchmark values come from execution.",
+    "source_id": "src_003",
+    "locator": {"section": "mixture characteristics", "page": null, "figure": null, "code_location": null},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

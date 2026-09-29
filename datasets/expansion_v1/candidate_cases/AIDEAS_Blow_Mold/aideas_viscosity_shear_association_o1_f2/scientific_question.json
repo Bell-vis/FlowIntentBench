@@ -1,0 +1,9 @@
+{
+  "scientific_question": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select and explain findings that characterize this scientific target.",
+  "f1_required_properties": [],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+    "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+    "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+  }
+}

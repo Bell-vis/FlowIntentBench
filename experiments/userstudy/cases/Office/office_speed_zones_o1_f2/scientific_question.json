@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Investigate high-speed ventilation in the office by retaining velocity-magnitude values above 0.20 in the stored scale and grouping face-connected retained locations into individual regions. Select the strongest region using peak speed and locate it by the mean spatial position of its retained locations. Report the principal scientifically relevant findings supported by the analysis, including evidence for the selected region’s strength and location and at least one additional characterization of your choice.",
+  "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+  "source": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o1_f2.json",
+  "wording_version": "1.2.1"
+}

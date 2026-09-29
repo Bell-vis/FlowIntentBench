@@ -1,0 +1,3 @@
+{
+  "scientific_question": "Which high-speed flow region is strongest in the annular-combustor flow field, and where is it located? For this analysis, define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale, treat locations connected through shared grid faces as one contiguous region, use peak speed as the measure of strength, and represent the strongest region by the mean spatial location of its retained high-speed locations. Identify the strongest region and report its location and strength."
+}

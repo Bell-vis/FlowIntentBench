@@ -1,0 +1,673 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+  "claims": [
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_004"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_005"
+      ],
+      "statement": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field"
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_004"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_005"
+      ],
+      "statement": "compare fields by cell-volume-weighted coefficient of variation, forming each cell concentration as the arithmetic mean of its vertex values and weighting positive-volume cells by cell volume"
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_004"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_005"
+      ],
+      "statement": "represent the selected result by its stored field identifier"
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c1."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c1",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c1, the cell-volume-weighted coefficient of variation is approximately 0.3094249694."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c1",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c1, the cell-volume-weighted standard deviation is approximately 0.02481811043."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c1",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c1, the cell-volume-weighted q10 is approximately 0.05404793642."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c1",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c1, the cell-volume-weighted q50 is approximately 0.08112780997."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c1",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c1, the cell-volume-weighted q90 is approximately 0.1098173135."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c11."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c11",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c11, the cell-volume-weighted coefficient of variation is approximately 0.1441801707."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c11",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c11, the cell-volume-weighted standard deviation is approximately 0.1380468529."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c11",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c11, the cell-volume-weighted q10 is approximately 0.8970167939."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c11",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c11, the cell-volume-weighted q50 is approximately 1."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c11",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c11, the cell-volume-weighted q90 is approximately 1."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c12."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c12",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c12, the cell-volume-weighted coefficient of variation is approximately 57.26614105."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c12",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c12, the cell-volume-weighted standard deviation is approximately 8901.245888."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c12",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c12, the cell-volume-weighted q10 is approximately 1.000125051."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c12",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c12, the cell-volume-weighted q50 is approximately 1.000125051."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c12",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c12, the cell-volume-weighted q90 is approximately 1.000217755."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c13."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c13",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c13, the cell-volume-weighted coefficient of variation is approximately 2.021905399."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c13",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c13, the cell-volume-weighted standard deviation is approximately 0.2800884011."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c13",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c13, the cell-volume-weighted q10 is approximately 0."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c13",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c13, the cell-volume-weighted q50 is approximately 0."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c13",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c13, the cell-volume-weighted q90 is approximately 0.5."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c14."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c14",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c14, the cell-volume-weighted coefficient of variation is approximately 5.034212067."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c14",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c14, the cell-volume-weighted standard deviation is approximately 342.7577111."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c14",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c14, the cell-volume-weighted q10 is approximately 7.249532635e-13."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c14",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c14, the cell-volume-weighted q50 is approximately 1.865819739e-12."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c14",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c14, the cell-volume-weighted q90 is approximately 84.45470597."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c15."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c15",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c15, the cell-volume-weighted coefficient of variation is approximately 0.7599092951."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c15",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c15, the cell-volume-weighted standard deviation is approximately 0.02691717016."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c15",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c15, the cell-volume-weighted q10 is approximately 0.01201627155."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c15",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c15, the cell-volume-weighted q50 is approximately 0.02926954662."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c15",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c15, the cell-volume-weighted q90 is approximately 0.06398482271."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c16."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c16",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c16, the cell-volume-weighted coefficient of variation is approximately 3.384821619."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c16",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c16, the cell-volume-weighted standard deviation is approximately 24.28898008."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c16",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c16, the cell-volume-weighted q10 is approximately 0.02514384571."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c16",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c16, the cell-volume-weighted q50 is approximately 0.02827999927."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c16",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c16, the cell-volume-weighted q90 is approximately 21.41007797."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "The selected gas-concentration field is c17."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c17",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c17, the cell-volume-weighted coefficient of variation is approximately 2.304656327."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c17",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c17, the cell-volume-weighted standard deviation is approximately 2.072499635."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c17",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c17, the cell-volume-weighted q10 is approximately 0."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c17",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c17, the cell-volume-weighted q50 is approximately 0."
+    },
+    {
+      "claim_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation:F:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c17",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_003"
+      ],
+      "statement": "For gas-concentration field c17, the cell-volume-weighted q90 is approximately 3.042881495."
+    }
+  ],
+  "dataset_id": "Kitchen",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

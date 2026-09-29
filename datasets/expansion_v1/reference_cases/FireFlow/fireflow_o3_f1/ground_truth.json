@@ -1,0 +1,269 @@
+{
+  "dataset_id": "FireFlow",
+  "case_id": "fireflow_o3_f1",
+  "case_family_id": "fireflow__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Mesh-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q90_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Mesh-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q75_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Mesh-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 75th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak_point",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Mesh-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the spatial location of its peak-speed location."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak",
+      "findings": [
+        {
+          "finding_id": "fireflow_o3_f1_o3_q90_peak_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [0.5113998996219967, 1.975870378012814, 0.48199224898616855] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o3_f1_o3_q90_peak_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.8223132 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.822313175748469,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q90_mean",
+      "findings": [
+        {
+          "finding_id": "fireflow_o3_f1_o3_q90_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [0.5113998996219967, 1.975870378012814, 0.48199224898616855] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o3_f1_o3_q90_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 1.6380479 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.6380479260626384,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q75_mean",
+      "findings": [
+        {
+          "finding_id": "fireflow_o3_f1_o3_q75_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [2.417761593795914, 1.6560045202195897, 1.0163907527207787] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            2.417761593795914,
+            1.6560045202195897,
+            1.0163907527207787
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o3_f1_o3_q75_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 1.0174866 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.0174865547746001,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak_point",
+      "findings": [
+        {
+          "finding_id": "fireflow_o3_f1_o3_q90_peak_point_location",
+          "category": "location",
+          "statement": "The selected strongest region has a peak spatial location approximately [0.19999998807907104, 1.428571343421936, 0.19999998807907104] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.19999998807907104,
+            1.428571343421936,
+            0.19999998807907104
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o3_f1_o3_q90_peak_point_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.8223132 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.822313175748469,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

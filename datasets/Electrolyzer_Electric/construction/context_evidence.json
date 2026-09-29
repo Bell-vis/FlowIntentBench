@@ -1,0 +1,21 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Electrolyzer_Electric",
+    "evidence_type": "context",
+    "statement": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. Current-density components jx, jy and jz are combined on their own electrical mesh; the flow mesh is distinct.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Dataset description and inspected field arrays"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "physical_setting",
+        "field": "physical_setting",
+        "value": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. Current-density components jx, jy and jz are combined on their own electrical mesh; the flow mesh is distinct.",
+        "review_status": "approved"
+      }
+    ]
+  }
+]

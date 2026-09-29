@@ -1,0 +1,9 @@
+{
+  "physical_setting": "the supplied compressible magnetohydrodynamic turbulence snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces.",
+  "objects": [],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

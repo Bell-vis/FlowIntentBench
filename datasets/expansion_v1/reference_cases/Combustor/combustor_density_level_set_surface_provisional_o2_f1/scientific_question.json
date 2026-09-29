@@ -1,0 +1,7 @@
+{
+  "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+  "source_question_sha256": "b2453d210a1ac56cb7c993f5ceb934b596369808f3dafae81ad4ad6abb5f2803",
+  "scientific_question": "In the annular-combustor flow field, treat each connected component of a constant-Density isosurface as one candidate surface. Choose and state a finite stored-Density isovalue rule. At that level, select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area. Report the centroid location, defining density value, and surface area.",
+  "semantic_projection_sha256": "59b7fc3e5a1797c48447d6c05ff8cf8a0384a27ffba1acc7c3a4418647b52f9d",
+  "reason": "Expose the frozen isovalue-selection responsibility and explicitly retain surface area as the bounded finding."
+}

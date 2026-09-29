@@ -1,0 +1,127 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "fireflow_o1_f2",
+  "claims": [
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "treat retained points that share an unstructured-mesh cell as one connected speed region"
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation"
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "use peak speed as the measure of strength"
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:F:fireflow_o1_f2_o1_high_speed_regions_open_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [0.5113998996219967, 1.975870378012814, 0.48199224898616855] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:F:fireflow_o1_f2_o1_high_speed_regions_open_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has peak speed strength approximately 3.8223132 in the stored velocity scale."
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:F:fireflow_o1_f2_o1_high_speed_regions_open_extent",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected region has coordinate-space extent approximately [2.6875, 2.225000023841858, 2.0799999237060547] along the dataset axes."
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:F:fireflow_o1_f2_o1_high_speed_regions_open_retained_points",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected region contains 517 retained locations."
+    },
+    {
+      "claim_id": "fireflow_o1_f2_o1_high_speed_regions_open:F:fireflow_o1_f2_o1_high_speed_regions_open_region_count",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The criterion produces 4 connected regions in the supplied mesh or grid."
+    }
+  ],
+  "dataset_id": "FireFlow",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence items are supplied, so numerical results and selected findings cannot be independently substantiated here."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful geometric investigation of the specified density level surface within the complete supplied three-dimensional mesh. It faithfully exposes the target, scope, density level, interpolation and triangulation procedure, area and area-weighted centroid measures, and fixed aggregation requirements. No unresolved operationalization dimensions are present, and it does not assign unintended methodological choices to the respondent. The final instruction correctly leaves finding selection and explanation to the respondent under F2. The task is scientifically answerable in principle, although the empty evidence context prevents independent verification of numerical outcomes.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "4586a86c85a20bb30882dab7b3ba0de8e29b14b538306d7e1d12fce88e9dc3ef",
+  "review_packet_sha256": "5d71a7cb69c53bc94e5b816ba03402288985341349201827d005e7dcf517d49d",
+  "reviewed_model_visible_text_sha256": "03f834d3736c58d782c930df469d8786aebbb23c60d43ecc3dcb9d723d86e3e2",
+  "reviewed_model_visible_text": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Select and explain findings that characterize this scientific target.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "rt_isodensity_geometry_o1_f2",
+    "condition": "O1-F2",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "5d71a7cb69c53bc94e5b816ba03402288985341349201827d005e7dcf517d49d",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:39:53.018869+00:00",
+    "latency_seconds": 19.744273,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence items are supplied, so numerical results and selected findings cannot be independently substantiated here.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful geometric investigation of the specified density level surface within the complete supplied three-dimensional mesh. It faithfully exposes the target, scope, density level, interpolation and triangulation procedure, area and area-weighted centroid measures, and fixed aggregation requirements. No unresolved operationalization dimensions are present, and it does not assign unintended methodological choices to the respondent. The final instruction correctly leaves finding selection and explanation to the respondent under F2. The task is scientifically answerable in principle, although the empty evidence context prevents independent verification of numerical outcomes.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence items are supplied, so numerical results and selected findings cannot be independently substantiated here."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful geometric investigation of the specified density level surface within the complete supplied three-dimensional mesh. It faithfully exposes the target, scope, density level, interpolation and triangulation procedure, area and area-weighted centroid measures, and fixed aggregation requirements. No unresolved operationalization dimensions are present, and it does not assign unintended methodological choices to the respondent. The final instruction correctly leaves finding selection and explanation to the respondent under F2. The task is scientifically answerable in principle, although the empty evidence context prevents independent verification of numerical outcomes."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_08c18855796fca61016aa6dfd618b487d08740dcab06eb3c7e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1435,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1435,
+            "output_tokens": 0
+          },
+          "rs_08c18855796fca61016aa6dfd6c2b887d0a7189f81379f93db": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_08c18855796fca61016aa6dfe41df887d0a5f68a7d7596e772": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 226
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 226
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2051,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 742,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2793
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "4586a86c85a20bb30882dab7b3ba0de8e29b14b538306d7e1d12fce88e9dc3ef",
+    "review_packet_sha256": "5d71a7cb69c53bc94e5b816ba03402288985341349201827d005e7dcf517d49d",
+    "reviewed_model_visible_text_sha256": "03f834d3736c58d782c930df469d8786aebbb23c60d43ecc3dcb9d723d86e3e2",
+    "reviewed_model_visible_text": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Select and explain findings that characterize this scientific target."
+  }
+}

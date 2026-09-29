@@ -1,0 +1,9 @@
+{
+  "physical_setting": "the supplied turbulent radiative mixing-layer snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces. In this supplied coordinate system, z is the vertical layer-normal direction and vertical velocity denotes the z component of velocity.",
+  "objects": [],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

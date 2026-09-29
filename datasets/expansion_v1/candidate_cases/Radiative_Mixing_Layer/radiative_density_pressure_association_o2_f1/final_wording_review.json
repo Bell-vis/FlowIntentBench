@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence records or computed results are supplied for independent validation.",
+    "The snapshot has no declared physical units and represents only a single stored frame."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful spatial-association task for density and pressure over the supplied complete three-dimensional mesh. It faithfully exposes both fixed operationalization requirements, leaves the remaining quantitative property measure for the respondent to choose and explain, and correctly requests the numerical association coefficient under F1. The scope is preserved, no unsupported physical assertion or unnecessary protocol burden is introduced, and the task is answerable in principle despite the stated evidence and unit limitations.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "b64ddaf13b81c4ac8d3a8a778fbfab30f2bea39c87e4dca4a160e878009fa093",
+  "review_packet_sha256": "a084519c55596e341363ec6701332174d73202df5fb3bd6b2b8f1e52facdb112",
+  "reviewed_model_visible_text_sha256": "3d1490498b97bf3f94dce1a7c957f379d7470c6b2754aebec11c03aa5be52331",
+  "reviewed_model_visible_text": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "radiative_density_pressure_association_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "a084519c55596e341363ec6701332174d73202df5fb3bd6b2b8f1e52facdb112",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:40:16.705603+00:00",
+    "latency_seconds": 21.19626,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence records or computed results are supplied for independent validation.\",\"The snapshot has no declared physical units and represents only a single stored frame.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful spatial-association task for density and pressure over the supplied complete three-dimensional mesh. It faithfully exposes both fixed operationalization requirements, leaves the remaining quantitative property measure for the respondent to choose and explain, and correctly requests the numerical association coefficient under F1. The scope is preserved, no unsupported physical assertion or unnecessary protocol burden is introduced, and the task is answerable in principle despite the stated evidence and unit limitations.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence records or computed results are supplied for independent validation.",
+        "The snapshot has no declared physical units and represents only a single stored frame."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful spatial-association task for density and pressure over the supplied complete three-dimensional mesh. It faithfully exposes both fixed operationalization requirements, leaves the remaining quantitative property measure for the respondent to choose and explain, and correctly requests the numerical association coefficient under F1. The scope is preserved, no unsupported physical assertion or unnecessary protocol burden is introduced, and the task is answerable in principle despite the stated evidence and unit limitations."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_05e154dc066170c1016aa6dfec770887d1afdb7e12b49536fa": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1318,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1318,
+            "output_tokens": 0
+          },
+          "rs_05e154dc066170c1016aa6dfed1fa087d18f8ca3bd20636f3b": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_05e154dc066170c1016aa6dffb6d2c87d19c8a7e8de73c87d5": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 213
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 213
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1934,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 729,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2663
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "b64ddaf13b81c4ac8d3a8a778fbfab30f2bea39c87e4dca4a160e878009fa093",
+    "review_packet_sha256": "a084519c55596e341363ec6701332174d73202df5fb3bd6b2b8f1e52facdb112",
+    "reviewed_model_visible_text_sha256": "3d1490498b97bf3f94dce1a7c957f379d7470c6b2754aebec11c03aa5be52331",
+    "reviewed_model_visible_text": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient."
+  }
+}

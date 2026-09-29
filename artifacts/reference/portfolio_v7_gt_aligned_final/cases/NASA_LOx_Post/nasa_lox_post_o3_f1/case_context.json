@@ -1,0 +1,18 @@
+{
+  "boundaries": [],
+  "geometry_assets": [],
+  "objects": [
+    {
+      "description": "The cylindrical post perpendicular to the flow.",
+      "name": "cylindrical_post"
+    },
+    {
+      "description": "The flat plate across which the liquid oxygen flow is simulated.",
+      "name": "flat_plate"
+    }
+  ],
+  "operating_conditions": [],
+  "physical_setting": "Liquid-oxygen flow across a flat plate with a cylindrical post",
+  "reference_directions": [],
+  "regions": []
+}

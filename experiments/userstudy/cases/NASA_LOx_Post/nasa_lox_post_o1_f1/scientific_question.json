@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Determine the strongest high-speed flow region in the NASA LOx-post dataset. Use velocity magnitude as speed, keep locations at or above the 90th percentile of non-zero recorded speed, and treat face-connected retained locations as a single region. Compare regions by peak speed and locate the selected region by the mean position of its retained locations; report both the location and peak strength.",
+  "semantic_contract_sha256": "55bc95f73cf6021eccb52eb2d6e3871eb1c8327027a3cb67d263ca62626f3164",
+  "source": "FlowIntentBench_userstudy/datasets/NASA_LOx_Post/questions/nasa_lox_post_o1_f1.json",
+  "wording_version": "1.2.1"
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "context_facts": [],
+    "dataset_id": "Kitchen",
+    "eligible_for_context": false,
+    "evidence_id": "op_001",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "Kitchen.cxx: vtkLineSource and vtkStreamTracer",
+      "figure": "6-18",
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_001",
+    "statement": "The Kitchen example releases streamlines from starting positions defined by a straight-line rake and uses many simultaneous streamlines to inspect flow-field features."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Kitchen",
+    "eligible_for_context": false,
+    "evidence_id": "op_002",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": null,
+      "figure": null,
+      "page": null,
+      "section": "Data and variable description"
+    },
+    "source_id": "src_003",
+    "statement": "The Kitchen laboratory documentation identifies ke as turbulent kinetic energy, ep as turbulent dissipation rate, and the c-prefixed scalar fields as gas concentrations in this room-flow dataset."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Kitchen",
+    "eligible_for_context": false,
+    "evidence_id": "op_003",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": null,
+      "figure": null,
+      "page": null,
+      "section": "k-epsilon turbulence modelling"
+    },
+    "source_id": "src_004",
+    "statement": "Turbulent kinetic energy and turbulent dissipation rate are distinct standard turbulence quantities, so extrema of either field are scientifically distinct local turbulence-activity operationalizations."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Kitchen",
+    "eligible_for_context": false,
+    "evidence_id": "op_004",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": null,
+      "figure": null,
+      "page": null,
+      "section": "mixture characteristics"
+    },
+    "source_id": "src_005",
+    "statement": "Statistical spread of concentration is a scientifically meaningful way to describe mixture heterogeneity; normalized concentration spread supports a scale-independent comparison among concentration fields."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Kitchen",
+    "eligible_for_context": false,
+    "evidence_id": "finding_001",
+    "evidence_type": "finding",
+    "locator": {
+      "code_location": null,
+      "figure": null,
+      "page": null,
+      "section": "mixture characteristics"
+    },
+    "source_id": "src_003",
+    "statement": "The Kitchen evidence supports reporting the selected concentration-field identity and a scientifically meaningful heterogeneity or distributional characterization; exact benchmark values come from execution."
+  }
+]

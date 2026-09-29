@@ -1,0 +1,16 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "status": "VERIFIED",
+  "assets": [
+    {
+      "path": "raw/AIDEAS_single.vtu",
+      "source_url": "https://zenodo.org/api/records/15720265/files/AIDEAS_single.vtu/content",
+      "published_checksum": "md5:f1b7098aeb06fc3d995f3ed2772a0e96",
+      "status": "VERIFIED",
+      "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a",
+      "size_bytes": 24509674,
+      "cached": false
+    }
+  ],
+  "checked_at_utc": "2026-09-13T16:43:18.931563+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_id": "Combustor",
+  "fact_index": {
+    "combustor_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "annular_combustor": {
+      "field": "objects",
+      "position": 0
+    }
+  },
+  "fact_provenance": {
+    "combustor_physical_setting": [
+      "ctx_001"
+    ],
+    "annular_combustor": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "combustor_o1_f1"
+}

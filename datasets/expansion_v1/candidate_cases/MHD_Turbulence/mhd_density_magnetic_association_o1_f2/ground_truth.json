@@ -1,0 +1,50 @@
+{
+  "dataset_id": "MHD_Turbulence",
+  "case_id": "mhd_density_magnetic_association_o1_f2",
+  "case_family_id": "mhd_density_magnetic_association",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "mhd_density_magnetic_association_o1_f2_pearson",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Measure association by the volume-weighted Pearson correlation."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "mhd_density_magnetic_association_o1_f2_pearson",
+      "findings": [
+        {
+          "finding_id": "mhd_density_magnetic_association_o1_f2_pearson_association",
+          "category": "relation",
+          "statement": "report the numerical association coefficient",
+          "importance": "core",
+          "value": -0.69832131504662,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_mhd_density_magnetic_association"
+          ]
+        }
+      ]
+    }
+  ]
+}

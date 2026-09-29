@@ -1,0 +1,35 @@
+{
+  "dataset_id": "Combustor",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "example_source_code",
+      "title": "WarpCombustor VTK example",
+      "authors": [],
+      "year": null,
+      "venue": "VTK Examples",
+      "doi": null,
+      "report_id": null
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "example_source_code",
+      "title": "CombustorIsosurface VTK example",
+      "authors": [],
+      "year": null,
+      "venue": "VTK Examples",
+      "doi": null,
+      "report_id": null
+    },
+    {
+      "source_id": "src_003",
+      "source_type": "dataset_documentation",
+      "title": "VTK Book Chapter 6: Fundamental Algorithms",
+      "authors": [],
+      "year": null,
+      "venue": "VTK Book",
+      "doi": null,
+      "report_id": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "dataset_id": "Electrolyzer_Electric",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "dataset_documentation",
+      "title": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant",
+      "venue": "Official dataset documentation",
+      "report_id": "https://zenodo.org/records/14935434"
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "example_source_code",
+      "title": "FlowIntentBench explicit numerical operationalization recipes",
+      "venue": "FlowIntentBench",
+      "report_id": "flowintentbench/construction_recipes.py"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "case_id": "aideas_high_shear_region_o1_f1",
+  "case_family_id": "aideas_high_shear_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "aideas_high_shear_region_o1_f1_q90",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compute the stated properties of the selected object."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "aideas_high_shear_region_o1_f1_q90",
+      "findings": [
+        {
+          "finding_id": "aideas_high_shear_region_o1_f1_q90_centroid",
+          "category": "location",
+          "statement": "report the volume-weighted centroid coordinates",
+          "importance": "core",
+          "value": [
+            -0.55234805928896,
+            -1.00067183368,
+            17.203428120422
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "evidence_ids": [
+            "finding_aideas_high_shear_region"
+          ]
+        },
+        {
+          "finding_id": "aideas_high_shear_region_o1_f1_q90_mean",
+          "category": "quantity",
+          "statement": "report the volume-weighted mean value in the selected region",
+          "importance": "core",
+          "value": 438.78483314906,
+          "unit": "1/s",
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_aideas_high_shear_region"
+          ]
+        }
+      ]
+    }
+  ]
+}

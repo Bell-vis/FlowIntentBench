@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Using the blunt-fin flow field, investigate the strongest high-speed region. Define speed by velocity magnitude, retain values at or above the 90th percentile of non-zero recorded speed, and combine face-connected retained locations into individual regions. Use peak speed to select the strongest region and the mean spatial location of its retained locations to place it. Report the principal findings that you consider scientifically relevant, supported by evidence; these should include the region’s defining strength and location as well as at least one further characterization of your choice.",
+  "semantic_contract_sha256": "fb37979c6463f378eb62f20360ed9a32bb451fd0d49ec47272da02113b7a2efd",
+  "source": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o1_f2.json",
+  "wording_version": "1.2.1"
+}

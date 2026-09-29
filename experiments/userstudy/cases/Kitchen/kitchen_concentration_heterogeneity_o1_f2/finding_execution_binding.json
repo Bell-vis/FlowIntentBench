@@ -1,0 +1,1074 @@
+{
+  "branches": [
+    {
+      "branch_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+      "dataset_manifest_sha256": "e9fdf8a17da6070901d2046caa8e55fe786a18c605c73bbd520a46890350eb50",
+      "effective_o_sha256": "9f9fc56ccc0a94d59e231c650417ab56cc7ae8cdb3c1a298a206a23f442d2143",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": "c1",
+          "execution_value_sha256": "d0f631ca1ddba8db3bcfcb9e057cdc98d0379f1bee00e75a545147a27dadd982",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c1",
+          "g_of_o_locator": "/all_field_metrics/0/field_name",
+          "gt_value": "c1",
+          "scientific_finding_policy_key": "6c18626629174b7038b37329bc704a9ef0a48b26ebc751d31128a608eeed6a9c",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "605589bb172e6c86112ccc6e32eacae0229438068e233735b66d6324039be268"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.30942496936507363,
+          "execution_value_sha256": "d144e650d5756ed6476fb8f1ccf22e32c47c4d6c71f22a67ac6bf1d852d74eb9",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c1",
+          "g_of_o_locator": "/all_field_metrics/0/metric_value",
+          "gt_value": 0.30942496936507363,
+          "scientific_finding_policy_key": "cd246b52f0a97f9cbe9f1fe5f25f5e177c36833aa881e75b57a316360ebe5ddd",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "8082d56531c3ecc997f94b41f6fc70141ae8d66130cbac869685ff7efe7465cd"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.024818110431019,
+          "execution_value_sha256": "c7f0f78ac86ceb3c71f1b056d2ee0330c711eef32971172cd1939ba7ac5f07f9",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c1",
+          "g_of_o_locator": "/all_field_metrics/0/standard_deviation",
+          "gt_value": 0.024818110431019,
+          "scientific_finding_policy_key": "92a23349158555a3d7673fc23f7fa6be712e7ffdd7deec399fdcd519749eb059",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "4014b825fddc4ed2e9c460ddcc91b5c28655502d8d6c00066cc6fa0e83317e50"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.05404793641871688,
+          "execution_value_sha256": "4062d023cd1b40adcdcb53cc6b3e87a7669ef9942564f1d175265d8bd124534a",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c1",
+          "g_of_o_locator": "/all_field_metrics/0/q10",
+          "gt_value": 0.05404793641871688,
+          "scientific_finding_policy_key": "1499784f32e79bf6cd7d2607fef1f78ed26404423b70cea8b9ce3880a9b4b095",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "15b3c5ad71af5e48de00e95c89afa97e90f2144c74fb57d236405fd90e4e2c57"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.08112780996837031,
+          "execution_value_sha256": "db9b084db2f53c5340859be655a345d5481a6b91998f1b6bb87ecaf91b638e08",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c1",
+          "g_of_o_locator": "/all_field_metrics/0/q50",
+          "gt_value": 0.08112780996837031,
+          "scientific_finding_policy_key": "fea9d098cb345ee81099705d0a55b7b149c2e9a8ad36c057c19d0d6210888dcf",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "3b375e7927c6a092b5c5c866ddb4fbddc690c2272fe77cdb7f5237e7d4192aaa"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.10981731353464905,
+          "execution_value_sha256": "f037995123223ffee11e931428e51b426c2e6fc75b8fdeefdb14f529ce530ca0",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c1",
+          "g_of_o_locator": "/all_field_metrics/0/q90",
+          "gt_value": 0.10981731353464905,
+          "scientific_finding_policy_key": "c732431f63c4223931d0132dbe822e683bc52ce5b0334150ef89984ef4b366ab",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "a2ca8194b7a57a57c2ff26ac7154a60d16e287563d468dcb5d094bfab1472bb1"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c11",
+          "execution_value_sha256": "f4baf901d1b9fcc11a9d3c714fda524455a9875aececc7a30b202a058bc696e6",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c11",
+          "g_of_o_locator": "/all_field_metrics/1/field_name",
+          "gt_value": "c11",
+          "scientific_finding_policy_key": "7b40f1985164b0d0c3fe9a56cc8dbcd762ad5e4ed5c021997b288c87990bcb5f",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "62e3c053fa6b6a9c8f4cde7c7aecdf877578ae9eabd399d2a094e9283a3d248f"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.14418017074758235,
+          "execution_value_sha256": "f3130b44be07fdbf599b2fb5e7c3c9246c9c89e0cb18d8952aec7fae47e43392",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c11",
+          "g_of_o_locator": "/all_field_metrics/1/metric_value",
+          "gt_value": 0.14418017074758235,
+          "scientific_finding_policy_key": "dd20e8b01638b09b55bb04fbdc635616664d87b1746b485c8f68a837e7b1eb3e",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "af6548d7fb59b2b4ceaa1be5f0e98dc9971289991b89a04003ccf3d1737f4612"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.1380468528865996,
+          "execution_value_sha256": "d30ba534f591b91a7653f63eccf1326d90bc7c0d0ab322ba7e8a531ab05cbcad",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c11",
+          "g_of_o_locator": "/all_field_metrics/1/standard_deviation",
+          "gt_value": 0.1380468528865996,
+          "scientific_finding_policy_key": "7a70af85644dfbd48e05ce55de2730e98a123c88f410dbe17dc17371ff0c85f1",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "c64e574fa2d003e50c96a742a6e5b6a01fda735e7fc169b6a8309e87dd83fba8"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.8970167939475089,
+          "execution_value_sha256": "092eeb48c16d9779aa3a7c08914582f90e5fb38facc14c977a23a9ab37536268",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c11",
+          "g_of_o_locator": "/all_field_metrics/1/q10",
+          "gt_value": 0.8970167939475089,
+          "scientific_finding_policy_key": "4c8e60acbd1259401523cabd909ff97f72661edcce7ca31683e721f29a022fc2",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "b6ec68ebac581303ad391be5db6802379e0ff7d4cb5d7e644527f5fa44caafa4"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.0,
+          "execution_value_sha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c11",
+          "g_of_o_locator": "/all_field_metrics/1/q50",
+          "gt_value": 1.0,
+          "scientific_finding_policy_key": "68fe2bacc4a7e16bb51432168d756e03a7402120da09ba9f28ce9529ecfe9f68",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "6c304b1c667a06e7420ffbcfc1ba3d9aac9b87740c1431b399407869a68b71b9"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.0,
+          "execution_value_sha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c11",
+          "g_of_o_locator": "/all_field_metrics/1/q90",
+          "gt_value": 1.0,
+          "scientific_finding_policy_key": "1732c59866cc0feacdb70df32c94392fea6c512e02de1fcbd5538f5104174310",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "2cd30ccd31961b49a2f3c0a7682cefe49b0e73ecefe4d39e9e0de6680ca6e63f"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c12",
+          "execution_value_sha256": "ebbfb53547b778a125159d0de39c0be05b019fa447e6d358bf1aae65926aa553",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c12",
+          "g_of_o_locator": "/all_field_metrics/2/field_name",
+          "gt_value": "c12",
+          "scientific_finding_policy_key": "7794feca700551072f3c6607ae28ee66232a45d9a277dc2b88c627de2f180499",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "4544c5c59232d746d8272b36fd16730de0f1f7d0ca7d1858b7568b09e0d4bc82"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 57.26614105024864,
+          "execution_value_sha256": "18189ed4e4c69bc78da9bd8f6ff35af3d221144e2d05697c080f1ff2127325c5",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c12",
+          "g_of_o_locator": "/all_field_metrics/2/metric_value",
+          "gt_value": 57.26614105024864,
+          "scientific_finding_policy_key": "1fd72a3820a30867a21a4f3e542af93a3272288ab10ae0cfdafc03d0c2161fb8",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "136148948d8a70f06a81eedf414bf82ea62d68ec55aa043dfac2ebe809ea2359"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 8901.245888282469,
+          "execution_value_sha256": "d3e0d443684568f0f63ba55b496134d0646fffcf72fbd50a3049c19522ed0af9",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c12",
+          "g_of_o_locator": "/all_field_metrics/2/standard_deviation",
+          "gt_value": 8901.245888282469,
+          "scientific_finding_policy_key": "04be43d2a8c10beee21b2a5f3f07e12516fb82df0784260929a7ac65f7d3a100",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5.0,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "cd27e193ec58db89a5ac281d2687c2fa5e7938a2946cef62cc368654e0309970"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.0001250505447388,
+          "execution_value_sha256": "3ca119eabb393a4619f6c58b0357bf231cc5807894875b61edebcb1e9de4c633",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c12",
+          "g_of_o_locator": "/all_field_metrics/2/q10",
+          "gt_value": 1.0001250505447388,
+          "scientific_finding_policy_key": "fd9047d0aec9bbec90733677f249d38848a68f632f3d7a687ed72342dbe4e3db",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "b5c7baa43f191cf80b029613858e4a4745acf0db7ae37b7a848108d50aa80216"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.0001250505447388,
+          "execution_value_sha256": "3ca119eabb393a4619f6c58b0357bf231cc5807894875b61edebcb1e9de4c633",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c12",
+          "g_of_o_locator": "/all_field_metrics/2/q50",
+          "gt_value": 1.0001250505447388,
+          "scientific_finding_policy_key": "ac637d257a6d56f00f410a136afe11ca62e61b5c5b46bbf09c116a274854d639",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "414bce6900a11282a6c5b73c6f439f2e499e7062ebc1b87bfc0807e9c3ee42df"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.0002177547217748,
+          "execution_value_sha256": "e0e89529528126f72dee9b6a7fae8ecd8686eb8d9b72f511b64bba01aca1825e",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c12",
+          "g_of_o_locator": "/all_field_metrics/2/q90",
+          "gt_value": 1.0002177547217748,
+          "scientific_finding_policy_key": "85916f18c1dff48210aa369dc2307bb93ab8ca3f3d0298c37532a8764fb34a8e",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "d20afcfa8ab52811a8fa45b2433736a9c128934ad34b03083c9e973e7c2f8321"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c13",
+          "execution_value_sha256": "74dda5282c81de22f5c8cc9e637b115f3666eaf03e57ae606ed60bcf5e5e3e1c",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c13",
+          "g_of_o_locator": "/all_field_metrics/3/field_name",
+          "gt_value": "c13",
+          "scientific_finding_policy_key": "be51fa1c11969cc1dd8e73d7c9662de98d5184ae2a7ea15b190fa7430ee594fe",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "0b22e20adc1d40fb73f59617c4125e60663e017519e02f47d06c4134319cedd3"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 2.0219053988591327,
+          "execution_value_sha256": "b1c5dc19de80af6ecfa8d4e6f205f0a0f8135b364f8ec0ea8f6cf30cd82cd966",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c13",
+          "g_of_o_locator": "/all_field_metrics/3/metric_value",
+          "gt_value": 2.0219053988591327,
+          "scientific_finding_policy_key": "5230e5d1d15febbd9a3f5a3fea341486a259ebf37e4bc5e2269b4fd3531dd9c5",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "d2f21549048a029cc435d0ecf47cb8d74f9bba1628480a644133956a2c0d28d6"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.28008840105801996,
+          "execution_value_sha256": "cafafe544f3cc2310c4bcbf36e07f1e0deec2add7f2ddf6b9aa849b11d013cda",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c13",
+          "g_of_o_locator": "/all_field_metrics/3/standard_deviation",
+          "gt_value": 0.28008840105801996,
+          "scientific_finding_policy_key": "5f7d50bf4ab613965860e53582c695d5b9f63cc8b63a4410022bc1acae7de6d8",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "430cbec2d4476fd5e1ad2fe63a59c5effdcd628533cb1a9dc8c584c6a9f95a50"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.0,
+          "execution_value_sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c13",
+          "g_of_o_locator": "/all_field_metrics/3/q10",
+          "gt_value": 0.0,
+          "scientific_finding_policy_key": "c7dfc611afe8bc71f8a4772073bc163dc28ff35321282ac85f5e245148a9de2b",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "f36a7ed785e8a232f898851e998bac1ae8031d95ab6bfb78f28a318a598ee320"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.0,
+          "execution_value_sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c13",
+          "g_of_o_locator": "/all_field_metrics/3/q50",
+          "gt_value": 0.0,
+          "scientific_finding_policy_key": "c3721f060d41389ed81822d84f1d64c9688a0617bab3e34c067442d47703f9e8",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "d36662f9cd7848cdc62e96d6dd5f44c4de6ea37c51789c6b003e47ccfd256fd5"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.5,
+          "execution_value_sha256": "d2cbad71ff333de67d07ec676e352ab7f38248eb69c942950157220607c55e84",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c13",
+          "g_of_o_locator": "/all_field_metrics/3/q90",
+          "gt_value": 0.5,
+          "scientific_finding_policy_key": "ec30425ea84c8095286299823d9f4264b780c9fb6edf090c365fe243e6c307c9",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "30d7b2aadf4b8bb6684f0851af6367aa004e1a24e52872bb763cb154c20c57c4"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c14",
+          "execution_value_sha256": "f1727214f4ef703f993fa3e8abd21f194acb952a083c86cb2b0de70a8b09b9ea",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c14",
+          "g_of_o_locator": "/all_field_metrics/4/field_name",
+          "gt_value": "c14",
+          "scientific_finding_policy_key": "bd8c8ce049883e7e12cdca852521a36f0460e996c1d9421664c2efad51a33238",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "0e5b526983ea8d7fb01b476952ce5deb048d4b62afcc139a1607f120aec0b14c"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 5.034212066983074,
+          "execution_value_sha256": "bdad2aa749c504c008859218ac325f91a0ea9f910039b42c2b9bd648123e96e1",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c14",
+          "g_of_o_locator": "/all_field_metrics/4/metric_value",
+          "gt_value": 5.034212066983074,
+          "scientific_finding_policy_key": "b7c45ea22fd919fb6951eadb2329eb494d083152d774b6fdb8b5287cc2617cec",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "0c0900519163d9f628fb9ee0dc7e7688757c6c903d06923130c0165b6dede2fd"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 342.75771107396565,
+          "execution_value_sha256": "85e4e213525828f4800e72e1b694115d08e978f1a8e764a97be20f04bf8c11bf",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c14",
+          "g_of_o_locator": "/all_field_metrics/4/standard_deviation",
+          "gt_value": 342.75771107396565,
+          "scientific_finding_policy_key": "1e0f2cad5545f5d3c04adbc23171c38c9c5767f861578726eaf3353c22c7d385",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "052d957bb67bf3e937203cc205f01ed61f8ca5ce2589bf68a5e9187d3baec640"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 7.249532634994129e-13,
+          "execution_value_sha256": "2fb4dc9692854c81af72ec14b1fff5eea356d55ece208d3446971b9c0d9601f3",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c14",
+          "g_of_o_locator": "/all_field_metrics/4/q10",
+          "gt_value": 7.249532634994129e-13,
+          "scientific_finding_policy_key": "8aea460ee1f52ba2109482588d7f8e10179b78461e22f9fad5d590a18cd4bb25",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-16,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "9f048ff393f8ed7160ed62a3c107c6653f0389d13178418066623a010c32ae45"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 1.865819738975317e-12,
+          "execution_value_sha256": "4fe9e3714d16834c2107ea0fcc53b91a0f75a792ed42e6eaa9b915207089a593",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c14",
+          "g_of_o_locator": "/all_field_metrics/4/q50",
+          "gt_value": 1.865819738975317e-12,
+          "scientific_finding_policy_key": "dfd9561808e52a8756032a001faf111d0db88748bf70c4b1b74479babcad101b",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-15,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "15074cf39524c8e79ffd34638abe9968309c4813cf1608d303e8c9b541ae0203"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 84.4547059656511,
+          "execution_value_sha256": "a51f304f147d7dadbaae544bcd32edc98adde2dd594e30c9f84c4287e7b7c903",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c14",
+          "g_of_o_locator": "/all_field_metrics/4/q90",
+          "gt_value": 84.4547059656511,
+          "scientific_finding_policy_key": "0b0bc901d9dee5c5e27b4e5228ad5df052eee148609a3e982c2de0160cafdd86",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "dec197105f6ddd9ac1e09cb457cc6b6721e9da475cc9e51676fbdad984757acf"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c15",
+          "execution_value_sha256": "f37415afb05362d3c3a80c9fc4d16d9aa97c06a1d2e01689821506f1ff6ad759",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c15",
+          "g_of_o_locator": "/all_field_metrics/5/field_name",
+          "gt_value": "c15",
+          "scientific_finding_policy_key": "d2b7d9be8b91af9a6a71bd178d973c0096946a2d693498fdbdec7468a2676ad2",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "7f9e8f48261d63ccdbbda89e4bd49a31b68fd0b4e21f60115661a0daa2b5a771"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.759909295064302,
+          "execution_value_sha256": "18667b42b41221a516b50fadcc8cbf1cfa7195b2ea9a57bdcb873e670c04ea27",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c15",
+          "g_of_o_locator": "/all_field_metrics/5/metric_value",
+          "gt_value": 0.759909295064302,
+          "scientific_finding_policy_key": "6ab25a6ffdec76aa48b369506524325c5e741984aa59b2dddf89a1eeb31438d9",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "d6927ca3fc68900244a64ff016b0e296d69c034f4704e1b40f2afbf383d44165"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.02691717015677075,
+          "execution_value_sha256": "8151ae6f144f233f21d6720f8dac6312159255d8f316e0b41e8fc81b2bc12e19",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c15",
+          "g_of_o_locator": "/all_field_metrics/5/standard_deviation",
+          "gt_value": 0.02691717015677075,
+          "scientific_finding_policy_key": "b2cd440725080d8111d29aa2228d605fc17675b4010304cf78749d9711538e2b",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "5b24fe25cf07823286d932cf33b43aacd3a806bd16ca5fb28bc3788eaac49954"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.01201627154925934,
+          "execution_value_sha256": "3b8a1e7ebe0ab0ca7bdde30340f170d53d6ab6eae0f6140e065253b2e98f752a",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c15",
+          "g_of_o_locator": "/all_field_metrics/5/q10",
+          "gt_value": 0.01201627154925934,
+          "scientific_finding_policy_key": "9f0a39f18ebb1793331ae9f294105f1be4977784fb0cf17cfbd9960c5c2b1941",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "3bdd37b01d4003c3572b9e9996d39c063b334db937b10c2d2449991615619992"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.029269546621656997,
+          "execution_value_sha256": "71ccd9073baf7f7f94bb1c54d5f40482783f7069202e84fd8fc569e04c033a2a",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c15",
+          "g_of_o_locator": "/all_field_metrics/5/q50",
+          "gt_value": 0.029269546621656997,
+          "scientific_finding_policy_key": "3fca8d02fe268311d13cc7bf2a544e54198392e1fca110b5b4b16b6103ca7b15",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "c818b2a639deca3d1e60d21a9081feb6daab89a8310cc73a5ebf0c5196674dab"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.06398482271084513,
+          "execution_value_sha256": "803ddba04b6fd8e0843d022b95645023c25a43a48fc79d730a6079c69e7c78c7",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c15",
+          "g_of_o_locator": "/all_field_metrics/5/q90",
+          "gt_value": 0.06398482271084513,
+          "scientific_finding_policy_key": "4f7e1157b7b99c8d1886ef67e7a1a8e6d343d003d25920ebd43140a180c7fec0",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "b08c5a21cc41a0645299ab7af34db0a53e2f465009731849988e8963a1005ba0"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c16",
+          "execution_value_sha256": "3b97f0c782c961bc4db8a5839deecea57c9e97c66066fde0b252f08934f43b42",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c16",
+          "g_of_o_locator": "/all_field_metrics/6/field_name",
+          "gt_value": "c16",
+          "scientific_finding_policy_key": "9b3bdbcb10fbaa65e4008c3e48729bcc810f81e3a1b64ee216f5b9033de4107a",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "153bdba8ea9c3b387cbb5b6d8fe2e616678558895301a46b42de38cb4ffc0d7f"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 3.3848216187349522,
+          "execution_value_sha256": "9792138b5712589e20b67b689f97fb1b703b624aaf0503d03e60fc1dcac70d0d",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c16",
+          "g_of_o_locator": "/all_field_metrics/6/metric_value",
+          "gt_value": 3.3848216187349522,
+          "scientific_finding_policy_key": "24d6d9071b373d76da224348a156591865731289dc567cb97f8453347edb936d",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "9cf3958891d59a20b51fa011761bb1d7632cbb86d1f99c53352203c55f174e33"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 24.288980077002815,
+          "execution_value_sha256": "861e8253bb92dcc3756495f024eefaba2c266fbf27c08f1c8e954759150cd301",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c16",
+          "g_of_o_locator": "/all_field_metrics/6/standard_deviation",
+          "gt_value": 24.288980077002815,
+          "scientific_finding_policy_key": "27eb831e09582044312d86ff3ab77c28f34b5a3099a2963f5e2135e1043dfc34",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "3f4b2639ad7b8ff8be1a895e68b9339527dbac014b9184f4d2d7bb72c3ffe397"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.02514384570531547,
+          "execution_value_sha256": "c0c6ae52c1df20d4b9a3ef906b7f1ad8505854aa61c2f92049fbc7fd75b84bf3",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c16",
+          "g_of_o_locator": "/all_field_metrics/6/q10",
+          "gt_value": 0.02514384570531547,
+          "scientific_finding_policy_key": "806bf978a9c1beb968be77527b7b6c896154e7df11b47bde932c47292487938c",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "f75593b1459ec4945a5cda454031bee26bf577ea82ada6b4c34865a2b0308e52"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.028279999271035194,
+          "execution_value_sha256": "9338fc1b8d7541397887a40f9e87e375bc500fb4f55c557965f3a8ef2b0c2cec",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c16",
+          "g_of_o_locator": "/all_field_metrics/6/q50",
+          "gt_value": 0.028279999271035194,
+          "scientific_finding_policy_key": "9c49a8eb817559d093bc7845703070923dae8a095f4858fbc75b998c27e98d96",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "d0ab9d403705b69ef15dba25375cc3dd46976dc2a31433faa8a470074cf60e9e"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 21.410077970762014,
+          "execution_value_sha256": "d5021878f87ce77236ec34aca66267f13cb9ee87330a1106b02ee0198148c85a",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c16",
+          "g_of_o_locator": "/all_field_metrics/6/q90",
+          "gt_value": 21.410077970762014,
+          "scientific_finding_policy_key": "7846dea783d9bca792cc691d914d1ba5cb09abf39cc719330d28ffa9c7156c31",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "cea1453f5774b62b9c9e043ef65558b949a2ec4342004aecea6f84bafb756469"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": "c17",
+          "execution_value_sha256": "3c44f43ed3a9baa9a1780533ae5bc50412abdaa03496d52aa9ffc577171d85cb",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field__c17",
+          "g_of_o_locator": "/all_field_metrics/7/field_name",
+          "gt_value": "c17",
+          "scientific_finding_policy_key": "9d684f2faef993290a0300ebd86defbb3ee3c55bab955385dcceaf24014de2d7",
+          "tolerance_authority": "NOT_APPLICABLE",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "exact_identity_v1",
+          "verification_mode": "exact_identity",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "ed21fec105902e79367406ed70b19df653e9ffda1d98277260cb552f397a3c88"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 2.3046563271253913,
+          "execution_value_sha256": "860bf7879d71b6decbb14e26d0083af642c2cb3510e3b64b8278c59fe936fa87",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity__c17",
+          "g_of_o_locator": "/all_field_metrics/7/metric_value",
+          "gt_value": 2.3046563271253913,
+          "scientific_finding_policy_key": "3867c2e312c5ef7217ce3d8545142d4ddcaab60e3a5108e3b34e035797f12fcb",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "5b3a7d2e8909369b96f862a8328fc60483f8735d3668662cf5e77003a9477339"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 2.072499634963844,
+          "execution_value_sha256": "be12bf77cbc7c954cb61cf4ebf3c6b8ee46b5181f252447f16d100248ecd49bc",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation__c17",
+          "g_of_o_locator": "/all_field_metrics/7/standard_deviation",
+          "gt_value": 2.072499634963844,
+          "scientific_finding_policy_key": "aab921df8b9eb50601c4c56bbfe037e9a1f701593a27b8e013efd279ea9dcf1b",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "cf165c79eca81ba40b5b599cebae39b9daa40709664e27d27183ae00f8630c0e"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.0,
+          "execution_value_sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10__c17",
+          "g_of_o_locator": "/all_field_metrics/7/q10",
+          "gt_value": 0.0,
+          "scientific_finding_policy_key": "258f16fa2b662dd46653e97ac57f12913c486cfba3aa147f50fb9efeade307e4",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "1c019882f5312b6d3f515ca480c08cc4313f89bd20bdd9a254a63976b8ddd769"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.0,
+          "execution_value_sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50__c17",
+          "g_of_o_locator": "/all_field_metrics/7/q50",
+          "gt_value": 0.0,
+          "scientific_finding_policy_key": "8421cb43e0edfb0fe0eb448484a62ba28d589218c5b5a8c614dc7e07c55d2dfc",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "8c2f68ff192c4e6ee0d80d449f1f7f168a3059beab804e062d5b1c9a30e1d0b7"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 3.0428814953907657,
+          "execution_value_sha256": "5a3ac349b938ffde301e6e6df07d8e48fd45d2924ebb9edac6b4b069b7061a30",
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90__c17",
+          "g_of_o_locator": "/all_field_metrics/7/q90",
+          "gt_value": 3.0428814953907657,
+          "scientific_finding_policy_key": "e0b688a88bb3c4d6220b00a575a150eb1ca87d2bd50e573b053c0203431a30a6",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "450e63cd32d6f49ca3f45c0de72e3a3e2c8872484b5615ef346a47b04f333a8d"
+        }
+      ],
+      "g_of_o_sha256": "51b586bcfc5f997128a970fa0221876f4189ed4a99d1d71e927752955ed9e8e2",
+      "materialization_id": "mat:kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+      "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation"
+    }
+  ],
+  "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+  "dataset_id": "Kitchen",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "a7b288507e17b48548ddc805f4bcffe51a53c72d9e0cfd664f402e0c381fdd51"
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "office_speed_zones_o1_f2",
+  "dataset_id": "Office",
+  "include_fact_ids": [
+    "office_physical_setting",
+    "office_room",
+    "office_inlet",
+    "office_outlet"
+  ]
+}

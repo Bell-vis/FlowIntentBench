@@ -1,0 +1,11 @@
+{
+  "scientific_question": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored x axis. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Multiply the stated spatial weight by cell volume and normalize by its sum. Choose and explain the remaining quantitative definition. Report the numerical width, and the weighted center coordinate.",
+  "f1_required_properties": [
+    "width",
+    "center"
+  ],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+    "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+  }
+}

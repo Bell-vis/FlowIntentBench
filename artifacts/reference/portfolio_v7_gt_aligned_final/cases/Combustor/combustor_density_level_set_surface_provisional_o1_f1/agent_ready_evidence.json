@@ -1,0 +1,62 @@
+[
+  {
+    "context_facts": [],
+    "dataset_id": "Combustor",
+    "eligible_for_context": false,
+    "evidence_id": "op_001",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "WarpCombustor.cxx: vtkStructuredGridGeometryFilter and vtkWarpScalar",
+      "figure": "9-4b",
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_001",
+    "statement": "WarpCombustor extracts computational planes from the structured dataset and warps them using scalar values along local normals as a velocity-profile visualization."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Combustor",
+    "eligible_for_context": false,
+    "evidence_id": "op_002",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": "CombustorIsosurface.cxx: vtkContourFilter",
+      "figure": "6-11c",
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_002",
+    "statement": "CombustorIsosurface generates an isosurface of constant flow density from combxyz.bin and combq.bin."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Combustor",
+    "eligible_for_context": false,
+    "evidence_id": "op_003",
+    "evidence_type": "operationalization",
+    "locator": {
+      "code_location": null,
+      "figure": "6-11c",
+      "page": null,
+      "section": "6.2.2 Contouring"
+    },
+    "source_id": "src_003",
+    "statement": "The VTK Book’s combustion-chamber example uses this dataset to visualize constant flow-density surfaces, supporting stored density as a dataset-specific observable for density-feature construction."
+  },
+  {
+    "context_facts": [],
+    "dataset_id": "Combustor",
+    "eligible_for_context": false,
+    "evidence_id": "finding_001",
+    "evidence_type": "finding",
+    "locator": {
+      "code_location": "CombustorIsosurface.cxx: vtkContourFilter",
+      "figure": "6-11c",
+      "page": null,
+      "section": "Description"
+    },
+    "source_id": "src_002",
+    "statement": "The Combustor isosurface example supports reporting the identity, representative location, and surface extent of a selected constant-density structure; exact benchmark values come from execution."
+  }
+]

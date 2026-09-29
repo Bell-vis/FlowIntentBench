@@ -1,0 +1,8 @@
+{
+  "case_id": "aideas_viscosity_shear_association_o1_f2",
+  "mapping": {
+    "aideas_viscosity_shear_association_o1_f2_pearson": {
+      "association": "aideas_viscosity_shear_association_o1_f2_pearson_association"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "kitchen_o1_f1",
+  "dataset_id": "Kitchen",
+  "include_fact_ids": [
+    "kitchen_physical_setting",
+    "kitchen_room",
+    "kitchen_windows",
+    "kitchen_door",
+    "kitchen_hot_stove"
+  ]
+}

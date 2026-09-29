@@ -1,0 +1,8 @@
+{
+  "case_id": "radiative_vertical_advective_flux_o1_f1",
+  "mapping": {
+    "radiative_vertical_advective_flux_o1_f1_cell_product": {
+      "flux": "radiative_vertical_advective_flux_o1_f1_cell_product_flux"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "scientific_question": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the signed domain-average vertical advective mass-flux density. Choose and explain an appropriate analysis procedure. Report the signed domain-average vertical mass-flux density.",
+  "f1_required_properties": [
+    "flux"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

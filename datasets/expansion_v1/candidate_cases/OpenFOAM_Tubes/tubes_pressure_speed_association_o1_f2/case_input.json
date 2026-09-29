@@ -1,0 +1,136 @@
+{
+  "scientific_question": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "OpenFOAM_Tubes/flow.vtu",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTU",
+        "details": {}
+      },
+      "grid": {
+        "type": "unstructured",
+        "dimensions": null,
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "U",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": "m/s",
+          "source": "stored"
+        },
+        {
+          "name": "k",
+          "physical_quantity": "turbulent kinetic energy",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": "m^2/s^2",
+          "source": "stored"
+        },
+        {
+          "name": "nut",
+          "physical_quantity": "turbulent kinematic viscosity",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": "m^2/s",
+          "source": "stored"
+        },
+        {
+          "name": "omega",
+          "physical_quantity": "specific dissipation rate",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": "1/s",
+          "source": "stored"
+        },
+        {
+          "name": "p",
+          "physical_quantity": "pressure",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": "Pa",
+          "source": "stored"
+        },
+        {
+          "name": "U",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "cell",
+          "unit": "m/s",
+          "source": "stored"
+        },
+        {
+          "name": "k",
+          "physical_quantity": "turbulent kinetic energy",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": "m^2/s^2",
+          "source": "stored"
+        },
+        {
+          "name": "nut",
+          "physical_quantity": "turbulent kinematic viscosity",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": "m^2/s",
+          "source": "stored"
+        },
+        {
+          "name": "omega",
+          "physical_quantity": "specific dissipation rate",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": "1/s",
+          "source": "stored"
+        },
+        {
+          "name": "p",
+          "physical_quantity": "pressure",
+          "type": "scalar",
+          "components": 1,
+          "association": "cell",
+          "unit": "Pa",
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000 Stored coordinates and field scales are used without assigning undeclared SI units. The source OpenFOAM headers identify p as pressure with dimensions [1 -1 -2 0 0 0 0] (Pa), U in m/s, k in m^2/s^2, nut in m^2/s and omega in 1/s.",
+    "objects": [],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

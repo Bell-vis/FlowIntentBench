@@ -1,0 +1,11 @@
+{
+  "case_id": "tubes_turbulent_energy_heterogeneity_o2_f1",
+  "mapping": {
+    "tubes_turbulent_energy_heterogeneity_o2_f1_cv": {
+      "coefficient": "tubes_turbulent_energy_heterogeneity_o2_f1_cv_coefficient"
+    },
+    "tubes_turbulent_energy_heterogeneity_o2_f1_relative_interdecile": {
+      "coefficient": "tubes_turbulent_energy_heterogeneity_o2_f1_relative_interdecile_coefficient"
+    }
+  }
+}

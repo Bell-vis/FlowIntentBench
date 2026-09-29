@@ -1,0 +1,17 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "NASA_LOx_Post",
+    "evidence_type": "operationalization",
+    "statement": "The LOx VTK example reads postxyz.bin and postq.bin with vtkMultiBlockPLOT3DReader and creates streamtubes using a computational grid in front of the post as the seed source.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description and Code",
+      "page": null,
+      "figure": "12-16",
+      "code_location": "LOx.cxx: vtkMultiBlockPLOT3DReader, vtkStructuredGridGeometryFilter, vtkStreamTracer, vtkTubeFilter"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "record_url": "https://zenodo.org/records/15720265",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "assets": [
+    {
+      "path": "raw/AIDEAS_single.vtu",
+      "url": "https://zenodo.org/api/records/15720265/files/AIDEAS_single.vtu/content",
+      "checksum": "md5:f1b7098aeb06fc3d995f3ed2772a0e96",
+      "size_bytes": 24509674
+    }
+  ]
+}

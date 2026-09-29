@@ -1,0 +1,309 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "electrolyzer_current_hotspot_o1_f2",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "electrolyzer_current_hotspot_o1_f2",
+    "family_id": "electrolyzer_current_hotspot",
+    "dataset_id": "Electrolyzer_Electric",
+    "condition": "O1-F2",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/Electrolyzer_Electric/electrolyzer_current_hotspot_o1_f2/case_input.json",
+    "case_input_sha256": "e6bed86ada540e4bae0c4f3b1b8f7500f4131802895ae1d06b6cd31ab07b4e0b",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/Electrolyzer_Electric/electrolyzer_current_hotspot_o1_f2/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "541da51ea8fdb8f27e8743ee56f91e8feb1487055ac3bb3f204daaba88fe9c85",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/Electrolyzer_Electric/electrolyzer_current_hotspot_o1_f2/case_context.json",
+    "case_context_sha256": "700108ae4cbd3e4f7b87fc5c1d4365160dedf27d82841b9e9e61f4e564195314",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/Electrolyzer_Electric/electrolyzer_current_hotspot_o1_f2/ground_truth.json",
+    "ground_truth_sha256": "1eadd16a68e54677c5bcdcb5d4436b78ca6d7be703340b787725119d3a2df7dc"
+  },
+  "finding_recall_mode": "SEMANTIC_ADEQUATE_CORE",
+  "family_definition": {
+    "family_id": "electrolyzer_current_hotspot",
+    "title": "the location and intensity of high current-density-magnitude regions",
+    "scientific_target": "the location and intensity of high current-density-magnitude regions",
+    "finding_goal": "Characterize the location and intensity of high current-density-magnitude regions",
+    "scope": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation",
+      "criterion"
+    ],
+    "o2_unresolved_dimensions": [
+      "criterion"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o2_f1": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o3_f1": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+      "o1_f2": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Compute the stated properties of the selected object. Weight cell statistics by cell volume and normalize by the included volume. Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "centroid",
+        "result_key": "centroid",
+        "request_phrase": "the volume-weighted centroid coordinates",
+        "requirement_statement": "report the volume-weighted centroid coordinates",
+        "category": "location",
+        "unit": null,
+        "spatial_tolerance": 1e-05
+      },
+      {
+        "property_id": "mean",
+        "result_key": "mean",
+        "request_phrase": "the volume-weighted mean value in the selected region",
+        "requirement_statement": "report the volume-weighted mean value in the selected region",
+        "category": "quantity",
+        "unit": null
+      }
+    ],
+    "operations": {
+      "q90": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+          "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "current_density",
+            "association": "point",
+            "reduce": "magnitude"
+          },
+          "quantile": 0.9
+        }
+      },
+      "q95": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+          "criterion": "Select cells at or above the volume-weighted 95th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "current_density",
+            "association": "point",
+            "reduce": "magnitude"
+          },
+          "quantile": 0.95
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_electrolyzer_current_hotspot"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "localized_region",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except criterion. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "localized_region",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "centroid",
+          "mean"
+        ]
+      ],
+      "role_by_category": {
+        "location": "centroid",
+        "quantity": "mean"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/Electrolyzer_Electric/construction/families.json",
+    "sha256": "1dc000fef824b9375233525dc9920c50ec57c9a21dd87071d8f711c246047bec"
+  },
+  "branch_execution_evidence": {
+    "electrolyzer_current_hotspot_o1_f2_q90": {
+      "case_id": "electrolyzer_current_hotspot_o1_f2",
+      "dataset_id": "Electrolyzer_Electric",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume.",
+        "criterion": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+      },
+      "materialized_G_of_O": {
+        "fraction": 0.10000182192247,
+        "centroid": [
+          11.304063025628,
+          0.33018346255372,
+          0.46966994986484
+        ],
+        "mean": 0.005398905692704,
+        "cutoff": 0.0049886790868275
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/electrolyzer_current_hotspot.json",
+        "sha256": "7aaad42c77f61665be08cf86d3dc97aead8760151a430a8bb7e2d66ac82d1ece"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "f282122fb5d1a5aace97c3dea5784b5524c6214c6d2d7d892f809f7eade31042",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Electrolyzer_Electric/electric.vtk",
+            "sha256": "afac339824c2ca6c96c7404df43c9a7ac89907e563f84d315332b49ba1ae0afe"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "upper_tail",
+          "field": {
+            "name": "current_density",
+            "association": "point",
+            "reduce": "magnitude"
+          },
+          "quantile": 0.9
+        },
+        "definition_sha256": "d8cbac9e7680b1c2162169c79c20191ac7ba96dae9a726a41cc564588424e86f",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "681ca339914e1a0acba400f72acc25256651e4dbd9ee0565187814bb11689f13"
+    }
+  },
+  "finding_requirement_contract": {
+    "mandatory_roles": [],
+    "alternative_role_groups": [],
+    "adequate_core_sets": [
+      [
+        "centroid",
+        "mean"
+      ]
+    ],
+    "supporting_roles": [],
+    "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list.",
+    "scientific_entity_type": "localized_region",
+    "contract_source": "CONSTRUCTION_DEFINED",
+    "role_by_category": {
+      "location": "centroid",
+      "quantity": "mean"
+    },
+    "reference_finding_role_map": {
+      "electrolyzer_current_hotspot_o1_f2_q90_centroid": "centroid",
+      "electrolyzer_current_hotspot_o1_f2_q90_mean": "mean"
+    }
+  },
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "Electrolyzer_Electric",
+    "case_id": "electrolyzer_current_hotspot_o1_f2",
+    "semantic_contract_sha256": "6aef59df085ffde51cc770cb85325932771d3212ef88c8d0980d1d6a8a54f986",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "electrolyzer_current_hotspot_o1_f2_q90",
+        "finding_id": "electrolyzer_current_hotspot_o1_f2_q90_centroid",
+        "scientific_finding_policy_key": "d981509055c2bed425f46e88a67835df80913829df1b849f0f92103c6fc70751",
+        "policy_identity": {
+          "dataset_id": "Electrolyzer_Electric",
+          "case_family_id": "electrolyzer_current_hotspot",
+          "scientific_target": "the location and intensity of high current-density-magnitude regions",
+          "effective_o_semantic_sha256": "68b16c5bc1f9bba95898a4a3f6d3efc1fcedefd8a02eefa1511556339dd9c802",
+          "scientific_role": "location",
+          "g_of_o_locator": "/centroid",
+          "representation": "location",
+          "canonical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 1e-05
+        },
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            11.304063025628,
+            0.33018346255372,
+            0.46966994986484
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "significant_figures": null
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA"
+        },
+        "policy_digest": "b70c04f6e612ea482276c6bfffb57c1d006317435dbccadf8f38f4c5b28368a5"
+      },
+      {
+        "operationalization_id": "electrolyzer_current_hotspot_o1_f2_q90",
+        "finding_id": "electrolyzer_current_hotspot_o1_f2_q90_mean",
+        "scientific_finding_policy_key": "df5b9713d97ca2432ba312a01f45e933f35fc9485cbbf68e863b1555f7c8dcfa",
+        "policy_identity": {
+          "dataset_id": "Electrolyzer_Electric",
+          "case_family_id": "electrolyzer_current_hotspot",
+          "scientific_target": "the location and intensity of high current-density-magnitude regions",
+          "effective_o_semantic_sha256": "68b16c5bc1f9bba95898a4a3f6d3efc1fcedefd8a02eefa1511556339dd9c802",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/mean",
+          "representation": "quantity",
+          "canonical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-08,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.005398905692704,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-08,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE"
+        },
+        "policy_digest": "3444439134e6cf70e94dadc7952a3bba1d428b7bf5b03fa9122ed8aa719eff99"
+      }
+    ],
+    "verification_policy_sha256": "a77c16cdf0b33b1aae68da57bb42098b7ac9d6d17c7523dbf5bae9af5d8988ef"
+  }
+}

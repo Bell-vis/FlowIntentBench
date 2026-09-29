@@ -1,0 +1,14 @@
+{
+  "url": "https://huggingface.co/datasets/polymathic-ai/rayleigh_taylor_instability/resolve/75166ae3304f95747519ce35c2e03c0c295a2691/data/test/rayleigh_taylor_instability_At_0625.hdf5?download=true",
+  "type": "file",
+  "oid": "25de410fc3eae054f162f91a38691619798da330",
+  "size": 8002732032,
+  "lfs": {
+    "oid": "069417c63b7255236c8fb1521220c714ac86e5f64761f94240be1f51a90c0273",
+    "size": 8002732032,
+    "pointerSize": 135
+  },
+  "xetHash": "8520356722fcc6a5fea26d54ff8f0d08316e88d886be76c74df944bd55278e73",
+  "path": "data/test/rayleigh_taylor_instability_At_0625.hdf5",
+  "revision": "75166ae3304f95747519ce35c2e03c0c295a2691"
+}

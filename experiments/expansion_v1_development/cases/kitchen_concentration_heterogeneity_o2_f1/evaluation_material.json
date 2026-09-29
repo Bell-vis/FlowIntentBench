@@ -1,0 +1,619 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+    "dataset_id": "Kitchen",
+    "condition": "O2-F1",
+    "family_id": "kitchen_concentration_heterogeneity",
+    "origin": "FROZEN_REFERENCE_COPY",
+    "reference_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe",
+    "case_input_path": "datasets/expansion_v1/reference_cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/case_input.json",
+    "case_input_sha256": "60f0973f02fdaa314cd1ec93466b7728ec724b3f90f1220140b6e18d0ec69772",
+    "case_construction_metadata_path": "datasets/expansion_v1/reference_cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "c42271a775a9eb611d5064962b1c147405e2cb52a77e0d177da9e73132145bfa",
+    "case_context_path": "datasets/expansion_v1/reference_cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/case_context.json",
+    "case_context_sha256": "8ae22aca83b2e784fd2a1041c1773af86537ad0c54fcb59d9d7f7895cd9e80b5",
+    "ground_truth_path": "datasets/expansion_v1/reference_cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/ground_truth.json",
+    "ground_truth_sha256": "0ba7af9a26d4b5c0d2432e347473613749c0ebf7c1b9d0f8e05801634a932f3d",
+    "scientific_semantic_projection_path": "datasets/expansion_v1/reference_cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/scientific_semantic_projection.json",
+    "scientific_semantic_projection_sha256": "b0f54a2e30a98b6fbb5aa1d79820343fa89878f064347005c9cfade1c9f836d2"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "scientific_semantic_projection": {
+    "concept_id": "kitchen_concentration_heterogeneity",
+    "dataset_id": "Kitchen",
+    "family_id": "kitchen_concentration_heterogeneity",
+    "finding_responsibility": "F1",
+    "finding_semantics": {
+      "finding_goal": "identify the requested concentration field and report its stored identifier and heterogeneity statistic",
+      "fixed_finding_requirements": [
+        {
+          "category": "existence_or_identity",
+          "normalized_meaning": "report the selected concentration-field identifier"
+        },
+        {
+          "category": "quantity",
+          "normalized_meaning": "report the selected heterogeneity value"
+        }
+      ],
+      "normalized_demand": "identify the requested concentration field and report its stored identifier and heterogeneity statistic",
+      "required_finding_roles": [
+        "heterogeneity_measure_evidence",
+        "selected_field_identity"
+      ]
+    },
+    "observable_scientific_semantics": {
+      "required_capabilities": {
+        "FIELD_COMPARABILITY": true,
+        "OBSERVABLE_INTERPRETATION": true,
+        "SCALAR_FIELD_SEMANTICS": true,
+        "SPATIAL_COORDINATES": true,
+        "VOLUME_WEIGHTING_JUSTIFICATION": true
+      },
+      "scientific_semantic_capabilities": {}
+    },
+    "operationalization_responsibility": "partially_specified",
+    "principal_operationalization_dimensions": [
+      "aggregation_or_representation",
+      "feature_definition",
+      "property_measure"
+    ],
+    "resolved_operationalization": [
+      {
+        "canonical_id": "kitchen_concentration_heterogeneity:aggregation_or_representation",
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "represent the selected result by its stored field identifier"
+      },
+      {
+        "canonical_id": "kitchen_concentration_heterogeneity:feature_definition",
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field"
+      }
+    ],
+    "scientific_scope": {
+      "condition_constraints": [
+        "the supplied c1 and c11-c17 concentration arrays are point-associated"
+      ],
+      "scope_constraints": [
+        "the kitchen airflow field"
+      ],
+      "selection_constraints": [
+        "identify the requested target"
+      ]
+    },
+    "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+    "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity",
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "property_measure",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state a heterogeneity statistic for the chosen population"
+      }
+    ],
+    "verification_semantics": {
+      "deterministic_verification_required_claim_types": [
+        "exact",
+        "scalar_numeric",
+        "spatial"
+      ],
+      "semantic_adjudication_required": true
+    }
+  },
+  "verification_policy_source": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/finding_verification_policy.json",
+    "sha256": "53c0abf5ac73b0806373bdda0a4336a212735f43d057be88bf6ef0647cd969c7"
+  },
+  "branch_execution_evidence": {
+    "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation": {
+      "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+      "dataset_id": "Kitchen",
+      "operationalization": {
+        "feature_definition": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field",
+        "property_measure": "Compare fields by the cell-volume-weighted coefficient of variation of their point-to-cell mean concentrations.",
+        "aggregation_or_representation": "represent the selected result by its stored field identifier"
+      },
+      "materialized_G_of_O": {
+        "all_field_metrics": [
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 0.30942496936507363,
+            "field_name": "c1",
+            "mean": 0.08020720009100968,
+            "metric_value": 0.30942496936507363,
+            "q10": 0.05404793641871688,
+            "q50": 0.08112780996837031,
+            "q90": 0.10981731353464905,
+            "relative_interdecile_spread": 0.6953163438276321,
+            "standard_deviation": 0.024818110431019
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 0.14418017074758235,
+            "field_name": "c11",
+            "mean": 0.9574607393708777,
+            "metric_value": 0.14418017074758235,
+            "q10": 0.8970167939475089,
+            "q50": 1.0,
+            "q90": 1.0,
+            "relative_interdecile_spread": 0.10755867245288686,
+            "standard_deviation": 0.1380468528865996
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 57.26614105024864,
+            "field_name": "c12",
+            "mean": 155.4364538108478,
+            "metric_value": 57.26614105024864,
+            "q10": 1.0001250505447388,
+            "q50": 1.0001250505447388,
+            "q90": 1.0002177547217748,
+            "relative_interdecile_spread": 5.964120691328215e-07,
+            "standard_deviation": 8901.245888282469
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 2.0219053988591327,
+            "field_name": "c13",
+            "mean": 0.1385269564125309,
+            "metric_value": 2.0219053988591327,
+            "q10": 0.0,
+            "q50": 0.0,
+            "q90": 0.5,
+            "relative_interdecile_spread": 3.6094058004927834,
+            "standard_deviation": 0.28008840105801996
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 5.034212066983074,
+            "field_name": "c14",
+            "mean": 68.08567190125844,
+            "metric_value": 5.034212066983074,
+            "q10": 7.249532634994129e-13,
+            "q50": 1.865819738975317e-12,
+            "q90": 84.4547059656511,
+            "relative_interdecile_spread": 1.2404181908953062,
+            "standard_deviation": 342.75771107396565
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 0.759909295064302,
+            "field_name": "c15",
+            "mean": 0.035421556666829654,
+            "metric_value": 0.759909295064302,
+            "q10": 0.01201627154925934,
+            "q50": 0.029269546621656997,
+            "q90": 0.06398482271084513,
+            "relative_interdecile_spread": 1.4671447573689353,
+            "standard_deviation": 0.02691717015677075
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 3.3848216187349522,
+            "field_name": "c16",
+            "mean": 7.175852323373133,
+            "metric_value": 3.3848216187349522,
+            "q10": 0.02514384570531547,
+            "q50": 0.028279999271035194,
+            "q90": 21.410077970762014,
+            "relative_interdecile_spread": 2.9801246125706697,
+            "standard_deviation": 24.288980077002815
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 2.3046563271253913,
+            "field_name": "c17",
+            "mean": 0.899266242246575,
+            "metric_value": 2.3046563271253913,
+            "q10": 0.0,
+            "q50": 0.0,
+            "q90": 3.0428814953907657,
+            "relative_interdecile_spread": 3.383738154997283,
+            "standard_deviation": 2.072499634963844
+          }
+        ],
+        "cell_count": 9936,
+        "field_name": "c12",
+        "mean": 155.4364538108478,
+        "metric_name": "weighted_coefficient_of_variation",
+        "metric_value": 57.26614105024864,
+        "operation_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+        "q10": 1.0001250505447388,
+        "q50": 1.0001250505447388,
+        "q90": 1.0002177547217748,
+        "standard_deviation": 8901.245888282469
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/materialization_kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation.json",
+        "sha256": "3642434d024e7feef7c6b3885887e6e9d4ba54056d24cbe14e8fbdb23445ebfb"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Kitchen/kitchen.vtk",
+            "sha256": "cf50c31bd065aedbfca8074522a3aa278ab1007273e95a8cc4e5d279834b9a25"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_coefficient_of_variation",
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "compiled_plan_sha256": "7aa5d0634a9b2a3c17fc3cd6ae3b9f09cffe07dd2bf854048bc5be0f98262dd9",
+          "executed_plan_sha256": "7aa5d0634a9b2a3c17fc3cd6ae3b9f09cffe07dd2bf854048bc5be0f98262dd9",
+          "effective_o_sha256": "5fa2dfce85167742cc20762fc961c134e868e4f06c17fc6f256f4a5c4ad76312",
+          "reader_format": "VTK",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          }
+        }
+      },
+      "evidence_binding_sha256": "af2638c47ef72669114593566b5dfd62359bf146fefb78084081a88a1718710b"
+    },
+    "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread": {
+      "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+      "dataset_id": "Kitchen",
+      "operationalization": {
+        "feature_definition": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field",
+        "property_measure": "Compare fields by the cell-volume-weighted relative interdecile concentration spread, normalized by the cell-volume-weighted mean.",
+        "aggregation_or_representation": "represent the selected result by its stored field identifier"
+      },
+      "materialized_G_of_O": {
+        "all_field_metrics": [
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 0.30942496936507363,
+            "field_name": "c1",
+            "mean": 0.08020720009100968,
+            "metric_value": 0.6953163438276321,
+            "q10": 0.05404793641871688,
+            "q50": 0.08112780996837031,
+            "q90": 0.10981731353464905,
+            "relative_interdecile_spread": 0.6953163438276321,
+            "standard_deviation": 0.024818110431019
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 0.14418017074758235,
+            "field_name": "c11",
+            "mean": 0.9574607393708777,
+            "metric_value": 0.10755867245288686,
+            "q10": 0.8970167939475089,
+            "q50": 1.0,
+            "q90": 1.0,
+            "relative_interdecile_spread": 0.10755867245288686,
+            "standard_deviation": 0.1380468528865996
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 57.26614105024864,
+            "field_name": "c12",
+            "mean": 155.4364538108478,
+            "metric_value": 5.964120691328215e-07,
+            "q10": 1.0001250505447388,
+            "q50": 1.0001250505447388,
+            "q90": 1.0002177547217748,
+            "relative_interdecile_spread": 5.964120691328215e-07,
+            "standard_deviation": 8901.245888282469
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 2.0219053988591327,
+            "field_name": "c13",
+            "mean": 0.1385269564125309,
+            "metric_value": 3.6094058004927834,
+            "q10": 0.0,
+            "q50": 0.0,
+            "q90": 0.5,
+            "relative_interdecile_spread": 3.6094058004927834,
+            "standard_deviation": 0.28008840105801996
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 5.034212066983074,
+            "field_name": "c14",
+            "mean": 68.08567190125844,
+            "metric_value": 1.2404181908953062,
+            "q10": 7.249532634994129e-13,
+            "q50": 1.865819738975317e-12,
+            "q90": 84.4547059656511,
+            "relative_interdecile_spread": 1.2404181908953062,
+            "standard_deviation": 342.75771107396565
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 0.759909295064302,
+            "field_name": "c15",
+            "mean": 0.035421556666829654,
+            "metric_value": 1.4671447573689353,
+            "q10": 0.01201627154925934,
+            "q50": 0.029269546621656997,
+            "q90": 0.06398482271084513,
+            "relative_interdecile_spread": 1.4671447573689353,
+            "standard_deviation": 0.02691717015677075
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 3.3848216187349522,
+            "field_name": "c16",
+            "mean": 7.175852323373133,
+            "metric_value": 2.9801246125706697,
+            "q10": 0.02514384570531547,
+            "q50": 0.028279999271035194,
+            "q90": 21.410077970762014,
+            "relative_interdecile_spread": 2.9801246125706697,
+            "standard_deviation": 24.288980077002815
+          },
+          {
+            "cell_count": 9936,
+            "coefficient_of_variation": 2.3046563271253913,
+            "field_name": "c17",
+            "mean": 0.899266242246575,
+            "metric_value": 3.383738154997283,
+            "q10": 0.0,
+            "q50": 0.0,
+            "q90": 3.0428814953907657,
+            "relative_interdecile_spread": 3.383738154997283,
+            "standard_deviation": 2.072499634963844
+          }
+        ],
+        "cell_count": 9936,
+        "field_name": "c13",
+        "mean": 0.1385269564125309,
+        "metric_name": "weighted_relative_interdecile_spread",
+        "metric_value": 3.6094058004927834,
+        "operation_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+        "q10": 0.0,
+        "q50": 0.0,
+        "q90": 0.5,
+        "standard_deviation": 0.28008840105801996
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/materialization_kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread.json",
+        "sha256": "640363fe7d99d8d9984b20c0682b1354d52eacbae9e01dab5ace8d6249326c8c"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Kitchen/kitchen.vtk",
+            "sha256": "cf50c31bd065aedbfca8074522a3aa278ab1007273e95a8cc4e5d279834b9a25"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": "cell_volume_weighted",
+            "comparator": null,
+            "component_selection_kind": null,
+            "connectivity_kind": null,
+            "criterion_kind": null,
+            "domain": "kitchen_concentration",
+            "measure_kind": null,
+            "metric_kind": "weighted_relative_interdecile_spread",
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": null,
+            "threshold": null
+          },
+          "compiled_plan_sha256": "48613358c7fb6b6702e3da7bbc9c9e1b09a5f2ce07574a1f794de59dd4591827",
+          "executed_plan_sha256": "48613358c7fb6b6702e3da7bbc9c9e1b09a5f2ce07574a1f794de59dd4591827",
+          "effective_o_sha256": "0aac022d05af17089f7aacc17423ff734d9a1ce8332e3c91d0c84f4a6b4ddd4d",
+          "reader_format": "VTK",
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          }
+        }
+      },
+      "evidence_binding_sha256": "fc04f87439b08def0c08038b5d29b6e62bc678aa1df9b72ff56f133af631b478"
+    }
+  },
+  "reference_materialization_evidence": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Kitchen/kitchen_concentration_heterogeneity_o2_f1/agent_ready_evidence.json",
+    "sha256": "6db07efb339b001fd8fc7a57f01d126333fc23a5348080c8de8182c8fc3669d7"
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "case_id": "kitchen_concentration_heterogeneity_o2_f1",
+    "dataset_id": "Kitchen",
+    "policies": [
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation_field",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c12",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+        "policy_digest": "103b2a2dc75e2e60038b54c1fc7d116599425cb02f821142ea6cc92f1215e52f",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "1c224fef505ec65fb7ac47d888c0b795cbda29d37293a7c92fe96eacf266edc7",
+          "g_of_o_locator": "/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+        },
+        "scientific_finding_policy_key": "48d21cd8c57077fca14759c658eebfca18530fd9f976d6afe95f4c8846763f0a",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation_heterogeneity",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 57.26614105024864,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_coefficient_of_variation",
+        "policy_digest": "236d073c09b414d86b81fe55010e4c7c80953fd3167373cb53e68c3ee60ff0fb",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "1c224fef505ec65fb7ac47d888c0b795cbda29d37293a7c92fe96eacf266edc7",
+          "g_of_o_locator": "/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+        },
+        "scientific_finding_policy_key": "398b25cfa4bc2e9f3ec2d0e579dac7e555591189003afd78832bfc865f3448f6",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread_field",
+        "formula_id": "exact_identity_v1",
+        "formula_inputs": {
+          "reference_value": "c13",
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+        "policy_digest": "d92879d4caf484298a217524476d757461a0c2b61b56bea23f103d543bc6e2fa",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "4da902149277630edbdb7048bc4b0b306a0d0cb9da53626139da4f88b1c94223",
+          "g_of_o_locator": "/field_name",
+          "representation": "existence_or_identity",
+          "scientific_role": "field",
+          "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+        },
+        "scientific_finding_policy_key": "c90acc752e5f96b8c81893f742481509cd94bd89c0bf16e1b9823bfe7ccfa31f",
+        "tolerance_authority": "NOT_APPLICABLE",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "exact_identity",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread_heterogeneity",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 3.6094058004927834,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "kitchen_concentration_heterogeneity_o2_f1_relative_interdecile_spread",
+        "policy_digest": "4e8a4b5b6f3e718ee425238b9dced596e92c4ab0729ef0fb61c5b437fa4cdd54",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "kitchen_concentration_heterogeneity",
+          "dataset_id": "Kitchen",
+          "effective_o_semantic_sha256": "4da902149277630edbdb7048bc4b0b306a0d0cb9da53626139da4f88b1c94223",
+          "g_of_o_locator": "/metric_value",
+          "representation": "quantity",
+          "scientific_role": "heterogeneity",
+          "scientific_target": "the stored gas-concentration field with the greatest distributional heterogeneity"
+        },
+        "scientific_finding_policy_key": "80d58fb8ac87ce29f08c001da1103d07c29aa81f9746143a0d528a559477bbf5",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "runtime_inference_from_python_type_forbidden": true,
+    "schema_version": "finding-verification-policy-v1",
+    "semantic_contract_sha256": "e8c0500208b5074a54adf5f93a55a7d97a1fcf4b6bcec9ff91207a3aa4668071",
+    "verification_policy_sha256": "33fd57b3a592ef64d629e3b6948a94d60fc1b60c96a11120bf0fddd519259360"
+  }
+}

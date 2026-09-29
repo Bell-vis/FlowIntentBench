@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowintentbench"
+version = "0.1.0"
+description = "Model input contract and execution adapters for FlowIntentBench"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy>=1.24",
+  "pydantic>=2.5",
+  "PyYAML>=6.0",
+  "packaging>=23.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "pytest-xdist>=3"]
+vtk = ["vtk>=9.2"]
+construction = ["vtk>=9.2", "scipy>=1.10", "h5py>=3.10"]
+evaluation = ["jsonschema>=4.18,<5"]
+
+[tool.setuptools.packages.find]
+include = ["flowintentbench*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+addopts = "-ra"
+markers = [
+  "sandbox: tests requiring the primary bubblewrap network/filesystem isolation condition",
+]

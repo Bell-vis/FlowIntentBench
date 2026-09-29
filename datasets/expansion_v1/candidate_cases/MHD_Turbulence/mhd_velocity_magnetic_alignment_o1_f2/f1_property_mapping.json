@@ -1,0 +1,8 @@
+{
+  "case_id": "mhd_velocity_magnetic_alignment_o1_f2",
+  "mapping": {
+    "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine": {
+      "alignment": "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine_alignment"
+    }
+  }
+}

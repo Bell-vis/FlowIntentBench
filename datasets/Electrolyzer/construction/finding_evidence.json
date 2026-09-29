@@ -1,0 +1,14 @@
+[
+  {
+    "evidence_id": "finding_electrolyzer_transverse_flow_width",
+    "dataset_id": "Electrolyzer",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"interdecile\": {\"center\": 0.4999582349632381, \"width\": 0.6568905}, \"rms\": {\"center\": 0.4999582349632381, \"width\": 0.2394305024017117}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

@@ -1,0 +1,11 @@
+name: benchmark
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.4
+  - pip
+  - pip:
+      - -r runtime-requirements.txt
+      - packaging>=23.2
+      - pytest>=7
+      - pytest-xdist>=3

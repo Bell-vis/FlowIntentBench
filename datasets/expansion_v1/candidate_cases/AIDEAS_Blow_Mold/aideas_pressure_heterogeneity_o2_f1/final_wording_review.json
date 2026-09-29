@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context is supplied, so a dataset-specific numerical coefficient cannot be independently verified from the payload."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful pressure-nonuniformity investigation within the stated simulation and complete mesh scope. It exposes both fixed operationalizations, leaves only the quantitative property measure for respondent choice, and correctly requires reporting the numerical coefficient under F1. The wording is clear, scientifically actionable, and introduces no unsupported physical assertion or unintended operationalization responsibility.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "8a013ac84826393b07af5a5ee9b0296c9dae307225fad31f3182c2b2c2d58e7f",
+  "review_packet_sha256": "b6d1fbed02f08edf7dddfe657f8d90383ebb9790d97aed85b7d3de97070317e3",
+  "reviewed_model_visible_text_sha256": "2351e1dd8c416bd93f03a07ebc1002556d625ac90156039bfd10e46b3d39c898",
+  "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "aideas_pressure_heterogeneity_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "b6d1fbed02f08edf7dddfe657f8d90383ebb9790d97aed85b7d3de97070317e3",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:38:02.872816+00:00",
+    "latency_seconds": 16.354684,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context is supplied, so a dataset-specific numerical coefficient cannot be independently verified from the payload.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful pressure-nonuniformity investigation within the stated simulation and complete mesh scope. It exposes both fixed operationalizations, leaves only the quantitative property measure for respondent choice, and correctly requires reporting the numerical coefficient under F1. The wording is clear, scientifically actionable, and introduces no unsupported physical assertion or unintended operationalization responsibility.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context is supplied, so a dataset-specific numerical coefficient cannot be independently verified from the payload."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful pressure-nonuniformity investigation within the stated simulation and complete mesh scope. It exposes both fixed operationalizations, leaves only the quantitative property measure for respondent choice, and correctly requires reporting the numerical coefficient under F1. The wording is clear, scientifically actionable, and introduces no unsupported physical assertion or unintended operationalization responsibility."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0cd813e159613529016aa6df6b713487d0917f2387a59b4ffe": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1336,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1336,
+            "output_tokens": 0
+          },
+          "rs_0cd813e159613529016aa6df6c024c87d08d521c6986940708": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 425
+          },
+          "msg_0cd813e159613529016aa6df7727fc87d08c0bc6cb6d6ced12": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 187
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 187
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1952,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 612,
+      "output_tokens_details": {
+        "reasoning_tokens": 425
+      },
+      "total_tokens": 2564
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "8a013ac84826393b07af5a5ee9b0296c9dae307225fad31f3182c2b2c2d58e7f",
+    "review_packet_sha256": "b6d1fbed02f08edf7dddfe657f8d90383ebb9790d97aed85b7d3de97070317e3",
+    "reviewed_model_visible_text_sha256": "2351e1dd8c416bd93f03a07ebc1002556d625ac90156039bfd10e46b3d39c898",
+    "reviewed_model_visible_text": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient."
+  }
+}

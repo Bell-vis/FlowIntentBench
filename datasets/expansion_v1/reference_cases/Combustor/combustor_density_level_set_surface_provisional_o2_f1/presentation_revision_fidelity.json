@@ -1,0 +1,216 @@
+{
+  "status": "PASS",
+  "checks": {
+    "target_preserved": true,
+    "scope_preserved": true,
+    "fixed_o_preserved": true,
+    "unresolved_o_remains_open": true,
+    "finding_responsibility_preserved": true,
+    "no_additional_scientific_obligation": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "fixed_o_checks": {
+    "feature_definition": true,
+    "aggregation_or_representation": true
+  },
+  "unresolved_o_checks": {
+    "criterion": true
+  },
+  "finding_responsibility_check": {
+    "finding_mode": "F1",
+    "responsibility_preserved": true,
+    "f1_remains_fixed": true,
+    "f2_remains_open": true
+  },
+  "additional_scientific_obligations": [],
+  "rationale": "The text preserves the connected constant-Density isosurface target and annular-combustor scope, including largest-area selection and area-weighted-centroid representation. The isovalue criterion remains open because the text requires choosing and stating a rule without fixing a particular rule or threshold. F1 reporting responsibilities are preserved, and no additional scientific obligation is introduced.",
+  "excluded_from_semantic_fidelity_decision": false,
+  "post_rewrite_semantic_fidelity_version": "post-rewrite-semantic-fidelity-v1",
+  "semantic_contract_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6",
+  "semantic_visibility": {
+    "classification_version": "semantic-visibility-classification-v1",
+    "items": [
+      {
+        "information_id": "scientific_target",
+        "semantic_role": "SCIENTIFIC_TARGET",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "scientific_scope",
+        "semantic_role": "SCIENTIFIC_SCOPE",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "fixed_o:feature_definition",
+        "semantic_role": "FIXED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "fixed_o:aggregation_or_representation",
+        "semantic_role": "FIXED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:criterion",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "finding_responsibility",
+        "semantic_role": "FINDING_RESPONSIBILITY",
+        "visibility": "QUESTION_VISIBLE"
+      }
+    ],
+    "semantic_contract_affected": false
+  },
+  "model_visible_text_sha256": "ae0704b4207193855cc1479012fc04a7d4c8d08c9f1cd524c506340c6b5165f9",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "POST_REWRITE_SEMANTIC_FIDELITY_ONLY",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "a0129fe5ff721ba4c79ce250f74bde0dcd5319ddfe1c71dea06e013810191d20",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "859880e88bc0df6175453ee99b27f8943191354aa971827fbe7f5a9f47c94931",
+    "timestamp": "2026-09-13T17:47:54.069978+00:00",
+    "latency_seconds": 33.112506,
+    "raw_structured_output": "{\"scientific_target_preserved\":true,\"scientific_scope_preserved\":true,\"fixed_o_checks\":[{\"dimension_id\":\"feature_definition\",\"preserved\":true},{\"dimension_id\":\"aggregation_or_representation\",\"preserved\":true}],\"unresolved_o_checks\":[{\"dimension_id\":\"criterion\",\"remains_open\":true}],\"finding_responsibility_check\":{\"finding_mode\":\"F1\",\"responsibility_preserved\":true,\"f1_remains_fixed\":true,\"f2_remains_open\":true},\"no_additional_scientific_obligation\":true,\"additional_scientific_obligations\":[],\"rationale\":\"The text preserves the connected constant-Density isosurface target and annular-combustor scope, including largest-area selection and area-weighted-centroid representation. The isovalue criterion remains open because the text requires choosing and stating a rule without fixing a particular rule or threshold. F1 reporting responsibilities are preserved, and no additional scientific obligation is introduced.\"}",
+    "parsed_result": {
+      "scientific_target_preserved": true,
+      "scientific_scope_preserved": true,
+      "fixed_o_checks": [
+        {
+          "dimension_id": "feature_definition",
+          "preserved": true
+        },
+        {
+          "dimension_id": "aggregation_or_representation",
+          "preserved": true
+        }
+      ],
+      "unresolved_o_checks": [
+        {
+          "dimension_id": "criterion",
+          "remains_open": true
+        }
+      ],
+      "finding_responsibility_check": {
+        "finding_mode": "F1",
+        "responsibility_preserved": true,
+        "f1_remains_fixed": true,
+        "f2_remains_open": true
+      },
+      "no_additional_scientific_obligation": true,
+      "additional_scientific_obligations": [],
+      "rationale": "The text preserves the connected constant-Density isosurface target and annular-combustor scope, including largest-area selection and area-weighted-centroid representation. The isovalue criterion remains open because the text requires choosing and stating a rule without fixing a particular rule or threshold. F1 reporting responsibilities are preserved, and no additional scientific obligation is introduced."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0b3b93988d784cb7016aa6e1a9db1c87d0b7c976222d4849e9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1332,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1332,
+            "output_tokens": 0
+          },
+          "rs_0b3b93988d784cb7016aa6e1aa51e487d08ca7f01e8f35a34d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0b3b93988d784cb7016aa6e1b7179087d0a340b86e68fe534b": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_0b3b93988d784cb7016aa6e1c1d7ec87d0b664e631a06210b0": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 183
+          },
+          "msg_0b3b93988d784cb7016aa6e1c61a5487d0b4f45d97eb8f1ae5": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 202
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 202
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 420,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1754,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1419,
+      "output_tokens_details": {
+        "reasoning_tokens": 1217
+      },
+      "total_tokens": 3173
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "construction_time_semantic_realization_check": true,
+  "official_scq_executed": false,
+  "qualification_gate_created": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false
+}

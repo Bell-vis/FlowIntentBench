@@ -1,0 +1,63 @@
+{
+  "family_id": "mhd_density_magnetic_association",
+  "inputs": [
+    {
+      "path": "MHD_Turbulence/snapshot.vtk",
+      "sha256": "1d66a7f150262e50490286b464a8d0874dd4fe975947e2833f5386181804890c"
+    }
+  ],
+  "operations": {
+    "pearson": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "association",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "measure": "pearson",
+        "other_field": {
+          "name": "magnetic_field",
+          "association": "point",
+          "reduce": "magnitude"
+        }
+      }
+    },
+    "spearman": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "association",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "measure": "spearman",
+        "other_field": {
+          "name": "magnetic_field",
+          "association": "point",
+          "reduce": "magnitude"
+        }
+      }
+    }
+  },
+  "definition_sha256": "715a6b73d7a0d71697652d0ff07da69e0a5e1f6f93e6dfa657cb1349628a1210",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "pearson": {
+      "value": -0.69832131504662
+    },
+    "spearman": {
+      "value": -0.70302526880244
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

@@ -1,0 +1,18 @@
+{
+  "boundaries": [],
+  "geometry_assets": [],
+  "objects": [
+    {
+      "description": "The hot stove in the cooking area.",
+      "name": "hot_stove"
+    },
+    {
+      "description": "The small kitchen represented by the structured flow dataset.",
+      "name": "kitchen"
+    }
+  ],
+  "operating_conditions": [],
+  "physical_setting": "Airflow in a small kitchen",
+  "reference_directions": [],
+  "regions": []
+}

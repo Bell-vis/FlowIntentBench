@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence items are supplied, so this review cannot independently verify the resulting region or strength."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful and actionable for selecting the strongest high-speed region in the blunt-fin flow field. It faithfully preserves the target and scope, exposes all fixed operationalizations\u2014non-zero 90th-percentile thresholding, six-neighbor connectivity, mean-location representation, and peak-speed strength\u2014and correctly requests the fixed F1 outputs of location and strength. No unresolved operationalization is closed or assigned unintentionally, and no unsupported physical assertion or unnecessary schema burden is introduced.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "2b50252b26f31866fce55236f64e5f7827868860ff0e0eb4bb56726dbdf9c350",
+  "review_packet_sha256": "d20fce344713c8782000e688f92f70748cf8922a76773a4fda166b85b1286fbd",
+  "reviewed_model_visible_text_sha256": "dddccd688b0e768e523c017d1e0865bcf220ea4c3b902857b32559e2821a401b",
+  "reviewed_model_visible_text": "In the blunt-fin flow field, which high-speed flow region is strongest? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed in the stored velocity scale, with locations connected through immediate grid neighbors along one grid axis forming one contiguous region. Represent the selected region by the mean spatial location of its retained high-speed locations, use peak speed as its strength, and report both the region\u2019s location and strength.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "blunt_fin_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "d20fce344713c8782000e688f92f70748cf8922a76773a4fda166b85b1286fbd",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:29:56.665104+00:00",
+    "latency_seconds": 27.605408,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence items are supplied, so this review cannot independently verify the resulting region or strength.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful and actionable for selecting the strongest high-speed region in the blunt-fin flow field. It faithfully preserves the target and scope, exposes all fixed operationalizations\u2014non-zero 90th-percentile thresholding, six-neighbor connectivity, mean-location representation, and peak-speed strength\u2014and correctly requests the fixed F1 outputs of location and strength. No unresolved operationalization is closed or assigned unintentionally, and no unsupported physical assertion or unnecessary schema burden is introduced.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence items are supplied, so this review cannot independently verify the resulting region or strength."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful and actionable for selecting the strongest high-speed region in the blunt-fin flow field. It faithfully preserves the target and scope, exposes all fixed operationalizations\u2014non-zero 90th-percentile thresholding, six-neighbor connectivity, mean-location representation, and peak-speed strength\u2014and correctly requests the fixed F1 outputs of location and strength. No unresolved operationalization is closed or assigned unintentionally, and no unsupported physical assertion or unnecessary schema burden is introduced."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0f4a6345fcc61203016aa6dd79f84887d2861779f244b2abb8": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1667,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1667,
+            "output_tokens": 0
+          },
+          "rs_0f4a6345fcc61203016aa6dd7b037887d2a214f2cb7129d57f": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0f4a6345fcc61203016aa6dd86c34087d2be5a571c2c7c15bf": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 450
+          },
+          "msg_0f4a6345fcc61203016aa6dd905aa087d2abade4a106080f79": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 211
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 211
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2283,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1177,
+      "output_tokens_details": {
+        "reasoning_tokens": 966
+      },
+      "total_tokens": 3460
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "2b50252b26f31866fce55236f64e5f7827868860ff0e0eb4bb56726dbdf9c350",
+    "review_packet_sha256": "d20fce344713c8782000e688f92f70748cf8922a76773a4fda166b85b1286fbd",
+    "reviewed_model_visible_text_sha256": "dddccd688b0e768e523c017d1e0865bcf220ea4c3b902857b32559e2821a401b",
+    "reviewed_model_visible_text": "In the blunt-fin flow field, which high-speed flow region is strongest? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed in the stored velocity scale, with locations connected through immediate grid neighbors along one grid axis forming one contiguous region. Represent the selected region by the mean spatial location of its retained high-speed locations, use peak speed as its strength, and report both the region\u2019s location and strength."
+  }
+}

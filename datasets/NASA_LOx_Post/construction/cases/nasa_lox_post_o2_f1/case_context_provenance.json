@@ -1,0 +1,29 @@
+{
+  "dataset_id": "NASA_LOx_Post",
+  "fact_index": {
+    "lox_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "lox_cylindrical_post": {
+      "field": "objects",
+      "position": 0
+    },
+    "lox_flat_plate": {
+      "field": "objects",
+      "position": 1
+    }
+  },
+  "fact_provenance": {
+    "lox_physical_setting": [
+      "ctx_001"
+    ],
+    "lox_cylindrical_post": [
+      "ctx_001"
+    ],
+    "lox_flat_plate": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "nasa_lox_post_o2_f1"
+}

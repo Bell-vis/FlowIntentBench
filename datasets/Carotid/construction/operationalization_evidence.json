@@ -1,0 +1,17 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "Carotid",
+    "evidence_type": "operationalization",
+    "statement": "The CarotidFlow example generates streamtubes from blood velocity and uses an isosurface of speed to provide visual context.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": "6-44",
+      "code_location": "CarotidFlow.cxx: vtkStreamTracer, vtkContourFilter"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

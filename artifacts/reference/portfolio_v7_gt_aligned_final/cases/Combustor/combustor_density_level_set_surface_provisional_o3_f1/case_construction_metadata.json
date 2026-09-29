@@ -1,0 +1,142 @@
+{
+  "case_family_id": "combustor_density_level_set_surface_provisional",
+  "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+  "condition_constraints": [],
+  "dataset_id": "Combustor",
+  "evaluation_representability_contract": {
+    "condition": "O3-F1",
+    "contract_version": "case-evaluation-representability-v3",
+    "deterministic_verification": {
+      "registered_handlers": [
+        "scalar_numeric",
+        "coordinate_point"
+      ],
+      "required_claim_types": [
+        "scalar_numeric",
+        "coordinate_point"
+      ]
+    },
+    "domain": "density_isosurface_component",
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1",
+      "output_locators": [
+        "/level",
+        "/selected/surface_area",
+        "/selected/area_weighted_centroid",
+        "/selected/bounding_box_volume",
+        "/selected/bounding_box_midpoint"
+      ]
+    },
+    "fixed_dimension_semantics": {},
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v3",
+      "unsupported_disposition": "MATERIALIZATION_UNSUPPORTED_PENDING_NOT_INVALID"
+    },
+    "semantic_adjudication": {
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1",
+      "required": true
+    },
+    "supported_effective_o_envelope": {
+      "aggregation_or_representation": [
+        "largest surface area with area-weighted centroid",
+        "largest bounding-box volume with bounding-box midpoint"
+      ],
+      "criterion": [
+        "explicit finite-Density percentile with stated interpolation",
+        "explicit fraction of a stated Density percentile"
+      ],
+      "feature_definition": [
+        "connected components of a constant-Density isosurface"
+      ]
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    },
+    "unresolved_dimensions": [
+      "aggregation_or_representation",
+      "criterion",
+      "feature_definition"
+    ],
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    }
+  },
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "question_fragment": "report the",
+      "statement": "report the selected structure's representative location"
+    },
+    {
+      "category": "quantity",
+      "question_fragment": "defining density",
+      "statement": "report its defining Density isovalue"
+    },
+    {
+      "category": "characterization",
+      "question_fragment": "report",
+      "statement": "report its surface area"
+    }
+  ],
+  "explicit_method_constraints": [],
+  "finding_goal": "identify the requested density feature and report its representative location, defining density level, and spatial extent",
+  "finding_openness": "bounded",
+  "operationalization_responsibility": "model_selected",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "aggregation_or_representation"
+  ],
+  "responsibility_contract": {
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ],
+      "normalized_demand": "",
+      "required_responsibility_mode": null,
+      "required_semantic_anchors": []
+    },
+    "resolved_operationalization_clauses": [],
+    "scientific_target": {
+      "canonical_id": "combustor_density_level_set_surface_provisional",
+      "normalized_meaning": "connected components of a constant-Density isosurface in the annular-combustor density field",
+      "required_semantic_anchors": []
+    },
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "feature_definition",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state feature definition"
+      },
+      {
+        "dimension_id": "criterion",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state criterion"
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state aggregation or representation"
+      }
+    ]
+  },
+  "scientific_target": "connected components of a constant-Density isosurface in the annular-combustor density field",
+  "scope_constraints": [
+    {
+      "question_fragment": "the annular-combustor flow field",
+      "statement": "the annular-combustor flow field"
+    }
+  ],
+  "selection_constraints": [],
+  "unresolved_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "aggregation_or_representation"
+  ]
+}

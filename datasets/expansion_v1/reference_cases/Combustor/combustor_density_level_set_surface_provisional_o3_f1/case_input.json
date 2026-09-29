@@ -1,0 +1,109 @@
+{
+  "case_context": {
+    "boundaries": [],
+    "geometry_assets": [],
+    "objects": [
+      {
+        "description": "The annular combustor represented by the structured PLOT3D dataset.",
+        "name": "annular_combustor"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "Flow in an annular combustor in a gas turbine",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Combustor/combxyz.bin",
+        "role": "grid"
+      },
+      {
+        "path": "Combustor/combq.bin",
+        "role": "solution"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {
+          "encoding": "binary",
+          "endianness": "big",
+          "has_byte_count": false,
+          "precision": "float32"
+        },
+        "type": "PLOT3D"
+      },
+      "grid": {
+        "dimensions": [
+          57,
+          33,
+          25
+        ],
+        "origin": null,
+        "spacing": null,
+        "type": "structured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "Density",
+          "physical_quantity": "density",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "source": "reader_derived",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "source": "reader_derived",
+          "type": "vector",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "Within the annular-combustor flow field, identify and characterize one connected constant-Density isosurface component. Choose and explain how the components are formed, a finite stored-Density isovalue rule, a rule for selecting one component, and how to represent its location. Report the selected component’s representative location, defining density value, and surface area."
+}

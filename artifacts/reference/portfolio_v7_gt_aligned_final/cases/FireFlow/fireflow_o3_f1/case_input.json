@@ -1,0 +1,111 @@
+{
+  "case_context": {
+    "boundaries": [],
+    "geometry_assets": [
+      {
+        "description": "VRML geometry showing the room context for the flow solution.",
+        "format": "WRL",
+        "path": "FireFlow/room_vis.wrl"
+      }
+    ],
+    "objects": [
+      {
+        "description": "The room represented by the FireFlow scene.",
+        "name": "room"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "A room with a fire in one corner and a simulated fluid-flow snapshot",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "FireFlow/fire_ug.vtu",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {},
+        "type": "VTU"
+      },
+      "grid": {
+        "dimensions": null,
+        "origin": null,
+        "spacing": null,
+        "type": "unstructured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "t",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "uvw",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "u",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "v",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "w",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "mfrac",
+          "physical_quantity": null,
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "In the FireFlow room flow field, how should high-speed flow regions be defined, represented or aggregated, and evaluated? Select and report the flow quantity and measure used to quantify strength, state the criterion for identifying the strongest region, and report that region’s location and strength. Define speed as the Euclidean magnitude of the stored uvw vector at each point."
+}

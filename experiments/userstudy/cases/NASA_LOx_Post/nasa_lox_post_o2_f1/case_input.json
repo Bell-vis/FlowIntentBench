@@ -1,0 +1,113 @@
+{
+  "case_context": {
+    "boundaries": [],
+    "geometry_assets": [],
+    "objects": [
+      {
+        "description": "The cylindrical post perpendicular to the flow.",
+        "name": "cylindrical_post"
+      },
+      {
+        "description": "The flat plate across which the liquid oxygen flow is simulated.",
+        "name": "flat_plate"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "Liquid-oxygen flow across a flat plate with a cylindrical post",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "NASA_LOx_Post/postxyz.bin",
+        "role": "grid"
+      },
+      {
+        "path": "NASA_LOx_Post/postq.bin",
+        "role": "solution"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {
+          "encoding": "binary",
+          "endianness": "big",
+          "has_byte_count": false,
+          "precision": "float32"
+        },
+        "type": "PLOT3D"
+      },
+      "grid": {
+        "dimensions": [
+          38,
+          76,
+          38
+        ],
+        "origin": null,
+        "spacing": null,
+        "type": "structured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "Density",
+          "physical_quantity": "density",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "source": "reader_derived",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "source": "reader_derived",
+          "type": "vector",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "Identify the strongest high-speed region in the NASA LOx-post flow field. Use the supplied velocity vectors to compute speed as their magnitude, treat face-connected retained locations as a single region, and represent the selected region by the mean spatial location of its retained locations. Choose and state both a scientifically appropriate criterion for retaining high-speed locations and a property measure for comparing region strength, then report the strongest region’s location and strength."
+}

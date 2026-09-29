@@ -1,0 +1,9 @@
+{
+  "scientific_question": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target.",
+  "f1_required_properties": [],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+    "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+    "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dataset_id": "Electrolyzer_Electric",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "electrolyzer_current_hotspot_o3_f1"
+}

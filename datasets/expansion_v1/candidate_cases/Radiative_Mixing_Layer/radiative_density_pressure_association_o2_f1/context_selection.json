@@ -1,0 +1,7 @@
+{
+  "case_id": "radiative_density_pressure_association_o2_f1",
+  "dataset_id": "Radiative_Mixing_Layer",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "boundaries": [
+    {
+      "description": "The wall from which the fin projects.",
+      "name": "wall",
+      "type": "wall"
+    }
+  ],
+  "geometry_assets": [],
+  "objects": [
+    {
+      "description": "A half-rounded fin projecting into the fluid flow.",
+      "name": "blunt_fin"
+    }
+  ],
+  "operating_conditions": [],
+  "physical_setting": "Airflow around a blunt fin over a wall",
+  "reference_directions": [],
+  "regions": []
+}

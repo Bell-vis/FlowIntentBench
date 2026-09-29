@@ -1,0 +1,323 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "aideas_viscosity_shear_association_o2_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "aideas_viscosity_shear_association_o2_f1",
+    "family_id": "aideas_viscosity_shear_association",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "condition": "O2-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_viscosity_shear_association_o2_f1/case_input.json",
+    "case_input_sha256": "27b670f077d32f22d9de212e02b9130e28973c1311de95da3113de68b4bf06fc",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_viscosity_shear_association_o2_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "0a2057d196dd997688f24ac5acf579980e33296f9245ad2b091816534811697e",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_viscosity_shear_association_o2_f1/case_context.json",
+    "case_context_sha256": "2c6d49606a7afa4ff8eb1d1d26ba3ac41c6719c754144041a1ec99290b6f5e35",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_viscosity_shear_association_o2_f1/ground_truth.json",
+    "ground_truth_sha256": "4daa5b495793ecf5c90fad1514dd8d72a13fd3184131c45cf1b0f5634b404c12"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "aideas_viscosity_shear_association",
+    "title": "the spatial association between viscosity and shear-rate magnitude",
+    "scientific_target": "the spatial association between viscosity and shear-rate magnitude",
+    "finding_goal": "Characterize the spatial association between viscosity and shear-rate magnitude",
+    "scope": "the single-channel blow-mold flow simulation",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Report the numerical association coefficient.",
+      "o2_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+      "o3_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+      "o1_f2": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial association between viscosity and shear-rate magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "association",
+        "result_key": "value",
+        "request_phrase": "the numerical association coefficient",
+        "requirement_statement": "report the numerical association coefficient",
+        "category": "relation",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "pearson": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+          "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "Viscosity [Pa s]",
+            "association": "point"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          }
+        }
+      },
+      "spearman": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+          "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "Viscosity [Pa s]",
+            "association": "point"
+          },
+          "measure": "spearman",
+          "other_field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          }
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_aideas_viscosity_shear_association"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "cross_field_relation",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "cross_field_relation",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "association"
+        ]
+      ],
+      "role_by_category": {
+        "relation": "association"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    },
+    "cell_volume_convention": "absolute_signed_volume"
+  },
+  "family_definition_source": {
+    "path": "datasets/AIDEAS_Blow_Mold/construction/families.json",
+    "sha256": "75d8a87313239fe6c8f63665ef8e50ebd0d831ccf938a8077147a37ba1d8a9d7"
+  },
+  "branch_execution_evidence": {
+    "aideas_viscosity_shear_association_o2_f1_pearson": {
+      "case_id": "aideas_viscosity_shear_association_o2_f1",
+      "dataset_id": "AIDEAS_Blow_Mold",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": -0.80420676217054
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/aideas_viscosity_shear_association.json",
+        "sha256": "623e60b5a61aa620af4ef5b8cc615cf38886683455bc0617e5b85a604d699d7e"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "e9c97a0bfe57aaf2ba114c16ab10f421983aa7e00693ff689fdb07ea73664948",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+            "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "Viscosity [Pa s]",
+            "association": "point"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          }
+        },
+        "definition_sha256": "2e7cb5a303a4b2c0c4a13b679613b5450ccd048ac67e27a9afd368bcdf259543",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "b2380d9e1e18af7b4e1ec668ddba7f89cb83648b47d79d03ca10bb2aa28dbe83"
+    },
+    "aideas_viscosity_shear_association_o2_f1_spearman": {
+      "case_id": "aideas_viscosity_shear_association_o2_f1",
+      "dataset_id": "AIDEAS_Blow_Mold",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": -0.98514646828256
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/aideas_viscosity_shear_association.json",
+        "sha256": "623e60b5a61aa620af4ef5b8cc615cf38886683455bc0617e5b85a604d699d7e"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "e9c97a0bfe57aaf2ba114c16ab10f421983aa7e00693ff689fdb07ea73664948",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+            "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "Viscosity [Pa s]",
+            "association": "point"
+          },
+          "measure": "spearman",
+          "other_field": {
+            "name": "NormShearRate [1/s]",
+            "association": "point"
+          }
+        },
+        "definition_sha256": "2e7cb5a303a4b2c0c4a13b679613b5450ccd048ac67e27a9afd368bcdf259543",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "62a32404422f86fe7110139b3326df71834c185d214fa0cc82651656fb195e52"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "case_id": "aideas_viscosity_shear_association_o2_f1",
+    "semantic_contract_sha256": "31d9d6976c72890ec66fd87d9a85f58e830c7d3b1da8f244b299fb3c2cf1339c",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "aideas_viscosity_shear_association_o2_f1_pearson",
+        "finding_id": "aideas_viscosity_shear_association_o2_f1_pearson_association",
+        "scientific_finding_policy_key": "35182607032c10d898a6f9350b519684bc860a7a05c020b5379f109bb7fde8ee",
+        "policy_identity": {
+          "dataset_id": "AIDEAS_Blow_Mold",
+          "case_family_id": "aideas_viscosity_shear_association",
+          "scientific_target": "the spatial association between viscosity and shear-rate magnitude",
+          "effective_o_semantic_sha256": "e9f8b34f67a553871f8a95b770079bcfc7e2e8144f5dfaa6dd639eaa376554fe",
+          "scientific_role": "relation",
+          "g_of_o_locator": "/value",
+          "representation": "relation",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": -0.80420676217054,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "87400fa915d6d2d93caf7ce6672b7d77b0a3e565e8304b59d946b72709fe59c0"
+      },
+      {
+        "operationalization_id": "aideas_viscosity_shear_association_o2_f1_spearman",
+        "finding_id": "aideas_viscosity_shear_association_o2_f1_spearman_association",
+        "scientific_finding_policy_key": "9ca334158fa1bc9419523223cc5c1af1dc920abc988145a72230a80221c48594",
+        "policy_identity": {
+          "dataset_id": "AIDEAS_Blow_Mold",
+          "case_family_id": "aideas_viscosity_shear_association",
+          "scientific_target": "the spatial association between viscosity and shear-rate magnitude",
+          "effective_o_semantic_sha256": "6f6af5567415ca3e6e9fc33ee438a21b6602a2a9ea817e41178ef260a63b425e",
+          "scientific_role": "relation",
+          "g_of_o_locator": "/value",
+          "representation": "relation",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": -0.98514646828256,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "4a519a71a4a3fdef97d0eab8983e5de2e61964c93df6def97586a91ad6b84f43"
+      }
+    ],
+    "verification_policy_sha256": "edc185d1b070e38e7a75c267dfd41c0d47c2866bb8665fb9b8a857b3b9e8ce90"
+  }
+}

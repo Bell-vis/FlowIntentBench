@@ -1,0 +1,161 @@
+{
+  "case_family_id": "office__high_speed_region",
+  "case_id": "office_speed_zones_o1_f1",
+  "condition_constraints": [],
+  "dataset_id": "Office",
+  "evaluation_representability_contract": {
+    "condition": "O1-F1",
+    "contract_version": "case-evaluation-representability-v3",
+    "deterministic_verification": {
+      "registered_handlers": [
+        "exact_discrete",
+        "scalar_numeric",
+        "coordinate_point",
+        "componentwise_vector"
+      ],
+      "required_claim_types": [
+        "exact_discrete",
+        "scalar_numeric",
+        "coordinate_point",
+        "componentwise_vector"
+      ]
+    },
+    "domain": "thresholded_connected_speed_region",
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1",
+      "output_locators": [
+        "/reported_location",
+        "/strength",
+        "/coordinate_span",
+        "/selected_region_size",
+        "/region_count"
+      ]
+    },
+    "fixed_dimension_semantics": {
+      "aggregation_or_representation": "represent the strongest region by the mean spatial location of its retained high-speed locations",
+      "criterion": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale",
+      "feature_definition": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region",
+      "property_measure": "use peak speed as the measure of strength"
+    },
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v3",
+      "unsupported_disposition": "MATERIALIZATION_UNSUPPORTED_PENDING_NOT_INVALID"
+    },
+    "semantic_adjudication": {
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1",
+      "required": false
+    },
+    "supported_effective_o_envelope": {},
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    },
+    "unresolved_dimensions": [],
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    }
+  },
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "question_fragment": "the location",
+      "statement": "report the location of the strongest region"
+    },
+    {
+      "category": "quantity",
+      "question_fragment": "report",
+      "statement": "report the strength of the strongest region"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "analysis_procedure",
+      "question_fragment": "by the mean spatial location of its retained high-speed locations",
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "category": "criterion",
+      "question_fragment": "as velocity magnitude above 0.20 in the stored velocity scale",
+      "statement": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale"
+    },
+    {
+      "category": "feature_definition",
+      "question_fragment": "as one",
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "category": "property_measure",
+      "question_fragment": "use peak speed as",
+      "statement": "use peak speed as the measure of strength"
+    }
+  ],
+  "finding_goal": "characterize the strongest airflow region in the office velocity field",
+  "finding_openness": "bounded",
+  "operationalization_responsibility": "user_specified",
+  "principal_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "criterion",
+    "feature_definition",
+    "property_measure"
+  ],
+  "responsibility_contract": {
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ],
+      "normalized_demand": "",
+      "required_responsibility_mode": null,
+      "required_semantic_anchors": []
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "canonical_id": "office__high_speed_region:analysis_procedure:1",
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "represent the strongest region by the mean spatial location of its retained high-speed locations",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      },
+      {
+        "canonical_id": "office__high_speed_region:criterion:2",
+        "dimension_id": "criterion",
+        "normalized_meaning": "define high-speed airflow as velocity magnitude above 0.20 in the stored velocity scale",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      },
+      {
+        "canonical_id": "office__high_speed_region:feature_definition:3",
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      },
+      {
+        "canonical_id": "office__high_speed_region:property_measure:4",
+        "dimension_id": "property_measure",
+        "normalized_meaning": "use peak speed as the measure of strength",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": []
+      }
+    ],
+    "scientific_target": {
+      "canonical_id": "office__high_speed_region",
+      "normalized_meaning": "ventilation regions in the office velocity field",
+      "required_semantic_anchors": []
+    },
+    "unresolved_operationalization_dimensions": []
+  },
+  "scientific_target": "ventilation regions in the office velocity field",
+  "scope_constraints": [
+    {
+      "question_fragment": "in the office",
+      "statement": "in the office"
+    }
+  ],
+  "selection_constraints": [],
+  "unresolved_operationalization_dimensions": []
+}

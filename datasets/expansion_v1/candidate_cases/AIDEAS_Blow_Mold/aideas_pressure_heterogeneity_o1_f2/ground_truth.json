@@ -1,0 +1,50 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "case_id": "aideas_pressure_heterogeneity_o1_f2",
+  "case_family_id": "aideas_pressure_heterogeneity",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "aideas_pressure_heterogeneity_o1_f2_cv",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "aideas_pressure_heterogeneity_o1_f2_cv",
+      "findings": [
+        {
+          "finding_id": "aideas_pressure_heterogeneity_o1_f2_cv_coefficient",
+          "category": "quantity",
+          "statement": "report the numerical coefficient",
+          "importance": "core",
+          "value": 0.45476666321227,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_aideas_pressure_heterogeneity"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "FireFlow",
+    "evidence_type": "finding",
+    "statement": "The FireFlow vector-field example supports identifying a selected high-speed region and reporting its location, speed characterization, and extent; exact benchmark values come from execution.",
+    "source_id": "src_001",
+    "locator": {"section": "Description", "page": null, "figure": null, "code_location": "FireFlow.cxx: vtkStreamTracer and vtkContourFilter"},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

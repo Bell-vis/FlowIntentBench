@@ -1,0 +1,62 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "Kitchen",
+    "evidence_type": "operationalization",
+    "statement": "The Kitchen example releases streamlines from starting positions defined by a straight-line rake and uses many simultaneous streamlines to inspect flow-field features.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": "6-18",
+      "code_location": "Kitchen.cxx: vtkLineSource and vtkStreamTracer"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "op_002",
+    "dataset_id": "Kitchen",
+    "evidence_type": "operationalization",
+    "statement": "The Kitchen laboratory documentation identifies ke as turbulent kinetic energy, ep as turbulent dissipation rate, and the c-prefixed scalar fields as gas concentrations in this room-flow dataset.",
+    "source_id": "src_003",
+    "locator": {
+      "section": "Data and variable description",
+      "page": null,
+      "figure": null,
+      "code_location": null
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "op_003",
+    "dataset_id": "Kitchen",
+    "evidence_type": "operationalization",
+    "statement": "Turbulent kinetic energy and turbulent dissipation rate are distinct standard turbulence quantities, so extrema of either field are scientifically distinct local turbulence-activity operationalizations.",
+    "source_id": "src_004",
+    "locator": {
+      "section": "k-epsilon turbulence modelling",
+      "page": null,
+      "figure": null,
+      "code_location": null
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "op_004",
+    "dataset_id": "Kitchen",
+    "evidence_type": "operationalization",
+    "statement": "Statistical spread of concentration is a scientifically meaningful way to describe mixture heterogeneity; normalized concentration spread supports a scale-independent comparison among concentration fields.",
+    "source_id": "src_005",
+    "locator": {
+      "section": "mixture characteristics",
+      "page": null,
+      "figure": null,
+      "code_location": null
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

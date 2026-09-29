@@ -1,0 +1,70 @@
+{
+  "branches": [
+    {
+      "branch_id": "fireflow_o1_f1_o1_high_speed_regions",
+      "dataset_manifest_sha256": "f7d3d95bca6bd3402ee197455b82561606c70e79e99b078e311c92f5f47786d5",
+      "effective_o_sha256": "fda892b36be19296ef5e7efe1ee7709ca6dd49556c338f74617554799861d5a1",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "execution_value_sha256": "86fb79879fe3f970bf2e0c403960d0d1504d70b18bf60e0dc5ce1bb2aeb7aa30",
+          "finding_id": "fireflow_o1_f1_o1_high_speed_regions_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "scientific_finding_policy_key": "b98b20b5ced4c38a6b8d38d621b9b3dba5b8d43aeb209d0c1dfab9460c41060c",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "2832942a69acd707ca80748a7822c8814a3870d6f782c011e724e57af4354c38"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 3.822313175748469,
+          "execution_value_sha256": "ae5db3f09bdd5fdcb376e8cadb43128ed218e0a53a90f73fe7ffbc63db323316",
+          "finding_id": "fireflow_o1_f1_o1_high_speed_regions_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 3.822313175748469,
+          "scientific_finding_policy_key": "51bab27a88c07cc728cecca07676ad0cee0de724b164ba24e66972e01a7e42a6",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "7df0dcb1e51837177139a8a13aac446f5703110dee01db9bcce0469079ce2b4b"
+        }
+      ],
+      "g_of_o_sha256": "608fdf9b3581d07c8de4609189de4042f0a1507979a5a956a00e4f6207475b54",
+      "materialization_id": "mat:fireflow_o1_f1_o1_high_speed_regions",
+      "operationalization_id": "fireflow_o1_f1_o1_high_speed_regions"
+    }
+  ],
+  "case_id": "fireflow_o1_f1",
+  "dataset_id": "FireFlow",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187"
+}

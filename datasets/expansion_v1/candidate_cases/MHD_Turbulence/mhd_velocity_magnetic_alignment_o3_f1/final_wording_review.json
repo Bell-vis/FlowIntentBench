@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence records were supplied, so no dataset-specific numerical result can be independently substantiated from the evidence context."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful and answerable alignment analysis for the supplied compressible magnetohydrodynamic snapshot and preserves the complete supplied three-dimensional mesh scope. It faithfully states the target, leaves aggregation or representation, feature definition, and property measure open through the request to choose an appropriate procedure, and correctly requires reporting the signed alignment coefficient without imposing unnecessary schema or protocol details.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "5be75451366075ab68996ceb937ed7060d62252023e08868937ea89295d51d28",
+  "review_packet_sha256": "253757b51b3ace7860419690a1fe043764a984f9d6ec2f8520911284b5bd7512",
+  "reviewed_model_visible_text_sha256": "ea972ecfa56b87008a5c047736222a43112bc1c91c4a9bffcc5b8bf1e2e06d4f",
+  "reviewed_model_visible_text": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Choose and explain an appropriate analysis procedure. Report the signed alignment coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "mhd_velocity_magnetic_alignment_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "253757b51b3ace7860419690a1fe043764a984f9d6ec2f8520911284b5bd7512",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:27:37.339759+00:00",
+    "latency_seconds": 19.118567,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence records were supplied, so no dataset-specific numerical result can be independently substantiated from the evidence context.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful and answerable alignment analysis for the supplied compressible magnetohydrodynamic snapshot and preserves the complete supplied three-dimensional mesh scope. It faithfully states the target, leaves aggregation or representation, feature definition, and property measure open through the request to choose an appropriate procedure, and correctly requires reporting the signed alignment coefficient without imposing unnecessary schema or protocol details.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence records were supplied, so no dataset-specific numerical result can be independently substantiated from the evidence context."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful and answerable alignment analysis for the supplied compressible magnetohydrodynamic snapshot and preserves the complete supplied three-dimensional mesh scope. It faithfully states the target, leaves aggregation or representation, feature definition, and property measure open through the request to choose an appropriate procedure, and correctly requires reporting the signed alignment coefficient without imposing unnecessary schema or protocol details."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0a0a0f079f23be14016aa6dcf71f2887d0acce48989c155111": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1131,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1131,
+            "output_tokens": 0
+          },
+          "rs_0a0a0f079f23be14016aa6dcf7d31087d0a10a75211c1c446b": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_0a0a0f079f23be14016aa6dd0551b087d084773c26263247c5": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 195
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 195
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1747,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 711,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2458
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "5be75451366075ab68996ceb937ed7060d62252023e08868937ea89295d51d28",
+    "review_packet_sha256": "253757b51b3ace7860419690a1fe043764a984f9d6ec2f8520911284b5bd7512",
+    "reviewed_model_visible_text_sha256": "ea972ecfa56b87008a5c047736222a43112bc1c91c4a9bffcc5b8bf1e2e06d4f",
+    "reviewed_model_visible_text": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the directional alignment between velocity and magnetic field. Choose and explain an appropriate analysis procedure. Report the signed alignment coefficient."
+  }
+}

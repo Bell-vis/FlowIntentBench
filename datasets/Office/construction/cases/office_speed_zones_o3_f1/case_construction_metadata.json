@@ -1,0 +1,47 @@
+{
+  "case_id": "office_speed_zones_o3_f1",
+  "case_family_id": "office_speed_zones",
+  "dataset_id": "Office",
+  "scientific_target": "ventilation regions in the Office velocity field",
+  "finding_goal": "characterize the strongest airflow region in the Office velocity field",
+  "operationalization_responsibility": "model_selected",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "scope_constraints": [
+    {
+      "statement": "in the office",
+      "question_fragment": "in the office"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "select the strongest region",
+      "question_fragment": "strongest region"
+    }
+  ],
+  "explicit_method_constraints": [],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the location of the strongest region",
+      "question_fragment": "report its location"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the strength of the strongest region",
+      "question_fragment": "strength"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "case_id": "electrolyzer_current_hotspot_o1_f1",
+  "dataset_id": "Electrolyzer_Electric",
+  "include_fact_ids": [
+    "physical_setting"
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "evidence_id": "finding_radiative_density_heterogeneity",
+    "dataset_id": "Radiative_Mixing_Layer",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"cv\": {\"value\": 0.9358868159668559}, \"relative_interdecile\": {\"value\": 1.02198076140038}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_radiative_density_pressure_association",
+    "dataset_id": "Radiative_Mixing_Layer",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"pearson\": {\"value\": -0.03416195632587162}, \"spearman\": {\"value\": 0.4835885807469999}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_radiative_vertical_advective_flux",
+    "dataset_id": "Radiative_Mixing_Layer",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"cell_product\": {\"value\": -0.06464977665849198}, \"point_product\": {\"value\": -0.05999121368834152}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

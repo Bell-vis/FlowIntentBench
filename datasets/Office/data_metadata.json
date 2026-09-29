@@ -1,0 +1,48 @@
+{
+  "format": {
+    "type": "VTK",
+    "details": {}
+  },
+  "grid": {
+    "type": "structured",
+    "dimensions": [
+      21,
+      20,
+      20
+    ],
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "scalars",
+      "physical_quantity": "pressure",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "vectors",
+      "physical_quantity": "velocity",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

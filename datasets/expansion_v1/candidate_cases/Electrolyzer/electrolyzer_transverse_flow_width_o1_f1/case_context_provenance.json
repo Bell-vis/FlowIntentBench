@@ -1,0 +1,15 @@
+{
+  "dataset_id": "Electrolyzer",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "electrolyzer_transverse_flow_width_o1_f1"
+}

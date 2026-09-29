@@ -1,0 +1,41 @@
+{
+  "dataset_id": "FireFlow",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 631781,
+      "checksum": "9e1dd44335897be3126dfb909cf57389b67155c16bfa8755edc241d90e6df0f3",
+      "checksum_algorithm": "sha256",
+      "source_url": null,
+      "path": "FireFlow/fire_ug.vtu",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [
+    {
+      "size_bytes": 20659,
+      "checksum": "bd2e36fc0774e83d2178af79d2b9bc6b6102417d5a2e8738cd4bfa43de4238ef",
+      "checksum_algorithm": "sha256",
+      "source_url": "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/FireFlow/",
+      "path": "FireFlow/room_vis.wrl",
+      "role": "geometry"
+    }
+  ],
+  "reader": {
+    "format": "VTU",
+    "canonical_reader": "vtkXMLUnstructuredGridReader",
+    "reader_configuration": {
+      "read_all_scalars": false,
+      "read_all_vectors": false
+    },
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "source_urls": [
+      "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/FireFlow/",
+      "https://docs.enthought.com/mayavi/mayavi/example_fire.html"
+    ]
+  }
+}

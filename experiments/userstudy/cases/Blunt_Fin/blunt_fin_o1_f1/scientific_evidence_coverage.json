@@ -1,0 +1,88 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "blunt_fin_o1_f1",
+  "claims": [
+    {
+      "claim_id": "blunt_fin_o1_f1_o1_high_speed_regions:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "claim_id": "blunt_fin_o1_f1_o1_high_speed_regions:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation"
+    },
+    {
+      "claim_id": "blunt_fin_o1_f1_o1_high_speed_regions:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "use peak speed as the measure of strength"
+    },
+    {
+      "claim_id": "blunt_fin_o1_f1_o1_high_speed_regions:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "claim_id": "blunt_fin_o1_f1_o1_high_speed_regions:F:blunt_fin_o1_f1_o1_high_speed_regions_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [-0.43620374257338634, 3.0521042773374156, 2.5893470661131714] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "blunt_fin_o1_f1_o1_high_speed_regions:F:blunt_fin_o1_f1_o1_high_speed_regions_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has peak speed strength approximately 3.1229319 in the stored velocity scale."
+    }
+  ],
+  "dataset_id": "Blunt_Fin",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

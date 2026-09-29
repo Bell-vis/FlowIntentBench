@@ -1,0 +1,14 @@
+{
+  "physical_setting": "Flow in an annular combustor in a gas turbine",
+  "objects": [
+    {
+      "name": "annular_combustor",
+      "description": "The annular combustor represented by the structured PLOT3D dataset."
+    }
+  ],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

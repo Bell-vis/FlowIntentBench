@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Investigate high-speed flow regions in the carotid artery flow field: choose an appropriate rule for determining which locations qualify as high-speed and a corresponding measure of regional strength, then select the strongest region. Combine locations connected through immediate grid neighbors along one grid axis into a single contiguous region, summarize it by the mean spatial location of its retained high-speed locations, and report its location and strength.",
+  "semantic_contract_sha256": "e69c50e3e63b5ef434b1625290c2bc9c52e9f783be5302c7a7091166ad1fb75b",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "FireFlow",
+    "evidence_type": "operationalization",
+    "statement": "The FireFlow VTK example combines a VRML geometry import with an XML unstructured-grid reader, then uses stream tracing and a velocity isosurface for visualization.",
+    "source_id": "src_001",
+    "locator": {
+      "section": "Description",
+      "page": null,
+      "figure": null,
+      "code_location": "FireFlow.cxx: vtkVRMLImporter, vtkXMLUnstructuredGridReader, vtkStreamTracer, vtkContourFilter"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

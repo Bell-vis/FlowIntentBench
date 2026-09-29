@@ -1,0 +1,339 @@
+{
+  "families": [
+    {
+      "family_id": "rt_mixing_width",
+      "title": "the vertical extent of the intermediate-density region",
+      "scientific_target": "the vertical extent of the intermediate-density region",
+      "finding_goal": "Characterize the vertical extent of the intermediate-density region",
+      "scope": "the supplied Rayleigh\u2013Taylor instability snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field. Measure width along the z axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Report the numerical width, and the weighted center coordinate.",
+        "o2_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field. Multiply the stated spatial weight by cell volume and normalize by its sum. Choose and explain the remaining quantitative definition. Report the numerical width, and the weighted center coordinate.",
+        "o3_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+        "o1_f2": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the vertical extent of the intermediate-density region. Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field. Measure width along the z axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "width",
+          "result_key": "width",
+          "request_phrase": "the numerical width",
+          "requirement_statement": "report the numerical width",
+          "category": "property",
+          "unit": null
+        },
+        {
+          "property_id": "center",
+          "result_key": "center",
+          "request_phrase": "the weighted center coordinate",
+          "requirement_statement": "report the weighted center coordinate",
+          "category": "location",
+          "unit": null
+        }
+      ],
+      "operations": {
+        "rms": {
+          "clauses": {
+            "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field.",
+            "property_measure": "Measure width along the z axis as the weighted root-mean-square distance from its weighted center.",
+            "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+          },
+          "recipe": {
+            "kind": "weighted_width",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "rms",
+            "axis": 2,
+            "weight_transform": "mixture",
+            "endmembers": "sample_extrema"
+          }
+        },
+        "interdecile": {
+          "clauses": {
+            "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Define c from cell density normalized by its sample minimum and maximum; use 4c(1-c) as a descriptive mixing-weight field.",
+            "property_measure": "Measure width along the z axis as the weighted 90th-minus-10th coordinate percentile range.",
+            "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+          },
+          "recipe": {
+            "kind": "weighted_width",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "interdecile",
+            "axis": 2,
+            "weight_transform": "mixture",
+            "endmembers": "sample_extrema"
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_rt_mixing_width"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "profile_width",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "profile_width",
+        "mandatory_roles": [],
+        "supporting_roles": [
+          "center"
+        ],
+        "adequate_core_sets": [
+          [
+            "width"
+          ]
+        ],
+        "role_by_category": {
+          "location": "center",
+          "property": "width"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      },
+      "f2_core_properties": [
+        "width"
+      ]
+    },
+    {
+      "family_id": "rt_density_vertical_motion",
+      "title": "the association between density and vertical velocity",
+      "scientific_target": "the association between density and vertical velocity",
+      "finding_goal": "Characterize the association between density and vertical velocity",
+      "scope": "the supplied Rayleigh\u2013Taylor instability snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+        "o2_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+        "o3_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+        "o1_f2": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "association",
+          "result_key": "value",
+          "request_phrase": "the numerical association coefficient",
+          "requirement_statement": "report the numerical association coefficient",
+          "category": "relation",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "pearson": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "pearson",
+            "other_field": {
+              "name": "velocity",
+              "association": "point",
+              "component": 2
+            }
+          }
+        },
+        "spearman": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "measure": "spearman",
+            "other_field": {
+              "name": "velocity",
+              "association": "point",
+              "component": 2
+            }
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_rt_density_vertical_motion"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "cross_field_relation",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "cross_field_relation",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "association"
+          ]
+        ],
+        "role_by_category": {
+          "relation": "association"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    },
+    {
+      "family_id": "rt_isodensity_geometry",
+      "title": "the geometry of a middle-density level surface",
+      "scientific_target": "the geometry of a middle-density level surface",
+      "finding_goal": "Characterize the geometry of a middle-density level surface",
+      "scope": "the supplied Rayleigh\u2013Taylor instability snapshot",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation",
+        "parameter"
+      ],
+      "o2_unresolved_dimensions": [
+        "parameter"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Report the total surface area, and the area-weighted surface centroid.",
+        "o2_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Choose and explain the remaining quantitative definition. Report the total surface area, and the area-weighted surface centroid.",
+        "o3_f1": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Choose and explain an appropriate analysis procedure. Report the total surface area, and the area-weighted surface centroid.",
+        "o1_f2": "In the supplied Rayleigh\u2013Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "area",
+          "result_key": "area",
+          "request_phrase": "the total surface area",
+          "requirement_statement": "report the total surface area",
+          "category": "property",
+          "unit": null
+        },
+        {
+          "property_id": "centroid",
+          "result_key": "centroid",
+          "request_phrase": "the area-weighted surface centroid",
+          "requirement_statement": "report the area-weighted surface centroid",
+          "category": "location",
+          "unit": null,
+          "spatial_tolerance": 1e-05
+        }
+      ],
+      "operations": {
+        "rho094": {
+          "clauses": {
+            "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+            "property_measure": "Compute the stated properties of the selected object.",
+            "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+            "parameter": "Extract the density level 0.94 in stored units."
+          },
+          "recipe": {
+            "kind": "surface",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "level": 0.94
+          }
+        },
+        "rho095": {
+          "clauses": {
+            "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+            "property_measure": "Compute the stated properties of the selected object.",
+            "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+            "parameter": "Extract the density level 0.95 in stored units."
+          },
+          "recipe": {
+            "kind": "surface",
+            "field": {
+              "name": "density",
+              "association": "point"
+            },
+            "level": 0.95
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_rt_isodensity_geometry"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "surface_geometry",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except parameter. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "surface_geometry",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "area",
+            "centroid"
+          ]
+        ],
+        "role_by_category": {
+          "location": "centroid",
+          "property": "area"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    }
+  ]
+}

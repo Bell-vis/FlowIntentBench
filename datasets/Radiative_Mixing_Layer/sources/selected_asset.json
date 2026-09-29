@@ -1,0 +1,14 @@
+{
+  "url": "https://huggingface.co/datasets/polymathic-ai/turbulent_radiative_layer_3D/resolve/26fe3aa1ce19d374f1f83f1346650d0efba5046d/data/valid/turbulent_radiative_layer_tcool_0.03.hdf5?download=true",
+  "type": "file",
+  "oid": "0d9a02b9ab8ccb5ba7e93c8a5e3eb5b11c811bde",
+  "size": 8472530400,
+  "lfs": {
+    "oid": "c8032703f687613efe3efc69831d8b1b50ac4a02cce0d2f1e27cc817cd20cbd7",
+    "size": 8472530400,
+    "pointerSize": 135
+  },
+  "xetHash": "67ad71c17ff507dd904139b9cfbe9af07e11d5509520bbf9d8de8a3dc3d2865e",
+  "path": "data/valid/turbulent_radiative_layer_tcool_0.03.hdf5",
+  "revision": "26fe3aa1ce19d374f1f83f1346650d0efba5046d"
+}

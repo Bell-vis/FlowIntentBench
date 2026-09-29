@@ -1,0 +1,543 @@
+{
+  "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+  "construction_run_identity": {
+    "agent_profile_ids": [],
+    "build_identity_sha256": "58a0d25209878e7268ac0215338451cd52b45183d4b44f150c8ef16b0e44572a",
+    "compiler_identity": "flowintentbench.deterministic_materialization.compile_effective_operationalization",
+    "compiler_sha256": "4c9c2ad327e93e2f28a20b1ded1a092e1863f3e4a0bbea5dc48f845c642948b0",
+    "construction_invocation_id": "construction:137ea2c17321520719daec93",
+    "dataset_manifest_digests": {
+      "Blunt_Fin": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+      "Carotid": "7f4f18c9faa8fbc001f646d238f0d1a3098d1dba61937bb6c8926e2b7364e282",
+      "Combustor": "b6c56cf52dbacb407bce66561ac7d7d5415fa1bf8c8642e6707821cf51c5f92f",
+      "FireFlow": "36391d210c2f174bf24138225445f31148be733e13d7391571abdd28a59dd689",
+      "Kitchen": "2be1eb105bfd17e74c2576bec5ba89c1241387d8c9eccb2749b7e8af9a2d6a72",
+      "NASA_LOx_Post": "47c005236752d759c2f0b340d27f536ac4d7afe7eec0ca1693a691221976503c",
+      "Office": "8bf5720e42f6b8840062e825b2400949a041c8dc41124a1e19ec0399256e87dc"
+    },
+    "live_agents_requested": false,
+    "materializer_identity": "flowintentbench.qualified_scientific_cases.reference_materializer",
+    "materializer_sha256": "807a8f8651dcd5ec562cdd99a0c27b894c0737e9170c9f0b206f9f9c186b7d84",
+    "provider_configuration_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "run_identity_sha256": "12c094026b3c03bf90071a06318bbef60775631bdeeeaaf7f89d2ec0832b0dd4",
+    "runtime_profile_digest": "84fcf8214801d714655930fbef828f1c9049f9a6afdff9f76e234aee37a54b69",
+    "timeout_seconds": 90.0
+  },
+  "stage_a_semantic_reuse": {
+    "current_semantic_hash": "5e3eb461618c4c60c21297f0758ebb9fd41cbfe3ba2e306030bbf0a25b4f3431",
+    "decision": "REBUILD_REQUIRED",
+    "equivalence_checks": {
+      "finding_responsibility": true,
+      "operationalization_responsibility": true,
+      "principal_operationalization_dimensions": true,
+      "reference_branches_present": true,
+      "scientific_target": false,
+      "unresolved_operationalization_dimensions": true,
+      "verification_semantics_present": true
+    },
+    "historical_case_id": "combustor_density_features_o1_f2",
+    "historical_semantic_hash": null,
+    "reason": "historical semantics are incomplete or differ from current projection"
+  },
+  "stage_b_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "component_selection": "largest_surface_area",
+          "level": 0.4146665334701538,
+          "location_representation": "area_weighted_centroid",
+          "q90": 0.4146665334701538,
+          "quantile_method": "linear",
+          "regions": [
+            {
+              "area_weighted_centroid": [
+                5.186062674753928,
+                0.24928450765948698,
+                30.535099120275166
+              ],
+              "bounding_box_midpoint": [
+                8.296288665384054,
+                0.0,
+                29.823715209960938
+              ],
+              "bounding_box_volume": 2370.4843934947567,
+              "bounds": [
+                [
+                  0.08257710188627243,
+                  16.510000228881836
+                ],
+                [
+                  -5.662140846252441,
+                  5.662140846252441
+                ],
+                [
+                  23.452430725097656,
+                  36.19499969482422
+                ]
+              ],
+              "region_id": 0,
+              "surface_area": 260.78393901064567
+            },
+            {
+              "area_weighted_centroid": [
+                10.146108346678226,
+                0.13820445422603053,
+                28.9667663068535
+              ],
+              "bounding_box_midpoint": [
+                10.29560661315918,
+                0.0,
+                29.161704063415527
+              ],
+              "bounding_box_volume": 50.36776361273549,
+              "bounds": [
+                [
+                  9.529313087463379,
+                  11.06190013885498
+                ],
+                [
+                  -4.341665744781494,
+                  4.341665744781494
+                ],
+                [
+                  27.269311904907227,
+                  31.054096221923828
+                ]
+              ],
+              "region_id": 2,
+              "surface_area": 27.51910885274215
+            },
+            {
+              "area_weighted_centroid": [
+                14.026057446482994,
+                -0.30161922884101716,
+                31.21718076288293
+              ],
+              "bounding_box_midpoint": [
+                14.295844078063965,
+                0.0,
+                30.99330711364746
+              ],
+              "bounding_box_volume": 107.9595499572007,
+              "bounds": [
+                [
+                  12.081687927246094,
+                  16.510000228881836
+                ],
+                [
+                  -4.951100826263428,
+                  4.951100826263428
+                ],
+                [
+                  29.762298583984375,
+                  32.22431564331055
+                ]
+              ],
+              "region_id": 3,
+              "surface_area": 26.4229488786185
+            },
+            {
+              "area_weighted_centroid": [
+                8.226447369666223,
+                0.2579951624703227,
+                25.975566394282257
+              ],
+              "bounding_box_midpoint": [
+                8.501530885696411,
+                0.0,
+                26.10058879852295
+              ],
+              "bounding_box_volume": 7.806348087718064,
+              "bounds": [
+                [
+                  7.996142864227295,
+                  9.006918907165527
+                ],
+                [
+                  -4.083071231842041,
+                  4.083071231842041
+                ],
+                [
+                  25.627714157104492,
+                  26.573463439941406
+                ]
+              ],
+              "region_id": 1,
+              "surface_area": 4.815816747255227
+            }
+          ],
+          "selected": {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          },
+          "selected_by_bounding_box_volume": {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          },
+          "selected_by_surface_area": {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          }
+        },
+        "data_provenance": {
+          "analysis": "Density contour/connectivity/triangulation",
+          "compiled_plan_sha256": "42a44ba51a6b5f4627299634ad45830229fd267e95a662463dcf7f358d9767e9",
+          "dataset_id": "Combustor",
+          "dataset_manifest_sha256": "c01e313f9ea9c3731ff0e9eadaef0492a0d6ba034743c81d0e4722ec1291f994",
+          "effective_o_sha256": "172106c5f46ca6692b7ba27a687609d6dcd52d753c33a527a8d5b8e2c22ef55a",
+          "executed_plan_sha256": "42a44ba51a6b5f4627299634ad45830229fd267e95a662463dcf7f358d9767e9",
+          "materialization_plan": {
+            "aggregation_kind": "largest_surface_area",
+            "comparator": null,
+            "component_selection_kind": "largest_surface_area",
+            "connectivity_kind": "polydata_connected",
+            "criterion_kind": "density_quantile",
+            "domain": "density_isosurface",
+            "measure_kind": "surface_area",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "area_weighted_centroid",
+            "threshold": null
+          },
+          "reader": "canonical PLOT3D",
+          "silent_substitutions": [],
+          "unsupported_dimensions": []
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface",
+      "operation_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface",
+      "reuse_reference": "REBUILD_REQUIRED"
+    }
+  ],
+  "stage_c_live_materializations": [
+    {
+      "execution": {
+        "G_of_O": {
+          "component_selection": "largest_surface_area",
+          "level": 0.4146665334701538,
+          "location_representation": "area_weighted_centroid",
+          "q90": 0.4146665334701538,
+          "quantile_method": "linear",
+          "regions": [
+            {
+              "area_weighted_centroid": [
+                5.186062674753928,
+                0.24928450765948698,
+                30.535099120275166
+              ],
+              "bounding_box_midpoint": [
+                8.296288665384054,
+                0.0,
+                29.823715209960938
+              ],
+              "bounding_box_volume": 2370.4843934947567,
+              "bounds": [
+                [
+                  0.08257710188627243,
+                  16.510000228881836
+                ],
+                [
+                  -5.662140846252441,
+                  5.662140846252441
+                ],
+                [
+                  23.452430725097656,
+                  36.19499969482422
+                ]
+              ],
+              "region_id": 0,
+              "surface_area": 260.78393901064567
+            },
+            {
+              "area_weighted_centroid": [
+                10.146108346678226,
+                0.13820445422603053,
+                28.9667663068535
+              ],
+              "bounding_box_midpoint": [
+                10.29560661315918,
+                0.0,
+                29.161704063415527
+              ],
+              "bounding_box_volume": 50.36776361273549,
+              "bounds": [
+                [
+                  9.529313087463379,
+                  11.06190013885498
+                ],
+                [
+                  -4.341665744781494,
+                  4.341665744781494
+                ],
+                [
+                  27.269311904907227,
+                  31.054096221923828
+                ]
+              ],
+              "region_id": 2,
+              "surface_area": 27.51910885274215
+            },
+            {
+              "area_weighted_centroid": [
+                14.026057446482994,
+                -0.30161922884101716,
+                31.21718076288293
+              ],
+              "bounding_box_midpoint": [
+                14.295844078063965,
+                0.0,
+                30.99330711364746
+              ],
+              "bounding_box_volume": 107.9595499572007,
+              "bounds": [
+                [
+                  12.081687927246094,
+                  16.510000228881836
+                ],
+                [
+                  -4.951100826263428,
+                  4.951100826263428
+                ],
+                [
+                  29.762298583984375,
+                  32.22431564331055
+                ]
+              ],
+              "region_id": 3,
+              "surface_area": 26.4229488786185
+            },
+            {
+              "area_weighted_centroid": [
+                8.226447369666223,
+                0.2579951624703227,
+                25.975566394282257
+              ],
+              "bounding_box_midpoint": [
+                8.501530885696411,
+                0.0,
+                26.10058879852295
+              ],
+              "bounding_box_volume": 7.806348087718064,
+              "bounds": [
+                [
+                  7.996142864227295,
+                  9.006918907165527
+                ],
+                [
+                  -4.083071231842041,
+                  4.083071231842041
+                ],
+                [
+                  25.627714157104492,
+                  26.573463439941406
+                ]
+              ],
+              "region_id": 1,
+              "surface_area": 4.815816747255227
+            }
+          ],
+          "selected": {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          },
+          "selected_by_bounding_box_volume": {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          },
+          "selected_by_surface_area": {
+            "area_weighted_centroid": [
+              5.186062674753928,
+              0.24928450765948698,
+              30.535099120275166
+            ],
+            "bounding_box_midpoint": [
+              8.296288665384054,
+              0.0,
+              29.823715209960938
+            ],
+            "bounding_box_volume": 2370.4843934947567,
+            "bounds": [
+              [
+                0.08257710188627243,
+                16.510000228881836
+              ],
+              [
+                -5.662140846252441,
+                5.662140846252441
+              ],
+              [
+                23.452430725097656,
+                36.19499969482422
+              ]
+            ],
+            "region_id": 0,
+            "surface_area": 260.78393901064567
+          }
+        },
+        "data_provenance": {
+          "analysis": "Density contour/connectivity/triangulation",
+          "compiled_plan_sha256": "42a44ba51a6b5f4627299634ad45830229fd267e95a662463dcf7f358d9767e9",
+          "dataset_id": "Combustor",
+          "dataset_manifest_sha256": "c01e313f9ea9c3731ff0e9eadaef0492a0d6ba034743c81d0e4722ec1291f994",
+          "effective_o_sha256": "172106c5f46ca6692b7ba27a687609d6dcd52d753c33a527a8d5b8e2c22ef55a",
+          "executed_plan_sha256": "42a44ba51a6b5f4627299634ad45830229fd267e95a662463dcf7f358d9767e9",
+          "materialization_plan": {
+            "aggregation_kind": "largest_surface_area",
+            "comparator": null,
+            "component_selection_kind": "largest_surface_area",
+            "connectivity_kind": "polydata_connected",
+            "criterion_kind": "density_quantile",
+            "domain": "density_isosurface",
+            "measure_kind": "surface_area",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "area_weighted_centroid",
+            "threshold": null
+          },
+          "reader": "canonical PLOT3D",
+          "silent_substitutions": [],
+          "unsupported_dimensions": []
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "materialization_id": "mat:combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface",
+      "operation_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface",
+      "reuse_reference": "REBUILD_REQUIRED"
+    }
+  ],
+  "stage_c_o_space": "NOT_RUN",
+  "stage_c_proposal_attempts": [],
+  "stage_d_finding_space": "NOT_CONSTRUCTED",
+  "stage_e_proxy_invocations": [],
+  "status": "COMPLETE"
+}

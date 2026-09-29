@@ -1,0 +1,59 @@
+{
+  "family_id": "electrolyzer_transverse_flow_width",
+  "inputs": [
+    {
+      "path": "Electrolyzer/flow.vtk",
+      "sha256": "04863624be02130ee9200ca40c8102cc37cd8594f8f805fffb001e35b8e94490"
+    }
+  ],
+  "operations": {
+    "rms": {
+      "clauses": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+        "property_measure": "Measure width along the y axis as the weighted root-mean-square distance from its weighted center.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "recipe": {
+        "kind": "weighted_width",
+        "field": {
+          "name": "velocity",
+          "association": "cell",
+          "reduce": "magnitude"
+        },
+        "measure": "rms",
+        "axis": 1
+      }
+    },
+    "interdecile": {
+      "clauses": {
+        "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+        "property_measure": "Measure width along the y axis as the weighted 90th-minus-10th coordinate percentile range.",
+        "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+      },
+      "recipe": {
+        "kind": "weighted_width",
+        "field": {
+          "name": "velocity",
+          "association": "cell",
+          "reduce": "magnitude"
+        },
+        "measure": "interdecile",
+        "axis": 1
+      }
+    }
+  },
+  "definition_sha256": "c52447c323662438be8b0d615e59f7778a97e8e3b153c8e7194584fada39a412",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "rms": {
+      "width": 0.23943050240171,
+      "center": 0.49995823496324
+    },
+    "interdecile": {
+      "width": 0.6568905,
+      "center": 0.49995823496324
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

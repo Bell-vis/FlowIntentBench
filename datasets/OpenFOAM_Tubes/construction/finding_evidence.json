@@ -1,0 +1,38 @@
+[
+  {
+    "evidence_id": "finding_tubes_turbulent_energy_heterogeneity",
+    "dataset_id": "OpenFOAM_Tubes",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"cv\": {\"value\": 2.4740340020882985}, \"relative_interdecile\": {\"value\": 90.69149905915428}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_tubes_pressure_speed_association",
+    "dataset_id": "OpenFOAM_Tubes",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"pearson\": {\"value\": -0.9567932319256054}, \"spearman\": {\"value\": -0.9370600936332023}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  },
+  {
+    "evidence_id": "finding_tubes_axial_activity_width",
+    "dataset_id": "OpenFOAM_Tubes",
+    "evidence_type": "finding",
+    "statement": "Executed numerical reference: {\"interdecile\": {\"center\": -9.529276506577726e-05, \"width\": 0.19037480280277133}, \"rms\": {\"center\": -9.529276506577726e-05, \"width\": 0.06659092768483574}}",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

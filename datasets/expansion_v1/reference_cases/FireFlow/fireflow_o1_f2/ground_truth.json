@@ -1,0 +1,118 @@
+{
+  "dataset_id": "FireFlow",
+  "case_id": "fireflow_o1_f2",
+  "case_family_id": "fireflow__high_speed_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat retained points that share an unstructured-mesh cell as one connected speed region"
+        },
+        {
+          "dimension": "criterion",
+          "statement": "define high-speed locations as those at or above the 90th percentile of non-zero recorded speed in the stored velocity scale using linear quantile interpolation"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "use peak speed as the measure of strength"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "fireflow_o1_f2_o1_high_speed_regions_open",
+      "findings": [
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has a mean spatial location approximately [0.5113998996219967, 1.975870378012814, 0.48199224898616855] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            0.5113998996219967,
+            1.975870378012814,
+            0.48199224898616855
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 3.8223132 in the stored velocity scale.",
+          "importance": "core",
+          "value": 3.822313175748469,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_extent",
+          "category": "characterization",
+          "statement": "The selected region has coordinate-space extent approximately [2.6875, 2.225000023841858, 2.0799999237060547] along the dataset axes.",
+          "importance": "core",
+          "value": [
+            2.6875,
+            2.225000023841858,
+            2.0799999237060547
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_retained_points",
+          "category": "quantity",
+          "statement": "The selected region contains 517 retained locations.",
+          "importance": "supporting",
+          "value": 517,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "fireflow_o1_f2_o1_high_speed_regions_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 4 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 4,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

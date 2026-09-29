@@ -1,0 +1,32 @@
+{
+  "dataset_id": "Office",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 235391,
+      "checksum": "b71ac0334e92829a431fe7aaff54cec1add42f4d50e42a56fa4917560c9c8de5",
+      "checksum_algorithm": "sha256",
+      "source_url": null,
+      "path": "Office/office.binary.vtk",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTK",
+    "canonical_reader": "vtkDataSetReader",
+    "reader_configuration": {
+      "read_all_scalars": true,
+      "read_all_vectors": true
+    },
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "source_urls": [
+      "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/Office/",
+      "https://www.csc.kth.se/utbildning/kth/kurser/DD2257/visual09/LAB1.pdf"
+    ]
+  }
+}

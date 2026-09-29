@@ -1,0 +1,1068 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "blunt_fin_o3_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "blunt_fin_o3_f1",
+    "dataset_id": "Blunt_Fin",
+    "condition": "O3-F1",
+    "family_id": "blunt_fin__high_speed_region",
+    "origin": "FROZEN_REFERENCE_COPY",
+    "reference_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe",
+    "case_input_path": "datasets/expansion_v1/reference_cases/Blunt_Fin/blunt_fin_o3_f1/case_input.json",
+    "case_input_sha256": "c2a83f522626a183dd2a36c086f01e5fe546feb72b81b91fcd676de816fc2698",
+    "case_construction_metadata_path": "datasets/expansion_v1/reference_cases/Blunt_Fin/blunt_fin_o3_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "f99d4ad3179b268c9087b5aad4d9f0e6d875f2f22e78dc17d0012c64ad0a91b8",
+    "case_context_path": "datasets/expansion_v1/reference_cases/Blunt_Fin/blunt_fin_o3_f1/case_context.json",
+    "case_context_sha256": "7c0bf43aee80c74ab92e918b499574ed1da583544f44fb630a59673aad4b240b",
+    "ground_truth_path": "datasets/expansion_v1/reference_cases/Blunt_Fin/blunt_fin_o3_f1/ground_truth.json",
+    "ground_truth_sha256": "bea544443269542f484d61e16f06f59298a9e4a9f34c858eb37b44ad3d75d214",
+    "scientific_semantic_projection_path": "datasets/expansion_v1/reference_cases/Blunt_Fin/blunt_fin_o3_f1/scientific_semantic_projection.json",
+    "scientific_semantic_projection_sha256": "a05752493186d0eb3dd74b101a07c0e35d691d09a179a722ec028edbfa138e75"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "scientific_semantic_projection": {
+    "concept_id": "high_speed_region",
+    "dataset_id": "Blunt_Fin",
+    "family_id": "blunt_fin__high_speed_region",
+    "finding_responsibility": "F1",
+    "finding_semantics": {
+      "finding_goal": "characterize the strongest high-speed flow region in the blunt-fin flow field",
+      "fixed_finding_requirements": [
+        {
+          "category": "location",
+          "normalized_meaning": "report the location of the strongest region"
+        },
+        {
+          "category": "quantity",
+          "normalized_meaning": "report the strength of the strongest region"
+        }
+      ],
+      "normalized_demand": "characterize the strongest high-speed flow region in the blunt-fin flow field",
+      "required_finding_roles": [
+        "defining_strength_evidence",
+        "principal_feature_location"
+      ]
+    },
+    "observable_scientific_semantics": {
+      "required_capabilities": {},
+      "scientific_semantic_capabilities": {}
+    },
+    "operationalization_responsibility": "model_selected",
+    "principal_operationalization_dimensions": [
+      "aggregation_or_representation",
+      "criterion",
+      "feature_definition",
+      "property_measure"
+    ],
+    "resolved_operationalization": [],
+    "scientific_scope": {
+      "condition_constraints": [
+        "speed is the Euclidean magnitude of the reader-exposed Velocity array",
+        "operationalizations remain within thresholded connected velocity-magnitude region analysis on the supplied topology"
+      ],
+      "scope_constraints": [
+        "in the blunt-fin flow field"
+      ],
+      "selection_constraints": [
+        "select the strongest region"
+      ]
+    },
+    "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+    "scientific_target": "high-speed flow regions in the blunt-fin flow field",
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "aggregation_or_representation",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state how the selected region's location is represented"
+      },
+      {
+        "dimension_id": "criterion",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state an explicit numeric threshold or percentile rule over finite non-zero speed values"
+      },
+      {
+        "dimension_id": "feature_definition",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state a connectivity definition for thresholded velocity-magnitude points that is executable on the supplied topology"
+      },
+      {
+        "dimension_id": "property_measure",
+        "must_remain_open": true,
+        "normalized_meaning": "select and state the regional strength statistic"
+      }
+    ],
+    "verification_semantics": {
+      "deterministic_verification_required_claim_types": [],
+      "semantic_adjudication_required": false
+    }
+  },
+  "verification_policy_source": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Blunt_Fin/blunt_fin_o3_f1/finding_verification_policy.json",
+    "sha256": "d44c9518a66467015553ab4db19bf6aed3703462ff1a17f867be75e108b3902d"
+  },
+  "branch_execution_evidence": {
+    "blunt_fin_o3_f1_o3_q90_peak": {
+      "case_id": "blunt_fin_o3_f1",
+      "dataset_id": "Blunt_Fin",
+      "operationalization": {
+        "feature_definition": "Face-connected locations form one contiguous high-speed flow region.",
+        "criterion": "Retain locations at or above the 90th percentile of non-zero recorded speed values.",
+        "property_measure": "Use peak speed as the strength of each retained region.",
+        "aggregation_or_representation": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+      },
+      "materialized_G_of_O": {
+        "comparator": "GE",
+        "coordinate_span": [
+          22.177950859069824,
+          8.327558517456055,
+          5.3932197988033295
+        ],
+        "criterion": ">= non-zero 90th percentile (2.776219898197)",
+        "criterion_kind": "quantile",
+        "mean_spatial_location": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "mean_speed": 2.922646208400968,
+        "measure_kind": "peak",
+        "operation_id": "blunt_fin_o3_f1_o3_q90_peak",
+        "peak_point": [
+          -0.5733070373535156,
+          0.20308661460876465,
+          3.125354051589966
+        ],
+        "peak_speed": 3.1229319383189305,
+        "region_count": 6,
+        "region_sizes": [
+          3831,
+          1,
+          2,
+          1,
+          7,
+          2
+        ],
+        "reported_location": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "representation": "mean",
+        "retained_points": 3844,
+        "selected_region_size": 3831,
+        "strength": 3.1229319383189305,
+        "threshold": 2.776219898196888
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Blunt_Fin/blunt_fin_o3_f1/materialization_blunt_fin_o3_f1_o3_q90_peak.json",
+        "sha256": "43b1e741f32a99de14aa6d19070187a3fd2fc13c712226b3799be4ed114ef160"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Blunt_Fin/bluntfinxyz.bin",
+            "sha256": "b0748b066152c7001d2979245e729da32b44eb6f171b0c49cf6ed0eb84fe0e6a"
+          },
+          {
+            "path": "Blunt_Fin/bluntfinq.bin",
+            "sha256": "1fa8642d08f6bbbda6a7bc95571a06ec26afa8abac556a7330bfc74b60899397"
+          }
+        ],
+        "reader": {
+          "format": "PLOT3D",
+          "canonical_reader": "vtkMultiBlockPLOT3DReader",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true
+          },
+          "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+          "variable_mappings": [
+            {
+              "output_name": "Density",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored density",
+              "raw_components": {
+                "density": "Q[0]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "Momentum",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored momentum",
+              "raw_components": {
+                "x": "Q[1]",
+                "y": "Q[2]",
+                "z": "Q[3]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "StagnationEnergy",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored energy",
+              "raw_components": {
+                "energy": "Q[4]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "VelocityMagnitude",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+            },
+            {
+              "output_name": "Velocity",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+            }
+          ],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+          "executed_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+          "effective_o_sha256": "bb892eac05ebebd7d30780cd2e13273ab2c4f745d0ab6953ca9f8fea41b4b72e",
+          "reader_format": "PLOT3D",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          }
+        }
+      },
+      "evidence_binding_sha256": "6ec24d6c4753b50b6ee8920bb8ccad283a701fc21906cc52a10de8c300537251"
+    },
+    "blunt_fin_o3_f1_o3_q90_mean": {
+      "case_id": "blunt_fin_o3_f1",
+      "dataset_id": "Blunt_Fin",
+      "operationalization": {
+        "feature_definition": "Face-connected locations form one contiguous high-speed flow region.",
+        "criterion": "Retain locations at or above the 90th percentile of non-zero recorded speed values.",
+        "property_measure": "Use mean speed across retained locations as the strength of each retained region.",
+        "aggregation_or_representation": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+      },
+      "materialized_G_of_O": {
+        "comparator": "GE",
+        "coordinate_span": [
+          22.177950859069824,
+          8.327558517456055,
+          5.3932197988033295
+        ],
+        "criterion": ">= non-zero 90th percentile (2.776219898197)",
+        "criterion_kind": "quantile",
+        "mean_spatial_location": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "mean_speed": 2.922646208400968,
+        "measure_kind": "mean",
+        "operation_id": "blunt_fin_o3_f1_o3_q90_mean",
+        "peak_point": [
+          -0.5733070373535156,
+          0.20308661460876465,
+          3.125354051589966
+        ],
+        "peak_speed": 3.1229319383189305,
+        "region_count": 6,
+        "region_sizes": [
+          3831,
+          1,
+          2,
+          1,
+          7,
+          2
+        ],
+        "reported_location": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "representation": "mean",
+        "retained_points": 3844,
+        "selected_region_size": 3831,
+        "strength": 2.922646208400968,
+        "threshold": 2.776219898196888
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Blunt_Fin/blunt_fin_o3_f1/materialization_blunt_fin_o3_f1_o3_q90_mean.json",
+        "sha256": "f07fe158f5385362a62a9bfda07acc0bf1abb07d497cf30698cfdd32d49b4d0b"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Blunt_Fin/bluntfinxyz.bin",
+            "sha256": "b0748b066152c7001d2979245e729da32b44eb6f171b0c49cf6ed0eb84fe0e6a"
+          },
+          {
+            "path": "Blunt_Fin/bluntfinq.bin",
+            "sha256": "1fa8642d08f6bbbda6a7bc95571a06ec26afa8abac556a7330bfc74b60899397"
+          }
+        ],
+        "reader": {
+          "format": "PLOT3D",
+          "canonical_reader": "vtkMultiBlockPLOT3DReader",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true
+          },
+          "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+          "variable_mappings": [
+            {
+              "output_name": "Density",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored density",
+              "raw_components": {
+                "density": "Q[0]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "Momentum",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored momentum",
+              "raw_components": {
+                "x": "Q[1]",
+                "y": "Q[2]",
+                "z": "Q[3]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "StagnationEnergy",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored energy",
+              "raw_components": {
+                "energy": "Q[4]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "VelocityMagnitude",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+            },
+            {
+              "output_name": "Velocity",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+            }
+          ],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "executed_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "effective_o_sha256": "089e5c94f1e354a0fe29154977db984d8973d7f0b389ebfe6749caa24cfc3f55",
+          "reader_format": "PLOT3D",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          }
+        }
+      },
+      "evidence_binding_sha256": "bf923a91744d3e26f90614c2c6bb024de9b351a459eba277d60c7e0d89c0a169"
+    },
+    "blunt_fin_o3_f1_o3_q75_mean": {
+      "case_id": "blunt_fin_o3_f1",
+      "dataset_id": "Blunt_Fin",
+      "operationalization": {
+        "feature_definition": "Face-connected locations form one contiguous high-speed flow region.",
+        "criterion": "Retain locations at or above the 75th percentile of non-zero recorded speed values.",
+        "property_measure": "Use mean speed across retained locations as the strength of each retained region.",
+        "aggregation_or_representation": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+      },
+      "materialized_G_of_O": {
+        "comparator": "GE",
+        "coordinate_span": [
+          22.177950859069824,
+          8.327558517456055,
+          5.610999308526516
+        ],
+        "criterion": ">= non-zero 75th percentile (2.356383458626)",
+        "criterion_kind": "quantile",
+        "mean_spatial_location": [
+          1.2812338045775953,
+          2.2513677567553696,
+          1.922935472026421
+        ],
+        "mean_speed": 2.6986647780551447,
+        "measure_kind": "mean",
+        "operation_id": "blunt_fin_o3_f1_o3_q75_mean",
+        "peak_point": [
+          -0.5733070373535156,
+          0.20308661460876465,
+          3.125354051589966
+        ],
+        "peak_speed": 3.1229319383189305,
+        "region_count": 1,
+        "region_sizes": [
+          9610
+        ],
+        "reported_location": [
+          1.2812338045775953,
+          2.2513677567553696,
+          1.922935472026421
+        ],
+        "representation": "mean",
+        "retained_points": 9610,
+        "selected_region_size": 9610,
+        "strength": 2.6986647780551447,
+        "threshold": 2.3563834586264747
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Blunt_Fin/blunt_fin_o3_f1/materialization_blunt_fin_o3_f1_o3_q75_mean.json",
+        "sha256": "4ad49cca627064c36164778cb400285861c1a109fa5ee45324e101a94aa54670"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Blunt_Fin/bluntfinxyz.bin",
+            "sha256": "b0748b066152c7001d2979245e729da32b44eb6f171b0c49cf6ed0eb84fe0e6a"
+          },
+          {
+            "path": "Blunt_Fin/bluntfinq.bin",
+            "sha256": "1fa8642d08f6bbbda6a7bc95571a06ec26afa8abac556a7330bfc74b60899397"
+          }
+        ],
+        "reader": {
+          "format": "PLOT3D",
+          "canonical_reader": "vtkMultiBlockPLOT3DReader",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true
+          },
+          "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+          "variable_mappings": [
+            {
+              "output_name": "Density",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored density",
+              "raw_components": {
+                "density": "Q[0]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "Momentum",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored momentum",
+              "raw_components": {
+                "x": "Q[1]",
+                "y": "Q[2]",
+                "z": "Q[3]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "StagnationEnergy",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored energy",
+              "raw_components": {
+                "energy": "Q[4]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "VelocityMagnitude",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+            },
+            {
+              "output_name": "Velocity",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+            }
+          ],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": 0.75,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "d85bc4e376ce1bcb346958b7fd1fb95290276ec542f546e7966a833a50ca8b16",
+          "executed_plan_sha256": "d85bc4e376ce1bcb346958b7fd1fb95290276ec542f546e7966a833a50ca8b16",
+          "effective_o_sha256": "3fc5c7684bbfa32c447c1c1770e85e20ad7da55bb0acfd8bcff4c1821918d519",
+          "reader_format": "PLOT3D",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          }
+        }
+      },
+      "evidence_binding_sha256": "ba13e807af0b3de13b560333dff50d12c3741f22bd1964c229d6a13c47922c44"
+    },
+    "blunt_fin_o3_f1_o3_q90_peak_point": {
+      "case_id": "blunt_fin_o3_f1",
+      "dataset_id": "Blunt_Fin",
+      "operationalization": {
+        "feature_definition": "Face-connected locations form one contiguous high-speed flow region.",
+        "criterion": "Retain locations at or above the 90th percentile of non-zero recorded speed values.",
+        "property_measure": "Use peak speed as the strength of each retained region.",
+        "aggregation_or_representation": "Represent the selected region by the spatial location of its peak-speed location."
+      },
+      "materialized_G_of_O": {
+        "comparator": "GE",
+        "coordinate_span": [
+          22.177950859069824,
+          8.327558517456055,
+          5.3932197988033295
+        ],
+        "criterion": ">= non-zero 90th percentile (2.776219898197)",
+        "criterion_kind": "quantile",
+        "mean_spatial_location": [
+          -0.43620374257338634,
+          3.0521042773374156,
+          2.5893470661131714
+        ],
+        "mean_speed": 2.922646208400968,
+        "measure_kind": "peak",
+        "operation_id": "blunt_fin_o3_f1_o3_q90_peak_point",
+        "peak_point": [
+          -0.5733070373535156,
+          0.20308661460876465,
+          3.125354051589966
+        ],
+        "peak_speed": 3.1229319383189305,
+        "region_count": 6,
+        "region_sizes": [
+          3831,
+          1,
+          2,
+          1,
+          7,
+          2
+        ],
+        "reported_location": [
+          -0.5733070373535156,
+          0.20308661460876465,
+          3.125354051589966
+        ],
+        "representation": "peak",
+        "retained_points": 3844,
+        "selected_region_size": 3831,
+        "strength": 3.1229319383189305,
+        "threshold": 2.776219898196888
+      },
+      "source_artifact": {
+        "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Blunt_Fin/blunt_fin_o3_f1/materialization_blunt_fin_o3_f1_o3_q90_peak_point.json",
+        "sha256": "948d58ac522328a35861f700d6563cd08881c0ec7b1af29b31d91c0739ea7a47"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "6b104daf69883f49c3b8aa533eed6f25353e6f1384c179f89b7eb7923975849e",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Blunt_Fin/bluntfinxyz.bin",
+            "sha256": "b0748b066152c7001d2979245e729da32b44eb6f171b0c49cf6ed0eb84fe0e6a"
+          },
+          {
+            "path": "Blunt_Fin/bluntfinq.bin",
+            "sha256": "1fa8642d08f6bbbda6a7bc95571a06ec26afa8abac556a7330bfc74b60899397"
+          }
+        ],
+        "reader": {
+          "format": "PLOT3D",
+          "canonical_reader": "vtkMultiBlockPLOT3DReader",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true
+          },
+          "plot3d_convention": "VTK PLOT3D canonical Q/XYZ convention",
+          "variable_mappings": [
+            {
+              "output_name": "Density",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored density",
+              "raw_components": {
+                "density": "Q[0]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "Momentum",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored momentum",
+              "raw_components": {
+                "x": "Q[1]",
+                "y": "Q[2]",
+                "z": "Q[3]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "StagnationEnergy",
+              "source_file_role": "solution",
+              "convention": "PLOT3D Q stored energy",
+              "raw_components": {
+                "energy": "Q[4]"
+              },
+              "calculation": null
+            },
+            {
+              "output_name": "VelocityMagnitude",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader scalar function 153",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity magnitude from stored Q variables."
+            },
+            {
+              "output_name": "Velocity",
+              "source_file_role": "solution",
+              "convention": "vtkMultiBlockPLOT3DReader vector function 200",
+              "raw_components": {},
+              "calculation": "Canonical VTK PLOT3D reader derives velocity from stored Q variables."
+            }
+          ],
+          "grid_blanking": []
+        },
+        "binding_basis": "FROZEN_BRANCH_ID_AND_IDENTICAL_SOURCE_GT",
+        "original_execution_provenance": {
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "peak",
+            "threshold": null
+          },
+          "compiled_plan_sha256": "f29327f0df4add07a60cca976753905d71b87f887f2b0499f2e09bc5011e60e4",
+          "executed_plan_sha256": "f29327f0df4add07a60cca976753905d71b87f887f2b0499f2e09bc5011e60e4",
+          "effective_o_sha256": "a19f579bed78064e7b8c4f0d3fc996299122a506bb635fa02f7f5b192d2e948b",
+          "reader_format": "PLOT3D",
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          }
+        }
+      },
+      "evidence_binding_sha256": "0de781a4bb0bda1391e283f56135cfee7004dbc7057b8b716353b18a1c83c396"
+    }
+  },
+  "reference_materialization_evidence": {
+    "path": "artifacts/reference/portfolio_v7_gt_aligned_final/cases/Blunt_Fin/blunt_fin_o3_f1/agent_ready_evidence.json",
+    "sha256": "ab677bb74a8152e04d5f546dfe12aa260e7ca0af57b6e210db31d76d78b05e1d"
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "case_id": "blunt_fin_o3_f1",
+    "dataset_id": "Blunt_Fin",
+    "policies": [
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q75_mean_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            1.2812338045775953,
+            2.2513677567553696,
+            1.922935472026421
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q75_mean",
+        "policy_digest": "58b16a2c2c87989f16af03265b2401b553fdb91e1f0cfa385eda885f9d3d6518",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "d475f1592b0dedb879c7c58fbdf9fdaf0036f17f77f11686cf64ad40706541f7",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "b14e48b5efa6549a958264bf866a3e3f4527a0fd6c73ea521290d851c5bb591f",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q75_mean_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.6986647780551447,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q75_mean",
+        "policy_digest": "0df8170763a1ade740d6cb573eaa0bba2ea24d3574ee1017e017847cc1427d8a",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "d475f1592b0dedb879c7c58fbdf9fdaf0036f17f77f11686cf64ad40706541f7",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "594064e1075b61f961685de3b132df9f46d0aa3e160ee6b46b99c9c2591d0ee6",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q90_mean_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            -0.43620374257338634,
+            3.0521042773374156,
+            2.5893470661131714
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q90_mean",
+        "policy_digest": "94793a6fd4130eab8a438bc36046143df40c112c20f9de63a710223353ad7ec4",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "3590556374aaf375499bc765d348f544b32937a67a4eb35b85d39f70395fec17",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "7612ae6b2d7ce95f2af9878f170aafb7fa0d17641e9de84ca6b139a491be311e",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q90_mean_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.922646208400968,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q90_mean",
+        "policy_digest": "a1ffdb9cb3d4f1c46b85bf16e403764948b1db2ec323210839edcbfe7d518e16",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "3590556374aaf375499bc765d348f544b32937a67a4eb35b85d39f70395fec17",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "c5dcd940fa70b086527b8bd3fae2ee5608cd553c686a4bee62f8848e8a048bc8",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q90_peak_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            -0.43620374257338634,
+            3.0521042773374156,
+            2.5893470661131714
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q90_peak",
+        "policy_digest": "c44b3b646dd5432fd82f19a84b718ae926b9eef8803e3d5067f2ef024c392b4b",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "402cebb5bd3e047ab081db06abd754d113a8c99d472cd66fac2c8c382f088869",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "9bcb095318c59496da2dcfbf0adb77b06d7fcf8245e88e5f0bd8c6eccf4e0761",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q90_peak_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 3.1229319383189305,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q90_peak",
+        "policy_digest": "8e9aeb3bfb3d6d2579b583cea23b43eb6a626e5c204a48a10a48c454fef4c739",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "402cebb5bd3e047ab081db06abd754d113a8c99d472cd66fac2c8c382f088869",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "83efafa8b2c5663e07f7b3d4e1b3ecb7706c267833b2d1b460c431a0cbeb52b7",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q90_peak_point_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            -0.5733070373535156,
+            0.20308661460876465,
+            3.125354051589966
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q90_peak_point",
+        "policy_digest": "a8f8297bb40156c2759071971fb0d5fc81e2618d6cc38a7b3bfe6a4ece8e1e95",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "041dcf918f14be66ccc137a580a2eae9e8e0faa827660bf9cf92d54d45c307af",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "adfc6b01294f1c6f21343e72df2a869b45310770c8c4829a4c968fb86bd062ac",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "blunt_fin_o3_f1_o3_q90_peak_point_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 3.1229319383189305,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "blunt_fin_o3_f1_o3_q90_peak_point",
+        "policy_digest": "0fe344a06eb9869152297e4a252ecd31935e2f4b201fd7657049c96df8ec371b",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "blunt_fin__high_speed_region",
+          "dataset_id": "Blunt_Fin",
+          "effective_o_semantic_sha256": "041dcf918f14be66ccc137a580a2eae9e8e0faa827660bf9cf92d54d45c307af",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the blunt-fin flow field"
+        },
+        "scientific_finding_policy_key": "24e95bc1cf6d3b1c03f5fa0e44dbe3367ff4cbba980d888d2ee9150ef8de17d3",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "runtime_inference_from_python_type_forbidden": true,
+    "schema_version": "finding-verification-policy-v1",
+    "semantic_contract_sha256": "45bfd8a3df4b60087ebead139d3cedd98452e2d7334a9b4ce49e54f493e19a6c",
+    "verification_policy_sha256": "f3940f17d5e6a1b8ab31f8595287eebb420d8694ad34fed1197c960025e77ac4"
+  }
+}

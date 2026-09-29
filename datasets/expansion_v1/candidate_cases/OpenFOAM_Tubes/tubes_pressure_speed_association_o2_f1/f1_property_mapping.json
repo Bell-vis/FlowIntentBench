@@ -1,0 +1,11 @@
+{
+  "case_id": "tubes_pressure_speed_association_o2_f1",
+  "mapping": {
+    "tubes_pressure_speed_association_o2_f1_pearson": {
+      "association": "tubes_pressure_speed_association_o2_f1_pearson_association"
+    },
+    "tubes_pressure_speed_association_o2_f1_spearman": {
+      "association": "tubes_pressure_speed_association_o2_f1_spearman_association"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the office velocity field, which contiguous ventilation region is strongest when high-speed airflow is defined as velocity magnitude above 0.20 in the stored velocity scale and locations connected through shared grid faces are treated as one region? Represent its location by the mean spatial location of its retained high-speed locations, use peak speed as its strength measure, and report both the location and strength. Use six-neighbor connectivity along one grid axis.",
+  "semantic_contract_sha256": "de4ce7695f5ce44d4573841347fcf7f886ea8d98ebd8bec0a0f8dd99ac5b3110",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

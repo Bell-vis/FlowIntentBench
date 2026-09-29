@@ -1,0 +1,7 @@
+{
+  "case_id": "blunt_fin_o2_f1",
+  "ground_truth_sha256": "ae89699635b4b7c2231d0182b5456c038a24aa53a19086385ce59c2b869f2e12",
+  "presentation_sha256": "51e5ae01891092a023dfed4f7d269a6cbb6726bbbb97d6c166bace7878a4fb71",
+  "scientific_evaluation_contract_sha256": "f0fc05c43934c5d7737ee963825a05c99e0f3f83c0b9bf1e43bb22f339a653c7",
+  "semantic_contract_sha256": "df9a28fb28b4a4526b0c1c05325df6f4584a06260c0454fafa19473c07a92b90"
+}

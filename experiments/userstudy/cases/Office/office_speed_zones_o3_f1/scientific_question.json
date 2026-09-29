@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Design and apply an analysis to find the strongest high-speed ventilation region in the office flow field. Decide how to represent or aggregate the flow, how the region feature is defined, which criterion identifies high-speed locations, and which measure determines regional strength. Report where the strongest region is located and the strength assigned to it by your analysis.",
+  "semantic_contract_sha256": "4ef16026078d9659dfa5d890a704295ba023d8ca031180b47220f8b0c2fb7b78",
+  "source": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o3_f1.json",
+  "wording_version": "1.2.1"
+}

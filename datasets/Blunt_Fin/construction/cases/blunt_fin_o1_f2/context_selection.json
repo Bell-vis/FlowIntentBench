@@ -1,0 +1,9 @@
+{
+  "case_id": "blunt_fin_o1_f2",
+  "dataset_id": "Blunt_Fin",
+  "include_fact_ids": [
+    "blunt_physical_setting",
+    "blunt_fin",
+    "blunt_wall"
+  ]
+}

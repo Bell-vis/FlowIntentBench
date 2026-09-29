@@ -1,0 +1,33 @@
+[
+  {
+    "evidence_id": "ctx_001",
+    "dataset_id": "Carotid",
+    "evidence_type": "context",
+    "statement": "The VTK blood-flow example uses the carotid.vtk dataset to visualize blood flow in human carotid arteries; the data contains velocity vectors and scalars proportional to velocity magnitude.",
+    "source_id": "src_002",
+    "locator": {
+      "section": "Visualizing Blood Flow",
+      "page": null,
+      "figure": "6-44",
+      "code_location": "carotid.vtk reader setup"
+    },
+    "eligible_for_context": true,
+    "context_facts": [
+      {
+        "fact_id": "carotid_physical_setting",
+        "field": "physical_setting",
+        "value": "Blood flow in human carotid arteries",
+        "review_status": "approved"
+      },
+      {
+        "fact_id": "carotid_artery",
+        "field": "objects",
+        "value": {
+          "name": "carotid_artery",
+          "description": "The carotid artery represented by the flow dataset."
+        },
+        "review_status": "approved"
+      }
+    ]
+  }
+]

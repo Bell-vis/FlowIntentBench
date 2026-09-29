@@ -1,0 +1,25 @@
+{
+  "dataset_id": "FireFlow",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "example_source_code",
+      "title": "FireFlow VTK example",
+      "authors": [],
+      "year": null,
+      "venue": "VTK Examples",
+      "doi": null,
+      "report_id": null
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "dataset_documentation",
+      "title": "Visualizing rich datasets: the fire_ug.vtu example",
+      "authors": [],
+      "year": null,
+      "venue": "Mayavi documentation",
+      "doi": null,
+      "report_id": null
+    }
+  ]
+}

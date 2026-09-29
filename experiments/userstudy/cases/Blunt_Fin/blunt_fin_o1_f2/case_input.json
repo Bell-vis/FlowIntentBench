@@ -1,0 +1,115 @@
+{
+  "case_context": {
+    "boundaries": [
+      {
+        "description": "The wall from which the fin projects.",
+        "name": "wall",
+        "type": "wall"
+      }
+    ],
+    "geometry_assets": [],
+    "objects": [
+      {
+        "description": "A half-rounded fin projecting into the fluid flow.",
+        "name": "blunt_fin"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "Airflow around a blunt fin over a wall",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Blunt_Fin/bluntfinxyz.bin",
+        "role": "grid"
+      },
+      {
+        "path": "Blunt_Fin/bluntfinq.bin",
+        "role": "solution"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {
+          "encoding": "binary",
+          "endianness": "big",
+          "has_byte_count": false,
+          "precision": "float32"
+        },
+        "type": "PLOT3D"
+      },
+      "grid": {
+        "dimensions": [
+          40,
+          32,
+          32
+        ],
+        "origin": null,
+        "spacing": null,
+        "type": "structured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "Density",
+          "physical_quantity": "density",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 1,
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "source": "reader_derived",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "source": "reader_derived",
+          "type": "vector",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "Using the blunt-fin flow field, investigate the strongest high-speed region. Define speed by velocity magnitude, retain values at or above the 90th percentile of non-zero recorded speed, and combine face-connected retained locations into individual regions. Use peak speed to select the strongest region and the mean spatial location of its retained locations to place it. Report the principal findings that you consider scientifically relevant, supported by evidence; these should include the region’s defining strength and location as well as at least one further characterization of your choice."
+}

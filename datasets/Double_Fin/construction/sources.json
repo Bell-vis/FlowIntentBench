@@ -1,0 +1,19 @@
+{
+  "dataset_id": "Double_Fin",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "dataset_documentation",
+      "title": "the supplied double-fin reconstructed pressure field",
+      "venue": "Official dataset documentation",
+      "report_id": "https://zenodo.org/records/10697026"
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "example_source_code",
+      "title": "FlowIntentBench explicit numerical operationalization recipes",
+      "venue": "FlowIntentBench",
+      "report_id": "flowintentbench/construction_recipes.py"
+    }
+  ]
+}

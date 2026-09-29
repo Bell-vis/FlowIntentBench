@@ -1,0 +1,153 @@
+{
+  "case_family_id": "blunt_fin__high_speed_region",
+  "case_id": "blunt_fin_o3_f1",
+  "condition_constraints": [],
+  "dataset_id": "Blunt_Fin",
+  "evaluation_representability_contract": {
+    "condition": "O3-F1",
+    "contract_version": "case-evaluation-representability-v3",
+    "deterministic_verification": {
+      "registered_handlers": [
+        "exact_discrete",
+        "scalar_numeric",
+        "coordinate_point",
+        "componentwise_vector"
+      ],
+      "required_claim_types": [
+        "exact_discrete",
+        "scalar_numeric",
+        "coordinate_point",
+        "componentwise_vector"
+      ]
+    },
+    "domain": "thresholded_connected_speed_region",
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1",
+      "output_locators": [
+        "/reported_location",
+        "/strength",
+        "/coordinate_span",
+        "/selected_region_size",
+        "/region_count"
+      ]
+    },
+    "fixed_dimension_semantics": {},
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v3",
+      "unsupported_disposition": "MATERIALIZATION_UNSUPPORTED_PENDING_NOT_INVALID"
+    },
+    "semantic_adjudication": {
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1",
+      "required": true
+    },
+    "supported_effective_o_envelope": {
+      "aggregation_or_representation": [
+        "mean retained-point coordinate",
+        "peak-speed point coordinate"
+      ],
+      "criterion": [
+        "explicit numeric speed threshold",
+        "finite non-zero speed percentile with linear or nearest-rank interpolation"
+      ],
+      "feature_definition": [
+        "structured-grid index six-neighbor point adjacency"
+      ],
+      "property_measure": [
+        "regional peak speed",
+        "regional mean speed"
+      ]
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    },
+    "unresolved_dimensions": [
+      "aggregation_or_representation",
+      "criterion",
+      "feature_definition",
+      "property_measure"
+    ],
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    }
+  },
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "question_fragment": "Choose and explain how the field will be represented or aggregated, what will count as a high-speed region, the criterion used to select locations, and the property used to compare region strength.",
+      "statement": "report the location of the strongest region"
+    },
+    {
+      "category": "quantity",
+      "question_fragment": "Choose and explain how the field will be represented or aggregated, what will count as a high-speed region, the criterion used to select locations, and the property used to compare region strength.",
+      "statement": "report the strength of the strongest region"
+    }
+  ],
+  "explicit_method_constraints": [],
+  "finding_goal": "characterize the strongest high-speed flow region in the blunt-fin flow field",
+  "finding_openness": "bounded",
+  "operationalization_responsibility": "model_selected",
+  "principal_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "criterion",
+    "feature_definition",
+    "property_measure"
+  ],
+  "responsibility_contract": {
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ],
+      "normalized_demand": "",
+      "required_responsibility_mode": null,
+      "required_semantic_anchors": []
+    },
+    "resolved_operationalization_clauses": [],
+    "scientific_target": {
+      "canonical_id": "blunt_fin__high_speed_region",
+      "normalized_meaning": "high-speed flow regions in the blunt-fin flow field",
+      "required_semantic_anchors": []
+    },
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "aggregation_or_representation",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state aggregation or representation"
+      },
+      {
+        "dimension_id": "criterion",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state criterion"
+      },
+      {
+        "dimension_id": "feature_definition",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state feature definition"
+      },
+      {
+        "dimension_id": "property_measure",
+        "must_remain_open": true,
+        "normalized_meaning": "the respondent must select and state property measure"
+      }
+    ]
+  },
+  "scientific_target": "high-speed flow regions in the blunt-fin flow field",
+  "scope_constraints": [
+    {
+      "question_fragment": "Investigate high-speed flow regions in the blunt-fin dataset and decide which one is strongest.",
+      "statement": "in the blunt-fin flow field"
+    }
+  ],
+  "selection_constraints": [],
+  "unresolved_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "criterion",
+    "feature_definition",
+    "property_measure"
+  ]
+}

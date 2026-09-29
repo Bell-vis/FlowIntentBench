@@ -1,0 +1,84 @@
+{
+  "case_context": {
+    "boundaries": [
+      {
+        "description": "The inlet of the ventilation system.",
+        "name": "ventilation_inlet",
+        "type": "inlet"
+      },
+      {
+        "description": "The outlet of the ventilation system.",
+        "name": "ventilation_outlet",
+        "type": "outlet"
+      }
+    ],
+    "geometry_assets": [],
+    "objects": [
+      {
+        "description": "The small office represented by the structured-grid CFD dataset.",
+        "name": "office"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "CFD flow in a small office",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Office/office.binary.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {},
+        "type": "VTK"
+      },
+      "grid": {
+        "dimensions": [
+          21,
+          20,
+          20
+        ],
+        "origin": null,
+        "spacing": null,
+        "type": "structured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "scalars",
+          "physical_quantity": "pressure",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "vectors",
+          "physical_quantity": "velocity",
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "Investigate the ventilation regions in the office velocity field by retaining locations with velocity magnitude above 0.20 in the stored velocity scale and treating locations connected through immediate grid neighbors along one grid axis as a single contiguous high-speed region. Select the strongest region using peak speed, give the peak-speed evidence supporting your selection, and locate the principal feature using the mean spatial location of the retained high-speed locations. Also characterize the selected region in one informative way of your choice—through its geometry, a meaningful comparison, morphology, orientation, or spatial extent."
+}

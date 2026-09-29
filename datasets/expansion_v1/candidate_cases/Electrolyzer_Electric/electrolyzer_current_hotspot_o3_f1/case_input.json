@@ -1,0 +1,100 @@
+{
+  "scientific_question": "In the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high current-density-magnitude regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Electrolyzer_Electric/electric.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTK",
+        "details": {}
+      },
+      "grid": {
+        "type": "unstructured",
+        "dimensions": null,
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "Potential",
+          "physical_quantity": "Potential",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "Resistance",
+          "physical_quantity": "Resistance",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "jx",
+          "physical_quantity": "jx",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "jy",
+          "physical_quantity": "jy",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "jz",
+          "physical_quantity": "jz",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "current_density",
+          "physical_quantity": "current_density",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. Current-density components jx, jy and jz are combined on their own electrical mesh; the flow mesh is distinct.",
+    "objects": [],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

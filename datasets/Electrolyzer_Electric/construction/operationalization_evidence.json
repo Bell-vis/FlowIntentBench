@@ -1,0 +1,14 @@
+[
+  {
+    "evidence_id": "op_001",
+    "dataset_id": "Electrolyzer_Electric",
+    "evidence_type": "operationalization",
+    "statement": "Explicit authored discretizations and quantitative definitions implemented in construction_recipes.py; these numerical anchors require scientific review and are not attributed to the source paper.",
+    "source_id": "src_002",
+    "locator": {
+      "code_location": "flowintentbench/construction_recipes.py"
+    },
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

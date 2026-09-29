@@ -1,0 +1,74 @@
+{
+  "dataset_id": "Double_Fin",
+  "case_id": "double_fin_high_pressure_region_o1_f1",
+  "case_family_id": "double_fin_high_pressure_region",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "double_fin_high_pressure_region_o1_f1_q90",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Compute the stated properties of the selected object."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "double_fin_high_pressure_region_o1_f1_q90",
+      "findings": [
+        {
+          "finding_id": "double_fin_high_pressure_region_o1_f1_q90_centroid",
+          "category": "location",
+          "statement": "report the volume-weighted centroid coordinates",
+          "importance": "core",
+          "value": [
+            0.0019759502776357,
+            -0.010341900477486,
+            0.0559022835448
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "evidence_ids": [
+            "finding_double_fin_high_pressure_region"
+          ]
+        },
+        {
+          "finding_id": "double_fin_high_pressure_region_o1_f1_q90_mean",
+          "category": "quantity",
+          "statement": "report the volume-weighted mean value in the selected region",
+          "importance": "core",
+          "value": 2.1628780885594,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_double_fin_high_pressure_region"
+          ]
+        }
+      ]
+    }
+  ]
+}

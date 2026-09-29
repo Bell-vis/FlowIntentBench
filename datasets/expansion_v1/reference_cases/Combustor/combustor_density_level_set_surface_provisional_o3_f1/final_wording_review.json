@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context is supplied to support a preferred isovalue or component-selection rule; these remain respondent choices.",
+    "The metadata provide no coordinate meanings, grid spacing, or units, so reported location and surface area may lack physical-unit interpretation."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question directly targets one connected component of a constant-Density isosurface within the annular-combustor density field. It leaves feature construction, finite isovalue selection, component selection, and location representation open while requiring the fixed F1 outputs: representative location, defining density value, and surface area. It is scientifically meaningful and actionable without introducing an unsupported physical claim or unnecessary schema-level burden.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+  "review_packet_sha256": "14500ab64ecb078557f5248b9a6e6fd6b82e08e1c0ba3e7c73a33a106a804a62",
+  "reviewed_model_visible_text_sha256": "e1ab34f2b4c87e7f6295173538759ec6a2d0f362fc8ce999f506a542cfbb8051",
+  "reviewed_model_visible_text": "Within the annular-combustor flow field, identify and characterize one connected constant-Density isosurface component. Choose and explain how the components are formed, a finite stored-Density isovalue rule, a rule for selecting one component, and how to represent its location. Report the selected component\u2019s representative location, defining density value, and surface area.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "14500ab64ecb078557f5248b9a6e6fd6b82e08e1c0ba3e7c73a33a106a804a62",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:49:38.275864+00:00",
+    "latency_seconds": 40.164936,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context is supplied to support a preferred isovalue or component-selection rule; these remain respondent choices.\",\"The metadata provide no coordinate meanings, grid spacing, or units, so reported location and surface area may lack physical-unit interpretation.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question directly targets one connected component of a constant-Density isosurface within the annular-combustor density field. It leaves feature construction, finite isovalue selection, component selection, and location representation open while requiring the fixed F1 outputs: representative location, defining density value, and surface area. It is scientifically meaningful and actionable without introducing an unsupported physical claim or unnecessary schema-level burden.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context is supplied to support a preferred isovalue or component-selection rule; these remain respondent choices.",
+        "The metadata provide no coordinate meanings, grid spacing, or units, so reported location and surface area may lack physical-unit interpretation."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question directly targets one connected component of a constant-Density isosurface within the annular-combustor density field. It leaves feature construction, finite isovalue selection, component selection, and location representation open while requiring the fixed F1 outputs: representative location, defining density value, and surface area. It is scientifically meaningful and actionable without introducing an unsupported physical claim or unnecessary schema-level burden."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0409540c433882bd016aa6e20b0b6087d0b321b1b888aa512d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1355,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1355,
+            "output_tokens": 0
+          },
+          "rs_0409540c433882bd016aa6e20bbeb887d0b65f634af7a2a321": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0409540c433882bd016aa6e218f66487d082e5873c5eb34822": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_0409540c433882bd016aa6e226e8a887d0af1c4563411f339a": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 310
+          },
+          "msg_0409540c433882bd016aa6e22da5a487d08cd8cb4b0ce76235": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 227
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 227
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1971,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1571,
+      "output_tokens_details": {
+        "reasoning_tokens": 1344
+      },
+      "total_tokens": 3542
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+    "review_packet_sha256": "14500ab64ecb078557f5248b9a6e6fd6b82e08e1c0ba3e7c73a33a106a804a62",
+    "reviewed_model_visible_text_sha256": "e1ab34f2b4c87e7f6295173538759ec6a2d0f362fc8ce999f506a542cfbb8051",
+    "reviewed_model_visible_text": "Within the annular-combustor flow field, identify and characterize one connected constant-Density isosurface component. Choose and explain how the components are formed, a finite stored-Density isovalue rule, a rule for selecting one component, and how to represent its location. Report the selected component\u2019s representative location, defining density value, and surface area."
+  }
+}

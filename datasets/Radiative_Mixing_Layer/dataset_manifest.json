@@ -1,0 +1,29 @@
+{
+  "dataset_id": "Radiative_Mixing_Layer",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 83888410,
+      "checksum": "bc79c68afb14eeb642a568697cc032b40df1f09c5a8e7a5bc92409ab7fee1d55",
+      "checksum_algorithm": "sha256",
+      "source_url": "https://polymathic-ai.org/the_well/datasets/turbulent_radiative_layer_3D/",
+      "path": "Radiative_Mixing_Layer/snapshot.vtk",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTK",
+    "canonical_reader": "vtkDataSetReader",
+    "reader_configuration": {},
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "record_url": "https://polymathic-ai.org/the_well/datasets/turbulent_radiative_layer_3D/",
+    "license": "CC-BY-4.0",
+    "parent_source_group": "Radiative_Mixing_Layer",
+    "sample_note": "Analysis domain is exactly the stored mesh. No inferred time history or physical unit conversion."
+  }
+}

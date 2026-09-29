@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the kitchen airflow field, determine which stored gas-concentration field has the greatest spatial heterogeneity. Treat every available stored gas-concentration field as a candidate, compare them using the cell-volume-weighted coefficient of variation, and report which field was selected. Provide evidence from that heterogeneity measure and add one relevant characterization of the result, chosen by you. First take the arithmetic mean of the finite vertex values within each cell before applying the stated measure.",
+  "semantic_contract_sha256": "d96105516b965fc708687cac58ec1df3b1821381b789ba3c5fb4813ddc00ad1d",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

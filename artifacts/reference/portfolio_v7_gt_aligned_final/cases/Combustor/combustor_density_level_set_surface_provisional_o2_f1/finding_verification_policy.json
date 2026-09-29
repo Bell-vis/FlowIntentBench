@@ -1,0 +1,241 @@
+{
+  "artifact_type": "FindingVerificationPolicy",
+  "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+  "dataset_id": "Combustor",
+  "policies": [
+    {
+      "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_density",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 0.3731998801231384,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "policy_digest": "8859018519cb093027982a0a685cb6954a258f2272b28236c9550a6e3461d1bf",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "combustor_density_level_set_surface_provisional",
+        "dataset_id": "Combustor",
+        "effective_o_semantic_sha256": "8b71d9a10e697d57acc3992faff2ec40da19213084d8a07be73d42ba7a3accfd",
+        "g_of_o_locator": "/level",
+        "representation": "quantity",
+        "scientific_role": "density",
+        "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+      },
+      "scientific_finding_policy_key": "2f67aaccaf482de0d2aad4a08c160582f02c2e200d1e7a8ad29734fa4c7b0f59",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.0005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          5.858101895045389,
+          0.3510179990998257,
+          30.75925343076107
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "policy_digest": "a515b74a6ba33ad17e57f9f36a1c9e04fb5512e5141bf4bc06c9ef754844f3f5",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "combustor_density_level_set_surface_provisional",
+        "dataset_id": "Combustor",
+        "effective_o_semantic_sha256": "8b71d9a10e697d57acc3992faff2ec40da19213084d8a07be73d42ba7a3accfd",
+        "g_of_o_locator": "/selected/area_weighted_centroid",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+      },
+      "scientific_finding_policy_key": "69b9ad5ebce8ed5c21500f96b8a88906fe9fd0ee315836cde2867afa1458cced",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface_surface_area",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 322.28122837044214,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.5,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q81_surface",
+      "policy_digest": "29f490e1543bee5e2c9444e78d910350853bbeca2c917d7c31d3d55997f97257",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "combustor_density_level_set_surface_provisional",
+        "dataset_id": "Combustor",
+        "effective_o_semantic_sha256": "8b71d9a10e697d57acc3992faff2ec40da19213084d8a07be73d42ba7a3accfd",
+        "g_of_o_locator": "/selected/surface_area",
+        "representation": "characterization",
+        "scientific_role": "surface_area",
+        "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+      },
+      "scientific_finding_policy_key": "e4e204962d8911a8ea56f06624019c282637d88562a383c32bd1c2567c183afc",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.5,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_density",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 0.4146665334701538,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "policy_digest": "fbd8253cfbc543695b53e085e1ac2e7f7d952cc66ef5c4429f293fc0047ccc5e",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "combustor_density_level_set_surface_provisional",
+        "dataset_id": "Combustor",
+        "effective_o_semantic_sha256": "f2031acf13852d3dd0b872fe00e7b015df96dcc162989ed45fdc5816ad0351ba",
+        "g_of_o_locator": "/level",
+        "representation": "quantity",
+        "scientific_role": "density",
+        "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+      },
+      "scientific_finding_policy_key": "15eeedc4630a5329163f54db417c932be5be4e4adc4b843daacada60adc8c66a",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.0005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          5.186062674753928,
+          0.24928450765948698,
+          30.535099120275166
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "policy_digest": "814ef38105c2a6442631561573fa06eb750c6abafc8e30939a0e1089e72dc543",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "combustor_density_level_set_surface_provisional",
+        "dataset_id": "Combustor",
+        "effective_o_semantic_sha256": "f2031acf13852d3dd0b872fe00e7b015df96dcc162989ed45fdc5816ad0351ba",
+        "g_of_o_locator": "/selected/area_weighted_centroid",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+      },
+      "scientific_finding_policy_key": "5cf78318f0166b017a73e3a23921506f3b6930765d68052565e5b7dcba831bd8",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface_surface_area",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 260.78393901064567,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.5,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "combustor_density_level_set_surface_provisional_o2_f1_o2_q90_surface",
+      "policy_digest": "b5f251890c9d0324866babefa53603a1c77b6a03398b7c93bd0de9857fc1611f",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "combustor_density_level_set_surface_provisional",
+        "dataset_id": "Combustor",
+        "effective_o_semantic_sha256": "f2031acf13852d3dd0b872fe00e7b015df96dcc162989ed45fdc5816ad0351ba",
+        "g_of_o_locator": "/selected/surface_area",
+        "representation": "characterization",
+        "scientific_role": "surface_area",
+        "scientific_target": "connected components of a constant-density isosurface in the annular-combustor density field"
+      },
+      "scientific_finding_policy_key": "5bd2959623a9b9b9c2e162d52a2fb89fb9cfba6965139a7554aca2c4f6ea1aa9",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.5,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    }
+  ],
+  "runtime_inference_from_python_type_forbidden": true,
+  "schema_version": "finding-verification-policy-v1",
+  "semantic_contract_sha256": "a7c3ed32860c62a0f28dc83b6dfaddc7c44e0b0d03422bb805c0bfd765e5eff6",
+  "verification_policy_sha256": "6360b8ba604f561d73bc97d5f21a25c15693438f3258a5532b02034b0b1acf2c"
+}

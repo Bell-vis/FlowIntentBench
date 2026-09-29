@@ -1,0 +1,80 @@
+{
+  "format": {
+    "type": "VTK",
+    "details": {}
+  },
+  "grid": {
+    "type": "unstructured",
+    "dimensions": null,
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "Potential",
+      "physical_quantity": "Potential",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "Resistance",
+      "physical_quantity": "Resistance",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "jx",
+      "physical_quantity": "jx",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "jy",
+      "physical_quantity": "jy",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "jz",
+      "physical_quantity": "jz",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "current_density",
+      "physical_quantity": "current_density",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

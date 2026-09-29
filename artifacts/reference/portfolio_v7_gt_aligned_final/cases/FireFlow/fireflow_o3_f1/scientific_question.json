@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the FireFlow room flow field, how should high-speed flow regions be defined, represented or aggregated, and evaluated? Select and report the flow quantity and measure used to quantify strength, state the criterion for identifying the strongest region, and report that region’s location and strength. Define speed as the Euclidean magnitude of the stored uvw vector at each point.",
+  "semantic_contract_sha256": "4f4006255e2571929122c34993ffb083ff2aa01c68c8f7b5196844a7abf75659",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

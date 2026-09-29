@@ -1,0 +1,10 @@
+{
+  "assets": [
+    {
+      "path": "raw/source.zip",
+      "url": "https://raw.githubusercontent.com/pyvista/data/6a55220dff84f3f9c0cd170945d2f9d695f871af/Data/fvm/turbo_incompressible/Turbo-Incompressible_3-Run_1-SOLUTION_FIELDS.zip",
+      "checksum": "git-sha1:05c5460711d1762ac62dd5eff909773f168bd7e0",
+      "size_bytes": 38228176
+    }
+  ]
+}

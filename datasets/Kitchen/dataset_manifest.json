@@ -1,0 +1,32 @@
+{
+  "dataset_id": "Kitchen",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 2950444,
+      "checksum": "cf50c31bd065aedbfca8074522a3aa278ab1007273e95a8cc4e5d279834b9a25",
+      "checksum_algorithm": "sha256",
+      "source_url": null,
+      "path": "Kitchen/kitchen.vtk",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTK",
+    "canonical_reader": "vtkDataSetReader",
+    "reader_configuration": {
+      "read_all_scalars": true,
+      "read_all_vectors": true
+    },
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "source_urls": [
+      "https://examples.vtk.org/site/Cxx/Visualization/Kitchen/",
+      "https://www.csc.kth.se/utbildning/kth/kurser/DD2257/visual09/LAB1.pdf"
+    ]
+  }
+}

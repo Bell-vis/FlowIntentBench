@@ -1,0 +1,81 @@
+{
+  "case_context": {
+    "boundaries": [],
+    "geometry_assets": [],
+    "objects": [
+      {
+        "description": "The carotid artery represented by the flow dataset.",
+        "name": "carotid_artery"
+      }
+    ],
+    "operating_conditions": [],
+    "physical_setting": "Blood flow in human carotid arteries",
+    "reference_directions": [],
+    "regions": []
+  },
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Carotid/carotid.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "coordinate_system": {
+        "axis_meaning": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "type": "cartesian",
+        "unit": null
+      },
+      "format": {
+        "details": {},
+        "type": "VTK"
+      },
+      "grid": {
+        "dimensions": [
+          76,
+          49,
+          45
+        ],
+        "origin": [
+          100.0,
+          80.0,
+          1.0
+        ],
+        "spacing": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "type": "structured"
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      },
+      "variables": [
+        {
+          "association": "point",
+          "components": 1,
+          "name": "scalars",
+          "physical_quantity": "speed-proportional scalar",
+          "source": "stored",
+          "type": "scalar",
+          "unit": null
+        },
+        {
+          "association": "point",
+          "components": 3,
+          "name": "vectors",
+          "physical_quantity": "velocity",
+          "source": "stored",
+          "type": "vector",
+          "unit": null
+        }
+      ]
+    }
+  },
+  "scientific_question": "Which high-speed flow region is strongest in the carotid artery dataset? Compute speed as the Euclidean magnitude of the velocity vector, classify non-zero speeds at or above their 90th percentile as high-speed, and form regions from face-connected qualifying locations. Select the region with the greatest peak speed, and give both that peak value and the mean spatial location of the retained locations within the region."
+}

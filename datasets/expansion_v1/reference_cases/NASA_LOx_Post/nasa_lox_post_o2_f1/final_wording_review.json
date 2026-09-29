@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context or computed result is supplied, so the actual strongest region cannot be verified from the payload.",
+    "Coordinate units, axis meanings, origin, and spacing are unspecified, limiting physical interpretation of the reported location."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question meaningfully targets selection of the strongest high-speed region within the LOx-post flow field. It exposes the fixed six-neighbor connected-region definition and mean-location representation, leaves the retention criterion and strength measure open, and correctly requires the location and strength findings for F1. The wording is actionable and answerable in principle without introducing an additional operationalization responsibility.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "fad41bc7b82da59197ff7b3d583e26e119d1d306958c5998a4733d26d899119c",
+  "review_packet_sha256": "bc9ba5838756fbe21a522cf8eaea89491c39232ad9da823cc9152e92181fd84d",
+  "reviewed_model_visible_text_sha256": "1121bb634d94c1f8782b0c61e602798ce29e7a8f27cf2a38ca5017c91489ab63",
+  "reviewed_model_visible_text": "Within the LOx-post flow field, which high-speed flow region is strongest? Choose a relevant measure of speed and a criterion for retaining high-speed locations, treat locations connected through immediate grid neighbors along one grid axis as one contiguous region, and represent the strongest region\u2019s location by the mean spatial location of its retained high-speed locations. Report both this location and the strength of the region.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "nasa_lox_post_o2_f1",
+    "condition": "O2-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "bc9ba5838756fbe21a522cf8eaea89491c39232ad9da823cc9152e92181fd84d",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:31:55.170378+00:00",
+    "latency_seconds": 44.566169,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context or computed result is supplied, so the actual strongest region cannot be verified from the payload.\",\"Coordinate units, axis meanings, origin, and spacing are unspecified, limiting physical interpretation of the reported location.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question meaningfully targets selection of the strongest high-speed region within the LOx-post flow field. It exposes the fixed six-neighbor connected-region definition and mean-location representation, leaves the retention criterion and strength measure open, and correctly requires the location and strength findings for F1. The wording is actionable and answerable in principle without introducing an additional operationalization responsibility.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context or computed result is supplied, so the actual strongest region cannot be verified from the payload.",
+        "Coordinate units, axis meanings, origin, and spacing are unspecified, limiting physical interpretation of the reported location."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question meaningfully targets selection of the strongest high-speed region within the LOx-post flow field. It exposes the fixed six-neighbor connected-region definition and mean-location representation, leaves the retention criterion and strength measure open, and correctly requires the location and strength findings for F1. The wording is actionable and answerable in principle without introducing an additional operationalization responsibility."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_02871b968aefa652016aa6dddf6b5887d092ffb4b0fc61e8e2": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1540,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1540,
+            "output_tokens": 0
+          },
+          "rs_02871b968aefa652016aa6dde01a3887d0b9b8944ab7c33ca8": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_02871b968aefa652016aa6dded037087d090af9b6d84ee11f9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "rs_02871b968aefa652016aa6ddfa067887d085655098e941f5ee": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 518
+          },
+          "msg_02871b968aefa652016aa6de06d05487d0ba4154086fba8b5e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 214
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 214
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2156,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1766,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 3922
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "fad41bc7b82da59197ff7b3d583e26e119d1d306958c5998a4733d26d899119c",
+    "review_packet_sha256": "bc9ba5838756fbe21a522cf8eaea89491c39232ad9da823cc9152e92181fd84d",
+    "reviewed_model_visible_text_sha256": "1121bb634d94c1f8782b0c61e602798ce29e7a8f27cf2a38ca5017c91489ab63",
+    "reviewed_model_visible_text": "Within the LOx-post flow field, which high-speed flow region is strongest? Choose a relevant measure of speed and a criterion for retaining high-speed locations, treat locations connected through immediate grid neighbors along one grid axis as one contiguous region, and represent the strongest region\u2019s location by the mean spatial location of its retained high-speed locations. Report both this location and the strength of the region."
+  }
+}

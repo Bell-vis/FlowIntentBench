@@ -1,0 +1,323 @@
+{
+  "families": [
+    {
+      "family_id": "tubes_turbulent_energy_heterogeneity",
+      "title": "the spatial nonuniformity of turbulent kinetic energy k",
+      "scientific_target": "the spatial nonuniformity of turbulent kinetic energy k",
+      "finding_goal": "Characterize the spatial nonuniformity of turbulent kinetic energy k",
+      "scope": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical coefficient.",
+        "o2_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+        "o3_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+        "o1_f2": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of turbulent kinetic energy k. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "coefficient",
+          "result_key": "value",
+          "request_phrase": "the numerical coefficient",
+          "requirement_statement": "report the numerical coefficient",
+          "category": "quantity",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "cv": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "dispersion",
+            "field": {
+              "name": "k",
+              "association": "cell"
+            },
+            "measure": "cv"
+          }
+        },
+        "relative_interdecile": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "dispersion",
+            "field": {
+              "name": "k",
+              "association": "cell"
+            },
+            "measure": "relative_interdecile"
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_tubes_turbulent_energy_heterogeneity"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "spatial_distribution",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "spatial_distribution",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "coefficient"
+          ]
+        ],
+        "role_by_category": {
+          "quantity": "coefficient"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    },
+    {
+      "family_id": "tubes_pressure_speed_association",
+      "title": "the spatial association between stored pressure p and speed",
+      "scientific_target": "the spatial association between stored pressure p and speed",
+      "finding_goal": "Characterize the spatial association between stored pressure p and speed",
+      "scope": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+        "o2_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+        "o3_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+        "o1_f2": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial association between stored pressure p and speed. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "association",
+          "result_key": "value",
+          "request_phrase": "the numerical association coefficient",
+          "requirement_statement": "report the numerical association coefficient",
+          "category": "relation",
+          "unit": "1"
+        }
+      ],
+      "operations": {
+        "pearson": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "p",
+              "association": "cell"
+            },
+            "measure": "pearson",
+            "other_field": {
+              "name": "U",
+              "association": "cell",
+              "reduce": "magnitude"
+            }
+          }
+        },
+        "spearman": {
+          "clauses": {
+            "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+            "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+            "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+          },
+          "recipe": {
+            "kind": "association",
+            "field": {
+              "name": "p",
+              "association": "cell"
+            },
+            "measure": "spearman",
+            "other_field": {
+              "name": "U",
+              "association": "cell",
+              "reduce": "magnitude"
+            }
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_tubes_pressure_speed_association"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "cross_field_relation",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "cross_field_relation",
+        "mandatory_roles": [],
+        "supporting_roles": [],
+        "adequate_core_sets": [
+          [
+            "association"
+          ]
+        ],
+        "role_by_category": {
+          "relation": "association"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      }
+    },
+    {
+      "family_id": "tubes_axial_activity_width",
+      "title": "the spatial extent of velocity magnitude along the stored x axis",
+      "scientific_target": "the spatial extent of velocity magnitude along the stored x axis",
+      "finding_goal": "Characterize the spatial extent of velocity magnitude along the stored x axis",
+      "scope": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+      "selection": "the complete supplied three-dimensional mesh",
+      "principal_dimensions": [
+        "feature_definition",
+        "property_measure",
+        "aggregation_or_representation"
+      ],
+      "o2_unresolved_dimensions": [
+        "property_measure"
+      ],
+      "eligible_conditions": [
+        "o1_f1",
+        "o2_f1",
+        "o3_f1",
+        "o1_f2"
+      ],
+      "questions": {
+        "o1_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored x axis. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Measure width along the x axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Report the numerical width, and the weighted center coordinate.",
+        "o2_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored x axis. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Multiply the stated spatial weight by cell volume and normalize by its sum. Choose and explain the remaining quantitative definition. Report the numerical width, and the weighted center coordinate.",
+        "o3_f1": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored x axis. Choose and explain an appropriate analysis procedure. Report the numerical width, and the weighted center coordinate.",
+        "o1_f2": "In the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000, consider the complete supplied three-dimensional mesh. Investigate the spatial extent of velocity magnitude along the stored x axis. Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight. Measure width along the x axis as the weighted root-mean-square distance from its weighted center. Multiply the stated spatial weight by cell volume and normalize by its sum. Select and explain findings that characterize this scientific target."
+      },
+      "finding_properties": [
+        {
+          "property_id": "width",
+          "result_key": "width",
+          "request_phrase": "the numerical width",
+          "requirement_statement": "report the numerical width",
+          "category": "property",
+          "unit": null
+        },
+        {
+          "property_id": "center",
+          "result_key": "center",
+          "request_phrase": "the weighted center coordinate",
+          "requirement_statement": "report the weighted center coordinate",
+          "category": "location",
+          "unit": null
+        }
+      ],
+      "operations": {
+        "rms": {
+          "clauses": {
+            "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+            "property_measure": "Measure width along the x axis as the weighted root-mean-square distance from its weighted center.",
+            "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+          },
+          "recipe": {
+            "kind": "weighted_width",
+            "field": {
+              "name": "U",
+              "association": "cell",
+              "reduce": "magnitude"
+            },
+            "measure": "rms",
+            "axis": 0
+          }
+        },
+        "interdecile": {
+          "clauses": {
+            "feature_definition": "Use all cells, with arithmetic means of vertex values for point fields. Use the magnitude of the stated velocity field as a nonnegative spatial weight.",
+            "property_measure": "Measure width along the x axis as the weighted 90th-minus-10th coordinate percentile range.",
+            "aggregation_or_representation": "Multiply the stated spatial weight by cell volume and normalize by its sum."
+          },
+          "recipe": {
+            "kind": "weighted_width",
+            "field": {
+              "name": "U",
+              "association": "cell",
+              "reduce": "magnitude"
+            },
+            "measure": "interdecile",
+            "axis": 0
+          }
+        }
+      },
+      "evidence_ids": [
+        "op_001"
+      ],
+      "finding_evidence_ids": [
+        "finding_tubes_axial_activity_width"
+      ],
+      "context_fact_ids": [
+        "physical_setting"
+      ],
+      "finding_archetype": "profile_width",
+      "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+      "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+      "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+      "finding_requirement_contract": {
+        "scientific_entity_type": "profile_width",
+        "mandatory_roles": [],
+        "supporting_roles": [
+          "center"
+        ],
+        "adequate_core_sets": [
+          [
+            "width"
+          ]
+        ],
+        "role_by_category": {
+          "location": "center",
+          "property": "width"
+        },
+        "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+      },
+      "f2_core_properties": [
+        "width"
+      ]
+    }
+  ]
+}

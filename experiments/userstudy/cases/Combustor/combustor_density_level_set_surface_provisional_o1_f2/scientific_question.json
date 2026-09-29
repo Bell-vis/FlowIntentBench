@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Explore coherent constant-density structure in the annular-combustor flow by extracting the Density isosurface at the 90th percentile of finite stored values. Consider every connected isosurface component as a candidate, select the one with the largest surface area, and describe it using its area-weighted centroid and surface area. Report the principal findings that the data support, including the structure’s identity and defining density level, along with a scientifically relevant characterization of your choice concerning its extent, location, or shape.",
+  "semantic_contract_sha256": "5e3eb461618c4c60c21297f0758ebb9fd41cbfe3ba2e306030bbf0a25b4f3431",
+  "source": "FlowIntentBench_userstudy/datasets/Combustor/questions/combustor_density_level_set_surface_provisional_o1_f2.json",
+  "wording_version": "1.2.1"
+}

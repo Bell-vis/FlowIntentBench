@@ -1,0 +1,63 @@
+{
+  "dataset_id": "Office",
+  "fact_index": {
+    "office_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "office_bookcases": {
+      "field": "objects",
+      "position": 0
+    },
+    "office_desks": {
+      "field": "objects",
+      "position": 1
+    },
+    "office_heat_source": {
+      "field": "objects",
+      "position": 2
+    },
+    "office_room": {
+      "field": "objects",
+      "position": 3
+    },
+    "office_window": {
+      "field": "objects",
+      "position": 4
+    },
+    "office_inlet": {
+      "field": "boundaries",
+      "position": 0
+    },
+    "office_outlet": {
+      "field": "boundaries",
+      "position": 1
+    }
+  },
+  "fact_provenance": {
+    "office_physical_setting": [
+      "ctx_001"
+    ],
+    "office_bookcases": [
+      "ctx_001"
+    ],
+    "office_desks": [
+      "ctx_001"
+    ],
+    "office_heat_source": [
+      "ctx_001"
+    ],
+    "office_room": [
+      "ctx_001"
+    ],
+    "office_window": [
+      "ctx_001"
+    ],
+    "office_inlet": [
+      "ctx_001"
+    ],
+    "office_outlet": [
+      "ctx_001"
+    ]
+  }
+}

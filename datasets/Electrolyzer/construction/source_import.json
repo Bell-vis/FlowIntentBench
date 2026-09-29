@@ -1,0 +1,18 @@
+{
+  "steps": [
+    {
+      "kind": "zip_subset",
+      "member_prefix": "Simulation Data/01-02-Q300I45R202NoSurfactant/",
+      "source": {
+        "path": "raw/Simulation Data.zip",
+        "url": "https://zenodo.org/api/records/14935434/files/Simulation%20Data.zip/content",
+        "checksum": "md5:31f873c6041ea1a70a1f4f620bfa0278",
+        "size_bytes": 795370728
+      }
+    },
+    {
+      "kind": "electro_grid",
+      "undeclared_endian": "Little"
+    }
+  ]
+}

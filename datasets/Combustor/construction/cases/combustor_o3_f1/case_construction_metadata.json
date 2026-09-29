@@ -1,0 +1,47 @@
+{
+  "case_id": "combustor_o3_f1",
+  "case_family_id": "combustor_flow_regions",
+  "dataset_id": "Combustor",
+  "scientific_target": "high-speed flow regions in the annular-combustor flow field",
+  "finding_goal": "characterize the strongest high-speed flow region in the annular-combustor flow field",
+  "operationalization_responsibility": "model_selected",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "scope_constraints": [
+    {
+      "statement": "in the annular-combustor flow field",
+      "question_fragment": "in the annular-combustor flow field"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "select the strongest region",
+      "question_fragment": "strongest"
+    }
+  ],
+  "explicit_method_constraints": [],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the location of the strongest region",
+      "question_fragment": "report its location"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the strength of the strongest region",
+      "question_fragment": "strength"
+    }
+  ]
+}

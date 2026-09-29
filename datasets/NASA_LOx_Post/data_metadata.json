@@ -1,0 +1,80 @@
+{
+  "format": {
+    "type": "PLOT3D",
+    "details": {
+      "encoding": "binary",
+      "precision": "float32",
+      "endianness": "big",
+      "has_byte_count": false
+    }
+  },
+  "grid": {
+    "type": "structured",
+    "dimensions": [
+      38,
+      76,
+      38
+    ],
+    "origin": null,
+    "spacing": null
+  },
+  "variables": [
+    {
+      "name": "Density",
+      "physical_quantity": "density",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "Momentum",
+      "physical_quantity": "momentum",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "StagnationEnergy",
+      "physical_quantity": "energy",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "stored"
+    },
+    {
+      "name": "VelocityMagnitude",
+      "physical_quantity": "velocity magnitude",
+      "type": "scalar",
+      "components": 1,
+      "association": "point",
+      "unit": null,
+      "source": "reader_derived"
+    },
+    {
+      "name": "Velocity",
+      "physical_quantity": "velocity",
+      "type": "vector",
+      "components": 3,
+      "association": "point",
+      "unit": null,
+      "source": "reader_derived"
+    }
+  ],
+  "coordinate_system": {
+    "type": "cartesian",
+    "axis_meaning": {
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "unit": null
+  },
+  "temporal": {
+    "type": "single_snapshot"
+  }
+}

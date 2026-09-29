@@ -1,0 +1,16 @@
+{
+  "dataset_id": "OpenFOAM_Tubes",
+  "status": "VERIFIED",
+  "assets": [
+    {
+      "path": "raw/source.zip",
+      "source_url": "https://raw.githubusercontent.com/pyvista/data/6a55220dff84f3f9c0cd170945d2f9d695f871af/Data/fvm/turbo_incompressible/Turbo-Incompressible_3-Run_1-SOLUTION_FIELDS.zip",
+      "published_checksum": "git-sha1:05c5460711d1762ac62dd5eff909773f168bd7e0",
+      "status": "VERIFIED",
+      "sha256": "4f615c2d7644e7ee504b9c548c8ef9095bfaaf19ac2a7071516f8978cbcc5385",
+      "size_bytes": 38228176,
+      "cached": true
+    }
+  ],
+  "checked_at_utc": "2026-09-13T17:13:40.650443+00:00"
+}

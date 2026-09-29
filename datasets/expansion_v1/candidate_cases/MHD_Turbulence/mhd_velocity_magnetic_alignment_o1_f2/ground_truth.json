@@ -1,0 +1,50 @@
+{
+  "dataset_id": "MHD_Turbulence",
+  "case_id": "mhd_velocity_magnetic_alignment_o1_f2",
+  "case_family_id": "mhd_velocity_magnetic_alignment",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Average the local cosine of the angle between the cell velocity and magnetic vectors."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine",
+      "findings": [
+        {
+          "finding_id": "mhd_velocity_magnetic_alignment_o1_f2_mean_cosine_alignment",
+          "category": "relation",
+          "statement": "report the signed alignment coefficient",
+          "importance": "core",
+          "value": 0.0035234276525179,
+          "unit": "1",
+          "verification": {
+            "absolute_tolerance": 5e-08,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_mhd_velocity_magnetic_alignment"
+          ]
+        }
+      ]
+    }
+  ]
+}

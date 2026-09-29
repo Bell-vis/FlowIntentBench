@@ -1,0 +1,32 @@
+{
+  "revisions": [
+    {
+      "case_id": "fireflow_o3_f1",
+      "source_question_sha256": "c44be96443836380c9d64b9207f3cfb7600492e8d86a0ace9eb3bd6becfa66af",
+      "scientific_question": "In the FireFlow room flow field, analyze connected high-speed regions, taking speed as the Euclidean magnitude of the stored uvw vector at each point. Choose and explain a threshold or percentile rule for finite non-zero speeds, a connectivity rule, a regional strength statistic, and how to represent a region\u2019s location. Report the location and strength of the strongest region.",
+      "reason": "Remove an unintended flow-quantity choice while preserving the frozen speed scope and all four open operationalization dimensions.",
+      "semantic_projection_sha256": "8195c08b73eb71d72a929b4f7d36322d46608a89861ffebe44ee7849b078b7fa"
+    },
+    {
+      "case_id": "nasa_lox_post_o3_f1",
+      "source_question_sha256": "5339c957065970505118a6dd1d68a8af2577dfb03ff7c284aea3c7e22981898e",
+      "scientific_question": "Which high-speed region is strongest in the LOx-post flow field? Take speed as the magnitude of the canonical reader-derived Velocity array. Define connected high-speed regions by choosing a threshold or percentile rule over finite non-zero speeds and an appropriate connectivity rule. Choose and explain a regional strength statistic and a representation of region location, then report the location and strength of the strongest region.",
+      "reason": "Remove an unintended flow-quantity choice while preserving the frozen speed scope and all four open operationalization dimensions.",
+      "semantic_projection_sha256": "091da81b5d3d016cc03e4a066cb78a2c75c1bc74930cca302a6795b9d6776d5c"
+    },
+    {
+      "case_id": "combustor_density_level_set_surface_provisional_o2_f1",
+      "source_question_sha256": "b2453d210a1ac56cb7c993f5ceb934b596369808f3dafae81ad4ad6abb5f2803",
+      "scientific_question": "In the annular-combustor flow field, treat each connected component of a constant-Density isosurface as one candidate surface. Choose and state a finite stored-Density isovalue rule. At that level, select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area. Report the centroid location, defining density value, and surface area.",
+      "semantic_projection_sha256": "59b7fc3e5a1797c48447d6c05ff8cf8a0384a27ffba1acc7c3a4418647b52f9d",
+      "reason": "Expose the frozen isovalue-selection responsibility and explicitly retain surface area as the bounded finding."
+    },
+    {
+      "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+      "source_question_sha256": "0526327d461459076b8de4373bcfa0e7714a593eac6b65a16da427ec302bb0c0",
+      "scientific_question": "Within the annular-combustor flow field, identify and characterize one connected constant-Density isosurface component. Choose and explain how the components are formed, a finite stored-Density isovalue rule, a rule for selecting one component, and how to represent its location. Report the selected component\u2019s representative location, defining density value, and surface area.",
+      "semantic_projection_sha256": "2fdefd16b62982ab9fb08544fffd24e452c14bc994686f674f13a1cca83d551c",
+      "reason": "Expose the frozen isovalue-selection responsibility and explicitly retain surface area as the bounded finding."
+    }
+  ]
+}

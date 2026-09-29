@@ -1,0 +1,8 @@
+{
+  "case_id": "combustor_o3_f1",
+  "dataset_id": "Combustor",
+  "include_fact_ids": [
+    "combustor_physical_setting",
+    "annular_combustor"
+  ]
+}

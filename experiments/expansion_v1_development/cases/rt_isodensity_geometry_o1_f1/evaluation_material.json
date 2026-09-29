@@ -1,0 +1,283 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "rt_isodensity_geometry_o1_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "rt_isodensity_geometry_o1_f1",
+    "family_id": "rt_isodensity_geometry",
+    "dataset_id": "Rayleigh_Taylor",
+    "condition": "O1-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_isodensity_geometry_o1_f1/case_input.json",
+    "case_input_sha256": "fb2ee9681ce0c96eb1718e07d5519b867bbe80a4524a710b783b0492a5332199",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_isodensity_geometry_o1_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "d997dddb60610e088446e20ee24b8bf6a7263b207767ee85055468d613b2f764",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_isodensity_geometry_o1_f1/case_context.json",
+    "case_context_sha256": "8da16c36dee6d8c6ad51b82fd9b963b9f691993ca2c10fb1fa871ab9872bd836",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_isodensity_geometry_o1_f1/ground_truth.json",
+    "ground_truth_sha256": "858e8dadab77906bb5cb0df5bae0a223fac453174188b11cc88c6dbb5767a5ca"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "rt_isodensity_geometry",
+    "title": "the geometry of a middle-density level surface",
+    "scientific_target": "the geometry of a middle-density level surface",
+    "finding_goal": "Characterize the geometry of a middle-density level surface",
+    "scope": "the supplied Rayleigh–Taylor instability snapshot",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation",
+      "parameter"
+    ],
+    "o2_unresolved_dimensions": [
+      "parameter"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Report the total surface area, and the area-weighted surface centroid.",
+      "o2_f1": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Choose and explain the remaining quantitative definition. Report the total surface area, and the area-weighted surface centroid.",
+      "o3_f1": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Choose and explain an appropriate analysis procedure. Report the total surface area, and the area-weighted surface centroid.",
+      "o1_f2": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the geometry of a middle-density level surface. Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons. Compute the stated properties of the selected object. Sum triangle areas and weight the surface centroid by triangle area. Extract the density level 0.94 in stored units. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "area",
+        "result_key": "area",
+        "request_phrase": "the total surface area",
+        "requirement_statement": "report the total surface area",
+        "category": "property",
+        "unit": null
+      },
+      {
+        "property_id": "centroid",
+        "result_key": "centroid",
+        "request_phrase": "the area-weighted surface centroid",
+        "requirement_statement": "report the area-weighted surface centroid",
+        "category": "location",
+        "unit": null,
+        "spatial_tolerance": 1e-05
+      }
+    ],
+    "operations": {
+      "rho094": {
+        "clauses": {
+          "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+          "parameter": "Extract the density level 0.94 in stored units."
+        },
+        "recipe": {
+          "kind": "surface",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "level": 0.94
+        }
+      },
+      "rho095": {
+        "clauses": {
+          "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+          "property_measure": "Compute the stated properties of the selected object.",
+          "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+          "parameter": "Extract the density level 0.95 in stored units."
+        },
+        "recipe": {
+          "kind": "surface",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "level": 0.95
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_rt_isodensity_geometry"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "surface_geometry",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except parameter. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "surface_geometry",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "area",
+          "centroid"
+        ]
+      ],
+      "role_by_category": {
+        "location": "centroid",
+        "property": "area"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/Rayleigh_Taylor/construction/families.json",
+    "sha256": "1fd1954357d62629b9b7e6cecc7a6f729292c3677d722b1d1d28bccc24810a7c"
+  },
+  "branch_execution_evidence": {
+    "rt_isodensity_geometry_o1_f1_rho094": {
+      "case_id": "rt_isodensity_geometry_o1_f1",
+      "dataset_id": "Rayleigh_Taylor",
+      "operationalization": {
+        "feature_definition": "Use the stored point density to extract the complete level surface by linear cell interpolation and triangulate its polygons.",
+        "property_measure": "Compute the stated properties of the selected object.",
+        "aggregation_or_representation": "Sum triangle areas and weight the surface centroid by triangle area.",
+        "parameter": "Extract the density level 0.94 in stored units."
+      },
+      "materialized_G_of_O": {
+        "area": 2.7089114189148,
+        "centroid": [
+          0.5236611366272,
+          0.50224089622498,
+          0.49306988716125
+        ]
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/rt_isodensity_geometry.json",
+        "sha256": "cbc0b05832c0dda5c4aee47231abbcacdaf8d29732728f1d47f6edc672903f37"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "b9cbc5522f756b987c0165b4aa341a55908f816c6cd4f03056f0890347df42b0",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Rayleigh_Taylor/snapshot.vtk",
+            "sha256": "ac58ea892162498cd976a577c16baa0a56e62e04e058909ff03ddb6da068aa78"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "surface",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "level": 0.94
+        },
+        "definition_sha256": "5c551ecaef9632bd230eae7e903f088787a11eae61e28395ee81263572366218",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "c299cd337d86fd686c0ad141a5ddaeaef9453562f7a9f69c39459dd21b1934ba"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "Rayleigh_Taylor",
+    "case_id": "rt_isodensity_geometry_o1_f1",
+    "semantic_contract_sha256": "097048438448668bbd1f399c03676c8153efddf4a6b047b3c11d69cecb276dfa",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "rt_isodensity_geometry_o1_f1_rho094",
+        "finding_id": "rt_isodensity_geometry_o1_f1_rho094_area",
+        "scientific_finding_policy_key": "95f43c0e3162e2cc34ae07afb596f7047999b147eb6d681fd4553345b64cdccc",
+        "policy_identity": {
+          "dataset_id": "Rayleigh_Taylor",
+          "case_family_id": "rt_isodensity_geometry",
+          "scientific_target": "the geometry of a middle-density level surface",
+          "effective_o_semantic_sha256": "47c665b36d62352d78f5251bc8060f3e6f99afe294886d5f0003372ce76d519b",
+          "scientific_role": "property",
+          "g_of_o_locator": "/area",
+          "representation": "property",
+          "canonical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 2.7089114189148,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE"
+        },
+        "policy_digest": "08706f3e05fa8a7c1b1ebcc92347a7c39e24753da83746792cf1a226583b4561"
+      },
+      {
+        "operationalization_id": "rt_isodensity_geometry_o1_f1_rho094",
+        "finding_id": "rt_isodensity_geometry_o1_f1_rho094_centroid",
+        "scientific_finding_policy_key": "a662736dbf4f1a307ecc815ab0be0b1533a4e80d7b3eb31864ec782ef0815b42",
+        "policy_identity": {
+          "dataset_id": "Rayleigh_Taylor",
+          "case_family_id": "rt_isodensity_geometry",
+          "scientific_target": "the geometry of a middle-density level surface",
+          "effective_o_semantic_sha256": "47c665b36d62352d78f5251bc8060f3e6f99afe294886d5f0003372ce76d519b",
+          "scientific_role": "location",
+          "g_of_o_locator": "/centroid",
+          "representation": "location",
+          "canonical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 1e-05
+        },
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            0.5236611366272,
+            0.50224089622498,
+            0.49306988716125
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 1e-05
+          },
+          "significant_figures": null
+        },
+        "unit_frame_authority": {
+          "physical_unit": null,
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA"
+        },
+        "policy_digest": "9d7a72e116b4bf02441bd062fd50b0d831b298c166a7b14e54b4c5b2fc312002"
+      }
+    ],
+    "verification_policy_sha256": "3649b08313056f8021f430bd7d76eca66a2c2b6b2c8fef0a77a1f6b24cbeb62a"
+  }
+}

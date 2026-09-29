@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "Combustor",
+    "evidence_type": "finding",
+    "statement": "The Combustor isosurface example supports reporting the identity, representative location, and surface extent of a selected constant-density structure; exact benchmark values come from execution.",
+    "source_id": "src_002",
+    "locator": {"section": "Description", "page": null, "figure": "6-11c", "code_location": "CombustorIsosurface.cxx: vtkContourFilter"},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

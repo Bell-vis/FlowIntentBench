@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence artifacts were supplied in the evidence context, so empirical validation of the selected region and peak-speed result is not possible from the supplied payload."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful for the office CFD velocity field and faithfully targets ventilation regions within the stated scope. It exposes all fixed operationalizations: the velocity-magnitude threshold, six-neighbor connected-region definition, peak-speed strength measure, and mean spatial location. The F2 wording correctly asks the respondent to select the strongest region, provide defining evidence, locate it, and choose one informative characterization without imposing an unintended operationalization or unnecessary protocol burden. It is clear and answerable in principle.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+  "review_packet_sha256": "8c5b51080d32d5cdbdb67428617233d6a15d0e8358781aaa9f9bf01c46bf8ab6",
+  "reviewed_model_visible_text_sha256": "cb2d21bc9fdd3714d88364c5b15aadf783732e48072c38eb5db6cb24eeb61526",
+  "reviewed_model_visible_text": "Investigate the ventilation regions in the office velocity field by retaining locations with velocity magnitude above 0.20 in the stored velocity scale and treating locations connected through immediate grid neighbors along one grid axis as a single contiguous high-speed region. Select the strongest region using peak speed, give the peak-speed evidence supporting your selection, and locate the principal feature using the mean spatial location of the retained high-speed locations. Also characterize the selected region in one informative way of your choice\u2014through its geometry, a meaningful comparison, morphology, orientation, or spatial extent.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "office_speed_zones_o1_f2",
+    "condition": "O1-F2",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "8c5b51080d32d5cdbdb67428617233d6a15d0e8358781aaa9f9bf01c46bf8ab6",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:31:46.776449+00:00",
+    "latency_seconds": 18.42683,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence artifacts were supplied in the evidence context, so empirical validation of the selected region and peak-speed result is not possible from the supplied payload.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful for the office CFD velocity field and faithfully targets ventilation regions within the stated scope. It exposes all fixed operationalizations: the velocity-magnitude threshold, six-neighbor connected-region definition, peak-speed strength measure, and mean spatial location. The F2 wording correctly asks the respondent to select the strongest region, provide defining evidence, locate it, and choose one informative characterization without imposing an unintended operationalization or unnecessary protocol burden. It is clear and answerable in principle.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence artifacts were supplied in the evidence context, so empirical validation of the selected region and peak-speed result is not possible from the supplied payload."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful for the office CFD velocity field and faithfully targets ventilation regions within the stated scope. It exposes all fixed operationalizations: the velocity-magnitude threshold, six-neighbor connected-region definition, peak-speed strength measure, and mean spatial location. The F2 wording correctly asks the respondent to select the strongest region, provide defining evidence, locate it, and choose one informative characterization without imposing an unintended operationalization or unnecessary protocol burden. It is clear and answerable in principle."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_03ccfaa9ae8fa958016aa6ddf13ab887d09a18bf9a54bf210e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1676,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1676,
+            "output_tokens": 0
+          },
+          "rs_03ccfaa9ae8fa958016aa6ddf1b2dc87d083f9345b291f1d14": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_03ccfaa9ae8fa958016aa6ddfe7ef887d0b5900ae09e8e4242": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 225
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 225
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2292,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 741,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3033
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "504a2f3ad9c90e7aba6cc6deabb1b79077c2bd4c05f6b18cdc1b3f45c8099fbe",
+    "review_packet_sha256": "8c5b51080d32d5cdbdb67428617233d6a15d0e8358781aaa9f9bf01c46bf8ab6",
+    "reviewed_model_visible_text_sha256": "cb2d21bc9fdd3714d88364c5b15aadf783732e48072c38eb5db6cb24eeb61526",
+    "reviewed_model_visible_text": "Investigate the ventilation regions in the office velocity field by retaining locations with velocity magnitude above 0.20 in the stored velocity scale and treating locations connected through immediate grid neighbors along one grid axis as a single contiguous high-speed region. Select the strongest region using peak speed, give the peak-speed evidence supporting your selection, and locate the principal feature using the mean spatial location of the retained high-speed locations. Also characterize the selected region in one informative way of your choice\u2014through its geometry, a meaningful comparison, morphology, orientation, or spatial extent."
+  }
+}

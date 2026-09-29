@@ -1,0 +1,98 @@
+{
+  "source": {
+    "url": "https://huggingface.co/datasets/polymathic-ai/MHD_64/resolve/ede5ad0479ede939d5b0cc616e45fd9d3cbcb245/data/test/MHD_Ma_0.7_Ms_0.5.hdf5?download=true",
+    "type": "file",
+    "oid": "b33cbfc91aa1d3f4a3502c5814ffbb8e51ccfd1b",
+    "size": 734041296,
+    "lfs": {
+      "oid": "4a67d6a00cd0450304575c3ff1b5dc89413d9600f79d37e1ed930bee1f621a72",
+      "size": 734041296,
+      "pointerSize": 134
+    },
+    "xetHash": "baa1e1ea9b5f4318b8e0296eda526df995e14cc3056451bb942a9980bebbec18",
+    "path": "data/test/MHD_Ma_0.7_Ms_0.5.hdf5",
+    "revision": "ede5ad0479ede939d5b0cc616e45fd9d3cbcb245"
+  },
+  "whole_remote_object_checksum_verified": false,
+  "trajectory": 0,
+  "frame": 60,
+  "time": 0.6000000238418579,
+  "field_metadata": {
+    "density": {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "min": 0.476681113243103,
+      "max": 1.7083169221878052,
+      "finite": true
+    },
+    "magnetic_field": {
+      "shape": [
+        64,
+        64,
+        64,
+        3
+      ],
+      "min": -1.3493598699569702,
+      "max": 2.022136926651001,
+      "finite": true
+    },
+    "velocity": {
+      "shape": [
+        64,
+        64,
+        64,
+        3
+      ],
+      "min": -2.1329684257507324,
+      "max": 2.399134874343872,
+      "finite": true
+    }
+  },
+  "attrs": {
+    "Ma": 0.7,
+    "Ms": 0.5,
+    "dataset_name": "MHD_64",
+    "grid_type": "cartesian",
+    "n_spatial_dims": 3,
+    "n_trajectories": 1,
+    "simulation_parameters": [
+      "Ma",
+      "Ms"
+    ]
+  },
+  "sample_geometry": "Stored coordinate samples represented as VTK points; the analysis domain is their rectilinear span. No extrapolation to unstored boundary faces.",
+  "snapshot_sha256": "1d66a7f150262e50490286b464a8d0874dd4fe975947e2833f5386181804890c",
+  "ranges": {
+    "0": {
+      "stop": 4194303,
+      "sha256": "4fbd5a064884c19ee879e709b2fe7df2544af47de63b67f2a0ecefea20e7dca9"
+    },
+    "734003200": {
+      "stop": 734041295,
+      "sha256": "7e6caac59ca45c7065eed13b4c29971f8f1f4a17286cde8d84f1d46860e011e3"
+    },
+    "104857600": {
+      "stop": 109051903,
+      "sha256": "4a5fe4c70f4a9aff701fe820d91731ed83e361f171ccb7acc0e678b180bf4631"
+    },
+    "62914560": {
+      "stop": 67108863,
+      "sha256": "5baf51b54d171ad27bad885f0ff3811109e83f395fe91c630f0fc2a12c105213"
+    },
+    "419430400": {
+      "stop": 423624703,
+      "sha256": "3d988ecb44561cd982eba1820acfbea2cc54eba44e6126d3223b44748cde69a0"
+    },
+    "293601280": {
+      "stop": 297795583,
+      "sha256": "ff23f0cf73eed75b3eb7bf4f0a5b54cb30c318e8b3b9bf39680a1e9e24b89d43"
+    },
+    "608174080": {
+      "stop": 612368383,
+      "sha256": "937a2a3ed419864c43a6c5da27fd156d25f3d923d75dd3655a95bff334dd7b96"
+    }
+  }
+}

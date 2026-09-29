@@ -1,0 +1,91 @@
+{
+  "dataset_id": "Radiative_Mixing_Layer",
+  "case_id": "radiative_vertical_advective_flux_o2_f1",
+  "case_family_id": "radiative_vertical_advective_flux",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "radiative_vertical_advective_flux_o2_f1_cell_product",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use the complete density and vertical-velocity fields on the supplied mesh."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "First average density and vertical velocity to cells, then multiply their cell values."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    },
+    {
+      "operationalization_id": "radiative_vertical_advective_flux_o2_f1_point_product",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Use the complete density and vertical-velocity fields on the supplied mesh."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Multiply density by vertical velocity at each stored point, then average that product to cells."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Weight cell statistics by cell volume and normalize by the included volume."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "radiative_vertical_advective_flux_o2_f1_cell_product",
+      "findings": [
+        {
+          "finding_id": "radiative_vertical_advective_flux_o2_f1_cell_product_flux",
+          "category": "quantity",
+          "statement": "report the signed domain-average vertical mass-flux density",
+          "importance": "core",
+          "value": -0.064649776658492,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-07,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_radiative_vertical_advective_flux"
+          ]
+        }
+      ]
+    },
+    {
+      "operationalization_id": "radiative_vertical_advective_flux_o2_f1_point_product",
+      "findings": [
+        {
+          "finding_id": "radiative_vertical_advective_flux_o2_f1_point_product_flux",
+          "category": "quantity",
+          "statement": "report the signed domain-average vertical mass-flux density",
+          "importance": "core",
+          "value": -0.059991213688342,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-07,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_radiative_vertical_advective_flux"
+          ]
+        }
+      ]
+    }
+  ]
+}

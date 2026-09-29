@@ -1,0 +1,106 @@
+{
+  "dataset_id": "NASA_LOx_Post",
+  "case_id": "nasa_lox_post_o1_f2",
+  "case_family_id": "lox_post_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open",
+      "findings": [
+        {
+          "finding_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 1.3914 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.391444101423406,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open_coordinate_span",
+          "category": "characterization",
+          "statement": "The strongest region has coordinate-space span approximately [15.997518062591553, 12.16211348772049, 4.108765065670013] along the dataset axes; no physical unit is inferred.",
+          "importance": "core",
+          "value": [
+            15.997518062591553,
+            12.16211348772049,
+            4.108765065670013
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open_point_count",
+          "category": "quantity",
+          "statement": "The selected region contains 4930 retained locations.",
+          "importance": "supporting",
+          "value": 4930,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open_region_count",
+          "category": "quantity",
+          "statement": "The criterion produces 2 connected regions in the supplied mesh or grid.",
+          "importance": "supporting",
+          "value": 2,
+          "unit": null,
+          "verification": null,
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

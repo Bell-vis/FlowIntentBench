@@ -1,0 +1,9 @@
+{
+  "case_id": "electrolyzer_current_hotspot_o1_f1",
+  "mapping": {
+    "electrolyzer_current_hotspot_o1_f1_q90": {
+      "centroid": "electrolyzer_current_hotspot_o1_f1_q90_centroid",
+      "mean": "electrolyzer_current_hotspot_o1_f1_q90_mean"
+    }
+  }
+}

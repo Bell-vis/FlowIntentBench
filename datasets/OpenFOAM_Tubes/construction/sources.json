@@ -1,0 +1,19 @@
+{
+  "dataset_id": "OpenFOAM_Tubes",
+  "sources": [
+    {
+      "source_id": "src_001",
+      "source_type": "dataset_documentation",
+      "title": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+      "venue": "Official dataset documentation",
+      "report_id": "https://docs.pyvista.org/api/examples/_autosummary/pyvista.examples.downloads.download_openfoam_tubes"
+    },
+    {
+      "source_id": "src_002",
+      "source_type": "example_source_code",
+      "title": "FlowIntentBench explicit numerical operationalization recipes",
+      "venue": "FlowIntentBench",
+      "report_id": "flowintentbench/construction_recipes.py"
+    }
+  ]
+}

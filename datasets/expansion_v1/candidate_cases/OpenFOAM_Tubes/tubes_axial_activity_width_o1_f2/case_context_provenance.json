@@ -1,0 +1,15 @@
+{
+  "dataset_id": "OpenFOAM_Tubes",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "tubes_axial_activity_width_o1_f2"
+}

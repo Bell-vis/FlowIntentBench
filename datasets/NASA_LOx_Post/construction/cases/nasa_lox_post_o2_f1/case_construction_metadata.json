@@ -1,0 +1,56 @@
+{
+  "case_id": "nasa_lox_post_o2_f1",
+  "case_family_id": "lox_post_flow_regions",
+  "dataset_id": "NASA_LOx_Post",
+  "scientific_target": "high-speed flow regions in the LOx-post flow field",
+  "finding_goal": "characterize the strongest high-speed flow region in the LOx-post flow field",
+  "operationalization_responsibility": "partially_specified",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "criterion",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [
+    "criterion",
+    "property_measure"
+  ],
+  "scope_constraints": [
+    {
+      "statement": "in the LOx-post flow field",
+      "question_fragment": "in the LOx-post flow field"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "select the strongest region",
+      "question_fragment": "strongest"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "Face-connected locations form one contiguous high-speed flow region.",
+      "question_fragment": "Treat locations connected through shared grid faces as one contiguous region"
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "represent the selected region by the mean spatial location of its high-speed locations",
+      "question_fragment": "represent the selected region by the mean spatial location of its high-speed locations"
+    }
+  ],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the location of the strongest region",
+      "question_fragment": "report its location"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the strength of the strongest region",
+      "question_fragment": "strength"
+    }
+  ]
+}

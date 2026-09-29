@@ -1,0 +1,932 @@
+{
+  "G_of_O": [
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GT",
+          "coordinate_span": [
+            0.24000000115484,
+            0.5999999046325684,
+            0.24000000953674316
+          ],
+          "criterion": "> 0.2",
+          "criterion_kind": "fixed_threshold",
+          "mean_spatial_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "mean_speed": 0.3364087523075579,
+          "measure_kind": "peak",
+          "operation_id": "o3_fixed_peak_speed",
+          "peak_point": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "peak_speed": 0.8049350186348156,
+          "region_count": 8,
+          "region_sizes": [
+            20,
+            33,
+            64,
+            4,
+            1,
+            32,
+            9,
+            37
+          ],
+          "reported_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "representation": "mean",
+          "retained_points": 200,
+          "selected_region_size": 32,
+          "strength": 0.8049350186348156,
+          "threshold": 0.2
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "dataset_id": "Office",
+          "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+          "effective_o_sha256": "006ca8a71da84534ddffb04c22720021d0a0de619765318531b15c5920fb388f",
+          "executed_plan_sha256": "bcb756bd3f7dfe19cf73fdd9d671c94f0fa93c1443bdbe4fcefaf0b9d118fd02",
+          "input_files": [
+            "Office/office.binary.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": 0.2
+          },
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "vectors"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_fixed_peak_speed_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a mean spatial location approximately [0.06812500045634806, 2.343749985098839, 2.389375001192093] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_fixed_peak_speed_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has peak speed strength approximately 0.80493502 in the stored velocity scale.",
+          "unit": null,
+          "value": 0.8049350186348156,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:o3_fixed_peak_speed",
+      "parameters": {},
+      "proposal_id": "reference:office_speed_zones_o3_f1:o3_fixed_peak_speed",
+      "proposal_kind": "OPERATIONALIZATION"
+    },
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GT",
+          "coordinate_span": [
+            0.0,
+            2.5,
+            0.9900000095367432
+          ],
+          "criterion": "> 0.2",
+          "criterion_kind": "fixed_threshold",
+          "mean_spatial_location": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "mean_speed": 0.3577313150236388,
+          "measure_kind": "mean",
+          "operation_id": "o3_fixed_mean_speed",
+          "peak_point": [
+            4.5,
+            1.600000023841858,
+            2.3499999046325684
+          ],
+          "peak_speed": 0.4289544897909436,
+          "region_count": 8,
+          "region_sizes": [
+            20,
+            33,
+            64,
+            4,
+            1,
+            32,
+            9,
+            37
+          ],
+          "reported_location": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "representation": "mean",
+          "retained_points": 200,
+          "selected_region_size": 64,
+          "strength": 0.3577313150236388,
+          "threshold": 0.2
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "677aa499547c944b564b8062fecc027da8df5541fe8459f14b7748db724a6907",
+          "dataset_id": "Office",
+          "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+          "effective_o_sha256": "662bc9dcced66f4d14ec056eb14cfa08285eaefaacf8866f54ef2359b56b1b47",
+          "executed_plan_sha256": "677aa499547c944b564b8062fecc027da8df5541fe8459f14b7748db724a6907",
+          "input_files": [
+            "Office/office.binary.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": 0.2
+          },
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "vectors"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_fixed_mean_speed_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a mean spatial location approximately [4.5, 2.4312500208616257, 2.1737499833106995] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_fixed_mean_speed_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has mean speed strength approximately 0.35773132 in the stored velocity scale.",
+          "unit": null,
+          "value": 0.3577313150236388,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:o3_fixed_mean_speed",
+      "parameters": {},
+      "proposal_id": "reference:office_speed_zones_o3_f1:o3_fixed_mean_speed",
+      "proposal_kind": "OPERATIONALIZATION"
+    },
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            0.010000228881835938,
+            2.5,
+            1.2400000095367432
+          ],
+          "criterion": ">= non-zero 90th percentile (0.120388175490)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "mean_speed": 0.2919336353878951,
+          "measure_kind": "mean",
+          "operation_id": "o3_q90_mean_speed",
+          "peak_point": [
+            4.5,
+            1.600000023841858,
+            2.3499999046325684
+          ],
+          "peak_speed": 0.4289544897909436,
+          "region_count": 7,
+          "region_sizes": [
+            247,
+            154,
+            296,
+            93,
+            11,
+            12,
+            4
+          ],
+          "reported_location": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "representation": "mean",
+          "retained_points": 817,
+          "selected_region_size": 93,
+          "strength": 0.2919336353878951,
+          "threshold": 0.12038817548967597
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "dataset_id": "Office",
+          "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+          "effective_o_sha256": "b162d4e72f739fd201d4cfa47a439e043c8469d0d961ad1b2bd0a96b6e69049f",
+          "executed_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "input_files": [
+            "Office/office.binary.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "vectors"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_q90_mean_speed_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a mean spatial location approximately [4.497741883800876, 2.421505397365939, 2.1120429859366467] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_q90_mean_speed_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has mean speed strength approximately 0.29193364 in the stored velocity scale.",
+          "unit": null,
+          "value": 0.2919336353878951,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:o3_q90_mean_speed",
+      "parameters": {},
+      "proposal_id": "reference:office_speed_zones_o3_f1:o3_q90_mean_speed",
+      "proposal_kind": "OPERATIONALIZATION"
+    },
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GT",
+          "coordinate_span": [
+            0.24000000115484,
+            0.5999999046325684,
+            0.24000000953674316
+          ],
+          "criterion": "> 0.2",
+          "criterion_kind": "fixed_threshold",
+          "mean_spatial_location": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "mean_speed": 0.3364087523075579,
+          "measure_kind": "peak",
+          "operation_id": "o3_peak_point_speed",
+          "peak_point": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "peak_speed": 0.8049350186348156,
+          "region_count": 8,
+          "region_sizes": [
+            20,
+            33,
+            64,
+            4,
+            1,
+            32,
+            9,
+            37
+          ],
+          "reported_location": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "representation": "peak",
+          "retained_points": 200,
+          "selected_region_size": 32,
+          "strength": 0.8049350186348156,
+          "threshold": 0.2
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "e09e0c609a618799f8d2134186be7610f3867b4c230816b35f20ed69735eb74d",
+          "dataset_id": "Office",
+          "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+          "effective_o_sha256": "33c4dae85a403c71610548bd0ed98f51ea230b2033858b4cf0167a77f3e70c81",
+          "executed_plan_sha256": "e09e0c609a618799f8d2134186be7610f3867b4c230816b35f20ed69735eb74d",
+          "input_files": [
+            "Office/office.binary.vtk"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GT",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "fixed_threshold",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": null,
+            "quantile_method": "linear",
+            "representation_kind": "peak",
+            "threshold": 0.2
+          },
+          "reader_configuration": {
+            "read_all_scalars": true,
+            "read_all_vectors": true
+          },
+          "reader_format": "VTK",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "vectors"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_peak_point_speed_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a peak spatial location approximately [0.009999998845160007, 2.549999952316284, 2.430000066757202] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "o3_peak_point_speed_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has peak speed strength approximately 0.80493502 in the stored velocity scale.",
+          "unit": null,
+          "value": 0.8049350186348156,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:o3_peak_point_speed",
+      "parameters": {},
+      "proposal_id": "reference:office_speed_zones_o3_f1:o3_peak_point_speed",
+      "proposal_kind": "OPERATIONALIZATION"
+    }
+  ],
+  "adequate_core_sets": [],
+  "adjudicated_findings": [],
+  "adjudication_provenance": [],
+  "case_id": "office_speed_zones_o3_f1",
+  "enumerated_valid_O": [
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "o3_fixed_peak_speed"
+    },
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the mean speed across retained locations as the strength of each region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "o3_fixed_mean_speed"
+    },
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed is at or above the 90th percentile of non-zero speed values as a distribution-informed high-speed criterion."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use the mean speed across retained locations as the strength of each region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent each selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "o3_q90_mean_speed"
+    },
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected (6-neighbor) regions of retained high-speed locations form the analysis regions."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations whose speed magnitude is strictly greater than 0.20."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the spatial location of its peak-speed location."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "o3_peak_point_speed"
+    }
+  ],
+  "explicitly_invalid_O": [],
+  "finding_requirement_contract": {},
+  "source_semantic_contract_sha256": "4ef16026078d9659dfa5d890a704295ba023d8ca031180b47220f8b0c2fb7b78",
+  "status": "DRAFT_REQUIRES_HUMAN_CONFIRMATION",
+  "tolerances": {
+    "finding_verification_policies": [
+      {
+        "finding_id": "o3_fixed_mean_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o3_fixed_mean_speed",
+        "policy_digest": "e618be23c239a8d90f4e92afb859b05ea56c561c2dd5f31d76b7ea4ed882cbad",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "7488320fe6d9c746edc6fb9f1c93ab250dcad195430131e2fd447f44e1147290",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "1162a253c09d76851090acec15cc4759624e8a6008eb2e1038d576230536bdbd",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o3_fixed_mean_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.3577313150236388,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o3_fixed_mean_speed",
+        "policy_digest": "65040470b798f3f4326b8a9512c3d95a89e69452be28cc7ae5dff9a14e8f7735",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "7488320fe6d9c746edc6fb9f1c93ab250dcad195430131e2fd447f44e1147290",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "b43c8814bdf060110f66a11a82e3d416a99059542f2a47a7a87ab407a0abf8e6",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "o3_fixed_peak_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o3_fixed_peak_speed",
+        "policy_digest": "ea34b30146a036f3e62a48dec50f37175237b659d555cb5f8c12235b57f1d724",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "b1d4e5e7afa0000ba983d9dd32e2371fb154c248c064fb0bd2b9213acb3f1ca1",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "895e223fbe7fb266a0b37e733e4ef264b7078f5fe84dda378d97f0e02407b388",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o3_fixed_peak_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.8049350186348156,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o3_fixed_peak_speed",
+        "policy_digest": "111cb00771e4c042b9967c78d7ee4aeec9639f6d432ce728f057641af740381c",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "b1d4e5e7afa0000ba983d9dd32e2371fb154c248c064fb0bd2b9213acb3f1ca1",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "8787adfd0aee75c31de60fc49a478c782616afc55dafaa34591f44571298f6b7",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "o3_peak_point_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            0.009999998845160007,
+            2.549999952316284,
+            2.430000066757202
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o3_peak_point_speed",
+        "policy_digest": "c0b36fc7e1bcc1222d208c74f82557c8c76deca81f8383a01ab6f90d7ec0ca9e",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "9b11cb7277ac3102fb8cd2961dd1c41e298389579414fb950b49ef97840df4b0",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "87670bc4697f5aaa22425290cbae04a96082c49d3ce1a45b549b10ea60ab357c",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o3_peak_point_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.8049350186348156,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o3_peak_point_speed",
+        "policy_digest": "1fcc11b3ba4c7cf1f6992e9d253e6ed49b324e40f70e11460ab934e27ffa40b3",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "9b11cb7277ac3102fb8cd2961dd1c41e298389579414fb950b49ef97840df4b0",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "15f579d3ebfe5f60f6bfee553378ba84ec36633622598ffbf7b53157295630ab",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "o3_q90_mean_speed_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "o3_q90_mean_speed",
+        "policy_digest": "7231fb39d9d48f5a9f4aba09b74d6846c56b246a83029d0372b8994f955be491",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "4a65b5066eaa4a99b7fa5dc1002fc2f55b9363717fec715189439027ca78084f",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "3e41adfa13a0d9b6e4d52a4ec73a44a3259c961c5389eafe2f0acd0f97b7d66e",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "o3_q90_mean_speed_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.2919336353878951,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "o3_q90_mean_speed",
+        "policy_digest": "1bb06279945ba67c04f4978868edaabb27265f0c52e984b9c5215ac35866a748",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "office__high_speed_region",
+          "dataset_id": "Office",
+          "effective_o_semantic_sha256": "4a65b5066eaa4a99b7fa5dc1002fc2f55b9363717fec715189439027ca78084f",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "ventilation regions in the office velocity field"
+        },
+        "scientific_finding_policy_key": "8f257a9849ac336780fcc9790123292652c1b40808c07e75ead03b70d5770bdc",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.0005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "verification_policy_sha256": "d20ec429f6b3d90102d98384317489aa5c72a7e211aabb9d1c20eea134150932",
+    "verification_policy_version": "finding-verification-policy-v1"
+  },
+  "unenumerated_policy": "VALID_UNENUMERATED requires curator escalation"
+}

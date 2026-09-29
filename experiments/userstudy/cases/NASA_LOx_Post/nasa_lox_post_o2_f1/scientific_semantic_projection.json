@@ -1,0 +1,77 @@
+{
+  "concept_id": "high_speed_region",
+  "dataset_id": "NASA_LOx_Post",
+  "family_id": "nasa_lox_post__high_speed_region",
+  "finding_responsibility": "F1",
+  "finding_semantics": {
+    "finding_goal": "characterize the strongest high-speed flow region in the lox-post flow field",
+    "fixed_finding_requirements": [
+      {
+        "category": "location",
+        "normalized_meaning": "report the location of the strongest region"
+      },
+      {
+        "category": "quantity",
+        "normalized_meaning": "report the strength of the strongest region"
+      }
+    ],
+    "normalized_demand": "characterize the strongest high-speed flow region in the lox-post flow field",
+    "required_finding_roles": [
+      "defining_strength_evidence",
+      "principal_feature_location"
+    ]
+  },
+  "observable_scientific_semantics": {
+    "required_capabilities": {},
+    "scientific_semantic_capabilities": {}
+  },
+  "operationalization_responsibility": "partially_specified",
+  "principal_operationalization_dimensions": [
+    "aggregation_or_representation",
+    "criterion",
+    "feature_definition",
+    "property_measure"
+  ],
+  "resolved_operationalization": [
+    {
+      "canonical_id": "mean_region_coordinate",
+      "dimension_id": "aggregation_or_representation",
+      "normalized_meaning": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "canonical_id": "face_connected_region",
+      "dimension_id": "feature_definition",
+      "normalized_meaning": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    }
+  ],
+  "scientific_scope": {
+    "condition_constraints": [
+      "speed is the magnitude of the canonical reader-derived Velocity array",
+      "operationalizations remain within thresholded connected velocity-magnitude region analysis on the supplied topology"
+    ],
+    "scope_constraints": [
+      "in the lox-post flow field"
+    ],
+    "selection_constraints": [
+      "select the strongest region"
+    ]
+  },
+  "scientific_semantic_projection_version": "scientific-semantic-projection-v3",
+  "scientific_target": "high-speed flow regions in the lox-post flow field",
+  "unresolved_operationalization_dimensions": [
+    {
+      "dimension_id": "criterion",
+      "must_remain_open": true,
+      "normalized_meaning": "select and state an explicit numeric threshold or percentile rule over finite non-zero speed values"
+    },
+    {
+      "dimension_id": "property_measure",
+      "must_remain_open": true,
+      "normalized_meaning": "select and state the regional strength statistic"
+    }
+  ],
+  "verification_semantics": {
+    "deterministic_verification_required_claim_types": [],
+    "semantic_adjudication_required": false
+  }
+}

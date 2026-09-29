@@ -1,0 +1,88 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "carotid_o1_f1",
+  "claims": [
+    {
+      "claim_id": "carotid_o1_f1_o1_high_speed_regions:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "treat retained grid points adjacent by one structured-grid index step along exactly one axis as one six-neighbor connected speed region"
+    },
+    {
+      "claim_id": "carotid_o1_f1_o1_high_speed_regions:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "compute speed as the euclidean magnitude of the stored point-data vector array named `vectors`, then define high-speed locations as those at or above the 90th percentile of its non-zero values using linear quantile interpolation"
+    },
+    {
+      "claim_id": "carotid_o1_f1_o1_high_speed_regions:O:property_measure",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "use peak speed as the measure of strength"
+    },
+    {
+      "claim_id": "carotid_o1_f1_o1_high_speed_regions:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "represent the strongest region by the mean spatial location of its retained high-speed locations"
+    },
+    {
+      "claim_id": "carotid_o1_f1_o1_high_speed_regions:F:carotid_o1_f1_o1_high_speed_regions_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has a mean spatial location approximately [137.80844557699308, 94.49144521295959, 15.773061521659992] in the dataset coordinate frame."
+    },
+    {
+      "claim_id": "carotid_o1_f1_o1_high_speed_regions:F:carotid_o1_f1_o1_high_speed_regions_strength",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_001"
+      ],
+      "statement": "The selected strongest region has peak speed strength approximately 22.694928 in the stored velocity scale."
+    }
+  ],
+  "dataset_id": "Carotid",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

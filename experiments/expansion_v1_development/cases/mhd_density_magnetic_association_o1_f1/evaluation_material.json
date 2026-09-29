@@ -1,0 +1,237 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "mhd_density_magnetic_association_o1_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "mhd_density_magnetic_association_o1_f1",
+    "family_id": "mhd_density_magnetic_association",
+    "dataset_id": "MHD_Turbulence",
+    "condition": "O1-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_density_magnetic_association_o1_f1/case_input.json",
+    "case_input_sha256": "f268dc2d7358cf6aed8da4a095a86f84715ec3efc31644a885903ac6075736b6",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_density_magnetic_association_o1_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "c3892b60eb79aae5f85b78b8ba23408dcf2698e9d5db88c0e7fb8b2d1de5c4ba",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_density_magnetic_association_o1_f1/case_context.json",
+    "case_context_sha256": "da91a06f1ba080d4a647270d0970c3415a40c8fe0c9754289b03499b8cb08c56",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/MHD_Turbulence/mhd_density_magnetic_association_o1_f1/ground_truth.json",
+    "ground_truth_sha256": "15fa7f797ed000afb7b81fca778ca5341eee752a01e554cd8aa3334c9361a4da"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "mhd_density_magnetic_association",
+    "title": "the spatial association between density and magnetic-field magnitude",
+    "scientific_target": "the spatial association between density and magnetic-field magnitude",
+    "finding_goal": "Characterize the spatial association between density and magnetic-field magnitude",
+    "scope": "the supplied compressible magnetohydrodynamic turbulence snapshot",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+      "o2_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+      "o3_f1": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+      "o1_f2": "In the supplied compressible magnetohydrodynamic turbulence snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and magnetic-field magnitude. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "association",
+        "result_key": "value",
+        "request_phrase": "the numerical association coefficient",
+        "requirement_statement": "report the numerical association coefficient",
+        "category": "relation",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "pearson": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "magnetic_field",
+            "association": "point",
+            "reduce": "magnitude"
+          }
+        }
+      },
+      "spearman": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "spearman",
+          "other_field": {
+            "name": "magnetic_field",
+            "association": "point",
+            "reduce": "magnitude"
+          }
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_mhd_density_magnetic_association"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "cross_field_relation",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "cross_field_relation",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "association"
+        ]
+      ],
+      "role_by_category": {
+        "relation": "association"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/MHD_Turbulence/construction/families.json",
+    "sha256": "194b841ad2c15ea8088ce00021e38e41c3ab8f4db33786210543f3b491bf27d3"
+  },
+  "branch_execution_evidence": {
+    "mhd_density_magnetic_association_o1_f1_pearson": {
+      "case_id": "mhd_density_magnetic_association_o1_f1",
+      "dataset_id": "MHD_Turbulence",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": -0.69832131504662
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/mhd_density_magnetic_association.json",
+        "sha256": "387bba0aa0712821d5c46da4ca8a7ce85b636610d67dfba3bc4c64cc990d3721"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "5b2dc4d12dea7d09c8c72ca093a017dd11f5ee8b95c87d705b9863d2d44c377b",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "MHD_Turbulence/snapshot.vtk",
+            "sha256": "1d66a7f150262e50490286b464a8d0874dd4fe975947e2833f5386181804890c"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "magnetic_field",
+            "association": "point",
+            "reduce": "magnitude"
+          }
+        },
+        "definition_sha256": "715a6b73d7a0d71697652d0ff07da69e0a5e1f6f93e6dfa657cb1349628a1210",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "9258708127bfa371aeb8063c3becc33ed137118479224d5d648d0c541d0e6bd6"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "MHD_Turbulence",
+    "case_id": "mhd_density_magnetic_association_o1_f1",
+    "semantic_contract_sha256": "b63fb38f5df2f4b3cfb8a34d15926b579d629e3d8022227b2ec4da33b5ac0f22",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "mhd_density_magnetic_association_o1_f1_pearson",
+        "finding_id": "mhd_density_magnetic_association_o1_f1_pearson_association",
+        "scientific_finding_policy_key": "797e0e7e85d3662b2df70da249169f732a063102d5309532136b8f0d30e5aa47",
+        "policy_identity": {
+          "dataset_id": "MHD_Turbulence",
+          "case_family_id": "mhd_density_magnetic_association",
+          "scientific_target": "the spatial association between density and magnetic-field magnitude",
+          "effective_o_semantic_sha256": "e3a6fd2deb7146b1374a3d34bf4ca951a3306f231345628846259272273b639c",
+          "scientific_role": "relation",
+          "g_of_o_locator": "/value",
+          "representation": "relation",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": -0.69832131504662,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "1ef27d7ad5ffacb2af397c7060092648d00399184f52ed517826a39831d59726"
+      }
+    ],
+    "verification_policy_sha256": "4cd536b3b892d4965e5da3b1b082480ce5f53696e7764d52a682e7f778f77fb5"
+  }
+}

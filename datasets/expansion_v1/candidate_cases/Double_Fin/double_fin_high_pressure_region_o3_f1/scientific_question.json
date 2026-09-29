@@ -1,0 +1,8 @@
+{
+  "scientific_question": "In the supplied double-fin reconstructed pressure field, consider all mesh cells whose P/Pinf values are finite at every vertex. Investigate the location and intensity of high reconstructed P/Pinf regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+  "f1_required_properties": [
+    "centroid",
+    "mean"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

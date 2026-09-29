@@ -1,0 +1,11 @@
+{
+  "case_id": "radiative_density_heterogeneity_o3_f1",
+  "mapping": {
+    "radiative_density_heterogeneity_o3_f1_cv": {
+      "coefficient": "radiative_density_heterogeneity_o3_f1_cv_coefficient"
+    },
+    "radiative_density_heterogeneity_o3_f1_relative_interdecile": {
+      "coefficient": "radiative_density_heterogeneity_o3_f1_relative_interdecile_coefficient"
+    }
+  }
+}

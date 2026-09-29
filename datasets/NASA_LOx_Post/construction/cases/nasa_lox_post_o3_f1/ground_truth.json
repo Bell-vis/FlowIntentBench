@@ -1,0 +1,245 @@
+{
+  "dataset_id": "NASA_LOx_Post",
+  "case_id": "nasa_lox_post_o3_f1",
+  "case_family_id": "lox_post_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q75_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 75th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak_point",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the spatial location of its peak-speed location."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak",
+      "findings": [
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 1.3914 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.391444101423406,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_mean",
+      "findings": [
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 1.248 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.2483379152602692,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q75_mean",
+      "findings": [
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q75_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [-0.2586535748643758, 0.004317644593928942, 3.18852633498706] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q75_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 1.117 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.1169056975303706,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak_point",
+      "findings": [
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_point_location",
+          "category": "location",
+          "statement": "The selected strongest region has peak-speed location approximately [-0.016844864934682846, -0.8041654229164124, 1.7766473293304443] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_point_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 1.3914 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1.391444101423406,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,924 @@
+{
+  "G_of_O": [
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            15.997518062591553,
+            12.16211348772049,
+            4.108765065670013
+          ],
+          "criterion": ">= non-zero 90th percentile (1.153866514531)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "mean_speed": 1.2483379152602692,
+          "measure_kind": "peak",
+          "operation_id": "nasa_lox_post_o3_f1_o3_q90_peak",
+          "peak_point": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "peak_speed": 1.391444101423406,
+          "region_count": 2,
+          "region_sizes": [
+            5064,
+            4930
+          ],
+          "reported_location": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "representation": "mean",
+          "retained_points": 9994,
+          "selected_region_size": 4930,
+          "strength": 1.391444101423406,
+          "threshold": 1.153866514530744
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+          "dataset_id": "NASA_LOx_Post",
+          "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+          "effective_o_sha256": "bb892eac05ebebd7d30780cd2e13273ab2c4f745d0ab6953ca9f8fea41b4b72e",
+          "executed_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+          "input_files": [
+            "NASA_LOx_Post/postxyz.bin",
+            "NASA_LOx_Post/postq.bin"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          },
+          "reader_format": "PLOT3D",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "Velocity"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has peak speed strength approximately 1.3914441 in the stored velocity scale.",
+          "unit": null,
+          "value": 1.391444101423406,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:nasa_lox_post_o3_f1_o3_q90_peak",
+      "parameters": {},
+      "proposal_id": "reference:nasa_lox_post_o3_f1:nasa_lox_post_o3_f1_o3_q90_peak",
+      "proposal_kind": "OPERATIONALIZATION"
+    },
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            15.997518062591553,
+            12.16211348772049,
+            4.108765065670013
+          ],
+          "criterion": ">= non-zero 90th percentile (1.153866514531)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "mean_speed": 1.2483379152602692,
+          "measure_kind": "mean",
+          "operation_id": "nasa_lox_post_o3_f1_o3_q90_mean",
+          "peak_point": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "peak_speed": 1.391444101423406,
+          "region_count": 2,
+          "region_sizes": [
+            5064,
+            4930
+          ],
+          "reported_location": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "representation": "mean",
+          "retained_points": 9994,
+          "selected_region_size": 4930,
+          "strength": 1.2483379152602692,
+          "threshold": 1.153866514530744
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "dataset_id": "NASA_LOx_Post",
+          "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+          "effective_o_sha256": "089e5c94f1e354a0fe29154977db984d8973d7f0b389ebfe6749caa24cfc3f55",
+          "executed_plan_sha256": "50bf09a3b5b4c3ca42cd4a2ee1950c9dc428e665bfc6af208e00299ac359fc5a",
+          "input_files": [
+            "NASA_LOx_Post/postxyz.bin",
+            "NASA_LOx_Post/postq.bin"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          },
+          "reader_format": "PLOT3D",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "Velocity"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_mean_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a mean spatial location approximately [1.9714835118861307, -2.6243898427147894, 3.586038704950959] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_mean_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has mean speed strength approximately 1.2483379 in the stored velocity scale.",
+          "unit": null,
+          "value": 1.2483379152602692,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:nasa_lox_post_o3_f1_o3_q90_mean",
+      "parameters": {},
+      "proposal_id": "reference:nasa_lox_post_o3_f1:nasa_lox_post_o3_f1_o3_q90_mean",
+      "proposal_kind": "OPERATIONALIZATION"
+    },
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            29.934234619140625,
+            29.993419647216797,
+            4.597952097654343
+          ],
+          "criterion": ">= non-zero 75th percentile (0.821895835782)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "mean_speed": 1.1169056975303706,
+          "measure_kind": "mean",
+          "operation_id": "nasa_lox_post_o3_f1_o3_q75_mean",
+          "peak_point": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "peak_speed": 1.391444101423406,
+          "region_count": 1,
+          "region_sizes": [
+            24985
+          ],
+          "reported_location": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "representation": "mean",
+          "retained_points": 24985,
+          "selected_region_size": 24985,
+          "strength": 1.1169056975303706,
+          "threshold": 0.8218958357824624
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "d85bc4e376ce1bcb346958b7fd1fb95290276ec542f546e7966a833a50ca8b16",
+          "dataset_id": "NASA_LOx_Post",
+          "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+          "effective_o_sha256": "3fc5c7684bbfa32c447c1c1770e85e20ad7da55bb0acfd8bcff4c1821918d519",
+          "executed_plan_sha256": "d85bc4e376ce1bcb346958b7fd1fb95290276ec542f546e7966a833a50ca8b16",
+          "input_files": [
+            "NASA_LOx_Post/postxyz.bin",
+            "NASA_LOx_Post/postq.bin"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "mean",
+            "metric_kind": null,
+            "quantile": 0.75,
+            "quantile_method": "linear",
+            "representation_kind": "mean",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          },
+          "reader_format": "PLOT3D",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "Velocity"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q75_mean_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a mean spatial location approximately [-0.2586535748643758, 0.004317644593928942, 3.18852633498706] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q75_mean_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has mean speed strength approximately 1.1169057 in the stored velocity scale.",
+          "unit": null,
+          "value": 1.1169056975303706,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:nasa_lox_post_o3_f1_o3_q75_mean",
+      "parameters": {},
+      "proposal_id": "reference:nasa_lox_post_o3_f1:nasa_lox_post_o3_f1_o3_q75_mean",
+      "proposal_kind": "OPERATIONALIZATION"
+    },
+    {
+      "evidence_context_id": null,
+      "execution": {
+        "G_of_O": {
+          "comparator": "GE",
+          "coordinate_span": [
+            15.997518062591553,
+            12.16211348772049,
+            4.108765065670013
+          ],
+          "criterion": ">= non-zero 90th percentile (1.153866514531)",
+          "criterion_kind": "quantile",
+          "mean_spatial_location": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "mean_speed": 1.2483379152602692,
+          "measure_kind": "peak",
+          "operation_id": "nasa_lox_post_o3_f1_o3_q90_peak_point",
+          "peak_point": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "peak_speed": 1.391444101423406,
+          "region_count": 2,
+          "region_sizes": [
+            5064,
+            4930
+          ],
+          "reported_location": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "representation": "peak",
+          "retained_points": 9994,
+          "selected_region_size": 4930,
+          "strength": 1.391444101423406,
+          "threshold": 1.153866514530744
+        },
+        "data_provenance": {
+          "compiled_plan_sha256": "f29327f0df4add07a60cca976753905d71b87f887f2b0499f2e09bc5011e60e4",
+          "dataset_id": "NASA_LOx_Post",
+          "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+          "effective_o_sha256": "a19f579bed78064e7b8c4f0d3fc996299122a506bb635fa02f7f5b192d2e948b",
+          "executed_plan_sha256": "f29327f0df4add07a60cca976753905d71b87f887f2b0499f2e09bc5011e60e4",
+          "input_files": [
+            "NASA_LOx_Post/postxyz.bin",
+            "NASA_LOx_Post/postq.bin"
+          ],
+          "materialization_plan": {
+            "aggregation_kind": null,
+            "comparator": "GE",
+            "component_selection_kind": null,
+            "connectivity_kind": "structured_face_6",
+            "criterion_kind": "quantile",
+            "domain": "high_speed_region",
+            "measure_kind": "peak",
+            "metric_kind": null,
+            "quantile": 0.9,
+            "quantile_method": "linear",
+            "representation_kind": "peak",
+            "threshold": null
+          },
+          "reader_configuration": {
+            "auto_detect_format": true,
+            "preserve_intermediate_functions": true,
+            "require_single_block": true,
+            "scalar_function_number": 153,
+            "vector_function_number": 200
+          },
+          "reader_format": "PLOT3D",
+          "silent_substitutions": [],
+          "unsupported_dimensions": [],
+          "vector_array": "Velocity"
+        },
+        "reproducible": true,
+        "status": "MATERIALIZED"
+      },
+      "findings": [
+        {
+          "category": "location",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_point_location",
+          "importance": "core",
+          "statement": "The selected strongest region has a peak spatial location approximately [-0.016844864934682846, -0.8041654229164124, 1.7766473293304443] in the dataset coordinate frame.",
+          "unit": null,
+          "value": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          }
+        },
+        {
+          "category": "quantity",
+          "evidence_ids": [
+            "finding_001"
+          ],
+          "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_point_strength",
+          "importance": "core",
+          "statement": "The selected strongest region has peak speed strength approximately 1.3914441 in the stored velocity scale.",
+          "unit": null,
+          "value": 1.391444101423406,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          }
+        }
+      ],
+      "materialization_id": "mat:nasa_lox_post_o3_f1_o3_q90_peak_point",
+      "parameters": {},
+      "proposal_id": "reference:nasa_lox_post_o3_f1:nasa_lox_post_o3_f1_o3_q90_peak_point",
+      "proposal_kind": "OPERATIONALIZATION"
+    }
+  ],
+  "adequate_core_sets": [],
+  "adjudicated_findings": [],
+  "adjudication_provenance": [],
+  "case_id": "nasa_lox_post_o3_f1",
+  "enumerated_valid_O": [
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak"
+    },
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_mean"
+    },
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 75th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q75_mean"
+    },
+    {
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the spatial location of its peak-speed location."
+        }
+      ],
+      "evidence_ids": [
+        "op_001"
+      ],
+      "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak_point"
+    }
+  ],
+  "explicitly_invalid_O": [],
+  "finding_requirement_contract": {},
+  "source_semantic_contract_sha256": "acd2e36c7fc79cb9a3a500e99e2a4734bfc111bbf79ef080d73f521ca34ab604",
+  "status": "DRAFT_REQUIRES_HUMAN_CONFIRMATION",
+  "tolerances": {
+    "finding_verification_policies": [
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q75_mean_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            -0.2586535748643758,
+            0.004317644593928942,
+            3.18852633498706
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q75_mean",
+        "policy_digest": "713816a25f7fe5628a9e41e602326e8d377da4f581ac1a4881e2e50d245209b2",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "d475f1592b0dedb879c7c58fbdf9fdaf0036f17f77f11686cf64ad40706541f7",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "966c36a9bc4ee5d24e6f14dde83f02b22a592a4bc597061b390a8a9b19621207",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q75_mean_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.1169056975303706,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q75_mean",
+        "policy_digest": "14b9bda287e0c76440e7bcc0c1cdc776a5b77a54a2ce083446d3e37cb994bff0",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "d475f1592b0dedb879c7c58fbdf9fdaf0036f17f77f11686cf64ad40706541f7",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "23c97a708da495e7060d80f0fb84a7f7b516c004f7a3362f7df13ef9c48af3df",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q90_mean_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_mean",
+        "policy_digest": "fa0fb788fa250c720e09d0670960af09a7f805e33f6d7ac639722594a129291d",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "3590556374aaf375499bc765d348f544b32937a67a4eb35b85d39f70395fec17",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "1baa713cbc4219c70ec6648ef981884f51a829baafd3f01634c0b0bc1eb008ef",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q90_mean_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.2483379152602692,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_mean",
+        "policy_digest": "51166c2a755d541ec4a121d9146aca435c4eddfcb980392a1fd04ee14d84e1b3",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "3590556374aaf375499bc765d348f544b32937a67a4eb35b85d39f70395fec17",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "14ce96eb436c3e24adefb23270b0ebd4459b1fc6a40070adf36d60616320b392",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            1.9714835118861307,
+            -2.6243898427147894,
+            3.586038704950959
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak",
+        "policy_digest": "56bb0528c413ed3269df8cb1091179417fc4e6e873d03892ec386f7ff08b96b8",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "402cebb5bd3e047ab081db06abd754d113a8c99d472cd66fac2c8c382f088869",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "19364d19f415895872cae01d5871d77f263f4b5ec2d363d4a6311d000926e54b",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.391444101423406,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak",
+        "policy_digest": "65270c28cd070e150a9fe14fc6d320603116bb07bdf98ab85641ebc4b2e2770b",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "402cebb5bd3e047ab081db06abd754d113a8c99d472cd66fac2c8c382f088869",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "19b2df910d49e1e3731147ec406ba4a4115be8029724d06a2e30c833b5847856",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_point_location",
+        "formula_id": "euclidean_l2_v1",
+        "formula_inputs": {
+          "reference_value": [
+            -0.016844864934682846,
+            -0.8041654229164124,
+            1.7766473293304443
+          ],
+          "resolved_verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "significant_figures": null
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak_point",
+        "policy_digest": "c8f9d2e41544b706f0bdc5ec160272e2e2a87584b4263e617639b817e7e43493",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "041dcf918f14be66ccc137a580a2eae9e8e0faa827660bf9cf92d54d45c307af",
+          "g_of_o_locator": "/reported_location",
+          "representation": "location",
+          "scientific_role": "location",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "1238064f48f91652144d77755af6eb2b22681aa323fd1de16d22c096dc7ace2d",
+        "tolerance_authority": "DOMAIN_AUTHORED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+          "physical_unit": null
+        },
+        "verification_mode": "spatial_euclidean",
+        "verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        }
+      },
+      {
+        "finding_id": "nasa_lox_post_o3_f1_o3_q90_peak_point_strength",
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.391444101423406,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 3
+        },
+        "operationalization_id": "nasa_lox_post_o3_f1_o3_q90_peak_point",
+        "policy_digest": "7b96a8b83977cea81dfc8995f988e2ab78f1a2b58faa1f071277df7fd36ac712",
+        "policy_identity": {
+          "canonical_unit": null,
+          "case_family_id": "nasa_lox_post__high_speed_region",
+          "dataset_id": "NASA_LOx_Post",
+          "effective_o_semantic_sha256": "041dcf918f14be66ccc137a580a2eae9e8e0faa827660bf9cf92d54d45c307af",
+          "g_of_o_locator": "/strength",
+          "representation": "quantity",
+          "scientific_role": "strength",
+          "scientific_target": "high-speed flow regions in the lox-post flow field"
+        },
+        "scientific_finding_policy_key": "df2aaa05d99bcff862cb1baff814992425a302e8f003f2365d344732c38cc261",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "unit_frame_authority": {
+          "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+          "physical_unit": null
+        },
+        "verification_mode": "scalar_tolerance",
+        "verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        }
+      }
+    ],
+    "verification_policy_sha256": "f821dcc9f098d2d47fd19cada191cbb24cb087bfa6167eaf687d1329cf273c66",
+    "verification_policy_version": "finding-verification-policy-v1"
+  },
+  "unenumerated_policy": "VALID_UNENUMERATED requires curator escalation"
+}

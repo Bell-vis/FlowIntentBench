@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No result evidence or cited evidence items are supplied in the packet.",
+    "Coordinate units and axis meanings are unspecified, limiting physical interpretation of the reported location."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful and directly targets high-speed flow regions in the fireflow room flow field. It faithfully exposes the fixed speed definition, percentile threshold, mesh-based connected-region definition, peak-speed strength measure, and mean-location representation. It preserves the stated scope, leaves no unresolved operationalization dimension improperly closed, and correctly assigns selection of the characterization to the respondent under F2. The requested evidence and characterization are answerable from the supplied flow snapshot, although the packet lacks cited result evidence and coordinate metadata needed for fuller physical interpretation.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "b947c70b4d8646c07e8b1f43d90bd1c41efa61ab82f6c1438b9b0ec9348e2b96",
+  "review_packet_sha256": "8726a4dc371a5acd34acbc9f03b3c5ceba887374dd6d89107f48a1097bed5334",
+  "reviewed_model_visible_text_sha256": "f7a2ab12edf95726a87d6244fab512811889ea246161f7c7833e9f76ecc2e7df",
+  "reviewed_model_visible_text": "Which high-speed flow region is strongest in the fireflow room flow field? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero speed values, where speed is the Euclidean magnitude of the stored uvw vector at each point, and treat locations that share an unstructured-mesh cell as one contiguous high-speed flow region. Use peak speed as the measure of strength, select the strongest region accordingly, and represent it by the mean spatial location of its retained high-speed locations. Report the peak-speed evidence and principal location, together with one relevant characterization of your choice: geometric relation, meaningful comparison, morphology, orientation, or spatial extent.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "fireflow_o1_f2",
+    "condition": "O1-F2",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "8726a4dc371a5acd34acbc9f03b3c5ceba887374dd6d89107f48a1097bed5334",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:30:40.388092+00:00",
+    "latency_seconds": 20.477548,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No result evidence or cited evidence items are supplied in the packet.\",\"Coordinate units and axis meanings are unspecified, limiting physical interpretation of the reported location.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful and directly targets high-speed flow regions in the fireflow room flow field. It faithfully exposes the fixed speed definition, percentile threshold, mesh-based connected-region definition, peak-speed strength measure, and mean-location representation. It preserves the stated scope, leaves no unresolved operationalization dimension improperly closed, and correctly assigns selection of the characterization to the respondent under F2. The requested evidence and characterization are answerable from the supplied flow snapshot, although the packet lacks cited result evidence and coordinate metadata needed for fuller physical interpretation.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No result evidence or cited evidence items are supplied in the packet.",
+        "Coordinate units and axis meanings are unspecified, limiting physical interpretation of the reported location."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful and directly targets high-speed flow regions in the fireflow room flow field. It faithfully exposes the fixed speed definition, percentile threshold, mesh-based connected-region definition, peak-speed strength measure, and mean-location representation. It preserves the stated scope, leaves no unresolved operationalization dimension improperly closed, and correctly assigns selection of the characterization to the respondent under F2. The requested evidence and characterization are answerable from the supplied flow snapshot, although the packet lacks cited result evidence and coordinate metadata needed for fuller physical interpretation."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_020201151b39b6ac016aa6ddace9b887d0aa310db4cf5c3c36": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1888,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1888,
+            "output_tokens": 0
+          },
+          "rs_020201151b39b6ac016aa6ddad9d9087d0aab111fc297b039a": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "msg_020201151b39b6ac016aa6ddbb699087d09cff5691fc03d277": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 234
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 234
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2504,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 750,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3254
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "b947c70b4d8646c07e8b1f43d90bd1c41efa61ab82f6c1438b9b0ec9348e2b96",
+    "review_packet_sha256": "8726a4dc371a5acd34acbc9f03b3c5ceba887374dd6d89107f48a1097bed5334",
+    "reviewed_model_visible_text_sha256": "f7a2ab12edf95726a87d6244fab512811889ea246161f7c7833e9f76ecc2e7df",
+    "reviewed_model_visible_text": "Which high-speed flow region is strongest in the fireflow room flow field? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero speed values, where speed is the Euclidean magnitude of the stored uvw vector at each point, and treat locations that share an unstructured-mesh cell as one contiguous high-speed flow region. Use peak speed as the measure of strength, select the strongest region accordingly, and represent it by the mean spatial location of its retained high-speed locations. Report the peak-speed evidence and principal location, together with one relevant characterization of your choice: geometric relation, meaningful comparison, morphology, orientation, or spatial extent."
+  }
+}

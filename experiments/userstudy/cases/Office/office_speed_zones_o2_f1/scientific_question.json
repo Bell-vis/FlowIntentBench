@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Which high-speed ventilation region is strongest in the office velocity field under a scientifically defensible analysis? Use velocity magnitude, treat face-connected retained locations as one region, and represent each region by the mean spatial location of those locations. Choose and state the high-speed criterion and the property measure used to compare region strength, then report the location and strength of the selected region.",
+  "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e",
+  "source": "FlowIntentBench_userstudy/datasets/Office/questions/office_speed_zones_o2_f1.json",
+  "wording_version": "1.2.1"
+}

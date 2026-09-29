@@ -1,0 +1,73 @@
+{
+  "scientific_question": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of density. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+  "flow_data": {
+    "data_files": [
+      {
+        "path": "Radiative_Mixing_Layer/snapshot.vtk",
+        "role": "flow_field"
+      }
+    ],
+    "data_metadata": {
+      "format": {
+        "type": "VTK",
+        "details": {}
+      },
+      "grid": {
+        "type": "structured",
+        "dimensions": null,
+        "origin": null,
+        "spacing": null
+      },
+      "variables": [
+        {
+          "name": "density",
+          "physical_quantity": "density",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "pressure",
+          "physical_quantity": "pressure",
+          "type": "scalar",
+          "components": 1,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        },
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "type": "vector",
+          "components": 3,
+          "association": "point",
+          "unit": null,
+          "source": "stored"
+        }
+      ],
+      "coordinate_system": {
+        "type": "cartesian",
+        "axis_meaning": {
+          "x": "horizontal coordinate",
+          "y": "horizontal coordinate",
+          "z": "vertical layer-normal coordinate; positive vertical velocity is the z component"
+        },
+        "unit": null
+      },
+      "temporal": {
+        "type": "single_snapshot"
+      }
+    }
+  },
+  "case_context": {
+    "physical_setting": "the supplied turbulent radiative mixing-layer snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces. In this supplied coordinate system, z is the vertical layer-normal direction and vertical velocity denotes the z component of velocity.",
+    "objects": [],
+    "boundaries": [],
+    "regions": [],
+    "reference_directions": [],
+    "operating_conditions": [],
+    "geometry_assets": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "Within the LOx-post flow field, which high-speed flow region is strongest? Choose a relevant measure of speed and a criterion for retaining high-speed locations, treat locations connected through immediate grid neighbors along one grid axis as one contiguous region, and represent the strongest region’s location by the mean spatial location of its retained high-speed locations. Report both this location and the strength of the region.",
+  "semantic_contract_sha256": "fad41bc7b82da59197ff7b3d583e26e119d1d306958c5998a4733d26d899119c",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

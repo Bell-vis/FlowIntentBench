@@ -1,0 +1,12 @@
+[
+  {
+    "evidence_id": "finding_001",
+    "dataset_id": "Blunt_Fin",
+    "evidence_type": "finding",
+    "statement": "The blunt-fin flow example supports characterizing a selected high-speed region by its location, velocity magnitude, and coordinate extent; exact benchmark values come from execution.",
+    "source_id": "src_001",
+    "locator": {"section": "Code", "page": null, "figure": null, "code_location": "BluntStreamlines.cxx: vtkMultiBlockPLOT3DReader and vtkStreamTracer"},
+    "eligible_for_context": false,
+    "context_facts": []
+  }
+]

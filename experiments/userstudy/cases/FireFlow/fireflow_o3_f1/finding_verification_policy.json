@@ -1,0 +1,323 @@
+{
+  "artifact_type": "FindingVerificationPolicy",
+  "case_id": "fireflow_o3_f1",
+  "dataset_id": "FireFlow",
+  "policies": [
+    {
+      "finding_id": "fireflow_o3_f1_o3_q75_mean_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          2.417761593795914,
+          1.6560045202195897,
+          1.0163907527207787
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q75_mean",
+      "policy_digest": "797d8135da4ccc75b3ea347b76d7ad14aa96980fcb7660f5e9d972420a4566ca",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "9523214bf275f07ee2a045de34905fce94ea6ab6c6808ab9113670ba3f85c409",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "99363834257e9b06043924b2592f865e2d1e616b25e03f50bb92388062dd614d",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q75_mean_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 1.0174865547746001,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q75_mean",
+      "policy_digest": "e922c39c65f6b90a982508d095ad995bafe0e7ce5e9d14450cbe7b57e5dc402f",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "9523214bf275f07ee2a045de34905fce94ea6ab6c6808ab9113670ba3f85c409",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "510b419226f0030bb2f0aa17ddb470b083453dfd495f134964ea79887ec0a17b",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q90_mean_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          0.5113998996219967,
+          1.975870378012814,
+          0.48199224898616855
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q90_mean",
+      "policy_digest": "e61f90f6dc116ee56073244a4e69a00cc4332e01a81c114d6b1be65e4ec1c149",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "b64989d8c4a40a7e06be5480a23d7b11ddccc8400b76571013b37c0114db5109",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "a0c5b2c842ff9e64cf0722d5ff52aa3a7a2cfcc845f04337fc031382168460aa",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q90_mean_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 1.6380479260626384,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q90_mean",
+      "policy_digest": "fa2f1308d2f8e3bbdec35232a04dbba71bfc90048d6f68552526942c4b64788d",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "b64989d8c4a40a7e06be5480a23d7b11ddccc8400b76571013b37c0114db5109",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "2b3c9aeb6b85350bb0d7f8a77e85f77a16be55622e6338eae5cefff3cfe955c2",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q90_peak_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          0.5113998996219967,
+          1.975870378012814,
+          0.48199224898616855
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak",
+      "policy_digest": "4980f73886135786c518318180c568d4986ec63e29742f4fcc219c41fe0af146",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "2905376a73fc45af30a5f832b1ee4ce3d3a49bb6ed0617276f7ad58223b35607",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "0a5f90b3b538ac8e9f0fad5454b2acaae09039a6e4cf932b6c81b55751ef867d",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q90_peak_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 3.822313175748469,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak",
+      "policy_digest": "1c5dbe7619f616a10c80211bdc083c83769365d349ebc01a04557f876ba543b3",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "2905376a73fc45af30a5f832b1ee4ce3d3a49bb6ed0617276f7ad58223b35607",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "cb70e1005d5a86cb06ea101f0fa931662461bd5b3ceb79ba9a74d51733f1d69c",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q90_peak_point_location",
+      "formula_id": "euclidean_l2_v1",
+      "formula_inputs": {
+        "reference_value": [
+          0.19999998807907104,
+          1.428571343421936,
+          0.19999998807907104
+        ],
+        "resolved_verification_parameters": {
+          "absolute_tolerance": null,
+          "relative_tolerance": null,
+          "spatial_tolerance": 0.05
+        },
+        "significant_figures": null
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak_point",
+      "policy_digest": "bdabe3a65eab88c5b9e41316bb165ffa267708a1d27940283196b21045b5e23d",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "eaeb1af80a5e35d1a20b7e26350a9d730975156baac461f18021233aa61c6a26",
+        "g_of_o_locator": "/reported_location",
+        "representation": "location",
+        "scientific_role": "location",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "94f1f75fb7a72943b9eefa532391325c12f27595f1c540ba665089b7d846c39c",
+      "tolerance_authority": "DOMAIN_AUTHORED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+        "physical_unit": null
+      },
+      "verification_mode": "spatial_euclidean",
+      "verification_parameters": {
+        "absolute_tolerance": null,
+        "relative_tolerance": null,
+        "spatial_tolerance": 0.05
+      }
+    },
+    {
+      "finding_id": "fireflow_o3_f1_o3_q90_peak_point_strength",
+      "formula_id": "combined_absolute_plus_relative_v1",
+      "formula_inputs": {
+        "reference_value": 3.822313175748469,
+        "resolved_verification_parameters": {
+          "absolute_tolerance": 0.005,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "significant_figures": 3
+      },
+      "operationalization_id": "fireflow_o3_f1_o3_q90_peak_point",
+      "policy_digest": "05748d3190ae5391a8f63a2df360b06d62d48b219734a323e7f720562ed1ab2f",
+      "policy_identity": {
+        "canonical_unit": null,
+        "case_family_id": "fireflow__high_speed_region",
+        "dataset_id": "FireFlow",
+        "effective_o_semantic_sha256": "eaeb1af80a5e35d1a20b7e26350a9d730975156baac461f18021233aa61c6a26",
+        "g_of_o_locator": "/strength",
+        "representation": "quantity",
+        "scientific_role": "strength",
+        "scientific_target": "high-speed flow regions in the fireflow room flow field"
+      },
+      "scientific_finding_policy_key": "6dfde643c672fbd2cadd29401c9191dc1f030f449f6a3a422880b62d66f04bf1",
+      "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+      "unit_frame_authority": {
+        "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+        "physical_unit": null
+      },
+      "verification_mode": "scalar_tolerance",
+      "verification_parameters": {
+        "absolute_tolerance": 0.005,
+        "relative_tolerance": null,
+        "spatial_tolerance": null
+      }
+    }
+  ],
+  "runtime_inference_from_python_type_forbidden": true,
+  "schema_version": "finding-verification-policy-v1",
+  "semantic_contract_sha256": "4f4006255e2571929122c34993ffb083ff2aa01c68c8f7b5196844a7abf75659",
+  "verification_policy_sha256": "f3d42d2235073ff0fc6e4ce8bf185aa34430e246877f0baacaac0cb3e9cb6386"
+}

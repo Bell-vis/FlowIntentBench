@@ -1,0 +1,255 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "rt_density_vertical_motion_o1_f2",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "rt_density_vertical_motion_o1_f2",
+    "family_id": "rt_density_vertical_motion",
+    "dataset_id": "Rayleigh_Taylor",
+    "condition": "O1-F2",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_density_vertical_motion_o1_f2/case_input.json",
+    "case_input_sha256": "15af53a4ea0ff5d33d9ec7db8552b577fb6126af99767421b6d47386eda48b69",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_density_vertical_motion_o1_f2/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "861177fa3ed4a8045579a505036c0b70b179c7631b55107e2cf0219cfe0a2aaf",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_density_vertical_motion_o1_f2/case_context.json",
+    "case_context_sha256": "8da16c36dee6d8c6ad51b82fd9b963b9f691993ca2c10fb1fa871ab9872bd836",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/Rayleigh_Taylor/rt_density_vertical_motion_o1_f2/ground_truth.json",
+    "ground_truth_sha256": "1ee0c079f14c572a43d8011e8b6753ccba6553f16a1b80d962b93990e57ca3c7"
+  },
+  "finding_recall_mode": "SEMANTIC_ADEQUATE_CORE",
+  "family_definition": {
+    "family_id": "rt_density_vertical_motion",
+    "title": "the association between density and vertical velocity",
+    "scientific_target": "the association between density and vertical velocity",
+    "finding_goal": "Characterize the association between density and vertical velocity",
+    "scope": "the supplied Rayleigh–Taylor instability snapshot",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Report the numerical association coefficient.",
+      "o2_f1": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight cell statistics by cell volume and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical association coefficient.",
+      "o3_f1": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+      "o1_f2": "In the supplied Rayleigh–Taylor instability snapshot, consider the complete supplied three-dimensional mesh. Investigate the association between density and vertical velocity. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Measure association by the volume-weighted Pearson correlation. Weight cell statistics by cell volume and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "association",
+        "result_key": "value",
+        "request_phrase": "the numerical association coefficient",
+        "requirement_statement": "report the numerical association coefficient",
+        "category": "relation",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "pearson": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "velocity",
+            "association": "point",
+            "component": 2
+          }
+        }
+      },
+      "spearman": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Assign ordinary midranks to each cell field, then compute the volume-weighted Pearson correlation of those ranks.",
+          "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "spearman",
+          "other_field": {
+            "name": "velocity",
+            "association": "point",
+            "component": 2
+          }
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_rt_density_vertical_motion"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "cross_field_relation",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "cross_field_relation",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "association"
+        ]
+      ],
+      "role_by_category": {
+        "relation": "association"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    }
+  },
+  "family_definition_source": {
+    "path": "datasets/Rayleigh_Taylor/construction/families.json",
+    "sha256": "1fd1954357d62629b9b7e6cecc7a6f729292c3677d722b1d1d28bccc24810a7c"
+  },
+  "branch_execution_evidence": {
+    "rt_density_vertical_motion_o1_f2_pearson": {
+      "case_id": "rt_density_vertical_motion_o1_f2",
+      "dataset_id": "Rayleigh_Taylor",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Measure association by the volume-weighted Pearson correlation.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": -0.47669702665918
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/rt_density_vertical_motion.json",
+        "sha256": "dec8558e7cb8f8b158dd6502e95ee42f69a8e1488ec6fe9aa685af9dd7fdb155"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "b9cbc5522f756b987c0165b4aa341a55908f816c6cd4f03056f0890347df42b0",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "Rayleigh_Taylor/snapshot.vtk",
+            "sha256": "ac58ea892162498cd976a577c16baa0a56e62e04e058909ff03ddb6da068aa78"
+          }
+        ],
+        "reader": {
+          "format": "VTK",
+          "canonical_reader": "vtkDataSetReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "association",
+          "field": {
+            "name": "density",
+            "association": "point"
+          },
+          "measure": "pearson",
+          "other_field": {
+            "name": "velocity",
+            "association": "point",
+            "component": 2
+          }
+        },
+        "definition_sha256": "f89188f7b73bfe8160cf638875adfb21cee697d384ddea0fc10724525db6320c",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "4ab38efa073cda2fe49b7ccde6cbe202e960f093aad25c527144fb0608f07245"
+    }
+  },
+  "finding_requirement_contract": {
+    "mandatory_roles": [],
+    "alternative_role_groups": [],
+    "adequate_core_sets": [
+      [
+        "association"
+      ]
+    ],
+    "supporting_roles": [],
+    "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list.",
+    "scientific_entity_type": "cross_field_relation",
+    "contract_source": "CONSTRUCTION_DEFINED",
+    "role_by_category": {
+      "relation": "association"
+    },
+    "reference_finding_role_map": {
+      "rt_density_vertical_motion_o1_f2_pearson_association": "association"
+    }
+  },
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "Rayleigh_Taylor",
+    "case_id": "rt_density_vertical_motion_o1_f2",
+    "semantic_contract_sha256": "68f1d95d2c7d03ecc2a1a4d7880bd4a11102828f0582a7164fe0fcab04e03c89",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "rt_density_vertical_motion_o1_f2_pearson",
+        "finding_id": "rt_density_vertical_motion_o1_f2_pearson_association",
+        "scientific_finding_policy_key": "cc8d263cc737d1c1738716617a6af4a2155e8cfa62f4bedee0d24a481112df3a",
+        "policy_identity": {
+          "dataset_id": "Rayleigh_Taylor",
+          "case_family_id": "rt_density_vertical_motion",
+          "scientific_target": "the association between density and vertical velocity",
+          "effective_o_semantic_sha256": "e3a6fd2deb7146b1374a3d34bf4ca951a3306f231345628846259272273b639c",
+          "scientific_role": "relation",
+          "g_of_o_locator": "/value",
+          "representation": "relation",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": -0.47669702665918,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "14812ea03cb5aa2e2c4730685f8d2cc2763df83a232cd3a4b6a53db69efcfe92"
+      }
+    ],
+    "verification_policy_sha256": "8ac0ab84fa992f9d7f5aab3641e4ee954e5ef6ab7d27e7f9f9454b3817526006"
+  }
+}

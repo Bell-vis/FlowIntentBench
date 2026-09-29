@@ -1,0 +1,115 @@
+{
+  "source": {
+    "path": "raw/Simulation Data.zip",
+    "url": "https://zenodo.org/api/records/14935434/files/Simulation%20Data.zip/content",
+    "checksum": "md5:31f873c6041ea1a70a1f4f620bfa0278",
+    "size_bytes": 795370728
+  },
+  "whole_remote_object_checksum_verified": false,
+  "members": [
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/bc.vtk",
+      "path": "raw/selected/bc.vtk",
+      "size": 3659486,
+      "crc32": 995841844,
+      "sha256": "e9c42af964808b2638f2adff19a777e43436679943d406c2651373f6254ff160"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/p_0094.raw",
+      "path": "raw/selected/p_0094.raw",
+      "size": 4194304,
+      "crc32": 2003248531,
+      "sha256": "2e2bdfc83e7faf37e7fe8833016ba956114102e3f60f32344f0c891ec2d50a6e"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/p_0094.xmf",
+      "path": "raw/selected/p_0094.xmf",
+      "size": 1070,
+      "crc32": 738751306,
+      "sha256": "6354495b1fcb100d5b69bad018d3ff2650f749a0727057a98edfdfc37d5ec416"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/potsolver_0094.vtk",
+      "path": "raw/selected/potsolver_0094.vtk",
+      "size": 46906114,
+      "crc32": 3051330967,
+      "sha256": "949f81145b8ea8bfe7ef5806b389f8e82f66a067e35cc431b0b1f3240b2ebce4"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/s_0094.vtk",
+      "path": "raw/selected/s_0094.vtk",
+      "size": 1025859,
+      "crc32": 2725180156,
+      "sha256": "41a89e3adb3ec085a01888dccb42d4018846117cc09d84121602b8bb45e1738b"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/sm_0094.vtk",
+      "path": "raw/selected/sm_0094.vtk",
+      "size": 1327759,
+      "crc32": 2599639114,
+      "sha256": "cf13ec8c8693545c5bba2f17830ddac1869c65ec8a197443253bcc7747d1c707"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vf_0094.raw",
+      "path": "raw/selected/vf_0094.raw",
+      "size": 4194304,
+      "crc32": 2565538326,
+      "sha256": "855c81b5228664c66b439b9262e7272a455f70e782b4cfa6faf18fb2ae10dfbe"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vf_0094.xmf",
+      "path": "raw/selected/vf_0094.xmf",
+      "size": 1072,
+      "crc32": 3485801923,
+      "sha256": "0056ffd9b135721a29c331b58654df4922b0306ca9b92100ef8837e3b4f26d35"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vx_0094.raw",
+      "path": "raw/selected/vx_0094.raw",
+      "size": 4194304,
+      "crc32": 458983933,
+      "sha256": "3a45bfd5ebaeb860403ac07d50381536cfbc53a41c77c905a150da697f7cc256"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vx_0094.xmf",
+      "path": "raw/selected/vx_0094.xmf",
+      "size": 1072,
+      "crc32": 3470167411,
+      "sha256": "b9ea7d9c1936f816986950d5103a4ed8f719ab2a16eff3d9ab201e31b5a41f51"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vy_0094.raw",
+      "path": "raw/selected/vy_0094.raw",
+      "size": 4194304,
+      "crc32": 2212857795,
+      "sha256": "f7186968e21c1e89767c54b173cd4db413b414fa69a8099d17ecba6a6e641385"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vy_0094.xmf",
+      "path": "raw/selected/vy_0094.xmf",
+      "size": 1072,
+      "crc32": 1552835799,
+      "sha256": "c1e639eab3829667fb33471c5b87f634c11c6c813837648b5b8febdced652a54"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vz_0094.raw",
+      "path": "raw/selected/vz_0094.raw",
+      "size": 4194304,
+      "crc32": 4225848046,
+      "sha256": "e0e793c666f1cd985c7f7140f551782d6d5f402747c91c6b88671620c03bd803"
+    },
+    {
+      "member": "Simulation Data/01-02-Q300I45R202NoSurfactant/vz_0094.xmf",
+      "path": "raw/selected/vz_0094.xmf",
+      "size": 1072,
+      "crc32": 823548026,
+      "sha256": "161d59116d456f1ff0856ab307c253258dcc6f96e95b1791086589e54548b1f3"
+    }
+  ],
+  "ranges": {
+    "792723456": {
+      "stop": 795370727,
+      "sha256": "599c5eb52081a8cb1132c1fd5a1b98c73479431384691f706736b7fc89ca8d69"
+    }
+  }
+}

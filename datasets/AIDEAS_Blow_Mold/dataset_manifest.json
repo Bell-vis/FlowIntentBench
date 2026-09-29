@@ -1,0 +1,29 @@
+{
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "file_root": "datasets",
+  "files": [
+    {
+      "size_bytes": 24509674,
+      "checksum": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a",
+      "checksum_algorithm": "sha256",
+      "source_url": "https://zenodo.org/records/15720265",
+      "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+      "role": "flow_field"
+    }
+  ],
+  "auxiliary_assets": [],
+  "reader": {
+    "format": "VTU",
+    "canonical_reader": "vtkXMLUnstructuredGridReader",
+    "reader_configuration": {},
+    "plot3d_convention": null,
+    "variable_mappings": [],
+    "grid_blanking": []
+  },
+  "provenance": {
+    "record_url": "https://zenodo.org/records/15720265",
+    "license": "CC-BY-4.0",
+    "parent_source_group": "AIDEAS_Blow_Mold",
+    "sample_note": "Analysis domain is exactly the stored mesh. No inferred time history or physical unit conversion."
+  }
+}

@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2112                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    face1
+    {
+        type            patch;
+        nFaces          918;
+        startFace       907368;
+    }
+    face2
+    {
+        type            patch;
+        nFaces          924;
+        startFace       908286;
+    }
+    face3
+    {
+        type            patch;
+        nFaces          922;
+        startFace       909210;
+    }
+    face4
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2323;
+        startFace       910132;
+    }
+    face5
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          5317;
+        startFace       912455;
+    }
+    face6
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2418;
+        startFace       917772;
+    }
+    face7
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          5358;
+        startFace       920190;
+    }
+    face8
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2282;
+        startFace       925548;
+    }
+    face9
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          3828;
+        startFace       927830;
+    }
+    face10
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          3833;
+        startFace       931658;
+    }
+)
+
+// ************************************************************************* //

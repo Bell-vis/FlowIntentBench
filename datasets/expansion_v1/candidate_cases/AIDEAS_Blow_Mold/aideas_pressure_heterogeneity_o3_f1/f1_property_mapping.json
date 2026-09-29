@@ -1,0 +1,11 @@
+{
+  "case_id": "aideas_pressure_heterogeneity_o3_f1",
+  "mapping": {
+    "aideas_pressure_heterogeneity_o3_f1_cv": {
+      "coefficient": "aideas_pressure_heterogeneity_o3_f1_cv_coefficient"
+    },
+    "aideas_pressure_heterogeneity_o3_f1_relative_interdecile": {
+      "coefficient": "aideas_pressure_heterogeneity_o3_f1_relative_interdecile_coefficient"
+    }
+  }
+}

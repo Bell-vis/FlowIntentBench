@@ -1,0 +1,7 @@
+{
+  "case_id": "fireflow_o3_f1",
+  "ground_truth_sha256": "fffb02911335b172883cbfe0b8cb7bbab306455ad77c6f5e212a3b6a0ba986a2",
+  "presentation_sha256": "402d13b727a407d7f74e86ec9cf6b030b51b86221bcdfce4ee4b11e5f74f5de8",
+  "scientific_evaluation_contract_sha256": "cc1861bcb5012815bfe1234b7a3d0369093a86e6cedd4e5bb3161b1a48de7ea5",
+  "semantic_contract_sha256": "4f4006255e2571929122c34993ffb083ff2aa01c68c8f7b5196844a7abf75659"
+}

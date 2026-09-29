@@ -1,0 +1,15 @@
+{
+  "dataset_id": "Radiative_Mixing_Layer",
+  "fact_index": {
+    "physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    }
+  },
+  "fact_provenance": {
+    "physical_setting": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "radiative_density_heterogeneity_o3_f1"
+}

@@ -1,0 +1,11 @@
+{
+  "scientific_question": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Report the numerical coefficient.",
+  "f1_required_properties": [
+    "coefficient"
+  ],
+  "model_visible_operationalization_clauses": {
+    "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+    "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+    "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+  }
+}

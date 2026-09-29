@@ -1,0 +1,14 @@
+{
+  "physical_setting": "Blood flow in human carotid arteries",
+  "objects": [
+    {
+      "name": "carotid_artery",
+      "description": "The carotid artery represented by the flow dataset."
+    }
+  ],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

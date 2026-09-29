@@ -1,0 +1,307 @@
+{
+  "schema_version": "expansion-development-evaluation-v1",
+  "case_id": "aideas_pressure_heterogeneity_o3_f1",
+  "audience": "EVALUATOR_ONLY",
+  "evaluation_mode": "DEVELOPMENT_EVALUATION",
+  "formal_release": false,
+  "human_calibration_status": "NOT_ESTABLISHED",
+  "source_case": {
+    "case_id": "aideas_pressure_heterogeneity_o3_f1",
+    "family_id": "aideas_pressure_heterogeneity",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "condition": "O3-F1",
+    "case_input_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_pressure_heterogeneity_o3_f1/case_input.json",
+    "case_input_sha256": "2fab0f0c60bba70d073bf5c9ce17d91e97ed2fdee970a771250b50e40f194c37",
+    "case_construction_metadata_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_pressure_heterogeneity_o3_f1/case_construction_metadata.json",
+    "case_construction_metadata_sha256": "7ca0d1636fa80b992a1647086261caea3c443e3716e5a39b03f42a0422ef3c58",
+    "case_context_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_pressure_heterogeneity_o3_f1/case_context.json",
+    "case_context_sha256": "2c6d49606a7afa4ff8eb1d1d26ba3ac41c6719c754144041a1ec99290b6f5e35",
+    "ground_truth_path": "datasets/expansion_v1/candidate_cases/AIDEAS_Blow_Mold/aideas_pressure_heterogeneity_o3_f1/ground_truth.json",
+    "ground_truth_sha256": "46fc17acaa9d052b39815cf5717f20388302df145eea001fb4a3a3401cec4de6"
+  },
+  "finding_recall_mode": "FIXED_REFERENCE_CORE",
+  "family_definition": {
+    "family_id": "aideas_pressure_heterogeneity",
+    "title": "the spatial nonuniformity of stored pressure",
+    "scientific_target": "the spatial nonuniformity of stored pressure",
+    "finding_goal": "Characterize the spatial nonuniformity of stored pressure",
+    "scope": "the single-channel blow-mold flow simulation",
+    "selection": "the complete supplied three-dimensional mesh",
+    "principal_dimensions": [
+      "feature_definition",
+      "property_measure",
+      "aggregation_or_representation"
+    ],
+    "o2_unresolved_dimensions": [
+      "property_measure"
+    ],
+    "eligible_conditions": [
+      "o1_f1",
+      "o2_f1",
+      "o3_f1",
+      "o1_f2"
+    ],
+    "questions": {
+      "o1_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Report the numerical coefficient.",
+      "o2_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Choose and explain the remaining quantitative definition. Report the numerical coefficient.",
+      "o3_f1": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Choose and explain an appropriate analysis procedure. Report the numerical coefficient.",
+      "o1_f2": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the spatial nonuniformity of stored pressure. Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields. Use the volume-weighted standard deviation divided by the absolute volume-weighted mean. Weight by the absolute signed cell volume from VTK and normalize by the included volume. Select and explain findings that characterize this scientific target."
+    },
+    "finding_properties": [
+      {
+        "property_id": "coefficient",
+        "result_key": "value",
+        "request_phrase": "the numerical coefficient",
+        "requirement_statement": "report the numerical coefficient",
+        "category": "quantity",
+        "unit": "1"
+      }
+    ],
+    "operations": {
+      "cv": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+          "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "Pressure [bar]",
+            "association": "cell"
+          },
+          "measure": "cv"
+        }
+      },
+      "relative_interdecile": {
+        "clauses": {
+          "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+          "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+          "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "Pressure [bar]",
+            "association": "cell"
+          },
+          "measure": "relative_interdecile"
+        }
+      }
+    },
+    "evidence_ids": [
+      "op_001"
+    ],
+    "finding_evidence_ids": [
+      "finding_aideas_pressure_heterogeneity"
+    ],
+    "context_fact_ids": [
+      "physical_setting"
+    ],
+    "finding_archetype": "spatial_distribution",
+    "scientific_coherence": "A single snapshot supports this spatial descriptive target. No causal, time-integrated or unavailable-field conclusion is requested.",
+    "o_role_coherence": "O1 declares the complete numerical definition. O2 retains every principal clause except property_measure. O3 leaves all principal clauses open. F2 holds O1 fixed while leaving the finding selection open.",
+    "ambiguity_quality": "Executable anchor alternatives describe the same scientific target, and do not exhaust the scientifically admissible operation space.",
+    "finding_requirement_contract": {
+      "scientific_entity_type": "spatial_distribution",
+      "mandatory_roles": [],
+      "supporting_roles": [],
+      "adequate_core_sets": [
+        [
+          "coefficient"
+        ]
+      ],
+      "role_by_category": {
+        "quantity": "coefficient"
+      },
+      "novel_role_policy": "Scientifically relevant novel findings require semantic adjudication; the reference property set is not an exhaustive allowed-output list."
+    },
+    "cell_volume_convention": "absolute_signed_volume"
+  },
+  "family_definition_source": {
+    "path": "datasets/AIDEAS_Blow_Mold/construction/families.json",
+    "sha256": "75d8a87313239fe6c8f63665ef8e50ebd0d831ccf938a8077147a37ba1d8a9d7"
+  },
+  "branch_execution_evidence": {
+    "aideas_pressure_heterogeneity_o3_f1_cv": {
+      "case_id": "aideas_pressure_heterogeneity_o3_f1",
+      "dataset_id": "AIDEAS_Blow_Mold",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 0.45476666321227
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/aideas_pressure_heterogeneity.json",
+        "sha256": "ae49452a2ca423934ed40f14122e8342d9c6dcadfbab81658dfe755f132b9046"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "e9c97a0bfe57aaf2ba114c16ab10f421983aa7e00693ff689fdb07ea73664948",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+            "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "Pressure [bar]",
+            "association": "cell"
+          },
+          "measure": "cv"
+        },
+        "definition_sha256": "eed008b98b8399c538c606fbdafa365c0270c963b895fe3335bec5485b1c3b28",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "5663c12957914427c8d9dbcff1eff9c95df63c341b1fd3c122ea733fca3a2982"
+    },
+    "aideas_pressure_heterogeneity_o3_f1_relative_interdecile": {
+      "case_id": "aideas_pressure_heterogeneity_o3_f1",
+      "dataset_id": "AIDEAS_Blow_Mold",
+      "operationalization": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+        "aggregation_or_representation": "Weight by the absolute signed cell volume from VTK and normalize by the included volume."
+      },
+      "materialized_G_of_O": {
+        "value": 1.0335646250646
+      },
+      "source_artifact": {
+        "path": "datasets/expansion_v1/execution_evidence/aideas_pressure_heterogeneity.json",
+        "sha256": "ae49452a2ca423934ed40f14122e8342d9c6dcadfbab81658dfe755f132b9046"
+      },
+      "execution_provenance": {
+        "status": "MATERIALIZED",
+        "dataset_manifest_sha256": "e9c97a0bfe57aaf2ba114c16ab10f421983aa7e00693ff689fdb07ea73664948",
+        "data_file_root": "datasets",
+        "input_files": [
+          {
+            "path": "AIDEAS_Blow_Mold/raw/AIDEAS_single.vtu",
+            "sha256": "1d321659f5234f9bf16745e974fd5e9d836fd7c127a70185d031bf2b1f97374a"
+          }
+        ],
+        "reader": {
+          "format": "VTU",
+          "canonical_reader": "vtkXMLUnstructuredGridReader",
+          "reader_configuration": {},
+          "plot3d_convention": null,
+          "variable_mappings": [],
+          "grid_blanking": []
+        },
+        "recipe": {
+          "kind": "dispersion",
+          "field": {
+            "name": "Pressure [bar]",
+            "association": "cell"
+          },
+          "measure": "relative_interdecile"
+        },
+        "definition_sha256": "eed008b98b8399c538c606fbdafa365c0270c963b895fe3335bec5485b1c3b28",
+        "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+        "binding_basis": "EXACT_AUTHORED_O_AND_EXECUTED_FAMILY_DEFINITION"
+      },
+      "evidence_binding_sha256": "3b679a4b7e6aaea9737d3dc854ba812e7a84480439696546d9b755d7dcdf76d5"
+    }
+  },
+  "finding_requirement_contract": null,
+  "finding_verification_policy": {
+    "artifact_type": "FindingVerificationPolicy",
+    "schema_version": "finding-verification-policy-v1",
+    "dataset_id": "AIDEAS_Blow_Mold",
+    "case_id": "aideas_pressure_heterogeneity_o3_f1",
+    "semantic_contract_sha256": "4238cd08d22d9b639ee7f4300c74f5d190b759b856c2c5bdf6f4fe268878ddb6",
+    "runtime_inference_from_python_type_forbidden": true,
+    "policies": [
+      {
+        "operationalization_id": "aideas_pressure_heterogeneity_o3_f1_cv",
+        "finding_id": "aideas_pressure_heterogeneity_o3_f1_cv_coefficient",
+        "scientific_finding_policy_key": "af6aed74bdad5d00e67e8c7f6fa734fbeb4e479f2b428f302a7a7a8b9c5b7b21",
+        "policy_identity": {
+          "dataset_id": "AIDEAS_Blow_Mold",
+          "case_family_id": "aideas_pressure_heterogeneity",
+          "scientific_target": "the spatial nonuniformity of stored pressure",
+          "effective_o_semantic_sha256": "ec074770f31c866eb045c8f5d06d69a6a457425909af1e9725849920cfb5c7cd",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/value",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-06,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 0.45476666321227,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-06,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "2910c7482356459543777ddc5192ff1d5a616792042d0a3e5ad602bb7f6a7f9d"
+      },
+      {
+        "operationalization_id": "aideas_pressure_heterogeneity_o3_f1_relative_interdecile",
+        "finding_id": "aideas_pressure_heterogeneity_o3_f1_relative_interdecile_coefficient",
+        "scientific_finding_policy_key": "9670d4d7a68f87ccb5e08ac187c4c3af1c2033aa83713bf851deacfb8f52e87f",
+        "policy_identity": {
+          "dataset_id": "AIDEAS_Blow_Mold",
+          "case_family_id": "aideas_pressure_heterogeneity",
+          "scientific_target": "the spatial nonuniformity of stored pressure",
+          "effective_o_semantic_sha256": "3032b61516fc2dea5fb958492782308d8f5cd0ba65c81ab1814c103f66b48217",
+          "scientific_role": "quantity",
+          "g_of_o_locator": "/value",
+          "representation": "quantity",
+          "canonical_unit": "1"
+        },
+        "verification_mode": "scalar_tolerance",
+        "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+        "verification_parameters": {
+          "absolute_tolerance": 5e-05,
+          "relative_tolerance": null,
+          "spatial_tolerance": null
+        },
+        "formula_id": "combined_absolute_plus_relative_v1",
+        "formula_inputs": {
+          "reference_value": 1.0335646250646,
+          "resolved_verification_parameters": {
+            "absolute_tolerance": 5e-05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "significant_figures": 5
+        },
+        "unit_frame_authority": {
+          "physical_unit": "1",
+          "coordinate_or_numeric_scale": "REFERENCE_FINDING_UNIT"
+        },
+        "policy_digest": "d9da0a1e11fc1504c3e2f95b4d5d9743cc5b53fb98fb66b98a4cf8bf8561c4da"
+      }
+    ],
+    "verification_policy_sha256": "5ef42c4c757d473fc499a4dd3791ae373b068d00a8641a06a0749de483a8c286"
+  }
+}

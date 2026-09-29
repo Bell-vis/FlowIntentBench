@@ -1,0 +1,94 @@
+{
+  "artifact_type": "ScientificEvidenceCoverage",
+  "case_id": "combustor_density_level_set_surface_provisional_o1_f2",
+  "claims": [
+    {
+      "claim_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface:O:feature_definition",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_002",
+        "op_003"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_002",
+        "src_003"
+      ],
+      "statement": "treat each connected component of a constant-Density isosurface as one candidate surface"
+    },
+    {
+      "claim_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface:O:criterion",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_002",
+        "op_003"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_002",
+        "src_003"
+      ],
+      "statement": "use the 90th percentile of finite stored Density values with linear quantile interpolation as the isovalue"
+    },
+    {
+      "claim_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface:O:aggregation_or_representation",
+      "claim_kind": "operationalization",
+      "evidence_ids": [
+        "op_002",
+        "op_003"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_002",
+        "src_003"
+      ],
+      "statement": "select the connected component with the largest surface area and represent it by its area-weighted centroid and surface area"
+    },
+    {
+      "claim_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface:F:combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface_location",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_002"
+      ],
+      "statement": "The selected constant-Density isosurface component has area weighted centroid approximately [5.186062674753928, 0.24928450765948698, 30.535099120275166] in the supplied coordinate frame."
+    },
+    {
+      "claim_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface:F:combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface_density",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_002"
+      ],
+      "statement": "The selected isosurface component is defined at Density level approximately 0.41466653347 in the stored scale."
+    },
+    {
+      "claim_id": "combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface:F:combustor_density_level_set_surface_provisional_o1_f2_o1_q90_surface_surface_area",
+      "claim_kind": "finding",
+      "evidence_ids": [
+        "finding_001"
+      ],
+      "provenance_closed": true,
+      "scientific_support_status": "NOT_ESTABLISHED",
+      "source_ids": [
+        "src_002"
+      ],
+      "statement": "The selected connected isosurface has area approximately 260.783939011 in the supplied coordinate frame."
+    }
+  ],
+  "dataset_id": "Combustor",
+  "schema_version": "scientific-evidence-coverage-v1",
+  "scientific_support_status": "NOT_ESTABLISHED",
+  "status": "PROVENANCE_CLOSED_NOT_SCIENTIFICALLY_ADJUDICATED"
+}

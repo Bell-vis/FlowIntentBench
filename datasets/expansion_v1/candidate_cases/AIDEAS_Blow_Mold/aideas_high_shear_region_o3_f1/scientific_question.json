@@ -1,0 +1,8 @@
+{
+  "scientific_question": "In the single-channel blow-mold flow simulation, consider the complete supplied three-dimensional mesh. Investigate the location and intensity of high shear-rate regions. Choose and explain an appropriate analysis procedure. Report the volume-weighted centroid coordinates, and the volume-weighted mean value in the selected region.",
+  "f1_required_properties": [
+    "centroid",
+    "mean"
+  ],
+  "model_visible_operationalization_clauses": {}
+}

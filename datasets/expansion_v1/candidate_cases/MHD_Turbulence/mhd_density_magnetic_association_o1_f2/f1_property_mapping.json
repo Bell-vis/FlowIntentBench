@@ -1,0 +1,8 @@
+{
+  "case_id": "mhd_density_magnetic_association_o1_f2",
+  "mapping": {
+    "mhd_density_magnetic_association_o1_f2_pearson": {
+      "association": "mhd_density_magnetic_association_o1_f2_pearson_association"
+    }
+  }
+}

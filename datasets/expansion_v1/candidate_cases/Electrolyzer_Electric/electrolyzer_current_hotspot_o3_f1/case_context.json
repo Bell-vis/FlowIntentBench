@@ -1,0 +1,9 @@
+{
+  "physical_setting": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. Current-density components jx, jy and jz are combined on their own electrical mesh; the flow mesh is distinct.",
+  "objects": [],
+  "boundaries": [],
+  "regions": [],
+  "reference_directions": [],
+  "operating_conditions": [],
+  "geometry_assets": []
+}

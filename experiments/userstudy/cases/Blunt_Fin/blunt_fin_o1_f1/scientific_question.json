@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Examine the blunt-fin flow field and determine which high-speed flow region is strongest. At each location, define speed as the magnitude of the velocity vector. From all non-zero speed values, compute q90, the 90th-percentile cutoff, and retain locations whose speed is greater than or equal to q90. Partition the retained locations into regions using face connectivity. For each region, record its peak speed; select the region with the largest peak, and report that peak speed together with the mean spatial position of the region’s retained locations.",
+  "semantic_contract_sha256": "2b50252b26f31866fce55236f64e5f7827868860ff0e0eb4bb56726dbdf9c350",
+  "source": "FlowIntentBench_userstudy/datasets/Blunt_Fin/questions/blunt_fin_o1_f1.json",
+  "wording_version": "1.2.1"
+}

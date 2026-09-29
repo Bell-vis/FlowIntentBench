@@ -1,0 +1,43 @@
+{
+  "dataset_id": "Kitchen",
+  "fact_index": {
+    "kitchen_physical_setting": {
+      "field": "physical_setting",
+      "position": null
+    },
+    "kitchen_door": {
+      "field": "objects",
+      "position": 0
+    },
+    "kitchen_hot_stove": {
+      "field": "objects",
+      "position": 1
+    },
+    "kitchen_room": {
+      "field": "objects",
+      "position": 2
+    },
+    "kitchen_windows": {
+      "field": "objects",
+      "position": 3
+    }
+  },
+  "fact_provenance": {
+    "kitchen_physical_setting": [
+      "ctx_001"
+    ],
+    "kitchen_door": [
+      "ctx_001"
+    ],
+    "kitchen_hot_stove": [
+      "ctx_001"
+    ],
+    "kitchen_room": [
+      "ctx_001"
+    ],
+    "kitchen_windows": [
+      "ctx_001"
+    ]
+  },
+  "case_id": "kitchen_o3_f1"
+}

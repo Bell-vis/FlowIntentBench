@@ -1,0 +1,126 @@
+{
+  "dataset_id": "Kitchen",
+  "case_id": "kitchen_concentration_heterogeneity_o1_f2",
+  "case_family_id": "kitchen_concentration_heterogeneity",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "treat each point-associated c1 or c11-c17 scalar array as one gas-concentration field"
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "compare fields by cell-volume-weighted coefficient of variation, forming each cell concentration as the arithmetic mean of its vertex values and weighting positive-volume cells by cell volume"
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "represent the selected result by its stored field identifier"
+        }
+      ],
+      "evidence_ids": [
+        "op_004"
+      ]
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation",
+      "findings": [
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_field",
+          "category": "existence_or_identity",
+          "statement": "The selected gas-concentration field is c12.",
+          "importance": "core",
+          "value": "c12",
+          "unit": null,
+          "verification": null,
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_heterogeneity",
+          "category": "quantity",
+          "statement": "The selected field has cell-volume-weighted coefficient of variation approximately 57.266141.",
+          "importance": "core",
+          "value": 57.26614105024864,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_standard_deviation",
+          "category": "characterization",
+          "statement": "The selected field has cell-volume-weighted concentration standard deviation approximately 8901.2459 in its stored concentration scale.",
+          "importance": "supporting",
+          "value": 8901.245888282469,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 5.0,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q10",
+          "category": "characterization",
+          "statement": "The selected field has volume-weighted concentration q10 approximately 1.0001251 in its stored concentration scale.",
+          "importance": "supporting",
+          "value": 1.0001250505447388,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q50",
+          "category": "characterization",
+          "statement": "The selected field has volume-weighted concentration q50 approximately 1.0001251 in its stored concentration scale.",
+          "importance": "supporting",
+          "value": 1.0001250505447388,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        },
+        {
+          "finding_id": "kitchen_concentration_heterogeneity_o1_f2_coefficient_of_variation_q90",
+          "category": "characterization",
+          "statement": "The selected field has volume-weighted concentration q90 approximately 1.0002178 in its stored concentration scale.",
+          "importance": "supporting",
+          "value": 1.0002177547217748,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": [
+            "finding_001"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "dataset_id": "Combustor",
+  "case_id": "combustor_o3_f1",
+  "case_family_id": "combustor_flow_regions",
+  "acceptable_operationalizations": [
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q90_peak",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q90_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q75_mean",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 75th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use mean speed across retained locations as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the arithmetic mean spatial location of its retained high-speed locations."
+        }
+      ],
+      "evidence_ids": []
+    },
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q90_peak_point",
+      "decisions": [
+        {
+          "dimension": "feature_definition",
+          "statement": "Face-connected locations form one contiguous high-speed flow region."
+        },
+        {
+          "dimension": "criterion",
+          "statement": "Retain locations at or above the 90th percentile of non-zero recorded speed values."
+        },
+        {
+          "dimension": "property_measure",
+          "statement": "Use peak speed as the strength of each retained region."
+        },
+        {
+          "dimension": "aggregation_or_representation",
+          "statement": "Represent the selected region by the spatial location of its peak-speed location."
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "findings_by_operationalization": [
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q90_peak",
+      "findings": [
+        {
+          "finding_id": "combustor_o3_f1_o3_q90_peak_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [13.673052853925512, 2.427423816624038, 32.3577929498515] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            13.673052853925512,
+            2.427423816624038,
+            32.3577929498515
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "combustor_o3_f1_o3_q90_peak_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 1528.9 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1528.9350173010403,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q90_mean",
+      "findings": [
+        {
+          "finding_id": "combustor_o3_f1_o3_q90_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [13.673052853925512, 2.427423816624038, 32.3577929498515] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            13.673052853925512,
+            2.427423816624038,
+            32.3577929498515
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "combustor_o3_f1_o3_q90_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 1245 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1245.4429821372214,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q75_mean",
+      "findings": [
+        {
+          "finding_id": "combustor_o3_f1_o3_q75_mean_location",
+          "category": "location",
+          "statement": "The selected strongest region has mean spatial location approximately [13.448981669732126, 0.24563814047242882, 32.80086336329414] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            13.448981669732126,
+            0.24563814047242882,
+            32.80086336329414
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "combustor_o3_f1_o3_q75_mean_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has mean speed strength approximately 1119 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1118.6772287108902,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.5,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "operationalization_id": "combustor_o3_f1_o3_q90_peak_point",
+      "findings": [
+        {
+          "finding_id": "combustor_o3_f1_o3_q90_peak_point_location",
+          "category": "location",
+          "statement": "The selected strongest region has peak-speed location approximately [13.265520095825195, 1.8527919054031372, 31.562437057495117] in the dataset coordinate frame.",
+          "importance": "core",
+          "value": [
+            13.265520095825195,
+            1.8527919054031372,
+            31.562437057495117
+          ],
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.1
+          },
+          "evidence_ids": []
+        },
+        {
+          "finding_id": "combustor_o3_f1_o3_q90_peak_point_strength",
+          "category": "quantity",
+          "statement": "The selected strongest region has peak speed strength approximately 1528.9 in the stored velocity scale.",
+          "importance": "core",
+          "value": 1528.9350173010403,
+          "unit": null,
+          "verification": {
+            "absolute_tolerance": 0.05,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

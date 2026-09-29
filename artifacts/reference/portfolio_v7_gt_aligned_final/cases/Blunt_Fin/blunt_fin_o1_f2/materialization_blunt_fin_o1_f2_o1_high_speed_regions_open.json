@@ -1,0 +1,88 @@
+{
+  "execution": {
+    "G_of_O": {
+      "comparator": "GE",
+      "coordinate_span": [
+        22.177950859069824,
+        8.327558517456055,
+        5.3932197988033295
+      ],
+      "criterion": ">= non-zero 90th percentile (2.776219898197)",
+      "criterion_kind": "quantile",
+      "mean_spatial_location": [
+        -0.43620374257338634,
+        3.0521042773374156,
+        2.5893470661131714
+      ],
+      "mean_speed": 2.922646208400968,
+      "measure_kind": "peak",
+      "operation_id": "blunt_fin_o1_f2_o1_high_speed_regions_open",
+      "peak_point": [
+        -0.5733070373535156,
+        0.20308661460876465,
+        3.125354051589966
+      ],
+      "peak_speed": 3.1229319383189305,
+      "region_count": 6,
+      "region_sizes": [
+        3831,
+        1,
+        2,
+        1,
+        7,
+        2
+      ],
+      "reported_location": [
+        -0.43620374257338634,
+        3.0521042773374156,
+        2.5893470661131714
+      ],
+      "representation": "mean",
+      "retained_points": 3844,
+      "selected_region_size": 3831,
+      "strength": 3.1229319383189305,
+      "threshold": 2.776219898196888
+    },
+    "data_provenance": {
+      "compiled_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+      "dataset_id": "Blunt_Fin",
+      "dataset_manifest_sha256": "3eba00b802ceaec87c98d81ac871c00d9be39ef1b7143d340946a98b376b8345",
+      "effective_o_sha256": "6b830220d7735164380261e0567bcb6f36ef6cf276f74ec9936c046d1611aed8",
+      "executed_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+      "input_files": [
+        "Blunt_Fin/bluntfinxyz.bin",
+        "Blunt_Fin/bluntfinq.bin"
+      ],
+      "materialization_plan": {
+        "aggregation_kind": null,
+        "comparator": "GE",
+        "component_selection_kind": null,
+        "connectivity_kind": "structured_face_6",
+        "criterion_kind": "quantile",
+        "domain": "high_speed_region",
+        "measure_kind": "peak",
+        "metric_kind": null,
+        "quantile": 0.9,
+        "quantile_method": "linear",
+        "representation_kind": "mean",
+        "threshold": null
+      },
+      "reader_configuration": {
+        "auto_detect_format": true,
+        "preserve_intermediate_functions": true,
+        "require_single_block": true,
+        "scalar_function_number": 153,
+        "vector_function_number": 200
+      },
+      "reader_format": "PLOT3D",
+      "silent_substitutions": [],
+      "unsupported_dimensions": [],
+      "vector_array": "Velocity"
+    },
+    "reproducible": true,
+    "status": "MATERIALIZED"
+  },
+  "materialization_id": "mat:blunt_fin_o1_f2_o1_high_speed_regions_open",
+  "operation_id": "blunt_fin_o1_f2_o1_high_speed_regions_open",
+  "reuse_reference": "REBUILD_REQUIRED"
+}

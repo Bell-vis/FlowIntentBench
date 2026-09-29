@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Locate the strongest contiguous high-speed flow region in the FireFlow room dataset. Use velocity magnitude, retain locations whose non-zero recorded speeds fall at or above the 90th percentile, and merge mesh-connected retained locations into a region. Take peak speed as regional strength, and report both the peak speed of the strongest region and the mean spatial location of its retained high-speed locations.",
+  "semantic_contract_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+  "source": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o1_f1.json",
+  "wording_version": "1.2.1"
+}

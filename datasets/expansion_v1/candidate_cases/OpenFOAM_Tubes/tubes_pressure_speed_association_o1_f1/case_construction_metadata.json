@@ -1,0 +1,147 @@
+{
+  "case_id": "tubes_pressure_speed_association_o1_f1",
+  "case_family_id": "tubes_pressure_speed_association",
+  "dataset_id": "OpenFOAM_Tubes",
+  "scientific_target": "the spatial association between stored pressure p and speed",
+  "finding_goal": "Characterize the spatial association between stored pressure p and speed",
+  "operationalization_responsibility": "user_specified",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "property_measure",
+    "aggregation_or_representation"
+  ],
+  "unresolved_operationalization_dimensions": [],
+  "scope_constraints": [
+    {
+      "statement": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000",
+      "question_fragment": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "the complete supplied three-dimensional mesh",
+      "question_fragment": "the complete supplied three-dimensional mesh"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+      "question_fragment": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+    },
+    {
+      "category": "property_measure",
+      "statement": "Measure association by the volume-weighted Pearson correlation.",
+      "question_fragment": "Measure association by the volume-weighted Pearson correlation."
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "Weight cell statistics by cell volume and normalize by the included volume.",
+      "question_fragment": "Weight cell statistics by cell volume and normalize by the included volume."
+    }
+  ],
+  "explicit_finding_requirements": [
+    {
+      "category": "relation",
+      "statement": "report the numerical association coefficient",
+      "question_fragment": "the numerical association coefficient"
+    }
+  ],
+  "responsibility_contract": {
+    "scientific_target": {
+      "canonical_id": "tubes_pressure_speed_association",
+      "normalized_meaning": "the spatial association between stored pressure p and speed",
+      "required_semantic_anchors": [
+        "spatial association between stored pressure p and speed"
+      ]
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "dimension_id": "feature_definition",
+        "canonical_id": "tubes_pressure_speed_association:feature_definition",
+        "normalized_meaning": "use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "cells,",
+          "with",
+          "stored",
+          "cell"
+        ]
+      },
+      {
+        "dimension_id": "property_measure",
+        "canonical_id": "tubes_pressure_speed_association:property_measure",
+        "normalized_meaning": "measure association by the volume-weighted pearson correlation.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "measure",
+          "association",
+          "volume-weighted",
+          "pearson"
+        ]
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "canonical_id": "tubes_pressure_speed_association:aggregation_or_representation",
+        "normalized_meaning": "weight cell statistics by cell volume and normalize by the included volume.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "weight",
+          "cell",
+          "statistics",
+          "cell"
+        ]
+      }
+    ],
+    "unresolved_operationalization_dimensions": [],
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "normalized_demand": "characterize the spatial association between stored pressure p and speed",
+      "required_semantic_anchors": [
+        "report"
+      ],
+      "required_responsibility_mode": null,
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ]
+    }
+  },
+  "evaluation_representability_contract": {
+    "o_schema_available": true,
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v1"
+    },
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1"
+    },
+    "deterministic_verification": {
+      "required_claim_types": [
+        "exact",
+        "scalar_numeric",
+        "spatial"
+      ],
+      "registered_handlers": [
+        "exact",
+        "scalar_numeric",
+        "spatial_tolerance"
+      ]
+    },
+    "semantic_adjudication": {
+      "required": true,
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1"
+    },
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    }
+  }
+}

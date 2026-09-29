@@ -1,0 +1,166 @@
+# FlowIntentBench data_metadata source list v1
+# Purpose: supplement the 7 downloaded datasets with only the information needed
+# to populate Model Input Contract v1 -> flow_data.data_metadata.
+#
+# Rules for the coding agent:
+# 1. Inspect the local dataset files first for format, grid, dimensions, arrays,
+#    components, association, origin, spacing, etc.
+# 2. Use the URLs below only to supplement semantic information that the files
+#    do not self-describe, especially variables[].physical_quantity and
+#    reader-level PLOT3D conventions.
+# 3. Do not extract findings, vortex structures, or other case answers into
+#    data_metadata.
+# 4. If a field cannot be verified from the local file or the sources below,
+#    set it to null. Do not infer.
+# 5. For all current datasets set temporal.type = single_snapshot.
+
+shared_sources:
+  vtk_plot3d_reader:
+    url: "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html"
+    use_for:
+      - "PLOT3D XYZ/Q file roles"
+      - "stored PLOT3D solution quantities: density, momentum, energy"
+      - "reader-derived quantities such as velocity and velocity magnitude"
+      - "AutoDetectFormat behavior"
+    datasets:
+      - "Blunt_Fin"
+      - "Combustor"
+      - "NASA_LOx_Post"
+
+datasets:
+
+  Office:
+    sources:
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/Office/"
+        use_for:
+          - "dataset is a structured-grid CFD simulation"
+          - "vector field represents flow velocity"
+          - "scalar field represents pressure"
+      - url: "https://www.csc.kth.se/utbildning/kth/kurser/DD2257/visual09/LAB1.pdf"
+        use_for:
+          - "velocity = local air velocity"
+          - "p1 = pressure"
+          - "u1/v1/w1 = velocity components"
+          - "ke = turbulent kinetic energy"
+          - "ep = turbulent dissipation rate"
+          - "h1 = enthalpy"
+          - "c* variables = gas concentrations"
+    agent_notes:
+      - "Prefer local VTK parsing for grid dimensions, origin, spacing, array names, components and association."
+      - "Do not invent units if the sources do not specify them."
+
+  Kitchen:
+    sources:
+      - url: "https://examples.vtk.org/site/Cxx/Visualization/Kitchen/"
+        use_for:
+          - "dataset represents airflow in a kitchen"
+          - "dataset is used as a flow field for streamline analysis"
+      - url: "https://www.csc.kth.se/utbildning/kth/kurser/DD2257/visual09/LAB1.pdf"
+        use_for:
+          - "velocity = local air velocity"
+          - "p1 = pressure"
+          - "u1/v1/w1 = velocity components"
+          - "ke = turbulent kinetic energy"
+          - "ep = turbulent dissipation rate"
+          - "h1 = enthalpy"
+          - "c* variables = gas concentrations"
+    agent_notes:
+      - "Prefer local VTK parsing for grid dimensions, origin, spacing, array names, components and association."
+      - "Do not invent units if the sources do not specify them."
+
+  Carotid:
+    sources:
+      - url: "https://book.vtk.org/en/latest/VTKBook/06Chapter6.html"
+        use_for:
+          - "vectors represent blood velocity"
+          - "scalars are proportional to velocity magnitude/speed"
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/CarotidFlow/"
+        use_for:
+          - "dataset is used for human carotid blood-flow visualization"
+          - "streamtubes represent blood velocity"
+    agent_notes:
+      - "Do not label the scalar field as exact speed unless the local file or another reliable source establishes that equality."
+      - "Prefer local VTK parsing for dimensions, origin, spacing, arrays and association."
+
+  Blunt_Fin:
+    sources:
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/BluntStreamlines/"
+        use_for:
+          - "confirms the downloaded bluntfinxyz.bin + bluntfinq.bin pairing"
+          - "confirms vtkMultiBlockPLOT3DReader usage"
+      - url: "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html"
+        use_for:
+          - "XYZ = grid file"
+          - "Q = solution file"
+          - "Q stores density, momentum and energy"
+          - "reader-derived functions include velocity and velocity magnitude"
+          - "reader format auto-detection semantics"
+    agent_notes:
+      - "Use vtkMultiBlockPLOT3DReader on the local files to obtain grid dimensions and actual reader output."
+      - "Do not add Q-criterion, Lambda-2, or other method-specific fields to data_metadata."
+
+  Combustor:
+    sources:
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/WarpCombustor/"
+        use_for:
+          - "confirms combxyz.bin + combq.bin pairing"
+          - "confirms vtkMultiBlockPLOT3DReader usage"
+          - "example selects scalar function 100 and vector function 202"
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/CombustorIsosurface/"
+        use_for:
+          - "additional confirmation that the same combustor PLOT3D dataset is read with the VTK PLOT3D reader"
+      - url: "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html"
+        use_for:
+          - "function 100 = density"
+          - "function 202 = momentum"
+          - "XYZ/Q roles and PLOT3D stored variables"
+    agent_notes:
+      - "Use local reader output for dimensions and file-format details."
+      - "Do not treat the example's visualization choices as scientific operationalization ground truth."
+
+  NASA_LOx_Post:
+    sources:
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/LOx/"
+        use_for:
+          - "confirms postxyz.bin + postq.bin pairing"
+          - "confirms AutoDetectFormatOn()"
+          - "scalar function 153 = velocity magnitude"
+          - "vector function 200 = velocity"
+      - url: "https://book.vtk.org/en/latest/VTKBook/12Chapter12.html"
+        use_for:
+          - "confirms the NASA LOx Post dataset and postxyz.bin/postq.bin"
+          - "confirms scalar/vector field interpretation in the LOx case study"
+      - url: "https://vtk.org/doc/nightly/html/classvtkMultiBlockPLOT3DReader.html"
+        use_for:
+          - "function 153 = velocity magnitude"
+          - "function 200 = velocity"
+          - "XYZ/Q roles and PLOT3D stored variables"
+    agent_notes:
+      - "Use local PLOT3D reader output for dimensions and detected file-format details."
+      - "Mark velocity/velocity magnitude as reader_derived rather than stored."
+
+  FireFlow:
+    sources:
+      - url: "https://examples.vtk.org/site/Cxx/VisualizationAlgorithms/FireFlow/"
+        use_for:
+          - "room_vis.wrl is scene geometry"
+          - "fire_ug.vtu is the unstructured-grid flow solution"
+          - "VTK reads the solution with vtkXMLUnstructuredGridReader"
+      - url: "https://docs.enthought.com/mayavi/mayavi/example_fire.html"
+        use_for:
+          - "fire_ug.vtu is an unstructured-grid VTK XML dataset"
+          - "dataset represents fire-driven room flow"
+          - "the file stores data at a particular instant of time"
+          - "room_vis.wrl provides room context"
+    agent_notes:
+      - "Inspect fire_ug.vtu locally for all array names, component counts and point/cell association."
+      - "Do not assign physical_quantity to an array unless the file or these sources make the meaning explicit."
+      - "Keep room_vis.wrl out of flow_data.data_files; place it in case_context.geometry_assets."
+
+output_requirement:
+  per_dataset_file: "data_metadata.json"
+  internal_trace_file: "metadata_sources.json"
+  metadata_sources_json_fields:
+    - "url"
+    - "supports"
+    - "notes"

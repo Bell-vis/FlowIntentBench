@@ -1,0 +1,194 @@
+{
+  "branches": [
+    {
+      "branch_id": "o2_peak_speed",
+      "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+      "effective_o_sha256": "97da326e23e1ac192c0d95e1bff1f2b0d38e79adb488a3f92ea8baa64dc0cf2a",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "execution_value_sha256": "7d448f23aec49cbdafb6fb34d0458730b35ab45b41424fb63a634f4af2f2827e",
+          "finding_id": "o2_peak_speed_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            0.06812500045634806,
+            2.343749985098839,
+            2.389375001192093
+          ],
+          "scientific_finding_policy_key": "93f59e5faf2bfff33d958737519bc35856d90e8d715b2da83037a05635e1ade7",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "9f116bc2356db2a550447b2c69761b3c61a0f2af02c9c488f39182803ce63623"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.8049350186348156,
+          "execution_value_sha256": "78a2bcca77a6d04b059893307a061cbd902a04de7fcf1f2b13292a999ca93f89",
+          "finding_id": "o2_peak_speed_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 0.8049350186348156,
+          "scientific_finding_policy_key": "5501d8159b98b8fee455e4ba286ff35b7f6299c3c126a11afb3fcd072f692e26",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "73fb56d4b0630f57c6538e54ce9edaa7fe5905224f3ec35778350b96648302df"
+        }
+      ],
+      "g_of_o_sha256": "19f69ce6a43a20006ce71b980dc2de55bb1809ac8fa94e1fd4e7979874962af3",
+      "materialization_id": "mat:o2_peak_speed",
+      "operationalization_id": "o2_peak_speed"
+    },
+    {
+      "branch_id": "o2_mean_speed",
+      "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+      "effective_o_sha256": "c7ad562a8b20fbbfbbaf7ebf270ea220c5544899e94f91b588012ab7bca49d8b",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "execution_value_sha256": "b2654fe29824fc043328dd1dafa79d5aaf8bb1b14374afd5f91503e3fbddfaf0",
+          "finding_id": "o2_mean_speed_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            4.5,
+            2.4312500208616257,
+            2.1737499833106995
+          ],
+          "scientific_finding_policy_key": "6192342e939c38779f423abbc56caacdd767b2ee8c4fc73d14e73807b6b03e56",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "89da4e029f22a408217c5a8e825cf49bdfcfc29f0205e0cfc1775fea50c5c3c2"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.3577313150236388,
+          "execution_value_sha256": "68ddafe3dc44354c8535215a16e08a6f86dd4d18343ddc570d5a824bed38325c",
+          "finding_id": "o2_mean_speed_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 0.3577313150236388,
+          "scientific_finding_policy_key": "a43aa4830d7a1f67a2d3703ef0a040d93c12e9d0f4944598bea8033784fd420b",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "433a3a95db98b39201315d8112b8393f52e07709f544a46f22102c69b54e8e66"
+        }
+      ],
+      "g_of_o_sha256": "6496feb6a4aad512d1bba44a5108ec5e0d87b739194b07ef8d4f5e235cd6c208",
+      "materialization_id": "mat:o2_mean_speed",
+      "operationalization_id": "o2_mean_speed"
+    },
+    {
+      "branch_id": "o2_q90_mean_speed",
+      "dataset_manifest_sha256": "13723df1cea9f5ceaabb7c1a98c2661070be91cc96f334ec6ffbe0d57784be3f",
+      "effective_o_sha256": "d7e62e705024302955133c30a8efe26a111c36c60ac14f2a09514f71d3e1f56e",
+      "findings": [
+        {
+          "binding_status": "PASS",
+          "execution_value": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "execution_value_sha256": "120111b66e231b1a50bdf9039a5cb95ae1f0c86c11a86d04eb3253f275a02731",
+          "finding_id": "o2_q90_mean_speed_location",
+          "g_of_o_locator": "/reported_location",
+          "gt_value": [
+            4.497741883800876,
+            2.421505397365939,
+            2.1120429859366467
+          ],
+          "scientific_finding_policy_key": "f192d55c528d8399c05a4f905a06e27208836f859e41ed463c11fe88f336d80e",
+          "tolerance_authority": "DOMAIN_AUTHORED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "CASE_READER_METADATA",
+            "physical_unit": null
+          },
+          "verification_formula_id": "euclidean_l2_v1",
+          "verification_mode": "spatial_euclidean",
+          "verification_parameters": {
+            "absolute_tolerance": null,
+            "relative_tolerance": null,
+            "spatial_tolerance": 0.05
+          },
+          "verification_policy_digest": "a2857352b0924257e92355b49c6e10ce9df026ebd8999817cf55ba13614cf754"
+        },
+        {
+          "binding_status": "PASS",
+          "execution_value": 0.2919336353878951,
+          "execution_value_sha256": "193c32635628c8e16968c9a8d2e9b1772e7186fc6817d236df6d7f343e1dfc6d",
+          "finding_id": "o2_q90_mean_speed_strength",
+          "g_of_o_locator": "/strength",
+          "gt_value": 0.2919336353878951,
+          "scientific_finding_policy_key": "b780956a94a84187eeb85beba5b453c300522082b4233327fe37a66bb6bc99d3",
+          "tolerance_authority": "REPORTING_PRECISION_DERIVED",
+          "unit_frame_authority": {
+            "coordinate_or_numeric_scale": "NOT_APPLICABLE",
+            "physical_unit": null
+          },
+          "verification_formula_id": "combined_absolute_plus_relative_v1",
+          "verification_mode": "scalar_tolerance",
+          "verification_parameters": {
+            "absolute_tolerance": 0.0005,
+            "relative_tolerance": null,
+            "spatial_tolerance": null
+          },
+          "verification_policy_digest": "85258d4e418e853e66d9ffbeb81ad6d79a1e9c6bdb19293428c4111708e09851"
+        }
+      ],
+      "g_of_o_sha256": "95f3c6a3371b7930ff25fc3c1f99266a36c9682ba69e17c8be372d8e244c6a1a",
+      "materialization_id": "mat:o2_q90_mean_speed",
+      "operationalization_id": "o2_q90_mean_speed"
+    }
+  ],
+  "case_id": "office_speed_zones_o2_f1",
+  "dataset_id": "Office",
+  "schema_version": "finding-execution-binding-v1",
+  "semantic_contract_sha256": "02720f3ff7ee70fd89c2badaf9ab5b8dc13f42231cac9ed332251913d2b46a8e"
+}

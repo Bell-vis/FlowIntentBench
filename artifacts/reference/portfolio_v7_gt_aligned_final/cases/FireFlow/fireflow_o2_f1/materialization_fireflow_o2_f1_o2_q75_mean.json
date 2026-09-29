@@ -1,0 +1,79 @@
+{
+  "execution": {
+    "G_of_O": {
+      "comparator": "GE",
+      "coordinate_span": [
+        6.0,
+        2.5,
+        2.3999998569488525
+      ],
+      "criterion": ">= non-zero 75th percentile (0.486353495383)",
+      "criterion_kind": "quantile",
+      "mean_spatial_location": [
+        2.417761593795914,
+        1.6560045202195897,
+        1.0163907527207787
+      ],
+      "mean_speed": 1.0174865547746001,
+      "measure_kind": "mean",
+      "operation_id": "fireflow_o2_f1_o2_q75_mean",
+      "peak_point": [
+        0.19999998807907104,
+        1.428571343421936,
+        0.19999998807907104
+      ],
+      "peak_speed": 3.822313175748469,
+      "region_count": 1,
+      "region_sizes": [
+        3081
+      ],
+      "reported_location": [
+        2.417761593795914,
+        1.6560045202195897,
+        1.0163907527207787
+      ],
+      "representation": "mean",
+      "retained_points": 3081,
+      "selected_region_size": 3081,
+      "strength": 1.0174865547746001,
+      "threshold": 0.48635349538271977
+    },
+    "data_provenance": {
+      "compiled_plan_sha256": "24e5cfb22d10cb837a9459463da75fd6ce5d585cd844848541e9945ad2f62be2",
+      "dataset_id": "FireFlow",
+      "dataset_manifest_sha256": "f7d3d95bca6bd3402ee197455b82561606c70e79e99b078e311c92f5f47786d5",
+      "effective_o_sha256": "1c9f7a023429692556acbe67693882d9e66a921888d4d12f9e8dffd2eda8bbe7",
+      "executed_plan_sha256": "24e5cfb22d10cb837a9459463da75fd6ce5d585cd844848541e9945ad2f62be2",
+      "input_files": [
+        "FireFlow/fire_ug.vtu"
+      ],
+      "materialization_plan": {
+        "aggregation_kind": null,
+        "comparator": "GE",
+        "component_selection_kind": null,
+        "connectivity_kind": "mesh_cell_point",
+        "criterion_kind": "quantile",
+        "domain": "high_speed_region",
+        "measure_kind": "mean",
+        "metric_kind": null,
+        "quantile": 0.75,
+        "quantile_method": "linear",
+        "representation_kind": "mean",
+        "threshold": null
+      },
+      "reader_configuration": {
+        "read_all_scalars": false,
+        "read_all_vectors": false
+      },
+      "reader_format": "VTU",
+      "silent_substitutions": [],
+      "unsupported_dimensions": [],
+      "vector_array": "uvw"
+    },
+    "reproducible": true,
+    "status": "MATERIALIZED"
+  },
+  "materialization_id": "mat:fireflow_o2_f1_o2_q75_mean",
+  "operation_id": "fireflow_o2_f1_o2_q75_mean",
+  "reuse_reference": "REUSE_ELIGIBLE"
+}

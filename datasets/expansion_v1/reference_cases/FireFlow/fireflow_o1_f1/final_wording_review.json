@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "The payload provides no evidence_context or numerical field values, so the selected region, location, and peak speed cannot be independently verified here."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question is scientifically meaningful and faithfully targets the strongest high-speed flow region within the FireFlow room flow field. It exposes all fixed operationalizations: Euclidean speed from stored uvw, the non-zero 90th-percentile threshold with linear interpolation, unstructured-mesh-cell connectivity, mean retained-point location, and peak speed. It correctly requests the F1 findings of region location and strength without introducing additional respondent choices or unnecessary protocol burden, and it is answerable in principle from the supplied flow snapshot.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+  "review_packet_sha256": "5807280940f4db04f592588a7b84d0f679386b718199d058c49ada3af7a63d0d",
+  "reviewed_model_visible_text_sha256": "e2bb6f2468ff39fdbc5e9df24575bcf3068d5846e144f28b9c1ec9680e00b50d",
+  "reviewed_model_visible_text": "In the FireFlow room flow field, which is the strongest contiguous high-speed flow region? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero speed values, where speed is the Euclidean magnitude of the stored uvw vector at each point, group locations that share an unstructured-mesh cell into contiguous regions, and use peak speed as region strength. Report the strongest region\u2019s mean spatial location across its retained high-speed locations and its peak speed.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "fireflow_o1_f1",
+    "condition": "O1-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "5807280940f4db04f592588a7b84d0f679386b718199d058c49ada3af7a63d0d",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:30:33.789780+00:00",
+    "latency_seconds": 19.521122,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"The payload provides no evidence_context or numerical field values, so the selected region, location, and peak speed cannot be independently verified here.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question is scientifically meaningful and faithfully targets the strongest high-speed flow region within the FireFlow room flow field. It exposes all fixed operationalizations: Euclidean speed from stored uvw, the non-zero 90th-percentile threshold with linear interpolation, unstructured-mesh-cell connectivity, mean retained-point location, and peak speed. It correctly requests the F1 findings of region location and strength without introducing additional respondent choices or unnecessary protocol burden, and it is answerable in principle from the supplied flow snapshot.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "The payload provides no evidence_context or numerical field values, so the selected region, location, and peak speed cannot be independently verified here."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question is scientifically meaningful and faithfully targets the strongest high-speed flow region within the FireFlow room flow field. It exposes all fixed operationalizations: Euclidean speed from stored uvw, the non-zero 90th-percentile threshold with linear interpolation, unstructured-mesh-cell connectivity, mean retained-point location, and peak speed. It correctly requests the F1 findings of region location and strength without introducing additional respondent choices or unnecessary protocol burden, and it is answerable in principle from the supplied flow snapshot."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_0b751b8fd6a99c2e016aa6dda9a29487d093d2c0deaf1938e4": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1667,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1667,
+            "output_tokens": 0
+          },
+          "rs_0b751b8fd6a99c2e016aa6ddaa7b9c87d0a25a21b1244ce704": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 465
+          },
+          "msg_0b751b8fd6a99c2e016aa6ddb5015887d09422b208b22b0fbc": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 227
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 227
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 2283,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 692,
+      "output_tokens_details": {
+        "reasoning_tokens": 465
+      },
+      "total_tokens": 2975
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "7bb432f5c6a2c787becbded19938ea113e75bbdb76ebb098fb1248acb4690187",
+    "review_packet_sha256": "5807280940f4db04f592588a7b84d0f679386b718199d058c49ada3af7a63d0d",
+    "reviewed_model_visible_text_sha256": "e2bb6f2468ff39fdbc5e9df24575bcf3068d5846e144f28b9c1ec9680e00b50d",
+    "reviewed_model_visible_text": "In the FireFlow room flow field, which is the strongest contiguous high-speed flow region? Define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero speed values, where speed is the Euclidean magnitude of the stored uvw vector at each point, group locations that share an unstructured-mesh cell into contiguous regions, and use peak speed as region strength. Report the strongest region\u2019s mean spatial location across its retained high-speed locations and its peak speed."
+  }
+}

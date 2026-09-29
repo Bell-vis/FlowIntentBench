@@ -1,0 +1,7 @@
+{
+  "authority": "USERSTUDY_WORDING",
+  "scientific_question": "Analyze the FireFlow room to determine the strongest high-speed flow region. Treat velocity magnitude values at or above the 90th percentile of non-zero recorded speed as high-speed, form regions from mesh-connected qualifying locations, use peak speed to compare them, and represent the selected region by the mean position of its retained locations. Select and report the principal scientifically relevant findings supported by the evidence, including the region’s strength and location and at least one further characterization that you consider informative.",
+  "semantic_contract_sha256": "b947c70b4d8646c07e8b1f43d90bd1c41efa61ab82f6c1438b9b0ec9348e2b96",
+  "source": "FlowIntentBench_userstudy/datasets/FireFlow/questions/fireflow_o1_f2.json",
+  "wording_version": "1.2.1"
+}

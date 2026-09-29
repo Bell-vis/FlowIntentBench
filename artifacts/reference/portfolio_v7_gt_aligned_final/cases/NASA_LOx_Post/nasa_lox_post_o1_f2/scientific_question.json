@@ -1,0 +1,7 @@
+{
+  "authority": "IMMUTABLE_REFERENCE_V7",
+  "scientific_question": "In the LOx-post flow field, define high-speed locations as those at or above the linearly interpolated 90th percentile of non-zero recorded speed on the stored velocity scale, and treat locations connected through immediate grid neighbors along one grid axis as one contiguous high-speed region. Which region is strongest when strength is measured by peak speed? Report its peak speed, locate it using the mean spatial location of its retained high-speed locations, and characterize it using at least one relevant aspect of your choice: geometric relation, meaningful comparison, morphology, orientation, or spatial extent.",
+  "semantic_contract_sha256": "7c7cf8fdfe6a3d2145d836962bce370dd49090d0b942ce512dc4f788371271b1",
+  "source": "artifacts/reference/portfolio_v7_gt_aligned_final/reference_science_baseline_manifest.json",
+  "source_manifest_sha256": "bb6e523712c01ad5f9eacbbfbf8c0dbc24879cd80e8f77eab4d323a26f7741fe"
+}

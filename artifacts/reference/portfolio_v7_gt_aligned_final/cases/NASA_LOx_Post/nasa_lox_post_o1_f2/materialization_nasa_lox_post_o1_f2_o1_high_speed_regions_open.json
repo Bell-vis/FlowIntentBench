@@ -1,0 +1,84 @@
+{
+  "execution": {
+    "G_of_O": {
+      "comparator": "GE",
+      "coordinate_span": [
+        15.997518062591553,
+        12.16211348772049,
+        4.108765065670013
+      ],
+      "criterion": ">= non-zero 90th percentile (1.153866514531)",
+      "criterion_kind": "quantile",
+      "mean_spatial_location": [
+        1.9714835118861307,
+        -2.6243898427147894,
+        3.586038704950959
+      ],
+      "mean_speed": 1.2483379152602692,
+      "measure_kind": "peak",
+      "operation_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open",
+      "peak_point": [
+        -0.016844864934682846,
+        -0.8041654229164124,
+        1.7766473293304443
+      ],
+      "peak_speed": 1.391444101423406,
+      "region_count": 2,
+      "region_sizes": [
+        5064,
+        4930
+      ],
+      "reported_location": [
+        1.9714835118861307,
+        -2.6243898427147894,
+        3.586038704950959
+      ],
+      "representation": "mean",
+      "retained_points": 9994,
+      "selected_region_size": 4930,
+      "strength": 1.391444101423406,
+      "threshold": 1.153866514530744
+    },
+    "data_provenance": {
+      "compiled_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+      "dataset_id": "NASA_LOx_Post",
+      "dataset_manifest_sha256": "0b3f7d31dac3cbd55ba28876a53df074c0bd93d5ca0cc01dae284709f0aef001",
+      "effective_o_sha256": "6b830220d7735164380261e0567bcb6f36ef6cf276f74ec9936c046d1611aed8",
+      "executed_plan_sha256": "c7be62008b7b4392784a6b788eb213aa17fa9e5588079515218bc614feacc925",
+      "input_files": [
+        "NASA_LOx_Post/postxyz.bin",
+        "NASA_LOx_Post/postq.bin"
+      ],
+      "materialization_plan": {
+        "aggregation_kind": null,
+        "comparator": "GE",
+        "component_selection_kind": null,
+        "connectivity_kind": "structured_face_6",
+        "criterion_kind": "quantile",
+        "domain": "high_speed_region",
+        "measure_kind": "peak",
+        "metric_kind": null,
+        "quantile": 0.9,
+        "quantile_method": "linear",
+        "representation_kind": "mean",
+        "threshold": null
+      },
+      "reader_configuration": {
+        "auto_detect_format": true,
+        "preserve_intermediate_functions": true,
+        "require_single_block": true,
+        "scalar_function_number": 153,
+        "vector_function_number": 200
+      },
+      "reader_format": "PLOT3D",
+      "silent_substitutions": [],
+      "unsupported_dimensions": [],
+      "vector_array": "Velocity"
+    },
+    "reproducible": true,
+    "status": "MATERIALIZED"
+  },
+  "materialization_id": "mat:nasa_lox_post_o1_f2_o1_high_speed_regions_open",
+  "operation_id": "nasa_lox_post_o1_f2_o1_high_speed_regions_open",
+  "reuse_reference": "REBUILD_REQUIRED"
+}

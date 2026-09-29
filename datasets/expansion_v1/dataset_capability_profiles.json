@@ -1,0 +1,872 @@
+{
+  "profiles": [
+    {
+      "dataset_id": "AIDEAS_Blow_Mold",
+      "grid_type": "unstructured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "Velocity [m/s]",
+          "physical_quantity": "Velocity",
+          "source": "stored"
+        },
+        {
+          "name": "Viscosity [Pa s]",
+          "physical_quantity": "Viscosity",
+          "source": "stored"
+        },
+        {
+          "name": "NormShearRate [1/s]",
+          "physical_quantity": "NormShearRate",
+          "source": "stored"
+        },
+        {
+          "name": "Pressure [bar]",
+          "physical_quantity": "Pressure",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the single-channel blow-mold flow simulation"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the single-channel blow-mold flow simulation Stored coordinates and field scales are used without assigning undeclared SI units."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "Blunt_Fin",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "Density",
+          "physical_quantity": "density",
+          "source": "stored"
+        },
+        {
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "source": "stored"
+        },
+        {
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "source": "stored"
+        },
+        {
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "source": "reader_derived"
+        },
+        {
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "source": "reader_derived"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [
+        "VelocityMagnitude",
+        "Velocity"
+      ],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": [
+        {
+          "fact_id": "blunt_wall",
+          "review_status": "approved",
+          "field": "boundaries",
+          "value": {
+            "name": "wall",
+            "type": "wall",
+            "description": "The wall from which the fin projects."
+          }
+        }
+      ],
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "BluntStreamlines VTK example"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The BluntStreamlines example describes airflow around a blunt fin: a wall with half a rounded fin projecting into the fluid flow."
+      ],
+      "limitation_or_basis": "No reviewed surface, reference direction, or boundary mapping supports a separation/wake concept."
+    },
+    {
+      "dataset_id": "Carotid",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "scalars",
+          "physical_quantity": "speed-proportional scalar",
+          "source": "stored"
+        },
+        {
+          "name": "vectors",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "CarotidFlow VTK example"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "dataset_documentation",
+          "title": "VTK Book Chapter 6: Visualizing Blood Flow"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The VTK blood-flow example uses the carotid.vtk dataset to visualize blood flow in human carotid arteries; the data contains velocity vectors and scalars proportional to velocity magnitude."
+      ],
+      "limitation_or_basis": "Velocity exists, but reviewed context supplies no centreline, wall, or anatomical direction for profile or shear claims."
+    },
+    {
+      "dataset_id": "Combustor",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "Density",
+          "physical_quantity": "density",
+          "source": "stored"
+        },
+        {
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "source": "stored"
+        },
+        {
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "source": "stored"
+        },
+        {
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "source": "reader_derived"
+        },
+        {
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "source": "reader_derived"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [
+        "VelocityMagnitude",
+        "Velocity"
+      ],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "WarpCombustor VTK example"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "CombustorIsosurface VTK example"
+        },
+        {
+          "source_id": "src_003",
+          "source_type": "dataset_documentation",
+          "title": "VTK Book Chapter 6: Fundamental Algorithms"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The WarpCombustor example reads combxyz.bin and combq.bin as data from an annular combustor; it describes a combustor burning fuel and air in a gas turbine."
+      ],
+      "limitation_or_basis": "Stored Density has direct example/documentation support; no direction-dependent or combustion-state claim is made."
+    },
+    {
+      "dataset_id": "Double_Fin",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "P/Pinf",
+          "physical_quantity": "P/Pinf",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the supplied double-fin reconstructed pressure field"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the supplied double-fin reconstructed pressure field Stored coordinates and field scales are used without assigning undeclared SI units. P/Pinf is reconstructed and includes large outliers; no automatic clipping or shock identification is applied."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "Electrolyzer",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "p",
+          "physical_quantity": "p",
+          "source": "stored"
+        },
+        {
+          "name": "vf",
+          "physical_quantity": "vf",
+          "source": "stored"
+        },
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the supplied final-timestep electrolyzer flow at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. The supplied vf field is called volume fraction by its README; no phase identity is assumed. RAW byte order is explicitly interpreted as little endian."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "Electrolyzer_Electric",
+      "grid_type": "unstructured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "Potential",
+          "physical_quantity": "Potential",
+          "source": "stored"
+        },
+        {
+          "name": "Resistance",
+          "physical_quantity": "Resistance",
+          "source": "stored"
+        },
+        {
+          "name": "jx",
+          "physical_quantity": "jx",
+          "source": "stored"
+        },
+        {
+          "name": "jy",
+          "physical_quantity": "jy",
+          "source": "stored"
+        },
+        {
+          "name": "jz",
+          "physical_quantity": "jz",
+          "source": "stored"
+        },
+        {
+          "name": "current_density",
+          "physical_quantity": "current_density",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the supplied final-timestep electrolyzer electrical field at 300 ml/h and 45 mA without surfactant Stored coordinates and field scales are used without assigning undeclared SI units. Current-density components jx, jy and jz are combined on their own electrical mesh; the flow mesh is distinct."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "FireFlow",
+      "grid_type": "unstructured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "t",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "uvw",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "u",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "v",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "w",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "mfrac",
+          "physical_quantity": null,
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [
+        "t",
+        "uvw",
+        "u",
+        "v",
+        "w",
+        "mfrac"
+      ],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "FireFlow VTK example"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "dataset_documentation",
+          "title": "Visualizing rich datasets: the fire_ug.vtu example"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The Mayavi documentation describes fire_ug.vtu as an unstructured VTK XML grid representing a room with a fire in one corner and a fluid-flow simulation at a particular instant; room_vis.wrl shows the room context."
+      ],
+      "limitation_or_basis": "The snapshot and velocity are available, but reviewed sources do not establish physical semantics for t or mfrac."
+    },
+    {
+      "dataset_id": "Kitchen",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        },
+        {
+          "name": "p1",
+          "physical_quantity": "pressure",
+          "source": "stored"
+        },
+        {
+          "name": "u1",
+          "physical_quantity": "velocity component",
+          "source": "stored"
+        },
+        {
+          "name": "v1",
+          "physical_quantity": "velocity component",
+          "source": "stored"
+        },
+        {
+          "name": "w1",
+          "physical_quantity": "velocity component",
+          "source": "stored"
+        },
+        {
+          "name": "ke",
+          "physical_quantity": "turbulent kinetic energy",
+          "source": "stored"
+        },
+        {
+          "name": "ep",
+          "physical_quantity": "turbulent dissipation rate",
+          "source": "stored"
+        },
+        {
+          "name": "h1",
+          "physical_quantity": "enthalpy",
+          "source": "stored"
+        },
+        {
+          "name": "c1",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c11",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c12",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c13",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c14",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c15",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c16",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "c17",
+          "physical_quantity": "gas concentration",
+          "source": "stored"
+        },
+        {
+          "name": "hpor",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "npor",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "epor",
+          "physical_quantity": null,
+          "source": "stored"
+        },
+        {
+          "name": "vpor",
+          "physical_quantity": null,
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [
+        "hpor",
+        "npor",
+        "epor",
+        "vpor"
+      ],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "Kitchen VTK example"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "dataset_documentation",
+          "title": "VTK Book Chapter 6: Kitchen streamline example"
+        },
+        {
+          "source_id": "src_003",
+          "source_type": "dataset_documentation",
+          "title": "LAB1; Visualisation of a room"
+        },
+        {
+          "source_id": "src_004",
+          "source_type": "relevant_scientific_reference",
+          "title": "The numerical computation of turbulent flows"
+        },
+        {
+          "source_id": "src_005",
+          "source_type": "relevant_scientific_reference",
+          "title": "The definition and measurement of some characteristics of mixtures"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The Kitchen example describes a small kitchen with two windows, a door with air leakage, and a cooking area with a hot stove; air leakage and temperature variation are part of the described convection setup."
+      ],
+      "limitation_or_basis": "Documented ke, ep, and c-prefixed gas concentrations support two non-speed candidate concepts; units remain unspecified."
+    },
+    {
+      "dataset_id": "MHD_Turbulence",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "density",
+          "physical_quantity": "density",
+          "source": "stored"
+        },
+        {
+          "name": "magnetic_field",
+          "physical_quantity": "magnetic_field",
+          "source": "stored"
+        },
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the supplied compressible magnetohydrodynamic turbulence snapshot"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the supplied compressible magnetohydrodynamic turbulence snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "NASA_LOx_Post",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "Density",
+          "physical_quantity": "density",
+          "source": "stored"
+        },
+        {
+          "name": "Momentum",
+          "physical_quantity": "momentum",
+          "source": "stored"
+        },
+        {
+          "name": "StagnationEnergy",
+          "physical_quantity": "energy",
+          "source": "stored"
+        },
+        {
+          "name": "VelocityMagnitude",
+          "physical_quantity": "velocity magnitude",
+          "source": "reader_derived"
+        },
+        {
+          "name": "Velocity",
+          "physical_quantity": "velocity",
+          "source": "reader_derived"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [
+        "VelocityMagnitude",
+        "Velocity"
+      ],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "LOx VTK example"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "dataset_documentation",
+          "title": "VTK Book Chapter 12: LOx Post case study"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The VTK Book identifies the NASA LOx Post dataset as a simulation of liquid oxygen flowing across a flat plate with a cylindrical post perpendicular to the flow, in a rocket-engine model."
+      ],
+      "limitation_or_basis": "Velocity is derived, but reviewed resources do not establish reference direction, wall mapping, or a post-wake criterion."
+    },
+    {
+      "dataset_id": "Office",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "scalars",
+          "physical_quantity": "pressure",
+          "source": "stored"
+        },
+        {
+          "name": "vectors",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": [
+        {
+          "fact_id": "office_inlet",
+          "review_status": "approved",
+          "field": "boundaries",
+          "value": {
+            "name": "ventilation_inlet",
+            "type": "inlet",
+            "description": "The inlet of the ventilation system."
+          }
+        },
+        {
+          "fact_id": "office_outlet",
+          "review_status": "approved",
+          "field": "boundaries",
+          "value": {
+            "name": "ventilation_outlet",
+            "type": "outlet",
+            "description": "The outlet of the ventilation system."
+          }
+        }
+      ],
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "example_source_code",
+          "title": "Office VTK example"
+        }
+      ],
+      "known_scientific_use_context": [
+        "The Office example describes a structured-grid CFD simulation of flow in a small office with flow velocity and scalar pressure; it names bookcases, desks, a window, and ventilation inlet and outlet, with a small heat source on one desk."
+      ],
+      "limitation_or_basis": "Ventilation context supports the existing strongest-region family, but no new independently grounded scalar concept is available."
+    },
+    {
+      "dataset_id": "OpenFOAM_Tubes",
+      "grid_type": "unstructured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "U",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        },
+        {
+          "name": "k",
+          "physical_quantity": "turbulent kinetic energy",
+          "source": "stored"
+        },
+        {
+          "name": "nut",
+          "physical_quantity": "turbulent kinematic viscosity",
+          "source": "stored"
+        },
+        {
+          "name": "omega",
+          "physical_quantity": "specific dissipation rate",
+          "source": "stored"
+        },
+        {
+          "name": "p",
+          "physical_quantity": "pressure",
+          "source": "stored"
+        },
+        {
+          "name": "U",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        },
+        {
+          "name": "k",
+          "physical_quantity": "turbulent kinetic energy",
+          "source": "stored"
+        },
+        {
+          "name": "nut",
+          "physical_quantity": "turbulent kinematic viscosity",
+          "source": "stored"
+        },
+        {
+          "name": "omega",
+          "physical_quantity": "specific dissipation rate",
+          "source": "stored"
+        },
+        {
+          "name": "p",
+          "physical_quantity": "pressure",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the internal fluid mesh of the supplied OpenFOAM tube solution at stored time 1000 Stored coordinates and field scales are used without assigning undeclared SI units. The source OpenFOAM headers identify p as pressure with dimensions [1 -1 -2 0 0 0 0] (Pa), U in m/s, k in m^2/s^2, nut in m^2/s and omega in 1/s."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "Radiative_Mixing_Layer",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "density",
+          "physical_quantity": "density",
+          "source": "stored"
+        },
+        {
+          "name": "pressure",
+          "physical_quantity": "pressure",
+          "source": "stored"
+        },
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the supplied turbulent radiative mixing-layer snapshot"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the supplied turbulent radiative mixing-layer snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces. In this supplied coordinate system, z is the vertical layer-normal direction and vertical velocity denotes the z component of velocity."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    },
+    {
+      "dataset_id": "Rayleigh_Taylor",
+      "grid_type": "structured",
+      "temporal_support": "single_snapshot",
+      "available_variables": [
+        {
+          "name": "density",
+          "physical_quantity": "density",
+          "source": "stored"
+        },
+        {
+          "name": "velocity",
+          "physical_quantity": "velocity",
+          "source": "stored"
+        }
+      ],
+      "derived_quantities_that_are_physically_supported": [],
+      "geometry_information": "No separately reviewed geometry asset.",
+      "boundary_information": "No approved boundary fact.",
+      "reference_direction_information": "No approved reference-direction fact.",
+      "auxiliary_parameters": [],
+      "source_evidence": [
+        {
+          "source_id": "src_001",
+          "source_type": "dataset_documentation",
+          "title": "the supplied Rayleigh–Taylor instability snapshot"
+        },
+        {
+          "source_id": "src_002",
+          "source_type": "example_source_code",
+          "title": "FlowIntentBench explicit numerical operationalization recipes"
+        }
+      ],
+      "known_scientific_use_context": [
+        "the supplied Rayleigh–Taylor instability snapshot Stored coordinates and field scales are used without assigning undeclared SI units. This is trajectory 0, stored frame 60 from the pinned source. Stored coordinate samples are represented as points, with no extrapolation to unstored boundary faces. In this supplied coordinate system, z is the vertical layer-normal direction and vertical velocity denotes the z component of velocity."
+      ],
+      "limitation_or_basis": "Only documented stored fields and this supplied snapshot are available; scientific task adequacy is reviewed separately."
+    }
+  ]
+}

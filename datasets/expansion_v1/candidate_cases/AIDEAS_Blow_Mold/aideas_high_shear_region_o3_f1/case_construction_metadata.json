@@ -1,0 +1,127 @@
+{
+  "case_id": "aideas_high_shear_region_o3_f1",
+  "case_family_id": "aideas_high_shear_region",
+  "dataset_id": "AIDEAS_Blow_Mold",
+  "scientific_target": "the location and intensity of high shear-rate regions",
+  "finding_goal": "Characterize the location and intensity of high shear-rate regions",
+  "operationalization_responsibility": "model_selected",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "property_measure",
+    "aggregation_or_representation",
+    "criterion"
+  ],
+  "unresolved_operationalization_dimensions": [
+    "feature_definition",
+    "property_measure",
+    "aggregation_or_representation",
+    "criterion"
+  ],
+  "scope_constraints": [
+    {
+      "statement": "the single-channel blow-mold flow simulation",
+      "question_fragment": "the single-channel blow-mold flow simulation"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "the complete supplied three-dimensional mesh",
+      "question_fragment": "the complete supplied three-dimensional mesh"
+    }
+  ],
+  "explicit_method_constraints": [],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the volume-weighted centroid coordinates",
+      "question_fragment": "the volume-weighted centroid coordinates"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the volume-weighted mean value in the selected region",
+      "question_fragment": "the volume-weighted mean value in the selected region"
+    }
+  ],
+  "responsibility_contract": {
+    "scientific_target": {
+      "canonical_id": "aideas_high_shear_region",
+      "normalized_meaning": "the location and intensity of high shear-rate regions",
+      "required_semantic_anchors": [
+        "location and intensity of high shear-rate regions"
+      ]
+    },
+    "resolved_operationalization_clauses": [],
+    "unresolved_operationalization_dimensions": [
+      {
+        "dimension_id": "feature_definition",
+        "normalized_meaning": "model-selected feature definition",
+        "must_remain_open": true
+      },
+      {
+        "dimension_id": "property_measure",
+        "normalized_meaning": "model-selected property measure",
+        "must_remain_open": true
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "normalized_meaning": "model-selected aggregation or representation",
+        "must_remain_open": true
+      },
+      {
+        "dimension_id": "criterion",
+        "normalized_meaning": "model-selected criterion",
+        "must_remain_open": true
+      }
+    ],
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "normalized_demand": "characterize the location and intensity of high shear-rate regions",
+      "required_semantic_anchors": [
+        "report",
+        "coordinate"
+      ],
+      "required_responsibility_mode": null,
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ]
+    }
+  },
+  "evaluation_representability_contract": {
+    "o_schema_available": true,
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v1"
+    },
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1"
+    },
+    "deterministic_verification": {
+      "required_claim_types": [
+        "exact",
+        "scalar_numeric",
+        "spatial"
+      ],
+      "registered_handlers": [
+        "exact",
+        "scalar_numeric",
+        "spatial_tolerance"
+      ]
+    },
+    "semantic_adjudication": {
+      "required": true,
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1"
+    },
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    }
+  }
+}

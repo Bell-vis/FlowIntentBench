@@ -1,0 +1,53 @@
+{
+  "family_id": "radiative_density_heterogeneity",
+  "inputs": [
+    {
+      "path": "Radiative_Mixing_Layer/snapshot.vtk",
+      "sha256": "bc79c68afb14eeb642a568697cc032b40df1f09c5a8e7a5bc92409ab7fee1d55"
+    }
+  ],
+  "operations": {
+    "cv": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted standard deviation divided by the absolute volume-weighted mean.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "dispersion",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "measure": "cv"
+      }
+    },
+    "relative_interdecile": {
+      "clauses": {
+        "feature_definition": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "property_measure": "Use the volume-weighted 90th-minus-10th percentile range divided by the absolute weighted median.",
+        "aggregation_or_representation": "Weight cell statistics by cell volume and normalize by the included volume."
+      },
+      "recipe": {
+        "kind": "dispersion",
+        "field": {
+          "name": "density",
+          "association": "point"
+        },
+        "measure": "relative_interdecile"
+      }
+    }
+  },
+  "definition_sha256": "ce78fee17ab85f7a684f73e0f07376489b852fdb2c87840cc1e3c329976b1add",
+  "executor_sha256": "9876110f6fecadce6000aa5477ff3490a4049adfb65eff2c663fe165ae4c2458",
+  "results": {
+    "cv": {
+      "value": 0.93588681596686
+    },
+    "relative_interdecile": {
+      "value": 1.0219807614004
+    }
+  },
+  "status": "EXECUTED",
+  "scientific_qualification": "NOT_ESTABLISHED"
+}

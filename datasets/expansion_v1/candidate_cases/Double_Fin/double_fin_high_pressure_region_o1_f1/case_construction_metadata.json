@@ -1,0 +1,171 @@
+{
+  "case_id": "double_fin_high_pressure_region_o1_f1",
+  "case_family_id": "double_fin_high_pressure_region",
+  "dataset_id": "Double_Fin",
+  "scientific_target": "the location and intensity of high reconstructed P/Pinf regions",
+  "finding_goal": "Characterize the location and intensity of high reconstructed P/Pinf regions",
+  "operationalization_responsibility": "user_specified",
+  "finding_openness": "bounded",
+  "principal_operationalization_dimensions": [
+    "feature_definition",
+    "property_measure",
+    "aggregation_or_representation",
+    "criterion"
+  ],
+  "unresolved_operationalization_dimensions": [],
+  "scope_constraints": [
+    {
+      "statement": "the supplied double-fin reconstructed pressure field",
+      "question_fragment": "the supplied double-fin reconstructed pressure field"
+    }
+  ],
+  "condition_constraints": [],
+  "selection_constraints": [
+    {
+      "statement": "all mesh cells whose P/Pinf values are finite at every vertex",
+      "question_fragment": "all mesh cells whose P/Pinf values are finite at every vertex"
+    }
+  ],
+  "explicit_method_constraints": [
+    {
+      "category": "feature_definition",
+      "statement": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+      "question_fragment": "Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields."
+    },
+    {
+      "category": "property_measure",
+      "statement": "Compute the stated properties of the selected object.",
+      "question_fragment": "Compute the stated properties of the selected object."
+    },
+    {
+      "category": "analysis_procedure",
+      "statement": "Weight cell statistics by cell volume and normalize by the included volume.",
+      "question_fragment": "Weight cell statistics by cell volume and normalize by the included volume."
+    },
+    {
+      "category": "criterion",
+      "statement": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties.",
+      "question_fragment": "Select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties."
+    }
+  ],
+  "explicit_finding_requirements": [
+    {
+      "category": "location",
+      "statement": "report the volume-weighted centroid coordinates",
+      "question_fragment": "the volume-weighted centroid coordinates"
+    },
+    {
+      "category": "quantity",
+      "statement": "report the volume-weighted mean value in the selected region",
+      "question_fragment": "the volume-weighted mean value in the selected region"
+    }
+  ],
+  "responsibility_contract": {
+    "scientific_target": {
+      "canonical_id": "double_fin_high_pressure_region",
+      "normalized_meaning": "the location and intensity of high reconstructed p/pinf regions",
+      "required_semantic_anchors": [
+        "location and intensity of high reconstructed p/pinf regions"
+      ]
+    },
+    "resolved_operationalization_clauses": [
+      {
+        "dimension_id": "feature_definition",
+        "canonical_id": "double_fin_high_pressure_region:feature_definition",
+        "normalized_meaning": "use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "cells,",
+          "with",
+          "stored",
+          "cell"
+        ]
+      },
+      {
+        "dimension_id": "property_measure",
+        "canonical_id": "double_fin_high_pressure_region:property_measure",
+        "normalized_meaning": "compute the stated properties of the selected object.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "compute",
+          "stated",
+          "properties",
+          "selected"
+        ]
+      },
+      {
+        "dimension_id": "aggregation_or_representation",
+        "canonical_id": "double_fin_high_pressure_region:aggregation_or_representation",
+        "normalized_meaning": "weight cell statistics by cell volume and normalize by the included volume.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "weight",
+          "cell",
+          "statistics",
+          "cell"
+        ]
+      },
+      {
+        "dimension_id": "criterion",
+        "canonical_id": "double_fin_high_pressure_region:criterion",
+        "normalized_meaning": "select cells at or above the volume-weighted 90th percentile of the stated field; use the left inverse of the cumulative volume distribution and retain all ties.",
+        "question_visibility": "REQUIRED",
+        "required_semantic_anchors": [
+          "select",
+          "cells",
+          "above",
+          "volume-weighted"
+        ]
+      }
+    ],
+    "unresolved_operationalization_dimensions": [],
+    "finding_responsibility": {
+      "finding_mode": "F1",
+      "normalized_demand": "characterize the location and intensity of high reconstructed p/pinf regions",
+      "required_semantic_anchors": [
+        "report",
+        "coordinate"
+      ],
+      "required_responsibility_mode": null,
+      "forbidden_responsibility_modes": [
+        "OPEN_FINDING_SELECTION"
+      ]
+    }
+  },
+  "evaluation_representability_contract": {
+    "o_schema_available": true,
+    "materialization": {
+      "available": true,
+      "handler_id": "deterministic_case_materializer_v1"
+    },
+    "finding_representation": {
+      "available": true,
+      "extractor_id": "atomic_finding_extractor_v1"
+    },
+    "deterministic_verification": {
+      "required_claim_types": [
+        "exact",
+        "scalar_numeric",
+        "spatial"
+      ],
+      "registered_handlers": [
+        "exact",
+        "scalar_numeric",
+        "spatial_tolerance"
+      ]
+    },
+    "semantic_adjudication": {
+      "required": true,
+      "handler_available": true,
+      "handler_id": "scientific_adjudication_v1"
+    },
+    "valid_unenumerated_escalation": {
+      "available": true,
+      "route_id": "valid_unenumerated"
+    },
+    "uncertain_escalation": {
+      "available": true,
+      "route_id": "uncertain"
+    }
+  }
+}

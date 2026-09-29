@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "checks": {
+    "question_meaningful": true,
+    "target_stable": true,
+    "target_wording_faithful": true,
+    "scope_preserved": true,
+    "fixed_o_exposed": true,
+    "unresolved_o_left_open": true,
+    "no_unintended_o_responsibility": true,
+    "finding_responsibility_correct": true,
+    "answerable_in_principle": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "evidence_limitations": [
+    "No evidence context is supplied to support a preferred association measure or expected numerical value.",
+    "Units, boundaries, and operating conditions are unspecified, limiting physical interpretation beyond the stored-coordinate snapshot.",
+    "Different valid choices of aggregation, feature definition, and property measure may yield different association coefficients."
+  ],
+  "evidence_ids": [],
+  "recommendation": "KEEP",
+  "rationale": "The question presents a meaningful and actionable F1 request about the spatial association between stored density and pressure over the complete supplied mesh. It faithfully preserves the target and scope, exposes the required numerical association coefficient, and leaves aggregation or representation, feature definition, and property measure open through the request to choose and explain an appropriate procedure. No unsupported physical assertion or unnecessary protocol burden is introduced, and the coefficient is answerable in principle despite dependence on the respondent's valid operationalization choices.",
+  "final_flow_expert_review_status": "PASS",
+  "final_flow_expert_wording_review_version": "final-flow-expert-wording-review-v1",
+  "semantic_contract_sha256": "84ba7b99d0995838fe3867be153eff7c6ac2f55b805cb07a2c57bdec255048fb",
+  "review_packet_sha256": "71509268f59e6060b0b414c9aa552117345f219da0d3f58c9f9014a03d896ffb",
+  "reviewed_model_visible_text_sha256": "97ff5a143f74191890db2e173a8fd15c06a4cf3d6e458f315b445ca80ec21c20",
+  "reviewed_model_visible_text": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient.",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "radiative_density_pressure_association_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "71509268f59e6060b0b414c9aa552117345f219da0d3f58c9f9014a03d896ffb",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "75de2ad2d8f9004fc6f977423c312908698ee5e5580a7c562454254ee41796a0",
+    "timestamp": "2026-09-13T17:40:33.341118+00:00",
+    "latency_seconds": 27.753634,
+    "raw_structured_output": "{\"question_meaningful\":true,\"target_stable\":true,\"target_wording_faithful\":true,\"scope_preserved\":true,\"fixed_o_exposed\":true,\"unresolved_o_left_open\":true,\"no_unintended_o_responsibility\":true,\"finding_responsibility_correct\":true,\"answerable_in_principle\":true,\"evidence_limitations\":[\"No evidence context is supplied to support a preferred association measure or expected numerical value.\",\"Units, boundaries, and operating conditions are unspecified, limiting physical interpretation beyond the stored-coordinate snapshot.\",\"Different valid choices of aggregation, feature definition, and property measure may yield different association coefficients.\"],\"evidence_ids\":[],\"recommendation\":\"KEEP\",\"rationale\":\"The question presents a meaningful and actionable F1 request about the spatial association between stored density and pressure over the complete supplied mesh. It faithfully preserves the target and scope, exposes the required numerical association coefficient, and leaves aggregation or representation, feature definition, and property measure open through the request to choose and explain an appropriate procedure. No unsupported physical assertion or unnecessary protocol burden is introduced, and the coefficient is answerable in principle despite dependence on the respondent's valid operationalization choices.\"}",
+    "parsed_result": {
+      "question_meaningful": true,
+      "target_stable": true,
+      "target_wording_faithful": true,
+      "scope_preserved": true,
+      "fixed_o_exposed": true,
+      "unresolved_o_left_open": true,
+      "no_unintended_o_responsibility": true,
+      "finding_responsibility_correct": true,
+      "answerable_in_principle": true,
+      "evidence_limitations": [
+        "No evidence context is supplied to support a preferred association measure or expected numerical value.",
+        "Units, boundaries, and operating conditions are unspecified, limiting physical interpretation beyond the stored-coordinate snapshot.",
+        "Different valid choices of aggregation, feature definition, and property measure may yield different association coefficients."
+      ],
+      "evidence_ids": [],
+      "recommendation": "KEEP",
+      "rationale": "The question presents a meaningful and actionable F1 request about the spatial association between stored density and pressure over the complete supplied mesh. It faithfully preserves the target and scope, exposes the required numerical association coefficient, and leaves aggregation or representation, feature definition, and property measure open through the request to choose and explain an appropriate procedure. No unsupported physical assertion or unnecessary protocol burden is introduced, and the coefficient is answerable in principle despite dependence on the respondent's valid operationalization choices."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_09ffe02c2217dc25016aa6dff7a97487d2b14c843b8774e07d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1161,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1161,
+            "output_tokens": 0
+          },
+          "rs_09ffe02c2217dc25016aa6dff9585887d280ca7fc5afa22a43": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 484
+          },
+          "msg_09ffe02c2217dc25016aa6e0078f0087d2befd0b3887abacd4": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 246
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 246
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 614,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1777,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 730,
+      "output_tokens_details": {
+        "reasoning_tokens": 484
+      },
+      "total_tokens": 2507
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "invocation_status": "SUCCESS",
+  "excluded_from_scientific_denominator": false,
+  "official_scq_executed": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false,
+  "provenance": {
+    "review_type": "FINAL_FLOW_EXPERT_WORDING_REVIEW",
+    "reviewer_agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "reviewer_model_family": "gpt-5.6",
+    "role": "scientific_reviewer",
+    "execution_mode": "LIVE_MODEL_CALL",
+    "invocation_status": "SUCCESS",
+    "live_model_calls": true,
+    "semantic_contract_sha256": "84ba7b99d0995838fe3867be153eff7c6ac2f55b805cb07a2c57bdec255048fb",
+    "review_packet_sha256": "71509268f59e6060b0b414c9aa552117345f219da0d3f58c9f9014a03d896ffb",
+    "reviewed_model_visible_text_sha256": "97ff5a143f74191890db2e173a8fd15c06a4cf3d6e458f315b445ca80ec21c20",
+    "reviewed_model_visible_text": "In the supplied turbulent radiative mixing-layer snapshot, consider the complete supplied three-dimensional mesh. Investigate the spatial association between density and pressure. Choose and explain an appropriate analysis procedure. Report the numerical association coefficient."
+  }
+}

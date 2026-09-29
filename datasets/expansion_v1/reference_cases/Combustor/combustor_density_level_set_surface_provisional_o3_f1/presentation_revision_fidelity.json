@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "checks": {
+    "target_preserved": true,
+    "scope_preserved": true,
+    "fixed_o_preserved": true,
+    "unresolved_o_remains_open": true,
+    "finding_responsibility_preserved": true,
+    "no_additional_scientific_obligation": true
+  },
+  "failure_codes": [],
+  "validation_errors": [],
+  "fixed_o_checks": {},
+  "unresolved_o_checks": {
+    "feature_definition": true,
+    "criterion": true,
+    "aggregation_or_representation": true
+  },
+  "finding_responsibility_check": {
+    "finding_mode": "F1",
+    "responsibility_preserved": true,
+    "f1_remains_fixed": true,
+    "f2_remains_open": true
+  },
+  "additional_scientific_obligations": [],
+  "rationale": "The text preserves the annular-combustor density-isosurface target and scope, leaves feature formation, isovalue and selection criteria, and location representation for the respondent to choose, and retains all fixed F1 reporting requirements without introducing extra obligations.",
+  "excluded_from_semantic_fidelity_decision": false,
+  "post_rewrite_semantic_fidelity_version": "post-rewrite-semantic-fidelity-v1",
+  "semantic_contract_sha256": "93bd4b61611f974e6b6ac1b9c91b91a63e9906ba94b862b0bb18c0ad217d9624",
+  "semantic_visibility": {
+    "classification_version": "semantic-visibility-classification-v1",
+    "items": [
+      {
+        "information_id": "scientific_target",
+        "semantic_role": "SCIENTIFIC_TARGET",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "scientific_scope",
+        "semantic_role": "SCIENTIFIC_SCOPE",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:feature_definition",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:criterion",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "unresolved_o:aggregation_or_representation",
+        "semantic_role": "UNRESOLVED_OPERATIONALIZATION",
+        "visibility": "QUESTION_VISIBLE"
+      },
+      {
+        "information_id": "finding_responsibility",
+        "semantic_role": "FINDING_RESPONSIBILITY",
+        "visibility": "QUESTION_VISIBLE"
+      }
+    ],
+    "semantic_contract_affected": false
+  },
+  "model_visible_text_sha256": "e1ab34f2b4c87e7f6295173538759ec6a2d0f362fc8ce999f506a542cfbb8051",
+  "review_call": {
+    "execution_mode": "LIVE_MODEL_CALL",
+    "live_model_calls": true,
+    "case_id": "combustor_density_level_set_surface_provisional_o3_f1",
+    "condition": "O3-F1",
+    "presentation_mode": "POST_REWRITE_SEMANTIC_FIDELITY_ONLY",
+    "role": "scientific_reviewer",
+    "agent_profile_id": "flow-scientific-reviewer-gpt-5.6-sol",
+    "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "provider": "yiapi",
+    "model_id": "gpt-5.6-sol",
+    "model_family": "gpt-5.6",
+    "reasoning_effort": "high",
+    "wire_api": "responses",
+    "runtime_profile_id": "flow-tool-free-v1",
+    "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+    "effective_agent_config": {
+      "agent_id": "flow-scientific-reviewer-gpt-5.6-sol",
+      "provider": "codex-hosted",
+      "model_id": "gpt-5.6-sol",
+      "model_family": "gpt-5.6",
+      "reasoning_effort": "high",
+      "wire_api": "responses",
+      "runtime_profile_id": "flow-tool-free-v1",
+      "tools": [],
+      "protocol_version": "profiled-natural-output-v1",
+      "agent_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+      "runtime_profile_sha256": "ab9f1e772e0bccdaf0d9f0b08173573f5fcef8b6f9baf259076f3c97d5a45620",
+      "system_instruction_sha256": "5fbaafd3fbec51277d7eb019a9cb38cd7fcdf188019914ab01d170350fb9493a",
+      "tool_schema_sha256": "fe2f3b4ef49492d81cb350fb689bf9f9dff6cfd1817d72d6ff9fe3350e3d5e6a"
+    },
+    "tool_free": true,
+    "visible_input_sha256": "99ee84a184ffb50e6796855985e419c8edfa241599727394e869a259c5935524",
+    "role_profile_sha256": "b823fe747a1a1c498d4ff891a10597d09514df8f73e7f9e962f3449682cd3b5e",
+    "system_instruction_sha256": "c8a01ecb74a8fe9dec86249ad38fa3afcdceb206489c6175bba016f1c8c7a3e8",
+    "timestamp": "2026-09-13T17:48:05.127882+00:00",
+    "latency_seconds": 11.040435,
+    "raw_structured_output": "{\"scientific_target_preserved\":true,\"scientific_scope_preserved\":true,\"fixed_o_checks\":[],\"unresolved_o_checks\":[{\"dimension_id\":\"feature_definition\",\"remains_open\":true},{\"dimension_id\":\"criterion\",\"remains_open\":true},{\"dimension_id\":\"aggregation_or_representation\",\"remains_open\":true}],\"finding_responsibility_check\":{\"finding_mode\":\"F1\",\"responsibility_preserved\":true,\"f1_remains_fixed\":true,\"f2_remains_open\":true},\"no_additional_scientific_obligation\":true,\"additional_scientific_obligations\":[],\"rationale\":\"The text preserves the annular-combustor density-isosurface target and scope, leaves feature formation, isovalue and selection criteria, and location representation for the respondent to choose, and retains all fixed F1 reporting requirements without introducing extra obligations.\"}",
+    "parsed_result": {
+      "scientific_target_preserved": true,
+      "scientific_scope_preserved": true,
+      "fixed_o_checks": [],
+      "unresolved_o_checks": [
+        {
+          "dimension_id": "feature_definition",
+          "remains_open": true
+        },
+        {
+          "dimension_id": "criterion",
+          "remains_open": true
+        },
+        {
+          "dimension_id": "aggregation_or_representation",
+          "remains_open": true
+        }
+      ],
+      "finding_responsibility_check": {
+        "finding_mode": "F1",
+        "responsibility_preserved": true,
+        "f1_remains_fixed": true,
+        "f2_remains_open": true
+      },
+      "no_additional_scientific_obligation": true,
+      "additional_scientific_obligations": [],
+      "rationale": "The text preserves the annular-combustor density-isosurface target and scope, leaves feature formation, isovalue and selection criteria, and location representation for the respondent to choose, and retains all fixed F1 reporting requirements without introducing extra obligations."
+    },
+    "raw_usage": {
+      "attribution": {
+        "items": {
+          "msg_02ee2ba9a4a24a7c016aa6e1caf22487d08ff8acd5a60ed8cc": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 1203,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 1203,
+            "output_tokens": 0
+          },
+          "rs_02ee2ba9a4a24a7c016aa6e1cb8b0887d0bbc36c827030aa46": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 286
+          },
+          "msg_02ee2ba9a4a24a7c016aa6e1d1b43087d09a0a09c149faeb41": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 182
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 182
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 421,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 1626,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 468,
+      "output_tokens_details": {
+        "reasoning_tokens": 286
+      },
+      "total_tokens": 2094
+    },
+    "error": null,
+    "provider_failure": null,
+    "invocation_status": "SUCCESS",
+    "excluded_from_scientific_denominator": false,
+    "status": "PASS"
+  },
+  "construction_time_semantic_realization_check": true,
+  "official_scq_executed": false,
+  "qualification_gate_created": false,
+  "scientific_target_validity_judged": false,
+  "core_membership_affected": false
+}

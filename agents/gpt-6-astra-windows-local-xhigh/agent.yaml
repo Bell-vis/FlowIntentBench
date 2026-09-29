@@ -1,0 +1,15 @@
+agent_id: gpt-6-astra-windows-local-xhigh
+
+model:
+  provider: yiapi
+  model_id: gpt-6-astra
+  model_family: gpt-6
+  reasoning_effort: xhigh
+
+interface:
+  wire_api: responses
+
+runtime_profile: flow-python-windows-local-v1
+
+tools:
+  - python

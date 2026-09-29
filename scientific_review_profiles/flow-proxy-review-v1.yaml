@@ -1,0 +1,33 @@
+review_profile_id: flow-proxy-review-v1
+proposer_pool:
+  - agent_id: proxy-flow-analyst-gpt-5.6-sol
+    model_family: gpt-5.6
+    model_id: gpt-5.6-sol
+    provider: codex-hosted
+    interface: responses
+    reasoning_effort: high
+    runtime_profile: flow-python-v1
+    allowed_tools: [python]
+adjudicator_pool:
+  - agent_id: flow-scientific-adjudicator-gpt-5.6-sol
+    model_family: gpt-5.6
+    model_id: gpt-5.6-sol
+    provider: codex-hosted
+    interface: responses
+    reasoning_effort: high
+    runtime_profile: flow-python-v1
+    allowed_tools: [python]
+auditor_pool:
+  - agent_id: flow-case-auditor-gpt-5.6-sol
+    model_family: gpt-5.6
+    model_id: gpt-5.6-sol
+    provider: codex-hosted
+    interface: responses
+    reasoning_effort: high
+    runtime_profile: flow-python-v1
+    allowed_tools: [python]
+rules:
+  proposer_cannot_adjudicate_own_candidate: true
+  source_blinding: true
+  prefer_distinct_model_families: true
+  min_open_case_proposal_sources: 2
