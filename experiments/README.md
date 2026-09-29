@@ -1,14 +1,3 @@
-# Experiment Definitions
+# Case manifests
 
-This directory contains versioned membership and configuration files only.
-Generated answers, trajectories, evaluations, and reports belong under
-`outputs/`.
-
-| Path | Role |
-|---|---|
-| `userstudy/` | Authoritative 28-case user study definition and case artifacts |
-| `expansion_v1_development/` | Retained 96-case development manifest, including the 28 user-study IDs |
-
-The former standalone `full_dataset_n1/` definition was a historical
-compatibility surface and has been removed. The shared 28 cases remain
-available through both the user-study definition and the 96-case manifest.
+`expansion_v1_development/case_manifest.json` defines the 96-case benchmark and binds each case to its question, context, ground truth, and evaluation material. `userstudy/case_manifest.json` contains the original 28-case definitions. The 28 IDs also occur in the main benchmark.

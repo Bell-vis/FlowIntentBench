@@ -4,7 +4,7 @@ from types import SimpleNamespace
 import pytest
 
 from flowintentbench.answer_evidence import operationalization_match_uncertainty
-from test_rubric_evaluation import example, evaluate
+from test_finding_scoring import example, evaluate
 
 
 REFERENCE = 'Use all cells, with stored cell values directly and arithmetic means of vertex values for point fields.'

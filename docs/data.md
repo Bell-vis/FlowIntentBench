@@ -29,7 +29,4 @@ re-downloaded during normal evaluation.
 python scripts/verify_release.py --read-data
 ```
 
-Reconstruction helpers are in `scripts/build_context_construction.py` and
-`scripts/reference_construction/`. Reconstruct into a separate working copy: the
-reference inputs in this release are checksum-bound, and changing scientific
-content requires a newly versioned reference package.
+Numerical recipes are provided in `flowintentbench/construction_recipes.py`. Frozen case manifests connect the numerical inputs, reference findings, and verification policies.

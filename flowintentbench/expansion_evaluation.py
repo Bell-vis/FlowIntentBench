@@ -9,7 +9,7 @@ from typing import Any
 
 from .case_design import CaseConstructionMetadata
 from .evaluation_policy import compile_finding_verification_policy, validate_finding_verification_policy
-from .external_file_evaluator import digest, write_json
+from .reference_io import digest, write_json
 from .finding_requirements import FindingRequirementContract
 from .ground_truth import GroundTruth
 from .schema import validate_model_input

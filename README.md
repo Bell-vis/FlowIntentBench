@@ -2,272 +2,170 @@
 
 **FlowIntentBench: Can LLM Agents Analyze Flow Fields to Answer Scientific Questions?**
 
-FlowIntentBench evaluates how language-model agents turn scientific questions about
-3D flow fields into analysis choices and evidence-supported findings. Each case
-provides a question **Q**, numerical data **D**, and physical context **C**. An agent
-reports its **operationalization O** (definitions, measurements, and decision rules)
-and **findings F**. Reference branches pair accepted analyses with the findings
-obtained by executing them, so different valid analyses need not produce identical
-answers.
+FlowIntentBench measures how LLM agents choose scientific analyses and report
+supported findings from 3D flow fields. This repository provides the datasets,
+case definitions, frozen references, and a reproducible implementation of the
+paper's evaluation protocol.
 
-This anonymous source release includes the numerical datasets, case definitions,
-frozen construction references, collection tools, and evaluation code. **Historical
-model answers, trajectories, evaluation outputs, logs, credentials, and Git history
-are excluded.** Running a command may create local files under `outputs/`; this
-directory is ignored by Git.
+## Method
 
-## Method and how to use it
+Each case supplies a scientific question **Q**, flow-field data **D**, and physical
+context **C**. The agent returns an **operationalization O** describing its analysis
+choices and **findings F** describing the resulting evidence.
 
-1. **Choose a case.** The manifest supplies a scientific question, a 3D flow-field
-   snapshot, and physical context. Its condition determines which analysis choices
-   and finding requirements are prescribed or left to the agent.
-2. **Generate an answer.** Let the agent inspect the supplied data with the Python
-   tool. Ask it to report `## Operationalization` (what analysis it used) and
-   `## Finding` (what the data supports). Keep reference answers hidden.
-3. **Verify against compatible evidence.** The evaluator extracts the declared
-   choices and claims, checks task constraints, and compares findings with frozen
-   reference branches for the same quantity, scope, and statistic. Different valid
-   methods can support different numerical findings.
-4. **Read scores together with coverage.** Inspect analysis validity, unresolved
-   choices, finding recall/precision, and O–F consistency. Unverified findings remain
-   unresolved; they are not automatically treated as correct or incorrect.
+Evaluation has three steps:
 
-For a quick local check, install the dependencies below and run
-`python scripts/verify_release.py --read-data` followed by
-`python scripts/smoke_release.py`. To assess your own model, save its responses as
-JSONL and follow [Evaluate saved answers](#evaluate-saved-answers). The distinction
-between this code version and the manuscript's later assessment is documented under
-[Evaluation and manuscript correspondence](#evaluation-and-manuscript-correspondence).
+1. **Assess the analysis.** Grade each task-card attribute from 0 to 4, normalize by
+   four, and average within dimensions and then across dimensions.
+2. **Verify the findings.** Extract claims with source citations and match them to
+   frozen reference branches. The host checks numerical values, units, and the
+   case's reporting tolerances. Branch selection maximizes finding recall, with
+   precision as the tie-break.
+3. **Check method–result consistency.** Verify whether the findings are supported
+   under the agent's declared analysis, then aggregate scores by condition and run.
 
-## Benchmark at a glance
+| Metric | Meaning |
+|---|---|
+| S_O | Overall operationalization quality |
+| URS | Quality of the condition-designated analysis dimensions |
+| R_F | Coverage of required findings or sufficient finding roles |
+| P_F | Support for reported scientific findings |
+| C_OF | Consistency between declared analysis and reported findings |
 
-- **96 cases**, organized as **24 scientific question families × 4 conditions**.
-- **15 numerical dataset inputs** from **14 parent source groups**. The two
-  electrolyzer inputs share a source but have different fields and meshes.
-- Seven task types: region analysis (8 families), field association (5), spatial
-  heterogeneity (4), spatial extent (3), isosurface geometry (2), directional
-  alignment (1), and advective flux (1).
-- Each case concerns one spatial snapshot. Temporal analysis is outside this release.
-- The original 28-case user-study definitions are retained separately; those IDs
-  also occur in the 96-case manifest. Participant responses are not included.
+## Benchmark
 
-| Condition | Analysis responsibility | Finding responsibility |
+The benchmark contains **96 cases in 24 scientific question families**, using
+**15 dataset inputs from 14 parent source groups**. Its task cards specify
+**972 atomic attributes: 694 fixed and 278 open**.
+
+| Condition | Analysis choices | Findings |
 |---|---|---|
-| O1–F1 | All principal decisions are specified | Report the specified finding roles |
-| O2–F1 | One or two principal decisions are open | Same roles as O1–F1 |
-| O3–F1 | Formulate the analysis under task constraints | Same roles as O1–F1 |
-| O1–F2 | Same prescribed analysis as O1–F1 | Select a sufficient combination of roles, including mandatory roles |
+| O1–F1 | Principal decisions specified | Required roles specified |
+| O2–F1 | One or two principal decisions open | Same roles as O1–F1 |
+| O3–F1 | Agent formulates the analysis under task constraints | Same roles as O1–F1 |
+| O1–F2 | Same analysis as O1–F1 | Agent selects a sufficient combination of roles |
 
-O3 retains constraints imposed by the scientific target and scope. F2 is evaluated
-against sufficient-role combinations rather than a hidden requirement to reproduce
-every stored finding.
+Task families cover region analysis, field association, spatial heterogeneity,
+spatial extent, isosurface geometry, directional alignment, and advective flux.
+The original 28-case user-study definitions are included in `experiments/userstudy/`.
 
-## Installation
+## Install
 
-Use **Python 3.12**. Linux is required for the primary network-isolated agent runtime.
-The numerical verification and saved-answer tools can be used independently of that
-runtime.
+Use Python 3.12 and run these commands from the repository root:
 
 ```bash
 git clone https://github.com/Bell-vis/FlowIntentBench.git
 cd FlowIntentBench
 python3.12 -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
 python -m pip install -r runtime-requirements.txt
 python -m pip install -e '.[construction,evaluation,test]'
-python -m pip check
 ```
 
-Alternatively, use `conda env create -f environment.yml`, `conda activate benchmark`,
-and then install `-e '.[construction,evaluation,test]'`. The runtime pins NumPy,
-SciPy, Matplotlib, Pydantic, PyYAML, and VTK in
-[`runtime-requirements.txt`](runtime-requirements.txt). Raw data are included as
-ordinary Git files; Git LFS and a separate dataset download are not required.
-Allow approximately 0.8 GB for the working files, plus Git history and dependencies.
+The numerical data are included in the repository. The working files occupy
+approximately 0.8 GB. Source records, reader settings, and conversion information
+are described in [Data](docs/data.md).
 
-## Quick verification: no API key needed
+## Reproduce the evaluation
 
-Run from the repository root:
+### 1. Validate the data and prepare the evaluator
 
 ```bash
-# Check all 96 cases, the original 28-case bindings, and every input data checksum.
-# Also open all 15 dataset inputs with their declared VTK readers.
 python scripts/verify_release.py --read-data
-
-# Check frozen-reference preparation and saved-answer ingestion in temporary files.
-# This makes zero API calls and leaves no benchmark results in the repository.
-python scripts/smoke_release.py
-
-# Regression tests for the shipped evaluation, numerical, and transport components.
-python -m pytest -q -n 4
+python scripts/evaluate.py prepare --output outputs/prepared
 ```
 
-The ingestion smoke test intentionally leaves a synthetic answer unreviewed. Its
-underlying evaluator returns **2 / INCOMPLETE**, which the smoke script checks as
-expected behavior. It is not a scientific score or a completed model evaluation.
+These commands validate the 15 numerical inputs, load all 96 cases and their task
+cards, and export the structured reviewer schema.
+
+### 2. Supply model answers
+
+Save the model's responses as `answers.jsonl`, with one record per case and run:
+
+```json
+{"model_id":"my-model","case_id":"blunt_fin_o1_f1","trial":1,"answer":"## Operationalization\n...\n## Finding\n..."}
+```
+
+The answering agent receives the question, numerical data, and physical context.
+Reference analyses and task-card grades are used by the evaluator. Use trial IDs
+`1`, `2`, and `3` for the paper's repeated-run setup.
+
+### 3. Run the reviewer and compute scores
+
+Configure a Responses-compatible endpoint and API key in your shell:
+
+```bash
+export FLOWINTENT_API_BASE="https://YOUR_PROVIDER/v1"
+export OPENAI_API_KEY="YOUR_API_KEY"
+
+python scripts/evaluate.py evaluate \
+  --answers answers.jsonl \
+  --output outputs/evaluation \
+  --reviewer-model gpt-6-astra --effort max \
+  --max-output-tokens 10000 --timeout 350 \
+  --max-prompt-chars 200000 --max-api-calls 8
+```
+
+The reviewer extracts methods and findings, assigns atomic grades, and supplies
+semantic reference matches. The host validates the records, performs numerical
+checks, and computes the five metrics. Set `--max-api-calls` to the budget for your
+answer set; repeat the same command to resume. Each review task permits one retry.
+
+### 4. Recompute scores offline
+
+Saved reviews can be replayed with no API calls:
+
+```bash
+python scripts/evaluate.py score \
+  --answers answers.jsonl \
+  --reviews outputs/evaluation/reviews \
+  --output outputs/reproduced
+```
+
+`report.json` contains per-answer scores, coverage, condition means, run means,
+and the mean and sample standard deviation across runs. Atomic grades, source
+citations, reference matches, and numerical checks accompany each score.
+Generated results are written under `outputs/`, which is excluded from Git.
+
+## Scoring rules
+
+S_O averages all applicable dimension scores. URS averages the complete scores of
+the designated dimensions, including fixed attributes within mixed dimensions.
+For O3, URS and S_O use the same dimension set.
+
+F1 recall measures matched core findings. F2 recall measures coverage of authored
+sufficient-role combinations. Matching is one-to-one within a reference branch.
+Supplementary analyses contribute to precision and consistency; recall concerns
+the primary answer.
+
+A demonstrated omission receives zero. An unassessable attribute retains its
+predefined denominator and produces a score interval. Point-score summaries use
+resolved, applicable values. Cases have equal weight within each condition;
+condition means have equal weight within a run. See [Protocol](docs/protocol.md)
+for the formulas and record format.
 
 ## Repository layout
 
 ```text
-flowintentbench/                         Core schemas, readers, runtimes, and scorers
-scripts/                                Collection, evaluation, and reference tools
-scripts/reference_construction/         Numerical reference construction and audits
-datasets/<dataset>/                     Numerical files, metadata, sources, recipes
-datasets/expansion_v1/                  96-case construction manifest and case files
-experiments/expansion_v1_development/    96-case evaluation manifest and frozen policies
+datasets/                              Numerical inputs, metadata, and case construction
+experiments/expansion_v1_development/   96-case manifest and frozen evaluation material
 experiments/userstudy/                  Original 28-case definitions
-artifacts/reference/                    Frozen reference analyses required by cases
-agents/                                 Agent configurations
-runtime_profiles/                       Isolated, host-network, and local profiles
-config/                                 Non-secret provider examples
-scientific_review_profiles/             Scientific-review configuration
-tests/                                  Self-contained release regression suite
-docs/                                   Protocol and data provenance notes
+evaluation/task_cards.json             Atomic attributes and explanation obligations
+artifacts/reference/                   Executed reference analyses
+flowintentbench/paper_evaluation.py     Atomic scoring and paper-level aggregation
+flowintentbench/finding_scoring.py      Finding matching and O–F consistency
+flowintentbench/numeric_verification.py Frozen numerical verification rules
+scripts/evaluate.py                    Preparation, review, and offline scoring CLI
+scripts/verify_release.py              Case and numerical-input validation
+tests/                                 Scoring and numerical regression tests
 ```
 
-The main entry is
-[`experiments/expansion_v1_development/case_manifest.json`](experiments/expansion_v1_development/case_manifest.json).
-Each row identifies the dataset, family, condition, question, context, ground truth,
-and evaluation material, with SHA-256 bindings. References and ground truth are
-**evaluator-only inputs**; do not expose them to the answering agent.
-
-## Datasets
-
-| Input directory | Families | Cases |
-|---|---:|---:|
-| AIDEAS_Blow_Mold | 3 | 12 |
-| Blunt_Fin | 1 | 4 |
-| Carotid | 1 | 4 |
-| Combustor | 1 | 4 |
-| Double_Fin | 1 | 4 |
-| Electrolyzer | 1 | 4 |
-| Electrolyzer_Electric | 1 | 4 |
-| FireFlow | 1 | 4 |
-| Kitchen | 1 | 4 |
-| MHD_Turbulence | 2 | 8 |
-| NASA_LOx_Post | 1 | 4 |
-| Office | 1 | 4 |
-| OpenFOAM_Tubes | 3 | 12 |
-| Radiative_Mixing_Layer | 3 | 12 |
-| Rayleigh_Taylor | 3 | 12 |
-| **Total** | **24** | **96** |
-
-Every dataset has `dataset_manifest.json` and `data_metadata.json`. Source records,
-conversion recipes, selected source assets, and offline reconstruction byte ranges
-are retained where supplied. See [data provenance](docs/data.md). Upstream source
-attribution is preserved; anonymization does not remove third-party provenance or
-change numerical arrays.
-
-## Run an agent
-
-The manuscript's primary condition uses `flow-python-v1`: isolated network access,
-read-only case files at `/case`, a writable `/workspace`, and persistent Python state
-within each independent trial. Install host `bubblewrap` (`bwrap`) and ensure user
-namespaces are available before using this profile. Profiles ending in
-`host-network` or `windows-local` describe different runtime conditions.
-
-An explicit one-case collection entry is:
+## Tests
 
 ```bash
-# Configure your provider endpoint in config/yiapi.toml and export YIAPI_API_KEY.
-# The profile fixes the model identity; choose/edit a profile for your model.
-python scripts/run_real_model_pilot.py \
-  --case-manifest datasets/expansion_v1/case_manifest.json \
-  --dataset Blunt_Fin --case blunt_fin_o1_f1 \
-  --agent gpt-5.6-luna-xhigh-chat \
-  --server-config config/yiapi.toml \
-  --output-root outputs/my_collection
+python -m pytest -q
 ```
 
-This entry produces a pilot collection, not a certification of the manuscript's
-full experiment. It requires a compatible model endpoint and makes paid API calls.
-The repository also provides multi-case orchestration scripts. Inspect each
-script's `--help` and explicitly select its manifest, agent, and output location;
-some retained maintenance tools expect historical inputs that are not distributed.
-
-## Evaluate saved answers
-
-The model-independent entry is `scripts/evaluate_model_answers.py`. It accepts
-JSON, JSONL, or collection ledgers. A minimal JSONL row is:
-
-```json
-{"model_id":"your-model","case_id":"blunt_fin_o1_f1","trial":1,"answer":"## Operationalization\n...\n## Finding\n..."}
-```
-
-Use the actual unedited model response. Each `(model_id, case_id, trial)` must be
-unique. `--answers` and `--collection` can be repeated; `--models`, `--cases`, and
-`--trials` select the evaluation scope.
-
-First check ingestion offline:
-
-```bash
-python scripts/evaluate_model_answers.py \
-  --answers answers.jsonl --output outputs/offline_check \
-  --offline --max-api-calls 0
-```
-
-A fresh offline run has no semantic reviewer decisions and normally returns exit
-code **2**. To perform a bounded live review, copy `auth.example.json` to
-`auth.local.json`, supply your own key locally, and configure a Responses-compatible
-endpoint and model in `config/reviewer.example.toml`:
-
-```bash
-python scripts/evaluate_model_answers.py \
-  --answers answers.jsonl --output outputs/review_run \
-  --api-config config/reviewer.example.toml --auth-path auth.local.json \
-  --reviewer-model YOUR_REVIEWER_MODEL --effort medium \
-  --max-api-calls 8 --max-wall-seconds 300
-```
-
-The selected reviewer must support the request format and reasoning effort.
-Authentication files are ignored by Git. The default network configuration uses
-direct connections; edit `config/benchmark_network.toml` if an explicit proxy is
-needed. This packaging verification does not submit live model or reviewer calls.
-
-Reports are created locally under `OUTPUT/reports/`. Resume only with the same
-input and evaluation contract. A new model, reference package, or protocol requires
-a new output directory. `--require-identified` returns exit **3** when review is
-complete but some applicable scores remain bounded rather than identified.
-
-## Evaluation and manuscript correspondence
-
-The manuscript distinguishes five metrics:
-
-| Metric | Meaning | Code report key |
-|---|---|---|
-| S_O | Validity of the stated analysis | `o_score` |
-| URS | Quality on dimensions designated for agent decisions | `urs` |
-| R_F | Coverage of required findings or sufficient roles | `core_finding_recall` (F1), `finding_requirement_recall` (F2) |
-| P_F | Support for distinct task-relevant reported findings | `finding_precision` |
-| C_OF | Support under the agent's declared analysis | `c_score` |
-
-Finding matching preserves analysis groups and reference-branch identity. Numerical
-checks use frozen values, units, and policies. Missing required items, contradicted
-claims, unverified claims, and inapplicable scores have different meanings.
-The manuscript reports condition-balanced means and repeated-run variability;
-coverage must accompany quality summaries.
-
-**Version boundary:** the shipped generic evaluator identifies itself as
-`rubric-evidence-v4.1`. It uses dimension decisions `MET`, `NOT_MET`, and
-`UNVERIFIABLE`, and reports unresolved metric bounds. The supplied manuscript
-also describes a later five-level (0–4) atomic-attribute assessment and its final
-aggregation. This release does not claim that v4.1 reproduces that later assessment
-or the published result tables. Historical reviewer decisions, supplementary output
-packages, model responses, human-audit records, and participant responses are not
-included. See [protocol notes](docs/protocol.md) before comparing scores.
-
-The preserved manifest retains `DEVELOPMENT_EVALUATION_ONLY`, `formal_release=false`,
-and its original calibration status. Packaging tests verify the shipped code and
-inputs; they do not change scientific validation or release status.
-
-## Anonymization and release scope
-
-This snapshot starts a new Git history with anonymous author and committer metadata.
-Original credentials, personal environment names, local path indexes, run outputs,
-archives, manuscript author information, and historical experiment reports are
-excluded. Only frozen scientific inputs needed by the shipped cases are retained.
-
-The GitHub owner remains visible as `Bell-vis`; content anonymization cannot conceal
-account ownership or activity outside this repository. Third-party datasets retain
-their source terms and attribution. No blanket license is assigned to upstream data.
+The tests cover reference-answer scoring for all 96 cases, five-level grades,
+mixed-dimension URS, null propagation, finding verification, source binding,
+condition-balanced aggregation, retry handling, and offline score reproduction.

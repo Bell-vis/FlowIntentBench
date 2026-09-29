@@ -1,5 +1,9 @@
-# Release regression tests
+# Tests
 
-Run `python -m pytest -q -n 4` from the repository root. These tests exercise the shipped numerical and evaluation components with local inputs. They do not contact paid reviewer services. Historical integration tests that require excluded experiment outputs or retired construction portfolios are not part of this release.
+Run `python -m pytest -q` from the repository root. The suite validates all 96 cases
+with in-memory reference-answer fixtures and checks atomic grades, URS membership,
+source citations, reference matching, uncertainty, numeric recipes, aggregation,
+review retry limits, and deterministic offline replay.
 
-Run `python scripts/verify_release.py --read-data` and `python scripts/smoke_release.py` for the complete shipped input inventory and CLI smoke check.
+`python scripts/verify_release.py --read-data` checks all packaged numerical inputs
+with their declared readers and file digests.

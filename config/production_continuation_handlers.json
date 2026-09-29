@@ -1,8 +1,0 @@
-{
-  "BLINDED_FINDING_ADJUDICATOR": "flowintentbench.production_continuation:blinded_finding_adjudicator",
-  "BLINDED_SCIENTIFIC_ADJUDICATOR": "flowintentbench.production_continuation:blinded_scientific_adjudicator",
-  "NOVEL_O_COMPLETION": "flowintentbench.production_continuation:novel_o_completion",
-  "NOVEL_O_MATERIALIZER": "flowintentbench.production_continuation:novel_o_materializer",
-  "SEMANTIC_MATCH_RESOLVER": "flowintentbench.production_continuation:semantic_match_resolver",
-  "UNIT_FRAME_RESOLVER": "flowintentbench.production_continuation:unit_frame_resolver"
-}

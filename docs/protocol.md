@@ -1,57 +1,73 @@
-# Protocol and implementation scope
+# Evaluation protocol
 
-The README follows the supplied manuscript's title, task formulation, condition
-matrix, dataset inventory, and five-metric organization. Manuscript text and author
-metadata are not copied into this repository.
+## Atomic operationalization grades
 
-## Frozen inputs
+Every case has a frozen task card in `evaluation/task_cards.json`. For dimension
+$d$, each applicable attribute has an integer grade $g_{da}$ from 0 to 4:
 
-`experiments/expansion_v1_development/case_manifest.json` binds the 96 cases to typed
-question inputs, construction metadata, ground truth, and evaluation material.
-`datasets/expansion_v1/execution_evidence/` and the retained reference portfolio
-supply precomputed evidence. These are evaluation inputs, not collected model
-answers. Numerical source files and their checksums are unchanged.
+$$s_d=\frac{1}{|A_d|}\sum_{a\in A_d}\frac{g_{da}}4.$$
 
-The original 28-case definitions are retained in `experiments/userstudy/`. The 96-case
-manifest should be used for the main benchmark. Do not concatenate the two manifests
-and double-count shared IDs.
+Grades 4, 3, 2, 1, and 0 represent fully satisfied requirements, a minor defect,
+a consequential partial defect, little usable content, and missing or incorrect
+required content, respectively. Each grade carries its source passage and reason.
+A fixed condition with a unique interpretation can be inherited from the question.
+Explanation obligations are assessed separately.
 
-## Code map
+S_O is the equally weighted mean of dimension scores. URS uses the full scores of
+the dimensions designated by the condition. The fixed/open attribute assignment
+is independent of dimension membership in URS. For the radiative-flux O2 case,
+normalized grades `(1, 0.5, 1)` give URS = 5/6. O1 has no applicable URS; O3 uses
+all dimensions, so URS = S_O.
 
-- `flowintentbench/expansion_evaluation.py`: validate bound case artifacts.
-- `flowintentbench/reference_packages.py`: assemble and validate frozen references.
-- `flowintentbench/answer_collections.py`: ingest answers and collections.
-- `flowintentbench/rubric_scoring.py`: current v4.1 answer interpretation and scoring.
-- `flowintentbench/trusted_scoring.py`: evidence-aware metric utilities and bounds.
-- `scripts/prepare_evaluation_references.py`: inspect all frozen reference packages.
-- `scripts/evaluate_model_answers.py`: generic bounded/offline evaluation CLI.
-- `scripts/reference_construction/`: separately executed numerical construction.
-- `flowintentbench/python_runtime.py`: agent execution and isolation support.
+An explicit unknown grade remains in the original denominator. For $n$ attributes,
+with known normalized grades summing to $q$ and $u$ unknown attributes, the bounds
+are $[q/n,(q+u)/n]$. Dimension weights propagate these bounds to S_O and URS.
+Missing required evaluator records are rejected.
 
-## Assessment version
+## Findings and reference branches
 
-The manuscript describes normalized grades from a five-level atomic-attribute rubric
-and N/A-aware, condition-balanced repeated-run aggregation. The supplied generic v4.1
-code uses ternary dimension decisions and represents unresolved claims with metric
-intervals. These are related evaluation surfaces, but they are not interchangeable.
-Matching metric names alone does not establish numerical equivalence. Preserve the
-protocol version, reviewer configuration, and reference identity with every new run.
+The reviewer identifies one primary analysis and any explicit supplementary
+analyses. Each finding retains its group, source quotation or line range, value,
+unit, eligibility, and candidate references. The host verifies numerical claims
+using the frozen scalar, spatial, vector, exact-identity, or exact-count policy.
+Printed rounding and explicit unit conversions preserve the authored tolerance.
 
-This release provides no historical output packages or API receipts. Consequently,
-exact replay of the manuscript's final tables and human-review corrections is not
-available from this snapshot alone. Re-running a model or reviewer also depends on
-its provider availability and can produce different responses.
+Within a group, one-to-one matching prevents a repeated claim from covering several
+required results. Branches maximize recall, with precision breaking ties. F1 recall
+is the fraction of matched core findings. F2 recall is the maximum coverage fraction
+over acceptable role combinations. Mandatory roles belong to each combination.
+Precision measures support for distinct eligible findings across all groups.
 
-## Release verification
+C_OF considers findings whose group's principal analysis choices are identifiable
+and checks support under compatible methods. Method-binding coverage and branch
+alignment remain available in the per-answer finding evidence. Unverified claims
+retain their uncertainty. Empty findings give precision zero; an empty consistency
+set makes C_OF inapplicable.
 
-`verify_release.py` checks case bindings, data SHA-256 values and sizes, and optionally
-all VTK readers. `smoke_release.py` runs reference preparation from a different
-working directory and checks the zero-call, incomplete saved-answer path. The test
-suite covers scoring, evidence binding, uncertainty, geometry, numerical recipes,
-reference extensions, concurrency, and transport recovery using local fixtures.
-Historical integration tests tied to excluded output archives and retired construction
-portfolios are outside the distributed test suite.
+## Reviewer records and reproducibility
 
-A successful local verification proves that the documented offline paths run with
-the shipped inputs. It does not certify a live endpoint, host namespace permissions,
-scientific coverage of every possible alternative method, or a completed benchmark.
+The reviewer receives the question, context, data metadata, task card, frozen
+reference packet, and line-numbered answer. The default configuration is
+`gpt-6-astra`, reasoning effort `max`, 10,000 maximum output tokens, a 350-second
+request timeout, and a 200,000-character prompt limit. The request provides no tools.
+JSON Schema is included in the prompt; the host validates returned records.
+
+The output directories contain:
+
+- `evaluation_contract.json`: answer, reference, implementation, and reviewer identity.
+- `requests/`: exact prompts, responses, and attempt receipts.
+- `reviews/`: validated reviews bound to their answers and references.
+- `scores/`: deterministic per-answer scores and evidence.
+- `report.json`: answer coverage and aggregate results.
+
+One retry is permitted per review task. A failed review remains pending; exit code
+2 indicates pending answers. Accepted reviews are reused when the same command is
+resumed. `score --reviews ...` recomputes scores without calling a reviewer.
+
+## Aggregation
+
+For every metric and trial, average resolved, applicable case scores within each
+condition. Average the applicable condition means equally to obtain the trial
+summary. Report the mean and sample standard deviation over trial summaries.
+Coverage records the requested, applicable, and resolved answer counts. Duplicate
+model/case/trial records are rejected.

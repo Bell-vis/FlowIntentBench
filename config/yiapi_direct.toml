@@ -1,8 +1,0 @@
-model_provider = "yiapi"
-model = "gpt-6-astra"
-model_reasoning_effort = "medium"
-
-[model_providers.yiapi]
-base_url = "https://yiapi.ai/v1"
-api_key_env = "YIAPI_API_KEY"
-wire_api = "responses"

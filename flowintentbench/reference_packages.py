@@ -278,7 +278,7 @@ def apply_supplement(case_input, metadata, gt, material, supplement):
 
 
 def _add_policies(policies, bid, findings, added):
-    from .evaluator import finding_verification_mode
+    from .numeric_verification import finding_verification_mode
     index = policy_index({"policies": added})
     if set(index) != {(bid, f.finding_id) for f in findings}:
         raise ValueError("supplement needs one explicit policy per finding")
