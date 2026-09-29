@@ -1,5 +1,7 @@
 # FlowIntentBench
 
+Official Repository for ICLR 2027 "**43241**" (Under Review)
+
 **FlowIntentBench: Can LLM Agents Analyze Flow Fields to Answer Scientific Questions?**
 
 FlowIntentBench measures how LLM agents choose scientific analyses and report
